@@ -1,0 +1,6 @@
+{
+    "test_id": "test_040",
+    "tarea": "relevancia",
+    "model_id": "gemma2-9b-it",
+    "llm_response_content": "{\n  \"puntuacion_relevancia\": 8,\n  \"justificacion_relevancia\": \"Crítica a políticas migratorias de EEUU y El Salvador.\",\n  \"categorias_asignadas\": [\n    \"Política Internacional\",\n    \"Conflicto/Seguridad\",\n    \"Justicia/Legal\",\n    \"Sociedad/Derechos\"\n  ],\n  \"resumen_breve\": \"Human Rights Watch denuncia la creación de un 'Guantánamo centroamericano' en El Salvador por políticas migratorias de EEUU y Bukele.\"\n}"
+}

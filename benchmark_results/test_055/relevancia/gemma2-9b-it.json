@@ -1,0 +1,6 @@
+{
+    "test_id": "test_055",
+    "tarea": "relevancia",
+    "model_id": "gemma2-9b-it",
+    "llm_response_content": "{\n  \"puntuacion_relevancia\": 6,\n  \"justificacion_relevancia\": \"Reconocimiento a rescatistas tras tragedia, impacto social.\",\n  \"categorias_asignadas\": [\n    \"Sociedad/Derechos\",\n    \"Política Nacional\"\n  ],\n  \"resumen_breve\": \"El gobierno dominicano condecorará a rescatistas por su labor en la tragedia de la discoteca Jet Set.\"\n}"
+}

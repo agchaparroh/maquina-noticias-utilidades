@@ -1,0 +1,6 @@
+{
+    "test_id": "test_064",
+    "tarea": "extraccion_datos",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Recompensa ofrecida por el gobierno\",\n         \"categoria\": \"presupuestario\",\n         \"valor_numerico\": 4450000000,\n         \"unidad\": \"pesos\",\n         \"ambito_geografico\": [\"Colombia\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": \"Ministerio de Defensa\",\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Número de elementos personales encontrados en el campamento de las disidencias\",\n         \"categoria\": \"otro\",\n         \"valor_numerico\": null,\n         \"unidad\": null,\n         \"ambito_geografico\": [\"Colombia\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": \"Policía Nacional\",\n         \"notas_contexto\": \"Elementos personales utilizados por las disidencias\"\n      }\n   ]\n}"
+}

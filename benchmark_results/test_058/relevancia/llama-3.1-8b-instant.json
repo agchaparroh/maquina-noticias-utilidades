@@ -1,0 +1,6 @@
+{
+    "test_id": "test_058",
+    "tarea": "relevancia",
+    "model_id": "llama-3.1-8b-instant",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"Relevancia media debido a la renovación de la Corte de Constitucionalidad\",\n   \"categorias_asignadas\": [\"Justicia/Legal\", \"Política Nacional\"],\n   \"resumen_breve\": \"La presidenta de la Corte de Constitucionalidad, Leyla Lemus, anuncia medidas para modernizar y agilizar la gestión comunicacional y el acceso a la información\"\n}"
+}

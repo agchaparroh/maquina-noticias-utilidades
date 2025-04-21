@@ -1,0 +1,6 @@
+{
+    "test_id": "test_043",
+    "tarea": "extraccion_citas",
+    "model_id": "gemma2-9b-it",
+    "llm_response_content": "{\n  \"resultados\": [\n    {\n      \"cita\": \"El Gangoso ordenó el 23 de marzo, en Carrizalejo, Sinaloa, un ataque con drones armados contra soldados, en represalia por una incautación previa.\",\n      \"emisor_nombre\": \"fuentes del Gabinete de Seguridad\",\n      \"contexto\": \"Describiendo la orden de un ataque con drones por parte de El Gangoso.\",\n      \"fecha_cita\": \"2023-03-23\",\n      \"relevancia_cita\": 4\n    }\n  ]\n}"
+}

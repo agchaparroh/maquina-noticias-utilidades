@@ -1,0 +1,6 @@
+{
+    "test_id": "test_054",
+    "tarea": "extraccion_citas",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"\\\"Nos dijo públicamente que, en 15 días, con la sentencia de la justicia, se realizaría el pago, e incluso se comprometió a colaborar para agilizar el juicio. Sin embargo, todas las instancias han fallado a nuestro favor y ellos siguen apelando\\\"\",\n         \"emisor_nombre\": \"uno de los afectados\",\n         \"contexto\": \"Durante una protesta frente al Ministerio de Obras Públicas\",\n         \"fecha_cita\": null,\n         \"relevancia_cita\": 4\n      },\n      {\n         \"cita\": \"\\\"Nos sentimos desamparados, pese a que la justicia nos ha respaldado en todas las instancias\\\"\",\n         \"emisor_nombre\": \"los exempleados\",\n         \"contexto\": \"Durante una movilización\",\n         \"fecha_cita\": null,\n         \"relevancia_cita\": 3\n      }\n   ]\n}"
+}

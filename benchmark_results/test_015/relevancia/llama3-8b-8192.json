@@ -1,0 +1,6 @@
+{
+    "test_id": "test_015",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Reconocimiento de la victoria de Daniel Noboa y compromiso con el bienestar del país\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Elecciones\"],\n   \"resumen_breve\": \"Pachakutik reconoce la victoria de Daniel Noboa como presidente de la República del Ecuador\"\n}"
+}

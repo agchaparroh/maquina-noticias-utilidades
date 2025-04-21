@@ -1,0 +1,6 @@
+{
+    "test_id": "test_033",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Reconocimiento de vacío en la ley para supervisar obras privadas\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Economía\", \"Justicia/Legal\"],\n   \"resumen_breve\": \"El presidente Abinader reconoce la necesidad de llenar un vacío en la ley para supervisar obras privadas\"\n}"
+}

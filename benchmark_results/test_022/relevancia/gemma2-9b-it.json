@@ -1,0 +1,6 @@
+{
+    "test_id": "test_022",
+    "tarea": "relevancia",
+    "model_id": "gemma2-9b-it",
+    "llm_response_content": "{\n  \"puntuacion_relevancia\": 8,\n  \"justificacion_relevancia\": \"Milei y China/EEUU, temas de política económica internacional\",\n  \"categorias_asignadas\": [\n    \"Política Nacional\",\n    \"Economía\",\n    \"Diplomacia\"\n  ],\n  \"resumen_breve\": \"Milei niega petición de EEUU para abandonar el swap chino, generando tensión diplomática.\"\n}"
+}

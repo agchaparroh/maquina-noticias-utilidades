@@ -1,0 +1,6 @@
+{
+    "test_id": "test_037",
+    "tarea": "relevancia",
+    "model_id": "llama-3.1-8b-instant",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Crisis de seguridad en Haití con pandillas y violencia generalizada\",\n   \"categorias_asignadas\": [\"Conflicto/Seguridad\", \"Política Nacional\", \"Sociedad/Derechos\"],\n   \"resumen_breve\": \"El gobierno de Haití aprueba un presupuesto especial para combatir la violencia de pandillas y mantener la estabilidad nacional\"\n}"
+}

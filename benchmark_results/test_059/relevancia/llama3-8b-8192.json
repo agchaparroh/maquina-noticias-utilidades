@@ -1,0 +1,6 @@
+{
+    "test_id": "test_059",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Impacto en la economía argentina y depreciación del peso\",\n   \"categorias_asignadas\": [\"Economía\", \"Política Nacional\"],\n   \"resumen_breve\": \"El dólar alcanza $1.230 en Argentina sin cepo, depreciando el peso en un 10%\"\n}"
+}

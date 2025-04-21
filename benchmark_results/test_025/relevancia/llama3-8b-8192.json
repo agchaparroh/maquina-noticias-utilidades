@@ -1,0 +1,6 @@
+{
+    "test_id": "test_025",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Relevancia alta por la disputa política entre figuras relevantes en Argentina\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Política Internacional\"],\n   \"resumen_breve\": \"Mauricio Macri y Javier Milei disputan sobre un posible acuerdo electoral en la provincia de Buenos Aires\"\n}"
+}

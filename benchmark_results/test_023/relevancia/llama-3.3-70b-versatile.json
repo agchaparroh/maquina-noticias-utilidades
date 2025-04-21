@@ -1,0 +1,6 @@
+{
+    "test_id": "test_023",
+    "tarea": "relevancia",
+    "model_id": "llama-3.3-70b-versatile",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Ley impacta ONG y cooperación internacional\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Justicia/Legal\"],\n   \"resumen_breve\": \"Ley para revisar ONG que actúan contra intereses nacionales\"\n}"
+}

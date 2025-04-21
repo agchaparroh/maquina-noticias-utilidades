@@ -1,0 +1,6 @@
+{
+    "test_id": "test_065",
+    "tarea": "relevancia",
+    "model_id": "llama-3.1-8b-instant",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"Relevante para la política de salud y presupuesto en Guatemala\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Economía\", \"Sociedad/Derechos\"],\n   \"resumen_breve\": \"El gobierno de Guatemala analiza aumentar el bono a salubristas a Q1 mil 800 para cumplir con el artículo 140 del Presupuesto General\"\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "test_id": "test_029",
+    "tarea": "extraccion_citas",
+    "model_id": "llama-3.3-70b-versatile",
+    "llm_response_content": "{\n   \"resultados\": [\n       {\n           \"cita\": \"calle a calle\",\n           \"emisor_nombre\": \"Elías Bendodo\",\n           \"contexto\": \"monitoreo de preocupaciones ciudadanas\",\n           \"fecha_cita\": null,\n           \"relevancia_cita\": 4\n       }\n   ]\n}"
+}

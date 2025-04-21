@@ -1,0 +1,6 @@
+{
+    "test_id": "test_024",
+    "tarea": "extraccion_entidades",
+    "model_id": "gemma2-9b-it",
+    "llm_response_content": "{\n  \"resultados\": [\n    {\n      \"nombre\": \"Google LLC\",\n      \"tipo\": \"ORGANIZACION\",\n      \"alias\": [\n        \"Google\"\n      ],\n      \"descripcion_contextual\": \"Compañía propietaria de YouTube.\",\n      \"relevancia_articulo\": 10\n    }\n  ]\n}"
+}

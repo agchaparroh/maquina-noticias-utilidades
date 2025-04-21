@@ -1,0 +1,6 @@
+{
+    "test_id": "test_011",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Confirma suspensión de proceso penal contra director del INM por fallecimiento de migrantes\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Justicia/Legal\"],\n   \"resumen_breve\": \"Tribunal confirma suspensión del proceso penal contra el director del INM por fallecimiento de 40 migrantes\"\n}"
+}

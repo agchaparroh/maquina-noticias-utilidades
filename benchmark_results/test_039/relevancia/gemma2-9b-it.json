@@ -1,0 +1,6 @@
+{
+    "test_id": "test_039",
+    "tarea": "relevancia",
+    "model_id": "gemma2-9b-it",
+    "llm_response_content": "{\n  \"puntuacion_relevancia\": 7,\n  \"justificacion_relevancia\": \"Declaraciones de Trump sobre Venezuela con impacto geopolítico.\",\n  \"categorias_asignadas\": [\n    \"Política Internacional\",\n    \"Conflicto/Seguridad\"\n  ],\n  \"resumen_breve\": \"Trump amenaza a Venezuela con sanciones petroleras y presiona a El Salvador sobre un migrante deportado.\"\n}"
+}

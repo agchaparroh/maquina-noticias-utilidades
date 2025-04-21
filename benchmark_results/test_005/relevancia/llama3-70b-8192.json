@@ -1,0 +1,6 @@
+{
+    "test_id": "test_005",
+    "tarea": "relevancia",
+    "model_id": "llama3-70b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Propuesta de cierre del Congreso por un político destacado\",\n   \"categorias_asignadas\": [\"Política Nacional\"],\n   \"resumen_breve\": \"Exalcalde de Medellín propone cerrar el Congreso y convocar una constituyente\"\n}"
+}

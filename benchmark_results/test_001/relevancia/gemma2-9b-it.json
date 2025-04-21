@@ -1,0 +1,6 @@
+{
+    "test_id": "test_001",
+    "tarea": "relevancia",
+    "model_id": "gemma2-9b-it",
+    "llm_response_content": "{\n  \"puntuacion_relevancia\": 6,\n  \"justificacion_relevancia\": \"Propuesta legislativa sobre supervisión de obras en República Dominicana.\",\n  \"categorias_asignadas\": [\n    \"Política Nacional\",\n    \"Justicia/Legal\"\n  ],\n  \"resumen_breve\": \"Senador dominicano propone ley para supervisar obras públicas y privadas mayores a 10 años.\"\n}"
+}

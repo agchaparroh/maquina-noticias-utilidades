@@ -1,0 +1,6 @@
+{
+    "test_id": "test_060",
+    "tarea": "relevancia",
+    "model_id": "llama3-70b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Investigación sobre fallida compra de casa de Allende, con implicaciones políticas\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Justicia/Legal\"],\n   \"resumen_breve\": \"Funcionarios de BBNN no se presentan en comisión investigadora sobre fallida compra de casa de Allende\"\n}"
+}

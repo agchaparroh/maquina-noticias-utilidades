@@ -1,0 +1,6 @@
+{
+    "test_id": "test_036",
+    "tarea": "extraccion_datos",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Diferencia de votos entre Daniel Noboa y Luisa González\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": 10,\n         \"unidad\": \"puntos\",\n         \"ambito_geografico\": [\"Ecuador\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Incrementos estadísticamente imposibles en recintos electorales\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": null,\n         \"unidad\": null,\n         \"ambito_geografico\": [\"Ecuador\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": \"Revolución Ciudadana (RC5)\",\n         \"notas_contexto\": null\n      }\n   ]\n}"
+}

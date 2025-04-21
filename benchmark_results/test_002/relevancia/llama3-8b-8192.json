@@ -1,0 +1,6 @@
+{
+    "test_id": "test_002",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Unión política entre partidos de izquierda para las elecciones presidenciales y legislativas de 2026\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Política Internacional\"],\n   \"resumen_breve\": \"El Polo Democrático se une al Pacto Histórico para presentarse como una sola fuerza política en las elecciones de 2026\"\n}"
+}

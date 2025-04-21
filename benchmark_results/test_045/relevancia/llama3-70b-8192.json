@@ -1,0 +1,6 @@
+{
+    "test_id": "test_045",
+    "tarea": "relevancia",
+    "model_id": "llama3-70b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 7,\n   \"justificacion_relevancia\": \"Ministro involucrado en caso de deuda laboral\",\n   \"categorias_asignadas\": [\"Justicia/Legal\", \"Política Nacional\"],\n   \"resumen_breve\": \"Justicia ordena apremio del ministro Edgar Montaño por deuda a extrabajadores de Sabsa\"\n}"
+}

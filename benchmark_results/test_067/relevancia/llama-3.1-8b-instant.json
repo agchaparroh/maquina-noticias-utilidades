@@ -1,0 +1,6 @@
+{
+    "test_id": "test_067",
+    "tarea": "relevancia",
+    "model_id": "llama-3.1-8b-instant",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Relevancia alta debido a la visita de un presidente extranjero a la Casa Blanca y sus declaraciones\",\n   \"categorias_asignadas\": [\"Política Internacional\", \"Diplomacia\", \"Política Nacional\"],\n   \"resumen_breve\": \"El presidente salvadoreño Nayib Bukele visita la Casa Blanca y se reúne con Donald Trump en una reunión de alto nivel\"\n}"
+}

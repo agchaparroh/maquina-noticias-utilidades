@@ -1,0 +1,6 @@
+{
+    "test_id": "test_068",
+    "tarea": "extraccion_datos",
+    "model_id": "llama-3.3-70b-versatile",
+    "llm_response_content": "{\n   \"resultados\": []\n}"
+}

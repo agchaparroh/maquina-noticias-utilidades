@@ -1,0 +1,6 @@
+{
+    "test_id": "test_061",
+    "tarea": "extraccion_citas",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"\\\"Gano la Presidencia, cierro el Congreso y convoco a una constituyente para resetear este país, porque, así como está, el país no funciona. No hay que tenerlo miedo a esta generación. Esta generación está lista para plantear una nueva institucionalidad\\\"\",\n         \"emisor_nombre\": \"Daniel Quintero Calle\",\n         \"contexto\": null,\n         \"fecha_cita\": null,\n         \"relevancia_cita\": 5\n      },\n      {\n         \"cita\": \"\\\"Puede gustarnos o no. Podemos criticarlo las veces que queramos y estar en desacuerdo con las prácticas corruptas de muchos de sus miembros, pero el Congreso de la República, pilar de la democracia, nunca se cierra. Nunca. Hacerlo es de dictadores\\\"\",\n         \"emisor_nombre\": \"Gustavo Bolívar\",\n         \"contexto\": null,\n         \"fecha_cita\": null,\n         \"relevancia_cita\": 4\n      }\n   ]\n}"
+}

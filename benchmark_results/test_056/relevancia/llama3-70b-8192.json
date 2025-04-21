@@ -1,0 +1,6 @@
+{
+    "test_id": "test_056",
+    "tarea": "relevancia",
+    "model_id": "llama3-70b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Reacción del gobierno a una tragedia nacional\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Sociedad/Derechos\"],\n   \"resumen_breve\": \"El presidente Abinader promete apoyo a víctimas del Jet Set en salud mental y otras áreas\"\n}"
+}

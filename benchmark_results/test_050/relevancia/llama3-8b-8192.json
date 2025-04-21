@@ -1,0 +1,6 @@
+{
+    "test_id": "test_050",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Reunió con el secretario del Tesoro de EE. UU. y recibió apoyo para reformas económicas\",\n   \"categorias_asignadas\": [\"Economía\", \"Política Internacional\"],\n   \"resumen_breve\": \"El secretario del Tesoro de EE. UU. se reunió con el presidente argentino Milei y le dio apoyo a sus reformas económicas\"\n}"
+}

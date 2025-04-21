@@ -1,0 +1,6 @@
+{
+    "test_id": "test_047",
+    "tarea": "extraccion_datos",
+    "model_id": "llama3-70b-8192",
+    "llm_response_content": "{\n   \"resultados\":[\n      {\n         \"indicador\":\"Número de milicianos armados\",\n         \"categoria\":\"conflicto\",\n         \"valor_numerico\":null,\n         \"unidad\":null,\n         \"ambito_geografico\":[\"Venezuela\"],\n         \"periodo_referencia_inicio\":null,\n         \"periodo_referencia_fin\":null,\n         \"tipo_periodo\":null,\n         \"fuente_especifica\":null,\n         \"notas_contexto\":null\n      },\n      {\n         \"indicador\":\"Fecha de marcha del Día del Trabajador\",\n         \"categoria\":\"social\",\n         \"valor_numerico\":1,\n         \"unidad\":\"día del mes\",\n         \"ambito_geografico\":[\"Venezuela\"],\n         \"periodo_referencia_inicio\":\"2023-05-01\",\n         \"periodo_referencia_fin\":\"2023-05-01\",\n         \"tipo_periodo\":\"puntual\",\n         \"fuente_especifica\":null,\n         \"notas_contexto\":null\n      }\n   ]\n}"
+}

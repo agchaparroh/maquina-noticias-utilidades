@@ -1,0 +1,6 @@
+{
+    "test_id": "test_005",
+    "tarea": "relevancia",
+    "model_id": "llama-3.1-8b-instant",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Propuesta de cerrar el Congreso de la República desata debate político\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Justicia/Legal\"],\n   \"resumen_breve\": \"El exalcalde de Medellín, Daniel Quintero Calle, propone cerrar el Congreso de la República para resetear la institucionalidad del país\"\n}"
+}
