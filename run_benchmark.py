@@ -5,7 +5,7 @@ import logging
 import asyncio
 import csv
 from pathlib import Path
-from groq import Groq, GroqError, APITimeoutError, RateLimitError
+from groq import AsyncGroq, GroqError, APITimeoutError, RateLimitError
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
 from tqdm.asyncio import tqdm_asyncio # Barra de progreso para async
 from datetime import datetime, timezone
@@ -14,9 +14,10 @@ from datetime import datetime, timezone
 # Modelos a probar (IDs de la API de Groq)
 MODELOS_A_PROBAR = [
     "llama-3.1-8b-instant",
-    "gemma-2-9b-it",
-    "qwen-2.5-32b",
-    # "llama-3.3-70b-versatile" # Descomentar para incluir el modelo más grande
+    "gemma2-9b-it",
+    "llama3-8b-8192",
+    "llama3-70b-8192",
+    "llama-3.3-70b-versatile" # Añadimos este también
 ]
 
 # Tareas a realizar (mapeo a nombres internos)
@@ -127,7 +128,7 @@ Eres un analista experto en extraer información clave de noticias para una base
 Un HECHO es un suceso, acción, anuncio, declaración reportada o dato biográfico concreto.
 Una EXPLICACIÓN es una definición de un concepto, una descripción de una normativa, un resumen de un proceso o contexto histórico.
 
-Para CADA hecho o explicación, proporciona la siguiente información en formato JSON, como un elemento de una lista (`[...]`):
+Para CADA hecho o explicación, proporciona la siguiente información en formato JSON, como un elemento de una lista:
 {{
     "contenido": "Descripción concisa y autocontenida del hecho/explicación en tiempo verbal adecuado (máx. 70 palabras).",
     "tipo_hecho": "Selecciona UNO de: {lista_tipos_hecho}.",
@@ -149,7 +150,9 @@ Instrucciones Adicionales:
 - Para 'tipo_hecho=DECLARACION', extrae afirmaciones reportadas (no citas literales).
 - Para 'tipo_hecho=CONCEPTO/NORMATIVA', el 'contenido' debe ser la explicación/definición.
 - Infiere fechas y ubicaciones del contexto si no son explícitas. Si no hay fecha para un hecho, usa la fecha de publicación del artículo ({fecha_pub}) como 'fecha_ocurrencia_inicio'.
-- Asegúrate de que la salida sea una lista JSON válida: `[ {{hecho1}}, {{hecho2}}, ... ]`. No incluyas NADA antes ni después de la lista JSON.
+- Asegúrate de que la salida sea una lista JSON válida: [ {{hecho1}}, {{hecho2}}, ... ]. No incluyas NADA antes ni después de la lista JSON.
+
+IMPORTANTE: La salida DEBE ser un ÚNICO objeto JSON válido que contenga UNA sola clave llamada "resultados". El valor de esta clave "resultados" DEBE ser la lista de los hechos extraídos. Ejemplo de estructura: {{"resultados": [ {{...}}, {{...}}, ... ]}}. No incluyas NADA más fuera de este objeto JSON principal. Verifica la validez del JSON completo.
 
 Artículo:
 Título: {titulo}
@@ -158,7 +161,7 @@ País Pub: {pais}
 Contenido:
 {contenido}
 
-Respuesta (lista JSON):
+Respuesta (objeto JSON con clave "resultados"):
 """
         return prompt.strip()
 
@@ -167,7 +170,7 @@ Respuesta (lista JSON):
         prompt = f"""
 Eres un especialista en Reconocimiento de Entidades Nombradas (NER) para textos periodísticos en español. Analiza el siguiente texto e identifica TODAS las entidades relevantes.
 
-Para CADA entidad, proporciona la siguiente información en formato JSON, como un elemento de una lista (`[...]`):
+Para CADA entidad, proporciona la siguiente información en formato JSON, como un elemento de una lista:
 {{
     "nombre": "Nombre CANÓNICO o más completo de la entidad (ej. 'Organización de las Naciones Unidas (ONU)', 'Pedro Sánchez Pérez-Castejón', 'Ley Orgánica 3/2018'). Intenta desambiguar contextualmente (ej. 'Elecciones Generales España 2023').",
     "tipo": "Selecciona UNO de: {lista_tipos_entidad}.",
@@ -185,12 +188,14 @@ Instrucciones Adicionales:
 - Para EVENTO, incluye elecciones, cumbres, protestas con nombre.
 - Para NORMATIVA, incluye leyes, decretos, tratados.
 - Para CONCEPTO, incluye ideas, teorías, mercados, casos ('Caso Gürtel'), relaciones ('Relaciones Argentina-Brasil').
-- Asegúrate de que la salida sea una lista JSON válida: `[ {{entidad1}}, {{entidad2}}, ... ]`. No incluyas NADA antes ni después de la lista JSON.
+- Asegúrate de que la salida sea una lista JSON válida: [ {{entidad1}}, {{entidad2}}, ... ]. No incluyas NADA antes ni después de la lista JSON.
+
+IMPORTANTE: La salida DEBE ser un ÚNICO objeto JSON válido que contenga UNA sola clave llamada "resultados". El valor de esta clave "resultados" DEBE ser la lista de las entidades extraídas. Ejemplo de estructura: {{"resultados": [ {{...}}, {{...}}, ... ]}}. No incluyas NADA más fuera de este objeto JSON principal. Verifica la validez del JSON completo.
 
 Texto a analizar:
 {contenido}
 
-Respuesta (lista JSON):
+Respuesta (objeto JSON con clave "resultados"):
 """
         return prompt.strip()
 
@@ -199,7 +204,7 @@ Respuesta (lista JSON):
         prompt = f"""
 Eres un extractor de citas textuales de artículos periodísticos. Identifica TODAS las citas literales directas (generalmente entre comillas o atribuidas con verbos como "dijo", "afirmó", "declaró").
 
-Para CADA cita encontrada, proporciona la siguiente información en formato JSON, como un elemento de una lista (`[...]`):
+Para CADA cita encontrada, proporciona la siguiente información en formato JSON, como un elemento de una lista:
 {{
     "cita": "El texto EXACTO de la cita, tal como aparece en el artículo.",
     "emisor_nombre": "El nombre de la PERSONA u ORGANIZACIÓN que emitió la cita, tal como se menciona cerca de la cita.",
@@ -211,12 +216,14 @@ Para CADA cita encontrada, proporciona la siguiente información en formato JSON
 Instrucciones Adicionales:
 - Extrae solo citas literales, no paráfrasis (esas van como Hechos de tipo DECLARACION).
 - Incluye la atribución (quién lo dijo) de la forma más precisa posible en 'emisor_nombre'.
-- Asegúrate de que la salida sea una lista JSON válida: `[ {{cita1}}, {{cita2}}, ... ]`. No incluyas NADA antes ni después de la lista JSON.
+- Asegúrate de que la salida sea una lista JSON válida: [ {{cita1}}, {{cita2}}, ... ]. No incluyas NADA antes ni después de la lista JSON.
+
+IMPORTANTE: La salida DEBE ser un ÚNICO objeto JSON válido que contenga UNA sola clave llamada "resultados". El valor de esta clave "resultados" DEBE ser la lista de las citas extraídas. Ejemplo de estructura: {{"resultados": [ {{...}}, {{...}}, ... ]}}. No incluyas NADA más fuera de este objeto JSON principal. Verifica la validez del JSON completo.
 
 Texto a analizar:
 {contenido}
 
-Respuesta (lista JSON):
+Respuesta (objeto JSON con clave "resultados"):
 """
         return prompt.strip()
 
@@ -225,7 +232,7 @@ Respuesta (lista JSON):
         prompt = f"""
 Eres un especialista en extraer datos cuantitativos estructurados de textos periodísticos. Identifica TODAS las menciones a cifras, estadísticas, porcentajes, cantidades monetarias, etc.
 
-Para CADA dato cuantitativo relevante, proporciona la siguiente información en formato JSON, como un elemento de una lista (`[...]`):
+Para CADA dato cuantitativo relevante, proporciona la siguiente información en formato JSON, como un elemento de una lista:
 {{
     "indicador": "Descripción clara de QUÉ se está midiendo (ej. 'Tasa de inflación interanual', 'PIB trimestral', 'Presupuesto de Defensa', 'Número de asistentes a manifestación').",
     "categoria": "Categoría general del dato. Selecciona UNA de: {lista_categorias_datos}.",
@@ -243,12 +250,14 @@ Instrucciones Adicionales:
 - Sé preciso con los números y unidades. Convierte texto como 'mil millones' a números si es posible.
 - Infiere el ámbito geográfico y el periodo del contexto si no son explícitos junto al número.
 - Extrae solo datos concretos, no estimaciones vagas si no tienen número.
-- Asegúrate de que la salida sea una lista JSON válida: `[ {{dato1}}, {{dato2}}, ... ]`. No incluyas NADA antes ni después de la lista JSON.
+- Asegúrate de que la salida sea una lista JSON válida: [ {{dato1}}, {{dato2}}, ... ]. No incluyas NADA antes ni después de la lista JSON.
+
+IMPORTANTE: La salida DEBE ser un ÚNICO objeto JSON válido que contenga UNA sola clave llamada "resultados". El valor de esta clave "resultados" DEBE ser la lista de los datos extraídos. Ejemplo de estructura: {{"resultados": [ {{...}}, {{...}}, ... ]}}. No incluyas NADA más fuera de este objeto JSON principal. Verifica la validez del JSON completo.
 
 Texto a analizar:
 {contenido}
 
-Respuesta (lista JSON):
+Respuesta (objeto JSON con clave "resultados"):
 """
         return prompt.strip()
 
@@ -276,14 +285,14 @@ def es_error_reintentable(exception):
     reraise=True
 )
 async def llamar_groq_con_metricas(
-    client: Groq,
+    client: AsyncGroq,
     model_id: str,
     prompt: str,
     test_id: str,
     tarea: str,
     temperature: float = DEFAULT_TEMPERATURE,
     max_tokens: int = DEFAULT_MAX_TOKENS,
-    # Groq espera un objeto JSON, incluso si contiene una lista.
+    # Groq espera un objeto JSON, lo que ahora coincide con nuestro formato {"resultados": [...]}
     response_format: dict = {"type": "json_object"}
 ) -> tuple[str | None, dict]:
     """Llama a Groq, mide métricas, maneja errores y reintentos."""
@@ -300,7 +309,7 @@ async def llamar_groq_con_metricas(
             messages=[{"role": "user", "content": prompt}],
             model=model_id,
             temperature=temperature,
-            max_tokens=max_tokens,
+            max_completion_tokens=max_tokens,
             response_format=response_format,
             # seed=42 # Para reproducibilidad si ayuda
         )
@@ -382,7 +391,7 @@ def guardar_metricas_csv(metrics: dict, csv_filepath: Path):
 
 # --- Lógica Principal Asíncrona ---
 
-async def procesar_articulo(client: Groq, article_path: Path, output_dir_base: Path, csv_filepath: Path):
+async def procesar_articulo(client: AsyncGroq, article_path: Path, output_dir_base: Path, csv_filepath: Path):
     """Procesa un único artículo con todas las tareas y modelos."""
     test_id = article_path.stem
     logger.info(f"--- Procesando Artículo: {test_id} ---")
@@ -437,10 +446,9 @@ async def main():
 
     try:
         api_key = load_api_key()
-        # Aumentar timeout y límites de conexión si es necesario
-        limits = httpx.Limits(max_keepalive_connections=5, max_connections=10) # Valores de ejemplo
-        client = Groq(api_key=api_key, timeout=90.0, default_limits=limits)
-        logger.info("Cliente Groq inicializado.")
+        # Inicializar el cliente AsyncGroq
+        client = AsyncGroq(api_key=api_key, timeout=90.0)
+        logger.info("Cliente AsyncGroq inicializado.")
     except ValueError:
         return
 
