@@ -1,0 +1,6 @@
+{
+    "test_id": "test_030",
+    "tarea": "relevancia",
+    "model_id": "gemma2-9b-it",
+    "llm_response_content": "{\n  \"puntuacion_relevancia\": 8,\n  \"justificacion_relevancia\": \"Conflicto policial-independentistas en Cataluña\",\n  \"categorias_asignadas\": [\n    \"Política Nacional\",\n    \"Conflicto/Seguridad\",\n    \"Sociedad/Derechos\"\n  ],\n  \"resumen_breve\": \"Políticos catalanes buscan expulsar a la Policía Nacional de su sede en Barcelona, generando tensión y miedo entre los agentes.\"\n}"
+}

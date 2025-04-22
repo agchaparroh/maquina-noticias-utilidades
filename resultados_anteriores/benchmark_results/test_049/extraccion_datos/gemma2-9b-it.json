@@ -1,0 +1,6 @@
+{
+    "test_id": "test_049",
+    "tarea": "extraccion_datos",
+    "model_id": "gemma2-9b-it",
+    "llm_response_content": "{\n  \"resultados\": [\n    {\n      \"indicador\": \"Fecha del evento\",\n      \"categoria\": \"electoral\",\n      \"valor_numerico\": 5,\n      \"unidad\": \"día\",\n      \"ambito_geografico\": [\n        \"Medellín\"\n      ],\n      \"periodo_referencia_inicio\": \"2023-04-05\",\n      \"tipo_periodo\": \"puntual\"\n    },\n    {\n      \"indicador\": \"Número de la restricción Pico y Placa\",\n      \"categoria\": \"otro\",\n      \"valor_numerico\": 0,\n      \"unidad\": null,\n      \"ambito_geografico\": [\n        \"Medellín\"\n      ],\n      \"periodo_referencia_inicio\": null,\n      \"tipo_periodo\": \"puntual\"\n    },\n    {\n      \"indicador\": \"Número de la restricción Pico y Placa\",\n      \"categoria\": \"otro\",\n      \"valor_numerico\": 6,\n      \"unidad\": null,\n      \"ambito_geografico\": [\n        \"Medellín\"\n      ],\n      \"periodo_referencia_inicio\": null,\n      \"tipo_periodo\": \"puntual\"\n    }\n  ]\n}"
+}

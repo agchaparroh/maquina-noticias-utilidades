@@ -1,0 +1,6 @@
+{
+    "test_id": "test_006",
+    "tarea": "extraccion_datos",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Porcentaje de votos obtenidos por Daniel Noboa en Ecuador\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": 55.64,\n         \"unidad\": \"%\",\n         \"ambito_geografico\": [\"Ecuador\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": \"resultados oficiales\",\n         \"notas_contexto\": null\n      }\n   ]\n}"
+}

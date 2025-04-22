@@ -1,0 +1,6 @@
+{
+    "test_id": "test_056",
+    "tarea": "relevancia",
+    "model_id": "llama-3.3-70b-versatile",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Tragedia nacional con respuesta gubernamental\",\n   \"categorias_asignadas\": [\"Sociedad/Derechos\", \"Política Nacional\"],\n   \"resumen_breve\": \"Abinader promete apoyo a víctimas del Jet Set\"\n}"
+}

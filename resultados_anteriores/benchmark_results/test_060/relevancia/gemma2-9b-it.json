@@ -1,0 +1,6 @@
+{
+    "test_id": "test_060",
+    "tarea": "relevancia",
+    "model_id": "gemma2-9b-it",
+    "llm_response_content": "{\n  \"puntuacion_relevancia\": 8,\n  \"justificacion_relevancia\": \"Investigación sobre compra fallida de casa de Allende.\",\n  \"categorias_asignadas\": [\n    \"Política Nacional\",\n    \"Justicia/Legal\"\n  ],\n  \"resumen_breve\": \"Funcionarios de Bienes Nacionales no asisten a comisión investigadora sobre compra fallida de casa de Allende.\"\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "test_id": "test_038",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Propuesta de autonomía total en Bolivia con implicaciones en política y economía\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Economía\"],\n   \"resumen_breve\": \"Tuto propone autonomía total en Bolivia, descentralizando salud, educación y seguridad\"\n}"
+}

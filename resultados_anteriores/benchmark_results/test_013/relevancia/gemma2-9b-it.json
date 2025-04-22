@@ -1,0 +1,6 @@
+{
+    "test_id": "test_013",
+    "tarea": "relevancia",
+    "model_id": "gemma2-9b-it",
+    "llm_response_content": "{\n  \"puntuacion_relevancia\": 4,\n  \"justificacion_relevancia\": \"Fuga de reos en cárcel de Guatemala, posible conexión con banda criminal.\",\n  \"categorias_asignadas\": [\n    \"Conflicto/Seguridad\",\n    \"Justicia/Legal\"\n  ],\n  \"resumen_breve\": \"Se descubrió un túnel subterráneo en una cárcel guatemalteca que un grupo de reos, incluyendo a un miembro de la banda 'Los Falsos Pastores', intentaba usar para escapar.\"\n}"
+}

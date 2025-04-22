@@ -1,0 +1,6 @@
+{
+    "test_id": "test_057",
+    "tarea": "relevancia",
+    "model_id": "gemma2-9b-it",
+    "llm_response_content": "{\n  \"puntuacion_relevancia\": 7,\n  \"justificacion_relevancia\": \"Crítica a CELAC y gobierno hondureño por cumbre.\",\n  \"categorias_asignadas\": [\n    \"Política Nacional\",\n    \"Política Internacional\",\n    \"Diplomacia\"\n  ],\n  \"resumen_breve\": \"Candidato hondureño critica la CELAC y al gobierno por la cumbre de Tegucigalpa.\"\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "test_id": "test_072",
+    "tarea": "relevancia",
+    "model_id": "llama3-70b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Impacto en elecciones regionales y municipales en Perú\",\n   \"categorias_asignadas\": [\"Elecciones\", \"Política Nacional\"],\n   \"resumen_breve\": \"Partidos políticos que no participarán en elecciones generales pueden inscribirse para elecciones regionales y municipales en Perú\"\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "test_id": "test_062",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"El presidente de la República Dominicana habla sobre la tragedia del Jet Set y su impacto personal\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Conflicto/Seguridad\"],\n   \"resumen_breve\": \"El presidente de la República Dominicana, Luis Abinader, habla sobre la tragedia del Jet Set y su impacto personal\"\n}"
+}

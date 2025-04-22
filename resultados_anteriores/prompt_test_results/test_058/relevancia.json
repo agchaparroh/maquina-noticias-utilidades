@@ -1,0 +1,10 @@
+{
+    "test_id": "test_058",
+    "tarea": "relevancia",
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}",
+    "llm_response_content": "Error: No content received or generated"
+}

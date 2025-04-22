@@ -1,0 +1,6 @@
+{
+    "test_id": "test_041",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Llamado al cuidado y prudencia por el presidente en Semana Santa\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Justicia/Legal\", \"Sociedad/Derechos\"],\n   \"resumen_breve\": \"El presidente Luis Abinader pide prudencia y cuidado en Semana Santa y anuncia operativo de seguridad\"\n}"
+}

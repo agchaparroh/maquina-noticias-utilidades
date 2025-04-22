@@ -1,0 +1,6 @@
+{
+    "test_id": "test_022",
+    "tarea": "relevancia",
+    "model_id": "llama-3.3-70b-versatile",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Tensiones entre potencias\",\n   \"categorias_asignadas\": [\"Política Internacional\", \"Economía\", \"Política Nacional\"],\n   \"resumen_breve\": \"Milei niega presión de EE. UU. sobre swap chino\"\n}"
+}

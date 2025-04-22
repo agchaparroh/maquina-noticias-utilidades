@@ -1,0 +1,6 @@
+{
+    "test_id": "test_004",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Informa sobre la segunda vuelta electoral en Ecuador y denuncias de irregularidades\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Elecciones\"],\n   \"resumen_breve\": \"El Parlamento del Mercosur presentó un informe sobre la segunda vuelta electoral en Ecuador, denunciando irregularidades y problemas en la campaña\"\n}"
+}

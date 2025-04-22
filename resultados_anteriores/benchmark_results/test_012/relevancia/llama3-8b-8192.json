@@ -1,0 +1,6 @@
+{
+    "test_id": "test_012",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"El regreso del presidente electo y la toma de posesión en el Palacio de Carondelet es un evento político relevante en el país\",\n   \"categorias_asignadas\": [\"Política Nacional\"],\n   \"resumen_breve\": \"El presidente electo Daniel Noboa regresa al Palacio de Carondelet después de ganar la segunda vuelta electoral\"\n}"
+}

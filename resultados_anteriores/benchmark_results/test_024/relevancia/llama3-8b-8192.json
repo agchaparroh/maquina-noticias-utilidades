@@ -1,0 +1,6 @@
+{
+    "test_id": "test_024",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 0,\n   \"justificacion_relevancia\": \"No contiene información política o relevante\",\n   \"categorias_asignadas\": [],\n   \"resumen_breve\": \"No contiene un tema principal\"\n}"
+}

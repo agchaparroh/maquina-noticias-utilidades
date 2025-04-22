@@ -1,0 +1,6 @@
+{
+    "test_id": "test_050",
+    "tarea": "extraccion_datos",
+    "model_id": "gemma2-9b-it",
+    "llm_response_content": "{\n  \"resultados\": [\n    {\n      \"indicador\": \"Auxilio del FMI a Argentina\",\n      \"categoria\": \"económico\",\n      \"valor_numerico\": 20000000000,\n      \"unidad\": \"dólares\",\n      \"ambito_geografico\": [\n        \"Argentina\",\n        \"Estados Unidos\"\n      ],\n      \"periodo_referencia_inicio\": null,\n      \"periodo_referencia_fin\": null,\n      \"tipo_periodo\": \"puntual\",\n      \"fuente_especifica\": \"Texto\",\n      \"notas_contexto\": null\n    }\n  ]\n}"
+}

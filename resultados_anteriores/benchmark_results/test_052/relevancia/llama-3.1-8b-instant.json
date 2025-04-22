@@ -1,0 +1,6 @@
+{
+    "test_id": "test_052",
+    "tarea": "relevancia",
+    "model_id": "llama-3.1-8b-instant",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"Inversión gubernamental en infraestructura ambiental en Bolivia\",\n   \"categorias_asignadas\": [\"Economía\", \"Política Nacional\"],\n   \"resumen_breve\": \"El presidente Luis Arce anuncia inversión de más de $us 50 millones para construir planta de tratamiento de aguas residuales en Tarija, Bolivia\"\n}"
+}

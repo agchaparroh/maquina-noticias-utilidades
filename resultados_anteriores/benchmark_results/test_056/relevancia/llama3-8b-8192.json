@@ -1,0 +1,6 @@
+{
+    "test_id": "test_056",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"El presidente Abinader anuncia apoyo al gobierno para víctimas y rescatistas de la tragedia en la discoteca Jet Set\",\n   \"categorias_asignadas\": [\"Conflicto/Seguridad\", \"Política Nacional\"],\n   \"resumen_breve\": \"El presidente Abinader anuncia apoyo al gobierno para víctimas y rescatistas de la tragedia en la discoteca Jet Set\"\n}"
+}

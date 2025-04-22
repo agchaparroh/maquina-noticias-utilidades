@@ -1,0 +1,6 @@
+{
+    "test_id": "test_048",
+    "tarea": "extraccion_citas",
+    "model_id": "llama3-70b-8192",
+    "llm_response_content": "{\n   \"resultados\":[\n      {\n         \"cita\":\"no solo por su cabellera envidiable y su dentadura ejemplar\",\n         \"emisor_nombre\":\"el autor\",\n         \"contexto\":\"Cuando llegó con creces y hace tres lustros a la palestra del Premio Nobel de Literatura\",\n         \"fecha_cita\":null,\n         \"relevancia_cita\":4\n      },\n      {\n         \"cita\":\"un hombre que nunca dejó de ser cadete\",\n         \"emisor_nombre\":\"alguna voz callada y sabia\",\n         \"contexto\":\"definirlo como\",\n         \"fecha_cita\":null,\n         \"relevancia_cita\":3\n      },\n      {\n         \"cita\":\"inelegante ni atrevido\",\n         \"emisor_nombre\":\"Octavio\",\n         \"contexto\":\"poner sobre la mesa de las ideas la posible discusión más que necesaria\",\n         \"fecha_cita\":null,\n         \"relevancia_cita\":3\n      },\n      {\n         \"cita\":\"si era cierto que yo había celebrado al vuelo su Premio Nobel asentando mi admiración como envidia por su dentadura y cabellera\",\n         \"emisor_nombre\":\"Mario Vargas Llosa\",\n         \"contexto\":\"conversación con el autor\",\n         \"fecha_cita\":null,\n         \"relevancia_cita\":4\n      }\n   ]\n}"
+}

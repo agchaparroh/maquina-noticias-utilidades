@@ -1,0 +1,6 @@
+{
+    "test_id": "test_042",
+    "tarea": "extraccion_entidades",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Consejo Nacional Electoral\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"CNE\"],\n         \"descripcion_contextual\": \"Entidad encargada de supervisar el proceso electoral\",\n         \"relevancia_articulo\": 6\n      },\n      {\n         \"nombre\": \"Daniel Noboa\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [],\n         \"descripcion_contextual\": \"Candidato a la presidencia\",\n         \"relevancia_articulo\": 9\n      },\n      {\n         \"nombre\": \"Luisa González\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [],\n         \"descripcion_contextual\": \"Candidata del correísmo\",\n         \"relevancia_articulo\": 8\n      },\n      {\n         \"nombre\": \"Correísmo\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"correísmo\"],\n         \"descripcion_contextual\": \"Tendencia política\",\n         \"relevancia_articulo\": 7\n      },\n      {\n         \"nombre\": \"Segunda vuelta\",\n         \"tipo\": \"EVENTO\",\n         \"alias\": [],\n         \"descripcion_contextual\": \"Elección presidencial\",\n         \"relevancia_articulo\": 9\n      }\n   ]\n}"
+}

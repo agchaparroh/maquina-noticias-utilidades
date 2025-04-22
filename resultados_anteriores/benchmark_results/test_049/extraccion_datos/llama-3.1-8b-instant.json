@@ -1,0 +1,6 @@
+{
+    "test_id": "test_049",
+    "tarea": "extraccion_datos",
+    "model_id": "llama-3.1-8b-instant",
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Pico y Placa en Medellín\",\n         \"categoria\": \"otro\",\n         \"valor_numerico\": \"0\",\n         \"unidad\": \"\",\n         \"ambito_geografico\": [\"Medellín\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Pico y Placa en Medellín\",\n         \"categoria\": \"otro\",\n         \"valor_numerico\": \"6\",\n         \"unidad\": \"\",\n         \"ambito_geografico\": [\"Medellín\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      }\n   ]\n}"
+}

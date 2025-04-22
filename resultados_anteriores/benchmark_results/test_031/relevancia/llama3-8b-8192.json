@@ -1,0 +1,6 @@
+{
+    "test_id": "test_031",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Presenta un plan de obras de infraestructura para conectar América Latina con Asia-Pacífico\",\n   \"categorias_asignadas\": [\"Economía\", \"Política Internacional\", \"Conflicto/Seguridad\"],\n   \"resumen_breve\": \"Chile presenta plan de obras para el Corredor Bioceánico Vial, que unirá el norte del país con Argentina, Paraguay y Brasil\"\n}"
+}

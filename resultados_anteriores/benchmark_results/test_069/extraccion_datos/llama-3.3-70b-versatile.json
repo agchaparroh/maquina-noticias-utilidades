@@ -1,0 +1,6 @@
+{
+    "test_id": "test_069",
+    "tarea": "extraccion_datos",
+    "model_id": "llama-3.3-70b-versatile",
+    "llm_response_content": "{\n   \"resultados\": [\n       {\n           \"indicador\": \"Porcentaje de votación de Maxi Pullaro\",\n           \"categoria\": \"electoral\",\n           \"valor_numerico\": 34.61,\n           \"unidad\": \"%\",\n           \"ambito_geografico\": [\"Santa Fe\"],\n           \"periodo_referencia_inicio\": null,\n           \"periodo_referencia_fin\": null,\n           \"tipo_periodo\": null,\n           \"fuente_especifica\": null,\n           \"notas_contexto\": null\n       },\n       {\n           \"indicador\": \"Porcentaje de votación de Pullaro en relación al electorado total\",\n           \"categoria\": \"electoral\",\n           \"valor_numerico\": 15,\n           \"unidad\": \"%\",\n           \"ambito_geografico\": [\"Santa Fe\"],\n           \"periodo_referencia_inicio\": null,\n           \"periodo_referencia_fin\": null,\n           \"tipo_periodo\": null,\n           \"fuente_especifica\": null,\n           \"notas_contexto\": null\n       }\n   ]\n}"
+}

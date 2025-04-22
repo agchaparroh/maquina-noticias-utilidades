@@ -1,0 +1,6 @@
+{
+    "test_id": "test_070",
+    "tarea": "extraccion_datos",
+    "model_id": "gemma2-9b-it",
+    "llm_response_content": "{\n  \"resultados\": [\n    {\n      \"indicador\": \"Fecha de las elecciones parlamentarias y regionales\",\n      \"categoria\": \"electoral\",\n      \"valor_numerico\": 25,\n      \"unidad\": \"mayo\",\n      \"ambito_geografico\": [\n        \"Venezuela\"\n      ],\n      \"periodo_referencia_inicio\": \"2025-05-25\",\n      \"periodo_referencia_fin\": \"2025-05-25\",\n      \"tipo_periodo\": \"puntual\"\n    },\n    {\n      \"indicador\": \"Año desde el que se aplica la forma de elección\",\n      \"categoria\": \"electoral\",\n      \"valor_numerico\": 2020,\n      \"unidad\": null,\n      \"ambito_geografico\": [\n        \"Venezuela\"\n      ],\n      \"periodo_referencia_inicio\": null,\n      \"periodo_referencia_fin\": null,\n      \"tipo_periodo\": null\n    },\n    {\n      \"indicador\": \"Año hasta el que Diosdado Cabello no podría ejercer funciones políticas\",\n      \"categoria\": \"político\",\n      \"valor_numerico\": 2032,\n      \"unidad\": null,\n      \"ambito_geografico\": [\n        \"Venezuela\"\n      ],\n      \"periodo_referencia_inicio\": null,\n      \"periodo_referencia_fin\": null,\n      \"tipo_periodo\": null\n    }\n  ]\n}"
+}

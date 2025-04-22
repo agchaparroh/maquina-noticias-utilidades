@@ -1,0 +1,6 @@
+{
+    "test_id": "test_047",
+    "tarea": "extraccion_datos",
+    "model_id": "llama-3.3-70b-versatile",
+    "llm_response_content": "{\n   \"resultados\": [\n       {\n           \"indicador\": \"Día del Trabajador\",\n           \"categoria\": \"social\",\n           \"valor_numerico\": 1,\n           \"unidad\": \"día del mes\",\n           \"ambito_geografico\": [\"Venezuela\"],\n           \"periodo_referencia_inicio\": \"2024-05-01\",\n           \"periodo_referencia_fin\": \"2024-05-01\",\n           \"tipo_periodo\": \"puntual\",\n           \"fuente_especifica\": null,\n           \"notas_contexto\": \"Conmemoración\"\n       }\n   ]\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "test_id": "test_007",
+    "tarea": "relevancia",
+    "model_id": "llama-3.3-70b-versatile",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Presos políticos en Venezuela\",\n   \"categorias_asignadas\": [\n       \"Política Internacional\",\n       \"Justicia/Legal\",\n       \"Sociedad/Derechos\"\n   ],\n   \"resumen_breve\": \"Partido pide evaluación de presos políticos\"\n}"
+}

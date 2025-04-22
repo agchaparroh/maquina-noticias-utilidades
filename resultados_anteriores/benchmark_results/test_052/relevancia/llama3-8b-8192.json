@@ -1,0 +1,6 @@
+{
+    "test_id": "test_052",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 5,\n   \"justificacion_relevancia\": \"Anuncio de inversión para construir planta de tratamiento de aguas residuales en Tarija\",\n   \"categorias_asignadas\": [\"Economía\", \"Sociedad/Derechos\"],\n   \"resumen_breve\": \"El presidente Luis Arce anuncia inversión para construir planta de tratamiento de aguas residuales en Tarija\"\n}"
+}
