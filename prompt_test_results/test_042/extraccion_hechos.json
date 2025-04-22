@@ -1,10 +1,10 @@
 {
     "test_id": "test_042",
     "tarea": "extraccion_hechos",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"contenido\": \"El presidente Daniel Noboa es el ganador de la segunda vuelta con el 55,65 % de los votos válidos.\",\n         \"tipo_hecho\": \"SUCESO\",\n         \"fecha_ocurrencia_inicio\": \"2025-04-15T00:00:00Z\",\n         \"fecha_ocurrencia_fin\": null,\n         \"precision_temporal\": \"exacta\",\n         \"paises\": [\"None\"],\n         \"ubicaciones_especificas\": [],\n         \"importancia\": 9,\n         \"confiabilidad\": 5,\n         \"etiquetas\": [\"política\", \"elecciones\", \"presidencia\"],\n         \"es_evento_futuro\": false,\n         \"estado_programacion\": null\n      },\n      {\n         \"contenido\": \"El correísmo cometió varios errores que contribuyeron al triunfo de Daniel Noboa.\",\n         \"tipo_hecho\": \"DECLARACION\",\n         \"fecha_ocurrencia_inicio\": \"2025-04-15T00:00:00Z\",\n         \"fecha_ocurrencia_fin\": null,\n         \"precision_temporal\": \"exacta\",\n         \"paises\": [\"None\"],\n         \"ubicaciones_especificas\": [],\n         \"importancia\": 8,\n         \"confiabilidad\": 4,\n         \"etiquetas\": [\"política\", \"elecciones\", \"correísmo\"],\n         \"es_evento_futuro\": false,\n         \"estado_programacion\": null\n      }\n   ]\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

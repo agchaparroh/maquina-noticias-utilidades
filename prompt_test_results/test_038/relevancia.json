@@ -1,10 +1,10 @@
 {
     "test_id": "test_038",
     "tarea": "relevancia",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Propuesta de autonomía total en Bolivia con implicaciones en educación, salud y seguridad\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Economía\", \"Conflicto/Seguridad\"],\n   \"explicacion_concisa\": \"El expmandatario boliviano Tuto propone autonomía total en Bolivia, descentralizando responsabilidades en educación, salud y seguridad a las regiones y municipios, y plantea la presentación de declaraciones juradas anticipadas para los candidatos\"\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

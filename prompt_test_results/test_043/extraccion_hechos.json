@@ -1,10 +1,10 @@
 {
     "test_id": "test_043",
     "tarea": "extraccion_hechos",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"contenido\": \"Autoridades federales detuvieron a siete presuntos integrantes de una célula delictiva del 'Cártel del Pacífico' dedicada a la elaboración y distribución de droga.\",\n         \"tipo_hecho\": \"SUCESO\",\n         \"fecha_ocurrencia_inicio\": \"2025-04-14T00:00:00Z\",\n         \"fecha_ocurrencia_fin\": null,\n         \"precision_temporal\": \"exacta\",\n         \"paises\": [\"MX\"],\n         \"ubicaciones_especificas\": [\"Ciudad de México\", \"Puebla\"],\n         \"importancia\": 9,\n         \"confiabilidad\": 5,\n         \"etiquetas\": [\"crimen\", \"drogas\", \"autoridades\"],\n         \"es_evento_futuro\": false,\n         \"estado_programacion\": null\n      },\n      {\n         \"contenido\": \"El supuesto líder del grupo, Joel Alfonso Urrea Yariar, alias El Gangoso, ordenó un ataque con drones armados contra soldados en represalia por una incautación previa.\",\n         \"tipo_hecho\": \"DECLARACION\",\n         \"fecha_ocurrencia_inicio\": \"2025-03-23T00:00:00Z\",\n         \"fecha_ocurrencia_fin\": null,\n         \"precision_temporal\": \"exacta\",\n         \"paises\": [\"MX\"],\n         \"ubicaciones_especificas\": [\"Carrizalejo, Sinaloa\"],\n         \"importancia\": 8,\n         \"confiabilidad\": 5,\n         \"etiquetas\": [\"crimen\", \"ataque\", \"represalia\"],\n         \"es_evento_futuro\": false,\n         \"estado_programacion\": null\n      },\n      {\n         \"contenido\": \"Se detuvo a dos presuntos integrantes de la misma célula criminal, Germán Eduardo Yuriar Martínez, de 31 años, alias El Chapo, y Fabián Gaspar Aguilar Rendón de 41 años.\",\n         \"tipo_hecho\": \"SUCESO\",\n         \"fecha_ocurrencia_inicio\": \"2025-04-14T00:00:00Z\",\n         \"fecha_ocurrencia_fin\": null,\n         \"precision_temporal\": \"exacta\",\n         \"paises\": [\"MX\"],\n         \"ubicaciones_especificas\": [\"Puebla\"],\n         \"importancia\": 8,\n         \"confiabilidad\": 5,\n         \"etiquetas\": [\"crimen\", \"detención\", \"drogas\"],\n         \"es_evento_futuro\": false,\n         \"estado_programacion\": null\n      }\n   ]\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

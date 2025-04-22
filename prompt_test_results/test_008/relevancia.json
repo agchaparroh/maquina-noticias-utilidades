@@ -1,10 +1,10 @@
 {
     "test_id": "test_008",
     "tarea": "relevancia",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"El fallecimiento de Mario Vargas Llosa es un evento relevante en la esfera hispana\",\n   \"categorias_asignadas\": [\"Sociedad/Derechos\", \"Análisis/Contexto\"],\n   \"explicacion_concisa\": \"El artículo informa sobre la reacción de la embajada peruana en EE. UU. y el Colegio Militar Leoncio Prado al fallecimiento del escritor y Nobel de Literatura Mario Vargas Llosa, destacando su legado literario y ciudadano\"\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

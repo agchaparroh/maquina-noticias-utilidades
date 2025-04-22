@@ -1,10 +1,10 @@
 {
     "test_id": "test_003",
     "tarea": "extraccion_citas",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"\\\"Felicitamos al nuevo presidente de la República del Ecuador, Daniel Noboa. El hermano pueblo de Ecuador puede siempre contar con Colombia para trabajar juntos por una América Latina libre, soberana y en paz\\\"\",\n         \"emisor_nombre\": \"Laura Sarabia\",\n         \"contexto\": \"en la red social X\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

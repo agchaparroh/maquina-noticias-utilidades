@@ -1,10 +1,10 @@
 {
     "test_id": "test_015",
     "tarea": "extraccion_citas",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"\\\"representan el sentir y la esperanza de millones de ecuatorianos y ecuatorianas\\\"\",\n         \"emisor_nombre\": \"El Movimiento de Unidad Plurinacional Pachakutik\",\n         \"contexto\": \"En su declaración, el movimiento expresó su deseo de que las propuestas presentadas por el presidente electo durante su campaña se lleven a cabo en beneficio de la nación\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"Más allá de los resultados, reconocemos y agradecemos el compromiso de nuestra militancia durante todo este proceso\\\"\",\n         \"emisor_nombre\": \"El Movimiento de Unidad Plurinacional Pachakutik\",\n         \"contexto\": \"Señaló el comunicado\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

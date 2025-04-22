@@ -1,10 +1,10 @@
 {
     "test_id": "test_012",
     "tarea": "extraccion_datos",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Porcentaje de votos válidos obtenidos por Daniel Noboa en la segunda vuelta\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": 55.65,\n         \"unidad\": \"%\",\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": \"puntual\",\n         \"fuente_especifica\": \"Consejo Nacional Electoral\",\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Porcentaje de votos válidos obtenidos por Luisa González en la segunda vuelta\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": 44.35,\n         \"unidad\": \"%\",\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": \"puntual\",\n         \"fuente_especifica\": \"Consejo Nacional Electoral\",\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Porcentaje de actas electorales escrutadas\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": 97.33,\n         \"unidad\": \"%\",\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": \"puntual\",\n         \"fuente_especifica\": \"Consejo Nacional Electoral\",\n         \"notas_contexto\": null\n      }\n   ]\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

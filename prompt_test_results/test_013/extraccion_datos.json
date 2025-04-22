@@ -1,10 +1,10 @@
 {
     "test_id": "test_013",
     "tarea": "extraccion_datos",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Número de reos que intentaban fugarse del Centro de Rehabilitación de Puerto Barrios\",\n         \"categoria\": \"demográfico\",\n         \"valor_numerico\": 5,\n         \"unidad\": \"personas\",\n         \"ambito_geografico\": [\"Izabal\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": \"puntual\",\n         \"fuente_especifica\": \"Policía Nacional Civil\",\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Profundidad del túnel subterráneo encontrado en el Centro de Rehabilitación de Puerto Barrios\",\n         \"categoria\": \"otro\",\n         \"valor_numerico\": 3,\n         \"unidad\": \"metros\",\n         \"ambito_geografico\": [\"Izabal\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": \"puntual\",\n         \"fuente_especifica\": \"Policía Nacional Civil\",\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Edad de Marcos Baudilio Godoy Trujillo, líder de la banda 'Los Falsos Pastores'\",\n         \"categoria\": \"demográfico\",\n         \"valor_numerico\": 51,\n         \"unidad\": \"años\",\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": \"puntual\",\n         \"fuente_especifica\": \"Policía Nacional Civil\",\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Número de años que Godoy Trujillo se fugó del centro de detención en 2016\",\n         \"categoria\": \"otro\",\n         \"valor_numerico\": 1,\n         \"unidad\": \"años\",\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": \"2016\",\n         \"periodo_referencia_fin\": \"2016\",\n         \"tipo_periodo\": \"puntual\",\n         \"fuente_especifica\": \"Policía Nacional Civil\",\n         \"notas_contexto\": null\n      }\n   ]\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

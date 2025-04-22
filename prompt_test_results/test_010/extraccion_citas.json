@@ -1,10 +1,10 @@
 {
     "test_id": "test_010",
     "tarea": "extraccion_citas",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"\\\"Nosotros vamos a respetar que se haga justicia\\\"\",\n         \"emisor_nombre\": \"Luis Abinader\",\n         \"contexto\": \"Durante una entrevista en el Palacio Nacional\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"Si hay un gobierno que ha respetado todos los procesos legales es este Gobierno\\\"\",\n         \"emisor_nombre\": \"Luis Abinader\",\n         \"contexto\": \"Durante una entrevista en el Palacio Nacional\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"El equipo que fue desde aquí no sabía andar en la capital ni sabía dónde había un vertedero para botar eso, y nosotros le autorizamos que lo trajera para acá, para Santiago, porque aquí es que botamos los desperdicios del monorriel\\\"\",\n         \"emisor_nombre\": \"Ramón Rodríguez\",\n         \"contexto\": \"Explicando el traslado de escombros de la discoteca Jet Set\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

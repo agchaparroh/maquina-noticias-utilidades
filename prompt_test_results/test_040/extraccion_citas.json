@@ -1,10 +1,10 @@
 {
     "test_id": "test_040",
     "tarea": "extraccion_citas",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"\\\"Creo que necesitamos una respuesta firme de los gobiernos de la región, para oponerse a estas iniciativas de crear espacios por fuera de la protección de la ley\\\"\",\n         \"emisor_nombre\": \"Juan Pappier\",\n         \"contexto\": \"En entrevista con El Diario de Hoy\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"Aquí hay una orden que dice que el Gobierno de Estados Unidos sí tiene que tomar medidas decisivas para lograr el retorno de esta persona (Kilmar Ábrego) y esa orden judicial hay que cumplirla\\\"\",\n         \"emisor_nombre\": \"Juan Pappier\",\n         \"contexto\": \"En entrevista con El Diario de Hoy\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"Lo que quieren crear es un agujero negro donde no rige la protección de los derechos humanos. Y cuando se crean estos agujeros negros, eso pone en peligro los derechos humanos de todos\\\"\",\n         \"emisor_nombre\": \"Juan Pappier\",\n         \"contexto\": \"En entrevista con El Diario de Hoy\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"Sí, pero aquí hay una orden que dice que sí que sí puede, que el Gobierno de Estados Unidos sí tiene que tomar medidas decisivas para lograr el retorno de esta persona y esa orden judicial hay que cumplirla\\\"\",\n         \"emisor_nombre\": \"Juan Pappier\",\n         \"contexto\": \"En entrevista con El Diario de Hoy\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"Del régimen de Maduro no hay que esperar. Este es el mismo régimen que tiene detenidos a cientos de presos políticos en su país, incluyendo decenas de ciudadanos extranjeros que están detenidos, algunos desaparecidos de forma forzosa\\\"\",\n         \"emisor_nombre\": \"Juan Pappier\",\n         \"contexto\": \"En entrevista con El Diario de Hoy\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"Lo que nosotros hemos documentado es que en varios casos estas personas estaban detenidas en centros migratorios de los Estados Unidos en Texas o en California desde la administración Biden\\\"\",\n         \"emisor_nombre\": \"Juan Pappier\",\n         \"contexto\": \"En entrevista con El Diario de Hoy\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

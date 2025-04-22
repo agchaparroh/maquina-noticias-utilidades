@@ -1,10 +1,10 @@
 {
     "test_id": "test_020",
     "tarea": "extraccion_citas",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"\\\"Es un capítulo olvidado de nuestro pasado\\\"\",\n         \"emisor_nombre\": \"María Dueñas\",\n         \"contexto\": \"Descripción de la novela de María Dueñas\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"El arte de la guerra\\\", de Sun Tzu\",\n         \"emisor_nombre\": \"Carlos Bassas del Rey\",\n         \"contexto\": \"Descripción de la novela de Carlos Bassas del Rey\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"Sospechas, paranoia, atmósfera asfixiante y una construcción cruda de la vida en la Islandia del siglo XVIII y la convulsa corte danesa de la época\",\n         \"emisor_nombre\": \"Arnaldur Indridason\",\n         \"contexto\": \"Descripción de la novela de Arnaldur Indridason\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"Mordaz, irónico y ambiguo, Flashman es un cobarde, un oportunista, un embustero, un racista y un agresor sexual de tomo y lomo\",\n         \"emisor_nombre\": \"George Macdonald Fraser\",\n         \"contexto\": \"Descripción de la novela de George Macdonald Fraser\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"Narrando en paralelo el proceso con el que el monarca hispano logró convertirse también en rey de Portugal\",\n         \"emisor_nombre\": \"José Calvo Poyato\",\n         \"contexto\": \"Descripción de la novela de José Calvo Poyato\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"Novela de aventuras llena de acción\",\n         \"emisor_nombre\": \"Matthew Harffy\",\n         \"contexto\": \"Descripción de la novela de Matthew Harffy\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

@@ -1,10 +1,10 @@
 {
     "test_id": "test_049",
     "tarea": "extraccion_entidades",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Miguel Uribe\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Centro Democrático\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Pico y Placa Medellín\",\n         \"tipo\": \"EVENTO\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Medellín\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"2026\",\n         \"tipo\": \"EVENTO\",\n         \"alias\": []\n      }\n   ]\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

@@ -1,10 +1,10 @@
 {
     "test_id": "test_001",
     "tarea": "extraccion_citas",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"El proyecto tiene por objeto crear un mecanismo de evaluación periódica, certificación técnica y prevención de riesgos estructurales.\",\n         \"emisor_nombre\": \"Pedro Tineo\",\n         \"contexto\": \"El senador de Monte Plata por el Partido Revolucionario Moderno (PRM), Pedro Tineo, depositó este lunes, mediante la Secretaria Legislativa, el proyecto de ley...\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"la ley se aplicaría a todas las edificaciones e infraestructuras, tanto públicas como privadas, cuya construcción haya sido concluida diez (10) años antes de la entrada en vigencia de esta ley en todo territorio nacional o que cumplan ese plazo posteriormente.\",\n         \"emisor_nombre\": \"Nota de prensa\",\n         \"contexto\": \"Mediante una nota de prensa se explica que, la ley se aplicaría a todas las edificaciones e infraestructuras, tanto públicas como privadas...\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"toda persona física o jurídica propietaria, arrendataria o administradora de una edificación comprendida en esta ley deberá facilitar el acceso para inspección, acoger las recomendaciones emitidas y realizar las correcciones que se le indiquen.\",\n         \"emisor_nombre\": \"Pedro Tineo\",\n         \"contexto\": \"El senador Pedro Tineo establece en el artículo 21 de dicho proyecto, la responsabilidad del propietario o administrador...\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"constituye falta grave negarse a permitir la inspección; ocultar información relevante durante el proceso de supervisión; no cumplir las recomendaciones emitidas por el Sinasco; falsificar certificados o informes técnicos y exponer a terceros al uso de estructuras clasificadas como inhabilitadas.\",\n         \"emisor_nombre\": \"Pedro Tineo\",\n         \"contexto\": \"En tanto que el artículo 23, sobre Incumplimiento, afirma que constituye falta grave...\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

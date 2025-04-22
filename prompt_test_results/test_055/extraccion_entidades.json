@@ -1,10 +1,10 @@
 {
     "test_id": "test_055",
     "tarea": "extraccion_entidades",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Luis Abinader\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Gobierno\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"Poder Ejecutivo\"]\n      },\n      {\n         \"nombre\": \"República Dominicana\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Discoteca Jet Set\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"LA Semanal con la Prensa\",\n         \"tipo\": \"EVENTO\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Defensa Civil\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Cuerpo de Bomberos\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Fuerzas Armadas\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Policía Nacional\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      }\n   ]\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

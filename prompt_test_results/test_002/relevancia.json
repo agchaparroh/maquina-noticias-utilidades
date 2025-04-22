@@ -1,10 +1,10 @@
 {
     "test_id": "test_002",
     "tarea": "relevancia",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"La unión del Polo Democrático al Pacto Histórico puede influir en la política colombiana y las elecciones de 2026.\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Elecciones\"],\n   \"explicacion_concisa\": \"El Polo Democrático se une al Pacto Histórico, una coalición de izquierda, para presentarse como una sola fuerza política en las elecciones presidenciales y legislativas de 2026 en Colombia.\"\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

@@ -1,10 +1,10 @@
 {
     "test_id": "test_039",
     "tarea": "extraccion_hechos",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"contenido\": \"Donald Trump, presidente de EE. UU., dijo que el gobierno de Maduro se quedó sin dinero porque les trancamos su mercado petrolero.\",\n         \"tipo_hecho\": \"DECLARACION\",\n         \"fecha_ocurrencia_inicio\": \"2025-04-14T00:00:00Z\",\n         \"fecha_ocurrencia_fin\": null,\n         \"precision_temporal\": \"exacta\",\n         \"paises\": [\"US\", \"VE\"],\n         \"ubicaciones_especificas\": [\"Washington D.C.\"],\n         \"importancia\": 7,\n         \"confiabilidad\": 5,\n         \"etiquetas\": [\"política\", \"economía\", \"Maduro\", \"Trump\"],\n         \"es_evento_futuro\": false,\n         \"estado_programacion\": null\n      },\n      {\n         \"contenido\": \"El presidente de El Salvador, Nayib Bukele, se negó a liberar a Ábrego García, un migrante salvadoreño, y dijo que no enviaría a un terrorista a EE. UU.\",\n         \"tipo_hecho\": \"DECLARACION\",\n         \"fecha_ocurrencia_inicio\": \"2025-04-14T00:00:00Z\",\n         \"fecha_ocurrencia_fin\": null,\n         \"precision_temporal\": \"exacta\",\n         \"paises\": [\"SV\", \"US\"],\n         \"ubicaciones_especificas\": [\"Washington D.C.\"],\n         \"importancia\": 6,\n         \"confiabilidad\": 5,\n         \"etiquetas\": [\"política\", \"migración\", \"Bukele\", \"García\"],\n         \"es_evento_futuro\": false,\n         \"estado_programacion\": null\n      },\n      {\n         \"contenido\": \"El presidente Trump sugirió encarcelar también a estadounidenses en el Cecot, una megacárcel en El Salvador.\",\n         \"tipo_hecho\": \"DECLARACION\",\n         \"fecha_ocurrencia_inicio\": \"2025-04-14T00:00:00Z\",\n         \"fecha_ocurrencia_fin\": null,\n         \"precision_temporal\": \"exacta\",\n         \"paises\": [\"US\", \"SV\"],\n         \"ubicaciones_especificas\": [\"Washington D.C.\"],\n         \"importancia\": 6,\n         \"confiabilidad\": 5,\n         \"etiquetas\": [\"política\", \"prisiones\", \"Trump\"],\n         \"es_evento_futuro\": false,\n         \"estado_programacion\": null\n      }\n   ]\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

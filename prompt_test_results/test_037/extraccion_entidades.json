@@ -1,10 +1,10 @@
 {
     "test_id": "test_037",
     "tarea": "extraccion_entidades",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Gobierno de Haití\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Haití\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"República Dominicana\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Consejo presidencial de transición de Haití\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"ONU\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"Organización de las Naciones Unidas\"]\n      },\n      {\n         \"nombre\": \"Policía de Kenia\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Viv Ansanm\",\n         \"tipo\": \"OTRO\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Red Nacional de Defensa de los Derechos Humanos\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Hospital Universitario Mirebalais\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Mirebalais\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Saut-d'Eau\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"AP\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      }\n   ]\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

@@ -1,10 +1,10 @@
 {
     "test_id": "test_035",
     "tarea": "extraccion_entidades",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Organizaciones de productores de café de Chiapas\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Estados Unidos\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Contraloría\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Asamblea Nacional\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Luis Eduardo Camacho\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Dana Castañeda\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Janine Prado\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Betserai Richards\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Chiapas\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"México\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"La Estrella de Panamá\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"La Decana\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      }\n   ]\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

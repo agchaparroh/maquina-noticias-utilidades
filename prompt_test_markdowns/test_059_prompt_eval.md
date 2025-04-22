@@ -1,5 +1,5 @@
 # Evaluación Artículo: test_059
-**Modelo Probado:** `llama3-8b-8192`
+**Modelo Probado:** `llama-3.1-8b-128k`
 
 ## Metadatos del Artículo Original
 
@@ -50,13 +50,13 @@ Entre los 10 bancos con mayor volumen de depósitos, las tasas más altas para p
 
 ---
 
-## Resultados de las Tareas (llama3-8b-8192)
+## Resultados de las Tareas (llama-3.1-8b-128k)
 
 ### Tarea: relevancia
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
+   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
 
 
 <details open>
@@ -73,7 +73,7 @@ Error: No content received or generated
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
+   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
 
 
 <details open>
@@ -90,7 +90,7 @@ Error: No content received or generated
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
+   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
 
 
 <details open>
@@ -107,7 +107,7 @@ Error: No content received or generated
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
+   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
 
 
 <details open>
@@ -124,7 +124,7 @@ Error: No content received or generated
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
+   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
 
 
 <details open>

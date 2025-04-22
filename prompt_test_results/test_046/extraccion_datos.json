@@ -1,10 +1,10 @@
 {
     "test_id": "test_046",
     "tarea": "extraccion_datos",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Número de versiones del discurso del secretario de Defensa de Estados Unidos, Pete Hegseth\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": 2,\n         \"unidad\": \"\",\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": \"Pete Hegseth\",\n         \"notas_contexto\": \"Referido a la entrevista concedida a TVN\"\n      },\n      {\n         \"indicador\": \"Número de concesiones en el país que deben ser aprobadas por el gobierno nacional\",\n         \"categoria\": \"presupuestario\",\n         \"valor_numerico\": 1,\n         \"unidad\": \"\",\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": \"Gobierno nacional\",\n         \"notas_contexto\": \"Referido a la transacción comercial de los puertos Balboa y Cristóbal\"\n      },\n      {\n         \"indicador\": \"Número de siglos de presencia china en Panamá\",\n         \"categoria\": \"historico\",\n         \"valor_numerico\": 1,\n         \"unidad\": \"\",\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": \"José Raúl Mulino\",\n         \"notas_contexto\": \"Referido a la colaboración china en la construcción del Canal\"\n      }\n   ]\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

@@ -1,10 +1,10 @@
 {
     "test_id": "test_026",
     "tarea": "relevancia",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"La alerta roja institucional y el plan de contingencia por Semana Santa son relevantes para la salud pública en Guatemala.\",\n   \"categorias_asignadas\": [\"Salud\", \"Seguridad\"],\n   \"explicacion_concisa\": \"El Ministerio de Salud Pública y Asistencia Social activa un plan de contingencia y alerta roja institucional para la Semana Santa 2025, con el objetivo de prepararse para posibles emergencias y garantizar la atención médica en caso de necesidad.\"\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

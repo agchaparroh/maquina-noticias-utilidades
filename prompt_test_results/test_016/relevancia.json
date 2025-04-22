@@ -1,10 +1,10 @@
 {
     "test_id": "test_016",
     "tarea": "relevancia",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 5,\n   \"justificacion_relevancia\": \"La exconsejera solicita rectificación de un artículo que contiene afirmaciones incorrectas sobre su participación en una versión\",\n   \"categorias_asignadas\": [\"Justicia/Legal\", \"Política Nacional\"],\n   \"explicacion_concisa\": \"La exconsejera de Participación Ciudadana y Control Social Yadira Saltos Rivas envió una carta solicitando rectificación de un artículo que contiene afirmaciones incorrectas sobre su participación en una versión. La nota periodística confunde a la opinión pública y desinforma, por lo que la exconsejera solicita la rectificación para aclarar la información veraz y oportuna a la ciudadanía.\"\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

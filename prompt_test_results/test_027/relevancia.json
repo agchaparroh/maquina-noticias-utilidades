@@ -1,10 +1,10 @@
 {
     "test_id": "test_027",
     "tarea": "relevancia",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 7,\n   \"justificacion_relevancia\": \"La participación de pueblos indígenas en el Poder Judicial de la Federación es un tema de gran trascendencia en la esfera hispana.\",\n   \"categorias_asignadas\": [\"Justicia/Legal\", \"Sociedad/Derechos\"],\n   \"explicacion_concisa\": \"El Consejo Nacional de Pueblos Indígenas exige mayor inclusión en el proceso electoral para el Poder Judicial de la Federación, argumentando que la actual situación es inequitativa y que su participación busca garantizar los derechos de sus comunidades.\"\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

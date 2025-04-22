@@ -1,10 +1,10 @@
 {
     "test_id": "test_066",
     "tarea": "extraccion_citas",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"\\\"Sobre la conformación de un gabinete de ministros, vuelvo a aclarar a la opinión pública de que no existen más órdenes de aprehensión ni ampliaciones; pero sí nosotros vamos, a fin de poder llegar a la verdad histórica del hecho, los vamos a convocar exclusivamente para que presten su declaración, pero en calidad de testigos\\\"\",\n         \"emisor_nombre\": \"Luis Carlos Torrez\",\n         \"contexto\": \"En conferencia de prensa\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"La proyección del documental, el suscrito desconocía en relación a la presentación; vamos a suponer, posiblemente, que ha sido ya un hecho netamente de ministerio de Gobierno la publicación, pero nosotros días antes ya habíamos solicitado la emisión de esas órdenes\\\"\",\n         \"emisor_nombre\": \"Luis Carlos Torrez\",\n         \"contexto\": \"En conferencia de prensa\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

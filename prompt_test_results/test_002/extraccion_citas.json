@@ -1,10 +1,10 @@
 {
     "test_id": "test_002",
     "tarea": "extraccion_citas",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"\\\"Desde entonces hemos tenido en el centro de nuestro horizonte estratégico y en el quehacer político cotidiano la búsqueda y la construcción de la unidad y un sentido común para el cambio profundo de nuestro país y las desigualdades que lo atraviesan\\\"\",\n         \"emisor_nombre\": \"La dirección del partido\",\n         \"contexto\": \"En el comunicado oficial emitido a la opinión pública tras la reunión\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"Esta es una decisión trascendental que tiene una implicación para el grupo de las fuerzas que queremos la transformación progresista y social en Colombia, puesto que el Polo Democrático es un partido que ha tenido una larga historia en las últimas décadas de trabajo por la unidad de todas las corrientes de izquierda\\\"\",\n         \"emisor_nombre\": \"Iván Cepeda\",\n         \"contexto\": \"En una publicación en X\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

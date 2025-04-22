@@ -1,10 +1,10 @@
 {
     "test_id": "test_007",
     "tarea": "extraccion_entidades",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Yandir Loggiodice\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Partido Centro Democrático (PCD)\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"PCD\"]\n      },\n      {\n         \"nombre\": \"Corte Penal Internacional (CPI)\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"CPI\", \"ONU\"]\n      },\n      {\n         \"nombre\": \"Nicolás Maduro\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Carlos Azuaje\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Freddy Superlano\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Luis Camacaro\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Juan Fleites\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Dignora Hernández\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Chancellor\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Américo De Grazia\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Venezuela\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Elecciones\",\n         \"tipo\": \"EVENTO\",\n         \"alias\": []\n      }\n   ]\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

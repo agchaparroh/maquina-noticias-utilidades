@@ -1,10 +1,10 @@
 {
     "test_id": "test_060",
     "tarea": "extraccion_citas",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"Los funcionarios citados que participaron en esta operación no tenían ninguna excusa, porque no pueden andar guiados, coachings o dirigidos por otra persona\",\n         \"emisor_nombre\": \"Andrés Longton\",\n         \"contexto\": \"Durante una sesión de la Comisión Investigadora por la fallida compra de la casa del expresidente Salvador Allende\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"eran determinantes las declaraciones que podían dar los funcionarios citados acá en la comisión investigadora y que lamentablemente terminan retrasando esta investigación\",\n         \"emisor_nombre\": \"Andrés Longton\",\n         \"contexto\": \"Durante una sesión de la Comisión Investigadora por la fallida compra de la casa del expresidente Salvador Allende\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"esto no es una citación institucional. Ya no estamos en el jardín infantil y no se necesita la supervisión del ministro que tenía, por supuesto, una excusa muy atendible\",\n         \"emisor_nombre\": \"Paula Labra\",\n         \"contexto\": \"Durante una sesión de la Comisión Investigadora por la fallida compra de la casa del expresidente Salvador Allende\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"ya confirmó que va a venir. Tenemos que reagendar la fecha porque también tuvo un problema de salud\",\n         \"emisor_nombre\": \"Andrés Longton\",\n         \"contexto\": \"Durante una sesión de la Comisión Investigadora por la fallida compra de la casa del expresidente Salvador Allende\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"no teniendo la obligación, manifestó su disposición. Lo mismo la exministra Marcela Sandoval, que está invitada y ya confirmó para el próximo día lunes\",\n         \"emisor_nombre\": \"Andrés Longton\",\n         \"contexto\": \"Durante una sesión de la Comisión Investigadora por la fallida compra de la casa del expresidente Salvador Allende\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

@@ -1,10 +1,10 @@
 {
     "test_id": "test_019",
     "tarea": "relevancia",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"La alianza entre Tuto y el FRI puede tener un impacto significativo en la política boliviana\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Elecciones\"],\n   \"explicacion_concisa\": \"El expresidente boliviano Tuto Quiroga firma alianza con el FRI y Demócratas, presentará ante el TSE, y plantea autonomía total y declaración jurada anticipada para candidatos\"\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

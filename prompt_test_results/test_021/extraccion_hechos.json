@@ -1,10 +1,10 @@
 {
     "test_id": "test_021",
     "tarea": "extraccion_hechos",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"contenido\": \"La Fosa es una marcha fúnebre compuesta por Santiago Coronado Porras en 1888 y dedicada al Jesús de la Merced.\",\n         \"tipo_hecho\": \"SUCESO\",\n         \"fecha_ocurrencia_inicio\": \"1888-01-01\",\n         \"fecha_ocurrencia_fin\": null,\n         \"precision_temporal\": \"año\",\n         \"paises\": [\"GT\"],\n         \"ubicaciones_especificas\": [\"Guatemala\"],\n         \"importancia\": 8,\n         \"confiabilidad\": 5,\n         \"etiquetas\": [\"música\", \"Semana Santa\", \"Guatemala\"],\n         \"es_evento_futuro\": false,\n         \"estado_programacion\": null\n      },\n      {\n         \"contenido\": \"Santiago Coronado Porras tuvo un sueño en el que vio a Jesús salir de una fosa en la iglesia de la Merced.\",\n         \"tipo_hecho\": \"DECLARACION\",\n         \"fecha_ocurrencia_inicio\": null,\n         \"fecha_ocurrencia_fin\": null,\n         \"precision_temporal\": \"n/a\",\n         \"paises\": [\"GT\"],\n         \"ubicaciones_especificas\": [\"Guatemala\", \"Iglesia de la Merced\"],\n         \"importancia\": 7,\n         \"confiabilidad\": 4,\n         \"etiquetas\": [\"sueño\", \"Jesús de la Merced\", \"Guatemala\"],\n         \"es_evento_futuro\": false,\n         \"estado_programacion\": null\n      },\n      {\n         \"contenido\": \"La marcha fúnebre se convirtió en el emblema de la procesión del Jesús de la Merced.\",\n         \"tipo_hecho\": \"SUCESO\",\n         \"fecha_ocurrencia_inicio\": null,\n         \"fecha_ocurrencia_fin\": null,\n         \"precision_temporal\": \"n/a\",\n         \"paises\": [\"GT\"],\n         \"ubicaciones_especificas\": [\"Guatemala\", \"Procesión del Jesús de la Merced\"],\n         \"importancia\": 8,\n         \"confiabilidad\": 5,\n         \"etiquetas\": [\"Semana Santa\", \"Guatemala\", \"procesión\"],\n         \"es_evento_futuro\": false,\n         \"estado_programacion\": null\n      }\n   ]\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

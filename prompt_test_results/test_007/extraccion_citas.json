@@ -1,10 +1,10 @@
 {
     "test_id": "test_007",
     "tarea": "extraccion_citas",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"\\\"Estas personas fueron detenidas por el usurpador y sus cuerpos de seguridad únicamente por pensar diferente. Ellos son el ejemplo de democracia, libertad y de una manera distinta de ver el país. Su único ‘delito’ fue ser testigos electorales\\\"\",\n         \"emisor_nombre\": \"Yandir Loggiodice\",\n         \"contexto\": \"Loggiodice denunció que estas personas han sido detenidas por el gobierno de Nicolás Maduro por tener una opinión diferente\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"Como partido, recordamos a la comunidad internacional la solicitud que hicimos hace exactamente tres meses a la Corte Penal Internacional. En ella exigimos que, como parte del proceso de investigación que se lleva a cabo sobre Venezuela, se designe un especialista que pueda ingresar a los centros de reclusión para evaluar el estado físico y mental de los detenidos\\\"\",\n         \"emisor_nombre\": \"Yandir Loggiodice\",\n         \"contexto\": \"Recordó que el partido solicitó a la CPI hace tres meses la designación de un especialista para evaluar las condiciones de estos detenidos\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"Reiteramos a la Corte Penal Internacional que tienen la potestad de exigir, como parte del proceso de investigación en curso, el ingreso de personal especializado que pueda evaluar a los más de 900 detenidos por el usurpador. ¡Basta de indolencia!\\\"\",\n         \"emisor_nombre\": \"Yandir Loggiodice\",\n         \"contexto\": \"Dijo que la violación de los derechos humanos de estos detenidos por pensar de manera diferente se ha convertido en una realidad diaria\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

@@ -1,10 +1,10 @@
 {
     "test_id": "test_034",
     "tarea": "extraccion_hechos",
-    "model_id": "llama3-8b-8192",
+    "model_id": "llama-3.1-8b-128k",
     "success": false,
     "api_success": false,
     "json_valid": false,
-    "error_message": "API_Error: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama3-8b-8192` in organization `org_01jsay2bafeeht06zsq8qv9mct` service tier `on_demand` on tokens per minute (TPM): Limit 100000, Used 100329, Requested 2811. Please try again in 1.884s. Need more tokens? Visit https://groq.com/self-serve-support/ to request higher limits.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
     "llm_response_content": "Error: No content received or generated"
 }

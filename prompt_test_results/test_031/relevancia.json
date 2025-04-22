@@ -1,10 +1,10 @@
 {
     "test_id": "test_031",
     "tarea": "relevancia",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"El proyecto de infraestructura tiene un impacto potencial significativo en la integración regional y el comercio internacional.\",\n   \"categorias_asignadas\": [\"Economía\", \"Política Internacional\", \"Conflicto/Seguridad\"],\n   \"explicacion_concisa\": \"Chile presentó el plan de obras del Corredor Bioceánico Vial, una carretera que unirá el norte del país con Argentina, Paraguay y Brasil, con el objetivo de configurar una nueva ruta comercial entre el Atlántico y el Asia-Pacífico.\"\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

@@ -1,10 +1,10 @@
 {
     "test_id": "test_070",
     "tarea": "extraccion_hechos",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"contenido\": \"Henrique Capriles Radonski y Tomás Guanipa lideran la lista de postulaciones del partido Un Nuevo Tiempo (UNT) para las elecciones parlamentarias y regionales del 25 de mayo en Venezuela.\",\n         \"tipo_hecho\": \"SUCESO\",\n         \"fecha_ocurrencia_inicio\": \"2025-04-14T00:00:00Z\",\n         \"fecha_ocurrencia_fin\": null,\n         \"precision_temporal\": \"exacta\",\n         \"paises\": [\"VE\"],\n         \"ubicaciones_especificas\": [],\n         \"importancia\": 9,\n         \"confiabilidad\": 5,\n         \"etiquetas\": [\"politica\", \"elecciones\", \"UNT\", \"Venezuela\"],\n         \"es_evento_futuro\": true,\n         \"estado_programacion\": null\n      },\n      {\n         \"contenido\": \"Eugenio Martínez, experto en temas electorales, recordó que 'esta forma de elección que se aplica desde 2020 es inconstitucional'.\",\n         \"tipo_hecho\": \"DECLARACION\",\n         \"fecha_ocurrencia_inicio\": \"2025-04-14T00:00:00Z\",\n         \"fecha_ocurrencia_fin\": null,\n         \"precision_temporal\": \"exacta\",\n         \"paises\": [\"VE\"],\n         \"ubicaciones_especificas\": [],\n         \"importancia\": 7,\n         \"confiabilidad\": 5,\n         \"etiquetas\": [\"politica\", \"elecciones\", \"constitucionalidad\"],\n         \"es_evento_futuro\": false,\n         \"estado_programacion\": null\n      },\n      {\n         \"contenido\": \"Capriles confirmó que participará en los comicios y adelantó que después de Semana Santa ofrecerá más detalles.\",\n         \"tipo_hecho\": \"DECLARACION\",\n         \"fecha_ocurrencia_inicio\": \"2025-04-14T00:00:00Z\",\n         \"fecha_ocurrencia_fin\": null,\n         \"precision_temporal\": \"exacta\",\n         \"paises\": [\"VE\"],\n         \"ubicaciones_especificas\": [],\n         \"importancia\": 7,\n         \"confiabilidad\": 5,\n         \"etiquetas\": [\"politica\", \"elecciones\", \"Capriles\"],\n         \"es_evento_futuro\": true,\n         \"estado_programacion\": null\n      },\n      {\n         \"contenido\": \"La lista de postulados a la lista nacional de la AN de UNT-Unica incluye a 60 candidatos.\",\n         \"tipo_hecho\": \"SUCESO\",\n         \"fecha_ocurrencia_inicio\": \"2025-04-14T00:00:00Z\",\n         \"fecha_ocurrencia_fin\": null,\n         \"precision_temporal\": \"exacta\",\n         \"paises\": [\"VE\"],\n         \"ubicaciones_especificas\": [],\n         \"importancia\": 8,\n         \"confiabilidad\": 5,\n         \"etiquetas\": [\"politica\", \"elecciones\", \"UNT\"],\n         \"es_evento_futuro\": false,\n         \"estado_programacion\": null\n      }\n   ]\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

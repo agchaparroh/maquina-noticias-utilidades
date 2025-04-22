@@ -1,10 +1,10 @@
 {
     "test_id": "test_001",
     "tarea": "extraccion_entidades",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Pedro Tineo\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Partido Revolucionario Moderno (PRM)\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"PRM\"]\n      },\n      {\n         \"nombre\": \"Sistema Nacional de Supervisión y Certificación de Obras Públicas y Privadas (Sinasco)\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"Sinasco\"]\n      },\n      {\n         \"nombre\": \"Ministerio de Obras Públicas y Comunicaciones (MOPC)\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"MOPC\"]\n      },\n      {\n         \"nombre\": \"Poder Judicial\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"República Dominicana\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Caribe\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      }\n   ]\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

@@ -1,10 +1,10 @@
 {
     "test_id": "test_031",
     "tarea": "extraccion_citas",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"\\\"Es una buena noticia, porque se trata de una integración real y concreta\\\"\",\n         \"emisor_nombre\": \"Gabriel Boric\",\n         \"contexto\": \"Presentación del plan de acción del corredor bioceánico\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"coincidieron en la importancia de hacer frente a los desafíos que presenta el actual contexto internacional\\\"\",\n         \"emisor_nombre\": \"Ministros del Mercosur\",\n         \"contexto\": \"Reunión de los cancilleres del Mercosur en Buenos Aires\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"coincidieron en la necesidad de ampliar temporariamente la Lista Nacional de Excepciones al Arancel Externo Común de cada Estado parte\\\"\",\n         \"emisor_nombre\": \"Ministros del Mercosur\",\n         \"contexto\": \"Reunión de los cancilleres del Mercosur en Buenos Aires\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

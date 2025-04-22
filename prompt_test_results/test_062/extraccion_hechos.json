@@ -1,10 +1,10 @@
 {
     "test_id": "test_062",
     "tarea": "extraccion_hechos",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"contenido\": \"Luis Abinader, presidente de la República Dominicana, habló sobre la tragedia del Jet Set.\",\n         \"tipo_hecho\": \"DECLARACION\",\n         \"fecha_ocurrencia_inicio\": \"2025-04-14\",\n         \"fecha_ocurrencia_fin\": null,\n         \"precision_temporal\": \"exacta\",\n         \"paises\": [\"DO\"],\n         \"ubicaciones_especificas\": [],\n         \"importancia\": 8,\n         \"confiabilidad\": 5,\n         \"etiquetas\": [\"política\", \"República Dominicana\", \"Luis Abinader\", \"tragedia\"],\n         \"es_evento_futuro\": false,\n         \"estado_programacion\": null\n      },\n      {\n         \"contenido\": \"El presidente Abinader perdió a 11 personas cercanas, algunas familias lejanas, en la tragedia del Jet Set.\",\n         \"tipo_hecho\": \"SUCESO\",\n         \"fecha_ocurrencia_inicio\": \"2025-04-08\",\n         \"fecha_ocurrencia_fin\": null,\n         \"precision_temporal\": \"exacta\",\n         \"paises\": [\"DO\"],\n         \"ubicaciones_especificas\": [\"Jet Set\"],\n         \"importancia\": 9,\n         \"confiabilidad\": 5,\n         \"etiquetas\": [\"tragedia\", \"República Dominicana\", \"Luis Abinader\", \"víctimas\"],\n         \"es_evento_futuro\": false,\n         \"estado_programacion\": null\n      },\n      {\n         \"contenido\": \"El presidente Abinader visitó la zona cero y expresó su dolor y consternación de manera pública.\",\n         \"tipo_hecho\": \"SUCESO\",\n         \"fecha_ocurrencia_inicio\": \"2025-04-14\",\n         \"fecha_ocurrencia_fin\": null,\n         \"precision_temporal\": \"exacta\",\n         \"paises\": [\"DO\"],\n         \"ubicaciones_especificas\": [\"zona cero\"],\n         \"importancia\": 8,\n         \"confiabilidad\": 5,\n         \"etiquetas\": [\"política\", \"República Dominicana\", \"Luis Abinader\", \"visita\"],\n         \"es_evento_futuro\": false,\n         \"estado_programacion\": null\n      },\n      {\n         \"contenido\": \"El presidente Abinader mencionó que había perdido a amigos y familiares en la tragedia del Jet Set.\",\n         \"tipo_hecho\": \"DECLARACION\",\n         \"fecha_ocurrencia_inicio\": \"2025-04-14\",\n         \"fecha_ocurrencia_fin\": null,\n         \"precision_temporal\": \"exacta\",\n         \"paises\": [\"DO\"],\n         \"ubicaciones_especificas\": [],\n         \"importancia\": 8,\n         \"confiabilidad\": 5,\n         \"etiquetas\": [\"política\", \"República Dominicana\", \"Luis Abinader\", \"tragedia\"],\n         \"es_evento_futuro\": false,\n         \"estado_programacion\": null\n      }\n   ]\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

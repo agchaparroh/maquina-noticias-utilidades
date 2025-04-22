@@ -1,10 +1,10 @@
 {
     "test_id": "test_004",
     "tarea": "extraccion_citas",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"un ambiente electoral confrontativo y la circulación de imágenes de papeletas marcadas a favor de la otra candidatura.\",\n         \"emisor_nombre\": \"Acción Democrática Nacional (ADN)\",\n         \"contexto\": \"En un encuentro con Acción Democrática Nacional (ADN), el movimiento del presidente Noboa\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"la falta de garantías de imparcialidad, la difusión de encuestas manipuladas, la limitación del ejercicio de fiscalización territorial y el uso indebido de recursos públicos.\",\n         \"emisor_nombre\": \"Revolución Ciudadana y Renovación Total (RC-RETO)\",\n         \"contexto\": \"En la reunión con representantes de Revolución Ciudadana y Renovación Total (RC-RETO)\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"el proceso electoral no es imparcial y que una de las candidaturas utilizó recursos públicos en su campaña.\",\n         \"emisor_nombre\": \"Confederación de Nacionalidades Indígenas del Ecuador (Conaie)\",\n         \"contexto\": \"Se mantuvieron reuniones con la Confederación de Nacionalidades Indígenas del Ecuador (Conaie)\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"los estados de excepción deben respetar el principio de proporcionalidad y contar con mecanismos de información transparente que impidan interpretaciones de arbitrariedad o injerencia estatal.\",\n         \"emisor_nombre\": \"La Misión Electoral del Parlamento del Mercosur (Parlasur)\",\n         \"contexto\": \"Se subrayó que, en contextos electorales, los estados de excepción\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"la desinformación afectó la calidad del debate público, distorsionó la formación de la opinión electoral y comprometió las condiciones básicas de equidad informativa.\",\n         \"emisor_nombre\": \"La Misión Electoral del Parlamento del Mercosur (Parlasur)\",\n         \"contexto\": \"La desinformación en redes sociales fue más sofisticada y concentrada que en la primera vuelta\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }

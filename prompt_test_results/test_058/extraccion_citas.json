@@ -1,10 +1,10 @@
 {
     "test_id": "test_058",
     "tarea": "extraccion_citas",
-    "model_id": "llama3-8b-8192",
-    "success": true,
-    "api_success": true,
-    "json_valid": true,
-    "error_message": null,
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"\\\"Lo complejo es poder trasladar con palabras que la ciudadanía pueda entender cuál es el pronunciamiento que tiene la Corte\\\"\",\n         \"emisor_nombre\": \"Leyla Lemus\",\n         \"contexto\": \"Durante el acto protocolario en la que fue juramentada para presidir la Corte\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"Pretendemos, de hecho, renovar nuestra área de comunicación social para que los medios puedan tener de manera efectiva las resoluciones, y me refiero a tener una explicación del proceder de la Corte\\\"\",\n         \"emisor_nombre\": \"Leyla Lemus\",\n         \"contexto\": \"En el ámbito de la renovación del área de comunicación social\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"Que se pueda tener un acceso de consulta más rápida en los portales de la Corte a las agendas 15 días antes que el pleno tenga conocimiento de los expedientes\\\"\",\n         \"emisor_nombre\": \"Leyla Lemus\",\n         \"contexto\": \"En el ámbito administrativo, se pretende una mejora en los sistemas de consulta digital\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"He sido testigo de los logros como de los desafíos que enfrenta nuestro sistema constitucional. Me comprometo a impulsar una visión que haga de la justicia un instrumento más ágil, eficaz y eficiente\\\"\",\n         \"emisor_nombre\": \"Leyla Lemus\",\n         \"contexto\": \"Durante su discurso de toma de posesión como presidenta de la CC\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+    "model_id": "llama-3.1-8b-128k",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "llm_response_content": "Error: No content received or generated"
 }
