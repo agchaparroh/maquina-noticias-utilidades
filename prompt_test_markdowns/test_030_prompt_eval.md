@@ -45,332 +45,84 @@ Los policías temen que los independentistas no descansen hasta que vean como le
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 8,
-    "justificacion_relevancia": "El artículo explora la hostilidad y acoso hacia los hijos de policías en Cataluña, con implicaciones políticas y sociales importantes.",
-    "categorias_asignadas": [
-        "Política Nacional",
-        "Conflicto/Seguridad",
-        "Sociedad/Derechos"
-    ],
-    "explicacion_concisa": "El artículo describe la creciente hostilidad y acoso hacia los hijos de policías en Cataluña, incluyendo la construcción de una 'leyenda negra' y la falta de respaldo de los mandos, lo que tiene implicaciones políticas y sociales importantes."
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "El hijo de un policía nacional, Carlos (7 años), ha sido objeto de acoso y hostigamiento en varios centros educativos debido a la profesión de su padre.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-15",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "ES"
-            ],
-            "ubicaciones_especificas": [
-                "Barcelona"
-            ],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "acoso",
-                "hostigamiento",
-                "policía nacional",
-                "educación"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "La Ley de Amnistía no ha frenado el hostigamiento y acoso contra los hijos de policías nacionales en Cataluña.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-15",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "ES"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 7,
-            "confiabilidad": 4,
-            "etiquetas": [
-                "Ley de Amnistía",
-                "acoso",
-                "hostigamiento",
-                "policía nacional"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El Sindicato Unificado de Policía (SUP) denuncia que se ha construido una 'leyenda negra' en torno a la Policía Nacional en Cataluña.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-15",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "ES"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 6,
-            "confiabilidad": 4,
-            "etiquetas": [
-                "SUP",
-                "leyenda negra",
-                "policía nacional",
-                "Cataluña"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Los policías temen que los independentistas no descansen hasta que vean como les expulsan de Cataluña.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-15",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "ES"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 7,
-            "confiabilidad": 4,
-            "etiquetas": [
-                "policía nacional",
-                "independentistas",
-                "expulsión",
-                "Cataluña"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Carlos",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Policía Nacional",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "Policía Nacional"
-            ]
-        },
-        {
-            "nombre": "Jefatura Superior de Barcelona",
-            "tipo": "INSTITUCION",
-            "alias": [
-                "Jefatura Superior de Barcelona"
-            ]
-        },
-        {
-            "nombre": "ERC",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "ERC"
-            ]
-        },
-        {
-            "nombre": "Sindicato Unificado de Policía (SUP)",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "SUP"
-            ]
-        },
-        {
-            "nombre": "Pedro Sánchez",
-            "tipo": "PERSONA",
-            "alias": [
-                "Pedro Sánchez"
-            ]
-        },
-        {
-            "nombre": "Via Laietana",
-            "tipo": "LUGAR",
-            "alias": [
-                "Via Laietana"
-            ]
-        },
-        {
-            "nombre": "Cataluña",
-            "tipo": "LUGAR",
-            "alias": [
-                "Cataluña"
-            ]
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"Hijo de madero, facha y opresor\"",
-            "emisor_nombre": "Otros padres",
-            "contexto": "En el contexto de acoso y hostigamiento hacia los hijos de policías",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"No es consciente de que muchas situaciones que ha vivido es por mi culpa\"",
-            "emisor_nombre": "Funcionario de la Policía Nacional",
-            "contexto": "En declaraciones a LA RAZÓN",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Hay que sufrirlo y padecerlo\"",
-            "emisor_nombre": "Fuentes policiales",
-            "contexto": "En relación con el hostigamiento y acoso hacia los hijos de policías",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Parece que vivimos una cuenta atrás\"",
-            "emisor_nombre": "Fuentes",
-            "contexto": "En relación con la crispación e incredulidad en Cataluña",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"No hay nada que reparar\"",
-            "emisor_nombre": "Representantes de los policías",
-            "contexto": "En relación con la leyenda negra en torno a Via Laietana",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Hijo de madero, facha u opresor\"",
-            "emisor_nombre": "Otros alumnos o personal docente",
-            "contexto": "En el contexto de vejaciones y acoso hacia los hijos de policías",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Que un menor tenga que pagar el precio del uniforme de un progenitor\"",
-            "emisor_nombre": "Sindicato Unificado de Policía (SUP)",
-            "contexto": "En relación con la denuncia de acoso y hostigamiento hacia los hijos de policías",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"No vamos a permitir que un prófugo de la Justicia y sus colegas más radicales nos arrinconen\"",
-            "emisor_nombre": "Policías",
-            "contexto": "En relación con la preocupación por su seguridad y futuro",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Acabarán cediendo. Es otro chantaje político\"",
-            "emisor_nombre": "Policías",
-            "contexto": "En relación con la postura del Gobierno en el caso de Via Laietana",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Es como una nube que tenemos encima que nos provoca estrés y ansiedad\"",
-            "emisor_nombre": "Funcionario de la Policía Nacional",
-            "contexto": "En relación con la incertidumbre y preocupación por su futuro",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Número de niños que sufren acoso escolar por ser hijos de policías",
-            "categoria": "social",
-            "valor_numerico": 1,
-            "unidad": "casos",
-            "ambito_geografico": [
-                "Barcelona"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": null,
-            "notas_contexto": "No se proporciona un número exacto, pero se menciona que no es un caso aislado"
-        },
-        {
-            "indicador": "Porcentaje de profesores que ignoran o desprecian a los hijos de policías",
-            "categoria": "educativo",
-            "valor_numerico": 0.5,
-            "unidad": "%",
-            "ambito_geografico": [
-                "Barcelona"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": null,
-            "notas_contexto": "No se proporciona un porcentaje exacto, pero se menciona que es un problema común"
-        },
-        {
-            "indicador": "Número de policías que temen perder su puesto de trabajo",
-            "categoria": "presupuestario",
-            "valor_numerico": 100,
-            "unidad": "agentes",
-            "ambito_geografico": [
-                "Cataluña"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": null,
-            "notas_contexto": "No se proporciona un número exacto, pero se menciona que es un gran número"
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

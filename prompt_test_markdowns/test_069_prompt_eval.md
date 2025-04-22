@@ -47,22 +47,17 @@ QUIERO RECIBIRLO
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 7,
-    "justificacion_relevancia": "Críticas a Macri y Milei involucran temas políticos y económicos relevantes en la esfera hispana",
-    "categorias_asignadas": [
-        "Política Nacional",
-        "Economía"
-    ],
-    "explicacion_concisa": "Javier Milei critica a Mauricio Macri y su primo Jorge por desdoblar elecciones porteñas, acusándolos de traición y de impedir un acuerdo electoral. El jefe de Estado también se refiere a la política cambiaria durante el gobierno de Macri y su impacto en la economía."
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
@@ -71,7 +66,7 @@ QUIERO RECIBIRLO
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama3-8b-8192` in organization `org_01jsay2bafeeht06zsq8qv9mct` service tier `on_demand` on tokens per minute (TPM): Limit 100000, Used 101567, Requested 2914. Please try again in 2.688799999s. Need more tokens? Visit https://groq.com/self-serve-support/ to request higher limits.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}`
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
@@ -86,147 +81,17 @@ Error: No content received or generated
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Javier Milei",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Mauricio Macri",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Karina Milei",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Jorge Macri",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Lacunza",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Hernán Lacunza",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Sergio Masa",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Maximiliano Pullaro",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Patricia Bullrich",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Diego Valenzuela",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Martín Menem",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Luis Majul",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Antoni Gutiérrez-Rubí",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Fundación FIFA",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "PRO",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "La Libertad Avanza (LLA)",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Cámara de Diputados",
-            "tipo": "INSTITUCION",
-            "alias": []
-        },
-        {
-            "nombre": "Santa Fe",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Rosario",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Tres de Febrero",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Ciudad de Buenos Aires",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Elecciones porteñas",
-            "tipo": "EVENTO",
-            "alias": []
-        },
-        {
-            "nombre": "Elecciones distritales de Santa Fe",
-            "tipo": "EVENTO",
-            "alias": []
-        },
-        {
-            "nombre": "Elecciones a jefe de Gobierno porteño",
-            "tipo": "EVENTO",
-            "alias": []
-        },
-        {
-            "nombre": "Elecciones a legisladores locales",
-            "tipo": "EVENTO",
-            "alias": []
-        },
-        {
-            "nombre": "Congreso de LLA bonaerense",
-            "tipo": "EVENTO",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
@@ -235,7 +100,7 @@ Error: No content received or generated
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama3-8b-8192` in organization `org_01jsay2bafeeht06zsq8qv9mct` service tier `on_demand` on tokens per minute (TPM): Limit 100000, Used 101304, Requested 2040. Please try again in 2.006399999s. Need more tokens? Visit https://groq.com/self-serve-support/ to request higher limits.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}`
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
@@ -250,86 +115,16 @@ Error: No content received or generated
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Tasa de participación electoral en Santa Fe",
-            "categoria": "electoral",
-            "valor_numerico": 34.61,
-            "unidad": "%",
-            "ambito_geografico": [
-                "Santa Fe"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Porcentaje de votos obtenidos por Pullaro en Santa Fe",
-            "categoria": "electoral",
-            "valor_numerico": 15,
-            "unidad": "%",
-            "ambito_geografico": [
-                "Santa Fe"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de votos obtenidos por LLA en Santa Fe",
-            "categoria": "electoral",
-            "valor_numerico": null,
-            "unidad": null,
-            "ambito_geografico": [
-                "Santa Fe"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de legisladores que propuso el PRO en la Ciudad",
-            "categoria": "electoral",
-            "valor_numerico": 4,
-            "unidad": null,
-            "ambito_geografico": [
-                "Ciudad de Buenos Aires"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de legisladores que propuso LLA en la Ciudad",
-            "categoria": "electoral",
-            "valor_numerico": 1,
-            "unidad": null,
-            "ambito_geografico": [
-                "Ciudad de Buenos Aires"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": null,
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

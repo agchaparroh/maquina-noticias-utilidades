@@ -65,22 +65,17 @@ CIV reporta daños estructurales en el puente Vado Ancho de la ruta CA-2 occiden
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 6,
-    "justificacion_relevancia": "La acción impugna la designación de un alto funcionario en la SAT, con implicaciones en la justicia y la economía",
-    "categorias_asignadas": [
-        "Justicia/Legal",
-        "Economía"
-    ],
-    "explicacion_concisa": "Un abogado interpone un amparo contra la designación de Werner Ovalle como titular de la SAT, sin proporcionar razones, y se anuncia a través de un netcenter"
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
@@ -89,7 +84,7 @@ CIV reporta daños estructurales en el puente Vado Ancho de la ruta CA-2 occiden
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama3-8b-8192` in organization `org_01jsay2bafeeht06zsq8qv9mct` service tier `on_demand` on tokens per minute (TPM): Limit 100000, Used 100329, Requested 2811. Please try again in 1.884s. Need more tokens? Visit https://groq.com/self-serve-support/ to request higher limits.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}`
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
@@ -104,222 +99,50 @@ Error: No content received or generated
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Mynor Giovanny Caté Chirix",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Werner Florencio Ovalle Ramírez",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Consuelo Porras Argueta",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Jonathan Menkos",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Leyla Susana Lemus Arriaga",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Erick Castillo",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Ministerio Público (MP)",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Superintendencia de Administración Tributaria (SAT)",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Ministerio de Finanzas Públicas (Minfin)",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Corte de Constitucionalidad (CC)",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Tribunal Constitucional",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Organismo Judicial",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "¡Yes, Master!",
-            "tipo": "OTRO",
-            "alias": [
-                "¡Yes, Master!",
-                "netcenter"
-            ]
-        },
-        {
-            "nombre": "Alejandro Giammattei",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "María Consuelo Porras Argueta",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Jorge Luis Donado Vivar",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Procurador General de la Nación (PGN)",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "¡Yes, Master!”, aseguró que se “consumó” la acción, al mismo tiempo que pidió soltar “a los perro” y etiquetó al Organismo Judicial.",
-            "emisor_nombre": "¡Yes, Master!",
-            "contexto": "La cuenta compartió una de las páginas del amparo, evitando dejar visible los detalles sobre el registro de la acción, así como los datos de identificación del abogado y el lugar en el que recibirá notificaciones.",
-            "fecha_cita": null
-        },
-        {
-            "cita": "Consumado es —repito, consumado es.",
-            "emisor_nombre": "Abogado MAYNOR GIOVANNY CATÉ CHIRIX",
-            "contexto": "La cuenta compartió una de las páginas del amparo, evitando dejar visible los detalles sobre el registro de la acción, así como los datos de identificación del abogado y el lugar en el que recibirá notificaciones.",
-            "fecha_cita": null
-        },
-        {
-            "cita": "La Corte tiene conocimiento de un instrumento, y de hecho resuelve con base a un instrumento que se denomina Constitución Política de la República de Guatemala",
-            "emisor_nombre": "Leyla Susana Lemus Arriaga",
-            "contexto": "La presidenta de la Corte de Constitucionalidad (CC) fue cuestionada por medios de comunicación respecto al amparo interpuesto contra el nombramiento de Ovalle Ramírez.",
-            "fecha_cita": null
-        },
-        {
-            "cita": "Cómo hacer que la clase política y que las instituciones que tienen entre sus funciones el ejercicio de poder, no lleguen a este tipo de tensiones, que eventualmente tiene que resolver la Corte, yo creo que esa ya es una pregunta que excede a lo que nosotros nos toca",
-            "emisor_nombre": "Leyla Susana Lemus Arriaga",
-            "contexto": "La presidenta de la alta Corte remarcó que como Tribunal Constitucional tiene que, respetando las atribuciones políticas de cada ente, deben resolver de conformidad con la Constitución.",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Número de votos obtenidos por el partido X",
-            "categoria": "electoral",
-            "valor_numerico": null,
-            "unidad": null,
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Puntaje obtenido por los postulantes a Fiscal General y Jefe del MP",
-            "categoria": "electoral",
-            "valor_numerico": 90,
-            "unidad": null,
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "Tribunal Constitucional",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de puntos necesarios para ser considerado en la lista de candidatos",
-            "categoria": "electoral",
-            "valor_numerico": 60,
-            "unidad": null,
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Año en el que se realizará el plan de trabajo de la SAT",
-            "categoria": "presupuestario",
-            "valor_numerico": 2025,
-            "unidad": null,
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Año en el que finalizará el plan de trabajo de la SAT",
-            "categoria": "presupuestario",
-            "valor_numerico": 2030,
-            "unidad": null,
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

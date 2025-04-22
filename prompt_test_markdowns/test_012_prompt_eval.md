@@ -35,277 +35,84 @@ Con el 97,33 % de las actas electorales escrutadas y presentadas por el Consejo 
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 6,
-    "justificacion_relevancia": "El regreso del presidente electo a la residencia presidencial es un evento político relevante en el país",
-    "categorias_asignadas": [
-        "Política Nacional"
-    ],
-    "explicacion_concisa": "El presidente electo Daniel Noboa regresa al Palacio de Carondelet, residencia presidencial, después de ganar la segunda vuelta electoral con el 55,65% de los votos válidos"
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "El presidente electo Daniel Noboa regresó al Palacio de Carondelet",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [],
-            "ubicaciones_especificas": [
-                "Palacio de Carondelet"
-            ],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "presidencia",
-                "Noboa"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El Palacio de Carondelet se iluminó con luces moradas",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [],
-            "ubicaciones_especificas": [
-                "Palacio de Carondelet"
-            ],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "presidencia",
-                "Noboa"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El presidente electo Daniel Noboa fue recibido con honores militares y la entrega simbólica de las llaves del Palacio de Carondelet",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [],
-            "ubicaciones_especificas": [
-                "Palacio de Carondelet"
-            ],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "presidencia",
-                "Noboa"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El presidente electo Daniel Noboa participará en el cambio de guardia a las 12:00 en la plaza Grande",
-            "tipo_hecho": "EVENTO",
-            "fecha_ocurrencia_inicio": "2025-04-15T12:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [],
-            "ubicaciones_especificas": [
-                "plaza Grande"
-            ],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "presidencia",
-                "Noboa"
-            ],
-            "es_evento_futuro": true,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Daniel Noboa es el ganador de la segunda vuelta con el 55,65 % de los votos válidos",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-13T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [],
-            "ubicaciones_especificas": [],
-            "importancia": 9,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "elecciones",
-                "Noboa"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Daniel Noboa",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Lavinia Valbonesi",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Palacio de Carondelet",
-            "tipo": "LUGAR",
-            "alias": [
-                "Carondelet"
-            ]
-        },
-        {
-            "nombre": "Presidencia de la República",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Consejo Nacional Electoral",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Luisa González",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "plaza de la Independencia",
-            "tipo": "LUGAR",
-            "alias": [
-                "plaza Grande"
-            ]
-        },
-        {
-            "nombre": "segunda vuelta",
-            "tipo": "EVENTO",
-            "alias": []
-        },
-        {
-            "nombre": "Caso correísmo",
-            "tipo": "CONCEPTO",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"Noboa, amigo, el pueblo está contigo\"",
-            "emisor_nombre": "Simpatizantes del mandatario",
-            "contexto": "Coreaban los ciudadanos que se reunieron en los exteriores de Carondelet",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Porcentaje de votos válidos obtenidos por Daniel Noboa en la segunda vuelta",
-            "categoria": "electoral",
-            "valor_numerico": 55.65,
-            "unidad": "%",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": "Consejo Nacional Electoral",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Porcentaje de votos válidos obtenidos por Luisa González en la segunda vuelta",
-            "categoria": "electoral",
-            "valor_numerico": 44.35,
-            "unidad": "%",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": "Consejo Nacional Electoral",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Porcentaje de actas electorales escrutadas",
-            "categoria": "electoral",
-            "valor_numerico": 97.33,
-            "unidad": "%",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": "Consejo Nacional Electoral",
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

@@ -37,285 +37,84 @@ Quiroga dijo también que solo un debate público de todos los candidatos permit
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 8,
-    "justificacion_relevancia": "Propuesta de autonomía total en Bolivia con implicaciones en educación, salud y seguridad",
-    "categorias_asignadas": [
-        "Política Nacional",
-        "Economía",
-        "Conflicto/Seguridad"
-    ],
-    "explicacion_concisa": "El expmandatario boliviano Tuto propone autonomía total en Bolivia, descentralizando responsabilidades en educación, salud y seguridad a las regiones y municipios, y plantea la presentación de declaraciones juradas anticipadas para los candidatos"
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "Tuto firma alianza con Demócratas y Frente Revolucionario de Izquierda.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "BO"
-            ],
-            "ubicaciones_especificas": [
-                "Santa Cruz"
-            ],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "alianza",
-                "gobierno"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Tuto propone autonomía total y descentralización de salud, educación y seguridad.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "BO"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 9,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "autonomía",
-                "gobierno"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "La alianza debe presentarse ante el Tribunal Supremo Electoral durante esta semana.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "BO"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "alianza",
-                "TSE"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Quiroga propone que los candidatos realicen su declaración jurada de bienes y rentas anticipadamente.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "BO"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "candidatos",
-                "declaración jurada"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Quiroga plantea que solo un debate público de todos los candidatos permitirá a la población ver y escuchar las propuestas.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "BO"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "debate",
-                "candidatos"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Tuto",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Demócratas",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Frente Revolucionario de Izquierda (FRI)",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "FRI"
-            ]
-        },
-        {
-            "nombre": "Jorge Quiroga",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Tribunal Supremo Electoral (TSE)",
-            "tipo": "INSTITUCION",
-            "alias": [
-                "TSE"
-            ]
-        },
-        {
-            "nombre": "Santa Cruz",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Ley 2027 Estatuto del Funcionario Público",
-            "tipo": "NORMATIVA",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"Lo dijimos una y otra vez, la autonomía solo va a funcionar si empieza a implementarse de forma total; es con salud, educación y seguridad descentralizadas (y entregadas) a las regiones y a los municipios, para que tú sepas quién le brinda salud, quién educa a tus hijos(...) que no adoctrinen, que eduquen a los niños\"",
-            "emisor_nombre": "Jorge Quiroga",
-            "contexto": "En su discurso",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"yo no soy millonario, pero soy rico, tengo tres títulos universitarios, esa es mi riqueza\"",
-            "emisor_nombre": "Jorge Quiroga",
-            "contexto": "En su discurso",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"solo un debate público de todos los candidatos permitirá a la población ver y escuchar las propuestas que tienen para el caso de que sean gobierno\"",
-            "emisor_nombre": "Jorge Quiroga",
-            "contexto": "En su discurso",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Presupuesto asignado a Defensa",
-            "categoria": "presupuestario",
-            "valor_numerico": null,
-            "unidad": null,
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de candidatos que deben presentar declaración jurada de bienes y rentas",
-            "categoria": "electoral",
-            "valor_numerico": null,
-            "unidad": null,
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de títulos universitarios de Jorge Quiroga",
-            "categoria": "otro",
-            "valor_numerico": 3,
-            "unidad": null,
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

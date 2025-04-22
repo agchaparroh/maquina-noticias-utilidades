@@ -36,162 +36,51 @@ A través de un comunicado, el organismo norteamericano explicó que durante la 
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 8,
-    "justificacion_relevancia": "Comentarios sobre el modelo económico de Bolivia y Venezuela y su impacto en la región",
-    "categorias_asignadas": [
-        "Economía",
-        "Política Internacional"
-    ],
-    "explicacion_concisa": "El presidente argentino Javier Milei critica el modelo económico socialista de Bolivia y Venezuela, y destaca la importancia de las reformas económicas en Argentina. También se reunió con el Secretario del Tesoro de EE.UU. para discutir posibles acuerdos de cooperación bilateral."
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "El presidente de Argentina, Javier Milei, se refirió al modelo económico boliviano en plena conferencia de prensa junto al Secretario del Tesoro de los Estados Unidos, Scott Bessent, en Casa Rosada.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-12",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "AR",
-                "US",
-                "BO"
-            ],
-            "ubicaciones_especificas": [
-                "Casa Rosada"
-            ],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "economía",
-                "Bolivia"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El presidente de Argentina, Javier Milei, describió la situación en Venezuela como una 'villa miseria' y una 'cárcel a cielo abierto'.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-12",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "AR",
-                "VE"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 6,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "Venezuela"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El presidente de Argentina, Javier Milei, también habló de la situación en Bolivia y dijo que 'ha encontrado el límite material de su modelo socialista'.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-12",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "AR",
-                "BO"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 6,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "Bolivia"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Javier Milei",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Bolivia",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Venezuela",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Argentina",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "EEUU",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "Estados Unidos"
-            ]
-        },
-        {
-            "nombre": "Scott Bessent",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Donald Trump",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Casa Rosada",
-            "tipo": "LUGAR",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
@@ -200,7 +89,7 @@ A través de un comunicado, el organismo norteamericano explicó que durante la 
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: BadRequestError: Error code: 400 - {'error': {'message': "Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': '{\n   "resultados": [\n      {\n         "cita": ""Ha encontrado el límite material de su modelo socialista"",\n         "emisor_nombre": "Javier Milei",\n         "contexto": "Milei se refirió al modelo económico boliviano en plena conferencia de prensa",\n         "fecha_cita": null\n      },\n      {\n         "cita": ""política socialista"",\n         "emisor_nombre": "Javier Milei",\n         "contexto": "Milei también habló de la situación en Venezuela y su política socialista",\n         "fecha_cita": null\n      },\n      {\n         "cita": ""Esto no se limitó en la República Argentina, similares experiencias tuvieron lugar en Venezuela, Ecuador, Bolivia e incluso Brasil, en menor medida. Producto de políticas socialistas escondidas bajo un nacionalismo meramente retórico, muchos de esos países terminaron destrozados"",\n         "emisor_nombre": "Javier Milei",\n         "contexto": "Disparó el primer mandatario argentino",\n         "fecha_cita": null\n      },\n      {\n         "cita": ""Empezando por Venezuela que es una gran villa miseria, además de una cárcel a cielo abierto, o Bolivia que también ha encontrado el límite material de su modelo socialista y que paulatinamente se está deteriorando"",\n         "emisor_nombre": "Javier Milei",\n         "contexto": "Detalló",\n         "fecha_cita": null\n      },\n      {\n         "cita": ""el mundo ya no es el mismo de hace 20 o 10 años, hoy el mundo está cambiando, luego de décadas de acumular tensiones, el orden global tal como lo conocíamos se está reconfigurando"",\n         "emisor_nombre": "Javier Milei",\n         "contexto": "Detalló",\n         "fecha_cita": null\n      },\n      {\n         "cita": ""reafirmó el pleno apoyo de EEUU a las audaces reformas económicas"",\n         "emisor_nombre": "Scott Bessent",\n         "contexto": "A través de un comunicado, el organismo norteamericano explicó",\n         "fecha_cita": null\n      },\n      {\n         "cita": ""lo elogió por la pronta acción de su gobierno para reducir las barreras al comercio recíproco"",\n         "emisor_nombre": "Scott Bessent",\n         "contexto": "A través de un comunicado, el organismo norteamericano explicó",\n         "fecha_cita": null\n      }\n   ]\n}'}}`
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
@@ -215,86 +104,16 @@ Error: No content received or generated
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Tasa de deterioro del modelo socialista en Bolivia",
-            "categoria": "económico",
-            "valor_numerico": null,
-            "unidad": null,
-            "ambito_geografico": [
-                "Bolivia"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Tasa de deterioro del modelo socialista en Venezuela",
-            "categoria": "económico",
-            "valor_numerico": null,
-            "unidad": null,
-            "ambito_geografico": [
-                "Venezuela"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Tasa de deterioro del modelo socialista en Ecuador",
-            "categoria": "económico",
-            "valor_numerico": null,
-            "unidad": null,
-            "ambito_geografico": [
-                "Ecuador"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Tasa de deterioro del modelo socialista en Brasil",
-            "categoria": "económico",
-            "valor_numerico": null,
-            "unidad": null,
-            "ambito_geografico": [
-                "Brasil"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Tasa de deterioro del modelo socialista en Argentina",
-            "categoria": "económico",
-            "valor_numerico": null,
-            "unidad": null,
-            "ambito_geografico": [
-                "Argentina"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

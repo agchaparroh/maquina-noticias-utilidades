@@ -39,319 +39,84 @@ En tanto, los diputados Janine Prado y Betserai Richards revelaron que ellos si 
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 5,
-    "justificacion_relevancia": "La fiscalización de la Contraloría afecta a diputados panameños y genera polémica",
-    "categorias_asignadas": [
-        "Política Nacional",
-        "Justicia/Legal"
-    ],
-    "explicacion_concisa": "La Contraloría General de Panamá decide pagar a funcionarios legislativos con cheques, generando protestas y dificultades para algunos diputados recibir su salario"
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "Organizaciones de productores de café de Chiapas, estado de la frontera sur de México, reanudaron la exportación de café a Estados Unidos, destino del...",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-15T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "MX",
-                "US"
-            ],
-            "ubicaciones_especificas": [
-                "Chiapas"
-            ],
-            "importancia": 4,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "economía",
-                "comercio",
-                "café"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "La polémica en la Asamblea Nacional por el pago con cheque a los funcionarios también dejó algunos diputados sin poder cobrar su salario.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "MX"
-            ],
-            "ubicaciones_especificas": [
-                "Asamblea Nacional"
-            ],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "gobierno",
-                "salario"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "La situación, incluso, fue denunciada en redes sociales.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "MX"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 3,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "sociedad",
-                "redes sociales"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "La medida de pagar con cheques a funcionarios legislativos como parte de la auditoria que adelanta a este órgano del Estado por las constantes denuncias de irregularidades en distintas planillas que maneja la Asamblea.",
-            "tipo_hecho": "EXPLICACIÓN",
-            "fecha_ocurrencia_inicio": null,
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "n/a",
-            "paises": [
-                "MX"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 5,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "gobierno",
-                "auditoría",
-                "irregularidades"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "La situación se generó por la medida de la Contraloría General de pagar con cheques a funcionarios legislativos como parte de la auditoria que adelanta a este órgano del Estado por las constantes denuncias de irregularidades en distintas planillas que maneja la Asamblea.",
-            "tipo_hecho": "EXPLICACIÓN",
-            "fecha_ocurrencia_inicio": null,
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "n/a",
-            "paises": [
-                "MX"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 5,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "gobierno",
-                "auditoría",
-                "irregularidades"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "La medida de pagar con cheques a funcionarios legislativos se mantendrá, por lo menos cuatro meses.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "MX"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 5,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "gobierno",
-                "auditoría",
-                "pago"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Un diputado confirmó a La Decana que los diputados deberían ir a buscar sus cheques a la sede de la Contraloría General de la República.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "MX"
-            ],
-            "ubicaciones_especificas": [
-                "Contraloría General de la República"
-            ],
-            "importancia": 4,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "gobierno",
-                "Contraloría",
-                "pago"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Organizaciones de productores de café de Chiapas",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Estados Unidos",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Contraloría",
-            "tipo": "INSTITUCION",
-            "alias": []
-        },
-        {
-            "nombre": "Asamblea Nacional",
-            "tipo": "INSTITUCION",
-            "alias": []
-        },
-        {
-            "nombre": "Luis Eduardo Camacho",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Dana Castañeda",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Janine Prado",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Betserai Richards",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Chiapas",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "México",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "La Estrella de Panamá",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "La Decana",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"Me informan Tesorería de la Asamblea, que a los diputados (as), también se les pagará en cheque. Cómo los auditores de Contraloría cargan los cheques no he podido cobrar tampoco. Será que tendré que firmar ante él para recibirlo?\"",
-            "emisor_nombre": "Luis Eduardo Camacho",
-            "contexto": "El diputado oficialista Luis Eduardo Camacho se quejó en su cuenta de X.",
-            "fecha_cita": "null"
-        },
-        {
-            "cita": "\"Los diputados deberían ir a buscar sus cheques a la sede de la Contraloría General de la República.\"",
-            "emisor_nombre": "Un diputado (no especificado)",
-            "contexto": "Un diputado confirmó a La Decana.",
-            "fecha_cita": "null"
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Número de diputados afectados por pagos con cheque",
-            "categoria": "electoral",
-            "valor_numerico": 14,
-            "unidad": "",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "Contraloría General de la República",
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

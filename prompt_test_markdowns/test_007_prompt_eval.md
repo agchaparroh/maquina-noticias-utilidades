@@ -42,265 +42,84 @@ Apoya a El Nacional
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 8,
-    "justificacion_relevancia": "La solicitud de evaluación de la CPI sobre la salud de presos políticos en Venezuela tiene un impacto potencial claro en la situación política y humanitaria del país.",
-    "categorias_asignadas": [
-        "Política Nacional",
-        "Justicia/Legal"
-    ],
-    "explicacion_concisa": "El Partido Centro Democrático solicita a la Corte Penal Internacional evaluar el estado físico y mental de los presos políticos en Venezuela, denunciando violaciones de derechos humanos y la detención arbitraria de opositores al gobierno de Maduro."
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "El secretario general nacional del Partido Centro Democrático (PCD), Yandir Loggiodice, reiteró su llamado a la Corte Penal Internacional (CPI) para que evalúe el estado físico y mental de los presos políticos en los centros de reclusión.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "VE"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "presos políticos",
-                "CPI"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El Partido Centro Democrático (PCD) solicitó a la Corte Penal Internacional (CPI) hace tres meses la designación de un especialista para evaluar las condiciones de los detenidos.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-01-14",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "VE"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "CPI",
-                "presos políticos"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El dirigente del Partido Centro Democrático (PCD), Yandir Loggiodice, denunció que las personas detenidas por el gobierno de Nicolás Maduro han sido detenidas por tener una opinión diferente.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "VE"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "presos políticos",
-                "opinión"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Yandir Loggiodice",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Partido Centro Democrático (PCD)",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "PCD"
-            ]
-        },
-        {
-            "nombre": "Corte Penal Internacional (CPI)",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "CPI",
-                "ONU"
-            ]
-        },
-        {
-            "nombre": "Nicolás Maduro",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Carlos Azuaje",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Freddy Superlano",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Luis Camacaro",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Juan Fleites",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Dignora Hernández",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Chancellor",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Américo De Grazia",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Venezuela",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Elecciones",
-            "tipo": "EVENTO",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"Estas personas fueron detenidas por el usurpador y sus cuerpos de seguridad únicamente por pensar diferente. Ellos son el ejemplo de democracia, libertad y de una manera distinta de ver el país. Su único ‘delito’ fue ser testigos electorales\"",
-            "emisor_nombre": "Yandir Loggiodice",
-            "contexto": "Loggiodice denunció que estas personas han sido detenidas por el gobierno de Nicolás Maduro por tener una opinión diferente",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Como partido, recordamos a la comunidad internacional la solicitud que hicimos hace exactamente tres meses a la Corte Penal Internacional. En ella exigimos que, como parte del proceso de investigación que se lleva a cabo sobre Venezuela, se designe un especialista que pueda ingresar a los centros de reclusión para evaluar el estado físico y mental de los detenidos\"",
-            "emisor_nombre": "Yandir Loggiodice",
-            "contexto": "Recordó que el partido solicitó a la CPI hace tres meses la designación de un especialista para evaluar las condiciones de estos detenidos",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Reiteramos a la Corte Penal Internacional que tienen la potestad de exigir, como parte del proceso de investigación en curso, el ingreso de personal especializado que pueda evaluar a los más de 900 detenidos por el usurpador. ¡Basta de indolencia!\"",
-            "emisor_nombre": "Yandir Loggiodice",
-            "contexto": "Dijo que la violación de los derechos humanos de estos detenidos por pensar de manera diferente se ha convertido en una realidad diaria",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Número de presos políticos en Venezuela",
-            "categoria": "demográfico",
-            "valor_numerico": 900,
-            "unidad": "personas",
-            "ambito_geografico": [
-                "Venezuela"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de figuras políticas desaparecidas en Venezuela",
-            "categoria": "demográfico",
-            "valor_numerico": null,
-            "unidad": null,
-            "ambito_geografico": [
-                "Venezuela"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": null,
-            "notas_contexto": "No se tiene información sobre el paradero ni el estado de salud de figuras como Carlos Azuaje, Freddy Superlano, Luis Camacaro, Juan Fleites, Dignora Hernández, Chancellor, Américo De Grazia, entre otros"
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

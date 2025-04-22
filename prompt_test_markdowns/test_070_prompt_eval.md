@@ -111,333 +111,84 @@ Apoya a El Nacional
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 8,
-    "justificacion_relevancia": "Relevancia alta debido a la participación de figuras políticas importantes en elecciones venezolanas",
-    "categorias_asignadas": [
-        "Política Nacional",
-        "Elecciones"
-    ],
-    "explicacion_concisa": "El artículo informa sobre la lista de candidatos postulados por el partido Un Nuevo Tiempo (UNT) para las elecciones parlamentarias y regionales en Venezuela, liderados por Henrique Capriles Radonski y Tomás Guanipa"
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "Henrique Capriles Radonski y Tomás Guanipa lideran la lista de postulaciones del partido Un Nuevo Tiempo (UNT) para las elecciones parlamentarias y regionales del 25 de mayo en Venezuela.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "VE"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 9,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "politica",
-                "elecciones",
-                "UNT",
-                "Venezuela"
-            ],
-            "es_evento_futuro": true,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Eugenio Martínez, experto en temas electorales, recordó que 'esta forma de elección que se aplica desde 2020 es inconstitucional'.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "VE"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "politica",
-                "elecciones",
-                "constitucionalidad"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Capriles confirmó que participará en los comicios y adelantó que después de Semana Santa ofrecerá más detalles.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "VE"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "politica",
-                "elecciones",
-                "Capriles"
-            ],
-            "es_evento_futuro": true,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "La lista de postulados a la lista nacional de la AN de UNT-Unica incluye a 60 candidatos.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "VE"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "politica",
-                "elecciones",
-                "UNT"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Henrique Capriles Radonski",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Tomás Guanipa Villalobos",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Eugenio Martínez",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Juan Requesens",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Luis Emilio Rondón Hernández",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Stalin González Montaño",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Henri José Falcón Fuentes",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Pablo Martín Pérez Alvárez",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Felipe Elías Mujica Hernández",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Luis Germán Florido Barreto",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Hilda Rubí González Casique",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Amelia Geraldine Belisario Socorro",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Julio César Reyes",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Diosdado Cabello",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Un Nuevo Tiempo (UNT)",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "UNT",
-                "Unica"
-            ]
-        },
-        {
-            "nombre": "Partido Un Nuevo Tiempo",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "UNT"
-            ]
-        },
-        {
-            "nombre": "Venezuela",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Miranda",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "AN",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Twitter",
-            "tipo": "CONCEPTO",
-            "alias": []
-        },
-        {
-            "nombre": "WhatsApp",
-            "tipo": "CONCEPTO",
-            "alias": []
-        },
-        {
-            "nombre": "Elecciones parlamentarias y regionales",
-            "tipo": "EVENTO",
-            "alias": []
-        },
-        {
-            "nombre": "Elecciones",
-            "tipo": "EVENTO",
-            "alias": []
-        },
-        {
-            "nombre": "Semana Santa",
-            "tipo": "EVENTO",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"esta forma de elección que se aplica desde 2020 es inconstitucional\"",
-            "emisor_nombre": "Eugenio Martínez",
-            "contexto": "El experto en temas electorales Eugenio Martínez recordó",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Nosotros debemos seguir buscando que en Venezuela se respete el voto democrático. Yo esto lo veo como un desafío gigantesco contracorriente\"",
-            "emisor_nombre": "Henrique Capriles Radonski",
-            "contexto": "El dirigente dijo a través de un audio difundido en su canal de WhatsApp",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Lo más fácil sería no hacer nada\"",
-            "emisor_nombre": "Henrique Capriles Radonski",
-            "contexto": "El dirigente añadió",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Evitar a toda costa que este país entre en la resignación y en la desesperanza, que eso lo que trae es que haya más venezolanos fuera del país, no hay que tirar la toalla\"",
-            "emisor_nombre": "Henrique Capriles Radonski",
-            "contexto": "El dirigente afirmó",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Número de candidatos postulados por el partido Un Nuevo Tiempo (UNT) para las elecciones parlamentarias y regionales en Venezuela",
-            "categoria": "electoral",
-            "valor_numerico": 60,
-            "unidad": "personas",
-            "ambito_geografico": [
-                "Venezuela"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": null,
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

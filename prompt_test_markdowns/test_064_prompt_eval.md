@@ -41,305 +41,84 @@ El ministro de Defensa aprovechó la coyuntura para extenderle una invitación a
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 6,
-    "justificacion_relevancia": "Relevante por involucrar a un alto oficial de las disidencias de las Farc y una operación militar en Colombia",
-    "categorias_asignadas": [
-        "Conflicto/Seguridad",
-        "Política Nacional"
-    ],
-    "explicacion_concisa": "Se informa sobre la operación militar en Colombia que buscaba neutralizar al jefe del Estado Mayor Central de las disidencias de las Farc, alias 'Iván Mordisco', y se presentan los elementos hallados en el campamento de las disidencias"
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "El jefe del Estado Mayor Central (EMC) de las disidencias de las Farc, alias 'Iván Mordisco', no fue abatido en operaciones militares en Caquetá.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "CO"
-            ],
-            "ubicaciones_especificas": [
-                "Caquetá"
-            ],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "Farc",
-                "Iván Mordisco",
-                "Caquetá"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Se hallaron un computador portátil, unas gafas formuladas con su marco y un fusil, que sería del jefe del Estado Mayor Central de las disidencias de las Farc, en el campamento de las disidencias.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "CO"
-            ],
-            "ubicaciones_especificas": [
-                "Caquetá"
-            ],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "Farc",
-                "Iván Mordisco",
-                "Caquetá"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El ministro de Defensa, Pedro Sánchez, confirmó que Néstor Gregorio Vera Fernández, alias 'Iván Mordisco', no fue abatido en las operaciones militares que se estaban llevando a cabo en Caquetá.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "CO"
-            ],
-            "ubicaciones_especificas": [
-                "Caquetá"
-            ],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "Farc",
-                "Iván Mordisco",
-                "Caquetá"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El general Carlos Triana, director de la Policía Nacional, indicó que en el lugar donde se realizó el operativo se hallaron un computador portátil, unas gafas formuladas con su marco y un fusil, que sería del jefe del Estado Mayor Central de las disidencias de las Farc.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "CO"
-            ],
-            "ubicaciones_especificas": [
-                "Caquetá"
-            ],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "Farc",
-                "Iván Mordisco",
-                "Caquetá"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El ministro de Defensa, Pedro Sánchez, indicó que es muy probable que exista una ruptura entre la comandancia de esta disidencia de las Farc.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "CO"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 6,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "Farc",
-                "ruptura"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Iván Mordisco",
-            "tipo": "PERSONA",
-            "alias": [
-                "Iván Mordisco",
-                "Néstor Gregorio Vera Fernández"
-            ]
-        },
-        {
-            "nombre": "Pedro Sánchez",
-            "tipo": "PERSONA",
-            "alias": [
-                "Pedro Sánchez",
-                "ministro de Defensa"
-            ]
-        },
-        {
-            "nombre": "Carlos Triana",
-            "tipo": "PERSONA",
-            "alias": [
-                "Carlos Triana",
-                "director de la Policía Nacional"
-            ]
-        },
-        {
-            "nombre": "Fuerzas Militares",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "Fuerzas Militares"
-            ]
-        },
-        {
-            "nombre": "Policía Nacional",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "Policía Nacional"
-            ]
-        },
-        {
-            "nombre": "EMC",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "Estado Mayor Central"
-            ]
-        },
-        {
-            "nombre": "Farc",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "Fuerzas Armadas Revolucionarias de Colombia"
-            ]
-        },
-        {
-            "nombre": "Semana",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "Semana"
-            ]
-        },
-        {
-            "nombre": "Mindefensa",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "Ministerio de Defensa"
-            ]
-        },
-        {
-            "nombre": "Ejército",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "Ejército"
-            ]
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "No ha sido neutralizado. No tenemos la información de que haya sido neutralizado",
-            "emisor_nombre": "Pedro Sánchez",
-            "contexto": "Ante los crecientes rumores sobre la muerte de Néstor Gregorio Vera Fernández, alias ‘Iván Mordisco’",
-            "fecha_cita": null
-        },
-        {
-            "cita": "Todo fue objeto de análisis en el marco del desarrollo de la actividad judicial. Elementos personales utilizados por estas personas",
-            "emisor_nombre": "Carlos Triana",
-            "contexto": "Después de la operación militar en la que se encontraron elementos personales de ‘Iván Mordisco’",
-            "fecha_cita": null
-        },
-        {
-            "cita": "Es una zona compleja. Afortunadamente, nuestras Fuerzas Militares en el desarrollo de toda esa operación, logran llegar al territorio",
-            "emisor_nombre": "Carlos Triana",
-            "contexto": "Al hablar sobre las dificultades de acceso en la región",
-            "fecha_cita": null
-        },
-        {
-            "cita": "La opción más fácil es la que tienen absolutamente todos los miembros de los grupos armados organizados y que no necesitan un proceso de paz. Que es el grupo de atención humanitaria al desmovilizado",
-            "emisor_nombre": "Pedro Sánchez",
-            "contexto": "Durante una rueda de prensa",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Recompensa ofrecida por el gobierno por la captura de Iván Mordisco",
-            "categoria": "presupuestario",
-            "valor_numerico": 4450000000,
-            "unidad": "pesos",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "Ministerio de Defensa",
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

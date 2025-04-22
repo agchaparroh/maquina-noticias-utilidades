@@ -50,23 +50,17 @@ La CIDH expresó también su solidaridad con las víctimas y familiares de las v
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 9,
-    "justificacion_relevancia": "Denuncia de consolidación de un régimen autoritario en Nicaragua con graves violaciones a los derechos humanos",
-    "categorias_asignadas": [
-        "Política Nacional",
-        "Conflicto/Seguridad",
-        "Justicia/Legal"
-    ],
-    "explicacion_concisa": "La CIDH denuncia la consolidación de un régimen autoritario en Nicaragua, con violaciones a los derechos humanos, detenciones arbitrarias y restricciones a la libertad de movimiento."
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
@@ -75,7 +69,7 @@ La CIDH expresó también su solidaridad con las víctimas y familiares de las v
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama3-8b-8192` in organization `org_01jsay2bafeeht06zsq8qv9mct` service tier `on_demand` on tokens per minute (TPM): Limit 100000, Used 99688, Requested 2490. Please try again in 1.3068s. Need more tokens? Visit https://groq.com/self-serve-support/ to request higher limits.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}`
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
@@ -90,190 +84,50 @@ Error: No content received or generated
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Comisión Interamericana de Derechos Humanos",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "CIDH"
-            ]
-        },
-        {
-            "nombre": "Nicaragua",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Daniel Ortega",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Organismo nicaragüense",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Mecanismo Especial de Seguimiento para Nicaragua",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "Meseni"
-            ]
-        },
-        {
-            "nombre": "EFE",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"la consolidación de un régimen autoritario\" en Nicaragua",
-            "emisor_nombre": "La Comisión Interamericana de Derechos Humanos (CIDH)",
-            "contexto": "en una declaración pública",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"a siete años del inicio de la crisis de derechos humanos en Nicaragua, la CIDH condena la continua represión estatal y la consolidación de un régimen autoritario\"",
-            "emisor_nombre": "La Comisión Interamericana de Derechos Humanos (CIDH)",
-            "contexto": "en una declaración pública",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"la situación de derechos humanos en Nicaragua sigue siendo una de las más críticas de la región y continúa deteriorándose\"",
-            "emisor_nombre": "La Comisión Interamericana de Derechos Humanos (CIDH)",
-            "contexto": "en su mensaje",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"a ello se suman las reformas constitucionales publicadas en febrero de este año entre las cuales destaca la centralización del control absoluto del poder político en la Presidencia\"",
-            "emisor_nombre": "La Comisión Interamericana de Derechos Humanos (CIDH)",
-            "contexto": "en su mensaje",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"se consolida, bajo una apariencia de legalidad, el desmantelamiento de la institucionalidad democrática\"",
-            "emisor_nombre": "La Comisión Interamericana de Derechos Humanos (CIDH)",
-            "contexto": "en su mensaje",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"en este contexto de cierre de espacio cívico, persiste la persecución contra periodistas, personas defensoras, artistas y cualquier persona percibida como opositora\"",
-            "emisor_nombre": "La Comisión Interamericana de Derechos Humanos (CIDH)",
-            "contexto": "en su mensaje",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Número de personas muertas en protestas en Nicaragua",
-            "categoria": "demográfico",
-            "valor_numerico": 355,
-            "unidad": "personas",
-            "ambito_geografico": [
-                "Nicaragua"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": "CIDH",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de personas muertas en protestas en Nicaragua (según organismos nicaragüenses)",
-            "categoria": "demográfico",
-            "valor_numerico": 684,
-            "unidad": "personas",
-            "ambito_geografico": [
-                "Nicaragua"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": "organismos nicaragüenses",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de personas privadas de libertad en Nicaragua",
-            "categoria": "demográfico",
-            "valor_numerico": 42,
-            "unidad": "personas",
-            "ambito_geografico": [
-                "Nicaragua"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": "CIDH",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de detenciones arbitrarias en Nicaragua",
-            "categoria": "demográfico",
-            "valor_numerico": 2000,
-            "unidad": "personas",
-            "ambito_geografico": [
-                "Nicaragua"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": "CIDH",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de organizaciones de la sociedad civil canceladas en Nicaragua",
-            "categoria": "demográfico",
-            "valor_numerico": 5441,
-            "unidad": "organizaciones",
-            "ambito_geografico": [
-                "Nicaragua"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": "CIDH",
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

@@ -45,223 +45,84 @@ Lunes Santo: Procesión de Jesús Nazareno de las «Tres Potencias»
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 2,
-    "justificacion_relevancia": "La marcha fúnebre es emblemática de la Semana Santa en Guatemala, pero no tiene un impacto político o social significativo.",
-    "categorias_asignadas": [
-        "Sociedad/Derechos",
-        "Análisis/Contexto"
-    ],
-    "explicacion_concisa": "El artículo describe la historia detrás de la marcha fúnebre 'La Fosa', compuesta por Santiago Coronado en 1888, y su relación con la Semana Santa en Guatemala."
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "La Fosa es una marcha fúnebre compuesta por Santiago Coronado Porras en 1888 y dedicada al Jesús de la Merced.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "1888-01-01",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "año",
-            "paises": [
-                "GT"
-            ],
-            "ubicaciones_especificas": [
-                "Guatemala"
-            ],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "música",
-                "Semana Santa",
-                "Guatemala"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Santiago Coronado Porras tuvo un sueño en el que vio a Jesús salir de una fosa en la iglesia de la Merced.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": null,
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "n/a",
-            "paises": [
-                "GT"
-            ],
-            "ubicaciones_especificas": [
-                "Guatemala",
-                "Iglesia de la Merced"
-            ],
-            "importancia": 7,
-            "confiabilidad": 4,
-            "etiquetas": [
-                "sueño",
-                "Jesús de la Merced",
-                "Guatemala"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "La marcha fúnebre se convirtió en el emblema de la procesión del Jesús de la Merced.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": null,
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "n/a",
-            "paises": [
-                "GT"
-            ],
-            "ubicaciones_especificas": [
-                "Guatemala",
-                "Procesión del Jesús de la Merced"
-            ],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "Semana Santa",
-                "Guatemala",
-                "procesión"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "La Fosa",
-            "tipo": "EVENTO",
-            "alias": []
-        },
-        {
-            "nombre": "Santiago Coronado Porras",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Jesús de la Merced",
-            "tipo": "CONCEPTO",
-            "alias": []
-        },
-        {
-            "nombre": "Santiago Coronado",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Catalina",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Luis Alfonso Alvarado Coronado",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Jesús Nazareno de las Tres Potencias",
-            "tipo": "CONCEPTO",
-            "alias": []
-        },
-        {
-            "nombre": "Caso Odebrecht",
-            "tipo": "NORMATIVA",
-            "alias": []
-        },
-        {
-            "nombre": "Quetzaltenango",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Antigua Guatemala",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "San Juan Sacatepéquez",
-            "tipo": "LUGAR",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"Santiago\"",
-            "emisor_nombre": "Jesús de la Merced",
-            "contexto": "En el relato del compositor Santiago Coronado sobre la inspiración para componer la marcha fúnebre",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"La Fosa\"",
-            "emisor_nombre": "Santiago Coronado",
-            "contexto": "Título de la marcha fúnebre compuesta por Santiago Coronado",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": []
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

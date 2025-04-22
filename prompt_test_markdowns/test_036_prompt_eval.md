@@ -34,239 +34,84 @@ Incluso, su movimiento político presentó supuestas evidencias de fraude. Revol
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 7,
-    "justificacion_relevancia": "El presidente de Colombia, Gustavo Petro, no se ha pronunciado sobre la victoria de Daniel Noboa en Ecuador",
-    "categorias_asignadas": [
-        "Política Internacional",
-        "Política Nacional"
-    ],
-    "explicacion_concisa": "El presidente de Ecuador, Daniel Noboa, es reelegido con una victoria histórica, pero el presidente de Colombia, Gustavo Petro, no se ha pronunciado sobre el resultado. La oposición ecuatoriana denuncia fraude electoral."
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "Daniel Noboa fue reelegido como presidente de Ecuador.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-15T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "EC"
-            ],
-            "ubicaciones_especificas": [
-                "Olón"
-            ],
-            "importancia": 9,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "elecciones",
-                "Ecuador"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Gustavo Petro no se ha pronunciado sobre la victoria de Daniel Noboa en Ecuador.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-15T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "CO",
-                "EC"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "presidente",
-                "Ecuador",
-                "Colombia"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Luisa González, candidata de la izquierda, denunció fraude electoral en Ecuador.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-15T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "EC"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "elecciones",
-                "fraude electoral",
-                "Ecuador"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Daniel Noboa",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Gustavo Petro",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Luisa González",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Rafael Correa",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Ecuador",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Colombia",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Olón",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Revolución Ciudadana (RC5)",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "RC5"
-            ]
-        },
-        {
-            "nombre": "Elecciones en Ecuador",
-            "tipo": "EVENTO",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"Esta victoria ha sido histórica, una victoria de más de 10 puntos\"",
-            "emisor_nombre": "Daniel Noboa",
-            "contexto": "Ante la prensa en su casa en el balneario de Olón",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Me niego a creer que exista un pueblo que prefiera la mentira antes que la verdad\"",
-            "emisor_nombre": "Luisa González",
-            "contexto": null,
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Es el más grotesco fraude electoral\"",
-            "emisor_nombre": "Luisa González",
-            "contexto": null,
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Daniel Noboa registró incrementos estadísticamente imposibles en numerosos recintos electorales\"",
-            "emisor_nombre": "Revolución Ciudadana (RC5)",
-            "contexto": null,
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Votos obtenidos por Daniel Noboa en Ecuador",
-            "categoria": "electoral",
-            "valor_numerico": 10,
-            "unidad": "puntos",
-            "ambito_geografico": [
-                "Ecuador"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": null,
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

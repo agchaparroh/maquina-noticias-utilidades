@@ -61,22 +61,17 @@ Estados Unidos ha deportado un total de 288 personas para ser recluidas al CECOT
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 6,
-    "justificacion_relevancia": "Relevancia media por reunión entre líderes políticos hispanos y estadounidenses",
-    "categorias_asignadas": [
-        "Política Internacional",
-        "Política Nacional"
-    ],
-    "explicacion_concisa": "El presidente salvadoreño Nayib Bukele visita la Casa Blanca y se reúne con Donald Trump, donde ambos líderes elogian mutuamente y discuten temas de seguridad y lucha contra el crimen."
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
@@ -85,7 +80,7 @@ Estados Unidos ha deportado un total de 288 personas para ser recluidas al CECOT
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama3-8b-8192` in organization `org_01jsay2bafeeht06zsq8qv9mct` service tier `on_demand` on tokens per minute (TPM): Limit 100000, Used 99489, Requested 3309. Please try again in 1.678599999s. Need more tokens? Visit https://groq.com/self-serve-support/ to request higher limits.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}`
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
@@ -100,309 +95,50 @@ Error: No content received or generated
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Casa Blanca",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Washington",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "El Salvador",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Donald Trump",
-            "tipo": "PERSONA",
-            "alias": [
-                "Trump"
-            ]
-        },
-        {
-            "nombre": "Nayib Bukele",
-            "tipo": "PERSONA",
-            "alias": [
-                "Bukele"
-            ]
-        },
-        {
-            "nombre": "Marco Rubio",
-            "tipo": "PERSONA",
-            "alias": [
-                "Rubio"
-            ]
-        },
-        {
-            "nombre": "Kristi Noem",
-            "tipo": "PERSONA",
-            "alias": [
-                "Noem"
-            ]
-        },
-        {
-            "nombre": "Pam Bondi",
-            "tipo": "PERSONA",
-            "alias": [
-                "Bondi"
-            ]
-        },
-        {
-            "nombre": "Stephen Miller",
-            "tipo": "PERSONA",
-            "alias": [
-                "Miller"
-            ]
-        },
-        {
-            "nombre": "Putin",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Biden",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Zelenski",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Kilmar Ábrego",
-            "tipo": "PERSONA",
-            "alias": [
-                "Ábrego"
-            ]
-        },
-        {
-            "nombre": "MS-13",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Organización de las Naciones Unidas (ONU)",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "ONU"
-            ]
-        },
-        {
-            "nombre": "FMI",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "El Tren de Aragua",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Casa Blanca (oficina oval)",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Ucrania",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Venezuela",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Coney Island",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Brooklyn",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "CECOT",
-            "tipo": "LUGAR",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"Es un honor tener aquí a un amigo mío porque atravesamos esto juntos y nos llevamos muy bien durante todo mi mandato. Lo conocí siendo un hombre muy joven... Señor presidente es un honor tenerlo aquí. Gracias. Usted está haciendo una labor increíble por su país y apreciamos trabajar con usted, usted quiere combatir el crimen, nosotros también. Quiero decir algo al pueblo de El Salvador, tienen a un fantástico presidente. Lo digo en serio, lo conozco bien\"",
-            "emisor_nombre": "Donald Trump",
-            "contexto": "Inició el presidente de Estados Unidos",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Es un honor estar aquí en la oficina oval con el presidente y líder del mundo libre, estamos muy satisfechos, y estamos ansiosos de ayudar\"",
-            "emisor_nombre": "Nayib Bukele",
-            "contexto": "Respondió Bukele",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Dicen que hemos puesto en prisión a miles, en realidad hemos liberado a millones\"",
-            "emisor_nombre": "Nayib Bukele",
-            "contexto": "Expresó Bukele",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"La realidad, señor presidente, es que usted tiene que liberar a 350 millones de personas, pero para hacer ese trabajo hay que poner a alguien en la cárcel, es inevitable, no se puede dejar a los criminales en libertad manteniendo en prisión a todos los demás estadounidenses que claman por el fin del terrorismo y la criminalidad\"",
-            "emisor_nombre": "Nayib Bukele",
-            "contexto": "Señaló Bukele",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Somos un gran país, pero tuvimos gente estúpida dirigiéndolo\"",
-            "emisor_nombre": "Donald Trump",
-            "contexto": "Despotricó Trump",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Gracias por tener un lugar donde enviar a los peores de los peores. Queremos seguir con esa alianza porque es un mensaje muy potente de las consecuencias\"",
-            "emisor_nombre": "Kristi Noem",
-            "contexto": "Intervino la secretaria de seguridad nacional",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Pensó que lo liberarían otra vez, ¿qué hiciste?, le disparé a una pareja en la pierna pero no los maté... La última vez disparó a un policía\"",
-            "emisor_nombre": "Nayib Bukele",
-            "contexto": "Dijo el presidente salvadoreño",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Esta es la guerra de Biden y yo estoy tratando de detenerla\"",
-            "emisor_nombre": "Donald Trump",
-            "contexto": "Dijo Trump",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Con el presidente Bukele, tengo una excelente relación con él. Nos conocemos. Lo conozco desde muy joven, como dije, muy joven y me impresionó. Le dije: \"Miren a este tipo. De hecho, parece un adolescente. ¿Qué clase de país es este? Creció, creció bien en los últimos cinco años\"\"",
-            "emisor_nombre": "Donald Trump",
-            "contexto": "Respondió Trump",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"A tantos como sea posible. Justo le pregunté al presidente, ¿sabe?, sobre este enorme complejo carcelario que construyó. Le dije: \"¿Podría construir más, por favor?\"\"",
-            "emisor_nombre": "Donald Trump",
-            "contexto": "Respondió Trump",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Tenemos millones de personas que son asesinos, traficantes de drogas\"",
-            "emisor_nombre": "Donald Trump",
-            "contexto": "Dijo Trump",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Me gustaría que fuéramos un paso más allá, por supuesto, tenemos que cumplir las leyes, me gustaría incluir a esas personas en ese grupo de personas que vamos a echar del país, pero tendremos que ver lo que dicen las leyes\"",
-            "emisor_nombre": "Donald Trump",
-            "contexto": "Expresó Trump",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Número de personas deportadas a El Salvador",
-            "categoria": "demográfico",
-            "valor_numerico": 288,
-            "unidad": "personas",
-            "ambito_geografico": [
-                "El Salvador"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": "Estados Unidos",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de millones de personas que son asesinos, traficantes de drogas",
-            "categoria": "demográfico",
-            "valor_numerico": 1000000,
-            "unidad": "personas",
-            "ambito_geografico": [
-                "Estados Unidos"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": "Donald Trump",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de veces que un venezolano deportado a El Salvador fue arrestado",
-            "categoria": "demográfico",
-            "valor_numerico": 6,
-            "unidad": "veces",
-            "ambito_geografico": [
-                "El Salvador"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": "Nayib Bukele",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de millones de personas que Biden tiene que liberar",
-            "categoria": "demográfico",
-            "valor_numerico": 350000000,
-            "unidad": "personas",
-            "ambito_geografico": [
-                "Estados Unidos"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": "Nayib Bukele",
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

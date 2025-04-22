@@ -39,232 +39,84 @@ El exmandatario señaló que, más allá del acompañamiento en los sepelios, er
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 6,
-    "justificacion_relevancia": "La tragedia en la discoteca Jet Set es un evento de gran impacto en la sociedad dominicana",
-    "categorias_asignadas": [
-        "Sociedad/Derechos",
-        "Conflicto/Seguridad"
-    ],
-    "explicacion_concisa": "El partido Fuerza del Pueblo realiza una misa en memoria de las víctimas del desplome de la discoteca Jet Set en la República Dominicana, donde más de 230 personas murieron. El exmandatario Leonel Fernández condenó la tragedia y destacó el dolor colectivo en la sociedad dominicana."
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "Fuerza del Pueblo realiza una misa en Gascue por las víctimas del Jet Set",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "DO"
-            ],
-            "ubicaciones_especificas": [
-                "Gascue",
-                "Distrito Nacional"
-            ],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "Fuerza del Pueblo",
-                "Jet Set",
-                "víctimas"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Leonel Fernández afirma que la tragedia 'en el corazón del pueblo dominicano será un duelo eterno'",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "DO"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "Leonel Fernández",
-                "Fuerza del Pueblo",
-                "tragedia"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "La tragedia en la discoteca Jet Set provocó la muerte de más de 230 personas",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "DO"
-            ],
-            "ubicaciones_especificas": [
-                "Jet Set"
-            ],
-            "importancia": 9,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "tragedia",
-                "Jet Set",
-                "víctimas"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Fuerza del Pueblo",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "FP"
-            ]
-        },
-        {
-            "nombre": "Leonel Fernández",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Jet Set",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Parroquia San Antonio de Padua",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Gascue",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Distrito Nacional",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Elecciones",
-            "tipo": "EVENTO",
-            "alias": []
-        },
-        {
-            "nombre": "Dios",
-            "tipo": "CONCEPTO",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"El dolor del pueblo dominicano ha sido enorme. El Gobierno decretó tres días de duelo y tuvo que extenderlo, pero deberá extenderlo más, pues en el corazón del pueblo dominicano será un duelo eterno\"",
-            "emisor_nombre": "Leonel Fernández",
-            "contexto": "Durante la misa en memoria de las víctimas del Jet Set",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Estaba la representación de la sociedad dominicana a todos los niveles\"",
-            "emisor_nombre": "Leonel Fernández",
-            "contexto": "Durante la misa en memoria de las víctimas del Jet Set",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"en medio del dolor, esta es una herida que tomará tiempo para cicatrizar, si es que llega a cicatrizar\"",
-            "emisor_nombre": "Leonel Fernández",
-            "contexto": "Durante la misa en memoria de las víctimas del Jet Set",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Estamos seguros de que Dios los acogerá en su santo cielo. Que en paz descansen\"",
-            "emisor_nombre": "Leonel Fernández",
-            "contexto": "Durante la misa en memoria de las víctimas del Jet Set",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Número de personas fallecidas en la tragedia del Jet Set",
-            "categoria": "demográfico",
-            "valor_numerico": 230,
-            "unidad": "personas",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

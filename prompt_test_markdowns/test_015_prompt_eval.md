@@ -39,254 +39,84 @@ El Movimiento reafirmó su convicción de seguir defendiendo los derechos de los
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 7,
-    "justificacion_relevancia": "Reconocimiento de la victoria de Daniel Noboa y compromiso con el bienestar del país",
-    "categorias_asignadas": [
-        "Política Nacional",
-        "Elecciones"
-    ],
-    "explicacion_concisa": "El Movimiento Pachakutik reconoce la victoria de Daniel Noboa en las elecciones presidenciales ecuatorianas y expresa su compromiso con el bienestar del país, destacando la importancia de implementar propuestas que beneficien a la nación."
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "El Movimiento de Unidad Plurinacional Pachakutik reconoce la victoria de Daniel Noboa Azín como presidente de la República.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-15T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "EC"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 9,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "elecciones",
-                "presidencia"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Daniel Noboa alcanza el 55.60% de los votos, mientras que Luisa González llega al 44.40%.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-15T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "EC"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "elecciones",
-                "resultados"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Pachakutik agradece a su militancia y reconoce la decisión del pueblo Ecuatoriano.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-15T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "EC"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "elecciones",
-                "declaración"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Pachakutik reafirma su compromiso con el bienestar del país y seguirá defendiendo los derechos de los pueblos, la naturaleza, la justicia social y el bienestar colectivo.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-15T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "EC"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "compromiso",
-                "bienestar"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Daniel Noboa Azín",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Luisa González",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Pachakutik",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "MUPP",
-                "PKnacional18"
-            ]
-        },
-        {
-            "nombre": "Ecuador",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Movimiento de Unidad Plurinacional Pachakutik",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "MUPP",
-                "PACHAKUTIK NACIONAL"
-            ]
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"representan el sentir y la esperanza de millones de ecuatorianos y ecuatorianas\"",
-            "emisor_nombre": "El Movimiento de Unidad Plurinacional Pachakutik",
-            "contexto": "En su declaración, el movimiento expresó su deseo de que las propuestas presentadas por el presidente electo durante su campaña se lleven a cabo en beneficio de la nación",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Más allá de los resultados, reconocemos y agradecemos el compromiso de nuestra militancia durante todo este proceso\"",
-            "emisor_nombre": "El Movimiento de Unidad Plurinacional Pachakutik",
-            "contexto": "Señaló el comunicado",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Porcentaje de votos obtenidos por Daniel Noboa Azín",
-            "categoria": "electoral",
-            "valor_numerico": 98.58,
-            "unidad": "%",
-            "ambito_geografico": [
-                "Ecuador"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Porcentaje de votos obtenidos por Luisa González",
-            "categoria": "electoral",
-            "valor_numerico": 44.4,
-            "unidad": "%",
-            "ambito_geografico": [
-                "Ecuador"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Porcentaje de votos obtenidos por Daniel Noboa Azín",
-            "categoria": "electoral",
-            "valor_numerico": 55.6,
-            "unidad": "%",
-            "ambito_geografico": [
-                "Ecuador"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": null,
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

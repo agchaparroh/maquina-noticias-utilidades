@@ -43,22 +43,17 @@ Al finalizar su intervención en LA Semanal con la Prensa de este lunes 14 de ab
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 7,
-    "justificacion_relevancia": "Reconocimiento a los rescatistas que participaron en la tragedia de la discoteca Jet Set",
-    "categorias_asignadas": [
-        "Conflicto/Seguridad",
-        "Justicia/Legal"
-    ],
-    "explicacion_concisa": "El presidente dominicano Luis Abinader anuncia que emitirá un decreto para condecorar a los rescatistas y personal de instituciones del Gobierno que trabajaron en la tragedia de la discoteca Jet Set, que dejó un saldo de 231 personas fallecidas y más de 180 heridas."
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
@@ -67,7 +62,7 @@ Al finalizar su intervención en LA Semanal con la Prensa de este lunes 14 de ab
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama3-8b-8192` in organization `org_01jsay2bafeeht06zsq8qv9mct` service tier `on_demand` on tokens per minute (TPM): Limit 100000, Used 101771, Requested 1968. Please try again in 2.2438s. Need more tokens? Visit https://groq.com/self-serve-support/ to request higher limits.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}`
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
@@ -82,145 +77,50 @@ Error: No content received or generated
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Luis Abinader",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Gobierno",
-            "tipo": "INSTITUCION",
-            "alias": [
-                "Poder Ejecutivo"
-            ]
-        },
-        {
-            "nombre": "República Dominicana",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Discoteca Jet Set",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "LA Semanal con la Prensa",
-            "tipo": "EVENTO",
-            "alias": []
-        },
-        {
-            "nombre": "Defensa Civil",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Cuerpo de Bomberos",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Fuerzas Armadas",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Policía Nacional",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "He instruido a la Consultoría Jurídica del Poder Ejecutivo para que redacte un decreto que reconozca la labor patriótica y ejemplar de los cientos de hombres y mujeres que, con valentía y entrega, participaron en las labores de rescate",
-            "emisor_nombre": "Luis Abinader",
-            "contexto": "Durante su intervención en LA Semanal con la Prensa",
-            "fecha_cita": null
-        },
-        {
-            "cita": "Para no dejar a ninguno de los héroes, que desde las diferentes labores nos llenaron de orgullo en esta hora tan difícil y dolorosa para la nación",
-            "emisor_nombre": "Luis Abinader",
-            "contexto": "Enfocando su discurso",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Número de personas fallecidas en la tragedia de la discoteca Jet Set",
-            "categoria": "demográfico",
-            "valor_numerico": 231,
-            "unidad": "personas",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": "2024-04-08",
-            "periodo_referencia_fin": "2024-04-08",
-            "tipo_periodo": "puntual",
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de personas heridas en la tragedia de la discoteca Jet Set",
-            "categoria": "demográfico",
-            "valor_numerico": 180,
-            "unidad": "personas",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": "2024-04-08",
-            "periodo_referencia_fin": "2024-04-08",
-            "tipo_periodo": "puntual",
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de voluntarios que participaron en las labores de rescate",
-            "categoria": "demográfico",
-            "valor_numerico": 565,
-            "unidad": "personas",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

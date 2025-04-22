@@ -60,293 +60,84 @@ Alfombra artística causa admiración entre propios y extraños en San Juan Saca
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 6,
-    "justificacion_relevancia": "La alerta roja institucional y el plan de contingencia por Semana Santa son relevantes para la salud pública en Guatemala.",
-    "categorias_asignadas": [
-        "Salud",
-        "Seguridad"
-    ],
-    "explicacion_concisa": "El Ministerio de Salud Pública y Asistencia Social activa un plan de contingencia y alerta roja institucional para la Semana Santa 2025, con el objetivo de prepararse para posibles emergencias y garantizar la atención médica en caso de necesidad."
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "El Ministerio de Salud Pública y Asistencia Social (MSPAS) activa plan de contingencia y alerta roja institucional para Semana Santa 2025.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-11T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "GT"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 9,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "salud",
-                "Semana Santa",
-                "plan de contingencia"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El MSPAS forma parte del Sistema Nacional de Prevención en Semana Santa (Sinaprese), que se encuentra activo durante este período.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-11T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "GT"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "salud",
-                "Semana Santa",
-                "prevención"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El plan del MSPAS consiste en la preparación de los servicios, de acuerdo al riesgo que se pueda presentar en los diferentes niveles de actuación o de la presencia masiva de personas.",
-            "tipo_hecho": "EXPLICACIÓN",
-            "fecha_ocurrencia_inicio": null,
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "n/a",
-            "paises": [],
-            "ubicaciones_especificas": [],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "salud",
-                "plan de contingencia",
-                "prevención"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El MSPAS activó una alerta roja institucional, lo que implica la movilización del personal de salud y la disponibilidad permanente para atender cualquier emergencia que pueda surgir durante la Semana Mayor.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-11T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "GT"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 9,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "salud",
-                "alerta roja",
-                "Semana Mayor"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Se recomienda viajar a velocidades moderadas, evitar el consumo de bebidas alcohólicas, mantenerse hidratado, usar sombrero, gorra o protector solar para evitar quemaduras, prevenir golpes de calor y verificar la adecuada manipulación y conservación de alimentos.",
-            "tipo_hecho": "EXPLICACIÓN",
-            "fecha_ocurrencia_inicio": null,
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "n/a",
-            "paises": [],
-            "ubicaciones_especificas": [],
-            "importancia": 6,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "prevención",
-                "recomendaciones",
-                "Semana Santa"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Ministerio de Salud Pública y Asistencia Social",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "MSPAS"
-            ]
-        },
-        {
-            "nombre": "Edgar Santos",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Sistema Nacional de Prevención en Semana Santa",
-            "tipo": "EVENTO",
-            "alias": [
-                "Sinaprese"
-            ]
-        },
-        {
-            "nombre": "Centro de Atención Materno Infantil",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Conred",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Coordinadora Nacional para la Reducción de Desastres",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "Conred"
-            ]
-        },
-        {
-            "nombre": "Sistema CONRED",
-            "tipo": "NORMATIVA",
-            "alias": []
-        },
-        {
-            "nombre": "Ministerio de Salud Pública",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "MinSaludGuate"
-            ]
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "La prevención es tarea de todos!",
-            "emisor_nombre": "Ministerio de Salud Pública",
-            "contexto": "En el contexto de la Semana Santa y la activación del Sistema Nacional de Prevención en Semana Santa (Sinaprese)",
-            "fecha_cita": null
-        },
-        {
-            "cita": "Viajar a velocidades moderadas, evitar el consumo de bebidas alcohólicas, mantenerse hidratado, usar sombrero, gorra o protector solar para evitar quemaduras, prevenir golpes de calor, verificar la adecuada manipulación y conservación de alimentos.",
-            "emisor_nombre": "Edgar Santos, jefe de la Dirección de Epidemiología y Gestión de Riesgo del MSPAS",
-            "contexto": "En el contexto de las recomendaciones para la ciudadanía durante la Semana Santa",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Número de servicios de salud habilitados en Semana Santa",
-            "categoria": "sanitario",
-            "valor_numerico": 100,
-            "unidad": "",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": "Ministerio de Salud Pública y Asistencia Social (MSPAS)",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de vehículos disponibles para traslado de personal y pacientes",
-            "categoria": "sanitario",
-            "valor_numerico": 10,
-            "unidad": "",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": "Ministerio de Salud Pública y Asistencia Social (MSPAS)",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de recomendaciones para la ciudadanía",
-            "categoria": "social",
-            "valor_numerico": 7,
-            "unidad": "",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": "Ministerio de Salud Pública y Asistencia Social (MSPAS)",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Duración del Sistema Nacional de Prevención en Semana Santa (Sinaprese)",
-            "categoria": "sanitario",
-            "valor_numerico": 8,
-            "unidad": "días",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": "2025-04-11",
-            "periodo_referencia_fin": "2025-04-19",
-            "tipo_periodo": "período",
-            "fuente_especifica": "Coordinadora Nacional para la Reducción de Desastres (Conred)",
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

@@ -40,187 +40,84 @@ Para ello, el COE establecerá un dispositivo de prevención y seguridad vial en
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 7,
-    "justificacion_relevancia": "El presidente pide prudencia y cuidado en Semana Santa después de una tragedia",
-    "categorias_asignadas": [
-        "Sociedad/Derechos",
-        "Conflicto/Seguridad"
-    ],
-    "explicacion_concisa": "El presidente Luis Abinader pide a la población que se cuiden y cuiden a los demás en Semana Santa, después de una tragedia en la que murieron 231 personas. El gobierno desplegará 49,997 personas para garantizar la seguridad durante la Semana Santa."
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "El presidente Luis Abinader pide la prudencia y el cuidado de la vida en la Semana Santa.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "DO"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "Semana Santa",
-                "Luis Abinader",
-                "prudencia",
-                "cuidado de la vida"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El Gobierno desplegará 49,997 personas en Operativo Conciencia por la Vida, Semana Santa 2025.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "DO"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "Operativo Conciencia por la Vida",
-                "Semana Santa 2025",
-                "Gobierno"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Luis Abinader",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Semana Santa",
-            "tipo": "EVENTO",
-            "alias": [
-                "Semana Santa 2025"
-            ]
-        },
-        {
-            "nombre": "Operativo Conciencia por la Vida, Semana Santa 2025",
-            "tipo": "EVENTO",
-            "alias": [
-                "Operativo Conciencia por la Vida, Semana Santa 2025"
-            ]
-        },
-        {
-            "nombre": "Centro de Operaciones de Emergencias (COE)",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "COE"
-            ]
-        },
-        {
-            "nombre": "Jet Set",
-            "tipo": "LUGAR",
-            "alias": [
-                "discoteca Jet Set"
-            ]
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"Cuidémonos, cuidémonos de verdad, tomemos decisiones acertadas, decisiones responsables, no pongamos en riesgo lo más importante, nuestra vida y de la vida de los demás\"",
-            "emisor_nombre": "Luis Abinader",
-            "contexto": "En un mensaje contundente en su tradicional encuentro de los lunes con la prensa, tras el pesar de la tragedia de la semana pasada en la que murieron 231 personas en el derrumbe del techo de la discoteca Jet Set",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Los operativos de seguridad están desplegados en todo el país como cada año, pero la verdadera prevención comienza con cada uno de nosotros, y con cada uno, recuerden, no hay más prueba de amor que cuidarnos, no hay más gesto de amor que cuidar a los nuestros\"",
-            "emisor_nombre": "Luis Abinader",
-            "contexto": "En un mensaje contundente en su tradicional encuentro de los lunes con la prensa, tras el pesar de la tragedia de la semana pasada en la que murieron 231 personas en el derrumbe del techo de la discoteca Jet Set",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Número de miembros del Centro de Operaciones de Emergencias (COE) desplegados para el operativo 'Conciencia por la Vida, Semana Santa 2025'",
-            "categoria": "presupuestario",
-            "valor_numerico": 49997,
-            "unidad": "miembros",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "Centro de Operaciones de Emergencias (COE)",
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

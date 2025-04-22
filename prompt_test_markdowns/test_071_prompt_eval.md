@@ -36,144 +36,51 @@ Las elecciones generales en Bolivia, están previstas para el 17 de agosto y seg
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 7,
-    "justificacion_relevancia": "Revelación de candidatos a la presidencia y vicepresidencia en Bolivia",
-    "categorias_asignadas": [
-        "Política Nacional",
-        "Elecciones"
-    ],
-    "explicacion_concisa": "El líder de la Unión Cívica Solidaridad (UCS), Jhonny Fernández, anuncia que están a horas de revelar los nombres de sus candidatos a la presidencia y vicepresidencia del Estado boliviano, con miras a las elecciones generales de agosto de 2025."
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "El alcalde cruceño Jhonny Fernández aseguró que están a horas de revelar los nombres de los candidatos a la presidencia y vicepresidencia del Estado.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "BO"
-            ],
-            "ubicaciones_especificas": [
-                "Santa Cruz de la Sierra",
-                "La Paz"
-            ],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "elecciones",
-                "UCS"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Las elecciones generales en Bolivia están previstas para el 17 de agosto y el registro masivo de votantes iniciará este 18 de abril.",
-            "tipo_hecho": "EVENTO",
-            "fecha_ocurrencia_inicio": "2025-04-18T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "BO"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 9,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "elecciones",
-                "BO"
-            ],
-            "es_evento_futuro": true,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Jhonny Fernández",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Unión Cívica Solidaridad (UCS)",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "UCS"
-            ]
-        },
-        {
-            "nombre": "Santa Cruz de la Sierra",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "La Paz",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Bolivia",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Tribunal Supremo Electoral",
-            "tipo": "INSTITUCION",
-            "alias": []
-        },
-        {
-            "nombre": "Elecciones generales",
-            "tipo": "EVENTO",
-            "alias": [
-                "Elecciones 2025",
-                "Elecciones generales en Bolivia"
-            ]
-        },
-        {
-            "nombre": "Viernes Santo",
-            "tipo": "CONCEPTO",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
@@ -182,7 +89,7 @@ Las elecciones generales en Bolivia, están previstas para el 17 de agosto y seg
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: BadRequestError: Error code: 400 - {'error': {'message': "Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': '{\n   "resultados": [\n      {\n         "cita": ""La voz del pueblo es la que manda, por eso quiero decirles que a partir de esta semana van a conocer los dos nombres, del presidente y vicepresidente (con los que participará UCS en las elecciones generales). Mañana firmo los acuerdos, que son los últimos en La Paz. Luego tendremos una asamblea para definir, porque no quiero equivocarme, no podemos hacer locuras, no podemos hacer al primer pitazo de una encuesta; ustedes han visto cómo fracasaron otros"",\n         "emisor_nombre": "Jhonny Fernández",\n         "contexto": "En una reunión con sus seguidores en el Cambódromo",\n         "fecha_cita": null\n      },\n      {\n         "cita": ""Nosotros primero escuchamos al pueblo. Nosotros tenemos que ratificar el triunfo en Santa Cruz, porque ello nos llevará al triunfo nacional"",\n         "emisor_nombre": "Jhonny Fernández",\n         "contexto": "En una reunión con sus seguidores en el Cambódromo",\n         "fecha_cita": null\n      }\n   ]\n}'}}`
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
@@ -197,28 +104,16 @@ Error: No content received or generated
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Número de candidatos a la presidencia y vicepresidencia del Estado que participarán en las elecciones generales",
-            "categoria": "electoral",
-            "valor_numerico": 2,
-            "unidad": "",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

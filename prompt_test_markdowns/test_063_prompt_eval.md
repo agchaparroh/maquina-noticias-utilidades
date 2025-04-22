@@ -36,430 +36,84 @@ Añadió que el salario promedio de aseguramiento diario es de 388.25 pesos, equ
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 6,
-    "justificacion_relevancia": "Afiliación de mexicanos en el extranjero al IMSS, con impacto en la seguridad social y pensiones.",
-    "categorias_asignadas": [
-        "Economía",
-        "Justicia/Legal"
-    ],
-    "explicacion_concisa": "El IMSS afilió a 13,169 mexicanos que trabajan y residen en el extranjero, con acceso a seguridad social y pensiones. El 38% son mujeres y el 62% son hombres, con un salario promedio diario de 388.25 pesos."
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "El IMSS afilió a 13 mil 169 mexicanos que residen y trabajan en el extranjero.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "MX"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "IMSS",
-                "seguridad social",
-                "trabajadores extranjeros"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "7 mil 504 mexicanos extendieron los beneficios a sus familiares.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "MX"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "IMSS",
-                "seguridad social",
-                "familiares"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El 38 por ciento de los beneficiarios titulares son mujeres y el 62 por ciento son hombres.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "MX"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 6,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "IMSS",
-                "seguridad social",
-                "genero"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Las familiares registradas en una Unidad de Medicina Familiar (UMF) asociados a un titular que labora en Estados Unidos se encuentran en Chihuahua, Jalisco y Nuevo León.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "MX",
-                "US"
-            ],
-            "ubicaciones_especificas": [
-                "Chihuahua",
-                "Jalisco",
-                "Nuevo León"
-            ],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "IMSS",
-                "seguridad social",
-                "UMF",
-                "Estados Unidos"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El salario promedio de aseguramiento diario es de 388.25 pesos, equivalente a 19 dólares diarios.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "MX"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 6,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "IMSS",
-                "seguridad social",
-                "salario"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Instituto Mexicano del Seguro Social (IMSS)",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "IMSS"
-            ]
-        },
-        {
-            "nombre": "Ciudad de México",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Programa de Trabajadores Independientes para Mexicanos en el Extranjero del IMSS",
-            "tipo": "PROGRAMA",
-            "alias": []
-        },
-        {
-            "nombre": "Carolina Griselda Cisneros Prado",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Unidad de Medicina Familiar (UMF)",
-            "tipo": "INSTITUCION",
-            "alias": []
-        },
-        {
-            "nombre": "Instituto de Mexicanas y Mexicanos en el Exterior (IMME)",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "IMME"
-            ]
-        },
-        {
-            "nombre": "Semana de Educación Financiera Integral para Mexicanas y Mexicanos en el Exterior (SEFIMME 2025)",
-            "tipo": "EVENTO",
-            "alias": [
-                "SEFIMME 2025"
-            ]
-        },
-        {
-            "nombre": "Estados Unidos",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Chihuahua",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Jalisco",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Nuevo León",
-            "tipo": "LUGAR",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"El 23 por ciento de las afiliaciones de mexicanos en el extranjero es por 12 meses. El 16 por ciento lo hace o decide pagar por 6 meses. En su mayoría, que son 7 mil 361 personas, lo hacen de manera mensual, y esto tiene que ver por los ingresos de una persona trabajadora independiente, que son variables\"",
-            "emisor_nombre": "Carolina Griselda Cisneros Prado",
-            "contexto": "Durante la 13ª edición de la Semana de Educación Financiera Integral para Mexicanas y Mexicanos en el Exterior (SEFIMME 2025)",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Número de connacionales afiliados al Programa de Trabajadores Independientes para Mexicanos en el Extranjero del IMSS",
-            "categoria": "demográfico",
-            "valor_numerico": 13169,
-            "unidad": "personas",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "IMSS",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de beneficiarios titulares con acceso a la seguridad social",
-            "categoria": "demográfico",
-            "valor_numerico": 25960,
-            "unidad": "personas",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "IMSS",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Porcentaje de beneficiarios titulares mujeres",
-            "categoria": "demográfico",
-            "valor_numerico": 0.38,
-            "unidad": "%",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "IMSS",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de trabajadoras afiliadas",
-            "categoria": "demográfico",
-            "valor_numerico": 5004,
-            "unidad": "personas",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "IMSS",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de empleados afiliados",
-            "categoria": "demográfico",
-            "valor_numerico": 8165,
-            "unidad": "personas",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "IMSS",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de personas con pensiones",
-            "categoria": "demográfico",
-            "valor_numerico": 699,
-            "unidad": "personas",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "IMSS",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Porcentaje de personas mexicanas afiliadas en el rango de edad de 51 a 60 años",
-            "categoria": "demográfico",
-            "valor_numerico": 0.47,
-            "unidad": "%",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "IMSS",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Salario promedio de aseguramiento diario",
-            "categoria": "económico",
-            "valor_numerico": 388.25,
-            "unidad": "pesos",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "IMSS",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Salario promedio en dólares diarios",
-            "categoria": "económico",
-            "valor_numerico": 19,
-            "unidad": "dólares",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "IMSS",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Porcentaje de aumento del salario promedio",
-            "categoria": "económico",
-            "valor_numerico": 0.18,
-            "unidad": "%",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "IMSS",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de personas que han decidido continuar con su aseguramiento de manera continua",
-            "categoria": "demográfico",
-            "valor_numerico": 2623,
-            "unidad": "personas",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "IMSS",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Porcentaje de afiliaciones de mexicanos en el extranjero por 12 meses",
-            "categoria": "demográfico",
-            "valor_numerico": 0.23,
-            "unidad": "%",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "IMSS",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Porcentaje de afiliaciones de mexicanos en el extranjero por 6 meses",
-            "categoria": "demográfico",
-            "valor_numerico": 0.16,
-            "unidad": "%",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "IMSS",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de personas que pagan su aseguramiento mensualmente",
-            "categoria": "demográfico",
-            "valor_numerico": 7361,
-            "unidad": "personas",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "IMSS",
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

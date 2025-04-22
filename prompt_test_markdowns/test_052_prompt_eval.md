@@ -42,263 +42,84 @@ En el acto protocolar participaron el vicepresidente David Choquehuanca, el gobe
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 5,
-    "justificacion_relevancia": "Inversión significativa en infraestructura ambiental y urbana en Bolivia",
-    "categorias_asignadas": [
-        "Economía",
-        "Sociedad/Derechos"
-    ],
-    "explicacion_concisa": "El presidente boliviano Luis Arce anuncia una inversión de más de $us 50 millones para construir una planta de tratamiento de aguas residuales en Tarija, beneficiando la ciudad y el río Guadalquivir."
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "El presidente Luis Arce anunció una inversión de más de $us 50 millones para la construcción de la planta de tratamiento de aguas residuales en la ciudad de Tarija.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14T15:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "BO"
-            ],
-            "ubicaciones_especificas": [
-                "Tarija"
-            ],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "inversión",
-                "planta de tratamiento de aguas residuales"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El presidente Luis Arce también anunció la construcción del Centro de Innovación Apícola en Villa Montes con una inversión de Bs 150 millones.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14T15:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "BO"
-            ],
-            "ubicaciones_especificas": [
-                "Villa Montes"
-            ],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "inversión",
-                "apicultura"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El presidente Luis Arce también mencionó la construcción de mercados en la ciudad de Bermejo y la capital tarijeña para dar comodidad a los productores y consumidores.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14T15:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "BO"
-            ],
-            "ubicaciones_especificas": [
-                "Bermejo",
-                "Tarija"
-            ],
-            "importancia": 6,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "inversión",
-                "mercados"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Luis Arce",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Banco de Desarrollo de América Latina y el Caribe - CAF",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "CAF"
-            ]
-        },
-        {
-            "nombre": "Asamblea Legislativa Departamental (ALD)",
-            "tipo": "INSTITUCION",
-            "alias": []
-        },
-        {
-            "nombre": "Batalla de La Tablada",
-            "tipo": "EVENTO",
-            "alias": []
-        },
-        {
-            "nombre": "Tarija",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Río Guadalquivir",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Villa Montes",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Bermejo",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Yacuiba",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Parque Mirador 'Héroes de la Independencia'",
-            "tipo": "LUGAR",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "Hoy celebramos esta gran noticia ambiental y urbanística para la ciudad de Tarija, ya que esta obra, por primera vez en la historia, está cerca de su consolidación, que representa una solución estructural al tratamiento de aguas servidas en la ciudad y el cuidado del río Guadalquivir, corazón ecológico de la región",
-            "emisor_nombre": "Luis Arce",
-            "contexto": "En la sesión de la Asamblea Legislativa Departamental (ALD) por los 208 años de la Batalla de La Tablada",
-            "fecha_cita": null
-        },
-        {
-            "cita": "Esta planta podrá procesar: miel, caramelos, hidromiel, polen, jalea real y apitoxinas. De esta manera, Villa Montes tendrá una nueva industria",
-            "emisor_nombre": "Luis Arce",
-            "contexto": "En la sesión de la Asamblea Legislativa Departamental (ALD) por los 208 años de la Batalla de La Tablada",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Inversión para construir planta de tratamiento de aguas residuales",
-            "categoria": "presupuestario",
-            "valor_numerico": 50000000,
-            "unidad": "USD",
-            "ambito_geografico": [
-                "Tarija"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "Gobierno central",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Inversión para construir Centro de Innovación Apícola",
-            "categoria": "presupuestario",
-            "valor_numerico": 150000000,
-            "unidad": "Bs",
-            "ambito_geografico": [
-                "Villa Montes"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "Gobierno central",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Inversión para construir doble vía Villa Montes - Yacuiba",
-            "categoria": "presupuestario",
-            "valor_numerico": 288000000,
-            "unidad": "Bs",
-            "ambito_geografico": [
-                "Villa Montes",
-                "Yacuiba"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "Gobierno central",
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

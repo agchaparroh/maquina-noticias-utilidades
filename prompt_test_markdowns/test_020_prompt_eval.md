@@ -60,21 +60,17 @@ Suscribete
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 2,
-    "justificacion_relevancia": "No tiene relevancia política o social significativa",
-    "categorias_asignadas": [
-        "Análisis/Contexto"
-    ],
-    "explicacion_concisa": "La selección de novelas históricas no tiene conexión directa con la política, economía o conflictos importantes en la esfera hispana, siendo un artículo de entretenimiento y literatura"
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
@@ -83,7 +79,7 @@ Suscribete
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama3-8b-8192` in organization `org_01jsay2bafeeht06zsq8qv9mct` service tier `on_demand` on tokens per minute (TPM): Limit 100000, Used 100459, Requested 3074. Please try again in 2.119799999s. Need more tokens? Visit https://groq.com/self-serve-support/ to request higher limits.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}`
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
@@ -98,200 +94,34 @@ Error: No content received or generated
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Sun Tzu",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Felipe II",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Cristián VII de Dinamarca",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "María Reig",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Carlos Bassas del Rey",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Arnaldur Indridason",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "George Macdonald Fraser",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "José Calvo Poyato",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Matthew Harffy",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "París",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Orán",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "China",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Imperio británico",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Islandia",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Dinamarca",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Afganistán",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Kabul",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Portugal",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Madrid",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Lindisfarne",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Semana Santa",
-            "tipo": "EVENTO",
-            "alias": []
-        },
-        {
-            "nombre": "El arte de la guerra",
-            "tipo": "CONCEPTO",
-            "alias": []
-        },
-        {
-            "nombre": "El rey y el relojero",
-            "tipo": "EVENTO",
-            "alias": []
-        },
-        {
-            "nombre": "Flashman",
-            "tipo": "CONCEPTO",
-            "alias": []
-        },
-        {
-            "nombre": "Dueños del Mundo",
-            "tipo": "EVENTO",
-            "alias": []
-        },
-        {
-            "nombre": "Tiempo de espadas. El nacimiento de un guerrero",
-            "tipo": "EVENTO",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"Es un capítulo olvidado de nuestro pasado\"",
-            "emisor_nombre": "María Dueñas",
-            "contexto": "Descripción de la novela de María Dueñas",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"El arte de la guerra\", de Sun Tzu",
-            "emisor_nombre": "Carlos Bassas del Rey",
-            "contexto": "Descripción de la novela de Carlos Bassas del Rey",
-            "fecha_cita": null
-        },
-        {
-            "cita": "Sospechas, paranoia, atmósfera asfixiante y una construcción cruda de la vida en la Islandia del siglo XVIII y la convulsa corte danesa de la época",
-            "emisor_nombre": "Arnaldur Indridason",
-            "contexto": "Descripción de la novela de Arnaldur Indridason",
-            "fecha_cita": null
-        },
-        {
-            "cita": "Mordaz, irónico y ambiguo, Flashman es un cobarde, un oportunista, un embustero, un racista y un agresor sexual de tomo y lomo",
-            "emisor_nombre": "George Macdonald Fraser",
-            "contexto": "Descripción de la novela de George Macdonald Fraser",
-            "fecha_cita": null
-        },
-        {
-            "cita": "Narrando en paralelo el proceso con el que el monarca hispano logró convertirse también en rey de Portugal",
-            "emisor_nombre": "José Calvo Poyato",
-            "contexto": "Descripción de la novela de José Calvo Poyato",
-            "fecha_cita": null
-        },
-        {
-            "cita": "Novela de aventuras llena de acción",
-            "emisor_nombre": "Matthew Harffy",
-            "contexto": "Descripción de la novela de Matthew Harffy",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
@@ -300,7 +130,7 @@ Error: No content received or generated
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama3-8b-8192` in organization `org_01jsay2bafeeht06zsq8qv9mct` service tier `on_demand` on tokens per minute (TPM): Limit 100000, Used 103317, Requested 2673. Please try again in 3.5942s. Need more tokens? Visit https://groq.com/self-serve-support/ to request higher limits.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}`
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>

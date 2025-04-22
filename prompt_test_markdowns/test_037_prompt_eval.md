@@ -47,412 +47,84 @@ En total, del 1 de enero al 27 de marzo, se ha reportado la muerte de más de 15
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 8,
-    "justificacion_relevancia": "La aprobación de un presupuesto especial para luchar contra pandillas en Haití tiene un impacto significativo en la seguridad y estabilidad del país",
-    "categorias_asignadas": [
-        "Conflicto/Seguridad",
-        "Política Nacional"
-    ],
-    "explicacion_concisa": "El gobierno de Haití aprobó un presupuesto especial de 275.000 dólares para combatir la violencia de pandillas, lo que refleja su compromiso con la seguridad nacional. El presupuesto se destinará a la policía, ejército, frontera y programas sociales."
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "El gobierno de Haití aprobó un presupuesto de guerra de 275.000 dólares para luchar contra las pandillas.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-15T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "HT"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 9,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "Haití",
-                "pandillas",
-                "gobierno"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Casi el 40% del presupuesto se destinará a la policía y al ejército de Haití para combatir a los grupos armados.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-15T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "HT"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "Haití",
-                "policía",
-                "ejército"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Las pandillas que controlan al menos el 85% de la capital, Puerto Príncipe, continúan atacando a las comunidades que la rodean.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-03-30T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "HT"
-            ],
-            "ubicaciones_especificas": [
-                "Puerto Príncipe"
-            ],
-            "importancia": 9,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "Haití",
-                "pandillas",
-                "Puerto Príncipe"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Al menos 60 personas murieron tras los ataques lanzados el 30 y 31 de marzo, incluidos pandilleros y reclusos fugados.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-03-30T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "HT"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 9,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "Haití",
-                "pandillas",
-                "muertes"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "La vecina ciudad de Saut-d'Eau cayó en manos de las pandillas en la tarde del 3 de abril.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-03T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "HT"
-            ],
-            "ubicaciones_especificas": [
-                "Saut-d'Eau"
-            ],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "Haití",
-                "pandillas",
-                "Saut-d'Eau"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "La violencia de pandillas también ha dejado a más de un millón de personas sin hogar en los últimos años, según la ONU.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-01-01T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "HT"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "Haití",
-                "pandillas",
-                "refugiados"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Gobierno de Haití",
-            "tipo": "INSTITUCION",
-            "alias": []
-        },
-        {
-            "nombre": "Haití",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "República Dominicana",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Consejo presidencial de transición de Haití",
-            "tipo": "INSTITUCION",
-            "alias": []
-        },
-        {
-            "nombre": "ONU",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "Organización de las Naciones Unidas"
-            ]
-        },
-        {
-            "nombre": "Policía de Kenia",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Viv Ansanm",
-            "tipo": "OTRO",
-            "alias": []
-        },
-        {
-            "nombre": "Red Nacional de Defensa de los Derechos Humanos",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Hospital Universitario Mirebalais",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Mirebalais",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Saut-d'Eau",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "AP",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"Bandas armadas incendiaron la comisaría y tomaron el control de la prisión, orquestando una fuga masiva de reclusos\"",
-            "emisor_nombre": "La Red Nacional de Defensa de los Derechos Humanos",
-            "contexto": "Descripción de los ataques a la comisaría y la prisión en Mirebalais",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Algunos dicen que esto fue facilitado por la redistribución de las fuerzas del orden a Mirebalais, dejando a Saut-d'Eau vulnerable\"",
-            "emisor_nombre": "Activistas",
-            "contexto": "Explicación sobre la caída de Saut-d'Eau en manos de las pandillas",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Al ignorar el colapso de la región central, las autoridades de transición demuestran que no tienen un plan real para restaurar los derechos ciudadanos y la seguridad pública\"",
-            "emisor_nombre": "La organización de derechos humanos",
-            "contexto": "Crítica a las autoridades de transición por no tener un plan para restaurar la seguridad pública",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"La ausencia de respuesta estatal ha convertido a la policía en bomberos, reaccionando constantemente sin rumbo estratégico, mientras las ciudades caen una tras otra\"",
-            "emisor_nombre": "La organización de derechos humanos",
-            "contexto": "Crítica a la respuesta de las autoridades estatales a la violencia de pandillas",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Presupuesto asignado a la lucha contra la violencia de pandillas",
-            "categoria": "presupuestario",
-            "valor_numerico": 275000,
-            "unidad": "dólares",
-            "ambito_geografico": [
-                "Haití"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": "Gobierno de Haití",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Porcentaje del presupuesto destinado a la policía y el ejército",
-            "categoria": "presupuestario",
-            "valor_numerico": 40,
-            "unidad": "%",
-            "ambito_geografico": [
-                "Haití"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": "Consejo presidencial de transición de Haití",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Porcentaje del presupuesto destinado a fortalecer la frontera con la República Dominicana",
-            "categoria": "presupuestario",
-            "valor_numerico": 20,
-            "unidad": "%",
-            "ambito_geografico": [
-                "Haití"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": "Consejo presidencial de transición de Haití",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de reclusos fugados de la prisión de Mirebalais",
-            "categoria": "demográfico",
-            "valor_numerico": 533,
-            "unidad": "personas",
-            "ambito_geografico": [
-                "Mirebalais"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": "Red Nacional de Defensa de los Derechos Humanos",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de muertos en los ataques de pandillas en Mirebalais y Saut-d'Eau",
-            "categoria": "demográfico",
-            "valor_numerico": 60,
-            "unidad": "personas",
-            "ambito_geografico": [
-                "Mirebalais",
-                "Saut-d'Eau"
-            ],
-            "periodo_referencia_inicio": "30 de marzo",
-            "periodo_referencia_fin": "31 de marzo",
-            "tipo_periodo": "puntual",
-            "fuente_especifica": "Red Nacional de Defensa de los Derechos Humanos",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de muertos en los ataques de pandillas en Haití desde enero",
-            "categoria": "demográfico",
-            "valor_numerico": 1500,
-            "unidad": "personas",
-            "ambito_geografico": [
-                "Haití"
-            ],
-            "periodo_referencia_inicio": "1 de enero",
-            "periodo_referencia_fin": "27 de marzo",
-            "tipo_periodo": "acumulado",
-            "fuente_especifica": "Misión política de la ONU en Haití",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de personas heridas en los ataques de pandillas en Haití desde enero",
-            "categoria": "demográfico",
-            "valor_numerico": 572,
-            "unidad": "personas",
-            "ambito_geografico": [
-                "Haití"
-            ],
-            "periodo_referencia_inicio": "1 de enero",
-            "periodo_referencia_fin": "27 de marzo",
-            "tipo_periodo": "acumulado",
-            "fuente_especifica": "Misión política de la ONU en Haití",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de personas sin hogar en Haití debido a la violencia de pandillas",
-            "categoria": "demográfico",
-            "valor_numerico": 1000000,
-            "unidad": "personas",
-            "ambito_geografico": [
-                "Haití"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": "ONU",
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

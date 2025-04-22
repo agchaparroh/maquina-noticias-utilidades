@@ -49,322 +49,84 @@ La labor fue encargada a la Oficina Nacional de Evaluación Sísmica y Vulnerabi
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 8,
-    "justificacion_relevancia": "El presidente Abinader garantiza la independencia del proceso judicial sobre el colapso de la discoteca Jet Set",
-    "categorias_asignadas": [
-        "Conflicto/Seguridad",
-        "Justicia/Legal"
-    ],
-    "explicacion_concisa": "El presidente de la República, Luis Abinader, asegura que el Gobierno no interferirá en el proceso judicial sobre el colapso de la discoteca Jet Set, que dejó 231 muertos y más de 180 heridos"
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "El presidente de la República, Luis Abinader, aseguró que el Gobierno no va a interferir en el proceso judicial que pudiera generar la investigación sobre el colapso del techo de la discoteca Jet Set.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "DO"
-            ],
-            "ubicaciones_especificas": [
-                "Palacio Nacional"
-            ],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "gobierno",
-                "justicia",
-                "investigación"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El colapso del techo de la discoteca Jet Set dejó 231 muertos y más de 180 heridos, algunos de gravedad.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-08T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "DO"
-            ],
-            "ubicaciones_especificas": [
-                "Discoteca Jet Set"
-            ],
-            "importancia": 9,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "tragedia",
-                "discoteca",
-                "muertos"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El Ministerio Público investiga la tragedia en la discoteca Jet Set.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-08T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "DO"
-            ],
-            "ubicaciones_especificas": [
-                "Discoteca Jet Set"
-            ],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "investigación",
-                "Ministerio Público"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "La comisión con expertos nacionales e internacionales investiga el siniestro.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-08T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "DO"
-            ],
-            "ubicaciones_especificas": [
-                "Discoteca Jet Set"
-            ],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "investigación",
-                "comisión"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El lugar de la tragedia está resguardado por efectivos de la Policía Nacional.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-08T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "DO"
-            ],
-            "ubicaciones_especificas": [
-                "Discoteca Jet Set"
-            ],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "seguridad",
-                "Policía Nacional"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Luis Abinader",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Jet Set",
-            "tipo": "LUGAR",
-            "alias": [
-                "Jet Set"
-            ]
-        },
-        {
-            "nombre": "Ministerio Público",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Dirección General de Persecución",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Fiscalía del Distrito Nacional",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Policía Nacional",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Ramón Rodríguez",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Leonardo Reyes Madera",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Onasvie",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Rubby Pérez",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Semana con la Prensa",
-            "tipo": "EVENTO",
-            "alias": []
-        },
-        {
-            "nombre": "Palacio Nacional",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Ciudad Ganadera",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Santiago",
-            "tipo": "LUGAR",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"Nosotros vamos a respetar que se haga justicia\"",
-            "emisor_nombre": "Luis Abinader",
-            "contexto": "Durante una entrevista en el Palacio Nacional",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Si hay un gobierno que ha respetado todos los procesos legales es este Gobierno\"",
-            "emisor_nombre": "Luis Abinader",
-            "contexto": "Durante una entrevista en el Palacio Nacional",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"El equipo que fue desde aquí no sabía andar en la capital ni sabía dónde había un vertedero para botar eso, y nosotros le autorizamos que lo trajera para acá, para Santiago, porque aquí es que botamos los desperdicios del monorriel\"",
-            "emisor_nombre": "Ramón Rodríguez",
-            "contexto": "Explicando el traslado de escombros de la discoteca Jet Set",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Número de muertos en el colapso del techo de la discoteca Jet Set",
-            "categoria": "demográfico",
-            "valor_numerico": 231,
-            "unidad": "personas",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de heridos en el colapso del techo de la discoteca Jet Set",
-            "categoria": "demográfico",
-            "valor_numerico": 180,
-            "unidad": "personas",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de personas que fallecieron en el colapso del techo de la discoteca Jet Set, incluyendo al artista Rubby Pérez",
-            "categoria": "demográfico",
-            "valor_numerico": 232,
-            "unidad": "personas",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": null,
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

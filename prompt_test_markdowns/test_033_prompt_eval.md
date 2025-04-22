@@ -48,260 +48,84 @@ Al menos 231 personas han fallecido como consecuencia del colapso del techo de l
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 7,
-    "justificacion_relevancia": "Abinader reconoce vacío en la ley para supervisar obras privadas",
-    "categorias_asignadas": [
-        "Justicia/Legal",
-        "Política Nacional"
-    ],
-    "explicacion_concisa": "El presidente Abinader reconoce la necesidad de llenar un vacío en la ley para supervisar obras privadas, especialmente después de la tragedia en la discoteca Jet Set, y anuncia que el Ministerio de Vivienda trabaja en un proyecto de ley para abordar este tema."
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "Abinader reconoce que hay un vacío en la ley para supervisar obras privadas",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "DO"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "gobierno",
-                "ley"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El Ministerio de Vivienda trabaja en un proyecto de ley",
-            "tipo_hecho": "ANUNCIO",
-            "fecha_ocurrencia_inicio": "2025-04-14",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "DO"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "gobierno",
-                "ley"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "La Oficina Nacional de Evaluación Sísmica y Vulnerabilidad de Infraestructura y Edificaciones (Onesvie) se creó para trabajar en el tema de las obras públicas y las infraestructuras públicas",
-            "tipo_hecho": "CONCEPTO",
-            "fecha_ocurrencia_inicio": "2025-04-14",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "DO"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 6,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "gobierno",
-                "Onesvie"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El presidente Luis Abinader se refirió a la tragedia ocurrida en la discoteca Jet Set, que ha dejado 231 muertos",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-08",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "DO"
-            ],
-            "ubicaciones_especificas": [
-                "Jet Set"
-            ],
-            "importancia": 9,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "tragedia",
-                "discoteca",
-                "muertos"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El Ministerio Público encabeza las investigaciones sobre el colapso del techo de la discoteca",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "DO"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "investigación",
-                "Ministerio Público"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Luis Abinader",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Ministerio de Vivienda",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "Mived"
-            ]
-        },
-        {
-            "nombre": "Onesvie",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "Oficina Nacional de Evaluación Sísmica y Vulnerabilidad de Infraestructura y Edificaciones"
-            ]
-        },
-        {
-            "nombre": "Jet Set",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Rubén Pérez",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Ministerio Público",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"Bueno, hablamos de que hay un vacío en la ley, y nosotros tenemos que llenar ese vacío para evitar que una tragedia así vuelva a suceder. Vamos a trabajar arduamente en ese sentido\"",
-            "emisor_nombre": "Luis Abinader",
-            "contexto": "Respuesta a la interrogante sobre qué podría hacer el Estado para mitigar situaciones como la del centro nocturno",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"De cualquier manera, nosotros estaremos tomando medidas especiales también para, en lo que respecta a ese proyecto de ley que debe ser declarado de emergencia, ir realizando otras gestiones\"",
-            "emisor_nombre": "Luis Abinader",
-            "contexto": "Sobre el proyecto de ley que debe ser declarado de emergencia",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Todo ese detalle... si es a la fiscalía, es al Ministerio Público. Entonces, el Ministerio Público tiene que dar ese informe, y debe hacerlo\"",
-            "emisor_nombre": "Luis Abinader",
-            "contexto": "Sobre la responsabilidad de presentar los resultados de la investigación penal",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Lo que tiene que saberse obligatoriamente es qué pasó, por qué pasó y cómo pasó. Eso es lo que la población y el Gobierno requieren\"",
-            "emisor_nombre": "Luis Abinader",
-            "contexto": "Sobre la importancia de esclarecer los hechos de la tragedia",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Número de víctimas fatales en el colapso de la discoteca Jet Set",
-            "categoria": "demográfico",
-            "valor_numerico": 231,
-            "unidad": "personas",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": null,
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

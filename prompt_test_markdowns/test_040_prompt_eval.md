@@ -74,450 +74,84 @@ Deportación Deportados Donald Trump Nayib Bukele Política Ver Comentarios
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 8,
-    "justificacion_relevancia": "La creación de un centro de detención en El Salvador, similar a Guantánamo, es un tema de gran trascendencia en la región",
-    "categorias_asignadas": [
-        "Política Internacional",
-        "Conflicto/Seguridad",
-        "Justicia/Legal"
-    ],
-    "explicacion_concisa": "La organización Human Rights Watch critica la posible creación de un centro de detención en El Salvador, similar a Guantánamo, y denuncia las deportaciones forzosas de Estados Unidos hacia El Salvador como desapariciones forzosas"
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "Juan Pappier, subdirector de la División de las Américas de la organización humanitaria Human Rights Watch, advierte sobre la creación de un 'Guantánamo centroamericano' en El Salvador.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-21",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "ES",
-                "US"
-            ],
-            "ubicaciones_especificas": [
-                "El Salvador",
-                "Estados Unidos"
-            ],
-            "importancia": 9,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "human rights",
-                "Guantánamo",
-                "El Salvador"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Human Rights Watch ha calificado como desapariciones forzosas las deportaciones de Estados Unidos hacia El Salvador.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-21",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "US",
-                "ES"
-            ],
-            "ubicaciones_especificas": [
-                "Estados Unidos",
-                "El Salvador"
-            ],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "human rights",
-                "desapariciones forzosas",
-                "El Salvador"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El Salvador ha ratificado el Estatuto de Roma, lo que permite la investigación de crímenes de lesa humanidad.",
-            "tipo_hecho": "NORMATIVA",
-            "fecha_ocurrencia_inicio": "2025-04-21",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "ES"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "Estatuto de Roma",
-                "crímenes de lesa humanidad",
-                "El Salvador"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El presidente Trump ha pedido a El Salvador que reciba cuantas personas le sean posibles, lo que ha generado preocupación en la diáspora salvadoreña de los Estados Unidos.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-21",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "US",
-                "ES"
-            ],
-            "ubicaciones_especificas": [
-                "Estados Unidos",
-                "El Salvador"
-            ],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "Trump",
-                "El Salvador",
-                "diáspora salvadoreña"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Human Rights Watch ha documentado casos de personas que fueron deportadas de Estados Unidos a El Salvador sin acceso a información sobre su paradero o suerte.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-21",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "US",
-                "ES"
-            ],
-            "ubicaciones_especificas": [
-                "Estados Unidos",
-                "El Salvador"
-            ],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "human rights",
-                "desapariciones forzosas",
-                "El Salvador"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El régimen venezolano ha intentado aprovechar la coyuntura para abogar por las personas deportadas a El Salvador.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-21",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "VE",
-                "ES"
-            ],
-            "ubicaciones_especificas": [
-                "Venezuela",
-                "El Salvador"
-            ],
-            "importancia": 7,
-            "confiabilidad": 4,
-            "etiquetas": [
-                "Venezuela",
-                "El Salvador",
-                "régimen"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Juan Pappier",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Human Rights Watch",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "HRW"
-            ]
-        },
-        {
-            "nombre": "El Salvador",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Estados Unidos",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Kilmar Ábrego",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "CECOT",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Corte Suprema de los Estados Unidos",
-            "tipo": "INSTITUCION",
-            "alias": []
-        },
-        {
-            "nombre": "Corte Penal Internacional",
-            "tipo": "INSTITUCION",
-            "alias": []
-        },
-        {
-            "nombre": "Estatuto de Roma",
-            "tipo": "NORMATIVA",
-            "alias": []
-        },
-        {
-            "nombre": "Organización Mundial de las Migraciones (OIM)",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Maduro",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Venezuela",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Trump",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Bukele",
-            "tipo": "PERSONA",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"Creo que necesitamos una respuesta firme de los gobiernos de la región, para oponerse a estas iniciativas de crear espacios por fuera de la protección de la ley\"",
-            "emisor_nombre": "Juan Pappier",
-            "contexto": "En entrevista con El Diario de Hoy",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Aquí hay una orden que dice que el Gobierno de Estados Unidos sí tiene que tomar medidas decisivas para lograr el retorno de esta persona (Kilmar Ábrego) y esa orden judicial hay que cumplirla\"",
-            "emisor_nombre": "Juan Pappier",
-            "contexto": "En entrevista con El Diario de Hoy",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Lo que quieren crear es un agujero negro donde no rige la protección de los derechos humanos. Y cuando se crean estos agujeros negros, eso pone en peligro los derechos humanos de todos\"",
-            "emisor_nombre": "Juan Pappier",
-            "contexto": "En entrevista con El Diario de Hoy",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Sí, pero aquí hay una orden que dice que sí que sí puede, que el Gobierno de Estados Unidos sí tiene que tomar medidas decisivas para lograr el retorno de esta persona y esa orden judicial hay que cumplirla\"",
-            "emisor_nombre": "Juan Pappier",
-            "contexto": "En entrevista con El Diario de Hoy",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Del régimen de Maduro no hay que esperar. Este es el mismo régimen que tiene detenidos a cientos de presos políticos en su país, incluyendo decenas de ciudadanos extranjeros que están detenidos, algunos desaparecidos de forma forzosa\"",
-            "emisor_nombre": "Juan Pappier",
-            "contexto": "En entrevista con El Diario de Hoy",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Lo que nosotros hemos documentado es que en varios casos estas personas estaban detenidas en centros migratorios de los Estados Unidos en Texas o en California desde la administración Biden\"",
-            "emisor_nombre": "Juan Pappier",
-            "contexto": "En entrevista con El Diario de Hoy",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Número de personas deportadas a El Salvador",
-            "categoria": "demográfico",
-            "valor_numerico": null,
-            "unidad": null,
-            "ambito_geografico": [
-                "El Salvador"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de personas detenidas en centros migratorios de los Estados Unidos",
-            "categoria": "demográfico",
-            "valor_numerico": null,
-            "unidad": null,
-            "ambito_geografico": [
-                "Estados Unidos"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de personas enviadas al CECOT",
-            "categoria": "demográfico",
-            "valor_numerico": null,
-            "unidad": null,
-            "ambito_geografico": [
-                "El Salvador"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de personas que han sido objeto de desaparición forzada",
-            "categoria": "demográfico",
-            "valor_numerico": 40,
-            "unidad": null,
-            "ambito_geografico": [
-                "El Salvador"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "Human Rights Watch",
-            "notas_contexto": "Documentados por Human Rights Watch"
-        },
-        {
-            "indicador": "Número de personas que han sido objeto de deportación forzada",
-            "categoria": "demográfico",
-            "valor_numerico": null,
-            "unidad": null,
-            "ambito_geografico": [
-                "El Salvador"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de personas que han sido objeto de desaparición forzada y deportación forzada",
-            "categoria": "demográfico",
-            "valor_numerico": null,
-            "unidad": null,
-            "ambito_geografico": [
-                "El Salvador"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de personas que han sido objeto de desaparición forzada y deportación forzada y están detenidas en centros migratorios de los Estados Unidos",
-            "categoria": "demográfico",
-            "valor_numerico": null,
-            "unidad": null,
-            "ambito_geografico": [
-                "Estados Unidos"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de personas que han sido objeto de desaparición forzada y deportación forzada y están detenidas en centros migratorios de los Estados Unidos y han sido enviadas al CECOT",
-            "categoria": "demográfico",
-            "valor_numerico": null,
-            "unidad": null,
-            "ambito_geografico": [
-                "El Salvador"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

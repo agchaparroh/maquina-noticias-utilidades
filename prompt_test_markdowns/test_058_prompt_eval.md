@@ -50,241 +50,84 @@ Video: hombre se lanza a una poza en Honduras y muere al impactar contra una pie
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 6,
-    "justificacion_relevancia": "Análisis de la gestión comunicacional de la Corte Constitucional",
-    "categorias_asignadas": [
-        "Justicia/Legal",
-        "Análisis/Contexto"
-    ],
-    "explicacion_concisa": "La presidenta de la Corte Constitucional, Leyla Lemus, anuncia medidas para modernizar y agilizar la gestión comunicacional y el acceso a la información, enfocándose en hacer comprensibles las resoluciones de la Corte."
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "Leyla Lemus, presidenta de la Corte de Constitucionalidad (CC), afirma que busca hacer más entendibles las resoluciones de la CC para la ciudadanía.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "GT"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "justicia",
-                "transparencia"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Leyla Lemus anuncia renovación del área de comunicación social de la CC para brindar explicaciones claras y efectivas sobre el proceder de la CC.",
-            "tipo_hecho": "ANUNCIO",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "GT"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "justicia",
-                "comunicación"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Leyla Lemus explica que se pretende mejorar los sistemas de consulta digital en la CC para tener un acceso de consulta más rápido en los portales de la Corte.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "GT"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "justicia",
-                "transparencia"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Leyla Lemus",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Corte de Constitucionalidad (CC)",
-            "tipo": "INSTITUCION",
-            "alias": [
-                "CC"
-            ]
-        },
-        {
-            "nombre": "Diario La Hora",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "LH"
-            ]
-        },
-        {
-            "nombre": "Daniel Ramírez",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Antigua Guatemala",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Quetzaltenango",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Honduras",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Caso Odebrecht",
-            "tipo": "CONCEPTO",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"Lo complejo es poder trasladar con palabras que la ciudadanía pueda entender cuál es el pronunciamiento que tiene la Corte\"",
-            "emisor_nombre": "Leyla Lemus",
-            "contexto": "Durante el acto protocolario en la que fue juramentada para presidir la Corte",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Pretendemos, de hecho, renovar nuestra área de comunicación social para que los medios puedan tener de manera efectiva las resoluciones, y me refiero a tener una explicación del proceder de la Corte\"",
-            "emisor_nombre": "Leyla Lemus",
-            "contexto": "En el ámbito de la renovación del área de comunicación social",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Que se pueda tener un acceso de consulta más rápida en los portales de la Corte a las agendas 15 días antes que el pleno tenga conocimiento de los expedientes\"",
-            "emisor_nombre": "Leyla Lemus",
-            "contexto": "En el ámbito administrativo, se pretende una mejora en los sistemas de consulta digital",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"He sido testigo de los logros como de los desafíos que enfrenta nuestro sistema constitucional. Me comprometo a impulsar una visión que haga de la justicia un instrumento más ágil, eficaz y eficiente\"",
-            "emisor_nombre": "Leyla Lemus",
-            "contexto": "Durante su discurso de toma de posesión como presidenta de la CC",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Número de amparos pendientes de adjudicación",
-            "categoria": "presupuestario",
-            "valor_numerico": 1,
-            "unidad": "",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Tiempo de acceso a la información en los portales de la Corte",
-            "categoria": "presupuestario",
-            "valor_numerico": 15,
-            "unidad": "días",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

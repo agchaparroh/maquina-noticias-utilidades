@@ -40,257 +40,84 @@ El caso de Monge se suma a otros arrestos recientes de extranjeros en condición
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 6,
-    "justificacion_relevancia": "Detención de un miembro de la Mara Salvatrucha con antecedentes por homicidio en El Salvador",
-    "categorias_asignadas": [
-        "Conflicto/Seguridad",
-        "Justicia/Legal"
-    ],
-    "explicacion_concisa": "La detención de un miembro de la Mara Salvatrucha con antecedentes por homicidio en El Salvador forma parte de la Operación Semana Santa Segura en Costa Rica, que busca frenar el ingreso y permanencia de individuos vinculados a organizaciones criminales."
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "Un presunto miembro de la Mara Salvatrucha, con antecedentes por homicidio en El Salvador y en condición migratoria irregular, fue detenido este lunes por la Fuerza Pública costarricense.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-15T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "CR",
-                "SV"
-            ],
-            "ubicaciones_especificas": [
-                "San José"
-            ],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "crimen",
-                "migración",
-                "seguridad"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "La aprehensión ocurrió en la avenida 8, entre calles 6 y 8, cuando el sospechoso mostró una actitud evasiva al percatarse de la presencia policial.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-15T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "CR"
-            ],
-            "ubicaciones_especificas": [
-                "San José"
-            ],
-            "importancia": 6,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "crimen",
-                "seguridad"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "La detención forma parte de los resultados del plan preventivo de seguridad implementado durante la Semana Santa, el cual busca fortalecer la vigilancia en zonas urbanas y de alta concentración de personas.",
-            "tipo_hecho": "ANUNCIO",
-            "fecha_ocurrencia_inicio": "2025-04-15",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "dia",
-            "paises": [
-                "CR"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 5,
-            "confiabilidad": 4,
-            "etiquetas": [
-                "seguridad",
-                "Semana Santa"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Mara Salvatrucha",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "MS"
-            ]
-        },
-        {
-            "nombre": "Fuerza Pública costarricense",
-            "tipo": "INSTITUCION",
-            "alias": []
-        },
-        {
-            "nombre": "Operación Semana Santa Segura",
-            "tipo": "EVENTO",
-            "alias": []
-        },
-        {
-            "nombre": "Gran Área Metropolitana",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Departamento de Planes y Operaciones de la Fuerza Pública",
-            "tipo": "INSTITUCION",
-            "alias": []
-        },
-        {
-            "nombre": "Policía Nacional Civil de El Salvador",
-            "tipo": "INSTITUCION",
-            "alias": []
-        },
-        {
-            "nombre": "Policía Profesional de Migración",
-            "tipo": "INSTITUCION",
-            "alias": []
-        },
-        {
-            "nombre": "El Salvador",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Costa Rica",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Fulvio Fernández",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Monge",
-            "tipo": "PERSONA",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"El sujeto cruzó la calle para evitar pasar junto a una patrulla que brindaba seguridad en la zona, lo que alertó a los oficiales\"",
-            "emisor_nombre": "Fernández",
-            "contexto": "Explicación del comandante Fulvio Fernández sobre la aprehensión del sospechoso",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Número de personas detenidas por la Fuerza Pública costarricense en la Operación Semana Santa Segura",
-            "categoria": "demográfico",
-            "valor_numerico": 1,
-            "unidad": "personas",
-            "ambito_geografico": [
-                "Costa Rica"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": "Fuerza Pública costarricense",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de personas con antecedentes por homicidio en El Salvador",
-            "categoria": "demográfico",
-            "valor_numerico": 1,
-            "unidad": "personas",
-            "ambito_geografico": [
-                "El Salvador"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": "Policía Nacional Civil de El Salvador",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de personas con estatus migratorio irregular en Costa Rica",
-            "categoria": "demográfico",
-            "valor_numerico": 1,
-            "unidad": "personas",
-            "ambito_geografico": [
-                "Costa Rica"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": "Policía Profesional de Migración",
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

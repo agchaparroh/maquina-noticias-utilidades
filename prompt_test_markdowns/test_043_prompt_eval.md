@@ -35,343 +35,84 @@ En los operativos participaron elementos de la Secretaría de la Defensa Naciona
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 7,
-    "justificacion_relevancia": "Detención de líder de célula criminal del Cártel del Pacífico en México",
-    "categorias_asignadas": [
-        "Conflicto/Seguridad",
-        "Justicia/Legal"
-    ],
-    "explicacion_concisa": "La detención de Joel Alfonso Urrea Yariar, alias El Gangoso, y otros miembros de la célula delictiva del Cártel del Pacífico, se realizó en coordinación con varias instituciones federales y estatales en México, en operativos que involucran la lucha contra el tráfico de drogas y la violencia en el país."
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "Autoridades federales detuvieron a siete presuntos integrantes de una célula delictiva del 'Cártel del Pacífico' dedicada a la elaboración y distribución de droga.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "MX"
-            ],
-            "ubicaciones_especificas": [
-                "Ciudad de México",
-                "Puebla"
-            ],
-            "importancia": 9,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "crimen",
-                "drogas",
-                "autoridades"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El supuesto líder del grupo, Joel Alfonso Urrea Yariar, alias El Gangoso, ordenó un ataque con drones armados contra soldados en represalia por una incautación previa.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-03-23T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "MX"
-            ],
-            "ubicaciones_especificas": [
-                "Carrizalejo, Sinaloa"
-            ],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "crimen",
-                "ataque",
-                "represalia"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Se detuvo a dos presuntos integrantes de la misma célula criminal, Germán Eduardo Yuriar Martínez, de 31 años, alias El Chapo, y Fabián Gaspar Aguilar Rendón de 41 años.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "MX"
-            ],
-            "ubicaciones_especificas": [
-                "Puebla"
-            ],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "crimen",
-                "detención",
-                "drogas"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Ciudad de México",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Puebla",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Cártel del Pacífico",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "Cártel del Pacífico"
-            ]
-        },
-        {
-            "nombre": "Joel Alfonso Urrea Yariar",
-            "tipo": "PERSONA",
-            "alias": [
-                "El Gangoso"
-            ]
-        },
-        {
-            "nombre": "Gabinete de Seguridad",
-            "tipo": "INSTITUCION",
-            "alias": []
-        },
-        {
-            "nombre": "Carrizalejo",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Sinaloa",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Javier Ernesto López Lara",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Alcaldía Azcapotzalco",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Fraccionamiento Los Héroes",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Germán Eduardo Yuriar Martínez",
-            "tipo": "PERSONA",
-            "alias": [
-                "El Chapo"
-            ]
-        },
-        {
-            "nombre": "Fabián Gaspar Aguilar Rendón",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Secretaría de la Defensa Nacional",
-            "tipo": "INSTITUCION",
-            "alias": [
-                "Defensa"
-            ]
-        },
-        {
-            "nombre": "Secretaría de Seguridad y Protección Ciudadana",
-            "tipo": "INSTITUCION",
-            "alias": [
-                "SSPC"
-            ]
-        },
-        {
-            "nombre": "Guardia Nacional",
-            "tipo": "INSTITUCION",
-            "alias": [
-                "GN"
-            ]
-        },
-        {
-            "nombre": "Fiscalía General de la República",
-            "tipo": "INSTITUCION",
-            "alias": [
-                "FGR"
-            ]
-        },
-        {
-            "nombre": "Secretaría de Marina",
-            "tipo": "INSTITUCION",
-            "alias": [
-                "Semar"
-            ]
-        },
-        {
-            "nombre": "Secretaría de Seguridad Ciudadana",
-            "tipo": "INSTITUCION",
-            "alias": [
-                "SSC"
-            ]
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "ordenó el 23 de marzo, en Carrizalejo, Sinaloa, un ataque con drones armados contra soldados, en represalia por una incautación previa",
-            "emisor_nombre": "Joel Alfonso Urrea Yariar, alias El Gangoso",
-            "contexto": "De acuerdo con fuentes del Gabinete de Seguridad",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Número de personas detenidas",
-            "categoria": "demográfico",
-            "valor_numerico": 9,
-            "unidad": "personas",
-            "ambito_geografico": [
-                "Ciudad de México",
-                "Puebla"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "Gabinete de Seguridad",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de armas aseguradas",
-            "categoria": "otro",
-            "valor_numerico": 2,
-            "unidad": "armas",
-            "ambito_geografico": [
-                "Ciudad de México",
-                "Puebla"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "Gabinete de Seguridad",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de cartuchos útiles asegurados",
-            "categoria": "otro",
-            "valor_numerico": 39,
-            "unidad": "cartuchos",
-            "ambito_geografico": [
-                "Ciudad de México",
-                "Puebla"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "Gabinete de Seguridad",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de paquetes con posible droga asegurados",
-            "categoria": "otro",
-            "valor_numerico": 6,
-            "unidad": "paquetes",
-            "ambito_geografico": [
-                "Puebla"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "Gabinete de Seguridad",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Peso de marihuana asegurada",
-            "categoria": "otro",
-            "valor_numerico": 30000,
-            "unidad": "kilos",
-            "ambito_geografico": [
-                "Puebla"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "Gabinete de Seguridad",
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

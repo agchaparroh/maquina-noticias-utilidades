@@ -46,264 +46,84 @@ Te puede gustar
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 8,
-    "justificacion_relevancia": "La unión del Polo Democrático al Pacto Histórico puede influir en la política colombiana y las elecciones de 2026.",
-    "categorias_asignadas": [
-        "Política Nacional",
-        "Elecciones"
-    ],
-    "explicacion_concisa": "El Polo Democrático se une al Pacto Histórico, una coalición de izquierda, para presentarse como una sola fuerza política en las elecciones presidenciales y legislativas de 2026 en Colombia."
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "El Polo Democrático oficializa su unión al Pacto Histórico",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "None"
-            ],
-            "ubicaciones_especificas": [
-                "Congreso Extraordinario Nacional del Polo"
-            ],
-            "importancia": 9,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "Pacto Histórico",
-                "Polo Democrático"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El Polo Democrático busca presentarse como una sola fuerza política en las elecciones presidenciales y legislativas",
-            "tipo_hecho": "ANUNCIO",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "None"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "elecciones",
-                "Polo Democrático"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El Polo Democrático se integra al Pacto Histórico, una coalición que ya reúne a varios movimientos y partidos de izquierda",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "None"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "Pacto Histórico",
-                "Polo Democrático"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El objetivo común es consolidar un frente unificado para las elecciones de 2026, con el fin de representar a las fuerzas de izquierda del país y tener mayor incidencia en la agenda política",
-            "tipo_hecho": "CONCEPTO",
-            "fecha_ocurrencia_inicio": "2025-04-15",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "dia",
-            "paises": [],
-            "ubicaciones_especificas": [],
-            "importancia": 7,
-            "confiabilidad": 4,
-            "etiquetas": [
-                "política",
-                "elecciones",
-                "Pacto Histórico"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Polo Democrático Alternativo",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "PDA"
-            ]
-        },
-        {
-            "nombre": "Pacto Histórico",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Colombia Humana",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Unión Patriótica",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "UP"
-            ]
-        },
-        {
-            "nombre": "Partido Comunista",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Movimiento Progresista",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Gustavo Petro",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Iván Cepeda Castro",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Elecciones presidenciales y legislativas",
-            "tipo": "EVENTO",
-            "alias": []
-        },
-        {
-            "nombre": "Congreso Extraordinario Nacional del Polo",
-            "tipo": "EVENTO",
-            "alias": []
-        },
-        {
-            "nombre": "Colombia",
-            "tipo": "LUGAR",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"Desde entonces hemos tenido en el centro de nuestro horizonte estratégico y en el quehacer político cotidiano la búsqueda y la construcción de la unidad y un sentido común para el cambio profundo de nuestro país y las desigualdades que lo atraviesan\"",
-            "emisor_nombre": "La dirección del partido",
-            "contexto": "En el comunicado oficial emitido a la opinión pública tras la reunión",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Esta es una decisión trascendental que tiene una implicación para el grupo de las fuerzas que queremos la transformación progresista y social en Colombia, puesto que el Polo Democrático es un partido que ha tenido una larga historia en las últimas décadas de trabajo por la unidad de todas las corrientes de izquierda\"",
-            "emisor_nombre": "Iván Cepeda",
-            "contexto": "En una publicación en X",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Número de miembros del Polo Democrático que votaron a favor de la adhesión al Pacto Histórico",
-            "categoria": "electoral",
-            "valor_numerico": 315,
-            "unidad": "miembros",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "Congreso Extraordinario Nacional del Polo",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de miembros del Polo Democrático que se opusieron a la adhesión al Pacto Histórico",
-            "categoria": "electoral",
-            "valor_numerico": 43,
-            "unidad": "miembros",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "Congreso Extraordinario Nacional del Polo",
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

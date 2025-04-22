@@ -38,22 +38,17 @@ El mandamiento de apremio busca precisamente presionar al ministro para ejecutar
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 7,
-    "justificacion_relevancia": "La medida busca ejecutar el pago de una deuda laboral importante",
-    "categorias_asignadas": [
-        "Justicia/Legal",
-        "Política Nacional"
-    ],
-    "explicacion_concisa": "La justicia ordena apremiar al ministro de Obras Públicas, Edgar Montaño, para que pague una deuda laboral de más de 55 millones de bolivianos a ex empleados de Sabsa, empresa aeroportuaria extinta"
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
@@ -62,7 +57,7 @@ El mandamiento de apremio busca precisamente presionar al ministro para ejecutar
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama3-8b-8192` in organization `org_01jsay2bafeeht06zsq8qv9mct` service tier `on_demand` on tokens per minute (TPM): Limit 100000, Used 99931, Requested 1890. Please try again in 1.0922s. Need more tokens? Visit https://groq.com/self-serve-support/ to request higher limits.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}`
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
@@ -77,128 +72,50 @@ Error: No content received or generated
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Edgar Montaño Rojas",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Marcelo Cortez Candia",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Sabsa",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "Servicio de Aeropuertos Bolivianos S. A."
-            ]
-        },
-        {
-            "nombre": "Policía Boliviana",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Ministerio de Obras Públicas",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Juzgado Público Civil, Comercial, de Partido del Trabajo y Seguridad Social de Yapacaní",
-            "tipo": "INSTITUCION",
-            "alias": []
-        },
-        {
-            "nombre": "Buena Vista",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Santa Cruz",
-            "tipo": "LUGAR",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"Nos dijo públicamente que, en 15 días, con la sentencia de la justicia, se realizaría el pago, e incluso se comprometió a colaborar para agilizar el juicio. Sin embargo, todas las instancias han fallado a nuestro favor y ellos siguen apelando\"",
-            "emisor_nombre": "uno de los afectados",
-            "contexto": "Durante una protesta frente al Ministerio de Obras Públicas",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Nos sentimos desamparados, pese a que la justicia nos ha respaldado en todas las instancias\"",
-            "emisor_nombre": "los exempleados",
-            "contexto": "Durante la movilización",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Deuda pendiente a extrabajadores de SABSA",
-            "categoria": "presupuestario",
-            "valor_numerico": 55189880,
-            "unidad": "Bs",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Monto de pagos parciales a extrabajadores de SABSA",
-            "categoria": "presupuestario",
-            "valor_numerico": 50000,
-            "unidad": "Bs",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

@@ -49,230 +49,68 @@ El documento de prensa indica que la República Dominicana se encuentra geográf
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 5,
-    "justificacion_relevancia": "Relevante por su enfoque en la supervisión de obras públicas y privadas en República Dominicana",
-    "categorias_asignadas": [
-        "Justicia/Legal",
-        "Economía"
-    ],
-    "explicacion_concisa": "El senador Pedro Tineo presenta un proyecto de ley para crear un sistema de supervisión y certificación de obras públicas y privadas en República Dominicana, con el objetivo de garantizar la seguridad estructural y la transparencia en la construcción de edificios y infraestructuras."
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "El senador Pedro Tineo depositó un proyecto de ley para crear el Sistema Nacional de Supervisión y Certificación de Obras Públicas y Privadas.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "DO"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "legislación",
-                "obras públicas"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El proyecto de ley busca crear un mecanismo de evaluación periódica, certificación técnica y prevención de riesgos estructurales para obras públicas y privadas con más de diez años de construcción.",
-            "tipo_hecho": "CONCEPTO",
-            "fecha_ocurrencia_inicio": null,
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "n/a",
-            "paises": [],
-            "ubicaciones_especificas": [],
-            "importancia": 6,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "legislación",
-                "obras públicas",
-                "seguridad estructural"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El Sistema Nacional de Supervisión se regirá por los principios de seguridad estructural, protección de la vida humana, transparencia y rendición de cuentas, desarrollo sostenible, participación ciudadana y respeto a los derechos de propiedad y uso del suelo.",
-            "tipo_hecho": "CONCEPTO",
-            "fecha_ocurrencia_inicio": null,
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "n/a",
-            "paises": [],
-            "ubicaciones_especificas": [],
-            "importancia": 6,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "legislación",
-                "obras públicas",
-                "principios"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El certificado de condición estructural establece que luego de la inspección, el Sinasco emitirá un certificado de condición estructural, con validez de dos años, renovable mediante nueva inspección.",
-            "tipo_hecho": "CONCEPTO",
-            "fecha_ocurrencia_inicio": null,
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "n/a",
-            "paises": [],
-            "ubicaciones_especificas": [],
-            "importancia": 6,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "legislación",
-                "obras públicas",
-                "certificado"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El propietario o administrador de una edificación comprendida en esta ley deberá facilitar el acceso para inspección, acoger las recomendaciones emitidas y realizar las correcciones que se le indiquen.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": null,
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "n/a",
-            "paises": [],
-            "ubicaciones_especificas": [],
-            "importancia": 6,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "legislación",
-                "obras públicas",
-                "responsabilidad"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Pedro Tineo",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Partido Revolucionario Moderno (PRM)",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "PRM"
-            ]
-        },
-        {
-            "nombre": "Sistema Nacional de Supervisión y Certificación de Obras Públicas y Privadas (Sinasco)",
-            "tipo": "INSTITUCION",
-            "alias": [
-                "Sinasco"
-            ]
-        },
-        {
-            "nombre": "Ministerio de Obras Públicas y Comunicaciones (MOPC)",
-            "tipo": "INSTITUCION",
-            "alias": [
-                "MOPC"
-            ]
-        },
-        {
-            "nombre": "Poder Judicial",
-            "tipo": "INSTITUCION",
-            "alias": []
-        },
-        {
-            "nombre": "República Dominicana",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Caribe",
-            "tipo": "LUGAR",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "El proyecto tiene por objeto crear un mecanismo de evaluación periódica, certificación técnica y prevención de riesgos estructurales.",
-            "emisor_nombre": "Pedro Tineo",
-            "contexto": "El senador de Monte Plata por el Partido Revolucionario Moderno (PRM), Pedro Tineo, depositó este lunes, mediante la Secretaria Legislativa, el proyecto de ley...",
-            "fecha_cita": null
-        },
-        {
-            "cita": "la ley se aplicaría a todas las edificaciones e infraestructuras, tanto públicas como privadas, cuya construcción haya sido concluida diez (10) años antes de la entrada en vigencia de esta ley en todo territorio nacional o que cumplan ese plazo posteriormente.",
-            "emisor_nombre": "Nota de prensa",
-            "contexto": "Mediante una nota de prensa se explica que, la ley se aplicaría a todas las edificaciones e infraestructuras, tanto públicas como privadas...",
-            "fecha_cita": null
-        },
-        {
-            "cita": "toda persona física o jurídica propietaria, arrendataria o administradora de una edificación comprendida en esta ley deberá facilitar el acceso para inspección, acoger las recomendaciones emitidas y realizar las correcciones que se le indiquen.",
-            "emisor_nombre": "Pedro Tineo",
-            "contexto": "El senador Pedro Tineo establece en el artículo 21 de dicho proyecto, la responsabilidad del propietario o administrador...",
-            "fecha_cita": null
-        },
-        {
-            "cita": "constituye falta grave negarse a permitir la inspección; ocultar información relevante durante el proceso de supervisión; no cumplir las recomendaciones emitidas por el Sinasco; falsificar certificados o informes técnicos y exponer a terceros al uso de estructuras clasificadas como inhabilitadas.",
-            "emisor_nombre": "Pedro Tineo",
-            "contexto": "En tanto que el artículo 23, sobre Incumplimiento, afirma que constituye falta grave...",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
@@ -281,7 +119,7 @@ El documento de prensa indica que la República Dominicana se encuentra geográf
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama3-8b-8192` in organization `org_01jsay2bafeeht06zsq8qv9mct` service tier `on_demand` on tokens per minute (TPM): Limit 100000, Used 100891, Requested 2242. Please try again in 1.880199999s. Need more tokens? Visit https://groq.com/self-serve-support/ to request higher limits.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}`
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>

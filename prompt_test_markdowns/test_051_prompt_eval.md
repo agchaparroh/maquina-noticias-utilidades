@@ -43,22 +43,17 @@ ESTRATOS SEGÚN INGRESOS
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 6,
-    "justificacion_relevancia": "Relevancia media debido a la información sobre la pobreza y la indigencia en la Ciudad Autónoma de Buenos Aires",
-    "categorias_asignadas": [
-        "Economía",
-        "Sociedad/Derechos"
-    ],
-    "explicacion_concisa": "El artículo informa sobre la cantidad de dinero que una familia tipo en CABA necesita para no ser pobre o indigente, según el Instituto de Estadísticas y Censos porteño (IDECBA)."
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
@@ -67,7 +62,7 @@ ESTRATOS SEGÚN INGRESOS
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama3-8b-8192` in organization `org_01jsay2bafeeht06zsq8qv9mct` service tier `on_demand` on tokens per minute (TPM): Limit 100000, Used 104203, Requested 2058. Please try again in 3.757s. Need more tokens? Visit https://groq.com/self-serve-support/ to request higher limits.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}`
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
@@ -82,197 +77,50 @@ Error: No content received or generated
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Ciudad Autónoma de Buenos Aires",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Instituto de Estadísticas y Censos porteño",
-            "tipo": "INSTITUCION",
-            "alias": [
-                "IDECBA"
-            ]
-        },
-        {
-            "nombre": "Canasta Básica Alimentaria",
-            "tipo": "CONCEPTO",
-            "alias": [
-                "CBA"
-            ]
-        },
-        {
-            "nombre": "Canasta Básica Total",
-            "tipo": "CONCEPTO",
-            "alias": [
-                "CBT"
-            ]
-        },
-        {
-            "nombre": "Sistema de Canastas de Consumo",
-            "tipo": "CONCEPTO",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "Las familias que residen en la Ciudad Autónoma de Buenos Aires (CABA) necesitaron durante marzo ingresos de al menos $1.147.602 para no ser pobres y de aunque sea $1.804.267 para ser consideradas de clase media, de acuerdo a lo informado por el Instituto de Estadísticas y Censos porteño (IDECBA).",
-            "emisor_nombre": "Instituto de Estadísticas y Censos porteño (IDECBA)",
-            "contexto": "Se refiere a la cantidad de dinero que una familia necesita para no ser pobre o ser considerada de clase media en la Ciudad Autónoma de Buenos Aires.",
-            "fecha_cita": null
-        },
-        {
-            "cita": "La medición se realiza considerando como una familia tipo a aquella compuesta por dos adultos y dos menores, que en el mes pasado necesitó ingresos por lo menos de $1.804.267 para ser de clase media, de al menos $1.147.602 para no ser pobre y aunque sea de $621.772 para no ser catalogada como indigente.",
-            "emisor_nombre": "Instituto de Estadísticas y Censos porteño (IDECBA)",
-            "contexto": "Se describe el tipo de familia que se utiliza para medir la pobreza e indigencia en la Ciudad Autónoma de Buenos Aires.",
-            "fecha_cita": null
-        },
-        {
-            "cita": "La Canasta Básica Alimentaria (CBA), que define el umbral de indigencia, trepó 7,22% en marzo, mientras que la Canasta Básica Total (CBT), que mide la pobreza, subió 5,32% en el tercer mes del 2025.",
-            "emisor_nombre": "Instituto de Estadísticas y Censos porteño (IDECBA)",
-            "contexto": "Se informa sobre el aumento en la Canasta Básica Alimentaria y la Canasta Básica Total en marzo de 2025.",
-            "fecha_cita": "2025-03-00"
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Ingresos necesarios para no ser pobres en la Ciudad Autónoma de Buenos Aires",
-            "categoria": "económico",
-            "valor_numerico": 1147602,
-            "unidad": "USD",
-            "ambito_geografico": [
-                "Ciudad Autónoma de Buenos Aires"
-            ],
-            "periodo_referencia_inicio": "2025-03-01",
-            "periodo_referencia_fin": "2025-03-31",
-            "tipo_periodo": "mensual",
-            "fuente_especifica": "Instituto de Estadísticas y Censos porteño (IDECBA)",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Ingresos necesarios para ser consideradas de clase media en la Ciudad Autónoma de Buenos Aires",
-            "categoria": "económico",
-            "valor_numerico": 1804267,
-            "unidad": "USD",
-            "ambito_geografico": [
-                "Ciudad Autónoma de Buenos Aires"
-            ],
-            "periodo_referencia_inicio": "2025-03-01",
-            "periodo_referencia_fin": "2025-03-31",
-            "tipo_periodo": "mensual",
-            "fuente_especifica": "Instituto de Estadísticas y Censos porteño (IDECBA)",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Incremento en la Canasta Básica Alimentaria (CBA) en la Ciudad Autónoma de Buenos Aires",
-            "categoria": "económico",
-            "valor_numerico": 7.22,
-            "unidad": "%",
-            "ambito_geografico": [
-                "Ciudad Autónoma de Buenos Aires"
-            ],
-            "periodo_referencia_inicio": "2025-03-01",
-            "periodo_referencia_fin": "2025-03-31",
-            "tipo_periodo": "mensual",
-            "fuente_especifica": "Instituto de Estadísticas y Censos porteño (IDECBA)",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Incremento en la Canasta Básica Total (CBT) en la Ciudad Autónoma de Buenos Aires",
-            "categoria": "económico",
-            "valor_numerico": 5.32,
-            "unidad": "%",
-            "ambito_geografico": [
-                "Ciudad Autónoma de Buenos Aires"
-            ],
-            "periodo_referencia_inicio": "2025-03-01",
-            "periodo_referencia_fin": "2025-03-31",
-            "tipo_periodo": "mensual",
-            "fuente_especifica": "Instituto de Estadísticas y Censos porteño (IDECBA)",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Incremento en la línea de pobreza en la Ciudad Autónoma de Buenos Aires",
-            "categoria": "económico",
-            "valor_numerico": 5.36,
-            "unidad": "%",
-            "ambito_geografico": [
-                "Ciudad Autónoma de Buenos Aires"
-            ],
-            "periodo_referencia_inicio": "2025-03-01",
-            "periodo_referencia_fin": "2025-03-31",
-            "tipo_periodo": "mensual",
-            "fuente_especifica": "Instituto de Estadísticas y Censos porteño (IDECBA)",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Incremento en la línea de indigencia en la Ciudad Autónoma de Buenos Aires",
-            "categoria": "económico",
-            "valor_numerico": 6.91,
-            "unidad": "%",
-            "ambito_geografico": [
-                "Ciudad Autónoma de Buenos Aires"
-            ],
-            "periodo_referencia_inicio": "2025-03-01",
-            "periodo_referencia_fin": "2025-03-31",
-            "tipo_periodo": "mensual",
-            "fuente_especifica": "Instituto de Estadísticas y Censos porteño (IDECBA)",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Ingresos necesarios para no ser indigentes en la Ciudad Autónoma de Buenos Aires",
-            "categoria": "económico",
-            "valor_numerico": 621772,
-            "unidad": "USD",
-            "ambito_geografico": [
-                "Ciudad Autónoma de Buenos Aires"
-            ],
-            "periodo_referencia_inicio": "2025-03-01",
-            "periodo_referencia_fin": "2025-03-31",
-            "tipo_periodo": "mensual",
-            "fuente_especifica": "Instituto de Estadísticas y Censos porteño (IDECBA)",
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

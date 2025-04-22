@@ -40,252 +40,84 @@ Apoya a El Nacional
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 8,
-    "justificacion_relevancia": "Maduro critica las elecciones en Ecuador y relaciona con la geopolítica",
-    "categorias_asignadas": [
-        "Política Internacional",
-        "Política Nacional"
-    ],
-    "explicacion_concisa": "El presidente venezolano Nicolás Maduro critica las elecciones en Ecuador y las relaciona con la hegemonía política y el imperialismo, lo que tiene implicaciones geopolíticas en la región"
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "Nicolás Maduro tachó de 'fraude horroroso' los comicios del domingo en Ecuador.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "EC"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "elecciones",
-                "fraude"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Daniel Noboa fue reelegido como presidente de Ecuador con 55,64% de los votos.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "EC"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "elecciones",
-                "presidente"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Maduro llamó a Noboa 'dictador' y opinó que el supuesto fraude contó con 'apoyo y financiamiento del imperialismo'.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "EC",
-                "US"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "imperialismo",
-                "fraude"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "La oposición venezolana celebró la victoria de Daniel Noboa.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "EC",
-                "VE"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 6,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "oposición",
-                "celebración"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Nicolás Maduro",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Daniel Noboa",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Ecuador",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Venezolana de Televisión (VTV)",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "VTV"
-            ]
-        },
-        {
-            "nombre": "La Plataforma Unitaria Democrática (PUD)",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "PUD"
-            ]
-        },
-        {
-            "nombre": "María Corina Machado",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Edmundo González Urrutia",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Estados Unidos",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "El Nacional",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"Pretenden imponer por la fuerza una hegemonía política, como hicieron en Ecuador con un fraude inaudible para instalar un proyecto colonialista\"",
-            "emisor_nombre": "Nicolás Maduro",
-            "contexto": "Durante un acto con candidatos oficialistas transmitido por Venezolana de Televisión (VTV)",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Ganó Ecuador, las Américas, la libertad y la democracia\"",
-            "emisor_nombre": "María Corina Machado",
-            "contexto": "Celebró en X",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Ganó Ecuador\"",
-            "emisor_nombre": "Edmundo González Urrutia",
-            "contexto": "Elogió el proceso como transparente y participativo",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Porcentaje de votos obtenidos por Daniel Noboa en Ecuador",
-            "categoria": "electoral",
-            "valor_numerico": 55.64,
-            "unidad": "%",
-            "ambito_geografico": [
-                "Ecuador"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "Resultados oficiales",
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

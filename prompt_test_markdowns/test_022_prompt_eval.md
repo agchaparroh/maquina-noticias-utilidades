@@ -46,104 +46,34 @@ Sobre quién era su primer candidato para el Palacio de Hacienda, evitó decirlo
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 6,
-    "justificacion_relevancia": "Relevante por involucrar a la Argentina y Estados Unidos en un tema económico",
-    "categorias_asignadas": [
-        "Economía",
-        "Política Internacional"
-    ],
-    "explicacion_concisa": "El presidente argentino Javier Milei niega que Estados Unidos le haya pedido salir del swap chino, y habla sobre la salida del cepo al dólar y la posible dolarización"
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "Milei negó que Estados Unidos haya exigido salir del swap chino",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-21",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "US",
-                "AR"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "economía",
-                "swap chino",
-                "Estados Unidos",
-                "Argentina"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Milei se refirió a la salida del cepo al dólar y sostuvo que el escenario contempla el valor libre de la divisa norteamericana con el paso de los días",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-21",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "AR"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 6,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "economía",
-                "dólar",
-                "Argentina"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Milei apuntó duro contra opositores y periodistas que cuestionaron su reciente viaje a Estados Unidos",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-21",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "US",
-                "AR"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 6,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "viaje",
-                "Estados Unidos",
-                "Argentina"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
@@ -152,7 +82,7 @@ Sobre quién era su primer candidato para el Palacio de Hacienda, evitó decirlo
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: BadRequestError: Error code: 400 - {'error': {'message': "Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': '{\n   "resultados": [\n      {\n         "nombre": "Javier Milei",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Estados Unidos",\n         "tipo": "ORGANIZACION",\n         "alias": ["EE.UU."]\n      },\n      {\n         "nombre": "China",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Argentina",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Banco Central",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Scott Bessent",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Luis Caputo",\n         "tipo": "PERSONA",\n         "alias": ["Toto"]\n      },\n      {\n         "nombre": "Donald Trump",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n         "nombre": "Gerardo Werthein",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Marco Rubio",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Mauricio Macri",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Alberto Fernández",\n         "tipo": "PERSONA",\n         "alias": []\n      }\n   ]\n'}}`
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
@@ -167,111 +97,33 @@ Error: No content received or generated
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"Nadie me lo pidió, inventan\"",
-            "emisor_nombre": "Javier Milei",
-            "contexto": "En declaraciones al canal de streaming Neura",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Es porque no tenes pesos (circulando). Todos los factores monetarios de la Argentina llevan al tipo de cambio a la baja\"",
-            "emisor_nombre": "Javier Milei",
-            "contexto": "En declaraciones al canal de streaming Neura",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Puedo sacar todos lo pesos de la economía a 911. La gente decidió seguir con los pesos, pero las posibilidades están abiertas\"",
-            "emisor_nombre": "Javier Milei",
-            "contexto": "En declaraciones al canal de streaming Neura",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"El tipo mas buscando en el planeta (por el secretario del Tesoro norteamericano, Scott Bessent) sale de su país. ¿A ver a quien? A `Toto` (Caputo) y a mí, justo el día que salimos del cepo. Vayan a buscarla al ángulo, mandriles inmundos\"",
-            "emisor_nombre": "Javier Milei",
-            "contexto": "En un reportaje al canal Neura",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"No hablo directo con Trump pero (el canciller, Gerardo) Werthein trabaja codo a codo con Marco Rubio\"",
-            "emisor_nombre": "Javier Milei",
-            "contexto": "En un reportaje al canal Neura",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Vos te pensás que necesito una foto con Trump\"",
-            "emisor_nombre": "Javier Milei",
-            "contexto": "En un reportaje al canal Neura",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Estas ideas las estoy craneando hace diez años. Cómo se sale de un cepo lo había hecho para el gobierno de Macri\"",
-            "emisor_nombre": "Javier Milei",
-            "contexto": "En declaraciones al canal de streaming Neura",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Vi la convicción de `Toto`, la misma de lo que yo quería hacer, y le dije si quería ser mi ministro de Economía\"",
-            "emisor_nombre": "Javier Milei",
-            "contexto": "En declaraciones al canal de streaming Neura",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"No viene al caso, era alguien hiperortodoxo, como yo\"",
-            "emisor_nombre": "Javier Milei",
-            "contexto": "En declaraciones al canal de streaming Neura",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Valor libre de la divisa norteamericana",
-            "categoria": "económico",
-            "valor_numerico": 1000,
-            "unidad": "pesos",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": null,
-            "notas_contexto": "ajustado estacionalmente"
-        },
-        {
-            "indicador": "Presupuesto asignado a Defensa",
-            "categoria": "presupuestario",
-            "valor_numerico": null,
-            "unidad": null,
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

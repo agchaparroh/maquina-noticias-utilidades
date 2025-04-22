@@ -36,203 +36,84 @@ Para la corporación, esto está probado toda vez que “el derecho a la informa
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 7,
-    "justificacion_relevancia": "Revela información sobre la seguridad nacional y la transmisión de Consejos de Ministros",
-    "categorias_asignadas": [
-        "Política Nacional",
-        "Justicia/Legal"
-    ],
-    "explicacion_concisa": "El artículo informa sobre la decisión del Consejo de Estado de no transmitir los Consejos de Ministros en canales privados, debido a la vulneración del derecho a la información y la reserva legal sobre temas de seguridad nacional."
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "El Consejo de Ministros no se transmitirá en ningún canal televisivo o plataforma debido a que se hablaría de temas con reserva legal.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-21T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "CO"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "Consejo de Ministros",
-                "transmisión"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El presidente Gustavo Petro anunció que el próximo Consejo de Ministros se dedicaría a la seguridad debido a un leve incremento en los homicidios en el primer trimestre del año.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-15T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "CO"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 6,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "Gustavo Petro",
-                "seguridad"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El Consejo de Estado ordenó al presidente Gustavo Petro dejar de transmitir los Consejos de Ministros en los canales privados debido a que se vulnera la pluralidad informativa.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-11T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "CO"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "Consejo de Estado",
-                "transmisión"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Gustavo Petro",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Consejo de Ministros",
-            "tipo": "INSTITUCION",
-            "alias": []
-        },
-        {
-            "nombre": "Consejo de Estado",
-            "tipo": "INSTITUCION",
-            "alias": []
-        },
-        {
-            "nombre": "El Colombiano",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Señal Colombia",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Canal Institucional",
-            "tipo": "LUGAR",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"La semana pasada, de hecho, el propio presidente Gustavo Petro anunció y pidió que el siguiente Consejo de Ministros, es decir, el de este lunes, estuviera dedicado a la seguridad. Esto a raíz de que los homicidios tuvieron un leve incremento en el primer trimestre de este año y que en varias zonas del país persiste la crisis de orden público. Luego se planeó que el tema sería transporte, pero no se concretó\"",
-            "emisor_nombre": "El Colombiano",
-            "contexto": "Señaló el medio en mención",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"el derecho a la información es igualmente vulnerado, cuando la información difundida es única, sin la posibilidad de tener acceso, en paralelo y en las mismas condiciones, a otras fuentes de información, a otros enfoques o interpretaciones de la realidad y la única opción informativa es la información oficial del gobierno, difundida en todos los canales televisivos de acceso abierto\"",
-            "emisor_nombre": "Consejo de Estado",
-            "contexto": "Señaló la corporación",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Número de ocasiones en que se vulneró el derecho fundamental a la información",
-            "categoria": "demográfico",
-            "valor_numerico": 2,
-            "unidad": "ocasiones",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "Consejo de Estado",
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

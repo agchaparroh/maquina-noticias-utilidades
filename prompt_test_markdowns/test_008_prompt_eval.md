@@ -45,279 +45,84 @@ TE PUEDE INTERESAR
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 6,
-    "justificacion_relevancia": "El fallecimiento de Mario Vargas Llosa es un evento relevante en la esfera hispana",
-    "categorias_asignadas": [
-        "Sociedad/Derechos",
-        "Análisis/Contexto"
-    ],
-    "explicacion_concisa": "El artículo informa sobre la reacción de la embajada peruana en EE. UU. y el Colegio Militar Leoncio Prado al fallecimiento del escritor y Nobel de Literatura Mario Vargas Llosa, destacando su legado literario y ciudadano"
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "El embajador del Perú en los Estados Unidos, Alfredo Ferrero, indica que se dispuso a abrir un libro de condolencias en la sede diplomática y en los 16 consulados en Washington D.C. debido al deceso de Mario Vargas Llosa.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "US",
-                "PE"
-            ],
-            "ubicaciones_especificas": [
-                "Washington D.C."
-            ],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "politica",
-                "diplomacia",
-                "condolencias"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "La bandera del Perú ondeará a media asta como señal de duelo por el fallecimiento de Mario Vargas Llosa.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "US",
-                "PE"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 6,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "politica",
-                "duelo",
-                "bandera"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El Colegio Militar Leoncio Prado rindió un sentido homenaje a Mario Vargas Llosa tras el anuncio de su fallecimiento el pasado domingo.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "PE"
-            ],
-            "ubicaciones_especificas": [
-                "Colegio Militar Leoncio Prado"
-            ],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "educación",
-                "homenaje",
-                "militar"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Los estudiantes del colegio militar realizaron una formación especial en el patio de honor, alineándose para formar las iniciales 'MVLL', un tributo capturado desde el aire por un dron.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-03-00T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "mes",
-            "paises": [
-                "PE"
-            ],
-            "ubicaciones_especificas": [
-                "Colegio Militar Leoncio Prado"
-            ],
-            "importancia": 6,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "educación",
-                "homenaje",
-                "dron"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Vargas Llosa siempre recordó con especial énfasis su paso por el Leoncio Prado. Aunque fue inscrito allí por su padre con la esperanza de alejarlo de la literatura, paradójicamente fue en ese ambiente militar donde reafirmó su vocación de escritor.",
-            "tipo_hecho": "BIOGRAFIA",
-            "fecha_ocurrencia_inicio": null,
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "año",
-            "paises": [
-                "PE"
-            ],
-            "ubicaciones_especificas": [
-                "Colegio Militar Leoncio Prado"
-            ],
-            "importancia": 5,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "biografía",
-                "literatura",
-                "escritor"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Alfredo Ferrero",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Mario Vargas Llosa",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Cancillería",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Colegio Militar Leoncio Prado",
-            "tipo": "INSTITUCION",
-            "alias": []
-        },
-        {
-            "nombre": "Editorial Planeta",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Pedro Cateriano",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Universitario de Deportes",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "La Casa Real española",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "FELIZH 2025",
-            "tipo": "EVENTO",
-            "alias": []
-        },
-        {
-            "nombre": "Espacio de homenaje y otras actividades en la Biblioteca Mario Vargas Llosa",
-            "tipo": "EVENTO",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"Lamentó profundamente el fallecimiento de un peruano universal. Mario Vargas Llosa se eterniza a través de su legado literario. Tuve la suerte de haber coincidido con él en algunas oportunidades\"",
-            "emisor_nombre": "Alfredo Ferrero",
-            "contexto": "En un mensaje en redes sociales",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Número de estudiantes del Colegio Militar Leoncio Prado que realizaron una formación especial en el patio de honor",
-            "categoria": "demográfico",
-            "valor_numerico": 120,
-            "unidad": "estudiantes",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Edad de Mario Vargas Llosa al momento de su fallecimiento",
-            "categoria": "demográfico",
-            "valor_numerico": 89,
-            "unidad": "años",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

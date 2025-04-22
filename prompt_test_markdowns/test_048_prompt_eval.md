@@ -48,215 +48,51 @@ Si decides continuar compartiendo tu cuenta, este mensaje se mostrará en tu dis
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 2,
-    "justificacion_relevancia": "Relevancia baja debido a que se trata de un artículo sobre la muerte de un escritor y no tiene un impacto político o social significativo.",
-    "categorias_asignadas": [
-        "Análisis/Contexto"
-    ],
-    "explicacion_concisa": "El artículo es un homenaje a la vida y obra del escritor peruano Mario Vargas Llosa, fallecido recientemente. El autor reflexiona sobre la importancia de su legado y su contribución al Boom latinoamericano de literatura."
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "Mario Vargas Llosa, escritor y premio nobel, falleció el 13 de abril de 2025.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-13T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "PE"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 9,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "literatura",
-                "mario vagas llosa",
-                "fallecimiento"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El escritor Mario Vargas Llosa fue premiado con el Nobel de Literatura en 2010.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2010-10-07T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "SE"
-            ],
-            "ubicaciones_especificas": [
-                "Estocolmo"
-            ],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "literatura",
-                "mario vagas llosa",
-                "premio nobel"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El Boom latinoamericano de literatura fue un movimiento literario que surgió en la segunda mitad del siglo XX.",
-            "tipo_hecho": "CONCEPTO",
-            "fecha_ocurrencia_inicio": null,
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "periodo",
-            "paises": [
-                "AR",
-                "BR",
-                "CL",
-                "CO",
-                "PE"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 7,
-            "confiabilidad": 4,
-            "etiquetas": [
-                "literatura",
-                "boom latinoamericano"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Mario Vargas Llosa fue un escritor y político peruano que se destacó por sus obras literarias y su defensa de la democracia y los derechos humanos.",
-            "tipo_hecho": "BIOGRAFIA",
-            "fecha_ocurrencia_inicio": "1936-03-28T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "PE"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "literatura",
-                "mario vagas llosa",
-                "biografía"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Mario Vargas Llosa",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Jorge Mario Pedro Vargas Llosa",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Gabriel García Márquez",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Julio Cortázar",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Carlos Fuentes",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Flaubert",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Balzac",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Galdós",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Cervantes",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Octavio",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "La Chingada",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Estocolmo",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "La ciudad y los perros",
-            "tipo": "OBRA LITERARIA",
-            "alias": []
-        },
-        {
-            "nombre": "Conversación en la Catedral",
-            "tipo": "OBRA LITERARIA",
-            "alias": []
-        },
-        {
-            "nombre": "EL PAÍS",
-            "tipo": "ORGANIZACIÓN",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
@@ -265,7 +101,7 @@ Si decides continuar compartiendo tu cuenta, este mensaje se mostrará en tu dis
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama3-8b-8192` in organization `org_01jsay2bafeeht06zsq8qv9mct` service tier `on_demand` on tokens per minute (TPM): Limit 100000, Used 100627, Requested 2897. Please try again in 2.114599999s. Need more tokens? Visit https://groq.com/self-serve-support/ to request higher limits.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}`
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
@@ -282,7 +118,7 @@ Error: No content received or generated
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama3-8b-8192` in organization `org_01jsay2bafeeht06zsq8qv9mct` service tier `on_demand` on tokens per minute (TPM): Limit 100000, Used 97070, Requested 3373. Please try again in 265.599999ms. Need more tokens? Visit https://groq.com/self-serve-support/ to request higher limits.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}`
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>

@@ -48,272 +48,84 @@ Apoya a El Nacional
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 8,
-    "justificacion_relevancia": "Donald Trump critica al gobierno de Maduro y amenaza con afectar su economía",
-    "categorias_asignadas": [
-        "Política Internacional",
-        "Economía",
-        "Conflicto/Seguridad"
-    ],
-    "explicacion_concisa": "El presidente de EE. UU., Donald Trump, critica al gobierno de Maduro y amenaza con afectar su economía petrolera, mientras que el presidente de El Salvador, Nayib Bukele, se niega a liberar a un migrante deportado"
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "Donald Trump, presidente de EE. UU., dijo que el gobierno de Maduro se quedó sin dinero porque les trancamos su mercado petrolero.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "US",
-                "VE"
-            ],
-            "ubicaciones_especificas": [
-                "Washington D.C."
-            ],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "economía",
-                "Maduro",
-                "Trump"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El presidente de El Salvador, Nayib Bukele, se negó a liberar a Ábrego García, un migrante salvadoreño, y dijo que no enviaría a un terrorista a EE. UU.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "SV",
-                "US"
-            ],
-            "ubicaciones_especificas": [
-                "Washington D.C."
-            ],
-            "importancia": 6,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "migración",
-                "Bukele",
-                "García"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El presidente Trump sugirió encarcelar también a estadounidenses en el Cecot, una megacárcel en El Salvador.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "US",
-                "SV"
-            ],
-            "ubicaciones_especificas": [
-                "Washington D.C."
-            ],
-            "importancia": 6,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "prisiones",
-                "Trump"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Donald Trump",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Nicolás Maduro",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Nayib Bukele",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Ábrego García",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Pam Bondi",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Stephen Miller",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Jennifer Vásquez",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Estados Unidos",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "El Salvador",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Casa Blanca",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Despacho Oval",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Cecot",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Tren de Aragua",
-            "tipo": "CONCEPTO",
-            "alias": []
-        },
-        {
-            "nombre": "MS-13",
-            "tipo": "CONCEPTO",
-            "alias": []
-        },
-        {
-            "nombre": "El Nacional",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "Se quedaron sin dinero porque les trancamos su mercado petrolero. Saben qué es lo que tienen que hacer",
-            "emisor_nombre": "Donald Trump",
-            "contexto": "Dijo el presidente de Estados Unidos al referirse al gobierno de Nicolás Maduro",
-            "fecha_cita": null
-        },
-        {
-            "cita": "Por supuesto que no voy a hacerlo. ¿Cómo voy a enviar de contrabando a un terrorista a Estados Unidos?",
-            "emisor_nombre": "Nayib Bukele",
-            "contexto": "Al afirmar que no tiene la autoridad para devolver a Ábrego García",
-            "fecha_cita": null
-        },
-        {
-            "cita": "No nos gusta mucho liberar terroristas en nuestro país",
-            "emisor_nombre": "Nayib Bukele",
-            "contexto": "Quien destacó que El Salvador es ahora ‘el país más seguro’ del continente",
-            "fecha_cita": null
-        },
-        {
-            "cita": "No sería ‘arrogante’ decirle a El Salvador qué hacer con sus ciudadanos",
-            "emisor_nombre": "Stephen Miller",
-            "contexto": "Asesor de Trump y uno de los arquitectos de su política migratoria",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Presupuesto asignado a El Salvador para la megacárcel Cecot",
-            "categoria": "presupuestario",
-            "valor_numerico": 6000000,
-            "unidad": "USD",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "Estados Unidos",
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

@@ -54,401 +54,84 @@ Entre los 10 bancos con mayor volumen de depósitos, las tasas más altas para p
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 7,
-    "justificacion_relevancia": "La devaluación del peso argentino y el impacto en la economía nacional y la política cambiaria",
-    "categorias_asignadas": [
-        "Economía",
-        "Política Nacional"
-    ],
-    "explicacion_concisa": "El artículo informa sobre la devaluación del peso argentino y el aumento del valor del dólar en el mercado oficial y informal, luego de la eliminación del cepo cambiario y la apertura del mercado a la compra de divisas"
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "El dólar escaló a $ 1.230 sin cepo en el mercado oficial.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-21T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "AR"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 9,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "economía",
-                "dólar",
-                "mercado"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El peso se depreció alrededor de un 10% en el debut del nuevo esquema cambiario.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-21T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "AR"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "economía",
-                "peso",
-                "cambio"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El Banco Central no intervino en el mercado oficial dado que la divisa se mantuvo entre las bandas.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-21T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "AR"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "economía",
-                "Banco Central",
-                "mercado"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El Merval experimentó una suba del 4,2% en pesos.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-21T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "AR"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 6,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "economía",
-                "Merval",
-                "bolsa"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El precio del petróleo intermedio de Texas (WTI) subió un ligero 0,05%, hasta los 61,53 dólares el barril.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-21T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "US"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 5,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "petróleo",
-                "precio"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Javier Milei",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Banco Central",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "Banco Central de la República Argentina"
-            ]
-        },
-        {
-            "nombre": "Banco Nación",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "Banco de la Nación Argentina"
-            ]
-        },
-        {
-            "nombre": "Dow Jones",
-            "tipo": "CONCEPTO",
-            "alias": []
-        },
-        {
-            "nombre": "S&P 500",
-            "tipo": "CONCEPTO",
-            "alias": []
-        },
-        {
-            "nombre": "Nasdaq",
-            "tipo": "CONCEPTO",
-            "alias": []
-        },
-        {
-            "nombre": "OPEP",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Donald Trump",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Bolsa de Buenos Aires",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Merval",
-            "tipo": "CONCEPTO",
-            "alias": []
-        },
-        {
-            "nombre": "J.P Morgan",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Banco BBVA",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Banco Macro",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Grupo Supervielle",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Metrogas",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Transener",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Texas",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Wall Street",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Crudo",
-            "tipo": "CONCEPTO",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "nadie se va a librar",
-            "emisor_nombre": "Donald Trump",
-            "contexto": "En el contexto de las recientes exenciones arancelarias del Gobierno de Estados Unidos a una serie de productos electrónicos.",
-            "fecha_cita": "null"
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Reservas brutas internacionales del Banco Central",
-            "categoria": "económico",
-            "valor_numerico": 24305000,
-            "unidad": "USD",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "Banco Central",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Precio del dólar en el mercado oficial",
-            "categoria": "económico",
-            "valor_numerico": 1230,
-            "unidad": "pesos argentinos",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Precio del dólar en el mercado informal (dólar blue)",
-            "categoria": "económico",
-            "valor_numerico": 1285,
-            "unidad": "pesos argentinos",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Devaluación del peso argentino",
-            "categoria": "económico",
-            "valor_numerico": 10,
-            "unidad": "%",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Merval",
-            "categoria": "económico",
-            "valor_numerico": 4.2,
-            "unidad": "%",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Dow Jones",
-            "categoria": "económico",
-            "valor_numerico": 0.78,
-            "unidad": "%",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Precio del petróleo (WTI)",
-            "categoria": "económico",
-            "valor_numerico": 61.53,
-            "unidad": "USD por barril",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Tasa Nominal Anual (TNA) del Banco Nación",
-            "categoria": "económico",
-            "valor_numerico": 37,
-            "unidad": "%",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "Banco Nación",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Tasa Nominal Anual (TNA) del Banco Galicia",
-            "categoria": "económico",
-            "valor_numerico": 34,
-            "unidad": "%",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "Banco Galicia",
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

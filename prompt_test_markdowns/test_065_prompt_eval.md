@@ -51,7 +51,7 @@ Video: hombre se lanza a una poza en Honduras y muere al impactar contra una pie
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama3-8b-8192` in organization `org_01jsay2bafeeht06zsq8qv9mct` service tier `on_demand` on tokens per minute (TPM): Limit 100000, Used 102124, Requested 1199. Please try again in 1.994s. Need more tokens? Visit https://groq.com/self-serve-support/ to request higher limits.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}`
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
@@ -68,7 +68,7 @@ Error: No content received or generated
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama3-8b-8192` in organization `org_01jsay2bafeeht06zsq8qv9mct` service tier `on_demand` on tokens per minute (TPM): Limit 100000, Used 100267, Requested 2209. Please try again in 1.485999999s. Need more tokens? Visit https://groq.com/self-serve-support/ to request higher limits.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}`
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
@@ -85,7 +85,7 @@ Error: No content received or generated
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama3-8b-8192` in organization `org_01jsay2bafeeht06zsq8qv9mct` service tier `on_demand` on tokens per minute (TPM): Limit 100000, Used 101892, Requested 1526. Please try again in 2.051199999s. Need more tokens? Visit https://groq.com/self-serve-support/ to request higher limits.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}`
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
@@ -100,105 +100,33 @@ Error: No content received or generated
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"Hablamos de un punto medio, se requeriría de cinco números gruesos, de Q463 millones adicionales. Estamos partiendo de eso, la búsqueda de ese monto, que está más o menos por ese rango de Q1 mil 800 de bono. Hay que hacer avisos, por ahí los tenemos detectados, lo tenemos que soportar\"",
-            "emisor_nombre": "Walter Figueroa",
-            "contexto": "Durante una citación este 14 de abril del diputado José Chic",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Se continúa el análisis técnico de la propuesta de los distintos sindicatos del sector de salud, como parte de este proceso. Se trabajará en la construcción de una propuesta que sea viable y sostenible, con el objetivo de no afectar la prestación de los servicios de salud a la población\"",
-            "emisor_nombre": "Juan Carlos Oxom",
-            "contexto": "Respondió el Ministerio",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Monto promedio del bono para trabajadores del Ministerio de Salud",
-            "categoria": "presupuestario",
-            "valor_numerico": 1800000,
-            "unidad": "quetzales",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "Viceministro de Finanzas, Walter Figueroa",
-            "notas_contexto": "Cifra promedio mencionada como una de las propuestas"
-        },
-        {
-            "indicador": "Monto máximo del bono para trabajadores del Ministerio de Salud",
-            "categoria": "presupuestario",
-            "valor_numerico": 4000000,
-            "unidad": "quetzales",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "Viceministro de Finanzas, Walter Figueroa",
-            "notas_contexto": "Monto mencionado como una de las peticiones"
-        },
-        {
-            "indicador": "Rango de análisis para determinar el monto del bono",
-            "categoria": "presupuestario",
-            "valor_numerico": 150000000,
-            "unidad": "quetzales",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "Viceministro de Finanzas, Walter Figueroa",
-            "notas_contexto": "Rango de análisis mencionado como parte de la propuesta"
-        },
-        {
-            "indicador": "Monto adicional requerido para el bono",
-            "categoria": "presupuestario",
-            "valor_numerico": 463000000,
-            "unidad": "quetzales",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "Viceministro de Finanzas, Walter Figueroa",
-            "notas_contexto": "Monto mencionado como parte de la búsqueda del monto del bono"
-        },
-        {
-            "indicador": "Monto del fondo disponible para el Ministerio de Salud",
-            "categoria": "presupuestario",
-            "valor_numerico": 600000000,
-            "unidad": "quetzales",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "Viceministro de Finanzas, Walter Figueroa",
-            "notas_contexto": "Fondo mencionado como parte de la propuesta"
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

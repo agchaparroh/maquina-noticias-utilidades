@@ -38,324 +38,84 @@ Más adelante dijo que solicitaron la ampliación de las investigaciones, dado q
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 6,
-    "justificacion_relevancia": "La Fiscalía llama a declarar a miembros del 'gabinete civil' de Zúñiga en calidad de testigos en una investigación",
-    "categorias_asignadas": [
-        "Justicia/Legal",
-        "Política Nacional"
-    ],
-    "explicacion_concisa": "La Fiscalía de Bolivia llama a declarar a miembros del 'gabinete civil' de Juan José Zúñiga en calidad de testigos en una investigación relacionada con órdenes de aprehensión y un documental presentado por el Gobierno"
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "La Fiscalía llamará al 'gabinete civil' de Zúñiga a declarar en calidad de testigos.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "None"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "justicia",
-                "política",
-                "investigación"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El fiscal Torrez dijo que las órdenes de aprehensión y el documental fueron una 'coincidencia'.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "None"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 6,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "justicia",
-                "política",
-                "declaración"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El Gobierno presentó su documental 'Qué pasó el 26-J', en el cual acusa abiertamente de la participación de civiles y militares y también menciona a analistas y dirigentes que irían a integrar el 'gabinete civil'.",
-            "tipo_hecho": "ANUNCIO",
-            "fecha_ocurrencia_inicio": "2025-04-10T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "None"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 6,
-            "confiabilidad": 4,
-            "etiquetas": [
-                "política",
-                "gobierno",
-                "documental"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El fiscal Torrez reiteró que no existe ninguna otra orden de aprehensión y dijo que la anterior semana se liberaron cinco órdenes de las cuales se ejecutó cuatro.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "None"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 6,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "justicia",
-                "política",
-                "declaración"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Juan José Zúñiga",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Luis Carlos Torrez",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Gobierno",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Fiscalía",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "La Paz",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Gonzalo Chávez",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Joshua Bellot",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Paul Antonio Coca",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Ana María Maldonado",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Jaime Dunn",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "José Luis Álvarez",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "César González",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Jorge Valda",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Bismarck Imaña",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Marco Antonio Bracamonte",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Mario Tanaka",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Andrés Ribera Salas",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Fiscalía llamará al ‘gabinete civil’ de Zúñiga a declarar en calidad de testigos",
-            "tipo": "EVENTO",
-            "alias": []
-        },
-        {
-            "nombre": "Qué pasó el 26-J",
-            "tipo": "EVENTO",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"Sobre la conformación de un gabinete de ministros, vuelvo a aclarar a la opinión pública de que no existen más órdenes de aprehensión ni ampliaciones; pero sí nosotros vamos, a fin de poder llegar a la verdad histórica del hecho, los vamos a convocar exclusivamente para que presten su declaración, pero en calidad de testigos\"",
-            "emisor_nombre": "Luis Carlos Torrez",
-            "contexto": "En conferencia de prensa",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"La proyección del documental, el suscrito desconocía en relación a la presentación; vamos a suponer, posiblemente, que ha sido ya un hecho netamente de ministerio de Gobierno la publicación, pero nosotros días antes ya habíamos solicitado la emisión de esas órdenes\"",
-            "emisor_nombre": "Luis Carlos Torrez",
-            "contexto": "En conferencia de prensa",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Número de órdenes de aprehensión ejecutadas",
-            "categoria": "presupuestario",
-            "valor_numerico": 4,
-            "unidad": "órdenes",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "Fiscalía",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de órdenes de aprehensión pendientes",
-            "categoria": "presupuestario",
-            "valor_numerico": 1,
-            "unidad": "órdenes",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "Fiscalía",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de personas que conformarían el 'gabinete civil' de Juan José Zúñiga",
-            "categoria": "demográfico",
-            "valor_numerico": 7,
-            "unidad": "personas",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "Fiscalía",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de meses que se puede ampliar el caso",
-            "categoria": "presupuestario",
-            "valor_numerico": 6,
-            "unidad": "meses",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": "Ley",
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

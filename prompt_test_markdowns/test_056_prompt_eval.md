@@ -45,290 +45,84 @@ La investigación técnica la encabeza la Onesvie, mientras que la penal está a
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 6,
-    "justificacion_relevancia": "El presidente Abinader anuncia apoyo al Gobierno para las víctimas y rescatistas de la tragedia en la discoteca Jet Set",
-    "categorias_asignadas": [
-        "Sociedad/Derechos",
-        "Justicia/Legal"
-    ],
-    "explicacion_concisa": "El presidente de la República Dominicana, Luis Abinader, anuncia que el Gobierno brindará apoyo a las víctimas y rescatistas de la tragedia en la discoteca Jet Set, incluyendo ayuda económica para los huérfanos en situación de vulnerabilidad."
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "El presidente Luis Abinader aseguró que las víctimas de la tragedia en la discoteca Jet Set recibirán acompañamiento por parte del Gobierno en el aspecto de salud mental y en otras áreas que ameriten.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "DO"
-            ],
-            "ubicaciones_especificas": [
-                "República Dominicana"
-            ],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "política",
-                "gobierno",
-                "tragedia",
-                "Jet Set"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El programa Supérate trabaja en la identificación de todas las víctimas y sus familiares para darles seguimiento en su salud mental y otras ayudas que ameriten.",
-            "tipo_hecho": "ANUNCIO",
-            "fecha_ocurrencia_inicio": "2025-04-14",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "DO"
-            ],
-            "ubicaciones_especificas": [
-                "República Dominicana"
-            ],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "programa",
-                "Supérate",
-                "ayuda",
-                "victimas"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "La tragedia en la discoteca Jet Set cobró más de 231 vidas.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-08",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "DO"
-            ],
-            "ubicaciones_especificas": [
-                "República Dominicana"
-            ],
-            "importancia": 9,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "tragedia",
-                "Jet Set",
-                "víctimas"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El Ministerio Público ha abierto una investigación penal para determinar las causas del colapso.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "DO"
-            ],
-            "ubicaciones_especificas": [
-                "República Dominicana"
-            ],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "investigación",
-                "Ministerio Público",
-                "colapso"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Luis Abinader",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Jet Set",
-            "tipo": "LUGAR",
-            "alias": [
-                "discoteca Jet Set"
-            ]
-        },
-        {
-            "nombre": "Supérate",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "programa Supérate"
-            ]
-        },
-        {
-            "nombre": "Onesvie",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "Oficina Nacional de Evaluación Sísmica y Vulnerabilidad de Infraestructura y Edificaciones"
-            ]
-        },
-        {
-            "nombre": "Ministerio Público",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Procuraduría General",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Rubby Pérez",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Maribel Espaillat",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Wilson Camacho",
-            "tipo": "PERSONA",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"A nadie vamos a dejar solo\"",
-            "emisor_nombre": "Abinader",
-            "contexto": "Al ser cuestionado sobre las iniciativas para ayudar a los afectados por la tragedia",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"El Gobierno va a estar con ellos\"",
-            "emisor_nombre": "Abinader",
-            "contexto": "Al ser cuestionado sobre las iniciativas para ayudar a los afectados por la tragedia",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Incluso los rescatistas también, porque su impacto fue muy fuerte\"",
-            "emisor_nombre": "Abinader",
-            "contexto": "Al explicar que se está trabajando en la identificación de todas las víctimas y sus familiares",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Me cubrió con su cuerpo y por eso estoy viva\"",
-            "emisor_nombre": "Maribel Espaillat",
-            "contexto": "Sobreviviente del Jet Set",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Número de víctimas mortales en la tragedia en la discoteca Jet Set",
-            "categoria": "demográfico",
-            "valor_numerico": 231,
-            "unidad": "personas",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de personas que murieron en el lugar",
-            "categoria": "demográfico",
-            "valor_numerico": 221,
-            "unidad": "personas",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de personas que murieron en centros médicos",
-            "categoria": "demográfico",
-            "valor_numerico": 10,
-            "unidad": "personas",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

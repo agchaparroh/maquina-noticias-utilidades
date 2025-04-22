@@ -59,22 +59,17 @@ CIV reporta daños estructurales en el puente Vado Ancho de la ruta CA-2 occiden
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 6,
-    "justificacion_relevancia": "La detección de un túnel subterráneo en una cárcel de Guatemala implica un intento de fuga y una posible violación de la seguridad penitenciaria.",
-    "categorias_asignadas": [
-        "Justicia/Legal",
-        "Conflicto/Seguridad"
-    ],
-    "explicacion_concisa": "La Dirección General del Sistema Penitenciario de Guatemala detectó un túnel subterráneo en la cárcel de Puerto Barrios, donde un grupo de reos intentaba fugarse. La Policía Nacional Civil identificó al líder del grupo y detuvo a los reos antes de que pudieran escapar."
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
@@ -83,7 +78,7 @@ CIV reporta daños estructurales en el puente Vado Ancho de la ruta CA-2 occiden
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama3-8b-8192` in organization `org_01jsay2bafeeht06zsq8qv9mct` service tier `on_demand` on tokens per minute (TPM): Limit 100000, Used 100760, Requested 2438. Please try again in 1.918799999s. Need more tokens? Visit https://groq.com/self-serve-support/ to request higher limits.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}`
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
@@ -98,211 +93,50 @@ Error: No content received or generated
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Sergio Vela",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Policía Nacional Civil (PNC)",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "PNC"
-            ]
-        },
-        {
-            "nombre": "Centro de Rehabilitación de Puerto Barrios",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Izabal",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Renovación Penitenciaria",
-            "tipo": "CONCEPTO",
-            "alias": []
-        },
-        {
-            "nombre": "Los Falsos Pastores",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Marcos Baudilio Godoy Trujillo",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Josué Elías Coy Xoy",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Juan Guillermo Ramón Chum",
-            "tipo": "PERSONA",
-            "alias": [
-                "el Pelón"
-            ]
-        },
-        {
-            "nombre": "Juan Carlos Munguía Molina",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Juan Alberto Martínez",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Granja Penal Canadá",
-            "tipo": "LUGAR",
-            "alias": [
-                "Renovación I"
-            ]
-        },
-        {
-            "nombre": "Suchitepéquez",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Jutiapa",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Sistema Penitenciario",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Dirección General del Sistema Penitenciario",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Policía Nacional Civil (PNC) - Comisaría de Izabal",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"Informamos a la población que este lunes, con base en análisis de información penitenciaria, se realizó un recorrido minucioso en el Centro de Rehabilitación de Puerto Barrios, en el departamento de Izabal\"",
-            "emisor_nombre": "Sergio Vela",
-            "contexto": "Explicación sobre la inspección realizada en el Centro de Rehabilitación de Puerto Barrios",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"La visión de Renovación Penitenciaria continúa avanzando en la restauración del control en los centros de detención del país\"",
-            "emisor_nombre": "Sergio Vela",
-            "contexto": "Afirma sobre la visión de Renovación Penitenciaria",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"Hoy nuevamente pretendía fugarse usando el mismo método, se presume que es el líder organizador túneles para darse a la fuga\"",
-            "emisor_nombre": "Marcos Baudilio Godoy Trujillo",
-            "contexto": "Señaló sobre su intento de fuga",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Número de reos que intentaban fugarse del Centro de Rehabilitación de Puerto Barrios",
-            "categoria": "demográfico",
-            "valor_numerico": 5,
-            "unidad": "personas",
-            "ambito_geografico": [
-                "Izabal"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": "Policía Nacional Civil",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Profundidad del túnel subterráneo encontrado en el Centro de Rehabilitación de Puerto Barrios",
-            "categoria": "otro",
-            "valor_numerico": 3,
-            "unidad": "metros",
-            "ambito_geografico": [
-                "Izabal"
-            ],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": "Policía Nacional Civil",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Edad de Marcos Baudilio Godoy Trujillo, líder de la banda 'Los Falsos Pastores'",
-            "categoria": "demográfico",
-            "valor_numerico": 51,
-            "unidad": "años",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": "puntual",
-            "fuente_especifica": "Policía Nacional Civil",
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de años que Godoy Trujillo se fugó del centro de detención en 2016",
-            "categoria": "otro",
-            "valor_numerico": 1,
-            "unidad": "años",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": "2016",
-            "periodo_referencia_fin": "2016",
-            "tipo_periodo": "puntual",
-            "fuente_especifica": "Policía Nacional Civil",
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

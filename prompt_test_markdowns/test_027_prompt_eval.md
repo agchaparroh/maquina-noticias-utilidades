@@ -36,253 +36,84 @@ Confirmó que participarán en la elaboración del proyecto de Ley General de De
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 7,
-    "justificacion_relevancia": "La participación de pueblos indígenas en el Poder Judicial de la Federación es un tema de gran trascendencia en la esfera hispana.",
-    "categorias_asignadas": [
-        "Justicia/Legal",
-        "Sociedad/Derechos"
-    ],
-    "explicacion_concisa": "El Consejo Nacional de Pueblos Indígenas exige mayor inclusión en el proceso electoral para el Poder Judicial de la Federación, argumentando que la actual situación es inequitativa y que su participación busca garantizar los derechos de sus comunidades."
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "El Consejo Nacional de Pueblos Indígenas exigió mayor inclusión en el proceso electoral del Poder Judicial de la Federación.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "MX"
-            ],
-            "ubicaciones_especificas": [
-                "Ciudad de México"
-            ],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "pueblos indígenas",
-                "elecciones",
-                "justicia"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "La coordinadora general del consejo, Yaneth del Rosario Cruz Gómez, comentó que la agrupación impulsa las campañas de sus siete candidaturas porque 'son nuestra única posibilidad de lograr un cambio real' dentro de sus comunidades.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "MX"
-            ],
-            "ubicaciones_especificas": [
-                "Ciudad de México"
-            ],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "pueblos indígenas",
-                "candidaturas",
-                "justicia"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El consejo reiteró que 'a más de 200 años de vida independiente, seguimos excluidos del sistema de justicia de nuestro país, caracterizado por ser formalista, elitista, clasista y racista'.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "MX"
-            ],
-            "ubicaciones_especificas": [
-                "Ciudad de México"
-            ],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "pueblos indígenas",
-                "justicia",
-                "exclusión"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El consejo participará en la elaboración del proyecto de Ley General de Derechos de los Pueblos Indígenas y Afromexicanos.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "MX"
-            ],
-            "ubicaciones_especificas": [
-                "Ciudad de México"
-            ],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "pueblos indígenas",
-                "ley",
-                "derechos"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Consejo Nacional de Pueblos Indígenas",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Poder Judicial de la Federación",
-            "tipo": "INSTITUCION",
-            "alias": []
-        },
-        {
-            "nombre": "Yaneth del Rosario Cruz Gómez",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "La Jornada",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Instituto Nacional Electoral",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Ley General de Derechos de los Pueblos Indígenas y Afromexicanos",
-            "tipo": "NORMATIVA",
-            "alias": []
-        },
-        {
-            "nombre": "Ciudad de México",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Elecciones del Poder Judicial de la Federación",
-            "tipo": "EVENTO",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "\"son nuestra única posibilidad de lograr un cambio real\"",
-            "emisor_nombre": "Yaneth del Rosario Cruz Gómez",
-            "contexto": "en conferencia de prensa",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"a más de 200 años de vida independiente, seguimos excluidos del sistema de justicia de nuestro país, caracterizado por ser formalista, elitista, clasista y racista\"",
-            "emisor_nombre": "Consejo Nacional de Pueblos Indígenas",
-            "contexto": "en un posicionamiento de seis puntos",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"por lo que ahora, la participación de nuestros hermanos y hermanas alienta nuestra esperanza de contar con una justicia con pertinencia cultural\"",
-            "emisor_nombre": "Yaneth del Rosario Cruz Gómez",
-            "contexto": "en conferencia de prensa",
-            "fecha_cita": null
-        },
-        {
-            "cita": "\"condena a ser ciudadanos pasivos que no podemos expresar y hacer sentir nuestra solidaridad con los hermanos y hermanas que participan en la contienda\"",
-            "emisor_nombre": "Yaneth del Rosario Cruz Gómez",
-            "contexto": "en conferencia de prensa",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Porcentaje de candidatos representados por pueblos afromexicanos y indígenas",
-            "categoria": "demográfico",
-            "valor_numerico": 0.01,
-            "unidad": "%",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

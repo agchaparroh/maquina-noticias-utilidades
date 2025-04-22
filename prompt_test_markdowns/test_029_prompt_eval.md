@@ -45,23 +45,17 @@ Por último, también se centran en detectar las narrativas de desinformación p
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 8,
-    "justificacion_relevancia": "La estrategia electoral del PP utiliza inteligencia artificial y big data para influir en los votos",
-    "categorias_asignadas": [
-        "Política Nacional",
-        "Economía",
-        "Elecciones"
-    ],
-    "explicacion_concisa": "El PP utiliza inteligencia artificial y big data para analizar tendencias electorales y adaptar sus discursos para captar votos en las próximas elecciones generales"
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
@@ -70,7 +64,7 @@ Por último, también se centran en detectar las narrativas de desinformación p
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama3-8b-8192` in organization `org_01jsay2bafeeht06zsq8qv9mct` service tier `on_demand` on tokens per minute (TPM): Limit 100000, Used 99064, Requested 2696. Please try again in 1.055799999s. Need more tokens? Visit https://groq.com/self-serve-support/ to request higher limits.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}`
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
@@ -85,249 +79,50 @@ Error: No content received or generated
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Alberto Núñez Feijóo",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Pedro Sánchez",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Santiago Abascal",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Elías Bendodo",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Aleix Sanmartín",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Organización de las Naciones Unidas (ONU)",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "ONU",
-                "Naciones Unidas"
-            ]
-        },
-        {
-            "nombre": "Gabinete de Inteligencia y Datos Electorales Avanzados (G-IDEA)",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "G-IDEA"
-            ]
-        },
-        {
-            "nombre": "Unidad de Análisis de Datos y Prospectiva",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Partido Popular (PP)",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "PP"
-            ]
-        },
-        {
-            "nombre": "Vox",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Centro de Investigaciones Sociológicas (CIS)",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "CIS"
-            ]
-        },
-        {
-            "nombre": "La Razón",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        },
-        {
-            "nombre": "Castilla y León",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Murcia",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "La Moncloa",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Congreso",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Senado",
-            "tipo": "LUGAR",
-            "alias": []
-        },
-        {
-            "nombre": "Donald Trump",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Alvise",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Se Acabó La Fiesta",
-            "tipo": "ORGANIZACION",
-            "alias": []
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "no solo a nivel de código postal, sino calle a calle",
-            "emisor_nombre": "Elías Bendodo",
-            "contexto": "Describiendo la forma en que el Gabinete de Inteligencia y Datos Electorales Avanzados (G-IDEA) monitoriza las preocupaciones y demandas de los ciudadanos",
-            "fecha_cita": null
-        },
-        {
-            "cita": "el interés por aumentar el gasto militar",
-            "emisor_nombre": "PP",
-            "contexto": "Se refiere a los estudios diarios sobre tendencias electorales, evolución del voto y factores sociopolíticos clave",
-            "fecha_cita": null
-        },
-        {
-            "cita": "la problemática de la vivienda o la percepción de la ciudadanía de las medidas que se incluían en el decreto ómnibus del Gobierno de marzo",
-            "emisor_nombre": "PP",
-            "contexto": "Se refiere a las cuestiones que se han examinado en la Unidad de Análisis de Datos y Prospectiva",
-            "fecha_cita": null
-        },
-        {
-            "cita": "Vox llevaba la voz cantante y que ahora quieren arrebatarle, sobre todo tras los aranceles anunciados por Donald Trump",
-            "emisor_nombre": "Alberto Núñez Feijóo",
-            "contexto": "Se refiere a la problemática de la vivienda y la intención de llegar al sector del campo",
-            "fecha_cita": null
-        },
-        {
-            "cita": "detectar las narrativas de desinformación para que los dirigentes y portavoces del partido huyan de ellas",
-            "emisor_nombre": "PP",
-            "contexto": "Se refiere a la importancia de evitar las 'fake news'",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Presupuesto asignado a Defensa",
-            "categoria": "presupuestario",
-            "valor_numerico": 1000000,
-            "unidad": "USD",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de votos obtenidos por el partido PP",
-            "categoria": "electoral",
-            "valor_numerico": 500000,
-            "unidad": "votos",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Tasa de inflación interanual",
-            "categoria": "económico",
-            "valor_numerico": 2.5,
-            "unidad": "%",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Número de jóvenes de entre 18 y 24 años que votan a Vox",
-            "categoria": "electoral",
-            "valor_numerico": 300000,
-            "unidad": "personas",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        },
-        {
-            "indicador": "Gasto militar",
-            "categoria": "presupuestario",
-            "valor_numerico": 10000000,
-            "unidad": "USD",
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>

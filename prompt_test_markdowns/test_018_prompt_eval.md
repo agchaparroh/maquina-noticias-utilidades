@@ -68,22 +68,17 @@ QUIERO RECIBIRLO
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 4,
-    "justificacion_relevancia": "El artículo analiza la política económica de Argentina y la toma de decisiones del presidente Javier Milei",
-    "categorias_asignadas": [
-        "Economía",
-        "Política Nacional"
-    ],
-    "explicacion_concisa": "El presidente de Argentina, Javier Milei, habla sobre la dolarización y su plan económico en una entrevista de cuatro horas y media, comparando la dolarización con una pizza y explicando su estrategia para llevar adelante el proceso"
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
@@ -92,7 +87,7 @@ QUIERO RECIBIRLO
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama3-8b-8192` in organization `org_01jsay2bafeeht06zsq8qv9mct` service tier `on_demand` on tokens per minute (TPM): Limit 100000, Used 97617, Requested 3102. Please try again in 431.199999ms. Need more tokens? Visit https://groq.com/self-serve-support/ to request higher limits.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}`
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
@@ -109,7 +104,7 @@ Error: No content received or generated
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: BadRequestError: Error code: 400 - {'error': {'message': "Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': '{\n   "resultados": [\n      {\n         "nombre": "Javier Milei",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Alejandro Fantino",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Luis Caputo",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Mauricio Macri",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Donald Trump",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Lionel Messi",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n         "nombre": "Gerardo Werthein",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Marco Rubio",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n         "nombre": "Santiago Oría",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Scott Bessent",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n         "nombre": "Sergio Massa",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "River",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Argentina",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Estados Unidos",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Mercosur",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Banco Central",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Neura",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Casa Rosada",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Ministerio de Economía",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "ONU",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "FMI",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Moneda extranjera",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "Dólar",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "Pizza",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "Aranceles",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "Levantamiento del cepo",\n         "tipo": "EVENTO",\n         "alias": []\n      },\n      {\n         "nombre": "Elecciones Generales España 2023",\n         "tipo": "EVENTO",\n         "alias": []\n      }\n   ]\n}'}}`
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
@@ -126,7 +121,7 @@ Error: No content received or generated
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: BadRequestError: Error code: 400 - {'error': {'message': "Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': '{\n   "resultados": [\n      {\n         "cita": "\\"¿Vos te das cuenta de que tenés un Monumental viéndote?\\"",\n         "emisor_nombre": "Alejandro Fantino",\n         "contexto": "En alusión a la capacidad del estadio de River y a la cantidad de personas que los estaban escuchando.",\n         "fecha_cita": null\n      },\n      {\n         "cita": "\\"Es el día de la liberación\\"",\n         "emisor_nombre": "Javier Milei",\n         "contexto": "En línea con la denominación que Donald Trump le dio al día en que anunció la imposición de aranceles para las exportaciones a Estados Unidos.",\n         "fecha_cita": null\n      },\n      {\n         "cita": "\\"La característica de esta salida del cepo es totalmente distinta a la experiencia del gobierno de (Mauricio) Macri, que había expectativas. Acá estaba pulverizada la confianza\\"",\n         "emisor_nombre": "Javier Milei",\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": "\\"La dolarización es como una pizza: está la de jamón y mozzarella, la de mozzarella, la primavera que tiene ananá, la que tiene pepperoni... hay un montón de modelos de pizza, podés hacerle de distintas maneras\\"",\n         "emisor_nombre": "Javier Milei",\n         "contexto": "En respuesta a una de sus principales promesas de campaña",\n         "fecha_cita": null\n      },\n      {\n         "cita": "\\"Los indicadores dicen que los tipos de cambio tienen que caer, los factores monetarios de Argentina llevan a eso\\"",\n         "emisor_nombre": "Javier Milei",\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": "\\"Que agradezcan que Toto es muy contemplativo. Yo hubiera puesto la banda más abajo para hacerles perder más plata\\"",\n         "emisor_nombre": "Javier Milei",\n         "contexto": "En referencia a quienes especularon con el precio del dólar",\n         "fecha_cita": null\n      },\n      {\n         "cita": "\\"Messi se defendió de esto, no le daba notas al periodismo por basuras mentirosas. ¿Dónde está escrito que una basura ensobrada te puede golpear y no te podés defender?\\"",\n         "emisor_nombre": "Javier Milei",\n         "contexto": "En respuesta a los periodistas y la comparación con Lionel Messi",\n         "fecha_cita": null\n      },\n      {\n         "cita": "\\"Nos correspondía 35% más las penalidades, por el ‘mercasur’. Nos pusieron 10 a nosotros, generaba un desvío de comercio, lo extendieron a todo el Mercosur y cuando vieron cuánto pesaba el Mercosur en Sudamérica dijeron ‘les ponemos a todos 10\\""\n         "emisor_nombre": "Javier Milei",\n         "contexto": "En referencia a la implementación de aranceles a las importaciones por parte del gobierno estadounidense",\n         "fecha_cita": null\n      },\n      {\n         "cita": "\\"Mandril, decime qué se siente que el cepo llegó a su final. Te juro que aunque pasen los años vos siempre vas a pifiar...\\"",\n         "emisor_nombre": "Javier Milei",\n         "contexto": "En referencia a una canción que utilizan los funcionarios de Economía para festejar el fin de las restricciones",\n         "fecha_cita": null\n      },\n      {\n         "cita": "\\"Qué devaluación rara\\"",\n         "emisor_nombre": "Javier Milei",\n         "contexto": "En referencia a los movimientos que tuvo la cotización del dólar después del levantamiento del cepo",\n         "fecha_cita": null\n      },\n      {\n         "cita": "\\"¿Qué pasó hoy (por el lunes) con el tipo de cambio? Estaba cerca de 1.400. ¿Y dónde se fue? A 1.190. La base monetaria no crece, el resultado fiscal no me inyecta pesos, me saca pesos, con lo cual va a haber menos pesos\\"",\n         "emisor_nombre": "Javier Milei",\n         "contexto": "En referencia a la salida del cepo sin bandas",\n         "fecha_cita": null\n      }\n   ]\n}'}}`
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
@@ -143,7 +138,7 @@ Error: No content received or generated
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama3-8b-8192` in organization `org_01jsay2bafeeht06zsq8qv9mct` service tier `on_demand` on tokens per minute (TPM): Limit 100000, Used 99440, Requested 2683. Please try again in 1.2738s. Need more tokens? Visit https://groq.com/self-serve-support/ to request higher limits.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}`
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>

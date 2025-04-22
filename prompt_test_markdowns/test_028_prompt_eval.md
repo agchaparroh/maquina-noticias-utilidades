@@ -45,410 +45,84 @@ Hubiera sido admirable ver, en ese momento, ante Koldo, Santos Cerdán o Ábalos
 
 ### Tarea: relevancia
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "puntuacion_relevancia": 2,
-    "justificacion_relevancia": "El artículo critica la política del gobierno y la corrupción, pero sin impacto significativo en la esfera hispana.",
-    "categorias_asignadas": [
-        "Sociedad/Derechos"
-    ],
-    "explicacion_concisa": "El artículo critica la corrupción y la falta de acción del gobierno en relación con la prostitución y la igualdad de género, utilizando un tono sarcástico y humorístico."
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "contenido": "El Gobierno de España contrata con prostitutas para mantener relaciones sexuales pagadas con dinero público.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-15",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "ES"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 9,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "gobierno",
-                "prostitución",
-                "contratación"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El consejo de administración de la mayor empresa ferroviaria española incorpora al fotógrafo presidencial.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-15",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "ES"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "gobierno",
-                "empresas",
-                "nombramientos"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El Gabinete de comunicación de TVE presenta a un empresario famoso como ejemplo de sugar daddy.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-15",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "ES"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 6,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "medios",
-                "comunicación",
-                "publicidad"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "El Gobierno español no construye viviendas, pero sí contrata con prostitutas para mantener relaciones sexuales pagadas con dinero público.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-15",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "ES"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 8,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "gobierno",
-                "viviendas",
-                "prostitución"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "Los ministros del Gobierno español organizan orgías con prostitutas a las que colocan en empresas públicas durante años.",
-            "tipo_hecho": "SUCESO",
-            "fecha_ocurrencia_inicio": "2025-04-15",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "ES"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 9,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "gobierno",
-                "prostitución",
-                "orgías"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        },
-        {
-            "contenido": "La ministra Pilar Alegría no defiende a las prostitutas que eran trasladadas en furgonetas para ser prostitutas por sus compañeros de partido y del Consejo de Ministros.",
-            "tipo_hecho": "DECLARACION",
-            "fecha_ocurrencia_inicio": "2025-04-15",
-            "fecha_ocurrencia_fin": null,
-            "precision_temporal": "exacta",
-            "paises": [
-                "ES"
-            ],
-            "ubicaciones_especificas": [],
-            "importancia": 7,
-            "confiabilidad": 5,
-            "etiquetas": [
-                "gobierno",
-                "prostitución",
-                "ministros"
-            ],
-            "es_evento_futuro": false,
-            "estado_programacion": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "nombre": "Pilar Alegría",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Pedro Sánchez",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Jesica",
-            "tipo": "PERSONA",
-            "alias": []
-        },
-        {
-            "nombre": "Consejo de Ministros",
-            "tipo": "INSTITUCION",
-            "alias": [
-                "Consejo de Ministros"
-            ]
-        },
-        {
-            "nombre": "Gobierno de España",
-            "tipo": "INSTITUCION",
-            "alias": [
-                "Gobierno de España"
-            ]
-        },
-        {
-            "nombre": "ADIF",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "ADIF"
-            ]
-        },
-        {
-            "nombre": "TVE",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "TVE"
-            ]
-        },
-        {
-            "nombre": "PSOE",
-            "tipo": "ORGANIZACION",
-            "alias": [
-                "PSOE"
-            ]
-        },
-        {
-            "nombre": "Ferraz",
-            "tipo": "LUGAR",
-            "alias": [
-                "Ferraz"
-            ]
-        },
-        {
-            "nombre": "Elecciones Generales",
-            "tipo": "EVENTO",
-            "alias": [
-                "Elecciones Generales"
-            ]
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "cita": "Es tranquilizador saber que el Gobierno de España no puede construir viviendas, pero sí puede contratar con absoluta libertad prostitutas para mantener durante años relaciones sexuales pagadas con dinero público.",
-            "emisor_nombre": "Alegría",
-            "contexto": "El autor critica la política del gobierno sobre la construcción de viviendas y la contratación de prostitutas.",
-            "fecha_cita": null
-        },
-        {
-            "cita": "A los okupas no se les puede cortar la luz, pero el servicio de intervención, los secretarios generales técnicos y los jefes de sección no dicen nada sobre los enchufes.",
-            "emisor_nombre": "Alegría",
-            "contexto": "El autor critica la falta de acción del gobierno en relación con los okupas.",
-            "fecha_cita": null
-        },
-        {
-            "cita": "En este contexto, esperaría una nueva carta a la ciudadanía, ahora con aún más amor y menos sentido del ridículo.",
-            "emisor_nombre": "Alegría",
-            "contexto": "El autor se refiere a la necesidad de una carta al ciudadano con un tono más serio y menos ridículo.",
-            "fecha_cita": null
-        },
-        {
-            "cita": "Otro hombre feminista, que convivió como vicepresidente durante años con Ábalos en el Gobierno, no ha dicho ni mu sobre el dichoso tema.",
-            "emisor_nombre": "Alegría",
-            "contexto": "El autor critica la falta de acción de un político feminista en relación con el tema de las prostitutas.",
-            "fecha_cita": null
-        },
-        {
-            "cita": "Los hombres feministas nos rodean a los paisanos conservadores de toda la vida.",
-            "emisor_nombre": "Alegría",
-            "contexto": "El autor critica la falta de acción de los políticos feministas en relación con el tema de las prostitutas.",
-            "fecha_cita": null
-        },
-        {
-            "cita": "El Gabinete de comunicación que nos han montado en TVE, con las feministas Henar Álvarez, Inés Hernan y Silvia Intxaurrondo, decide esta semana que nos presenta como ejemplo de sugar daddy a un empresario famoso en la burbuja inmobiliaria de 2008, fallecido hace cinco años, que estuvo casado hasta el último día de su vida con la misma mujer y que crio cuatro hijos orgullosos de que Paco fuera su padre.",
-            "emisor_nombre": "Alegría",
-            "contexto": "El autor critica la presentación de un empresario como ejemplo de sugar daddy en un programa de televisión.",
-            "fecha_cita": null
-        },
-        {
-            "cita": "En este país, habría que coger a más de uno de la pechera.",
-            "emisor_nombre": "Alegría",
-            "contexto": "El autor critica la falta de acción del gobierno en relación con los políticos corruptos.",
-            "fecha_cita": null
-        },
-        {
-            "cita": "Y en cualquier caso plantearle a algunos guionistas del humor Contreras una demanda.",
-            "emisor_nombre": "Alegría",
-            "contexto": "El autor se refiere a la necesidad de demandar a los guionistas del humor por su falta de acción en relación con el tema de las prostitutas.",
-            "fecha_cita": null
-        },
-        {
-            "cita": "Es importante que asumamos que la mitad de los fondos europeos fueron a ADIF.",
-            "emisor_nombre": "Alegría",
-            "contexto": "El autor critica la falta de transparencia en la gestión de los fondos europeos.",
-            "fecha_cita": null
-        },
-        {
-            "cita": "Que las mascarillas fueron un chiste y que no era solo Ábalos: los que iban a comidas y fiestas y se repartían en esas cenas los fondos de reconstrucción destinados a la economía española eran la mitad de los ministros del Gobierno, con el acuerdo de Pedro Sánchez y la intervención de su mujer.",
-            "emisor_nombre": "Alegría",
-            "contexto": "El autor critica la corrupción en el gobierno y la gestión de los fondos de reconstrucción.",
-            "fecha_cita": null
-        },
-        {
-            "cita": "El Gobierno nos dice rotundamente que lo deleznable son las palabras que se les dirigen y no las fiestas con prostitutas de libre designación.",
-            "emisor_nombre": "Alegría",
-            "contexto": "El autor critica la falta de acción del gobierno en relación con las fiestas con prostitutas.",
-            "fecha_cita": null
-        },
-        {
-            "cita": "Los compañeros y ministros socialistas organizan orgías con prostitutas a las que colocan en empresas públicas durante años.",
-            "emisor_nombre": "Alegría",
-            "contexto": "El autor critica la corrupción en el gobierno y la explotación de prostitutas.",
-            "fecha_cita": null
-        },
-        {
-            "cita": "Las compañeras socialistas, como mínimo, guardan silencio durante años.",
-            "emisor_nombre": "Alegría",
-            "contexto": "El autor critica la falta de acción de las políticas feministas en relación con el tema de las prostitutas.",
-            "fecha_cita": null
-        },
-        {
-            "cita": "Y los que tenemos problemas con la dignidad de las mujeres, al parecer, somos el resto.",
-            "emisor_nombre": "Alegría",
-            "contexto": "El autor se refiere a la falta de acción del gobierno en relación con la dignidad de las mujeres.",
-            "fecha_cita": null
-        },
-        {
-            "cita": "No se les conoce en este momento ningún mensaje de apoyo a Jesica ni a ninguna de sus compañeras por haber sido prostituidas durante años por sus compañeros del Consejo de Ministros.",
-            "emisor_nombre": "Alegría",
-            "contexto": "El autor critica la falta de apoyo del gobierno a las prostitutas explotadas.",
-            "fecha_cita": null
-        },
-        {
-            "cita": "La reacción de Pilar Alegría habría sido legítima si la hubiera mostrado para defender a las mujeres que eran trasladadas en furgonetas para ser prostitutas por sus compañeros de partido y del Consejo de Ministros.",
-            "emisor_nombre": "Alegría",
-            "contexto": "El autor critica la falta de acción de Pilar Alegría en relación con el tema de las prostitutas.",
-            "fecha_cita": null
-        },
-        {
-            "cita": "Hubiera sido admirable ver, en ese momento, ante Koldo, Santos Cerdán o Ábalos, esa actitud en las ministras, compañeras y políticas feministas del PSOE, levantando la voz para defender a Jésica o a la de Asturias.",
-            "emisor_nombre": "Alegría",
-            "contexto": "El autor critica la falta de acción de las políticas feministas en relación con el tema de las prostitutas.",
-            "fecha_cita": null
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-✅ **Estado:** Éxito
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-3.1-8b-128k` does not exist or you do not have access to it.', 'type': 'invalid_request_error', 'code': 'model_not_found'}}`
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-```json
-{
-    "resultados": [
-        {
-            "indicador": "Presupuesto asignado a la digitalización de prostitutas como gasto en Defensa",
-            "categoria": "presupuestario",
-            "valor_numerico": null,
-            "unidad": null,
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": "Se sugiere abordar este tema en el presupuesto del Gobierno"
-        },
-        {
-            "indicador": "Fondos europeos destinados a ADIF",
-            "categoria": "económico",
-            "valor_numerico": null,
-            "unidad": null,
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": "La mitad de los fondos europeos fueron destinados a ADIF"
-        },
-        {
-            "indicador": "Número de ministros del Gobierno que asistían a comidas y fiestas con prostitutas",
-            "categoria": "electoral",
-            "valor_numerico": null,
-            "unidad": null,
-            "ambito_geografico": [],
-            "periodo_referencia_inicio": null,
-            "periodo_referencia_fin": null,
-            "tipo_periodo": null,
-            "fuente_especifica": null,
-            "notas_contexto": "La mitad de los ministros del Gobierno estaban involucrados en este tipo de actividades"
-        }
-    ]
-}
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
 ```
 </details>
