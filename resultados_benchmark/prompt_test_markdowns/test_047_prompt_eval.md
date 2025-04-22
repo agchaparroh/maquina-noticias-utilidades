@@ -1,0 +1,277 @@
+# Evaluación Artículo: test_047
+
+## Metadatos del Artículo Original
+
+| Campo          | Valor                                      |
+|----------------|--------------------------------------------|
+| **URL**        | https://www.lapatilla.com/2025/04/14/nicolas-maduro-habla-de-la-milicia-y-dice-que-estan-mas-armados-que-nunca-video/           |
+| **Título**     | Nicolás Maduro habla de la milicia y dice que están “más armados que nunca” (VIDEO)       |
+| **Medio**      | LaPatilla.com         |
+| **País Pub.**  | None |
+| **Fecha Pub.** | 2025-04-14T19:37:49-04:00 |
+| **Recopilado** | 2025-04-21T00:43:29.986543+00:00 |
+
+---
+
+## Contenido del Artículo Analizado
+
+<details>
+<summary>Ver/Ocultar Contenido Completo</summary>
+
+```text
+Nicolás Maduro, durante un encuentro con la milicia al servicio del chavismo, dijo que “están más armados que nunca”, esto, para presuntamente “defender el país”.
+lapatilla.com
+Maduro mientras alardeaba que es el “primer presidente miliciano”, aseguró que, “aquí estamos hoy más dispuestos que nunca, más conscientes que nunca, más armados que nunca para defender el sagrado suelo de nuestra Venezuela heroica”, dijo.
+De igual manera, volvió a atacar a María Corina Machado, al enfatizar que es una “criminal”, al igual que la oposición venezolana.
+“No volverán. María Corina Machado y la oposición extremista son unos criminales que se dedican a lamerle el trasero a Estados Unidos, un imperialismo que los desprecia y los utiliza”.
+Por último, dijo que el próximo 1 de mayo, el chavismo realizarán una marcha para conmemorar el Día del Trabajador.
+```
+</details>
+
+---
+
+## Resumen de Evaluación
+
+| Tarea | Estado | Modelo | Tiempo | Tokens | Ratio |
+|-------|--------|--------|--------|--------|-------|
+| relevancia | ✅ | `llama3-8b-8192` | 0m 3.05s | 1088.0 | 0.11 |
+| extraccion_hechos | ✅ | `llama3-8b-8192` | 0m 2.00s | 2305.0 | 0.26 |
+| extraccion_entidades | ✅ | `llama3-8b-8192` | 0m 0.86s | 1341.0 | 0.15 |
+| extraccion_citas | ✅ | `llama3-8b-8192` | 0m 0.63s | 1339.0 | 0.24 |
+| extraccion_datos | ❌ | `llama3-8b-8192` | 0m 2.38s |  | N/A |
+
+---
+
+## Resultados Detallados por Tarea
+
+### Tarea: relevancia
+
+✅ **Estado:** Éxito
+
+**Métricas:**
+- **Modelo:** `llama3-8b-8192`
+- **Tiempo:** 0m 3.05s
+- **Tokens prompt:** 980.0
+- **Tokens respuesta:** 108.0
+- **Total tokens:** 1088.0
+
+
+<details open>
+<summary>Ver/Ocultar Respuesta LLM</summary>
+
+```json
+{
+    "puntuacion_relevancia": 8,
+    "justificacion_relevancia": "Maduro anuncia aumento de armamento de la milicia para defender el país",
+    "categorias_asignadas": [
+        "Política Nacional",
+        "Conflicto/Seguridad"
+    ],
+    "explicacion_concisa": "Nicolás Maduro, presidente de Venezuela, habla sobre la milicia y su capacidad para defender el país, mientras critica a la oposición y a María Corina Machado"
+}
+```
+</details>
+
+
+### Tarea: extraccion_hechos
+
+✅ **Estado:** Éxito
+
+**Métricas:**
+- **Modelo:** `llama3-8b-8192`
+- **Tiempo:** 0m 2.00s
+- **Tokens prompt:** 1830.0
+- **Tokens respuesta:** 475.0
+- **Total tokens:** 2305.0
+
+
+<details open>
+<summary>Ver/Ocultar Respuesta LLM</summary>
+
+```json
+{
+    "resultados": [
+        {
+            "contenido": "Nicolás Maduro dijo que la milicia está \"más armados que nunca\" para defender el país.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "VE"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "Venezuela",
+                "milicia"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Maduro atacó a María Corina Machado, llamándola \"criminal\", y a la oposición venezolana.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "VE"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "Venezuela",
+                "oposición"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El chavismo realizará una marcha el próximo 1 de mayo para conmemorar el Día del Trabajador.",
+            "tipo_hecho": "ANUNCIO",
+            "fecha_ocurrencia_inicio": "2025-05-01",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "VE"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 6,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "Venezuela",
+                "marcha"
+            ],
+            "es_evento_futuro": true,
+            "estado_programacion": null
+        }
+    ]
+}
+```
+</details>
+
+
+### Tarea: extraccion_entidades
+
+✅ **Estado:** Éxito
+
+**Métricas:**
+- **Modelo:** `llama3-8b-8192`
+- **Tiempo:** 0m 0.86s
+- **Tokens prompt:** 1164.0
+- **Tokens respuesta:** 177.0
+- **Total tokens:** 1341.0
+
+
+<details open>
+<summary>Ver/Ocultar Respuesta LLM</summary>
+
+```json
+{
+    "resultados": [
+        {
+            "nombre": "Nicolás Maduro",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "María Corina Machado",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Venezuela",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Estados Unidos",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Día del Trabajador",
+            "tipo": "EVENTO",
+            "alias": []
+        },
+        {
+            "nombre": "Chavismo",
+            "tipo": "ORGANIZACION",
+            "alias": []
+        }
+    ]
+}
+```
+</details>
+
+
+### Tarea: extraccion_citas
+
+✅ **Estado:** Éxito
+
+**Métricas:**
+- **Modelo:** `llama3-8b-8192`
+- **Tiempo:** 0m 0.63s
+- **Tokens prompt:** 1076.0
+- **Tokens respuesta:** 263.0
+- **Total tokens:** 1339.0
+
+
+<details open>
+<summary>Ver/Ocultar Respuesta LLM</summary>
+
+```json
+{
+    "resultados": [
+        {
+            "cita": "están más armados que nunca",
+            "emisor_nombre": "Nicolás Maduro",
+            "contexto": "Durante un encuentro con la milicia al servicio del chavismo",
+            "fecha_cita": null
+        },
+        {
+            "cita": "aquí estamos hoy más dispuestos que nunca, más conscientes que nunca, más armados que nunca para defender el sagrado suelo de nuestra Venezuela heroica",
+            "emisor_nombre": "Nicolás Maduro",
+            "contexto": "Durante un encuentro con la milicia al servicio del chavismo",
+            "fecha_cita": null
+        },
+        {
+            "cita": "No volverán. María Corina Machado y la oposición extremista son unos criminales que se dedican a lamerle el trasero a Estados Unidos, un imperialismo que los desprecia y los utiliza",
+            "emisor_nombre": "Nicolás Maduro",
+            "contexto": "Al enfatizar que María Corina Machado y la oposición venezolana son criminales",
+            "fecha_cita": null
+        }
+    ]
+}
+```
+</details>
+
+
+### Tarea: extraccion_datos
+
+❌ **Estado:** Fallo (Error API)
+
+   **Mensaje Error:** `API_Error: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama3-8b-8192` in organization `org_01jsay2bafeeht06zsq8qv9mct` service tier `on_demand` on tokens per minute (TPM): Limit 100000, Used 104793, Requested 1382. Please try again in 3.7054s. Need more tokens? Visit https://groq.com/self-serve-support/ to request higher limits.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}`
+
+**Métricas:**
+- **Modelo:** `llama3-8b-8192`
+- **Tiempo:** 0m 2.38s
+- **Tokens prompt:** 
+- **Tokens respuesta:** 
+- **Total tokens:** 
+
+
+<details open>
+<summary>Ver/Ocultar Respuesta LLM</summary>
+
+_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
+```
+Error: No content received or generated
+```
+</details>
