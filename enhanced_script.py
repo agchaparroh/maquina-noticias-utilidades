@@ -142,15 +142,17 @@ def verificar_dependencias_opcionales():
     # Ofrecer instalación si no estamos en modo silencioso
     if not CONFIG["MODO_SILENCIOSO"] and not all(deps_status.values()):
         deps_faltantes = [dep for dep, status in deps_status.items() if not status]
-        if input(f"¿Desea instalar las dependencias opcionales faltantes? ({', '.join(deps_faltantes)}) [s/n]: ").lower() == 's':
-            for dep in deps_faltantes:
-                try:
-                    print(f"Instalando {dep}...")
-                    subprocess.check_call([sys.executable, "-m", "pip", "install", dep])
-                    deps_status[dep] = True
-                    print(f"✓ {dep} instalado correctamente.")
-                except Exception as e:
-                    print(f"✗ Error instalando {dep}: {e}")
+        print(f"Saltando instalación de dependencias opcionales: {', '.join(deps_faltantes)}")
+        # Modo no interactivo: no solicitamos input
+        # if input(f"¿Desea instalar las dependencias opcionales faltantes? ({', '.join(deps_faltantes)}) [s/n]: ").lower() == 's':
+        #     for dep in deps_faltantes:
+        #         try:
+        #             print(f"Instalando {dep}...")
+        #             subprocess.check_call([sys.executable, "-m", "pip", "install", dep])
+        #             deps_status[dep] = True
+        #             print(f"✓ {dep} instalado correctamente.")
+        #         except Exception as e:
+        #             print(f"✗ Error instalando {dep}: {e}")
     
     return deps_status
 
@@ -1323,6 +1325,7 @@ async def mostrar_progreso(procesando: Dict[str, Dict], total: int, inicio: floa
 
 async def main():
     """Función principal del script de testeo de prompts."""
+    global UMBRAL_TOKENS, procesados  # Para permitir actualizaciones globales
     start_time_script = time.time()
     logger.info(f"--- Iniciando Script de Testeo de Prompts Mejorado ---")
     logger.info(f"Modelos configurados: {MODELO_ESTANDAR} / {MODELO_CONTEXTO_AMPLIO}")
@@ -1348,7 +1351,6 @@ async def main():
     # Optimizar umbral de tokens si hay datos previos
     umbral_optimizado = optimizar_umbral_tokens()
     if umbral_optimizado != UMBRAL_TOKENS:
-        global UMBRAL_TOKENS
         UMBRAL_TOKENS = umbral_optimizado
         logger.info(f"Umbral de tokens optimizado a: {UMBRAL_TOKENS}")
 
