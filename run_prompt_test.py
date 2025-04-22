@@ -70,52 +70,82 @@ def _clean_json_string(raw_string: Optional[str]) -> Optional[str]:
     if not raw_string:
         return None
 
-    # Buscar el primer '{' o '[' y el último '}' o ']'
-    # Usar regex no voraz para encontrar el bloque más interno si hay anidamiento incorrecto al inicio/final
-    match = re.search(r"^\s*(?:\{.*\}|\[.*\])\s*$", raw_string, re.DOTALL)
+    # 1. Intentar extraer el bloque JSON más obvio (objeto o array)
+    # Regex para encontrar el primer { o [ hasta el último } o ] balanceado (aproximado)
+    # o simplemente el bloque que ocupa casi toda la cadena.
+    json_match = re.search(r'^\s*(\{.*\}|\[.*\])\s*', raw_string, re.DOTALL)
+    if json_match:
+        potential_json = json_match.group(1)
+        try:
+            json.loads(potential_json)
+            return potential_json # Ya es válido
+        except json.JSONDecodeError:
+            pass # Continuar con los intentos de reparación
 
-    if match:
-        # Si la cadena ya es un JSON válido de principio a fin
-         return match.group(0).strip()
-    else:
-        # Intentar encontrar el primer { o [ y el último } o ] correspondiente
-        # Esto es más complejo de hacer perfectamente con regex para casos anidados
-        # Un enfoque más simple: buscar el primer {/[ y el último }/]
-        start_brace = raw_string.find('{')
-        start_bracket = raw_string.find('[')
+    # 2. Si no es válido directamente, intentar reparaciones comunes
+    logger.debug("JSON inicial no válido o con texto extra, intentando limpiar/reparar...")
+    fixed_string = raw_string
 
-        if start_brace == -1 and start_bracket == -1:
-            # No se encontró inicio de JSON
-            return None
+    # 2a. Eliminar texto antes del primer '{' o '[' y después del último '}' o ']'
+    start_brace = fixed_string.find('{')
+    start_bracket = fixed_string.find('[')
+    end_brace = fixed_string.rfind('}')
+    end_bracket = fixed_string.rfind(']')
 
-        if start_brace == -1:
+    start_index = -1
+    end_index = -1
+
+    if start_brace != -1 and end_brace != -1:
+        start_index = start_brace
+        end_index = end_brace
+    if start_bracket != -1 and end_bracket != -1:
+        if start_index == -1 or start_bracket < start_index:
             start_index = start_bracket
-            end_char = ']'
-        elif start_bracket == -1:
-            start_index = start_brace
-            end_char = '}'
-        else:
-            # Tomar el que aparezca primero
-            start_index = min(start_brace, start_bracket)
-            end_char = '}' if start_index == start_brace else ']'
+        if end_index == -1 or end_bracket > end_index:
+             # Cuidado con arrays dentro de objetos, priorizar el cierre del tipo de apertura
+             if start_index == start_bracket:
+                  end_index = end_bracket
+             # Si empieza con { y termina con ], es raro, pero mantenemos el brace/bracket
+             # Si empieza con [ y termina con }, también raro.
+             # La lógica simple es tomar el rango más amplio
+             elif end_bracket > end_brace:
+                 end_index = end_bracket
 
-        # Buscar la última ocurrencia del carácter de cierre correspondiente
-        end_index = raw_string.rfind(end_char)
+    if start_index != -1 and end_index != -1 and start_index < end_index:
+        fixed_string = fixed_string[start_index : end_index + 1]
+    else:
+         logger.warning("No se pudo determinar un bloque JSON principal claro.")
+         # Aún así, intentar las siguientes reparaciones sobre la cadena original limpia de espacios
+         fixed_string = raw_string.strip()
 
-        if start_index != -1 and end_index != -1 and end_index > start_index:
-            # Extraer el contenido potencial JSON
-            potential_json = raw_string[start_index : end_index + 1]
-            # Validar si esto al menos parece un JSON (simple check)
-            try:
-                json.loads(potential_json)
-                return potential_json
-            except json.JSONDecodeError:
-                 # Si falla, quizás la extracción simple no funcionó, devolver None
-                 logger.warning(f"No se pudo extraer un bloque JSON limpio de la respuesta.")
-                 return None
-        else:
-            # No se encontró un par válido de inicio/fin
-            return None
+
+    # 2b. Reemplazar comillas simples por dobles en keys (más seguro con regex)
+    # Busca 'key': o 'key' :
+    fixed_string = re.sub(r"'\s*([^'\s]+)\s*'\s*:", r'"\1":', fixed_string)
+    # Busca 'key': (con espacios)
+    fixed_string = re.sub(r"'\s*([^'\s]+)\s*'\s*:", r'"\1":', fixed_string)
+
+
+    # 2c. Reemplazar comillas simples por dobles en values (más complejo, evitar si es posible)
+    # Podría romper strings que legítimamente contienen comillas simples.
+    # Mejor confiar en que el LLM use dobles para strings.
+
+    # 2d. Asegurarse de que null, true, false están en minúsculas
+    fixed_string = re.sub(r'\bNone\b', 'null', fixed_string) # Python None -> JSON null
+    fixed_string = re.sub(r'\bTrue\b', 'true', fixed_string) # Python True -> JSON true
+    fixed_string = re.sub(r'\bFalse\b', 'false', fixed_string) # Python False -> JSON false
+
+    # 2e. Eliminar comas finales antes de '}' o ']' (causa común de error)
+    fixed_string = re.sub(r",\s*(\}|\])", r"\1", fixed_string)
+
+    # 3. Intentar parsear el string reparado
+    try:
+        json.loads(fixed_string)
+        logger.info("JSON reparado exitosamente.")
+        return fixed_string
+    except json.JSONDecodeError as e:
+        logger.error(f"Falló la reparación del JSON: {e}. Devolviendo None.")
+        return None
 
 
 # --- Generación de Prompts (REVISADOS) ---
@@ -219,6 +249,40 @@ Fecha Pub: {fecha_pub}
 País Pub: {pais}
 Contenido:
 {contenido}
+
+EJEMPLO DE FORMATO ESPERADO:
+{{
+  "resultados": [
+    {{
+      "contenido": "Descripción concisa del primer hecho...",
+      "tipo_hecho": "SUCESO",
+      "fecha_ocurrencia_inicio": "2025-04-15T10:00:00Z",
+      "fecha_ocurrencia_fin": null,
+      "precision_temporal": "exacta",
+      "paises": ["ES", "AR"],
+      "ubicaciones_especificas": ["Madrid", "Congreso"],
+      "importancia": 8,
+      "confiabilidad": 5,
+      "etiquetas": ["política", "acuerdo", "gobierno"],
+      "es_evento_futuro": false,
+      "estado_programacion": null
+    }},
+    {{
+      "contenido": "Explicación del concepto de 'lawfare'...",
+      "tipo_hecho": "CONCEPTO",
+      "fecha_ocurrencia_inicio": "2025-04-15", 
+      "fecha_ocurrencia_fin": null,
+      "precision_temporal": "dia", 
+      "paises": [],
+      "ubicaciones_especificas": [],
+      "importancia": 6,
+      "confiabilidad": 4,
+      "etiquetas": ["justicia", "política", "definición", "lawfare"],
+      "es_evento_futuro": false,
+      "estado_programacion": null
+    }}
+  ]
+}}
 
 Respuesta (objeto JSON con clave "resultados"):
 """
@@ -332,8 +396,8 @@ Respuesta (objeto JSON con clave "resultados"):
 RETRYABLE_ERRORS = (APITimeoutError, RateLimitError, GroqError)
 
 @retry(
-    stop=stop_after_attempt(3),
-    wait=wait_exponential(multiplier=1, min=2, max=10),
+    stop=stop_after_attempt(5),  # Aumentar de 3 a 5
+    wait=wait_exponential(multiplier=2, min=5, max=60),  # Esperas más largas (5s a 60s)
     retry=retry_if_exception_type(RETRYABLE_ERRORS),
     reraise=True # Re-lanza la excepción si todos los reintentos fallan
 )
@@ -615,7 +679,7 @@ async def main():
         return
 
     # Procesar artículos concurrentemente
-    CONCURRENCY_LIMIT = 5 # Mantener concurrencia razonable
+    CONCURRENCY_LIMIT = 2 # Bajar de 5 a 2
     semaphore = asyncio.Semaphore(CONCURRENCY_LIMIT)
 
     async def process_with_semaphore(article_path):

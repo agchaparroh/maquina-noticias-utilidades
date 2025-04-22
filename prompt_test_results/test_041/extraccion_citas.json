@@ -1,0 +1,10 @@
+{
+    "test_id": "test_041",
+    "tarea": "extraccion_citas",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"\\\"Cuidémonos, cuidémonos de verdad, tomemos decisiones acertadas, decisiones responsables, no pongamos en riesgo lo más importante, nuestra vida y de la vida de los demás\\\"\",\n         \"emisor_nombre\": \"Luis Abinader\",\n         \"contexto\": \"En un mensaje contundente en su tradicional encuentro de los lunes con la prensa, tras el pesar de la tragedia de la semana pasada en la que murieron 231 personas en el derrumbe del techo de la discoteca Jet Set\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"Los operativos de seguridad están desplegados en todo el país como cada año, pero la verdadera prevención comienza con cada uno de nosotros, y con cada uno, recuerden, no hay más prueba de amor que cuidarnos, no hay más gesto de amor que cuidar a los nuestros\\\"\",\n         \"emisor_nombre\": \"Luis Abinader\",\n         \"contexto\": \"En un mensaje contundente en su tradicional encuentro de los lunes con la prensa, tras el pesar de la tragedia de la semana pasada en la que murieron 231 personas en el derrumbe del techo de la discoteca Jet Set\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+}

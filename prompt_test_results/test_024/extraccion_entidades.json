@@ -1,0 +1,10 @@
+{
+    "test_id": "test_024",
+    "tarea": "extraccion_entidades",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Google LLC\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"Google\"]\n      },\n      {\n         \"nombre\": \"YouTube\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      }\n   ]\n}"
+}

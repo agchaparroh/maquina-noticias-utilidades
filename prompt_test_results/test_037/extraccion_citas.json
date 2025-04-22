@@ -1,0 +1,10 @@
+{
+    "test_id": "test_037",
+    "tarea": "extraccion_citas",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"\\\"Bandas armadas incendiaron la comisaría y tomaron el control de la prisión, orquestando una fuga masiva de reclusos\\\"\",\n         \"emisor_nombre\": \"La Red Nacional de Defensa de los Derechos Humanos\",\n         \"contexto\": \"Descripción de los ataques a la comisaría y la prisión en Mirebalais\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"Algunos dicen que esto fue facilitado por la redistribución de las fuerzas del orden a Mirebalais, dejando a Saut-d'Eau vulnerable\\\"\",\n         \"emisor_nombre\": \"Activistas\",\n         \"contexto\": \"Explicación sobre la caída de Saut-d'Eau en manos de las pandillas\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"Al ignorar el colapso de la región central, las autoridades de transición demuestran que no tienen un plan real para restaurar los derechos ciudadanos y la seguridad pública\\\"\",\n         \"emisor_nombre\": \"La organización de derechos humanos\",\n         \"contexto\": \"Crítica a las autoridades de transición por no tener un plan para restaurar la seguridad pública\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"La ausencia de respuesta estatal ha convertido a la policía en bomberos, reaccionando constantemente sin rumbo estratégico, mientras las ciudades caen una tras otra\\\"\",\n         \"emisor_nombre\": \"La organización de derechos humanos\",\n         \"contexto\": \"Crítica a la respuesta de las autoridades estatales a la violencia de pandillas\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+}

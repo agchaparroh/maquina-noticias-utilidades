@@ -1,0 +1,10 @@
+{
+    "test_id": "test_064",
+    "tarea": "extraccion_entidades",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Iván Mordisco\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Iván Mordisco\", \"Néstor Gregorio Vera Fernández\"]\n      },\n      {\n         \"nombre\": \"Pedro Sánchez\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Pedro Sánchez\", \"ministro de Defensa\"]\n      },\n      {\n         \"nombre\": \"Carlos Triana\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Carlos Triana\", \"director de la Policía Nacional\"]\n      },\n      {\n         \"nombre\": \"Fuerzas Militares\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"Fuerzas Militares\"]\n      },\n      {\n         \"nombre\": \"Policía Nacional\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"Policía Nacional\"]\n      },\n      {\n         \"nombre\": \"EMC\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"Estado Mayor Central\"]\n      },\n      {\n         \"nombre\": \"Farc\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"Fuerzas Armadas Revolucionarias de Colombia\"]\n      },\n      {\n         \"nombre\": \"Semana\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"Semana\"]\n      },\n      {\n         \"nombre\": \"Mindefensa\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"Ministerio de Defensa\"]\n      },\n      {\n         \"nombre\": \"Ejército\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"Ejército\"]\n      }\n   ]\n}"
+}

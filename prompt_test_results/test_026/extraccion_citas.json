@@ -1,0 +1,10 @@
+{
+    "test_id": "test_026",
+    "tarea": "extraccion_citas",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"La prevención es tarea de todos!\",\n         \"emisor_nombre\": \"Ministerio de Salud Pública\",\n         \"contexto\": \"En el contexto de la Semana Santa y la activación del Sistema Nacional de Prevención en Semana Santa (Sinaprese)\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"Viajar a velocidades moderadas, evitar el consumo de bebidas alcohólicas, mantenerse hidratado, usar sombrero, gorra o protector solar para evitar quemaduras, prevenir golpes de calor, verificar la adecuada manipulación y conservación de alimentos.\",\n         \"emisor_nombre\": \"Edgar Santos, jefe de la Dirección de Epidemiología y Gestión de Riesgo del MSPAS\",\n         \"contexto\": \"En el contexto de las recomendaciones para la ciudadanía durante la Semana Santa\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+}

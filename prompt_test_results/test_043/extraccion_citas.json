@@ -1,0 +1,10 @@
+{
+    "test_id": "test_043",
+    "tarea": "extraccion_citas",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"ordenó el 23 de marzo, en Carrizalejo, Sinaloa, un ataque con drones armados contra soldados, en represalia por una incautación previa\",\n         \"emisor_nombre\": \"Joel Alfonso Urrea Yariar, alias El Gangoso\",\n         \"contexto\": \"De acuerdo con fuentes del Gabinete de Seguridad\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+}

@@ -1,0 +1,10 @@
+{
+    "test_id": "test_055",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 7,\n   \"justificacion_relevancia\": \"Reconocimiento a los rescatistas que participaron en la tragedia de la discoteca Jet Set\",\n   \"categorias_asignadas\": [\"Conflicto/Seguridad\", \"Justicia/Legal\"],\n   \"explicacion_concisa\": \"El presidente dominicano Luis Abinader anuncia que emitirá un decreto para condecorar a los rescatistas y personal de instituciones del Gobierno que trabajaron en la tragedia de la discoteca Jet Set, que dejó un saldo de 231 personas fallecidas y más de 180 heridas.\"\n}"
+}

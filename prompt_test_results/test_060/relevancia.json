@@ -1,0 +1,10 @@
+{
+    "test_id": "test_060",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"La investigación sobre la fallida compra de la casa de Allende tiene relevancia en el ámbito político y legal\",\n   \"categorias_asignadas\": [\"Justicia/Legal\", \"Política Nacional\"],\n   \"explicacion_concisa\": \"La comisión investigadora sobre la fallida compra de la casa de Allende se vio afectada por la ausencia de funcionarios de Bienes Nacionales, lo que generó críticas y llamados a la responsabilidad\"\n}"
+}

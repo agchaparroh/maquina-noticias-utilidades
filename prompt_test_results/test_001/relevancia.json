@@ -1,0 +1,10 @@
+{
+    "test_id": "test_001",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 5,\n   \"justificacion_relevancia\": \"Relevante por su enfoque en la supervisión de obras públicas y privadas en República Dominicana\",\n   \"categorias_asignadas\": [\"Justicia/Legal\", \"Economía\"],\n   \"explicacion_concisa\": \"El senador Pedro Tineo presenta un proyecto de ley para crear un sistema de supervisión y certificación de obras públicas y privadas en República Dominicana, con el objetivo de garantizar la seguridad estructural y la transparencia en la construcción de edificios y infraestructuras.\"\n}"
+}

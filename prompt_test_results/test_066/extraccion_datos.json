@@ -1,0 +1,10 @@
+{
+    "test_id": "test_066",
+    "tarea": "extraccion_datos",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Número de órdenes de aprehensión ejecutadas\",\n         \"categoria\": \"presupuestario\",\n         \"valor_numerico\": 4,\n         \"unidad\": \"órdenes\",\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": \"Fiscalía\",\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Número de órdenes de aprehensión pendientes\",\n         \"categoria\": \"presupuestario\",\n         \"valor_numerico\": 1,\n         \"unidad\": \"órdenes\",\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": \"Fiscalía\",\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Número de personas que conformarían el 'gabinete civil' de Juan José Zúñiga\",\n         \"categoria\": \"demográfico\",\n         \"valor_numerico\": 7,\n         \"unidad\": \"personas\",\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": \"Fiscalía\",\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Número de meses que se puede ampliar el caso\",\n         \"categoria\": \"presupuestario\",\n         \"valor_numerico\": 6,\n         \"unidad\": \"meses\",\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": \"Ley\",\n         \"notas_contexto\": null\n      }\n   ]\n}"
+}

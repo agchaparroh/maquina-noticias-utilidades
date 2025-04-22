@@ -1,0 +1,10 @@
+{
+    "test_id": "test_059",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 7,\n   \"justificacion_relevancia\": \"La devaluación del peso argentino y el impacto en la economía nacional y la política cambiaria\",\n   \"categorias_asignadas\": [\"Economía\", \"Política Nacional\"],\n   \"explicacion_concisa\": \"El artículo informa sobre la devaluación del peso argentino y el aumento del valor del dólar en el mercado oficial y informal, luego de la eliminación del cepo cambiario y la apertura del mercado a la compra de divisas\"\n}"
+}

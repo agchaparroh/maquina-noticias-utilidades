@@ -1,0 +1,10 @@
+{
+    "test_id": "test_063",
+    "tarea": "extraccion_citas",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"\\\"El 23 por ciento de las afiliaciones de mexicanos en el extranjero es por 12 meses. El 16 por ciento lo hace o decide pagar por 6 meses. En su mayoría, que son 7 mil 361 personas, lo hacen de manera mensual, y esto tiene que ver por los ingresos de una persona trabajadora independiente, que son variables\\\"\",\n         \"emisor_nombre\": \"Carolina Griselda Cisneros Prado\",\n         \"contexto\": \"Durante la 13ª edición de la Semana de Educación Financiera Integral para Mexicanas y Mexicanos en el Exterior (SEFIMME 2025)\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+}

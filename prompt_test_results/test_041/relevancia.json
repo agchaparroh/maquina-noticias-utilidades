@@ -1,0 +1,10 @@
+{
+    "test_id": "test_041",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 7,\n   \"justificacion_relevancia\": \"El presidente pide prudencia y cuidado en Semana Santa después de una tragedia\",\n   \"categorias_asignadas\": [\"Sociedad/Derechos\", \"Conflicto/Seguridad\"],\n   \"explicacion_concisa\": \"El presidente Luis Abinader pide a la población que se cuiden y cuiden a los demás en Semana Santa, después de una tragedia en la que murieron 231 personas. El gobierno desplegará 49,997 personas para garantizar la seguridad durante la Semana Santa.\"\n}"
+}

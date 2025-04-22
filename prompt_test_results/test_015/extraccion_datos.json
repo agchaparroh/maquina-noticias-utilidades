@@ -1,0 +1,10 @@
+{
+    "test_id": "test_015",
+    "tarea": "extraccion_datos",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Porcentaje de votos obtenidos por Daniel Noboa Azín\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": 98.58,\n         \"unidad\": \"%\",\n         \"ambito_geografico\": [\"Ecuador\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": \"puntual\",\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Porcentaje de votos obtenidos por Luisa González\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": 44.40,\n         \"unidad\": \"%\",\n         \"ambito_geografico\": [\"Ecuador\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": \"puntual\",\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Porcentaje de votos obtenidos por Daniel Noboa Azín\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": 55.60,\n         \"unidad\": \"%\",\n         \"ambito_geografico\": [\"Ecuador\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": \"puntual\",\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      }\n   ]\n}"
+}

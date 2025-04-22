@@ -1,0 +1,10 @@
+{
+    "test_id": "test_033",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 7,\n   \"justificacion_relevancia\": \"Abinader reconoce vacío en la ley para supervisar obras privadas\",\n   \"categorias_asignadas\": [\"Justicia/Legal\", \"Política Nacional\"],\n   \"explicacion_concisa\": \"El presidente Abinader reconoce la necesidad de llenar un vacío en la ley para supervisar obras privadas, especialmente después de la tragedia en la discoteca Jet Set, y anuncia que el Ministerio de Vivienda trabaja en un proyecto de ley para abordar este tema.\"\n}"
+}

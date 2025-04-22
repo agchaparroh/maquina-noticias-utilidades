@@ -1,0 +1,10 @@
+{
+    "test_id": "test_046",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 7,\n   \"justificacion_relevancia\": \"El presidente de Panamá aborda temas clave de la agenda internacional y nacional, incluyendo la visita del secretario de Defensa de EE.UU. y el memorándum de entendimiento\",\n   \"categorias_asignadas\": [\"Política Internacional\", \"Economía\", \"Conflicto/Seguridad\"],\n   \"explicacion_concisa\": \"El presidente de Panamá, José Raúl Mulino, aborda la visita del secretario de Defensa de EE.UU. y el memorándum de entendimiento entre ambos países, destacando la importancia de la transparencia y la claridad en las relaciones internacionales\"\n}"
+}

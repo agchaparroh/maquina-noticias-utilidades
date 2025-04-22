@@ -1,0 +1,10 @@
+{
+    "test_id": "test_023",
+    "tarea": "extraccion_entidades",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Dina Boluarte\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Agencia Peruana de Cooperación Internacional (APCI)\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"APCI\"]\n      },\n      {\n         \"nombre\": \"Congreso\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Palacio de Gobierno\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Organizaciones no gubernamentales (ONG)\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": [\"ONG\"]\n      },\n      {\n         \"nombre\": \"Superintendencia Nacional de Aduanas y de Administración Tributaria (SUNAT)\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"SUNAT\"]\n      },\n      {\n         \"nombre\": \"Ley de creación de la Agencia Peruana de Cooperación Internacional\",\n         \"tipo\": \"NORMATIVA\",\n         \"alias\": []\n      }\n   ]\n}"
+}

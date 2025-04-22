@@ -1,0 +1,10 @@
+{
+    "test_id": "test_030",
+    "tarea": "extraccion_datos",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Número de niños que sufren acoso escolar por ser hijos de policías\",\n         \"categoria\": \"social\",\n         \"valor_numerico\": 1,\n         \"unidad\": \"casos\",\n         \"ambito_geografico\": [\"Barcelona\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": \"puntual\",\n         \"fuente_especifica\": null,\n         \"notas_contexto\": \"No se proporciona un número exacto, pero se menciona que no es un caso aislado\"\n      },\n      {\n         \"indicador\": \"Porcentaje de profesores que ignoran o desprecian a los hijos de policías\",\n         \"categoria\": \"educativo\",\n         \"valor_numerico\": 0.5,\n         \"unidad\": \"%\",\n         \"ambito_geografico\": [\"Barcelona\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": \"puntual\",\n         \"fuente_especifica\": null,\n         \"notas_contexto\": \"No se proporciona un porcentaje exacto, pero se menciona que es un problema común\"\n      },\n      {\n         \"indicador\": \"Número de policías que temen perder su puesto de trabajo\",\n         \"categoria\": \"presupuestario\",\n         \"valor_numerico\": 100,\n         \"unidad\": \"agentes\",\n         \"ambito_geografico\": [\"Cataluña\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": \"puntual\",\n         \"fuente_especifica\": null,\n         \"notas_contexto\": \"No se proporciona un número exacto, pero se menciona que es un gran número\"\n      }\n   ]\n}"
+}

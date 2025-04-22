@@ -1,0 +1,10 @@
+{
+    "test_id": "test_028",
+    "tarea": "extraccion_entidades",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Pilar Alegría\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Pedro Sánchez\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Jesica\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Consejo de Ministros\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"Consejo de Ministros\"]\n      },\n      {\n         \"nombre\": \"Gobierno de España\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"Gobierno de España\"]\n      },\n      {\n         \"nombre\": \"ADIF\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"ADIF\"]\n      },\n      {\n         \"nombre\": \"TVE\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"TVE\"]\n      },\n      {\n         \"nombre\": \"PSOE\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"PSOE\"]\n      },\n      {\n         \"nombre\": \"Ferraz\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": [\"Ferraz\"]\n      },\n      {\n         \"nombre\": \"Elecciones Generales\",\n         \"tipo\": \"EVENTO\",\n         \"alias\": [\"Elecciones Generales\"]\n      }\n   ]\n}"
+}

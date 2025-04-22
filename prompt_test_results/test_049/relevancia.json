@@ -1,0 +1,10 @@
+{
+    "test_id": "test_049",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"La información sobre la financiación de eventos y pauta en redes de Miguel Uribe es relevante para el uribismo y la política colombiana.\",\n   \"categorias_asignadas\": [\"Política Nacional\"],\n   \"explicacion_concisa\": \"El artículo revela que el senador Miguel Uribe ha gastado $300 millones en eventos y pauta en redes, lo que puede influir en su carrera política y la disputa dentro del Centro Democrático.\"\n}"
+}

@@ -1,0 +1,10 @@
+{
+    "test_id": "test_014",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"Detención de un miembro de la Mara Salvatrucha con antecedentes por homicidio en El Salvador\",\n   \"categorias_asignadas\": [\"Conflicto/Seguridad\", \"Justicia/Legal\"],\n   \"explicacion_concisa\": \"La detención de un miembro de la Mara Salvatrucha con antecedentes por homicidio en El Salvador forma parte de la Operación Semana Santa Segura en Costa Rica, que busca frenar el ingreso y permanencia de individuos vinculados a organizaciones criminales.\"\n}"
+}

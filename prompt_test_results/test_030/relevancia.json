@@ -1,0 +1,10 @@
+{
+    "test_id": "test_030",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"El artículo explora la hostilidad y acoso hacia los hijos de policías en Cataluña, con implicaciones políticas y sociales importantes.\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Conflicto/Seguridad\", \"Sociedad/Derechos\"],\n   \"explicacion_concisa\": \"El artículo describe la creciente hostilidad y acoso hacia los hijos de policías en Cataluña, incluyendo la construcción de una 'leyenda negra' y la falta de respaldo de los mandos, lo que tiene implicaciones políticas y sociales importantes.\"\n}"
+}

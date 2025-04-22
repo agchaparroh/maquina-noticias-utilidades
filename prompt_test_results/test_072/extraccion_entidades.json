@@ -1,0 +1,10 @@
+{
+    "test_id": "test_072",
+    "tarea": "extraccion_entidades",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Roberto Burneo\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"JNE\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"Jurado Nacional de Elecciones\"]\n      },\n      {\n         \"nombre\": \"Resurgimiento Unido Nacional\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Unidad Popular\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Adelante Pueblo Unido\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Elecciones Generales 2026\",\n         \"tipo\": \"EVENTO\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Elecciones Regionales y Municipales 2026\",\n         \"tipo\": \"EVENTO\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Congreso\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Ministerio de Economía\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Ejecutivo\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"RPP\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"El Poder en tus Manos\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": []\n      }\n   ]\n}"
+}

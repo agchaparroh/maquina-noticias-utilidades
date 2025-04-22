@@ -1,0 +1,10 @@
+{
+    "test_id": "test_051",
+    "tarea": "extraccion_entidades",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Ciudad Autónoma de Buenos Aires\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Instituto de Estadísticas y Censos porteño\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"IDECBA\"]\n      },\n      {\n         \"nombre\": \"Canasta Básica Alimentaria\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": [\"CBA\"]\n      },\n      {\n         \"nombre\": \"Canasta Básica Total\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": [\"CBT\"]\n      },\n      {\n         \"nombre\": \"Sistema de Canastas de Consumo\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": []\n      }\n   ]\n}"
+}

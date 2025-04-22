@@ -1,0 +1,10 @@
+{
+    "test_id": "test_057",
+    "tarea": "extraccion_citas",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"\\\"mar de incoherencias lleno de pirañas alcahuetas\\\"\",\n         \"emisor_nombre\": \"Salvador Nasralla\",\n         \"contexto\": \"Calificando a la Comunidad de Estados Latinoamericanos y Caribeños (CELAC)\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"silencio cómplice\\\"\",\n         \"emisor_nombre\": \"Washington Abdala\",\n         \"contexto\": \"Frente a la crisis humanitaria y política que vive Venezuela\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"En la CELAC todos fingen que no pasa nada. Así no se construye esa integración de la que hablan\\\"\",\n         \"emisor_nombre\": \"Salvador Nasralla\",\n         \"contexto\": \"Criticando la CELAC y su silencio ante la crisis en Venezuela\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"Es increíble que todos estos países, ante una tragedia mayúscula como la que vive Venezuela, hagan olímpicamente como que no pasa absolutamente nada\\\"\",\n         \"emisor_nombre\": \"Washington Abdala\",\n         \"contexto\": \"Criticando la falta de voluntad política para condenar la situación en Venezuela\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+}

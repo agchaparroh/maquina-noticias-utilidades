@@ -1,0 +1,10 @@
+{
+    "test_id": "test_003",
+    "tarea": "extraccion_entidades",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Laura Sarabia\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Daniel Noboa\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Gustavo Petro\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Ecuador\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Colombia\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"América Latina\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Elecciones en Ecuador\",\n         \"tipo\": \"EVENTO\",\n         \"alias\": []\n      }\n   ]\n}"
+}

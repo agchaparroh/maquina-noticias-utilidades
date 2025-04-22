@@ -1,0 +1,10 @@
+{
+    "test_id": "test_015",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 7,\n   \"justificacion_relevancia\": \"Reconocimiento de la victoria de Daniel Noboa y compromiso con el bienestar del país\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Elecciones\"],\n   \"explicacion_concisa\": \"El Movimiento Pachakutik reconoce la victoria de Daniel Noboa en las elecciones presidenciales ecuatorianas y expresa su compromiso con el bienestar del país, destacando la importancia de implementar propuestas que beneficien a la nación.\"\n}"
+}

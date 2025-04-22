@@ -1,0 +1,10 @@
+{
+    "test_id": "test_051",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"Relevancia media debido a la información sobre la pobreza y la indigencia en la Ciudad Autónoma de Buenos Aires\",\n   \"categorias_asignadas\": [\"Economía\", \"Sociedad/Derechos\"],\n   \"explicacion_concisa\": \"El artículo informa sobre la cantidad de dinero que una familia tipo en CABA necesita para no ser pobre o indigente, según el Instituto de Estadísticas y Censos porteño (IDECBA).\"\n}"
+}

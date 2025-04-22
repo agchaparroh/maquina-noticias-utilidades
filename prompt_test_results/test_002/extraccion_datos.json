@@ -1,0 +1,10 @@
+{
+    "test_id": "test_002",
+    "tarea": "extraccion_datos",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Número de miembros del Polo Democrático que votaron a favor de la adhesión al Pacto Histórico\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": 315,\n         \"unidad\": \"miembros\",\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": \"Congreso Extraordinario Nacional del Polo\",\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Número de miembros del Polo Democrático que se opusieron a la adhesión al Pacto Histórico\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": 43,\n         \"unidad\": \"miembros\",\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": \"Congreso Extraordinario Nacional del Polo\",\n         \"notas_contexto\": null\n      }\n   ]\n}"
+}

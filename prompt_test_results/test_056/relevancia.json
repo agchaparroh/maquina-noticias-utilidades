@@ -1,0 +1,10 @@
+{
+    "test_id": "test_056",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"El presidente Abinader anuncia apoyo al Gobierno para las víctimas y rescatistas de la tragedia en la discoteca Jet Set\",\n   \"categorias_asignadas\": [\"Sociedad/Derechos\", \"Justicia/Legal\"],\n   \"explicacion_concisa\": \"El presidente de la República Dominicana, Luis Abinader, anuncia que el Gobierno brindará apoyo a las víctimas y rescatistas de la tragedia en la discoteca Jet Set, incluyendo ayuda económica para los huérfanos en situación de vulnerabilidad.\"\n}"
+}

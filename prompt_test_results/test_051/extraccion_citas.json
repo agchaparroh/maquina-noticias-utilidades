@@ -1,0 +1,10 @@
+{
+    "test_id": "test_051",
+    "tarea": "extraccion_citas",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"Las familias que residen en la Ciudad Autónoma de Buenos Aires (CABA) necesitaron durante marzo ingresos de al menos $1.147.602 para no ser pobres y de aunque sea $1.804.267 para ser consideradas de clase media, de acuerdo a lo informado por el Instituto de Estadísticas y Censos porteño (IDECBA).\",\n         \"emisor_nombre\": \"Instituto de Estadísticas y Censos porteño (IDECBA)\",\n         \"contexto\": \"Se refiere a la cantidad de dinero que una familia necesita para no ser pobre o ser considerada de clase media en la Ciudad Autónoma de Buenos Aires.\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"La medición se realiza considerando como una familia tipo a aquella compuesta por dos adultos y dos menores, que en el mes pasado necesitó ingresos por lo menos de $1.804.267 para ser de clase media, de al menos $1.147.602 para no ser pobre y aunque sea de $621.772 para no ser catalogada como indigente.\",\n         \"emisor_nombre\": \"Instituto de Estadísticas y Censos porteño (IDECBA)\",\n         \"contexto\": \"Se describe el tipo de familia que se utiliza para medir la pobreza e indigencia en la Ciudad Autónoma de Buenos Aires.\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"La Canasta Básica Alimentaria (CBA), que define el umbral de indigencia, trepó 7,22% en marzo, mientras que la Canasta Básica Total (CBT), que mide la pobreza, subió 5,32% en el tercer mes del 2025.\",\n         \"emisor_nombre\": \"Instituto de Estadísticas y Censos porteño (IDECBA)\",\n         \"contexto\": \"Se informa sobre el aumento en la Canasta Básica Alimentaria y la Canasta Básica Total en marzo de 2025.\",\n         \"fecha_cita\": \"2025-03-00\"\n      }\n   ]\n}"
+}

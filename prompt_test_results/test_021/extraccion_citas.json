@@ -1,0 +1,10 @@
+{
+    "test_id": "test_021",
+    "tarea": "extraccion_citas",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"\\\"Santiago\\\"\",\n         \"emisor_nombre\": \"Jesús de la Merced\",\n         \"contexto\": \"En el relato del compositor Santiago Coronado sobre la inspiración para componer la marcha fúnebre\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"La Fosa\\\"\",\n         \"emisor_nombre\": \"Santiago Coronado\",\n         \"contexto\": \"Título de la marcha fúnebre compuesta por Santiago Coronado\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+}

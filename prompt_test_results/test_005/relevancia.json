@@ -1,0 +1,10 @@
+{
+    "test_id": "test_005",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Propuesta de cierre del Congreso de la República por un exalcalde colombiano\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Justicia/Legal\"],\n   \"explicacion_concisa\": \"El exalcalde de Medellín, Daniel Quintero Calle, propone cerrar el Congreso de la República y convocar a una constituyente para resetear el país, lo que desata un debate en redes sociales y entre figuras políticas.\"\n}"
+}

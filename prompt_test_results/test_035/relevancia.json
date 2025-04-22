@@ -1,0 +1,10 @@
+{
+    "test_id": "test_035",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 5,\n   \"justificacion_relevancia\": \"La fiscalización de la Contraloría afecta a diputados panameños y genera polémica\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Justicia/Legal\"],\n   \"explicacion_concisa\": \"La Contraloría General de Panamá decide pagar a funcionarios legislativos con cheques, generando protestas y dificultades para algunos diputados recibir su salario\"\n}"
+}

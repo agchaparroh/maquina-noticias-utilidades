@@ -1,0 +1,10 @@
+{
+    "test_id": "test_071",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 7,\n   \"justificacion_relevancia\": \"Revelación de candidatos a la presidencia y vicepresidencia en Bolivia\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Elecciones\"],\n   \"explicacion_concisa\": \"El líder de la Unión Cívica Solidaridad (UCS), Jhonny Fernández, anuncia que están a horas de revelar los nombres de sus candidatos a la presidencia y vicepresidencia del Estado boliviano, con miras a las elecciones generales de agosto de 2025.\"\n}"
+}

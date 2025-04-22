@@ -1,0 +1,10 @@
+{
+    "test_id": "test_016",
+    "tarea": "extraccion_datos",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Número de veces que Yadira Saltos se conectó a la versión vía Zoom\",\n         \"categoria\": \"demográfico\",\n         \"valor_numerico\": 1,\n         \"unidad\": \"\",\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": \"2025-04-03\",\n         \"periodo_referencia_fin\": \"2025-04-03\",\n         \"tipo_periodo\": \"puntual\",\n         \"fuente_especifica\": \"Yadira Saltos\",\n         \"notas_contexto\": null\n      }\n   ]\n}"
+}

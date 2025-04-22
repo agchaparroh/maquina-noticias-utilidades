@@ -1,0 +1,10 @@
+{
+    "test_id": "test_049",
+    "tarea": "extraccion_citas",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"El pasado 5 de abril\",\n         \"emisor_nombre\": \"Miguel Uribe\",\n         \"contexto\": \"en su carrera por hacerse a la bendición del uribismo con miras a 2026\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+}

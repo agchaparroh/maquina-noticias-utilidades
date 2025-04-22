@@ -1,0 +1,10 @@
+{
+    "test_id": "test_050",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Reafirmación de apoyo estadounidense a reformas económicas argentinas\",\n   \"categorias_asignadas\": [\"Economía\", \"Política Internacional\"],\n   \"explicacion_concisa\": \"El secretario del Tesoro de EE. UU. se reunió con el presidente argentino Milei y expresó apoyo a sus reformas económicas, destacando la salida del cepo al dólar y las negociaciones con el FMI.\"\n}"
+}

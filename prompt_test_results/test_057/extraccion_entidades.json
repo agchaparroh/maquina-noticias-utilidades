@@ -1,0 +1,10 @@
+{
+    "test_id": "test_057",
+    "tarea": "extraccion_entidades",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Salvador Nasralla\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Comunidad de Estados Latinoamericanos y Caribeños (CELAC)\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"CELAC\"]\n      },\n      {\n         \"nombre\": \"Washington Abdala\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Venezuela\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Honduras\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Tegucigalpa\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Xiomara Castro\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Estados Unidos\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      }\n   ]\n}"
+}

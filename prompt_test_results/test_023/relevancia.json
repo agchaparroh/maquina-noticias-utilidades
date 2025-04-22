@@ -1,0 +1,10 @@
+{
+    "test_id": "test_023",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 7,\n   \"justificacion_relevancia\": \"La presidenta promulgó una ley que modifica la Agencia Peruana de Cooperación Internacional y establece mecanismos de supervisión para ONG que actúan en contra de los intereses del país.\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Justicia/Legal\"],\n   \"explicacion_concisa\": \"La presidenta Dina Boluarte promulgó una ley que modifica la Agencia Peruana de Cooperación Internacional, estableciendo mecanismos de supervisión para ONG que actúan en contra de los intereses del país. La ley busca reforzar la transparencia en el uso de recursos de cooperación internacional no reembolsable y establecer mecanismos de supervisión más estrictos.\"\n}"
+}

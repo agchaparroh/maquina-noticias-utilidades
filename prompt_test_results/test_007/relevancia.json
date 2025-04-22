@@ -1,0 +1,10 @@
+{
+    "test_id": "test_007",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"La solicitud de evaluación de la CPI sobre la salud de presos políticos en Venezuela tiene un impacto potencial claro en la situación política y humanitaria del país.\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Justicia/Legal\"],\n   \"explicacion_concisa\": \"El Partido Centro Democrático solicita a la Corte Penal Internacional evaluar el estado físico y mental de los presos políticos en Venezuela, denunciando violaciones de derechos humanos y la detención arbitraria de opositores al gobierno de Maduro.\"\n}"
+}

@@ -1,0 +1,10 @@
+{
+    "test_id": "test_028",
+    "tarea": "extraccion_datos",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Presupuesto asignado a la digitalización de prostitutas como gasto en Defensa\",\n         \"categoria\": \"presupuestario\",\n         \"valor_numerico\": null,\n         \"unidad\": null,\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": \"Se sugiere abordar este tema en el presupuesto del Gobierno\"\n      },\n      {\n         \"indicador\": \"Fondos europeos destinados a ADIF\",\n         \"categoria\": \"económico\",\n         \"valor_numerico\": null,\n         \"unidad\": null,\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": \"La mitad de los fondos europeos fueron destinados a ADIF\"\n      },\n      {\n         \"indicador\": \"Número de ministros del Gobierno que asistían a comidas y fiestas con prostitutas\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": null,\n         \"unidad\": null,\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": \"La mitad de los ministros del Gobierno estaban involucrados en este tipo de actividades\"\n      }\n   ]\n}"
+}

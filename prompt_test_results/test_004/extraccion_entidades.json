@@ -1,0 +1,10 @@
+{
+    "test_id": "test_004",
+    "tarea": "extraccion_entidades",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Misión Electoral del Parlamento del Mercosur (Parlasur)\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Daniel Noboa\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Luisa González\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Consejo Nacional Electoral (CNE)\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Acción Democrática Nacional (ADN)\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Revolución Ciudadana-Renovación Total (RC-RETO)\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"RC-RETO\"]\n      },\n      {\n         \"nombre\": \"Confederación de Nacionalidades Indígenas del Ecuador (Conaie)\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"TikTok\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"WhatsApp\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Venezuela\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Mercosur\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Argentina\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Brasil\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Paraguay\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Uruguay\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      }\n   ]\n}"
+}

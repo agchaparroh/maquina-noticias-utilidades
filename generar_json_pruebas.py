@@ -9,8 +9,8 @@ from tqdm import tqdm # Barra de progreso
 import logging
 
 # Configuración --- ¡AJUSTA ESTOS SI ES NECESARIO! ---
-CSV_FILE = 'benchmark_urls.csv' # Nombre de tu archivo CSV
-OUTPUT_DIR = 'data/benchmark_test_set' # Carpeta donde se guardarán los JSON
+CSV_FILE = '/home/ubuntu/benchmark_utils/benchmark_urls.csv' # Nombre de tu archivo CSV (ruta absoluta)
+OUTPUT_DIR = '/home/ubuntu/data/benchmark_test_set' # Carpeta donde se guardarán los JSON (ahora con ruta absoluta)
 URL_COLUMN_INDEX = 0 # Índice de la columna con URLs en tu CSV (0 es la primera)
 HAS_HEADER = True # ¿Tu CSV tiene una fila de encabezado? (True o False)
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" # Para simular un navegador
@@ -139,7 +139,13 @@ def get_article_data(url):
                return None # Realmente no hay contenido
 
         # 4. Extraer título y otros metadatos con Trafilatura o BS4
-        title = trafilatura.extract_metadata(downloaded, default="").title
+        try:
+            metadata = trafilatura.extract_metadata(downloaded)
+            title = metadata.title if metadata else ""
+        except Exception as e:
+            title = ""
+            logging.warning(f"Error al extraer metadatos con trafilatura: {e}")
+            
         if not title and soup: # Fallback con BS4
             title_tag = soup.find('title')
             if title_tag:

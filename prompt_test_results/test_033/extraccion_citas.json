@@ -1,0 +1,10 @@
+{
+    "test_id": "test_033",
+    "tarea": "extraccion_citas",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"\\\"Bueno, hablamos de que hay un vacío en la ley, y nosotros tenemos que llenar ese vacío para evitar que una tragedia así vuelva a suceder. Vamos a trabajar arduamente en ese sentido\\\"\",\n         \"emisor_nombre\": \"Luis Abinader\",\n         \"contexto\": \"Respuesta a la interrogante sobre qué podría hacer el Estado para mitigar situaciones como la del centro nocturno\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"De cualquier manera, nosotros estaremos tomando medidas especiales también para, en lo que respecta a ese proyecto de ley que debe ser declarado de emergencia, ir realizando otras gestiones\\\"\",\n         \"emisor_nombre\": \"Luis Abinader\",\n         \"contexto\": \"Sobre el proyecto de ley que debe ser declarado de emergencia\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"Todo ese detalle... si es a la fiscalía, es al Ministerio Público. Entonces, el Ministerio Público tiene que dar ese informe, y debe hacerlo\\\"\",\n         \"emisor_nombre\": \"Luis Abinader\",\n         \"contexto\": \"Sobre la responsabilidad de presentar los resultados de la investigación penal\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"Lo que tiene que saberse obligatoriamente es qué pasó, por qué pasó y cómo pasó. Eso es lo que la población y el Gobierno requieren\\\"\",\n         \"emisor_nombre\": \"Luis Abinader\",\n         \"contexto\": \"Sobre la importancia de esclarecer los hechos de la tragedia\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+}

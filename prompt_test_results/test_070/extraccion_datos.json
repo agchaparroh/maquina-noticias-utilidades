@@ -1,0 +1,10 @@
+{
+    "test_id": "test_070",
+    "tarea": "extraccion_datos",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Número de candidatos postulados por el partido Un Nuevo Tiempo (UNT) para las elecciones parlamentarias y regionales en Venezuela\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": 60,\n         \"unidad\": \"personas\",\n         \"ambito_geografico\": [\"Venezuela\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": \"puntual\",\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      }\n   ]\n}"
+}

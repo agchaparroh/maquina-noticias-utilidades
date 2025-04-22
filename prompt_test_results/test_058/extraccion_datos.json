@@ -1,0 +1,10 @@
+{
+    "test_id": "test_058",
+    "tarea": "extraccion_datos",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Número de amparos pendientes de adjudicación\",\n         \"categoria\": \"presupuestario\",\n         \"valor_numerico\": 1,\n         \"unidad\": \"\",\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Tiempo de acceso a la información en los portales de la Corte\",\n         \"categoria\": \"presupuestario\",\n         \"valor_numerico\": 15,\n         \"unidad\": \"días\",\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      }\n   ]\n}"
+}

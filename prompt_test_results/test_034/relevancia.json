@@ -1,0 +1,10 @@
+{
+    "test_id": "test_034",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"La acción impugna la designación de un alto funcionario en la SAT, con implicaciones en la justicia y la economía\",\n   \"categorias_asignadas\": [\"Justicia/Legal\", \"Economía\"],\n   \"explicacion_concisa\": \"Un abogado interpone un amparo contra la designación de Werner Ovalle como titular de la SAT, sin proporcionar razones, y se anuncia a través de un netcenter\"\n}"
+}

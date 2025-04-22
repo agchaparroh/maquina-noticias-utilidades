@@ -1,0 +1,10 @@
+{
+    "test_id": "test_013",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"La detección de un túnel subterráneo en una cárcel de Guatemala implica un intento de fuga y una posible violación de la seguridad penitenciaria.\",\n   \"categorias_asignadas\": [\"Justicia/Legal\", \"Conflicto/Seguridad\"],\n   \"explicacion_concisa\": \"La Dirección General del Sistema Penitenciario de Guatemala detectó un túnel subterráneo en la cárcel de Puerto Barrios, donde un grupo de reos intentaba fugarse. La Policía Nacional Civil identificó al líder del grupo y detuvo a los reos antes de que pudieran escapar.\"\n}"
+}

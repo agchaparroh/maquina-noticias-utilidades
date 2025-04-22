@@ -1,0 +1,10 @@
+{
+    "test_id": "test_037",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"La aprobación de un presupuesto especial para luchar contra pandillas en Haití tiene un impacto significativo en la seguridad y estabilidad del país\",\n   \"categorias_asignadas\": [\"Conflicto/Seguridad\", \"Política Nacional\"],\n   \"explicacion_concisa\": \"El gobierno de Haití aprobó un presupuesto especial de 275.000 dólares para combatir la violencia de pandillas, lo que refleja su compromiso con la seguridad nacional. El presupuesto se destinará a la policía, ejército, frontera y programas sociales.\"\n}"
+}

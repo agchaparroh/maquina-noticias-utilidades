@@ -1,0 +1,10 @@
+{
+    "test_id": "test_025",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"La disputa entre Macri y Milei sobre un posible acuerdo electoral en la provincia de Buenos Aires tiene relevancia política en la esfera hispana.\",\n   \"categorias_asignadas\": [\"Política Nacional\"],\n   \"explicacion_concisa\": \"El ex presidente argentino Mauricio Macri y el líder de La Libertad Avanza, Javier Milei, mantienen una disputa electoral en la provincia de Buenos Aires, lo que puede tener implicaciones en la política nacional argentina.\"\n}"
+}

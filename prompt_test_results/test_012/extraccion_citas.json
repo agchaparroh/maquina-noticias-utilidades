@@ -1,0 +1,10 @@
+{
+    "test_id": "test_012",
+    "tarea": "extraccion_citas",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"\\\"Noboa, amigo, el pueblo está contigo\\\"\",\n         \"emisor_nombre\": \"Simpatizantes del mandatario\",\n         \"contexto\": \"Coreaban los ciudadanos que se reunieron en los exteriores de Carondelet\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+}

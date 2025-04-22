@@ -1,0 +1,10 @@
+{
+    "test_id": "test_055",
+    "tarea": "extraccion_hechos",
+    "model_id": "llama3-8b-8192",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama3-8b-8192` in organization `org_01jsay2bafeeht06zsq8qv9mct` service tier `on_demand` on tokens per minute (TPM): Limit 100000, Used 101771, Requested 1968. Please try again in 2.2438s. Need more tokens? Visit https://groq.com/self-serve-support/ to request higher limits.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "llm_response_content": "Error: No content received or generated"
+}

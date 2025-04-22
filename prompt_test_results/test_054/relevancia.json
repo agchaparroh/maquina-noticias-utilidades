@@ -1,0 +1,10 @@
+{
+    "test_id": "test_054",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 7,\n   \"justificacion_relevancia\": \"La medida busca ejecutar el pago de una deuda laboral importante\",\n   \"categorias_asignadas\": [\"Justicia/Legal\", \"Política Nacional\"],\n   \"explicacion_concisa\": \"La justicia ordena apremiar al ministro de Obras Públicas, Edgar Montaño, para que pague una deuda laboral de más de 55 millones de bolivianos a ex empleados de Sabsa, empresa aeroportuaria extinta\"\n}"
+}

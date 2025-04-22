@@ -1,0 +1,10 @@
+{
+    "test_id": "test_029",
+    "tarea": "extraccion_citas",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"no solo a nivel de código postal, sino calle a calle\",\n         \"emisor_nombre\": \"Elías Bendodo\",\n         \"contexto\": \"Describiendo la forma en que el Gabinete de Inteligencia y Datos Electorales Avanzados (G-IDEA) monitoriza las preocupaciones y demandas de los ciudadanos\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"el interés por aumentar el gasto militar\",\n         \"emisor_nombre\": \"PP\",\n         \"contexto\": \"Se refiere a los estudios diarios sobre tendencias electorales, evolución del voto y factores sociopolíticos clave\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"la problemática de la vivienda o la percepción de la ciudadanía de las medidas que se incluían en el decreto ómnibus del Gobierno de marzo\",\n         \"emisor_nombre\": \"PP\",\n         \"contexto\": \"Se refiere a las cuestiones que se han examinado en la Unidad de Análisis de Datos y Prospectiva\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"Vox llevaba la voz cantante y que ahora quieren arrebatarle, sobre todo tras los aranceles anunciados por Donald Trump\",\n         \"emisor_nombre\": \"Alberto Núñez Feijóo\",\n         \"contexto\": \"Se refiere a la problemática de la vivienda y la intención de llegar al sector del campo\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"detectar las narrativas de desinformación para que los dirigentes y portavoces del partido huyan de ellas\",\n         \"emisor_nombre\": \"PP\",\n         \"contexto\": \"Se refiere a la importancia de evitar las 'fake news'\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+}

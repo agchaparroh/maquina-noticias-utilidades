@@ -1,0 +1,10 @@
+{
+    "test_id": "test_027",
+    "tarea": "extraccion_entidades",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Consejo Nacional de Pueblos Indígenas\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Poder Judicial de la Federación\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Yaneth del Rosario Cruz Gómez\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"La Jornada\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Instituto Nacional Electoral\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Ley General de Derechos de los Pueblos Indígenas y Afromexicanos\",\n         \"tipo\": \"NORMATIVA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Ciudad de México\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Elecciones del Poder Judicial de la Federación\",\n         \"tipo\": \"EVENTO\",\n         \"alias\": []\n      }\n   ]\n}"
+}

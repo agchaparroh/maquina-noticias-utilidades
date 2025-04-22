@@ -1,0 +1,10 @@
+{
+    "test_id": "test_006",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Maduro critica las elecciones en Ecuador y relaciona con la geopolítica\",\n   \"categorias_asignadas\": [\"Política Internacional\", \"Política Nacional\"],\n   \"explicacion_concisa\": \"El presidente venezolano Nicolás Maduro critica las elecciones en Ecuador y las relaciona con la hegemonía política y el imperialismo, lo que tiene implicaciones geopolíticas en la región\"\n}"
+}

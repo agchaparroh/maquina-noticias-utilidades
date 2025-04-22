@@ -1,0 +1,10 @@
+{
+    "test_id": "test_039",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Donald Trump critica al gobierno de Maduro y amenaza con afectar su economía\",\n   \"categorias_asignadas\": [\"Política Internacional\", \"Economía\", \"Conflicto/Seguridad\"],\n   \"explicacion_concisa\": \"El presidente de EE. UU., Donald Trump, critica al gobierno de Maduro y amenaza con afectar su economía petrolera, mientras que el presidente de El Salvador, Nayib Bukele, se niega a liberar a un migrante deportado\"\n}"
+}

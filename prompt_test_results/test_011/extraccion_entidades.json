@@ -1,0 +1,10 @@
+{
+    "test_id": "test_011",
+    "tarea": "extraccion_entidades",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Ciudad de México\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Tribunal Colegiado de Apelación\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Ciudad Juárez\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Chihuahua\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Víctor Manlio Hernández Calderón\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Instituto Nacional de Migración (INM)\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"INM\"]\n      },\n      {\n         \"nombre\": \"Francisco Garduño Yáñez\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Instituto para las Mujeres en la Migración (Imumi)\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"Imumi\"]\n      },\n      {\n         \"nombre\": \"Fundación para la Justicia\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Comisión Ejecutiva de Atención a Víctimas (CEAV)\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"CEAV\"]\n      }\n   ]\n}"
+}

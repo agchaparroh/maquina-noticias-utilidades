@@ -1,0 +1,10 @@
+{
+    "test_id": "test_058",
+    "tarea": "extraccion_entidades",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Leyla Lemus\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Corte de Constitucionalidad (CC)\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"CC\"]\n      },\n      {\n         \"nombre\": \"Diario La Hora\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"LH\"]\n      },\n      {\n         \"nombre\": \"Daniel Ramírez\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Antigua Guatemala\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Quetzaltenango\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Honduras\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Caso Odebrecht\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": []\n      }\n   ]\n}"
+}

@@ -1,0 +1,10 @@
+{
+    "test_id": "test_045",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Relevancia media debido a la importancia del tema laboral y la figura del ministro involucrado\",\n   \"categorias_asignadas\": [\"Justicia/Legal\", \"Política Nacional\"],\n   \"explicacion_concisa\": \"La justicia ordena apremio al ministro Edgar Montaño para ejecutar el pago de más de 55 millones de bolivianos a extrabajadores de Sabsa, que llevan 14 años de espera\"\n}"
+}

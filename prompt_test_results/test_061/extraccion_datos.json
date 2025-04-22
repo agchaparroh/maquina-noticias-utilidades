@@ -1,0 +1,10 @@
+{
+    "test_id": "test_061",
+    "tarea": "extraccion_datos",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Número de veces que el Congreso de la República se cierra\",\n         \"categoria\": \"presupuestario\",\n         \"valor_numerico\": 0,\n         \"unidad\": \"\",\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": \"puntual\",\n         \"fuente_especifica\": \"Gustavo Bolívar, director del DPS\",\n         \"notas_contexto\": \"Afirmación de Gustavo Bolívar en respuesta a Daniel Quintero Calle\"\n      }\n   ]\n}"
+}

@@ -1,0 +1,10 @@
+{
+    "test_id": "test_072",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"Relevancia media por análisis de la complejidad electoral en Perú\",\n   \"categorias_asignadas\": [\"Elecciones\", \"Política Nacional\"],\n   \"explicacion_concisa\": \"El presidente del JNE, Roberto Burneo, explica que partidos que no cumplieron con los requisitos para las Elecciones Generales 2026 aún pueden participar en las Regionales y Municipales 2026 si logran inscribirse antes de octubre.\"\n}"
+}

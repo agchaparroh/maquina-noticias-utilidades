@@ -1,0 +1,10 @@
+{
+    "test_id": "test_043",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 7,\n   \"justificacion_relevancia\": \"Detención de líder de célula criminal del Cártel del Pacífico en México\",\n   \"categorias_asignadas\": [\"Conflicto/Seguridad\", \"Justicia/Legal\"],\n   \"explicacion_concisa\": \"La detención de Joel Alfonso Urrea Yariar, alias El Gangoso, y otros miembros de la célula delictiva del Cártel del Pacífico, se realizó en coordinación con varias instituciones federales y estatales en México, en operativos que involucran la lucha contra el tráfico de drogas y la violencia en el país.\"\n}"
+}

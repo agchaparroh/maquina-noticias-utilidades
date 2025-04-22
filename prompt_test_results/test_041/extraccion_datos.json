@@ -1,0 +1,10 @@
+{
+    "test_id": "test_041",
+    "tarea": "extraccion_datos",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Número de miembros del Centro de Operaciones de Emergencias (COE) desplegados para el operativo 'Conciencia por la Vida, Semana Santa 2025'\",\n         \"categoria\": \"presupuestario\",\n         \"valor_numerico\": 49997,\n         \"unidad\": \"miembros\",\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": \"Centro de Operaciones de Emergencias (COE)\",\n         \"notas_contexto\": null\n      }\n   ]\n}"
+}

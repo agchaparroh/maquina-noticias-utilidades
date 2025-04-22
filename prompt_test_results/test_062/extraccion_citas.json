@@ -1,0 +1,10 @@
+{
+    "test_id": "test_062",
+    "tarea": "extraccion_citas",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"Este ha sido un golpe muy duro para mí\",\n         \"emisor_nombre\": \"Luis Abinader\",\n         \"contexto\": \"En un momento de reflexión sobre la tragedia del Jet Set\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"siente el mismo dolor que siente cada uno de ustedes\",\n         \"emisor_nombre\": \"Luis Abinader\",\n         \"contexto\": \"En referencia a la población dominicana\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"un dolor muy fuerte\",\n         \"emisor_nombre\": \"Luis Abinader\",\n         \"contexto\": \"En relación con la tragedia del Jet Set\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"Aún no haya conocido a muchos, como obviamente no haya conocido a muchos, pero personalmente y también como presidente, ha sido un golpe muy duro, emocionalmente muy fuerte\",\n         \"emisor_nombre\": \"Luis Abinader\",\n         \"contexto\": \"En respuesta a la pregunta de si había sido tocado de manera personal por el hecho\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"Yo tuve muchos amigos, yo fui el padrino de la boda de Eduardo Estrella y somos familias, familia lejana, tercer primo, somos familia. Ahí había siete u ocho personas conocidas, muy cercanas, amigos, que nos habíamos reunidos dos o tres días antes, puedo mencionarte once o doce personas\",\n         \"emisor_nombre\": \"Luis Abinader\",\n         \"contexto\": \"En relación con las víctimas del colapso del techo de la discoteca\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"estos 231 dominicanos y dominicanas que han fallecidos\",\n         \"emisor_nombre\": \"Luis Abinader\",\n         \"contexto\": \"En relación con la tragedia del Jet Set\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+}
