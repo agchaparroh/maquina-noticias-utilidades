@@ -1,0 +1,10 @@
+{
+    "test_id": "test_005",
+    "tarea": "extraccion_entidades",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Daniel Quintero Calle\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Daniel Quintero\", \"Quintero\"]\n      },\n      {\n         \"nombre\": \"Congreso de la República\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"Congreso\"]\n      },\n      {\n         \"nombre\": \"Gustavo Bolívar\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Gustavo Bolívar\"]\n      },\n      {\n         \"nombre\": \"Departamento Administrativo para la Prosperidad Social (DPS)\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"DPS\"]\n      },\n      {\n         \"nombre\": \"Wilson Ruiz\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Wilson Ruiz\"]\n      },\n      {\n         \"nombre\": \"Vicky Dávila\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Vicky Dávila\"]\n      },\n      {\n         \"nombre\": \"Iván Duque\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Iván Duque\"]\n      },\n      {\n         \"nombre\": \"Claudia López\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Claudia López\"]\n      },\n      {\n         \"nombre\": \"Petrismo\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Medellín\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Antioquia\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Semana Santa\",\n         \"tipo\": \"EVENTO\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Twitter\",\n         \"tipo\": \"OTRO\",\n         \"alias\": [\"X\"]\n      },\n      {\n         \"nombre\": \"Control+Alt+Suprimir\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": []\n      }\n   ]\n}"
+}

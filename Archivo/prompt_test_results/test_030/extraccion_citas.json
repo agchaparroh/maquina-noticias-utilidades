@@ -1,0 +1,10 @@
+{
+    "test_id": "test_030",
+    "tarea": "extraccion_citas",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"No es consciente de que muchas situaciones que ha vivido es por mi culpa\",\n         \"emisor_nombre\": \"funcionario\",\n         \"contexto\": \"El padre de Carlos explica que su hijo no es consciente de que muchas situaciones que ha vivido son por su culpa.\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"Hijo de madero, facha y opresor\",\n         \"emisor_nombre\": \"otros padres o alumnos\",\n         \"contexto\": \"Los niños son objeto de vejaciones y insultos por parte de otros alumnos y, en algunos casos, por parte del personal docente.\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"No hay nada que reparar\",\n         \"emisor_nombre\": \"representantes de los policías\",\n         \"contexto\": \"Los representantes de los policías defienden que no hay nada que reparar en relación con las acusaciones de torturas.\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"no vamos a permitir que un prófugo de la Justicia y sus colegas más radicales nos arrinconen\",\n         \"emisor_nombre\": \"policías\",\n         \"contexto\": \"Los policías temen que los independentistas no descansen hasta que vean como les expulsan de Cataluña.\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+}

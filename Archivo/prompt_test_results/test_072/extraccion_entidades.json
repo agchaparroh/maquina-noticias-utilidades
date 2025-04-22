@@ -1,0 +1,10 @@
+{
+    "test_id": "test_072",
+    "tarea": "extraccion_entidades",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Roberto Burneo\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Roberto Burneo\"]\n      },\n      {\n         \"nombre\": \"JNE (Jurado Nacional de Elecciones)\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"JNE\"]\n      },\n      {\n         \"nombre\": \"Resurgimiento Unido Nacional\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"Resurgimiento Unido Nacional\"]\n      },\n      {\n         \"nombre\": \"Unidad Popular\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"Unidad Popular\"]\n      },\n      {\n         \"nombre\": \"Adelante Pueblo Unido\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"Adelante Pueblo Unido\"]\n      },\n      {\n         \"nombre\": \"Elecciones Generales 2026\",\n         \"tipo\": \"EVENTO\",\n         \"alias\": [\"Elecciones Generales 2026\"]\n      },\n      {\n         \"nombre\": \"Elecciones Regionales y Municipales 2026\",\n         \"tipo\": \"EVENTO\",\n         \"alias\": [\"Elecciones Regionales y Municipales 2026\"]\n      },\n      {\n         \"nombre\": \"Registro de Organizaciones Políticas (ROP)\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"ROP\"]\n      },\n      {\n         \"nombre\": \"El Poder en tus Manos de RPP\",\n         \"tipo\": \"MEDIO DE COMUNICACIÓN\",\n         \"alias\": [\"El Poder en tus Manos de RPP\"]\n      },\n      {\n         \"nombre\": \"Congreso\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"Congreso\"]\n      },\n      {\n         \"nombre\": \"Ministerio de Economía\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"Ministerio de Economía\"]\n      },\n      {\n         \"nombre\": \"Ejecutivo\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"Ejecutivo\"]\n      }\n   ]\n}"
+}

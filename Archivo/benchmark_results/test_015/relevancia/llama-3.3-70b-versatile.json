@@ -1,0 +1,6 @@
+{
+    "test_id": "test_015",
+    "tarea": "relevancia",
+    "model_id": "llama-3.3-70b-versatile",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Reconocimiento de victoria electoral\",\n   \"categorias_asignadas\": [\n       \"Política Nacional\",\n       \"Elecciones\"\n   ],\n   \"resumen_breve\": \"Pachakutik reconoce victoria de Daniel Noboa\"\n}"
+}

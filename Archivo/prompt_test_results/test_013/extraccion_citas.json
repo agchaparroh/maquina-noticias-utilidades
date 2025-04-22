@@ -1,0 +1,10 @@
+{
+    "test_id": "test_013",
+    "tarea": "extraccion_citas",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"Informamos a la población que este lunes, con base en análisis de información penitenciaria, se realizó un recorrido minucioso en el Centro de Rehabilitación de Puerto Barrios, en el departamento de Izabal\",\n         \"emisor_nombre\": \"Sergio Vela\",\n         \"contexto\": \"El titular de la Dirección General del Sistema Penitenciario, Sergio Vela, confirmó que localizaron un túnel subterráneo en el Centro de Rehabilitación de Puerto Barrios\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"La visión de Renovación Penitenciaria continúa avanzando en la restauración del control en los centros de detención del país\",\n         \"emisor_nombre\": \"Sergio Vela\",\n         \"contexto\": \"El jefe de Presidios aseguró que de esta manera la DGSP impidió una posible fuga y dio cumplimiento a su mandato de ley\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"Hoy nuevamente pretendía fugarse usando el mismo método, se presume que es el líder organizador túneles para darse a la fuga\",\n         \"emisor_nombre\": \"PNC\",\n         \"contexto\": \"Según explicó la PNC, el reo ingresó a la Granja Penal Canadá, actualmente conocida como \\\"Renovación I\\\", y en el año 2016 se fugó por medio de un túnel\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+}

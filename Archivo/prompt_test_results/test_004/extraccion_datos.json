@@ -1,0 +1,10 @@
+{
+    "test_id": "test_004",
+    "tarea": "extraccion_datos",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Número de observadores de la Misión Electoral del Parlamento del Mercosur\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": 10,\n         \"unidad\": \"personas\",\n         \"ambito_geografico\": [\"Argentina\", \"Brasil\", \"Paraguay\", \"Uruguay\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": \"Misión Electoral del Parlamento del Mercosur\",\n         \"notas_contexto\": null\n      }\n   ]\n}"
+}

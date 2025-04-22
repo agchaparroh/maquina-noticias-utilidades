@@ -1,0 +1,10 @@
+{
+    "test_id": "test_012",
+    "tarea": "extraccion_citas",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"\\\"Noboa, amigo, el pueblo está contigo\\\"\",\n         \"emisor_nombre\": \"ciudadanos\",\n         \"contexto\": \"en la plaza de la Independencia de la ciudad, conocida también como plaza Grande\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+}

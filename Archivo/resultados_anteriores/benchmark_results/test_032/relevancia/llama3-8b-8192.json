@@ -1,0 +1,6 @@
+{
+    "test_id": "test_032",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 9,\n   \"justificacion_relevancia\": \"Denuncia de consolidación de régimen autoritario en Nicaragua y violaciones a derechos humanos\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Conflicto/Seguridad\", \"Justicia/Legal\"],\n   \"resumen_breve\": \"La CIDH denuncia la consolidación de un régimen autoritario en Nicaragua y pide ayuda internacional\"\n}"
+}

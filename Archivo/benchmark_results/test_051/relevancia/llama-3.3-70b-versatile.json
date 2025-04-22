@@ -1,0 +1,6 @@
+{
+    "test_id": "test_051",
+    "tarea": "relevancia",
+    "model_id": "llama-3.3-70b-versatile",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Impacto económico en CABA\",\n   \"categorias_asignadas\": [\"Economía\", \"Sociedad/Derechos\"],\n   \"resumen_breve\": \"Ingresos necesarios para no ser pobre en CABA\"\n}"
+}

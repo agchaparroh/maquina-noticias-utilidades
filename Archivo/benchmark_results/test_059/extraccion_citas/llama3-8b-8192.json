@@ -1,0 +1,6 @@
+{
+    "test_id": "test_059",
+    "tarea": "extraccion_citas",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"nadie se va a librar\",\n         \"emisor_nombre\": \"Donald Trump\",\n         \"contexto\": null,\n         \"fecha_cita\": null,\n         \"relevancia_cita\": 5\n      },\n      {\n         \"cita\": \"El peso se depreció alrededor de un 10% en el debut del nuevo esquema cambiario y la apertura del cepo a la compra de divisas anunciada por el Gobierno de Javier Milei tras conseguir un millonario auxilio financiero para fortalecer las reservas del Banco Central.\",\n         \"emisor_nombre\": \"Gobierno de Javier Milei\",\n         \"contexto\": \"Descripción del contexto en que se dijo la cita\",\n         \"fecha_cita\": null,\n         \"relevancia_cita\": 4\n      },\n      {\n         \"cita\": \"El Bonar 2041 y el Global 2041 (+10,1%). También registraron incrementos significativos el Global 2035 (+10%), y el Bonar 2035 (+9,3%).\",\n         \"emisor_nombre\": null,\n         \"contexto\": null,\n         \"fecha_cita\": null,\n         \"relevancia_cita\": 3\n      }\n   ]\n}"
+}

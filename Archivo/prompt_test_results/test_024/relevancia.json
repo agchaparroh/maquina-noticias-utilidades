@@ -1,0 +1,10 @@
+{
+    "test_id": "test_024",
+    "tarea": "relevancia",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 0,\n   \"justificacion_relevancia\": \"No contiene información política o social relevante\",\n   \"categorias_asignadas\": [],\n   \"explicacion_concisa\": \"El artículo parece ser una página de ayuda de YouTube, sin contenido político o social relevante.\"\n}"
+}

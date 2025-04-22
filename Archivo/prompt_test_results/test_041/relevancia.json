@@ -1,0 +1,10 @@
+{
+    "test_id": "test_041",
+    "tarea": "relevancia",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"Llamado al cuidado y prudencia por el presidente Abinader durante la Semana Santa\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Sociedad/Derechos\"],\n   \"explicacion_concisa\": \"El presidente Luis Abinader hace un llamado a la prudencia y al cuidado de la vida durante la Semana Santa, tras la tragedia del derrumbe de la discoteca Jet Set. El gobierno desplegará 49,997 personas en el operativo 'Conciencia por la Vida, Semana Santa 2025' para garantizar la seguridad de los ciudadanos.\"\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "test_id": "test_001",
+    "tarea": "relevancia",
+    "model_id": "llama-3.3-70b-versatile",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Proyecto de ley nacional\",\n   \"categorias_asignadas\": [\n       \"Política Nacional\",\n       \"Justicia/Legal\"\n   ],\n   \"resumen_breve\": \"Senador presenta proyecto de ley para supervisar obras públicas y privadas\"\n}"
+}

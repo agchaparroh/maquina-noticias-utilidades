@@ -1,0 +1,10 @@
+{
+    "test_id": "test_055",
+    "tarea": "extraccion_citas",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"He instruido a la Consultoría Jurídica del Poder Ejecutivo para que redacte un decreto que reconozca la labor patriótica y ejemplar de los cientos de hombres y mujeres que, con valentía y entrega, participaron en las labores de rescate\",\n         \"emisor_nombre\": \"Luis Abinader\",\n         \"contexto\": \"Durante su intervención en LA Semanal con la Prensa\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"Para no dejar a ninguno de los héroes, que desde las diferentes labores nos llenaron de orgullo en esta hora tan difícil y dolorosa para la nación\",\n         \"emisor_nombre\": \"Luis Abinader\",\n         \"contexto\": \"En ese sentido, el presidente Abinader informó que mantiene una coordinación constante con todas las instituciones involucradas\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"héroes y heroínas\",\n         \"emisor_nombre\": \"Luis Abinader\",\n         \"contexto\": \"El reconocimiento será otorgado a médicos, miembros de la Defensa Civil, del Cuerpo de Bomberos, de las Fuerzas Armadas, de la Policía Nacional, voluntarios y personal de apoyo\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+}

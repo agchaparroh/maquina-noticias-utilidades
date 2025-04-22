@@ -1,0 +1,10 @@
+{
+    "test_id": "test_024",
+    "tarea": "extraccion_entidades",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"YouTube\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": [\"YouTube\"]\n      },\n      {\n         \"nombre\": \"Google LLC\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"Google\"]\n      },\n      {\n         \"nombre\": \"Política de Privacidad\",\n         \"tipo\": \"NORMATIVA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Política de Seguridad\",\n         \"tipo\": \"NORMATIVA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Términos de uso\",\n         \"tipo\": \"NORMATIVA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Política de Privacidad & Seguridad\",\n         \"tipo\": \"NORMATIVA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Cómo funciona YouTube\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Nuevas características de prueba\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": []\n      }\n   ]\n}"
+}

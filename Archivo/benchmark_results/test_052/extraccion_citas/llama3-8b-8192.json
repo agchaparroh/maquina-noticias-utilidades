@@ -1,0 +1,6 @@
+{
+    "test_id": "test_052",
+    "tarea": "extraccion_citas",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"Hoy celebramos esta gran noticia ambiental y urbanística para la ciudad de Tarija, ya que esta obra, por primera vez en la historia, está cerca de su consolidación, que representa una solución estructural al tratamiento de aguas servidas en la ciudad y el cuidado del río Guadalquivir, corazón ecológico de la región\",\n         \"emisor_nombre\": \"Luis Arce\",\n         \"contexto\": null,\n         \"fecha_cita\": null,\n         \"relevancia_cita\": 5\n      },\n      {\n         \"cita\": \"Esta planta podrá procesar: miel, caramelos, hidromiel, polen, jalea real y apitoxinas. De esta manera, Villa Montes tendrá una nueva industria\",\n         \"emisor_nombre\": \"Luis Arce\",\n         \"contexto\": null,\n         \"fecha_cita\": null,\n         \"relevancia_cita\": 4\n      }\n   ]\n}"
+}

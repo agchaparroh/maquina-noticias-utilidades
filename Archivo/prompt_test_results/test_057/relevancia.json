@@ -1,0 +1,10 @@
+{
+    "test_id": "test_057",
+    "tarea": "relevancia",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Criticismo a la CELAC y su papel en la crisis venezolana\",\n   \"categorias_asignadas\": [\"Política Internacional\", \"Conflicto/Seguridad\", \"Justicia/Legal\"],\n   \"explicacion_concisa\": \"El candidato presidencial hondureño, Salvador Nasralla, critica a la CELAC por su silencio cómplice ante la crisis en Venezuela y cuestiona el gasto del gobierno hondureño en la cumbre de Tegucigalpa. También comparte un análisis de Washington Abdala que califica a la CELAC como ineficaz y peleada con Estados Unidos.\"\n}"
+}

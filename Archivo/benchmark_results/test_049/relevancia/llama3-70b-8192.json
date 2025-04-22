@@ -1,0 +1,6 @@
+{
+    "test_id": "test_049",
+    "tarea": "relevancia",
+    "model_id": "llama3-70b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Revelación de gasto político en Colombia\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Elecciones\"],\n   \"resumen_breve\": \"Senador Miguel Uribe gasta $300 millones en eventos y publicidad en redes para consolidar su carrera política en Colombia.\"\n}"
+}

@@ -1,0 +1,10 @@
+{
+    "test_id": "test_044",
+    "tarea": "extraccion_citas",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"La semana pasada, de hecho, el propio presidente Gustavo Petro anunció y pidió que el siguiente Consejo de Ministros, es decir, el de este lunes, estuviera dedicado a la seguridad.\",\n         \"emisor_nombre\": \"El Colombiano\",\n         \"contexto\": null,\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"Luego se planeó que el tema sería transporte, pero no se concretó\",\n         \"emisor_nombre\": \"El Colombiano\",\n         \"contexto\": null,\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"el derecho a la información es igualmente vulnerado, cuando la información difundida es única, sin la posibilidad de tener acceso, en paralelo y en las mismas condiciones, a otras fuentes de información, a otros enfoques o interpretaciones de la realidad y la única opción informativa es la información oficial del gobierno, difundida en todos los canales televisivos de acceso abierto\",\n         \"emisor_nombre\": \"Consejo de Estado\",\n         \"contexto\": null,\n         \"fecha_cita\": null\n      }\n   ]\n}"
+}

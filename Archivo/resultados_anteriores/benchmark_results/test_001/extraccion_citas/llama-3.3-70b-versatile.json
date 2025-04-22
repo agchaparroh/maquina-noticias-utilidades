@@ -1,0 +1,6 @@
+{
+    "test_id": "test_001",
+    "tarea": "extraccion_citas",
+    "model_id": "llama-3.3-70b-versatile",
+    "llm_response_content": "{\n   \"resultados\": [\n       {\n           \"cita\": \"El proyecto tiene por objeto crear un mecanismo de evaluación periódica, certificación técnica y prevención de riesgos estructurales\",\n           \"emisor_nombre\": \"Pedro Tineo\",\n           \"contexto\": \"sobre el proyecto de ley\",\n           \"fecha_cita\": null,\n           \"relevancia_cita\": 5\n       }\n   ]\n}"
+}

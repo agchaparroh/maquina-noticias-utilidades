@@ -1,0 +1,10 @@
+{
+    "test_id": "test_025",
+    "tarea": "relevancia",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Tensa relación entre Macri y Milei sobre alianza electoral en Buenos Aires\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Elecciones\", \"Diplomacia\"],\n   \"explicacion_concisa\": \"Mauricio Macri desafió a Javier Milei sobre la alianza electoral en la provincia de Buenos Aires, afirmando que no hay acuerdo cerrado. La tensión entre los dos líderes políticos se intensificó luego de que Milei asegurara que la vuelta del kirchnerismo no va a pasar en el distrito bonaerense.\"\n}"
+}

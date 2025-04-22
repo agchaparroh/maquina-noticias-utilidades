@@ -1,0 +1,6 @@
+{
+    "test_id": "test_004",
+    "tarea": "relevancia",
+    "model_id": "llama-3.3-70b-versatile",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Informe electoral crítico\",\n   \"categorias_asignadas\": [\n       \"Política Internacional\",\n       \"Elecciones\",\n       \"Justicia/Legal\"\n   ],\n   \"resumen_breve\": \"Informe de observadores del Mercosur sobre elecciones\"\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "test_id": "test_029",
+    "tarea": "relevancia",
+    "model_id": "llama-3.3-70b-versatile",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Estrategia electoral del PP\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Elecciones\", \"Análisis/Contexto\"],\n   \"resumen_breve\": \"PP utiliza Inteligencia Artificial para captar votos\"\n}"
+}

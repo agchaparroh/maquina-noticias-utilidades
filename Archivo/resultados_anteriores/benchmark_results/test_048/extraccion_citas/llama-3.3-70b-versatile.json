@@ -1,0 +1,6 @@
+{
+    "test_id": "test_048",
+    "tarea": "extraccion_citas",
+    "model_id": "llama-3.3-70b-versatile",
+    "llm_response_content": "{\n   \"resultados\": [\n       {\n           \"cita\": \"no sólo por su cabellera envidiable y su dentadura ejemplar\",\n           \"emisor_nombre\": \"el autor del artículo\",\n           \"contexto\": \"Premio Nobel de Literatura\",\n           \"fecha_cita\": null,\n           \"relevancia_cita\": 4\n       },\n       {\n           \"cita\": \"un hombre que nunca dejó de ser cadete\",\n           \"emisor_nombre\": \"una voz callada y sabia\",\n           \"contexto\": \"definición de Vargas Llosa\",\n           \"fecha_cita\": null,\n           \"relevancia_cita\": 3\n       },\n       {\n           \"cita\": \"inelegante ni atrevido\",\n           \"emisor_nombre\": \"Octavio\",\n           \"contexto\": \"discusión sobre México y dictadura\",\n           \"fecha_cita\": null,\n           \"relevancia_cita\": 2\n       }\n   ]\n}"
+}

@@ -1,0 +1,10 @@
+{
+    "test_id": "test_011",
+    "tarea": "extraccion_citas",
+    "model_id": "llama-3.1-8b-instant",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: BadRequestError: Error code: 400 - {'error': {'message': \"Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.\", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': '{\\n   \"resultados\": [\\n      {\\n         \"cita\": \"un mensaje “de impunidad y justicia selectiva\"\",\\\\n         \"emisor_nombre\": \"Instituto para las Mujeres en la Migración (Imumi), Fundación para la Justicia, entre otras organizaciones\",\\\\n         \"contexto\": \"Rechazo a la resolución del Tribunal Colegiado de Apelación\",\\\\n         \"fecha_cita\": null\\\\n      },\\\\n      {\\\\n         \"cita\": \"Notificaciones a altas horas de la noche (sin justificar la urgencia de las mismas), cambios repentinos en fechas de audiencias, anuncios que conciernen a las víctimas que no se notifican en tiempo y forma, como la disculpa pública, cuya fecha había sido decidida unilateralmente por el comisionado sin previo acuerdo con todas las víctimas y sobrevivientes utilizando los medios y recursos del INM, entre otras ilicitudes\"\",\\n         \"emisor_nombre\": \"Instituto para las Mujeres en la Migración (Imumi), Fundación para la Justicia, entre otras organizaciones\",\\n         \"contexto\": \"Críticas al trato y ejercicio de derechos de la asesoría legal y de las familias\",\\n         \"fecha_cita\": null\\n      },\\n      {\\n         \"cita\": \"De no realizarse en los términos señalados por el juez, la disculpa no deberá ser tomada en cuenta como cumplida\"\",\\\\n         \"emisor_nombre\": \"Instituto para las Mujeres en la Migración (Imumi), Fundación para la Justicia, entre otras organizaciones\",\\\\n         \"contexto\": \"Requisitos para la disculpa pública\",\\\\n         \"fecha_cita\": null\\\\n      }\\\\n   ]\\\\n}'}}",
+    "llm_response_content": "Error: No content received or generated"
+}

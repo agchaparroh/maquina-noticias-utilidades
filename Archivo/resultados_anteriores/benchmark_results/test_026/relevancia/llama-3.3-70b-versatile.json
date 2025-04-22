@@ -1,0 +1,6 @@
+{
+    "test_id": "test_026",
+    "tarea": "relevancia",
+    "model_id": "llama-3.3-70b-versatile",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"Plan de contingencia nacional\",\n   \"categorias_asignadas\": [\n      \"Sociedad/Derechos\",\n      \"Política Nacional\"\n   ],\n   \"resumen_breve\": \"MSPAS activa plan de contingencia para Semana Santa\"\n}"
+}

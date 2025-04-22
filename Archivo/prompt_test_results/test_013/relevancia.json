@@ -1,0 +1,10 @@
+{
+    "test_id": "test_013",
+    "tarea": "relevancia",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 5,\n   \"justificacion_relevancia\": \"Fuga de reos en cárcel de Puerto Barrios, Izabal, impidió por la DGSP\",\n   \"categorias_asignadas\": [\"Justicia/Legal\", \"Sociedad/Derechos\", \"Análisis/Contexto\"],\n   \"explicacion_concisa\": \"La Dirección General del Sistema Penitenciario (DGSP) de Guatemala impidió una posible fuga de reos en la cárcel de Puerto Barrios, Izabal, al descubrir un túnel subterráneo que los privados de libertad habían cavado con la finalidad de escapar. Los reos, liderados por un integrante de la banda 'Los Falsos Pastores', fueron puestos a disposición de la Policía Nacional Civil (PNC) para su consignación y presentación ante los tribunales de justicia.\"\n}"
+}

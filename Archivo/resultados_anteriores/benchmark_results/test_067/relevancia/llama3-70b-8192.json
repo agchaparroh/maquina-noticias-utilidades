@@ -1,0 +1,6 @@
+{
+    "test_id": "test_067",
+    "tarea": "relevancia",
+    "model_id": "llama3-70b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Reunión entre líderes de EE.UU. y El Salvador con implicaciones geopolíticas\",\n   \"categorias_asignadas\": [\"Política Internacional\", \"Política Nacional\"],\n   \"resumen_breve\": \"Nayib Bukele se reúne con Donald Trump en la Casa Blanca para discutir seguridad y crimen\"\n}"
+}

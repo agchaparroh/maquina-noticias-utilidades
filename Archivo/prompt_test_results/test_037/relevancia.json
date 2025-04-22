@@ -1,0 +1,10 @@
+{
+    "test_id": "test_037",
+    "tarea": "relevancia",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"La violencia de pandillas en Haití es un tema de gran trascendencia geopolítica\",\n   \"categorias_asignadas\": [\"Conflicto/Seguridad\", \"Política Nacional\"],\n   \"explicacion_concisa\": \"El gobierno de Haití aprobó un presupuesto especial para combatir la violencia de pandillas, que controlan gran parte de la capital. El presupuesto incluye fondos para la policía, el ejército y programas sociales. La violencia ha causado muertes y daños en varias localidades.\"\n}"
+}

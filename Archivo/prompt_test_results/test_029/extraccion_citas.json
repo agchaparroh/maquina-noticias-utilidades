@@ -1,0 +1,10 @@
+{
+    "test_id": "test_029",
+    "tarea": "extraccion_citas",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"El gobierno es ineficiente\",\n         \"emisor_nombre\": \"María\",\n         \"contexto\": null,\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"no abandonaremos el país\",\n         \"emisor_nombre\": \"presidente\",\n         \"contexto\": null,\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"no negociaremos con terroristas\",\n         \"emisor_nombre\": \"gobernador\",\n         \"contexto\": null,\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"El presidente afirmó que 'nunca permitiré' este tipo de acciones\",\n         \"emisor_nombre\": \"ministro\",\n         \"contexto\": null,\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"Cuando el gobernador dijo \\\"no negociaremos con terroristas\\\" estaba mintiendo\",\n         \"emisor_nombre\": \"oposición\",\n         \"contexto\": null,\n         \"fecha_cita\": null\n      }\n   ]\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "test_id": "test_042",
+    "tarea": "extraccion_citas",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"el 55,65 % de los votos válidos frente al 44,35 % de Luisa González\",\n         \"emisor_nombre\": \"Consejo Nacional Electoral\",\n         \"contexto\": null,\n         \"fecha_cita\": null,\n         \"relevancia_cita\": 5\n      }\n   ]\n}"
+}

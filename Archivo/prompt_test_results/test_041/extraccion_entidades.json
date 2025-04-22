@@ -1,0 +1,10 @@
+{
+    "test_id": "test_041",
+    "tarea": "extraccion_entidades",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Luis Abinader\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Abinader\"]\n      },\n      {\n         \"nombre\": \"Semana Santa\",\n         \"tipo\": \"EVENTO\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Operativo Conciencia por la Vida, Semana Santa 2025\",\n         \"tipo\": \"EVENTO\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Centro de Operaciones de Emergencias (COE)\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"COE\"]\n      },\n      {\n         \"nombre\": \"Jet Set\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Reino de la República Dominicana\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": [\"República Dominicana\"]\n      }\n   ]\n}"
+}

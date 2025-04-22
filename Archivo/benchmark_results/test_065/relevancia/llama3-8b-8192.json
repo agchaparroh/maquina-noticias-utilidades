@@ -1,0 +1,6 @@
+{
+    "test_id": "test_065",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"La propuesta de bono a salubristas puede afectar la prestación de servicios de salud\",\n   \"categorias_asignadas\": [\"Salud\", \"Economía\"],\n   \"resumen_breve\": \"El Ministerio de Salud analiza propuestas financieras para otorgar un bono a trabajadores de la salud\"\n}"
+}

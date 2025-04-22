@@ -1,0 +1,6 @@
+{
+    "test_id": "test_014",
+    "tarea": "relevancia",
+    "model_id": "gemma2-9b-it",
+    "llm_response_content": "{\n  \"puntuacion_relevancia\": 7,\n  \"justificacion_relevancia\": \"Detención de marero con antecedentes por homicidio.\",\n  \"categorias_asignadas\": [\n    \"Conflicto/Seguridad\",\n    \"Política Nacional\",\n    \"Justicia/Legal\"\n  ],\n  \"resumen_breve\": \"Costa Rica detuvo a un marero salvadoreño con antecedentes por homicidio en el marco de la Operación Semana Santa Segura.\"\n}"
+}

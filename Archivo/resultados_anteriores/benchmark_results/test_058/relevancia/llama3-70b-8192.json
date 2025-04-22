@@ -1,0 +1,6 @@
+{
+    "test_id": "test_058",
+    "tarea": "relevancia",
+    "model_id": "llama3-70b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 7,\n   \"justificacion_relevancia\": \"Reforma en la Corte de Constitucionalidad para mejorar la transparencia\",\n   \"categorias_asignadas\": [\"Justicia/Legal\", \"Política Nacional\"],\n   \"resumen_breve\": \"La presidenta de la Corte de Constitucionalidad, Leyla Lemus, anuncia medidas para modernizar la gestión comunicacional y hacer más accesibles las resoluciones de la Corte.\"\n}"
+}

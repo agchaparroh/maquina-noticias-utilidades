@@ -1,0 +1,6 @@
+{
+    "test_id": "test_060",
+    "tarea": "extraccion_datos",
+    "model_id": "llama-3.3-70b-versatile",
+    "llm_response_content": "{\n   \"resultados\": [\n       {\n           \"indicador\": \"Duración de la sesión de la Comisión Investigadora\",\n           \"categoria\": \"otro\",\n           \"valor_numerico\": 50,\n           \"unidad\": \"minutos\",\n           \"ambito_geografico\": [\"Chile\"],\n           \"periodo_referencia_inicio\": null,\n           \"periodo_referencia_fin\": null,\n           \"tipo_periodo\": \"puntual\",\n           \"fuente_especifica\": null,\n           \"notas_contexto\": null\n       }\n   ]\n}"
+}

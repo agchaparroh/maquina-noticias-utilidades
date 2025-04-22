@@ -1,0 +1,10 @@
+{
+    "test_id": "test_035",
+    "tarea": "extraccion_entidades",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Organizaciones de productores de café de Chiapas\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Chiapas\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"México\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Estados Unidos\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Contraloría\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"La Asamblea Nacional\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"Asamblea Nacional\"]\n      },\n      {\n         \"nombre\": \"Luis Eduardo Camacho\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"X\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"La Estrella de Panamá\",\n         \"tipo\": \"MEDIO DE COMUNICACIÓN\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Dana Castañeda\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"La Contraloría General de la República\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Janine Prado\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Betserai Richards\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      }\n   ]\n}"
+}

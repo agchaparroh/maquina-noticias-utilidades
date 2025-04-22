@@ -1,0 +1,10 @@
+{
+    "test_id": "test_016",
+    "tarea": "extraccion_datos",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Número de personas que asistieron a la versión vía Zoom\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": 1,\n         \"unidad\": \"persona\",\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": \"2025-04-03\",\n         \"periodo_referencia_fin\": \"2025-04-03\",\n         \"tipo_periodo\": \"puntual\",\n         \"fuente_especifica\": \"Fiscalía General del Estado\",\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Número de personas que no asistieron a la versión vía Zoom\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": 1,\n         \"unidad\": \"persona\",\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": \"2025-04-03\",\n         \"periodo_referencia_fin\": \"2025-04-03\",\n         \"tipo_periodo\": \"puntual\",\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      }\n   ]\n}"
+}

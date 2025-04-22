@@ -1,0 +1,10 @@
+{
+    "test_id": "test_002",
+    "tarea": "relevancia",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Unión del Polo Democrático al Pacto Histórico para las elecciones de 2026\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Elecciones\", \"Política Internacional\"],\n   \"explicacion_concisa\": \"El Polo Democrático se une al Pacto Histórico, una coalición de izquierda, para presentarse como una sola fuerza política en las elecciones presidenciales y legislativas de 2026. Esta decisión busca consolidar un frente unificado para representar a las fuerzas de izquierda del país y tener mayor incidencia en la agenda política.\"\n}"
+}

@@ -1,0 +1,10 @@
+{
+    "test_id": "test_014",
+    "tarea": "relevancia",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"Tiene relevancia media debido a la detención de un marero vinculado a la Mara Salvatrucha.\",\n   \"categorias_asignadas\": [\"Conflicto/Seguridad\", \"Política Nacional\", \"Justicia/Legal\"],\n   \"explicacion_concisa\": \"La Fuerza Pública costarricense detuvo a un presunto miembro de la Mara Salvatrucha con antecedentes por homicidio en El Salvador. La detención forma parte de la Operación Semana Santa Segura y se realizó en el centro de la capital. El individuo fue entregado a la Policía Profesional de Migración para iniciar el proceso de deportación hacia El Salvador.\"\n}"
+}

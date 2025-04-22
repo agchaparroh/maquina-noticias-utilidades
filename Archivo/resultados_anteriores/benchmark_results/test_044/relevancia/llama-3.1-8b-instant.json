@@ -1,0 +1,6 @@
+{
+    "test_id": "test_044",
+    "tarea": "relevancia",
+    "model_id": "llama-3.1-8b-instant",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Relevancia media debido a la decisión del Consejo de Estado sobre la transmisión de Consejos de Ministros\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Justicia/Legal\"],\n   \"resumen_breve\": \"El Consejo de Estado ordena que los Consejos de Ministros no se transmitan en canales privados, solo en públicos\"\n}"
+}

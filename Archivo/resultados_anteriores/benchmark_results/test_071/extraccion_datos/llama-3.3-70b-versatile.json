@@ -1,0 +1,6 @@
+{
+    "test_id": "test_071",
+    "tarea": "extraccion_datos",
+    "model_id": "llama-3.3-70b-versatile",
+    "llm_response_content": "{\n   \"resultados\": [\n       {\n           \"indicador\": \"Fecha de las elecciones generales\",\n           \"categoria\": \"electoral\",\n           \"valor_numerico\": 17,\n           \"unidad\": \"día del mes\",\n           \"ambito_geografico\": [\"Bolivia\"],\n           \"periodo_referencia_inicio\": \"2025-08-17\",\n           \"periodo_referencia_fin\": \"2025-08-17\",\n           \"tipo_periodo\": \"puntual\",\n           \"fuente_especifica\": null,\n           \"notas_contexto\": null\n       },\n       {\n           \"indicador\": \"Fecha de inicio del registro masivo de votantes\",\n           \"categoria\": \"electoral\",\n           \"valor_numerico\": 18,\n           \"unidad\": \"día del mes\",\n           \"ambito_geografico\": [\"Bolivia\"],\n           \"periodo_referencia_inicio\": \"2025-04-18\",\n           \"periodo_referencia_fin\": null,\n           \"tipo_periodo\": \"puntual\",\n           \"fuente_especifica\": \"Tribunal Supremo Electoral\",\n           \"notas_contexto\": null\n       }\n   ]\n}"
+}

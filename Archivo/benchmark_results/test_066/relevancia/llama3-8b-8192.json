@@ -1,0 +1,6 @@
+{
+    "test_id": "test_066",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"Investigación sobre posible participación de civiles en un conflicto\",\n   \"categorias_asignadas\": [\"Justicia/Legal\", \"Política Nacional\"],\n   \"resumen_breve\": \"La Fiscalía llama a declarar a miembros del 'gabinete civil' de Zúñiga en calidad de testigos en una investigación\"\n}"
+}

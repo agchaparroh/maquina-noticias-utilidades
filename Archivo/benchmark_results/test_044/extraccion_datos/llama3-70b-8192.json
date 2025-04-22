@@ -1,0 +1,6 @@
+{
+    "test_id": "test_044",
+    "tarea": "extraccion_datos",
+    "model_id": "llama3-70b-8192",
+    "llm_response_content": "{\n   \"resultados\":[\n      {\n         \"indicador\":\"Incremento de homicidios\",\n         \"categoria\":\"social\",\n         \"valor_numerico\":null,\n         \"unidad\":null,\n         \"ambito_geografico\":[\n            \"Colombia\"\n         ],\n         \"periodo_referencia_inicio\":\"2023-01-01\",\n         \"periodo_referencia_fin\":\"2023-03-31\",\n         \"tipo_periodo\":\"trimestral\",\n         \"fuente_especifica\":null,\n         \"notas_contexto\":null\n      }\n   ]\n}"
+}

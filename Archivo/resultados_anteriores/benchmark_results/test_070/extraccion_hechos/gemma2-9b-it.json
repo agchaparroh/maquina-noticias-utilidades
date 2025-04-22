@@ -1,0 +1,6 @@
+{
+    "test_id": "test_070",
+    "tarea": "extraccion_hechos",
+    "model_id": "gemma2-9b-it",
+    "llm_response_content": "Error: No content received"
+}

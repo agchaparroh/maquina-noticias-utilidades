@@ -1,0 +1,6 @@
+{
+    "test_id": "test_039",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Donald Trump critica al gobierno de Maduro y se refiere a la economía petrolera\",\n   \"categorias_asignadas\": [\"Política Internacional\", \"Economía\", \"Conflicto/Seguridad\"],\n   \"resumen_breve\": \"Donald Trump critica al gobierno de Maduro y se refiere a la economía petrolera\"\n}"
+}

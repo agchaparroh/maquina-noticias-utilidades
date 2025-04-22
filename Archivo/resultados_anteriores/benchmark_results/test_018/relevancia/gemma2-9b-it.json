@@ -1,0 +1,6 @@
+{
+    "test_id": "test_018",
+    "tarea": "relevancia",
+    "model_id": "gemma2-9b-it",
+    "llm_response_content": "{\n  \"puntuacion_relevancia\": 8,\n  \"justificacion_relevancia\": \"Análisis económico y político de Argentina\",\n  \"categorias_asignadas\": [\"Política Nacional\", \"Economía\", \"Análisis/Contexto\"],\n  \"resumen_breve\": \"Javier Milei explica su plan económico, incluyendo la dolarización, en una extensa entrevista.\"\n}"
+}

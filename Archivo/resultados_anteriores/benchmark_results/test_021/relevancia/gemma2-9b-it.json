@@ -1,0 +1,6 @@
+{
+    "test_id": "test_021",
+    "tarea": "relevancia",
+    "model_id": "gemma2-9b-it",
+    "llm_response_content": "{\n  \"puntuacion_relevancia\": 1,\n  \"justificacion_relevancia\": \"Tema religioso local sin relevancia política o económica.\",\n  \"categorias_asignadas\": [ \"Sociedad/Derechos\" ],\n  \"resumen_breve\": \"La historia detrás de la marcha fúnebre 'La Fosa' en Guatemala.\"\n}"
+}

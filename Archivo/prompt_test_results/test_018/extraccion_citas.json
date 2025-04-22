@@ -1,0 +1,10 @@
+{
+    "test_id": "test_018",
+    "tarea": "extraccion_citas",
+    "model_id": "llama-3.1-8b-instant",
+    "success": false,
+    "api_success": false,
+    "json_valid": false,
+    "error_message": "API_Error: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01jsay2bafeeht06zsq8qv9mct` service tier `on_demand` on tokens per minute (TPM): Limit 250000, Used 250077, Requested 2487. Please try again in 615.4ms. Need more tokens? Visit https://groq.com/self-serve-support/ to request higher limits.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+    "llm_response_content": "Error: No content received or generated"
+}

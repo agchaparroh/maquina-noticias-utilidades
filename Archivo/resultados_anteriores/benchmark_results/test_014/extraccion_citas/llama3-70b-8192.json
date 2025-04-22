@@ -1,0 +1,6 @@
+{
+    "test_id": "test_014",
+    "tarea": "extraccion_citas",
+    "model_id": "llama3-70b-8192",
+    "llm_response_content": "{\n   \"resultados\":[\n      {\n         \"cita\":\"El sujeto cruzó la calle para evitar pasar junto a una patrulla que brindaba seguridad en la zona, lo que alertó a los oficiales\",\n         \"emisor_nombre\":\"Fulvio Fernández\",\n         \"contexto\":\"Detención de un presunto miembro de la Mara Salvatrucha\",\n         \"fecha_cita\":null,\n         \"relevancia_cita\":4\n      }\n   ]\n}"
+}

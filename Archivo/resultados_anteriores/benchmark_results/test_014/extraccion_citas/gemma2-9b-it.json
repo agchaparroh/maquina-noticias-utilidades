@@ -1,0 +1,6 @@
+{
+    "test_id": "test_014",
+    "tarea": "extraccion_citas",
+    "model_id": "gemma2-9b-it",
+    "llm_response_content": "{\n  \"resultados\": [\n    {\n      \"cita\": \"El sujeto cruzó la calle para evitar pasar junto a una patrulla que brindaba seguridad en la zona, lo que alertó a los oficiales\",\n      \"emisor_nombre\": \"Fernández\",\n      \"contexto\": \"Describiendo la actitud evasiva del sospechoso al ver a la policía\",\n      \"fecha_cita\": null,\n      \"relevancia_cita\": 4\n    }\n  ]\n}"
+}

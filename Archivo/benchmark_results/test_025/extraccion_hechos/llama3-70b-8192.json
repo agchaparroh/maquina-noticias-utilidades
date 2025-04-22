@@ -1,0 +1,6 @@
+{
+    "test_id": "test_025",
+    "tarea": "extraccion_hechos",
+    "model_id": "llama3-70b-8192",
+    "llm_response_content": "Error: No content received"
+}

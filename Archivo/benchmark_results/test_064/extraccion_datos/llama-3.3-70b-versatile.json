@@ -1,0 +1,6 @@
+{
+    "test_id": "test_064",
+    "tarea": "extraccion_datos",
+    "model_id": "llama-3.3-70b-versatile",
+    "llm_response_content": "{\n   \"resultados\": [\n       {\n           \"indicador\": \"Recompensa por la captura de 'Iván Mordisco'\",\n           \"categoria\": \"presupuestario\",\n           \"valor_numerico\": 4450000000,\n           \"unidad\": \"pesos\",\n           \"ambito_geografico\": [\"Colombia\"],\n           \"periodo_referencia_inicio\": null,\n           \"periodo_referencia_fin\": null,\n           \"tipo_periodo\": null,\n           \"fuente_especifica\": null,\n           \"notas_contexto\": null\n       },\n       {\n           \"indicador\": \"Número de disidentes de 'Iván Mordisco' dados de baja\",\n           \"categoria\": \"conflicto\",\n           \"valor_numerico\": 10,\n           \"unidad\": \"personas\",\n           \"ambito_geografico\": [\"Colombia\"],\n           \"periodo_referencia_inicio\": null,\n           \"periodo_referencia_fin\": null,\n           \"tipo_periodo\": null,\n           \"fuente_especifica\": null,\n           \"notas_contexto\": \"en enfrentamientos\"\n       }\n   ]\n}"
+}

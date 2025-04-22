@@ -1,0 +1,10 @@
+{
+    "test_id": "test_053",
+    "tarea": "extraccion_entidades",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Javier Milei\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Milei\"]\n      },\n      {\n         \"nombre\": \"Bolivia\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Venezuela\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Ecuador\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Brasil\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Argentina\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Casa Rosada\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Scott Bessent\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Bessent\"]\n      },\n      {\n         \"nombre\": \"Organización de las Naciones Unidas (ONU)\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"ONU\", \"Naciones Unidas\"]\n      },\n      {\n         \"nombre\": \"Donald Trump\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Trump\"]\n      },\n      {\n         \"nombre\": \"Estados Unidos\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"República Argentina\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      }\n   ]\n}"
+}

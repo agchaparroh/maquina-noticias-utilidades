@@ -1,0 +1,6 @@
+{
+    "test_id": "test_053",
+    "tarea": "relevancia",
+    "model_id": "llama-3.1-8b-instant",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Comentarios sobre políticas socialistas en Bolivia y Venezuela\",\n   \"categorias_asignadas\": [\"Política Internacional\", \"Economía\", \"Política Nacional\"],\n   \"resumen_breve\": \"El presidente argentino Javier Milei critica el modelo económico socialista de Bolivia y Venezuela\"\n}"
+}

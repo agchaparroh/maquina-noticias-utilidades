@@ -1,0 +1,10 @@
+{
+    "test_id": "test_012",
+    "tarea": "relevancia",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"El regreso del presidente electo Daniel Noboa al Palacio de Carondelet es un evento de alta relevancia política nacional.\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Elecciones\"],\n   \"explicacion_concisa\": \"El presidente electo Daniel Noboa regresa al Palacio de Carondelet después de su victoria en la segunda vuelta electoral, recibiendo honores militares y la entrega simbólica de las llaves de la residencia presidencial.\"\n}"
+}

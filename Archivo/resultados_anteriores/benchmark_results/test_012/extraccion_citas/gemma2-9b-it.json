@@ -1,0 +1,6 @@
+{
+    "test_id": "test_012",
+    "tarea": "extraccion_citas",
+    "model_id": "gemma2-9b-it",
+    "llm_response_content": "{\n  \"resultados\": [\n    {\n      \"cita\": \"Noboa, amigo, el pueblo está contigo\",\n      \"emisor_nombre\": \"ciudadanos\",\n      \"contexto\": \"Coreaban los ciudadanos que se reunieron en los exteriores de Carondelet.\",\n      \"fecha_cita\": null,\n      \"relevancia_cita\": 3\n    }\n  ]\n}"
+}

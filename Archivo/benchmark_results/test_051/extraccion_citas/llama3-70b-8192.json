@@ -1,0 +1,6 @@
+{
+    "test_id": "test_051",
+    "tarea": "extraccion_citas",
+    "model_id": "llama3-70b-8192",
+    "llm_response_content": "{\n   \"resultados\":[\n\n   ]\n}"
+}

@@ -1,0 +1,10 @@
+{
+    "test_id": "test_039",
+    "tarea": "relevancia",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Donald Trump amenaza al régimen de Maduro con consecuencias económicas\",\n   \"categorias_asignadas\": [\"Política Internacional\", \"Conflicto/Seguridad\", \"Diplomacia\"],\n   \"explicacion_concisa\": \"El presidente de Estados Unidos, Donald Trump, amenaza al régimen de Maduro con consecuencias económicas por el control del mercado petrolero. También se discute la extradición de un migrante a Estados Unidos.\"\n}"
+}

@@ -1,0 +1,10 @@
+{
+    "test_id": "test_059",
+    "tarea": "extraccion_citas",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"nadie se va a librar\",\n         \"emisor_nombre\": \"Donald Trump\",\n         \"contexto\": \"El presidente, Donald Trump, aseguró que \\\"nadie se va a librar\\\" de los gravámenes.\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"El presidente afirmó que 'nunca permitiré' este tipo de acciones\",\n         \"emisor_nombre\": \"ministro\",\n         \"contexto\": \"El ministro señaló que el presidente afirmó que 'nunca permitiré' este tipo de acciones.\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"Cuando el gobernador dijo \\\"no negociaremos con terroristas\\\" estaba mintiendo\",\n         \"emisor_nombre\": \"oposición\",\n         \"contexto\": \"La oposición declaró que cuando el gobernador dijo \\\"no negociaremos con terroristas\\\" estaba mintiendo.\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"no abandonaremos el país\",\n         \"emisor_nombre\": \"presidente\",\n         \"contexto\": \"El presidente dijo \\\"no abandonaremos el país\\\".\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+}

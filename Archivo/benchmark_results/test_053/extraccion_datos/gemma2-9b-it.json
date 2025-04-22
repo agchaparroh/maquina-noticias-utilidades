@@ -1,0 +1,6 @@
+{
+    "test_id": "test_053",
+    "tarea": "extraccion_datos",
+    "model_id": "gemma2-9b-it",
+    "llm_response_content": "{\n  \"resultados\": [\n    {\n      \"indicador\": \"Número de años\",\n      \"categoria\": \"otro\",\n      \"valor_numerico\": 20,\n      \"unidad\": null,\n      \"ambito_geografico\": [],\n      \"periodo_referencia_inicio\": null,\n      \"periodo_referencia_fin\": null,\n      \"tipo_periodo\": null,\n      \"fuente_especifica\": null,\n      \"notas_contexto\": null\n    },\n    {\n      \"indicador\": \"Número de años\",\n      \"categoria\": \"otro\",\n      \"valor_numerico\": 10,\n      \"unidad\": null,\n      \"ambito_geografico\": [],\n      \"periodo_referencia_inicio\": null,\n      \"periodo_referencia_fin\": null,\n      \"tipo_periodo\": null,\n      \"fuente_especifica\": null,\n      \"notas_contexto\": null\n    }\n  ]\n}"
+}

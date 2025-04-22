@@ -1,0 +1,10 @@
+{
+    "test_id": "test_035",
+    "tarea": "relevancia",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 5,\n   \"justificacion_relevancia\": \"La fiscalización de la Contraloría afecta a algunos diputados panameños.\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Justicia/Legal\"],\n   \"explicacion_concisa\": \"La Contraloría General de Panamá paga a funcionarios legislativos con cheques debido a auditorías por irregularidades, afectando a algunos diputados.\"\n}"
+}

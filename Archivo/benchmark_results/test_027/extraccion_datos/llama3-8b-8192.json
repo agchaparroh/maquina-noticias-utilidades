@@ -1,0 +1,6 @@
+{
+    "test_id": "test_027",
+    "tarea": "extraccion_datos",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Porcentaje de candidatos indígenas en la contienda electoral\",\n         \"categoria\": \"demográfico\",\n         \"valor_numerico\": \"0.01\",\n         \"unidad\": \"%\",\n         \"ambito_geografico\": [\"México\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Número de comunidades indígenas distribuidas a nivel nacional\",\n         \"categoria\": \"demográfico\",\n         \"valor_numerico\": \"70\",\n         \"unidad\": \"comunidades\",\n         \"ambito_geografico\": [\"México\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      }\n   ]\n}"
+}

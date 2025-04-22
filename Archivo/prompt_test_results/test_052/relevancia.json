@@ -1,0 +1,10 @@
+{
+    "test_id": "test_052",
+    "tarea": "relevancia",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 5,\n   \"justificacion_relevancia\": \"Inversión gubernamental en infraestructura ambiental en Bolivia\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Economía\", \"Sociedad/Derechos\"],\n   \"explicacion_concisa\": \"El presidente Luis Arce anunció una inversión de más de $us 50 millones para construir una planta de tratamiento de aguas residuales en Tarija, Bolivia. El proyecto busca resolver el problema de tratamiento de aguas servidas en la ciudad y proteger el río Guadalquivir.\"\n}"
+}

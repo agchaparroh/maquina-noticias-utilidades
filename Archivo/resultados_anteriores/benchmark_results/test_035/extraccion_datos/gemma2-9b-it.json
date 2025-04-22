@@ -1,0 +1,6 @@
+{
+    "test_id": "test_035",
+    "tarea": "extraccion_datos",
+    "model_id": "gemma2-9b-it",
+    "llm_response_content": "{\n  \"resultados\": [\n    {\n      \"indicador\": \"Fecha de publicación del artículo\",\n      \"categoria\": \"otro\",\n      \"valor_numerico\": 14,\n      \"unidad\": null,\n      \"ambito_geografico\": [\n        \"Panamá\"\n      ],\n      \"periodo_referencia_inicio\": \"2025-04-14\",\n      \"periodo_referencia_fin\": null,\n      \"tipo_periodo\": \"diario\",\n      \"fuente_especifica\": null,\n      \"notas_contexto\": null\n    },\n    {\n      \"indicador\": \"Número de meses que se mantendrá el pago con cheque\",\n      \"categoria\": \"presupuestario\",\n      \"valor_numerico\": 4,\n      \"unidad\": null,\n      \"ambito_geografico\": [\n        \"Panamá\"\n      ],\n      \"periodo_referencia_inicio\": null,\n      \"periodo_referencia_fin\": null,\n      \"tipo_periodo\": null,\n      \"fuente_especifica\": null,\n      \"notas_contexto\": null\n    }\n  ]\n}"
+}

@@ -1,0 +1,10 @@
+{
+    "test_id": "test_009",
+    "tarea": "extraccion_entidades",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Fuerza del Pueblo (FP)\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"FP\"]\n      },\n      {\n         \"nombre\": \"Leonel Fernández\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Jet Set\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Parroquia San Antonio de Padua\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Gascue\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Distrito Nacional\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Dominican Republic\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": [\"República Dominicana\"]\n      },\n      {\n         \"nombre\": \"Tragedia del Jet Set\",\n         \"tipo\": \"EVENTO\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Duelo Nacional\",\n         \"tipo\": \"EVENTO\",\n         \"alias\": []\n      }\n   ]\n}"
+}

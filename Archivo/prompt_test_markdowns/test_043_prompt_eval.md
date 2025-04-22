@@ -1,0 +1,407 @@
+# Evaluación Artículo: test_043
+**Modelo Probado:** `llama-3.1-8b-instant`
+
+## Metadatos del Artículo Original
+
+| Campo          | Valor                                      |
+|----------------|--------------------------------------------|
+| **URL**        | https://www.jornada.com.mx/noticia/2025/04/14/politica/cae-en-cdmx-el-gangoso-presunto-lider-de-celula           |
+| **Título**     | Cae en CDMX “El Gangoso”, presunto líder de célula criminal       |
+| **Medio**      | La Jornada         |
+| **País Pub.**  | None |
+| **Fecha Pub.** | 2025-04-14T17:03:00-06:00 |
+| **Recopilado** | 2025-04-21T00:43:27.125505+00:00 |
+
+---
+
+## Contenido del Artículo Analizado
+
+<details open>
+<summary>Ver/Ocultar Contenido Completo</summary>
+
+```text
+Ciudad de México. Autoridades federales detuvieron este lunes en la Ciudad de México y en Puebla a siete presuntos integrantes de una célula delictiva del “Cártel del Pacífico” dedicada a la elaboración y distribución de droga, entre ellos al supuesto líder del grupo, Joel Alfonso Urrea Yariar, alias El Gangoso, de 38 años de edad.
+De acuerdo con fuentes del Gabinete de Seguridad, El Gangoso ordenó el 23 de marzo, en Carrizalejo, Sinaloa, un ataque con drones armados contra soldados, en represalia por una incautación previa. También era el encargado de la fabricación de cristal en laboratorios clandestinos ubicados en Sinaloa y Puebla (cerca de Chachapa) y utilizaban como bodegas casas del Fraccionamiento Los Héroes.
+Junto a Urrea fue aprehendido en la Alcaldía Azcapotzalco junto con Javier Ernesto López Lara, supuesto integrante de la misma célula delictiva. Al momento de su detención, se les aseguró un arma corta, un cargador, nueve cartuchos útiles, una bolsa de plástico con metanfetamina, una tablet, dos identificaciones, dinero en efectivo y equipos telefónicos.
+Paralelamente, en las colonias poblanas Los Héroes Puebla 2ª Sección y Granjas de San Isidro, en dos acciones, se detuvo a dos presuntos integrantes de la misma célula criminal, Germán Eduardo Yuriar Martínez, de 31 años, alias El Chapo, y Fabián Gaspar Aguilar Rendón de 41 años, a quienes se le aseguró un arma larga, tres cargadores abastecidos, 30 cartuchos útiles y tres paquetes con posible droga.
+También, al ejecutar tres órdenes de cateo en inmuebles en Puebla, se detuvo a dos mujeres y un hombre, se aseguraron dos vehículos, seis paquetes con 30 kilos de marihuana, y equipos telefónicos.
+En los operativos participaron elementos de la Secretaría de la Defensa Nacional (Defensa), Secretaría de Seguridad y Protección Ciudadana (SSPC) y Guardia Nacional (GN), en coordinación con la Fiscalía General de la República (FGR), Secretaría de Marina (Semar) y de la Secretaría de Seguridad Ciudadana (SSC) de la Ciudad de México.
+```
+</details>
+
+---
+
+## Resultados de las Tareas (llama-3.1-8b-instant)
+
+### Tarea: relevancia
+
+✅ **Estado:** Éxito
+
+
+<details open>
+<summary>Ver/Ocultar Respuesta LLM</summary>
+
+```json
+{
+    "puntuacion_relevancia": 7,
+    "justificacion_relevancia": "Detención de líder de célula criminal del 'Cártel del Pacífico' en México",
+    "categorias_asignadas": [
+        "Conflicto/Seguridad",
+        "Política Nacional"
+    ],
+    "explicacion_concisa": "Autoridades federales detuvieron a siete presuntos integrantes de una célula delictiva del 'Cártel del Pacífico', incluyendo al supuesto líder, Joel Alfonso Urrea Yariar, alias El Gangoso, en la Ciudad de México y Puebla. Se aseguraron armas, droga y equipos telefónicos en operativos coordinados con diferentes instituciones."
+}
+```
+</details>
+
+
+### Tarea: extraccion_hechos
+
+✅ **Estado:** Éxito
+
+
+<details open>
+<summary>Ver/Ocultar Respuesta LLM</summary>
+
+```json
+{
+    "resultados": [
+        {
+            "contenido": "Autoridades federales detuvieron a siete presuntos integrantes de una célula delictiva del 'Cártel del Pacífico' en la Ciudad de México y Puebla.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-13T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "MX"
+            ],
+            "ubicaciones_especificas": [
+                "Ciudad de México",
+                "Puebla"
+            ],
+            "importancia": 9,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "crimen",
+                "drogas",
+                "detención"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El supuesto líder de la célula delictiva, Joel Alfonso Urrea Yariar, alias 'El Gangoso', ordenó un ataque con drones armados contra soldados en Sinaloa.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-03-23T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "MX"
+            ],
+            "ubicaciones_especificas": [
+                "Sinaloa"
+            ],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "crimen",
+                "ataque",
+                "drones"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El 'Cártel del Pacífico' es una organización criminal dedicada a la elaboración y distribución de drogas en México.",
+            "tipo_hecho": "CONCEPTO",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "año",
+            "paises": [
+                "MX"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 7,
+            "confiabilidad": 4,
+            "etiquetas": [
+                "crimen",
+                "drogas",
+                "cártel"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La Secretaría de la Defensa Nacional (Defensa), Secretaría de Seguridad y Protección Ciudadana (SSPC) y Guardia Nacional (GN) participaron en los operativos de detención.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-13T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "MX"
+            ],
+            "ubicaciones_especificas": [
+                "Ciudad de México",
+                "Puebla"
+            ],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "seguridad",
+                "defensa",
+                "operativos"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        }
+    ]
+}
+```
+</details>
+
+
+### Tarea: extraccion_entidades
+
+✅ **Estado:** Éxito
+
+
+<details open>
+<summary>Ver/Ocultar Respuesta LLM</summary>
+
+```json
+{
+    "resultados": [
+        {
+            "nombre": "Ciudad de México",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Gabinete de Seguridad",
+            "tipo": "INSTITUCION",
+            "alias": []
+        },
+        {
+            "nombre": "Cártel del Pacífico",
+            "tipo": "ORGANIZACION",
+            "alias": []
+        },
+        {
+            "nombre": "Joel Alfonso Urrea Yariar",
+            "tipo": "PERSONA",
+            "alias": [
+                "El Gangoso"
+            ]
+        },
+        {
+            "nombre": "Javier Ernesto López Lara",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Germán Eduardo Yuriar Martínez",
+            "tipo": "PERSONA",
+            "alias": [
+                "El Chapo"
+            ]
+        },
+        {
+            "nombre": "Fabián Gaspar Aguilar Rendón",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Secretaría de la Defensa Nacional (Defensa)",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "Defensa"
+            ]
+        },
+        {
+            "nombre": "Secretaría de Seguridad y Protección Ciudadana (SSPC)",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "SSPC"
+            ]
+        },
+        {
+            "nombre": "Guardia Nacional (GN)",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "GN"
+            ]
+        },
+        {
+            "nombre": "Fiscalía General de la República (FGR)",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "FGR"
+            ]
+        },
+        {
+            "nombre": "Secretaría de Marina (Semar)",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "Semar"
+            ]
+        },
+        {
+            "nombre": "Secretaría de Seguridad Ciudadana (SSC) de la Ciudad de México",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "SSC"
+            ]
+        },
+        {
+            "nombre": "Puebla",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Sinaloa",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Carrizalejo",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Chachapa",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Fraccionamiento Los Héroes",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Azcapotzalco",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Los Héroes Puebla 2ª Sección",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Granjas de San Isidro",
+            "tipo": "LUGAR",
+            "alias": []
+        }
+    ]
+}
+```
+</details>
+
+
+### Tarea: extraccion_citas
+
+✅ **Estado:** Éxito
+
+
+<details open>
+<summary>Ver/Ocultar Respuesta LLM</summary>
+
+```json
+{
+    "resultados": [
+        {
+            "cita": null,
+            "emisor_nombre": null,
+            "contexto": null,
+            "fecha_cita": null
+        }
+    ]
+}
+```
+</details>
+
+
+### Tarea: extraccion_datos
+
+✅ **Estado:** Éxito
+
+
+<details open>
+<summary>Ver/Ocultar Respuesta LLM</summary>
+
+```json
+{
+    "resultados": [
+        {
+            "indicador": "Número de presuntos integrantes de una célula delictiva del 'Cártel del Pacífico' detenidos",
+            "categoria": "conflicto",
+            "valor_numerico": 7,
+            "unidad": "personas",
+            "ambito_geografico": [
+                "Ciudad de México",
+                "Puebla"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": "Gabinete de Seguridad",
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Edad del supuesto líder del grupo, Joel Alfonso Urrea Yariar, alias El Gangoso",
+            "categoria": "demográfico",
+            "valor_numerico": 38,
+            "unidad": "años",
+            "ambito_geografico": [],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de cartuchos útiles asegurados en la detención de Joel Alfonso Urrea Yariar, alias El Gangoso",
+            "categoria": "conflicto",
+            "valor_numerico": 9,
+            "unidad": "cartuchos",
+            "ambito_geografico": [
+                "Ciudad de México"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": "Gabinete de Seguridad",
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de cartuchos útiles asegurados en la detención de Germán Eduardo Yuriar Martínez, alias El Chapo",
+            "categoria": "conflicto",
+            "valor_numerico": 30,
+            "unidad": "cartuchos",
+            "ambito_geografico": [
+                "Puebla"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": "Gabinete de Seguridad",
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Peso de la marihuana asegurada en los operativos",
+            "categoria": "conflicto",
+            "valor_numerico": 30,
+            "unidad": "kilogramos",
+            "ambito_geografico": [
+                "Puebla"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": "Gabinete de Seguridad",
+            "notas_contexto": null
+        }
+    ]
+}
+```
+</details>

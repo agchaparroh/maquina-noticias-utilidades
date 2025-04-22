@@ -1,0 +1,10 @@
+{
+    "test_id": "test_011",
+    "tarea": "relevancia",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 7,\n   \"justificacion_relevancia\": \"Rechazo a la suspensión del proceso penal contra el director del INM\",\n   \"categorias_asignadas\": [\"Justicia/Legal\", \"Política Nacional\"],\n   \"explicacion_concisa\": \"Organizaciones y víctimas rechazan la decisión del Tribunal Colegiado de Apelación que confirmó la suspensión condicional del proceso penal contra Francisco Garduño, director del Instituto Nacional de Migración, por el fallecimiento de 40 migrantes en una estación migratoria en 2023.\"\n}"
+}

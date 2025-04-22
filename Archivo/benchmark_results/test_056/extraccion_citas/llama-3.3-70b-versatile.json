@@ -1,0 +1,6 @@
+{
+    "test_id": "test_056",
+    "tarea": "extraccion_citas",
+    "model_id": "llama-3.3-70b-versatile",
+    "llm_response_content": "{\n   \"resultados\": [\n       {\n           \"cita\": \"A nadie vamos a dejar solo. El Gobierno va a estar con ellos\",\n           \"emisor_nombre\": \"Luis Abinader\",\n           \"contexto\": \"Tragedia en Jet Set\",\n           \"fecha_cita\": null,\n           \"relevancia_cita\": 5\n       },\n       {\n           \"cita\": \"Incluso los rescatistas también, porque su impacto fue muy fuerte\",\n           \"emisor_nombre\": \"Luis Abinader\",\n           \"contexto\": \"Tragedia en Jet Set\",\n           \"fecha_cita\": null,\n           \"relevancia_cita\": 4\n       },\n       {\n           \"cita\": \"Me cubrió con su cuerpo y por eso estoy viva\",\n           \"emisor_nombre\": \"Maribel Espaillat\",\n           \"contexto\": \"Sobreviviente del Jet Set\",\n           \"fecha_cita\": null,\n           \"relevancia_cita\": 5\n       }\n   ]\n}"
+}

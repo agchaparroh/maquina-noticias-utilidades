@@ -1,0 +1,10 @@
+{
+    "test_id": "test_009",
+    "tarea": "extraccion_datos",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Número de personas fallecidas en la tragedia del Jet Set\",\n         \"categoria\": \"demográfico\",\n         \"valor_numerico\": 230,\n         \"unidad\": \"personas\",\n         \"ambito_geografico\": [\"República Dominicana\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Número de días de duelo decretados por el Gobierno\",\n         \"categoria\": \"social\",\n         \"valor_numerico\": 3,\n         \"unidad\": \"días\",\n         \"ambito_geografico\": [\"República Dominicana\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": \"Fue extendido posteriormente\"\n      }\n   ]\n}"
+}

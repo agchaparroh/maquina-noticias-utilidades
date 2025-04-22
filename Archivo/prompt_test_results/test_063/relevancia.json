@@ -1,0 +1,10 @@
+{
+    "test_id": "test_063",
+    "tarea": "relevancia",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"Contiene información útil sobre la seguridad social de mexicanos en el extranjero\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Economía\", \"Sociedad/Derechos\"],\n   \"explicacion_concisa\": \"El IMSS afilió a 13 mil 169 mexicanos que residen y trabajan en el extranjero, proporcionándoles acceso a la seguridad social y beneficios para sus familiares. El salario promedio de aseguramiento diario es de 388.25 pesos, equivalente a 19 dólares diarios.\"\n}"
+}

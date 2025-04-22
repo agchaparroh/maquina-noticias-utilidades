@@ -1,0 +1,10 @@
+{
+    "test_id": "test_021",
+    "tarea": "extraccion_citas",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"vivida como un sueño\",\n         \"emisor_nombre\": \"Santiago Coronado\",\n         \"contexto\": \"El compositor relataba que la inspiración para componer la marcha surgió de un sueño que tuvo\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"Santiago\",\n         \"emisor_nombre\": \"Jesús\",\n         \"contexto\": \"El compositor cuenta que cuando intentó ir detrás del Jesús, su esposa Catalina lo despertó en la madrugada\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"La Fosa\",\n         \"emisor_nombre\": \"Santiago Coronado\",\n         \"contexto\": \"Entonces se levantó a las tres de la mañana y empezó a escribir la marcha con luz de candela y le puso el título de \\\"La Fosa\\\"\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+}

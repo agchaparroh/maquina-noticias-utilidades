@@ -1,0 +1,6 @@
+{
+    "test_id": "test_024",
+    "tarea": "extraccion_entidades",
+    "model_id": "llama3-70b-8192",
+    "llm_response_content": "{\n   \"resultados\":[\n      {\n         \"nombre\":\"Google LLC\",\n         \"tipo\":\"ORGANIZACION\",\n         \"alias\":[\n            \"Google\"\n         ],\n         \"descripcion_contextual\":\"Propietaria de YouTube\",\n         \"relevancia_articulo\":8\n      },\n      {\n         \"nombre\":\"YouTube\",\n         \"tipo\":\"ORGANIZACION\",\n         \"alias\":[\n            \"YouTube\"\n         ],\n         \"descripcion_contextual\":\"Plataforma de video en línea\",\n         \"relevancia_articulo\":10\n      }\n   ]\n}"
+}

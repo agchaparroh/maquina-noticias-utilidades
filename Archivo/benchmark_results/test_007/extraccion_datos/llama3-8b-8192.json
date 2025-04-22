@@ -1,0 +1,6 @@
+{
+    "test_id": "test_007",
+    "tarea": "extraccion_datos",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Número de presos políticos en Venezuela\",\n         \"categoria\": \"demográfico\",\n         \"valor_numerico\": 900,\n         \"unidad\": \"personas\",\n         \"ambito_geografico\": [\"Venezuela\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Número de figuras políticas desaparecidas en Venezuela\",\n         \"categoria\": \"demográfico\",\n         \"valor_numerico\": null,\n         \"unidad\": null,\n         \"ambito_geografico\": [\"Venezuela\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": \"se mencionan figuras como Carlos Azuaje, Freddy Superlano, Luis Camacaro, Juan Fleites, Dignora Hernández, Chancellor, Américo De Grazia, entre otros\"\n      }\n   ]\n}"
+}

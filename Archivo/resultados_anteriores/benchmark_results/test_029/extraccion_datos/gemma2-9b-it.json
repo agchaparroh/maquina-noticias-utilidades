@@ -1,0 +1,6 @@
+{
+    "test_id": "test_029",
+    "tarea": "extraccion_datos",
+    "model_id": "gemma2-9b-it",
+    "llm_response_content": "{\n  \"resultados\": [\n    {\n      \"indicador\": \"Número de jóvenes entre 18 y 24 años\",\n      \"categoria\": \"demográfico\",\n      \"valor_numerico\": 24,\n      \"unidad\": \"años\",\n      \"ambito_geografico\": [],\n      \"periodo_referencia_inicio\": null,\n      \"periodo_referencia_fin\": null,\n      \"tipo_periodo\": null,\n      \"fuente_especifica\": null,\n      \"notas_contexto\": null\n    }\n  ]\n}"
+}

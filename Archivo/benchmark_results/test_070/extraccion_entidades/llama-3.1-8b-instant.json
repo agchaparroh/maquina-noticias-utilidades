@@ -1,0 +1,6 @@
+{
+    "test_id": "test_070",
+    "tarea": "extraccion_entidades",
+    "model_id": "llama-3.1-8b-instant",
+    "llm_response_content": "Error: No content received"
+}

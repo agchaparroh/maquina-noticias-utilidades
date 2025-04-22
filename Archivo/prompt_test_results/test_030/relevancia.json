@@ -1,0 +1,10 @@
+{
+    "test_id": "test_030",
+    "tarea": "relevancia",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Hostigamiento a policías y sus hijos en Cataluña por la crispación política\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Conflicto/Seguridad\", \"Sociedad/Derechos\"],\n   \"explicacion_concisa\": \"El artículo describe el hostigamiento a los hijos de policías en Cataluña, debido a la crispación política y la construcción de una 'leyenda negra' en torno a la Policía Nacional. Los padres y docentes están presionando para que sean expulsados de sus centros educativos, lo que genera un ambiente de miedo y incertidumbre entre los policías y sus familias.\"\n}"
+}

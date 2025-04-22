@@ -1,0 +1,10 @@
+{
+    "test_id": "test_015",
+    "tarea": "extraccion_datos",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Porcentaje de votos obtenidos por Daniel Noboa\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": 98.58,\n         \"unidad\": \"%\",\n         \"ambito_geografico\": [\"Ecuador\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Porcentaje de votos obtenidos por Daniel Noboa\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": 55.60,\n         \"unidad\": \"%\",\n         \"ambito_geografico\": [\"Ecuador\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Porcentaje de votos obtenidos por Luisa González\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": 44.40,\n         \"unidad\": \"%\",\n         \"ambito_geografico\": [\"Ecuador\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      }\n   ]\n}"
+}

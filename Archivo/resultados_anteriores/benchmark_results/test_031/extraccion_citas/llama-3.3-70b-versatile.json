@@ -1,0 +1,6 @@
+{
+    "test_id": "test_031",
+    "tarea": "extraccion_citas",
+    "model_id": "llama-3.3-70b-versatile",
+    "llm_response_content": "{\n   \"resultados\": [\n       {\n           \"cita\": \"Es una buena noticia, porque se trata de una integración real y concreta\",\n           \"emisor_nombre\": \"Gabriel Boric\",\n           \"contexto\": \"presentación del Plan de acción del corredor bioceánico\",\n           \"fecha_cita\": null,\n           \"relevancia_cita\": 5\n       },\n       {\n           \"cita\": \"coincidieron en la importancia de hacer frente a los desafíos que presenta el actual contexto internacional\",\n           \"emisor_nombre\": \"ministros del Mercosur\",\n           \"contexto\": \"reunión en Buenos Aires\",\n           \"fecha_cita\": null,\n           \"relevancia_cita\": 4\n       },\n       {\n           \"cita\": \"en ese marco, coincidieron en la necesidad de ampliar temporariamente la Lista Nacional de Excepciones al Arancel Externo Común de cada Estado parte\",\n           \"emisor_nombre\": \"ministros del Mercosur\",\n           \"contexto\": \"reunión en Buenos Aires\",\n           \"fecha_cita\": null,\n           \"relevancia_cita\": 4\n       }\n   ]\n}"
+}

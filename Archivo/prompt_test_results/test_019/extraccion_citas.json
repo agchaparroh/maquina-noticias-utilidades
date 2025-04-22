@@ -1,0 +1,10 @@
+{
+    "test_id": "test_019",
+    "tarea": "extraccion_citas",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"Lo dijimos una y otra vez, la autonomía solo va a funcionar si empieza a implementarse de forma total; es con salud, educación y seguridad descentralizadas (y entregadas) a las regiones y a los municipios, para que tú sepas quién le brinda salud, quién educa a tus hijos(...) que no adoctrinen, que eduquen a los niños\",\n         \"emisor_nombre\": \"Quiroga\",\n         \"contexto\": \"En su discurso\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"yo no soy millonario, pero soy rico, tengo tres títulos universitarios, esa es mi riqueza\",\n         \"emisor_nombre\": \"Quiroga\",\n         \"contexto\": \"En su discurso\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"solo un debate público de todos los candidatos permitirá a la población ver y escuchar las propuestas que tienen para el caso de que sean gobierno, y por eso insistirá en que se realicen esos encuentros públicos entre postulantes a la presidencia\",\n         \"emisor_nombre\": \"Quiroga\",\n         \"contexto\": \"En su discurso\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+}

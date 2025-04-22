@@ -1,0 +1,6 @@
+{
+    "test_id": "test_031",
+    "tarea": "relevancia",
+    "model_id": "llama-3.1-8b-instant",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Relevante por su impacto en la integración regional y comercio internacional.\",\n   \"categorias_asignadas\": [\"Política Internacional\", \"Economía\", \"Diplomacia\"],\n   \"resumen_breve\": \"Chile presenta plan de obras para el Corredor Bioceánico Vial, una carretera que unirá a Chile, Argentina, Paraguay y Brasil.\"\n}"
+}

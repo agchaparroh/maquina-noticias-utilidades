@@ -1,0 +1,6 @@
+{
+    "test_id": "test_022",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Revela la negativa de Milei a salir del swap chino y sus declaraciones sobre la economía argentina\",\n   \"categorias_asignadas\": [\"Economía\", \"Política Nacional\"],\n   \"resumen_breve\": \"Milei niega que EE.UU. le haya pedido salir del swap chino y habla sobre la economía argentina\"\n}"
+}

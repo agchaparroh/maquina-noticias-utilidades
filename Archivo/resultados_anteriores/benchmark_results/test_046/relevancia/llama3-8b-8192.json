@@ -1,0 +1,6 @@
+{
+    "test_id": "test_046",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Aclaración de postura sobre China y EEUU, con implicaciones geopolíticas\",\n   \"categorias_asignadas\": [\"Política Internacional\", \"Economía\", \"Conflicto/Seguridad\"],\n   \"resumen_breve\": \"El presidente de Panamá, José Raúl Mulino, aclaró su postura sobre China y EEUU en una entrevista, abordando temas de seguridad y transparencia\"\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "test_id": "test_015",
+    "tarea": "extraccion_citas",
+    "model_id": "llama-3.3-70b-versatile",
+    "llm_response_content": "{\n   \"resultados\": [\n       {\n           \"cita\": \"representan el sentir y la esperanza de millones de ecuatorianos y ecuatorianas\",\n           \"emisor_nombre\": \"El Movimiento de Unidad Plurinacional Pachakutik\",\n           \"contexto\": \"sobre propuestas del presidente electo\",\n           \"fecha_cita\": null,\n           \"relevancia_cita\": 4\n       },\n       {\n           \"cita\": \"Más allá de los resultados, reconocemos y agradecemos el compromiso de nuestra militancia durante todo este proceso\",\n           \"emisor_nombre\": \"El Movimiento de Unidad Plurinacional Pachakutik\",\n           \"contexto\": \"sobre esfuerzo de la militancia\",\n           \"fecha_cita\": null,\n           \"relevancia_cita\": 3\n       },\n       {\n           \"cita\": \"más justo, plurinacional y solidario\",\n           \"emisor_nombre\": \"El Movimiento de Unidad Plurinacional Pachakutik\",\n           \"contexto\": \"sobre el futuro de Ecuador\",\n           \"fecha_cita\": null,\n           \"relevancia_cita\": 5\n       }\n   ]\n}"
+}

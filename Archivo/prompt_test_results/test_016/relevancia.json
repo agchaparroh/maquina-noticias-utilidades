@@ -1,0 +1,10 @@
+{
+    "test_id": "test_016",
+    "tarea": "relevancia",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 5,\n   \"justificacion_relevancia\": \"La rectificación de una nota periodística sobre un caso judicial es relevante para la justicia y la transparencia.\",\n   \"categorias_asignadas\": [\"Justicia/Legal\"],\n   \"explicacion_concisa\": \"La exconsejera de Participación Ciudadana y Control Social Yadira Saltos Rivas solicita la rectificación de una nota periodística que contiene afirmaciones incorrectas sobre su participación en una versión judicial. La rectificación confirma que Saltos sí asistió a la citada diligencia.\"\n}"
+}

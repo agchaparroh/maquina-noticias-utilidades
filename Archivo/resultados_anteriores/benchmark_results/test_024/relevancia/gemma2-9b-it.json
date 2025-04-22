@@ -1,0 +1,6 @@
+{
+    "test_id": "test_024",
+    "tarea": "relevancia",
+    "model_id": "gemma2-9b-it",
+    "llm_response_content": "{\n  \"puntuacion_relevancia\": 0,\n  \"justificacion_relevancia\": \"Información general sobre la plataforma YouTube.\",\n  \"categorias_asignadas\": [],\n  \"resumen_breve\": \"Descripción de las secciones y políticas de uso de YouTube.\"\n}"
+}

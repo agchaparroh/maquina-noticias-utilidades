@@ -1,0 +1,6 @@
+{
+    "test_id": "test_043",
+    "tarea": "relevancia",
+    "model_id": "llama-3.3-70b-versatile",
+    "llm_response_content": "Error: No content received"
+}

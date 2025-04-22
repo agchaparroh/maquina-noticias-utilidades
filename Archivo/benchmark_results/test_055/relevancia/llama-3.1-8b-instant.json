@@ -1,0 +1,6 @@
+{
+    "test_id": "test_055",
+    "tarea": "relevancia",
+    "model_id": "llama-3.1-8b-instant",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Reconocimiento a rescatistas por su labor patriótica en la tragedia de la discoteca Jet Set\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Conflicto/Seguridad\", \"Sociedad/Derechos\"],\n   \"resumen_breve\": \"El presidente de la República, Luis Abinader, anunció que condecorará a rescatistas que participaron en la tragedia de la discoteca Jet Set\"\n}"
+}

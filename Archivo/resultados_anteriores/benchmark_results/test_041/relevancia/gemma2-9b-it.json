@@ -1,0 +1,6 @@
+{
+    "test_id": "test_041",
+    "tarea": "relevancia",
+    "model_id": "gemma2-9b-it",
+    "llm_response_content": "{\n  \"puntuacion_relevancia\": 6,\n  \"justificacion_relevancia\": \"Llamado a la seguridad durante Semana Santa en República Dominicana.\",\n  \"categorias_asignadas\": [\n    \"Sociedad/Derechos\",\n    \"Política Nacional\"\n  ],\n  \"resumen_breve\": \"El presidente Abinader pide precaución y cuidado durante la Semana Santa en República Dominicana.\"\n}"
+}

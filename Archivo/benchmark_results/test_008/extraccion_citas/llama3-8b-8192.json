@@ -1,0 +1,6 @@
+{
+    "test_id": "test_008",
+    "tarea": "extraccion_citas",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"\\\"Lamentó profundamente el fallecimiento de un peruano universal. Mario Vargas Llosa se eterniza a través de su legado literario. Tuve la suerte de haber coincidido con él en algunas oportunidades\\\"\",\n         \"emisor_nombre\": \"Alfredo Ferrero\",\n         \"contexto\": null,\n         \"fecha_cita\": null,\n         \"relevancia_cita\": 5\n      }\n   ]\n}"
+}

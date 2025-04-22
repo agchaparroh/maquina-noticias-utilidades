@@ -1,0 +1,6 @@
+{
+    "test_id": "test_040",
+    "tarea": "relevancia",
+    "model_id": "llama3-70b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Críticas a políticas de Trump y Bukele en derechos humanos\",\n   \"categorias_asignadas\": [\"Política Internacional\", \"Derechos Humanos\", \"Justicia/Legal\"],\n   \"resumen_breve\": \"Human Rights Watch critica planes de Trump y Bukele para crear centros de detención en El Salvador\"\n}"
+}

@@ -1,0 +1,6 @@
+{
+    "test_id": "test_036",
+    "tarea": "extraccion_citas",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"\\\"Esta victoria ha sido histórica, una victoria de más de 10 puntos\\\"\",\n         \"emisor_nombre\": \"Daniel Noboa\",\n         \"contexto\": null,\n         \"fecha_cita\": null,\n         \"relevancia_cita\": 5\n      },\n      {\n         \"cita\": \"\\\"Me niego a creer que exista un pueblo que prefiera la mentira antes que la verdad\\\"\",\n         \"emisor_nombre\": \"Luisa González\",\n         \"contexto\": null,\n         \"fecha_cita\": null,\n         \"relevancia_cita\": 4\n      },\n      {\n         \"cita\": \"\\\"Es el más grotesco fraude electoral\\\"\",\n         \"emisor_nombre\": \"Luisa González\",\n         \"contexto\": null,\n         \"fecha_cita\": null,\n         \"relevancia_cita\": 4\n      },\n      {\n         \"cita\": \"\\\"Daniel Noboa registró incrementos estadísticamente imposibles en numerosos recintos electorales\\\"\",\n         \"emisor_nombre\": \"Revolución Ciudadana (RC5)\",\n         \"contexto\": null,\n         \"fecha_cita\": null,\n         \"relevancia_cita\": 3\n      }\n   ]\n}"
+}

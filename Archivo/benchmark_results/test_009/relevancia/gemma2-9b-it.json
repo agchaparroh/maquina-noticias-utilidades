@@ -1,0 +1,6 @@
+{
+    "test_id": "test_009",
+    "tarea": "relevancia",
+    "model_id": "gemma2-9b-it",
+    "llm_response_content": "{\n  \"puntuacion_relevancia\": 7,\n  \"justificacion_relevancia\": \"Tragedia nacional con alto impacto social.\",\n  \"categorias_asignadas\": [\n    \"Sociedad/Derechos\",\n    \"Política Nacional\"\n  ],\n  \"resumen_breve\": \"Fuerza del Pueblo realiza misa por víctimas de la tragedia en Jet Set.\"\n}"
+}

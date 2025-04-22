@@ -1,0 +1,10 @@
+{
+    "test_id": "test_018",
+    "tarea": "relevancia",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Tiene impacto potencial claro en la política económica de Argentina\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Economía\"],\n   \"explicacion_concisa\": \"El presidente Javier Milei celebró la liberación del cepo al dólar y explicó su plan económico, comparando la dolarización con una pizza y destacando la diferencia con la experiencia del gobierno de Macri.\"\n}"
+}

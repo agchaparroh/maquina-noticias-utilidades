@@ -1,0 +1,10 @@
+{
+    "test_id": "test_065",
+    "tarea": "extraccion_citas",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"Hablamos de un punto medio, se requeriría de cinco números gruesos, de Q463 millones adicionales. Estamos partiendo de eso, la búsqueda de ese monto, que está más o menos por ese rango de Q1 mil 800 de bono. Hay que hacer avisos, por ahí los tenemos detectados, lo tenemos que soportar\",\n         \"emisor_nombre\": \"funcionario de Finanzas\",\n         \"contexto\": null,\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"Se continúa el análisis técnico de la propuesta de los distintos sindicatos del sector de salud, como parte de este proceso. Se trabajará en la construcción de una propuesta que sea viable y sostenible, con el objetivo de no afectar la prestación de los servicios de salud a la población\",\n         \"emisor_nombre\": \"Ministerio de Salud\",\n         \"contexto\": null,\n         \"fecha_cita\": null\n      }\n   ]\n}"
+}

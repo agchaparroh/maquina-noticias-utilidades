@@ -1,0 +1,10 @@
+{
+    "test_id": "test_027",
+    "tarea": "extraccion_citas",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"son nuestra única posibilidad de lograr un cambio real\",\n         \"emisor_nombre\": \"Yaneth del Rosario Cruz Gómez\",\n         \"contexto\": null,\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"a más de 200 años de vida independiente, seguimos excluidos del sistema de justicia de nuestro país, caracterizado por ser formalista, elitista, clasista y racista\",\n         \"emisor_nombre\": \"Consejo Nacional de Pueblos Indígenas\",\n         \"contexto\": null,\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"no avanzaron, por lo que ahora, la participación de nuestros hermanos y hermanas alienta nuestra esperanza de contar con una justicia con pertinencia cultural\",\n         \"emisor_nombre\": \"Consejo Nacional de Pueblos Indígenas\",\n         \"contexto\": null,\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"condena a ser ciudadanos pasivos que no podemos expresar y hacer sentir nuestra solidaridad con los hermanos y hermanas que participan en la contienda\",\n         \"emisor_nombre\": \"Consejo Nacional de Pueblos Indígenas\",\n         \"contexto\": null,\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"es un momento histórico para impulsar una justicia que tome en cuenta los diversos contextos sociales y culturales de México, aspecto que sólo se puede lograr con instituciones que incorporen juzgadores competentes\",\n         \"emisor_nombre\": \"Consejo Nacional de Pueblos Indígenas\",\n         \"contexto\": null,\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"establecerá las bases para ejercicio de sus derechos constitucionales\",\n         \"emisor_nombre\": \"Consejo Nacional de Pueblos Indígenas\",\n         \"contexto\": null,\n         \"fecha_cita\": null\n      }\n   ]\n}"
+}

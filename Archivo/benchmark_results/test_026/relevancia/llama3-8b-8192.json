@@ -1,0 +1,6 @@
+{
+    "test_id": "test_026",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"Plan de contingencia y alerta roja institucional para Semana Santa\",\n   \"categorias_asignadas\": [\"Salud\", \"Seguridad\"],\n   \"resumen_breve\": \"El MSPAS activa plan de contingencia y alerta roja para Semana Santa 2025\"\n}"
+}

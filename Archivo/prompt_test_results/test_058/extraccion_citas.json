@@ -1,0 +1,10 @@
+{
+    "test_id": "test_058",
+    "tarea": "extraccion_citas",
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"Lo complejo es poder trasladar con palabras que la ciudadan\\u00eda pueda entender cu\\u00e1l es el pronunciamiento que tiene la Corte\",\n         \"emisor_nombre\": \"Leyla Lemus\",\n         \"contexto\": \"En el acto protocolario de juramentación de la presidenta de la Corte de Constitucionalidad\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"Pretendemos, de hecho, renovar nuestra \\u00e1rea de comunicaci\\u00f3n social para que los medios puedan tener de manera efectiva las resoluciones, y me refiero a tener una explicaci\\u00f3n del proceder de la Corte\",\n         \"emisor_nombre\": \"Leyla Lemus\",\n         \"contexto\": \"En el ámbito de la renovación del área de comunicación social\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"Que se pueda tener un acceso de consulta m\\u00e1s r\\u00e1pida en los portales de la Corte a las agendas 15 d\\u00edas antes que el pleno tenga conocimiento de los expedientes\",\n         \"emisor_nombre\": \"Leyla Lemus\",\n         \"contexto\": \"En el ámbito administrativo, en relación con la mejora en los sistemas de consulta digital\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"He sido testigo de los logros como de los desaf\\u00edos que enfrenta nuestro sistema constitucional. Me comprometo a impulsar una visi\\u00f3n que haga de la justicia un instrumento m\\u00e1s \\u00e1gil, eficaz y eficiente\",\n         \"emisor_nombre\": \"Leyla Lemus\",\n         \"contexto\": \"En su discurso de toma de posesión como presidenta de la Corte de Constitucionalidad\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+}

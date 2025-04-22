@@ -1,0 +1,6 @@
+{
+    "test_id": "test_036",
+    "tarea": "relevancia",
+    "model_id": "llama-3.3-70b-versatile",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Impacto geopolítico en la región\",\n   \"categorias_asignadas\": [\n       \"Política Internacional\",\n       \"Política Nacional\",\n       \"Elecciones\"\n   ],\n   \"resumen_breve\": \"Petro no se pronuncia sobre victoria de Noboa en Ecuador\"\n}"
+}

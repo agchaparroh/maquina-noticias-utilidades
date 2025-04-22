@@ -1,0 +1,6 @@
+{
+    "test_id": "test_033",
+    "tarea": "relevancia",
+    "model_id": "llama3-70b-8192",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Reconocimiento oficial de vacío en la ley y promesa de acción\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Justicia/Legal\"],\n   \"resumen_breve\": \"Presidente Abinader admite vacío en la ley para supervisar obras privadas y promete acción\"\n}"
+}

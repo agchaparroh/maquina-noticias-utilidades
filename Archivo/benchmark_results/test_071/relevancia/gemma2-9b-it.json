@@ -1,0 +1,6 @@
+{
+    "test_id": "test_071",
+    "tarea": "relevancia",
+    "model_id": "gemma2-9b-it",
+    "llm_response_content": "{\n  \"puntuacion_relevancia\": 8,\n  \"justificacion_relevancia\": \"Anuncio de candidatos presidenciales en Bolivia\",\n  \"categorias_asignadas\": [\n    \"Elecciones\",\n    \"Política Nacional\"\n  ],\n  \"resumen_breve\": \"Jhonny Fernández anuncia inminente revelación de candidatos presidenciales para UCS en Bolivia.\"\n}"
+}

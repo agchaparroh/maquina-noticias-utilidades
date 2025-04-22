@@ -1,0 +1,6 @@
+{
+    "test_id": "test_037",
+    "tarea": "relevancia",
+    "model_id": "llama-3.3-70b-versatile",
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Crisis de seguridad en Haití\",\n   \"categorias_asignadas\": [\"Conflicto/Seguridad\", \"Política Internacional\", \"Sociedad/Derechos\"],\n   \"resumen_breve\": \"Haití adopta presupuesto de guerra contra pandillas\"\n}"
+}
