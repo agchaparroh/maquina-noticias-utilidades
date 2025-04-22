@@ -541,10 +541,8 @@ async def procesar_articulo(client: AsyncGroq, article_path: Path, output_dir_ba
 
     # Ejecutar todas las llamadas a Groq para este artículo en paralelo
     logger.info(f"[{test_id}] Lanzando {len(tasks_coroutines)} llamadas a Groq para {MODEL_TO_TEST}...")
-    results_or_exceptions = await tqdm_asyncio.gather(
+    results_or_exceptions = await asyncio.gather(
         *tasks_coroutines,
-        desc=f"[{test_id}] Llamadas Groq",
-        leave=False,
         return_exceptions=True # Capturar excepciones de reintentos fallidos aquí
     )
 
