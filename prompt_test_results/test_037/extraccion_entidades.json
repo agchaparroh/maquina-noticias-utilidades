@@ -1,10 +1,10 @@
 {
     "test_id": "test_037",
     "tarea": "extraccion_entidades",
-    "model_id": "llama-3.1-8b-128k",
-    "success": false,
-    "api_success": false,
-    "json_valid": false,
-    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
-    "llm_response_content": "Error: No content received or generated"
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Gobierno de Haití\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"Gobierno de Haití\"]\n      },\n      {\n         \"nombre\": \"Haití\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": [\"Haití\"]\n      },\n      {\n         \"nombre\": \"República Dominicana\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": [\"República Dominicana\"]\n      },\n      {\n         \"nombre\": \"ONU\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"Organización de las Naciones Unidas\"]\n      },\n      {\n         \"nombre\": \"Policía de Kenia\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"Policía de Kenia\"]\n      },\n      {\n         \"nombre\": \"Puerto Príncipe\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": [\"Puerto Príncipe\"]\n      },\n      {\n         \"nombre\": \"Mirebalais\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": [\"Mirebalais\"]\n      },\n      {\n         \"nombre\": \"Saut’d’Eau\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": [\"Saut’d’Eau\"]\n      },\n      {\n         \"nombre\": \"Viv Ansanm\",\n         \"tipo\": \"OTRO\",\n         \"alias\": [\"Viv Ansanm\"]\n      },\n      {\n         \"nombre\": \"Red Nacional de Defensa de los Derechos Humanos\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"Red Nacional de Defensa de los Derechos Humanos\"]\n      },\n      {\n         \"nombre\": \"Hospital Universitario Mirebalais\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": [\"Hospital Universitario Mirebalais\"]\n      },\n      {\n         \"nombre\": \"Sindicato Policial Nacional Haitiano (SPNH-17)\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"SPNH-17\"]\n      },\n      {\n         \"nombre\": \"Misión política de la ONU en Haití\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"Misión política de la ONU en Haití\"]\n      },\n      {\n         \"nombre\": \"Caso de violencia de pandillas en Haití\",\n         \"tipo\": \"EVENTO\",\n         \"alias\": [\"Caso de violencia de pandillas en Haití\"]\n      },\n      {\n         \"nombre\": \"Elecciones en Haití\",\n         \"tipo\": \"EVENTO\",\n         \"alias\": [\"Elecciones en Haití\"]\n      },\n      {\n         \"nombre\": \"Crisis en Haití\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": [\"Crisis en Haití\"]\n      }\n   ]\n}"
 }

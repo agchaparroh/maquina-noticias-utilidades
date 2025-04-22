@@ -1,10 +1,10 @@
 {
     "test_id": "test_049",
     "tarea": "extraccion_hechos",
-    "model_id": "llama-3.1-8b-128k",
-    "success": false,
-    "api_success": false,
-    "json_valid": false,
-    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
-    "llm_response_content": "Error: No content received or generated"
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"contenido\": \"El senador Miguel Uribe lideró un evento en Medellín el 5 de abril.\",\n         \"tipo_hecho\": \"SUCESO\",\n         \"fecha_ocurrencia_inicio\": \"2025-04-05\",\n         \"fecha_ocurrencia_fin\": null,\n         \"precision_temporal\": \"exacta\",\n         \"paises\": [\"CO\"],\n         \"ubicaciones_especificas\": [\"Medellín\"],\n         \"importancia\": 7,\n         \"confiabilidad\": 5,\n         \"etiquetas\": [\"política\", \"elecciones\", \"uribismo\"],\n         \"es_evento_futuro\": false,\n         \"estado_programacion\": null\n      },\n      {\n         \"contenido\": \"La disputa en las huestes del Centro Democrático sigue generando fricciones.\",\n         \"tipo_hecho\": \"DECLARACION\",\n         \"fecha_ocurrencia_inicio\": null,\n         \"fecha_ocurrencia_fin\": null,\n         \"precision_temporal\": \"dia\",\n         \"paises\": [\"CO\"],\n         \"ubicaciones_especificas\": [],\n         \"importancia\": 6,\n         \"confiabilidad\": 4,\n         \"etiquetas\": [\"política\", \"partidos\", \"fricciones\"],\n         \"es_evento_futuro\": false,\n         \"estado_programacion\": null\n      },\n      {\n         \"contenido\": \"El factor dinero marca la diferencia en la disputa del uribismo.\",\n         \"tipo_hecho\": \"DECLARACION\",\n         \"fecha_ocurrencia_inicio\": null,\n         \"fecha_ocurrencia_fin\": null,\n         \"precision_temporal\": \"dia\",\n         \"paises\": [\"CO\"],\n         \"ubicaciones_especificas\": [],\n         \"importancia\": 6,\n         \"confiabilidad\": 4,\n         \"etiquetas\": [\"política\", \"dinero\", \"elecciones\"],\n         \"es_evento_futuro\": false,\n         \"estado_programacion\": null\n      },\n      {\n         \"contenido\": \"Miguel Uribe ha gastado $300 millones en eventos y pauta en redes.\",\n         \"tipo_hecho\": \"DECLARACION\",\n         \"fecha_ocurrencia_inicio\": null,\n         \"fecha_ocurrencia_fin\": null,\n         \"precision_temporal\": \"dia\",\n         \"paises\": [\"CO\"],\n         \"ubicaciones_especificas\": [],\n         \"importancia\": 8,\n         \"confiabilidad\": 5,\n         \"etiquetas\": [\"política\", \"gastos\", \"elecciones\"],\n         \"es_evento_futuro\": false,\n         \"estado_programacion\": null\n      }\n   ]\n}"
 }

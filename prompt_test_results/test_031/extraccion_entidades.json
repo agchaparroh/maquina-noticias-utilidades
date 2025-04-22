@@ -1,10 +1,10 @@
 {
     "test_id": "test_031",
     "tarea": "extraccion_entidades",
-    "model_id": "llama-3.1-8b-128k",
-    "success": false,
-    "api_success": false,
-    "json_valid": false,
-    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
-    "llm_response_content": "Error: No content received or generated"
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Corredor Bioceánico Vial\",\n         \"tipo\": \"EVENTO\",\n         \"alias\": [\"Corredor Bioceánico\"]\n      },\n      {\n         \"nombre\": \"Chile\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Argentina\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Paraguay\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Brasil\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Gabriel Boric\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Boric\"]\n      },\n      {\n         \"nombre\": \"La Moneda\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Mercosur\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"Bloque\"]\n      },\n      {\n         \"nombre\": \"Gerardo Werthein\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Mauro Vieira\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Mario Lubetkin\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Rubén Ramírez\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Celinda Sosa Lunda\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Donald Trump\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Trump\"]\n      },\n      {\n         \"nombre\": \"Asociación Europea de Libre Comercio (EFTA)\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"EFTA\"]\n      },\n      {\n         \"nombre\": \"Emiratos Árabes Unidos\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Singapur\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Unión Europea\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"UE\"]\n      }\n   ]\n}"
 }

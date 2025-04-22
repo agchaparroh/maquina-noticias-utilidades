@@ -1,5 +1,5 @@
 # Evaluación Artículo: test_008
-**Modelo Probado:** `llama-3.1-8b-128k`
+**Modelo Probado:** `llama-3.1-8b-instant`
 
 ## Metadatos del Artículo Original
 
@@ -41,38 +41,224 @@ TE PUEDE INTERESAR
 
 ---
 
-## Resultados de las Tareas (llama-3.1-8b-128k)
+## Resultados de las Tareas (llama-3.1-8b-instant)
 
 ### Tarea: relevancia
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "puntuacion_relevancia": 6,
+    "justificacion_relevancia": "Relevancia media debido a la muerte de Mario Vargas Llosa y su impacto en el Perú",
+    "categorias_asignadas": [
+        "Política Nacional",
+        "Sociedad/Derechos",
+        "Análisis/Contexto"
+    ],
+    "explicacion_concisa": "El Perú rinde homenaje a Mario Vargas Llosa, Premio Nobel de Literatura, con libros de condolencias y ceremonias en la embajada y consulados en Estados Unidos, así como en instituciones peruanas. El escritor fue un peruano universal y su legado literario y ciudadano sigue siendo relevante."
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "contenido": "El embajador del Perú en los Estados Unidos, Alfredo Ferrero, indicó que se abrirá un libro de condolencias en la sede diplomática y en los 16 consulados en Estados Unidos debido al deceso de Mario Vargas Llosa.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "ES",
+                "US"
+            ],
+            "ubicaciones_especificas": [
+                "Washington D.C."
+            ],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "Mario Vargas Llosa",
+                "fallecimiento",
+                "Perú",
+                "Estados Unidos"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La bandera del Perú ondeará a media asta como señal de duelo por el fallecimiento de Mario Vargas Llosa.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "ES",
+                "US"
+            ],
+            "ubicaciones_especificas": [
+                "Washington D.C."
+            ],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "Mario Vargas Llosa",
+                "fallecimiento",
+                "Perú",
+                "Estados Unidos"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El embajador del Perú en los Estados Unidos, Alfredo Ferrero, envió sus condolencias a la familia de Vargas Llosa a través de sus redes sociales.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "ES",
+                "US"
+            ],
+            "ubicaciones_especificas": [
+                "Washington D.C."
+            ],
+            "importancia": 6,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "Mario Vargas Llosa",
+                "fallecimiento",
+                "Perú",
+                "Estados Unidos"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El embajador del Perú en los Estados Unidos, Alfredo Ferrero, calificó a Mario Vargas Llosa como 'un peruano universal'.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "ES",
+                "US"
+            ],
+            "ubicaciones_especificas": [
+                "Washington D.C."
+            ],
+            "importancia": 6,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "Mario Vargas Llosa",
+                "fallecimiento",
+                "Perú",
+                "Estados Unidos"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El Colegio Militar Leoncio Prado rindió un sentido homenaje a Mario Vargas Llosa tras el anuncio de su fallecimiento.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "PE"
+            ],
+            "ubicaciones_especificas": [
+                "Lima"
+            ],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "Mario Vargas Llosa",
+                "fallecimiento",
+                "Perú"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El Colegio Militar Leoncio Prado izó la bandera del Perú a media asta como muestra de duelo en honor a Mario Vargas Llosa.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "PE"
+            ],
+            "ubicaciones_especificas": [
+                "Lima"
+            ],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "Mario Vargas Llosa",
+                "fallecimiento",
+                "Perú"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Los estudiantes del Colegio Militar Leoncio Prado realizaron una formación especial en el patio de honor para homenajear a Mario Vargas Llosa.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-03",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "mes",
+            "paises": [
+                "PE"
+            ],
+            "ubicaciones_especificas": [
+                "Lima"
+            ],
+            "importancia": 6,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "Mario Vargas Llosa",
+                "homenaje",
+                "Perú"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El libro 'Vargas Llosa, su otra gran pasión' de Pedro Cateriano analiza el impacto político del Nobel peruano y acerca su legado literario y ciudadano a las nuevas generaciones.",
+            "tipo_hecho": "CONCEPTO",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "nulo",
+            "paises": [],
+            "ubicaciones_especificas": [],
+            "importancia": 5,
+            "confiabilidad": 4,
+            "etiquetas": [
+                "Mario Vargas Llosa",
+                "libro",
+                "Perú"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        }
+    ]
+}
 ```
 </details>
 
@@ -81,7 +267,7 @@ Error: No content received or generated
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+   **Mensaje Error:** `API_Error: BadRequestError: Error code: 400 - {'error': {'message': "Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': '{\n   "resultados": [\n      {\n         "nombre": "Alfredo Ferrero",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Mario Vargas Llosa",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Pedro Cateriano",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Colegio Militar Leoncio Prado",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Editorial Planeta",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Biblioteca Mario Vargas Llosa",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "La Casa Real española",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Willy Mateo Cisneros",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Universitario de Deportes",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "España",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Perú",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Estados Unidos",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Washington D.C.",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "FELIZH 2025",\n         "tipo": "EVENTO",\n         "alias": []\n      },\n      {\n         "nombre": "La ciudad y los perros",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "Pedro Cateriano",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "Vargas Llosa",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "Caso Gürtel",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "Crisis Migratoria",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "ONU",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Naciones Unidas",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "FMI",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "FELIZH 2025",\n         "tipo": "EVENTO",\n         "alias": []\n      },\n      {\n         "nombre": "Espacio de homenaje",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Universitario de Deportes",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "La Casa Real española",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Wilhelm Mateo Cisneros",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Mario Vargas Llosa",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Pedro Cateriano",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Colegio Militar Leoncio Prado",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Editorial Planeta",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Biblioteca Mario Vargas Llosa",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "La Casa Real española",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Universitario de Deportes",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "España",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Perú",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Estados Unidos",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Washington D.C.",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "FELIZH 2025",\n         "tipo": "EVENTO",\n         "alias": []\n      },\n      {\n         "nombre": "La ciudad y los perros",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "Pedro Cateriano",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "Vargas Llosa",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "Caso Gürtel",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "Crisis Migratoria",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "ONU",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Naciones Unidas",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "FMI",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Espacio de homenaje",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Universitario de Deportes",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "La Casa Real española",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Wilhelm Mateo Cisneros",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Mario Vargas Llosa",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Pedro Cateriano",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Colegio Militar Leoncio Prado",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Editorial Planeta",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Biblioteca Mario Vargas Llosa",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "La Casa Real española",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Universitario de Deportes",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "España",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Perú",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Estados Unidos",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Washington D.C.",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "FELIZH 2025",\n         "tipo": "EVENTO",\n         "alias": []\n      },\n      {\n         "nombre": "La ciudad y los perros",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "Pedro Cateriano",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "Vargas Llosa",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "Caso Gürtel",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "Crisis Migratoria",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "ONU",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Naciones Unidas",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "FMI",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Espacio de homenaje",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Universitario de Deportes",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "La Casa Real española",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Wilhelm Mateo Cisneros",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Mario Vargas Llosa",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Pedro Cateriano",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Colegio Militar Leoncio Prado",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Editorial Planeta",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Biblioteca Mario Vargas Llosa",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "La Casa Real española",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Universitario de Deportes",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "España",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Perú",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Estados Unidos",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Washington D.C.",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "FELIZH 2025",\n         "tipo": "EVENTO",\n         "alias": []\n      },\n      {\n         "nombre": "La ciudad y los perros",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "Pedro Cateriano",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "Vargas Llosa",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "Caso Gürtel",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "Crisis Migratoria",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "ONU",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Naciones Unidas",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "FMI",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Espacio de homenaje",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Universitario de Deportes",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "La Casa Real española",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Wilhelm Mateo Cisneros",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Mario Vargas Llosa",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Pedro Cateriano",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Colegio Militar Leoncio Prado",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Editorial Planeta",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Biblioteca Mario Vargas Llosa",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "La Casa Real española",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Universitario de Deportes",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "España",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Perú",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Estados Unidos",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Washington D.C.",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "FELIZH 2025",\n         "tipo": "EVENTO",\n         "alias": []\n      },\n      {\n         "nombre": "La ciudad y los perros",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "Pedro Cateriano",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "Vargas Llosa",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "Caso Gürtel",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "Crisis Migratoria",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "ONU",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Naciones Unidas",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "FMI",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Espacio de homenaje",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Universitario de Deportes",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "La Casa Real española",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Wilhelm Mateo Cisneros",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Mario Vargas Llosa",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Pedro Cateriano",\n         "tipo": "PERSONA",\n         "alias": []\n      },\n      {\n         "nombre": "Colegio Militar Leoncio Prado",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Editorial Planeta",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Biblioteca Mario Vargas Llosa",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "La Casa Real española",\n         "tipo": "ORGANIZACION",\n         "alias": []\n      },\n      {\n         "nombre": "Universitario de Deportes",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "España",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Perú",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Estados Unidos",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "Washington D.C.",\n         "tipo": "LUGAR",\n         "alias": []\n      },\n      {\n         "nombre": "FELIZH 2025",\n         "tipo": "EVENTO",\n         "alias": []\n      },\n      {\n         "nombre": "La ciudad y los perros",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "Pedro Cateriano",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "Vargas Llosa",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "Caso Gürtel",\n         "tipo": "CONCEPTO",\n         "alias": []\n      },\n      {\n         "nombre": "Crisis Migratoria",\n         "tipo": "CONCEPTO",\n         "alias": []\n      }}'}}`
 
 
 <details open>
@@ -98,7 +284,7 @@ Error: No content received or generated
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+   **Mensaje Error:** `API_Error: BadRequestError: Error code: 400 - {'error': {'message': "Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': '{\n   "resultados": [\n      {\n         "cita": "Lament\\u00f3 profundamente el fallecimiento de un peruano universal. Mario Vargas Llosa se eterniza a trav\\u00e9s de su legado literario. Tuve la suerte de haber coincidido con \\u00e9l en algunas oportunidades",\n         "emisor_nombre": "Alfredo Ferrero",\n         "contexto": "El embajador del Per\\u00fa en los Estados Unidos, Alfredo Ferrero, indic\\u00f3 que, en coordinaci\\u00f3n con la Canciller\\u00eda, se dispuso a abrir un libro de condolencias en la sede diplom\\u00e1tica, en Washington D.C., y en los 16 consulados en dicho pa\\u00eds.",\n         "fecha_cita": null\n      },\n      {\n         "cita": "Lament\\u00f3 profundamente el fallecimiento de un peruano universal. Mario Vargas Llosa se eterniza a trav\\u00e9s de su legado literario. Tuve la suerte de haber coincidido con \\u00e9l en algunas oportunidades",\n         "emisor_nombre": "Alfredo Ferrero",\n         "contexto": "Mediante sus redes sociales, el embajador envi\\u00f3 sus condolencias a la familia de Vargas Llosa, a quien calific\\u00f3 como \\u201cun peruano universal\\uu201d.",\n         "fecha_cita": null\n      },\n      {\n         "cita": "Lament\\u00f3 profundamente el fallecimiento de un peruano universal. Mario Vargas Llosa se eterniza a trav\\u00e9s de su legado literario. Tuve la suerte de haber coincidido con \\u00e9l en algunas oportunidades",\n         "emisor_nombre": "Alfredo Ferrero",\n         "contexto": null,\n         "fecha_cita": null\n      }\n   ]\n}'}}`
 
 
 <details open>
@@ -113,16 +299,44 @@ Error: No content received or generated
 
 ### Tarea: extraccion_datos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "indicador": "Número de consulados en los Estados Unidos",
+            "categoria": "otro",
+            "valor_numerico": 16,
+            "unidad": "",
+            "ambito_geografico": [
+                "Estados Unidos"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de estudiantes que participaron en la formación especial en el patio de honor del Colegio Militar Leoncio Prado",
+            "categoria": "otro",
+            "valor_numerico": 120,
+            "unidad": "",
+            "ambito_geografico": [
+                "Perú"
+            ],
+            "periodo_referencia_inicio": "marzo de este año",
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": "Editorial Planeta",
+            "notas_contexto": null
+        }
+    ]
+}
 ```
 </details>

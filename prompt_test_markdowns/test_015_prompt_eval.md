@@ -1,5 +1,5 @@
 # Evaluación Artículo: test_015
-**Modelo Probado:** `llama-3.1-8b-128k`
+**Modelo Probado:** `llama-3.1-8b-instant`
 
 ## Metadatos del Artículo Original
 
@@ -35,88 +35,293 @@ El Movimiento reafirmó su convicción de seguir defendiendo los derechos de los
 
 ---
 
-## Resultados de las Tareas (llama-3.1-8b-128k)
+## Resultados de las Tareas (llama-3.1-8b-instant)
 
 ### Tarea: relevancia
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "puntuacion_relevancia": 7,
+    "justificacion_relevancia": "Reconocimiento de la victoria de Daniel Noboa por Pachakutik",
+    "categorias_asignadas": [
+        "Política Nacional",
+        "Elecciones"
+    ],
+    "explicacion_concisa": "Pachakutik reconoce la victoria de Daniel Noboa en las elecciones presidenciales ecuatorianas, manifestando su respeto hacia los resultados democráticos y comprometiéndose a seguir defendiendo los derechos de los pueblos y la justicia social."
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "contenido": "El Movimiento de Unidad Plurinacional Pachakutik reconoció la victoria de Daniel Noboa como presidente de la República.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-15T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "EC"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 9,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "elecciones",
+                "presidencia"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Daniel Noboa alcanzó el 55.60% de los votos con el 98.58% de las actas escrutadas.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-15T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "EC"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "elecciones",
+                "resultados"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Pachakutik agradeció a su militancia y reconoció la decisión del pueblo ecuatoriano.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-15T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "EC"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "elecciones",
+                "movimiento"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Pachakutik expresó su deseo de que las propuestas de Daniel Noboa se lleven a cabo en beneficio de la nación.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-15T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "EC"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "elecciones",
+                "propuestas"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Pachakutik reafirmó su convicción de seguir defendiendo los derechos de los pueblos, la naturaleza, la justicia social y el bienestar colectivo.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-15T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "EC"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 9,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "movimiento",
+                "compromiso"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "nombre": "Movimiento de Unidad Plurinacional Pachakutik",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "MUPP",
+                "Pachakutik"
+            ]
+        },
+        {
+            "nombre": "Daniel Noboa Azín",
+            "tipo": "PERSONA",
+            "alias": [
+                "Daniel Noboa"
+            ]
+        },
+        {
+            "nombre": "Luisa González",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "República",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Ecuador",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Pueblo Ecuatoriano",
+            "tipo": "CONCEPTO",
+            "alias": []
+        },
+        {
+            "nombre": "Elecciones Presidenciales de Ecuador 2025",
+            "tipo": "EVENTO",
+            "alias": []
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "cita": "representan el sentir y la esperanza de millones de ecuatorianos y ecuatorianas",
+            "emisor_nombre": "Movimiento de Unidad Plurinacional Pachakutik",
+            "contexto": "En su declaración, el movimiento expresó su deseo de que las propuestas presentadas por el presidente electo durante su campaña se lleven a cabo en beneficio de la nación",
+            "fecha_cita": null
+        },
+        {
+            "cita": "Más allá de los resultados, reconocemos y agradecemos el compromiso de nuestra militancia durante todo este proceso",
+            "emisor_nombre": "Movimiento de Unidad Plurinacional Pachakutik",
+            "contexto": "Pachakutik también valoró el esfuerzo de su militancia durante el proceso electoral y destacó el \"compromiso\" de quienes apostaron por una coalición pensando en el bienestar del país",
+            "fecha_cita": null
+        },
+        {
+            "cita": "continuarán aportando con propuestas y compromiso para el desarrollo de un Ecuador más justo, plurinacional y solidario",
+            "emisor_nombre": "Movimiento de Unidad Plurinacional Pachakutik",
+            "contexto": "El Movimiento reafirmó su convicción de seguir defendiendo los derechos de los pueblos, la naturaleza, la justicia social y el bienestar colectivo",
+            "fecha_cita": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "indicador": "Porcentaje de votos obtenidos por Daniel Noboa",
+            "categoria": "electoral",
+            "valor_numerico": 98.58,
+            "unidad": "%",
+            "ambito_geografico": [
+                "Ecuador"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Porcentaje de votos obtenidos por Daniel Noboa",
+            "categoria": "electoral",
+            "valor_numerico": 55.6,
+            "unidad": "%",
+            "ambito_geografico": [
+                "Ecuador"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Porcentaje de votos obtenidos por Luisa González",
+            "categoria": "electoral",
+            "valor_numerico": 44.4,
+            "unidad": "%",
+            "ambito_geografico": [
+                "Ecuador"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        }
+    ]
+}
 ```
 </details>

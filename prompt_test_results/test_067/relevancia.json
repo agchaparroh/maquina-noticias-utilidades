@@ -1,10 +1,10 @@
 {
     "test_id": "test_067",
     "tarea": "relevancia",
-    "model_id": "llama-3.1-8b-128k",
-    "success": false,
-    "api_success": false,
-    "json_valid": false,
-    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
-    "llm_response_content": "Error: No content received or generated"
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Relevancia alta debido a la visita del presidente de El Salvador a la Casa Blanca y su reunión con Trump.\",\n   \"categorias_asignadas\": [\"Política Internacional\", \"Política Nacional\", \"Diplomacia\"],\n   \"explicacion_concisa\": \"El presidente de El Salvador, Nayib Bukele, visita la Casa Blanca y se reúne con el presidente de Estados Unidos, Donald Trump. Ambos mandatarios elogian mutuamente y discuten temas de seguridad y lucha contra el crimen.\"\n}"
 }

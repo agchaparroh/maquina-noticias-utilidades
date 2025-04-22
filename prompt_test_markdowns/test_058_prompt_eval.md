@@ -1,5 +1,5 @@
 # Evaluación Artículo: test_058
-**Modelo Probado:** `llama-3.1-8b-128k`
+**Modelo Probado:** `llama-3.1-8b-instant`
 
 ## Metadatos del Artículo Original
 
@@ -46,88 +46,313 @@ Video: hombre se lanza a una poza en Honduras y muere al impactar contra una pie
 
 ---
 
-## Resultados de las Tareas (llama-3.1-8b-128k)
+## Resultados de las Tareas (llama-3.1-8b-instant)
 
 ### Tarea: relevancia
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "puntuacion_relevancia": 6,
+    "justificacion_relevancia": "Anuncio de medidas para modernizar y agilizar la gestión comunicacional de la CC.",
+    "categorias_asignadas": [
+        "Justicia/Legal",
+        "Análisis/Contexto"
+    ],
+    "explicacion_concisa": "La presidenta de la Corte de Constitucionalidad, Leyla Lemus, anunció medidas para hacer más comprensibles las resoluciones de la CC y mejorar la gestión comunicacional y el acceso a la información. Se incluye una renovación del área de comunicación social y una mejora en los sistemas de consulta digital."
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "contenido": "Leyla Lemus asumió oficialmente la Presidencia de la CC el 14 de abril de 2025.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "GT"
+            ],
+            "ubicaciones_especificas": [
+                "Guatemala"
+            ],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "gobierno",
+                "Corte Constitucional"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Leyla Lemus anunció una renovación del área de comunicación social para brindar explicaciones claras sobre el proceder de la CC.",
+            "tipo_hecho": "ANUNCIO",
+            "fecha_ocurrencia_inicio": "2025-04-20",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "dia",
+            "paises": [
+                "GT"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "comunicación",
+                "información",
+                "Corte Constitucional"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Leyla Lemus afirmó que busca hacer más entendibles las resoluciones de la CC para la ciudadanía.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-20",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "dia",
+            "paises": [
+                "GT"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "gobierno",
+                "transparencia"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La presidenta de la CC explicó que se pretende una mejora en los sistemas de consulta digital para tener un acceso más rápido a las agendas de la Corte.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-20",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "dia",
+            "paises": [
+                "GT"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "tecnología",
+                "información",
+                "Corte Constitucional"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Leyla Lemus asumió la Presidencia de la CC y aseguró una Corte 'eficaz e independiente'.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "GT"
+            ],
+            "ubicaciones_especificas": [
+                "Guatemala"
+            ],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "gobierno",
+                "Corte Constitucional"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "nombre": "Leyla Lemus",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Corte de Constitucionalidad (CC)",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "CC"
+            ]
+        },
+        {
+            "nombre": "Diario La Hora",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "LH"
+            ]
+        },
+        {
+            "nombre": "Daniel Ramírez",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Antigua Guatemala",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Caso Odebrecht",
+            "tipo": "CONCEPTO",
+            "alias": []
+        },
+        {
+            "nombre": "Quetzaltenango",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Honduras",
+            "tipo": "LUGAR",
+            "alias": []
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "cita": "Lo complejo es poder trasladar con palabras que la ciudadanía pueda entender cuál es el pronunciamiento que tiene la Corte",
+            "emisor_nombre": "Leyla Lemus",
+            "contexto": "En el acto protocolario de juramentación de la presidenta de la Corte de Constitucionalidad",
+            "fecha_cita": null
+        },
+        {
+            "cita": "Pretendemos, de hecho, renovar nuestra área de comunicación social para que los medios puedan tener de manera efectiva las resoluciones, y me refiero a tener una explicación del proceder de la Corte",
+            "emisor_nombre": "Leyla Lemus",
+            "contexto": "En el ámbito de la renovación del área de comunicación social",
+            "fecha_cita": null
+        },
+        {
+            "cita": "Que se pueda tener un acceso de consulta más rápida en los portales de la Corte a las agendas 15 días antes que el pleno tenga conocimiento de los expedientes",
+            "emisor_nombre": "Leyla Lemus",
+            "contexto": "En el ámbito administrativo, en relación con la mejora en los sistemas de consulta digital",
+            "fecha_cita": null
+        },
+        {
+            "cita": "He sido testigo de los logros como de los desafíos que enfrenta nuestro sistema constitucional. Me comprometo a impulsar una visión que haga de la justicia un instrumento más ágil, eficaz y eficiente",
+            "emisor_nombre": "Leyla Lemus",
+            "contexto": "En su discurso de toma de posesión como presidenta de la Corte de Constitucionalidad",
+            "fecha_cita": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "indicador": "Número de amparos pendientes de la adjudicación pasada",
+            "categoria": "electoral",
+            "valor_numerico": 0,
+            "unidad": "amparos",
+            "ambito_geografico": [],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de días antes que el pleno tenga conocimiento de los expedientes",
+            "categoria": "administrativo",
+            "valor_numerico": 15,
+            "unidad": "días",
+            "ambito_geografico": [],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de magistraturas en la Corte de Constitucionalidad",
+            "categoria": "demográfico",
+            "valor_numerico": 8,
+            "unidad": "magistraturas",
+            "ambito_geografico": [],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Año de finalización del período de la magistratura actual",
+            "categoria": "demográfico",
+            "valor_numerico": 2026,
+            "unidad": "año",
+            "ambito_geografico": [],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        }
+    ]
+}
 ```
 </details>

@@ -1,10 +1,10 @@
 {
     "test_id": "test_071",
     "tarea": "extraccion_datos",
-    "model_id": "llama-3.1-8b-128k",
-    "success": false,
-    "api_success": false,
-    "json_valid": false,
-    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
-    "llm_response_content": "Error: No content received or generated"
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Número de votos obtenidos por el partido UCS en las elecciones generales\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": null,\n         \"unidad\": \"votos\",\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Número de reuniones pendientes en La Paz\",\n         \"categoria\": \"otro\",\n         \"valor_numerico\": null,\n         \"unidad\": null,\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Número de asambleas para definir candidatos\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": null,\n         \"unidad\": null,\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Número de distritos con vecinos presentes en el Cambódromo\",\n         \"categoria\": \"demográfico\",\n         \"valor_numerico\": null,\n         \"unidad\": null,\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Fecha de inicio del registro masivo de votantes\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": null,\n         \"unidad\": null,\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": \"2023-04-18\",\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Fecha de las elecciones generales\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": null,\n         \"unidad\": null,\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": \"2023-08-17\",\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      }\n   ]\n}"
 }

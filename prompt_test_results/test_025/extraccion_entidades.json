@@ -1,10 +1,10 @@
 {
     "test_id": "test_025",
     "tarea": "extraccion_entidades",
-    "model_id": "llama-3.1-8b-128k",
-    "success": false,
-    "api_success": false,
-    "json_valid": false,
-    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
-    "llm_response_content": "Error: No content received or generated"
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Mauricio Macri\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Macri\"]\n      },\n      {\n         \"nombre\": \"Javier Milei\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Milei\"]\n      },\n      {\n         \"nombre\": \"Pedro Sánchez Pérez-Castejón\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"La Libertad Avanza\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"LLA\"]\n      },\n      {\n         \"nombre\": \"Partido de la Reconstrucción\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"PRO\"]\n      },\n      {\n         \"nombre\": \"Ciudad de Buenos Aires\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Provincia de Buenos Aires\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Elecciones porteñas\",\n         \"tipo\": \"EVENTO\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Elecciones nacionales\",\n         \"tipo\": \"EVENTO\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Alberto Fernández\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Fernández\"]\n      },\n      {\n         \"nombre\": \"Leandro Santoro\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Santoro\"]\n      },\n      {\n         \"nombre\": \"Manuel Adorni\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Adorni\"]\n      },\n      {\n         \"nombre\": \"Cristian Ritondo\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Ritondo\"]\n      },\n      {\n         \"nombre\": \"Diego Santilli\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Santilli\"]\n      },\n      {\n         \"nombre\": \"Clarín\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      }\n   ]\n}"
 }

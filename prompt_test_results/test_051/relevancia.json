@@ -1,10 +1,10 @@
 {
     "test_id": "test_051",
     "tarea": "relevancia",
-    "model_id": "llama-3.1-8b-128k",
-    "success": false,
-    "api_success": false,
-    "json_valid": false,
-    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
-    "llm_response_content": "Error: No content received or generated"
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"La información sobre la línea de pobreza en CABA tiene relevancia media.\",\n   \"categorias_asignadas\": [\"Sociedad/Derechos\", \"Economía\"],\n   \"explicacion_concisa\": \"El artículo informa sobre la línea de pobreza en la Ciudad Autónoma de Buenos Aires, donde una familia tipo necesitó ingresos de al menos $1.147.602 para no ser pobre en marzo. La Canasta Básica Alimentaria y la Canasta Básica Total subieron en marzo, lo que afectó la línea de pobreza e indigencia.\"\n}"
 }

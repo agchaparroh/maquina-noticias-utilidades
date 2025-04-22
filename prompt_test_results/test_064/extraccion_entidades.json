@@ -1,10 +1,10 @@
 {
     "test_id": "test_064",
     "tarea": "extraccion_entidades",
-    "model_id": "llama-3.1-8b-128k",
-    "success": false,
-    "api_success": false,
-    "json_valid": false,
-    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
-    "llm_response_content": "Error: No content received or generated"
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Pedro Sánchez Pérez-Castejón\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Pedro Sánchez\", \"Sánchez\"]\n      },\n      {\n         \"nombre\": \"Néstor Gregorio Vera Fernández\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Iván Mordisco\"]\n      },\n      {\n         \"nombre\": \"Iván Mordisco\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Estado Mayor Central (EMC)\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"EMC\"]\n      },\n      {\n         \"nombre\": \"Fuerzas Armadas de Colombia\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"Fuerzas Militares\"]\n      },\n      {\n         \"nombre\": \"Policía Nacional de Colombia\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"Policía Nacional\"]\n      },\n      {\n         \"nombre\": \"Ministerio de Defensa de Colombia\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"Mindefensa\"]\n      },\n      {\n         \"nombre\": \"Disidencias de las Farc\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Fuerzas Armadas Revolucionarias de Colombia (FARC)\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"Farc\"]\n      },\n      {\n         \"nombre\": \"Semana\",\n         \"tipo\": \"MEDIO DE COMUNICACIÓN\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"General Carlos Triana\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"General (r) Pedro Sánchez\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Pedro Sánchez\"]\n      }\n   ]\n}"
 }

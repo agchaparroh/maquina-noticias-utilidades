@@ -1,10 +1,10 @@
 {
     "test_id": "test_026",
     "tarea": "relevancia",
-    "model_id": "llama-3.1-8b-128k",
-    "success": false,
-    "api_success": false,
-    "json_valid": false,
-    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
-    "llm_response_content": "Error: No content received or generated"
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"Relevancia media debido a la preparación de servicios de salud para la Semana Santa.\",\n   \"categorias_asignadas\": [\"Sociedad/Derechos\", \"Análisis/Contexto\"],\n   \"explicacion_concisa\": \"El Ministerio de Salud Pública y Asistencia Social (MSPAS) activa un plan de contingencia y alerta roja institucional para la Semana Santa 2025, con el objetivo de preparar los servicios de salud y prevenir emergencias. El plan incluye la movilización del personal de salud, la disponibilidad permanente para atender emergencias y recomendaciones para la ciudadanía.\"\n}"
 }

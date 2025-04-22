@@ -1,10 +1,10 @@
 {
     "test_id": "test_065",
     "tarea": "relevancia",
-    "model_id": "llama-3.1-8b-128k",
-    "success": false,
-    "api_success": false,
-    "json_valid": false,
-    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
-    "llm_response_content": "Error: No content received or generated"
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"Relevancia media debido a la propuesta de bono para trabajadores de salud y análisis presupuestario.\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Economía\"],\n   \"explicacion_concisa\": \"El Ministerio de Salud Pública analiza propuestas financieras para otorgar un bono a trabajadores de salud, con un monto potencial de Q1 mil 800. El viceministro de Finanzas mencionó que se buscará un punto medio en el rango de Q463 millones adicionales. El bono se prevé para personal de ciertos renglones y subgrupos, con un bono único de Q2 mil para trabajadores del renglón 0029 y subgrupo 018.\"\n}"
 }

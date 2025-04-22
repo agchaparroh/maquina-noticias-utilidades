@@ -1,5 +1,5 @@
 # Evaluación Artículo: test_048
-**Modelo Probado:** `llama-3.1-8b-128k`
+**Modelo Probado:** `llama-3.1-8b-instant`
 
 ## Metadatos del Artículo Original
 
@@ -44,72 +44,374 @@ Si decides continuar compartiendo tu cuenta, este mensaje se mostrará en tu dis
 
 ---
 
-## Resultados de las Tareas (llama-3.1-8b-128k)
+## Resultados de las Tareas (llama-3.1-8b-instant)
 
 ### Tarea: relevancia
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "puntuacion_relevancia": 2,
+    "justificacion_relevancia": "No tiene relevancia política o social directa",
+    "categorias_asignadas": [
+        "Análisis/Contexto"
+    ],
+    "explicacion_concisa": "El artículo es un homenaje al escritor peruano Mario Vargas Llosa, fallecido recientemente, y reflexiona sobre su legado en la literatura latinoamericana."
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "contenido": "Falleció el escritor peruano Mario Vargas Llosa a la edad de 89 años.",
+            "tipo_hecho": "BIOGRAFIA",
+            "fecha_ocurrencia_inicio": "2025-04-13",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "PE"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 10,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "literatura",
+                "escritor",
+                "muerte"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Vargas Llosa fue un escritor peruano que ganó el Premio Nobel de Literatura en 2010.",
+            "tipo_hecho": "BIOGRAFIA",
+            "fecha_ocurrencia_inicio": "2010-12-07",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "SE",
+                "PE"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "literatura",
+                "Premio Nobel",
+                "escritor"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El Boom latinoamericano de literatura fue un movimiento literario que se desarrolló en la década de 1960.",
+            "tipo_hecho": "EVENTO",
+            "fecha_ocurrencia_inicio": "1960-01-01",
+            "fecha_ocurrencia_fin": "1970-12-31",
+            "precision_temporal": "decada",
+            "paises": [
+                "AR",
+                "BR",
+                "CL",
+                "CO",
+                "PE",
+                "UY"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 9,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "literatura",
+                "Boom latinoamericano",
+                "movimiento"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Vargas Llosa fue un escritor prolífico que publicó numerosas novelas, ensayos y artículos.",
+            "tipo_hecho": "BIOGRAFIA",
+            "fecha_ocurrencia_inicio": "1959-01-01",
+            "fecha_ocurrencia_fin": "2025-04-13",
+            "precision_temporal": "año",
+            "paises": [
+                "PE"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "literatura",
+                "escritor",
+                "obra"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El escritor peruano Mario Vargas Llosa fue un defensor de la libertad de expresión y la democracia.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "PE"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 9,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "literatura",
+                "democracia",
+                "libertad de expresión"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El Boom latinoamericano de literatura fue un movimiento literario que se caracterizó por la experimentación y la innovación.",
+            "tipo_hecho": "CONCEPTO",
+            "fecha_ocurrencia_inicio": "1960-01-01",
+            "fecha_ocurrencia_fin": "1970-12-31",
+            "precision_temporal": "decada",
+            "paises": [
+                "AR",
+                "BR",
+                "CL",
+                "CO",
+                "PE",
+                "UY"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 9,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "literatura",
+                "Boom latinoamericano",
+                "movimiento"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "nombre": "Vargas Llosa, Jorge Mario Pedro",
+            "tipo": "PERSONA",
+            "alias": [
+                "Vargas Llosa",
+                "Jorge Mario Pedro Vargas Llosa"
+            ]
+        },
+        {
+            "nombre": "Boom latinoamericano de literatura",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Boom latinoamericano"
+            ]
+        },
+        {
+            "nombre": "García Márquez, Gabriel",
+            "tipo": "PERSONA",
+            "alias": [
+                "García Márquez"
+            ]
+        },
+        {
+            "nombre": "Cortázar, Julio",
+            "tipo": "PERSONA",
+            "alias": [
+                "Cortázar"
+            ]
+        },
+        {
+            "nombre": "Fuentes, Carlos",
+            "tipo": "PERSONA",
+            "alias": [
+                "Fuentes"
+            ]
+        },
+        {
+            "nombre": "Flaubert, Gustave",
+            "tipo": "PERSONA",
+            "alias": [
+                "Flaubert"
+            ]
+        },
+        {
+            "nombre": "Balzac, Honoré de",
+            "tipo": "PERSONA",
+            "alias": [
+                "Balzac"
+            ]
+        },
+        {
+            "nombre": "Galdós, Benito Pérez",
+            "tipo": "PERSONA",
+            "alias": [
+                "Galdós"
+            ]
+        },
+        {
+            "nombre": "Cervantes, Miguel de",
+            "tipo": "PERSONA",
+            "alias": [
+                "Cervantes"
+            ]
+        },
+        {
+            "nombre": "La ciudad y los perros",
+            "tipo": "OBRA LITERARIA",
+            "alias": []
+        },
+        {
+            "nombre": "Conversación en la Catedral",
+            "tipo": "OBRA LITERARIA",
+            "alias": []
+        },
+        {
+            "nombre": "La Chingada",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "EL PAÍS",
+            "tipo": "MEDIO DE COMUNICACIÓN",
+            "alias": [
+                "El País"
+            ]
+        },
+        {
+            "nombre": "Premio Nobel de Literatura",
+            "tipo": "PREMIO",
+            "alias": [
+                "Premio Nobel"
+            ]
+        },
+        {
+            "nombre": "México",
+            "tipo": "PAÍS",
+            "alias": []
+        },
+        {
+            "nombre": "Latinoamérica",
+            "tipo": "REGION",
+            "alias": []
+        },
+        {
+            "nombre": "París",
+            "tipo": "CIUDAD",
+            "alias": []
+        },
+        {
+            "nombre": "Donceles",
+            "tipo": "CALLE",
+            "alias": []
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "cita": "Hasta siempre debe ser leído aquí no como verso de trova banal sino literalmente como bálsamo o placebo para la obra entera de Vargas Llosa",
+            "emisor_nombre": "Escribidor",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "no sólo por su cabellera envidiable y su dentadura ejemplar",
+            "emisor_nombre": "Escribidor",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "el ejercicio minucioso de la crónica periodística, la dramaturgia incluso como actor sobre las mismas tablas y el abundante mural del ensayo como supremo fertilizante del pensamiento andante",
+            "emisor_nombre": "Escribidor",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "Hasta siempre debe ser leído aquí no como verso de trova banal sino literalmente como bálsamo o placebo para su obra entera (y de paso, la de todos los escritores invaluables de su generación y además, los grandes escritores de todos los pretéritos que esa generación del Boom heredó y contagió en ensayos, artículos, cátedras, discursos y en no pocas ramas de sus libros como frutos de diversas tradiciones literarias y culturales de inmensa estatura)",
+            "emisor_nombre": "Escribidor",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "un hombre que nunca dejó de ser cadete",
+            "emisor_nombre": "una voz callada y sabia",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "inelegante ni atrevido",
+            "emisor_nombre": "Escribidor",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "no sólo su figura y su obra, por obra y gracia de insultos como hachazos sino descalificaciones como dictámenes mañaneros sin haberlo leído de veras",
+            "emisor_nombre": "Escribidor",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "un caballero latinoamericano que también supo revestir la nieve en Estocolmo con frac como guayabera de lino, con donaire como piedra de Sol, con el acento refinado de todos los que hablamos una lengua que se come los colores y que pinta paisajes inconcebibles para la cuadrícula seca",
+            "emisor_nombre": "Escribidor",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "un gigante recorre París a brincos numerados o en la calle de Donceles donde levita de noche una anciana que de día hipnotiza como musa joven o en el Paraíso terrenal sembrado de piedras como huevos de dinosaurio donde todas las cosas parecen no tener nombre… allá mismo donde navega por un río entre matorrales un pelotón de prostitutas para alivio de un ejército surrealista, a la vuelta de las cinco esquinas, por el patio de unos cachorros mordidos en la ingle por un perro sin tiempo, cerquita de la niña mala y sus travesuras o del bosque donde florece la verdad de las mentiras, la perpetua orgía de todos los sentidos… allí donde habitan las mejores letras",
+            "emisor_nombre": "Escribidor",
+            "contexto": null,
+            "fecha_cita": null
+        }
+    ]
+}
 ```
 </details>
 
@@ -118,7 +420,7 @@ Error: No content received or generated
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+   **Mensaje Error:** `API_Error: BadRequestError: Error code: 400 - {'error': {'message': "Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': '{\n   "resultados": [\n      {\n         "indicador": "Número de años que vivió Mario Vargas Llosa",\n         "categoria": "demográfico",\n         "valor_numerico": 87,\n         "unidad": "años",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": "1936-03-28",\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Número de años que vivió Mario Vargas Llosa después de recibir el Premio Nobel",\n         "categoria": "demográfico",\n         "valor_numerico": 31,\n         "unidad": "años",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": "1990-12-08",\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Número de años que vivió Mario Vargas Llosa después de nacer",\n         "categoria": "demográfico",\n         "valor_numerico": 87,\n         "unidad": "años",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": "1936-03-28",\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Número de años que vivió Mario Vargas Llosa después de la muerte de Gabriel García Márquez",\n         "categoria": "demográfico",\n         "valor_numerico": 6,\n         "unidad": "años",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": "2014-04-17",\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Número de años que vivió Mario Vargas Llosa después de la muerte de Julio Cortázar",\n         "categoria": "demográfico",\n         "valor_numerico": 22,\n         "unidad": "años",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": "1984-02-12",\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Número de años que vivió Mario Vargas Llosa después de la muerte de Carlos Fuentes",\n         "categoria": "demográfico",\n         "valor_numerico": 8,\n         "unidad": "años",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": "2012-05-15",\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Número de años que vivió Mario Vargas Llosa después de la muerte de Gabriel García Márquez, Julio Cortázar y Carlos Fuentes",\n         "categoria": "demográfico",\n         "valor_numerico": 6,\n         "unidad": "años",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": "2014-04-17",\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Número de años que vivió Mario Vargas Llosa después de la muerte de Gabriel García Márquez, Julio Cortázar, Carlos Fuentes y otros autores del Boom latinoamericano",\n         "categoria": "demográfico",\n         "valor_numerico": 6,\n         "unidad": "años",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": "2014-04-17",\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Número de años que vivió Mario Vargas Llosa después de la muerte de Gabriel García Márquez, Julio Cortázar, Carlos Fuentes y otros autores del Boom latinoamericano",\n         "categoria": "demográfico",\n         "valor_numerico": 6,\n         "unidad": "años",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": "2014-04-17",\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Número de años que vivió Mario Vargas Llosa después de la muerte de Gabriel García Márquez, Julio Cortázar, Carlos Fuentes y otros autores del Boom latinoamericano",\n         "categoria": "demográfico",\n         "valor_numerico": 6,\n         "unidad": "años",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": "2014-04-17",\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Número de años que vivió Mario Vargas Llosa después de la muerte de Gabriel García Márquez, Julio Cortázar, Carlos Fuentes y otros autores del Boom latinoamericano",\n         "categoria": "demográfico",\n         "valor_numerico": 6,\n         "unidad": "años",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": "2014-04-17",\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Número de años que vivió Mario Vargas Llosa después de la muerte de Gabriel García Márquez, Julio Cortázar, Carlos Fuentes y otros autores del Boom latinoamericano",\n         "categoria": "demográfico",\n         "valor_numerico": 6,\n         "unidad": "años",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": "2014-04-17",\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Número de años que vivió Mario Vargas Llosa después de la muerte de Gabriel García Márquez, Julio Cortázar, Carlos Fuentes y otros autores del Boom latinoamericano",\n         "categoria": "demográfico",\n         "valor_numerico": 6,\n         "unidad": "años",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": "2014-04-17",\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Número de años que vivió Mario Vargas Llosa después de la muerte de Gabriel García Márquez, Julio Cortázar, Carlos Fuentes y otros autores del Boom latinoamericano",\n         "categoria": "demográfico",\n         "valor_numerico": 6,\n         "unidad": "años",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": "2014-04-17",\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Número de años que vivió Mario Vargas Llosa después de la muerte de Gabriel García Márquez, Julio Cortázar, Carlos Fuentes y otros autores del Boom latinoamericano",\n         "categoria": "demográfico",\n         "valor_numerico": 6,\n         "unidad": "años",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": "2014-04-17",\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Número de años que vivió Mario Vargas Llosa después de la muerte de Gabriel García Márquez, Julio Cortázar, Carlos Fuentes y otros autores del Boom latinoamericano",\n         "categoria": "demográfico",\n         "valor_numerico": 6,\n         "unidad": "años",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": "2014-04-17",\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Número de años que vivió Mario Vargas Llosa después de la muerte de Gabriel García Márquez, Julio Cortázar, Carlos Fuentes y otros autores del Boom latinoamericano",\n         "categoria": "demográfico",\n         "valor_numerico": 6,\n         "unidad": "años",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": "2014-04-17",\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Número de años que vivió Mario Vargas Llosa después de la muerte de Gabriel García Márquez, Julio Cortázar, Carlos Fuentes y otros autores del Boom latinoamericano",\n         "categoria": "demográfico",\n         "valor_numerico": 6,\n         "unidad": "años",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": "2014-04-17",\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Número de años que vivió Mario Vargas Llosa después de la muerte de Gabriel García Márquez, Julio Cortázar, Carlos Fuentes y otros autores del Boom latinoamericano",\n         "categoria": "demográfico",\n         "valor_numerico": 6,\n         "unidad": "años",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": "2014-04-17",\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Número de años que vivió Mario Vargas Llosa después de la muerte de Gabriel García Márquez, Julio Cortázar, Carlos Fuentes y otros autores del Boom latinoamericano",\n         "categoria": "demográfico",\n         "valor_numerico": 6,\n         "unidad": "años",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": "2014-04-17",\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Número de años que vivió Mario Vargas Llosa después de la muerte de Gabriel García Márquez, Julio Cortázar, Carlos Fuentes y otros autores del Boom latinoamericano",\n         "categoria": "demográfico",\n         "valor_numerico": 6,\n         "unidad": "años",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": "2014-04-17",\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Número de años que vivió Mario Vargas Llosa después de la muerte de Gabriel García Márquez, Julio Cortázar, Carlos Fuentes y otros autores del Boom latinoamericano",\n         "categoria": "demográfico",\n         "valor_numerico": 6,\n         "unidad": "años",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": "2014-04-17",\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Número de años que vivió Mario Vargas Llosa después de la muerte de Gabriel García Márquez, Julio Cortázar, Carlos Fuentes y otros autores del Boom latinoamericano",\n         "categoria": "demográfico",\n         "valor_numerico": 6,\n         "unidad": "años",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": "2014-04-17",\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Número de años que vivió Mario Vargas Llosa después de la muerte de Gabriel García Márquez, Julio Cortázar, Carlos Fuentes y otros autores del Boom latinoamericano",\n         "categoria": "demográfico",\n         "valor_numerico": 6,\n         "unidad": "años",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": "2014-04-17",\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Número de años que vivió Mario Vargas Llosa después de la muerte de Gabriel García Márquez, Julio Cortázar, Carlos Fuentes y otros autores del Boom latinoamericano",\n         "categoria": "demográfico",\n         "valor_numerico": 6,\n         "unidad": "años",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": "2014-04-17",\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Número de años que vivió Mario Vargas Llosa después de la muerte de Gabriel García Márquez, Julio Cortázar, Carlos Fuentes y otros autores del Boom latinoamericano",\n         "categoria": "demográfico",\n         "valor_numerico": 6,\n         "unidad": "años",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": "2014-04-17",\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Número de años que vivió Mario Vargas Llosa después de la muerte de Gabriel García Márquez, Julio Cortázar, Carlos Fuentes y otros autores del Boom latinoamericano",\n         "categoria": "demográfico",\n         "valor_numerico": 6,\n         "unidad": "años",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": "2014-04-17",\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Número de años que vivió Mario Vargas Llosa después de la muerte de Gabriel García Márquez, Julio Cortázar, Carlos Fuentes y otros autores del Boom latinoamericano",\n         "categoria": "demográfico",\n         "valor_numerico": 6,\n         "unidad": "años",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": "2014-04-17",\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Número de años que vivió Mario Vargas Llosa después de la muerte de Gabriel García Márquez, Julio Cortázar, Carlos Fuentes y otros autores del Boom latinoamericano",\n         "categoria": "demográfico",\n         "valor_numerico": 6,\n         "unidad": "años",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": "2014-04-17",\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Número de años que vivió Mario Vargas Llosa después de la muerte de Gabriel García Márquez, Julio Cortázar, Carlos Fuentes y otros autores del Boom latinoamericano",\n         "categoria": "demográfico",\n         "valor_numerico": 6,\n         "unidad": "años",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": "2014-04-17",\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      }}'}}`
 
 
 <details open>

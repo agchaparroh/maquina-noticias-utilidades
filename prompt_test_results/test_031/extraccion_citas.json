@@ -1,10 +1,10 @@
 {
     "test_id": "test_031",
     "tarea": "extraccion_citas",
-    "model_id": "llama-3.1-8b-128k",
-    "success": false,
-    "api_success": false,
-    "json_valid": false,
-    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
-    "llm_response_content": "Error: No content received or generated"
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"Es una buena noticia, porque se trata de una integración real y concreta\",\n         \"emisor_nombre\": \"Gabriel Boric\",\n         \"contexto\": \"El presidente Gabriel Boric, al presentar el \\\"Plan de acción del corredor bioceánico\\\" el lunes en el palacio presidencial de La Moneda.\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"El comercio del bloque fundado en 1991 por Argentina, Brasil, Paraguay y Uruguay se rige por un arancel externo común (AEC), con alícuotas que van desde el 0 al 35%, pero cada miembro del Mercosur cuenta con una Lista Nacional de Excepciones (LNE) al AEC en una cantidad limitada de productos que puede cambiar cada seis meses, previa notificación a sus socios.\",\n         \"emisor_nombre\": \"cancilleres del Mercosur\",\n         \"contexto\": \"El encuentro, celebrado en la sede de la Cancillería argentina, se desarrolló en un contexto de creciente incertidumbre internacional, tras los aranceles anunciados el pasado 2 de abril por el presidente estadounidense, Donald Trump.\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
 }

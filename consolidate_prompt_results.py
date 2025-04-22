@@ -22,7 +22,7 @@ TASKS = [
 ]
 
 # Modelo que se usó (Para incluir en el título/cabecera del Markdown)
-MODEL_ID = "llama-3.1-8b-128k" # El modelo que usó run_prompt_test_llama31.py
+MODEL_ID = "llama-3.1-8b-instant" # El modelo que usó run_prompt_test_llama31.py
 
 # Configuración de Logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')

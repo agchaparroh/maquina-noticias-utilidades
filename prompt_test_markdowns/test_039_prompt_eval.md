@@ -1,5 +1,5 @@
 # Evaluación Artículo: test_039
-**Modelo Probado:** `llama-3.1-8b-128k`
+**Modelo Probado:** `llama-3.1-8b-instant`
 
 ## Metadatos del Artículo Original
 
@@ -44,55 +44,275 @@ Apoya a El Nacional
 
 ---
 
-## Resultados de las Tareas (llama-3.1-8b-128k)
+## Resultados de las Tareas (llama-3.1-8b-instant)
 
 ### Tarea: relevancia
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "puntuacion_relevancia": 8,
+    "justificacion_relevancia": "Donald Trump amenaza al régimen de Maduro con consecuencias económicas",
+    "categorias_asignadas": [
+        "Política Internacional",
+        "Conflicto/Seguridad",
+        "Diplomacia"
+    ],
+    "explicacion_concisa": "El presidente de Estados Unidos, Donald Trump, amenaza al régimen de Maduro con consecuencias económicas por el control del mercado petrolero. También se discute la extradición de un migrante a Estados Unidos."
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "contenido": "Donald Trump afirmó que el gobierno de Maduro se quedó sin dinero después de que Estados Unidos le trancó su mercado petrolero.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "VE",
+                "US"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "economía",
+                "Maduro",
+                "Trump"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El presidente de Estados Unidos, Donald Trump, recibió al presidente de El Salvador, Nayib Bukele, en el Despacho Oval.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "US",
+                "SV"
+            ],
+            "ubicaciones_especificas": [
+                "Casa Blanca"
+            ],
+            "importancia": 6,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "diplomacia",
+                "Trump",
+                "Bukele"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Nayib Bukele afirmó que no tiene la autoridad para devolver a Ábrego García a Estados Unidos.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "US",
+                "SV"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "migración",
+                "Bukele",
+                "Ábrego García"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El gobierno de Estados Unidos destinó 6 millones de dólares a El Salvador para que su megacárcel albergue a migrantes acusados de formar parte de redes criminales.",
+            "tipo_hecho": "ANUNCIO",
+            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "US",
+                "SV"
+            ],
+            "ubicaciones_especificas": [
+                "El Salvador"
+            ],
+            "importancia": 5,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "migración",
+                "gobierno",
+                "El Salvador"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Donald Trump sugirió encarcelar a ciudadanos estadounidenses en la megacárcel de El Salvador.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "US",
+                "SV"
+            ],
+            "ubicaciones_especificas": [
+                "El Salvador"
+            ],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "migración",
+                "gobierno",
+                "El Salvador"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "nombre": "Donald Trump",
+            "tipo": "PERSONA",
+            "alias": [
+                "Trump"
+            ]
+        },
+        {
+            "nombre": "Nicolás Maduro",
+            "tipo": "PERSONA",
+            "alias": [
+                "Maduro"
+            ]
+        },
+        {
+            "nombre": "Estados Unidos",
+            "tipo": "LUGAR",
+            "alias": [
+                "EE. UU."
+            ]
+        },
+        {
+            "nombre": "El Salvador",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Nayib Bukele",
+            "tipo": "PERSONA",
+            "alias": [
+                "Bukele"
+            ]
+        },
+        {
+            "nombre": "Ábrego García",
+            "tipo": "PERSONA",
+            "alias": [
+                "García"
+            ]
+        },
+        {
+            "nombre": "Pam Bondi",
+            "tipo": "PERSONA",
+            "alias": [
+                "Bondi"
+            ]
+        },
+        {
+            "nombre": "Stephen Miller",
+            "tipo": "PERSONA",
+            "alias": [
+                "Miller"
+            ]
+        },
+        {
+            "nombre": "Jennifer Vásquez",
+            "tipo": "PERSONA",
+            "alias": [
+                "Vásquez"
+            ]
+        },
+        {
+            "nombre": "El Nacional",
+            "tipo": "ORGANIZACION",
+            "alias": []
+        },
+        {
+            "nombre": "Cecot",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Mara Salvatrucha (MS-13)",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "MS-13"
+            ]
+        },
+        {
+            "nombre": "Tren de Aragua",
+            "tipo": "ORGANIZACION",
+            "alias": []
+        },
+        {
+            "nombre": "Despacho Oval",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Casa Blanca",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "El periodismo independiente",
+            "tipo": "CONCEPTO",
+            "alias": []
+        }
+    ]
+}
 ```
 </details>
 
@@ -101,7 +321,7 @@ Error: No content received or generated
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+   **Mensaje Error:** `API_Error: BadRequestError: Error code: 400 - {'error': {'message': "Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': '{\n   "resultados": [\n      {\n         "cita": "Se quedaron sin dinero porque les trancamos su mercado petrolero. Saben qué es lo que tienen que hacer",\n         "emisor_nombre": "Donald Trump",\n         "contexto": "El presidente de Estados Unidos, Donald Trump, al referirse al gobierno de Nicolás Maduro",\n         "fecha_cita": null\n      },\n      {\n         "cita": "Por supuesto que no voy a hacerlo. ¿Cómo voy a enviar de contrabando a un terrorista a Estados Unidos?",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "¿Cómo voy a enviar de contrabando a un terrorista a Estados Unidos?",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      },\n      {\n         "cita": "No nos gusta mucho liberar terroristas en nuestro país",\n         "emisor_nombre": "Nayib Bukele",\n         "contexto": "Bukele se niega a liberar a Ábrego García",\n         "fecha_cita": null\n      }}'}}`
 
 
 <details open>
@@ -116,16 +336,44 @@ Error: No content received or generated
 
 ### Tarea: extraccion_datos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "indicador": "Presupuesto asignado a El Salvador para albergar migrantes acusados de formar parte de redes criminales",
+            "categoria": "presupuestario",
+            "valor_numerico": 6000000,
+            "unidad": "dólares",
+            "ambito_geografico": [
+                "El Salvador"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": "Estados Unidos",
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de ciudadanos estadounidenses que podrían ser encarcelados en el Cecot",
+            "categoria": "electoral",
+            "valor_numerico": null,
+            "unidad": null,
+            "ambito_geografico": [
+                "Estados Unidos"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": "sugestión de Trump"
+        }
+    ]
+}
 ```
 </details>

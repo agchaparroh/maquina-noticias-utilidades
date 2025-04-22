@@ -1,10 +1,10 @@
 {
     "test_id": "test_041",
     "tarea": "extraccion_citas",
-    "model_id": "llama-3.1-8b-128k",
-    "success": false,
-    "api_success": false,
-    "json_valid": false,
-    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
-    "llm_response_content": "Error: No content received or generated"
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"Cuidémonos, cuidémonos de verdad\",\n         \"emisor_nombre\": \"presidente Luis Abinader\",\n         \"contexto\": \"en su tradicional encuentro de los lunes con la prensa, tras el pesar de la tragedia de la semana pasada en la que murieron 231 personas en el derrumbe del techo de la discoteca Jet Set\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"Cuidémonos, cuidémonos de verdad, tomemos decisiones acertadas, decisiones responsables, no pongamos en riesgo lo más importante, nuestra vida y de la vida de los demás\",\n         \"emisor_nombre\": \"presidente Luis Abinader\",\n         \"contexto\": \"en la que al menos 10 eran personas muy cercanas a él en lo personal\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"Los operativos de seguridad están desplegados en todo el país como cada año, pero la verdadera prevención comienza con cada uno de nosotros, y con cada uno, recuerden, no hay más prueba de amor que cuidarnos, no hay más gesto de amor que cuidar a los nuestros, ese es el mensaje que le queremos dejar para esta Semana Santa\",\n         \"emisor_nombre\": \"presidente Luis Abinader\",\n         \"contexto\": null,\n         \"fecha_cita\": null\n      }\n   ]\n}"
 }

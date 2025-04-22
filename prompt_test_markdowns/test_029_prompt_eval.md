@@ -1,5 +1,5 @@
 # Evaluación Artículo: test_029
-**Modelo Probado:** `llama-3.1-8b-128k`
+**Modelo Probado:** `llama-3.1-8b-instant`
 
 ## Metadatos del Artículo Original
 
@@ -41,88 +41,559 @@ Por último, también se centran en detectar las narrativas de desinformación p
 
 ---
 
-## Resultados de las Tareas (llama-3.1-8b-128k)
+## Resultados de las Tareas (llama-3.1-8b-instant)
 
 ### Tarea: relevancia
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "puntuacion_relevancia": 8,
+    "justificacion_relevancia": "La estrategia electoral del PP utiliza Inteligencia Artificial y 'big data' para captar votos.",
+    "categorias_asignadas": [
+        "Política Nacional",
+        "Elecciones"
+    ],
+    "explicacion_concisa": "El PP utiliza Inteligencia Artificial y 'big data' para monitorizar las preocupaciones de los ciudadanos y adaptar sus discursos a las encuestas, con el objetivo de aumentar su rédito electoral."
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "contenido": "El PP utiliza la Inteligencia Artificial y el 'big data' para captar votos en las próximas elecciones generales.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-15",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "ES"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 9,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "elecciones",
+                "PP",
+                "InteligencaArtificial"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El Gabinete de Inteligencia y Datos Electorales Avanzados (G-IDEA) del PP monitoriza las preocupaciones y demandas de los ciudadanos a nivel de código postal y calle a calle.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-15",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "ES"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "PP",
+                "G-IDEA",
+                "monitorización"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La Unidad de Análisis de Datos y Prospectiva del PP realiza estudios diarios sobre tendencias electorales, evolución del voto y factores sociopolíticos clave.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-15",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "ES"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "PP",
+                "Unidad de Análisis de Datos y Prospectiva",
+                "estudios"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El PP utiliza la técnica del 'microtargeting' para dirigir sus mensajes a un electorado concreto.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-15",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "ES"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "PP",
+                "microtargeting",
+                "mensajes"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El PP busca controlar el entorno digital para entender las dinámicas electorales y sociales.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-15",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "ES"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "PP",
+                "entorno digital",
+                "dinámicas electorales"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El PP detecta las narrativas de desinformación para que los dirigentes y portavoces del partido huyan de ellas.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-15",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "ES"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "PP",
+                "desinformación",
+                "narrativas"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El PP busca llegar al sector del campo y arrebatarle a Vox.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-15",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "ES"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "PP",
+                "sector del campo",
+                "Vox"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El PP utiliza la Inteligencia Artificial y el 'big data' para conocer de manera pormenorizada el detalle sobre los problemas de la sociedad y cómo darles una respuesta eficaz.",
+            "tipo_hecho": "CONCEPTO",
+            "fecha_ocurrencia_inicio": "2025-04-15",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "dia",
+            "paises": [
+                "ES"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 9,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "InteligencaArtificial",
+                "big data",
+                "sociedad"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "nombre": "Alberto Núñez Feijóo",
+            "tipo": "PERSONA",
+            "alias": [
+                "Feijóo"
+            ]
+        },
+        {
+            "nombre": "Pedro Sánchez Pérez-Castejón",
+            "tipo": "PERSONA",
+            "alias": [
+                "Pedro Sánchez",
+                "Sánchez"
+            ]
+        },
+        {
+            "nombre": "Elías Bendodo",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Aleix Sanmartín",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Gabinete de Inteligencia y Datos Electorales Avanzados (G-IDEA)",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "G-IDEA"
+            ]
+        },
+        {
+            "nombre": "Unidad de Análisis de Datos y Prospectiva",
+            "tipo": "INSTITUCION",
+            "alias": []
+        },
+        {
+            "nombre": "Partido Popular (PP)",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "PP"
+            ]
+        },
+        {
+            "nombre": "Vox",
+            "tipo": "ORGANIZACION",
+            "alias": []
+        },
+        {
+            "nombre": "Donald Trump",
+            "tipo": "PERSONA",
+            "alias": [
+                "Trump"
+            ]
+        },
+        {
+            "nombre": "Congreso",
+            "tipo": "INSTITUCION",
+            "alias": []
+        },
+        {
+            "nombre": "Senado",
+            "tipo": "INSTITUCION",
+            "alias": []
+        },
+        {
+            "nombre": "La Moncloa",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Castilla y León",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Murcia",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "CIS",
+            "tipo": "ORGANIZACION",
+            "alias": []
+        },
+        {
+            "nombre": "Fake news",
+            "tipo": "CONCEPTO",
+            "alias": []
+        },
+        {
+            "nombre": "Big data",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Big data"
+            ]
+        },
+        {
+            "nombre": "Microtargeting",
+            "tipo": "CONCEPTO",
+            "alias": []
+        },
+        {
+            "nombre": "Alvise",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Santiago Abascal",
+            "tipo": "PERSONA",
+            "alias": [
+                "Abascal"
+            ]
+        },
+        {
+            "nombre": "Se Acabó La Fiesta",
+            "tipo": "ORGANIZACION",
+            "alias": []
+        },
+        {
+            "nombre": "Elecciones generales",
+            "tipo": "EVENTO",
+            "alias": [
+                "Elecciones generales"
+            ]
+        },
+        {
+            "nombre": "Vivienda",
+            "tipo": "CONCEPTO",
+            "alias": []
+        },
+        {
+            "nombre": "Liderazgo político",
+            "tipo": "CONCEPTO",
+            "alias": []
+        },
+        {
+            "nombre": "Preocupaciones del electorado",
+            "tipo": "CONCEPTO",
+            "alias": []
+        },
+        {
+            "nombre": "Demoscópicas",
+            "tipo": "CONCEPTO",
+            "alias": []
+        },
+        {
+            "nombre": "Fake news",
+            "tipo": "CONCEPTO",
+            "alias": []
+        },
+        {
+            "nombre": "Redes sociales",
+            "tipo": "CONCEPTO",
+            "alias": []
+        },
+        {
+            "nombre": "Plataformas digitales",
+            "tipo": "CONCEPTO",
+            "alias": []
+        },
+        {
+            "nombre": "Narrativas de desinformación",
+            "tipo": "CONCEPTO",
+            "alias": []
+        },
+        {
+            "nombre": "La Razón",
+            "tipo": "MEDIO DE COMUNICACIÓN",
+            "alias": []
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "cita": "El gobierno es ineficiente",
+            "emisor_nombre": "María",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "no abandonaremos el país",
+            "emisor_nombre": "presidente",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "no negociaremos con terroristas",
+            "emisor_nombre": "gobernador",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "El presidente afirmó que 'nunca permitiré' este tipo de acciones",
+            "emisor_nombre": "ministro",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "Cuando el gobernador dijo \"no negociaremos con terroristas\" estaba mintiendo",
+            "emisor_nombre": "oposición",
+            "contexto": null,
+            "fecha_cita": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "indicador": "Número de votos obtenidos por el partido PP en las próximas elecciones generales",
+            "categoria": "electoral",
+            "valor_numerico": 0,
+            "unidad": "votos",
+            "ambito_geografico": [],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Tasa de inflación interanual",
+            "categoria": "económico",
+            "valor_numerico": null,
+            "unidad": "%",
+            "ambito_geografico": [],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de jóvenes de entre 18 y 24 años que votan a Vox",
+            "categoria": "electoral",
+            "valor_numerico": 0,
+            "unidad": "personas",
+            "ambito_geografico": [],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de comentarios en redes sociales que detectan tendencias y evalúan el impacto de los mensajes del PP",
+            "categoria": "social",
+            "valor_numerico": 0,
+            "unidad": "comentarios",
+            "ambito_geografico": [],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de visitas a Castilla y León y Murcia para llegar al sector del campo",
+            "categoria": "electoral",
+            "valor_numerico": 0,
+            "unidad": "visitas",
+            "ambito_geografico": [],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de estudios sobre liderazgo político y preocupaciones del electorado",
+            "categoria": "electoral",
+            "valor_numerico": 0,
+            "unidad": "estudios",
+            "ambito_geografico": [],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de colaboraciones con empresas demoscópicas externas para realizar sondeos",
+            "categoria": "electoral",
+            "valor_numerico": 0,
+            "unidad": "colaboraciones",
+            "ambito_geografico": [],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de millones de comentarios que se analizan para detectar tendencias y evaluar el impacto de los mensajes del PP",
+            "categoria": "social",
+            "valor_numerico": 0,
+            "unidad": "comentarios",
+            "ambito_geografico": [],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        }
+    ]
+}
 ```
 </details>

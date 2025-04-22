@@ -1,5 +1,5 @@
 # Evaluación Artículo: test_023
-**Modelo Probado:** `llama-3.1-8b-128k`
+**Modelo Probado:** `llama-3.1-8b-instant`
 
 ## Metadatos del Artículo Original
 
@@ -47,88 +47,356 @@ Comparte esta noticia
 
 ---
 
-## Resultados de las Tareas (llama-3.1-8b-128k)
+## Resultados de las Tareas (llama-3.1-8b-instant)
 
 ### Tarea: relevancia
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "puntuacion_relevancia": 7,
+    "justificacion_relevancia": "Relevancia alta debido a la modificación de la ley de la APCI y críticas a ONG",
+    "categorias_asignadas": [
+        "Política Nacional",
+        "Justicia/Legal"
+    ],
+    "explicacion_concisa": "La presidenta Dina Boluarte promulga una ley que modifica la creación de la Agencia Peruana de Cooperación Internacional (APCI), con el objetivo de reforzar la transparencia y supervisión de las organizaciones no gubernamentales (ONG) que actúan en contra de los intereses del país."
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "contenido": "Dina Boluarte promulgó la ley que modifica la creación de la Agencia Peruana de Cooperación Internacional (APCI).",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "PE"
+            ],
+            "ubicaciones_especificas": [
+                "Palacio de Gobierno"
+            ],
+            "importancia": 9,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "gobierno",
+                "APCI"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La nueva ley busca reforzar la transparencia en el uso de recursos de cooperación internacional no reembolsable y establecer mecanismos de supervisión más estrictos, especialmente sobre las organizaciones no gubernamentales (ONG).",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "dia",
+            "paises": [
+                "PE"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "transparencia",
+                "ONG",
+                "APCI"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La ley establece que la APCI supervisará la ejecución de los recursos de cooperación técnica internacional, promoviendo su uso ético. Además, las entidades receptoras, incluidas las ONG, deberán inscribir sus planes, proyectos, programas, actividades y gastos en un registro público gestionado por la APCI.",
+            "tipo_hecho": "NORMATIVA",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "dia",
+            "paises": [
+                "PE"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 9,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "APCI",
+                "ONG",
+                "transparencia"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La presidenta Dina Boluarte afirmó que la ley representa un avance hacia una gestión pública más responsable.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "dia",
+            "paises": [
+                "PE"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "gobierno",
+                "responsabilidad",
+                "Boluarte"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La ley también asigna a la APCI la responsabilidad de ejecutar la política nacional de cooperación técnica internacional, orientada a captar recursos para el desarrollo y proyectar la cooperación peruana al mundo.",
+            "tipo_hecho": "NORMATIVA",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "dia",
+            "paises": [
+                "PE"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "APCI",
+                "cooperación",
+                "desarrollo"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "nombre": "Dina Boluarte",
+            "tipo": "PERSONA",
+            "alias": [
+                "Boluarte"
+            ]
+        },
+        {
+            "nombre": "Agencia Peruana de Cooperación Internacional (APCI)",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "APCI"
+            ]
+        },
+        {
+            "nombre": "Palacio de Gobierno",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Congreso",
+            "tipo": "INSTITUCION",
+            "alias": []
+        },
+        {
+            "nombre": "Organizaciones no gubernamentales (ONG)",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "ONG"
+            ]
+        },
+        {
+            "nombre": "Superintendencia Nacional de Aduanas y de Administración Tributaria (SUNAT)",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "SUNAT"
+            ]
+        },
+        {
+            "nombre": "Ley de creación de la Agencia Peruana de Cooperación Internacional",
+            "tipo": "NORMATIVA",
+            "alias": []
+        },
+        {
+            "nombre": "Cooperación internacional",
+            "tipo": "CONCEPTO",
+            "alias": []
+        },
+        {
+            "nombre": "Democracia",
+            "tipo": "CONCEPTO",
+            "alias": []
+        },
+        {
+            "nombre": "Unidad nacional",
+            "tipo": "CONCEPTO",
+            "alias": []
+        },
+        {
+            "nombre": "Gobierno de Perú",
+            "tipo": "INSTITUCION",
+            "alias": []
+        },
+        {
+            "nombre": "Gustavo Adrianzén",
+            "tipo": "PERSONA",
+            "alias": [
+                "Adrianzén"
+            ]
+        },
+        {
+            "nombre": "Elmer Schialer",
+            "tipo": "PERSONA",
+            "alias": [
+                "Schialer"
+            ]
+        },
+        {
+            "nombre": "Eduardo Arana",
+            "tipo": "PERSONA",
+            "alias": [
+                "Arana"
+            ]
+        },
+        {
+            "nombre": "Perú",
+            "tipo": "LUGAR",
+            "alias": []
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "cita": "Esta ley también velará por el supremo interés de la democracia, la unidad nacional y poner bajo una revisión exhaustiva a una minoría de ONG que actúan en contra de los intereses de nuestro país, sembrando odio y atacando nuestro sistema",
+            "emisor_nombre": "presidenta Dina Boluarte",
+            "contexto": "En un momento de su discurso, la jefa de Estado arremetió contra las ONG que, en su opinión, afectan los intereses del país, y aseguró que ahora se realizará un revisión exhaustiva de las actividades que realizan.",
+            "fecha_cita": null
+        },
+        {
+            "cita": "Organizaciones que no están comprometidas con el bienestar de la nación, sino que buscan desestabilizar y promover la división, utilizando recursos de la cooperación internacional para avanzar su propia agenda ideológica. Sigamos trabajando juntos sin permitir que utilicen a la democracia para lucrar en nombre de la libertad, utilizando el libertinaje para introducir agendas internacionales que buscan quebrar nuestra unidad nacional, sembrando el odio entre peruanos",
+            "emisor_nombre": "presidenta Dina Boluarte",
+            "contexto": "En un momento de su discurso, la jefa de Estado arremetió contra las ONG que, en su opinión, afectan los intereses del país, y aseguró que ahora se realizará un revisión exhaustiva de las actividades que realizan.",
+            "fecha_cita": null
+        },
+        {
+            "cita": "Hoy hemos dado un paso firme y decidido en favor de la transparencia, de la buena gestión pública y del fortalecimiento de nuestra democracia",
+            "emisor_nombre": "presidenta Dina Boluarte",
+            "contexto": "En su discurso, Boluarte afirmó que la ley representa un avance hacia una gestión pública más responsable.",
+            "fecha_cita": null
+        },
+        {
+            "cita": "No se trata de control, se trata de claridad, no se trata de fiscalización arbitraria, sino de rendición de cuentas",
+            "emisor_nombre": "presidenta Dina Boluarte",
+            "contexto": "No se trata de control, se trata de claridad, no se trata de fiscalización arbitraria, sino de rendición de cuentas",
+            "fecha_cita": null
+        },
+        {
+            "cita": "Es un medio importante para que la cooperación internacional siga siendo un aliado estratégico del desarrollo del país, con reglas claras, mecanismos eficaces de supervisión y la confianza que sólo se logra con total transparencia",
+            "emisor_nombre": "presidenta Dina Boluarte",
+            "contexto": "Boluarte afirmó que la ley no busca ser un fin en sí misma, sino una herramienta para construir un Estado más transparente y cercano a la ciudadanía.",
+            "fecha_cita": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "indicador": "Presupuesto asignado a la Agencia Peruana de Cooperación Internacional (APCI)",
+            "categoria": "presupuestario",
+            "valor_numerico": 0,
+            "unidad": "USD",
+            "ambito_geografico": [
+                "Perú"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de organizaciones no gubernamentales (ONG) bajo revisión exhaustiva",
+            "categoria": "social",
+            "valor_numerico": 0,
+            "unidad": "ONG",
+            "ambito_geografico": [
+                "Perú"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Presupuesto asignado a la Superintendencia Nacional de Aduanas y de Administración Tributaria (SUNAT) para evaluar la creación de una unidad especializada",
+            "categoria": "presupuestario",
+            "valor_numerico": 0,
+            "unidad": "USD",
+            "ambito_geografico": [
+                "Perú"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        }
+    ]
+}
 ```
 </details>

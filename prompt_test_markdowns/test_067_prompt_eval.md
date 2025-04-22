@@ -1,5 +1,5 @@
 # Evaluación Artículo: test_067
-**Modelo Probado:** `llama-3.1-8b-128k`
+**Modelo Probado:** `llama-3.1-8b-instant`
 
 ## Metadatos del Artículo Original
 
@@ -57,88 +57,582 @@ Estados Unidos ha deportado un total de 288 personas para ser recluidas al CECOT
 
 ---
 
-## Resultados de las Tareas (llama-3.1-8b-128k)
+## Resultados de las Tareas (llama-3.1-8b-instant)
 
 ### Tarea: relevancia
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "puntuacion_relevancia": 8,
+    "justificacion_relevancia": "Relevancia alta debido a la visita del presidente de El Salvador a la Casa Blanca y su reunión con Trump.",
+    "categorias_asignadas": [
+        "Política Internacional",
+        "Política Nacional",
+        "Diplomacia"
+    ],
+    "explicacion_concisa": "El presidente de El Salvador, Nayib Bukele, visita la Casa Blanca y se reúne con el presidente de Estados Unidos, Donald Trump. Ambos mandatarios elogian mutuamente y discuten temas de seguridad y lucha contra el crimen."
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "contenido": "Nayib Bukele visitó la Casa Blanca para reunirse con Donald Trump.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "ES",
+                "US"
+            ],
+            "ubicaciones_especificas": [
+                "Casa Blanca"
+            ],
+            "importancia": 9,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "diplomacia",
+                "reunión"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El presidente Trump elogió a Nayib Bukele y lo describió como un 'fantástico presidente'.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "ES",
+                "US"
+            ],
+            "ubicaciones_especificas": [
+                "Casa Blanca"
+            ],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "diplomacia",
+                "elogio"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Nayib Bukele aseguró que El Salvador es el 'país más seguro del mundo'.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "ES"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "seguridad",
+                "política",
+                "declaración"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El presidente Trump culpó a Putin, Biden y Zelenski de la guerra en Ucrania.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "US",
+                "RU",
+                "UA"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 9,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "diplomacia",
+                "guerra"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El presidente Trump expresó su intención de deportar a 'tantos delincuentes ilegales como sea posible' a El Salvador.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "US",
+                "ES"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "diplomacia",
+                "deportación"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El presidente Trump se refirió a Joe Biden como alguien con 'un coeficiente intelectual muy bajo'.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "US"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "diplomacia",
+                "comentario"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "nombre": "Casa Blanca",
+            "tipo": "LUGAR",
+            "alias": [
+                "Casa Blanca"
+            ]
+        },
+        {
+            "nombre": "Washington",
+            "tipo": "LUGAR",
+            "alias": [
+                "Washington"
+            ]
+        },
+        {
+            "nombre": "Medios oficiales",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "Medios oficiales"
+            ]
+        },
+        {
+            "nombre": "Medios de comunicación",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "Medios de comunicación"
+            ]
+        },
+        {
+            "nombre": "Pedro Sánchez Pérez-Castejón",
+            "tipo": "PERSONA",
+            "alias": [
+                "Pedro Sánchez",
+                "Sánchez"
+            ]
+        },
+        {
+            "nombre": "Donald Trump",
+            "tipo": "PERSONA",
+            "alias": [
+                "Trump"
+            ]
+        },
+        {
+            "nombre": "Nayib Bukele",
+            "tipo": "PERSONA",
+            "alias": [
+                "Bukele"
+            ]
+        },
+        {
+            "nombre": "Organización de las Naciones Unidas (ONU)",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "ONU",
+                "Naciones Unidas"
+            ]
+        },
+        {
+            "nombre": "Estados Unidos",
+            "tipo": "LUGAR",
+            "alias": [
+                "Estados Unidos"
+            ]
+        },
+        {
+            "nombre": "El Salvador",
+            "tipo": "LUGAR",
+            "alias": [
+                "El Salvador"
+            ]
+        },
+        {
+            "nombre": "Casa Oval",
+            "tipo": "LUGAR",
+            "alias": [
+                "Casa Oval"
+            ]
+        },
+        {
+            "nombre": "Marco Rubio",
+            "tipo": "PERSONA",
+            "alias": [
+                "Rubio"
+            ]
+        },
+        {
+            "nombre": "Kristi Noem",
+            "tipo": "PERSONA",
+            "alias": [
+                "Noem"
+            ]
+        },
+        {
+            "nombre": "Kilmar Ábrego",
+            "tipo": "PERSONA",
+            "alias": [
+                "Ábrego"
+            ]
+        },
+        {
+            "nombre": "Pam Bondi",
+            "tipo": "PERSONA",
+            "alias": [
+                "Bondi"
+            ]
+        },
+        {
+            "nombre": "Stephen Miller",
+            "tipo": "PERSONA",
+            "alias": [
+                "Miller"
+            ]
+        },
+        {
+            "nombre": "Joe Biden",
+            "tipo": "PERSONA",
+            "alias": [
+                "Biden"
+            ]
+        },
+        {
+            "nombre": "Ucrania",
+            "tipo": "LUGAR",
+            "alias": [
+                "Ucrania"
+            ]
+        },
+        {
+            "nombre": "Putin",
+            "tipo": "PERSONA",
+            "alias": [
+                "Putin"
+            ]
+        },
+        {
+            "nombre": "Zelenski",
+            "tipo": "PERSONA",
+            "alias": [
+                "Zelenski"
+            ]
+        },
+        {
+            "nombre": "MS-13",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "MS-13"
+            ]
+        },
+        {
+            "nombre": "Coney Island",
+            "tipo": "LUGAR",
+            "alias": [
+                "Coney Island"
+            ]
+        },
+        {
+            "nombre": "Brooklyn",
+            "tipo": "LUGAR",
+            "alias": [
+                "Brooklyn"
+            ]
+        },
+        {
+            "nombre": "Venezuela",
+            "tipo": "LUGAR",
+            "alias": [
+                "Venezuela"
+            ]
+        },
+        {
+            "nombre": "CECOT",
+            "tipo": "LUGAR",
+            "alias": [
+                "CECOT"
+            ]
+        },
+        {
+            "nombre": "Tren de Aragua",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "Tren de Aragua"
+            ]
+        },
+        {
+            "nombre": "Pandilla MS-13",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "Pandilla MS-13"
+            ]
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "cita": "Es un honor tener aquí a un amigo mío porque atravesamos esto juntos y nos llevamos muy bien durante todo mi mandato. Lo conocí siendo un hombre muy joven... Señor presidente es un honor tenerlo aquí. Gracias. Usted está haciendo una labor increíble por su país y apreciamos trabajar con usted, usted quiere combatir el crimen, nosotros también. Quiero decir algo al pueblo de El Salvador, tienen a un fantástico presidente. Lo digo en serio, lo conozco bien",
+            "emisor_nombre": "presidente de Estados Unidos",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "Es un honor estar aquí en la oficina oval con el presidente y líder del mundo libre, estamos muy satisfechos, y estamos ansiosos de ayudar",
+            "emisor_nombre": "Nayib Bukele",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "Dicen que hemos puesto en prisión a miles, en realidad hemos liberado a millones",
+            "emisor_nombre": "Nayib Bukele",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "La realidad, señor presidente, es que usted tiene que liberar a 350 millones de personas, pero para hacer ese trabajo hay que poner a alguien en la cárcel, es inevitable, no se puede dejar a los criminales en libertad manteniendo en prisión a todos los demás estadounidenses que claman por el fin del terrorismo y la criminalidad",
+            "emisor_nombre": "Nayib Bukele",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "Estoy seguro que la gente ha notado un cambio en las calles, usted apenas está comenzando su segundo mandato, es evidente considerando las cifras en la frontera, incluso en las ciudades manejadas manejadas por demócratas se nota la diferencia, es un honor y encantado de poder ayudar",
+            "emisor_nombre": "Nayib Bukele",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "Somos un gran país, pero tuvimos gente estúpida dirigiéndolo",
+            "emisor_nombre": "Donald Trump",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "Gracias por tener un lugar donde enviar a los peores de los peores. Queremos seguir con esa alianza porque es un mensaje muy potente de las consecuencias",
+            "emisor_nombre": "Kristi Noem",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "Pensó que lo liberarían otra vez, ¿qué hiciste?, le disparé a una pareja en la pierna pero no los maté... La última vez disparó a un policía",
+            "emisor_nombre": "Nayib Bukele",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "Esta es la guerra de Biden y yo estoy tratando de detenerla",
+            "emisor_nombre": "Donald Trump",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "Con el presidente Bukele, tengo una excelente relación con él. Nos conocemos. Lo conozco desde muy joven, como dije, muy joven y me impresionó. Le dije: \"Miren a este tipo. De hecho, parece un adolescente. ¿Qué clase de país es este? Creció, creció bien en los últimos cinco años\"",
+            "emisor_nombre": "Donald Trump",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "A tantos como sea posible. Justo le pregunté al presidente, ¿sabe?, sobre este enorme complejo carcelario que construyó. Le dije: \"¿Podría construir más, por favor?\"",
+            "emisor_nombre": "Donald Trump",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "Tenemos millones de personas que son asesinos, traficantes de drogas",
+            "emisor_nombre": "Donald Trump",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "Me gustaría que fuéramos un paso más allá, por supuesto, tenemos que cumplir las leyes, me gustaría incluir a esas personas en ese grupo de personas que vamos a echar del país, pero tendremos que ver lo que dicen las leyes. Si son delincuentes y golpean con bates de béisbol en la cabeza a personas de 90 años, o si violan a mujeres de 37 años en Coney Island, Brooklyn. Sí, sí, eso los incluye",
+            "emisor_nombre": "Donald Trump",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "Las cárceles de Venezuela se vaciaron, ¿y saben lo que pasó?, la delincuencia disminuyó mucho, pero ahora Venezuela tiene otros problemas, ¿saben cuál es?, no tienen dinero",
+            "emisor_nombre": "Donald Trump",
+            "contexto": null,
+            "fecha_cita": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "indicador": "Número de personas deportadas a El Salvador",
+            "categoria": "demográfico",
+            "valor_numerico": 288,
+            "unidad": "personas",
+            "ambito_geografico": [
+                "El Salvador"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": "puntual",
+            "fuente_especifica": "Estados Unidos",
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de personas que Biden permitió entrar a Estados Unidos",
+            "categoria": "demográfico",
+            "valor_numerico": null,
+            "unidad": "personas",
+            "ambito_geografico": [
+                "Estados Unidos"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": "puntual",
+            "fuente_especifica": "Biden",
+            "notas_contexto": "Fronteras abiertas"
+        },
+        {
+            "indicador": "Número de personas que Trump quiere deportar a El Salvador",
+            "categoria": "demográfico",
+            "valor_numerico": "tantos como sea posible",
+            "unidad": "personas",
+            "ambito_geografico": [
+                "El Salvador"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": "puntual",
+            "fuente_especifica": "Trump",
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de personas que Trump quiere deportar de Estados Unidos",
+            "categoria": "demográfico",
+            "valor_numerico": null,
+            "unidad": "personas",
+            "ambito_geografico": [
+                "Estados Unidos"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": "puntual",
+            "fuente_especifica": "Trump",
+            "notas_contexto": "Delincuentes y personas violentas"
+        },
+        {
+            "indicador": "Número de personas que Bukele quiere mantener en prisión",
+            "categoria": "demográfico",
+            "valor_numerico": "millones",
+            "unidad": "personas",
+            "ambito_geografico": [
+                "El Salvador"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": "puntual",
+            "fuente_especifica": "Bukele",
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de personas que Bukele quiere liberar",
+            "categoria": "demográfico",
+            "valor_numerico": 350000000,
+            "unidad": "personas",
+            "ambito_geografico": [
+                "El Salvador"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": "puntual",
+            "fuente_especifica": "Bukele",
+            "notas_contexto": null
+        }
+    ]
+}
 ```
 </details>

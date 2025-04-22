@@ -1,5 +1,5 @@
 # Evaluación Artículo: test_024
-**Modelo Probado:** `llama-3.1-8b-128k`
+**Modelo Probado:** `llama-3.1-8b-instant`
 
 ## Metadatos del Artículo Original
 
@@ -38,88 +38,376 @@ Test new features
 
 ---
 
-## Resultados de las Tareas (llama-3.1-8b-128k)
+## Resultados de las Tareas (llama-3.1-8b-instant)
 
 ### Tarea: relevancia
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "puntuacion_relevancia": 0,
+    "justificacion_relevancia": "No contiene información política o social relevante",
+    "categorias_asignadas": [],
+    "explicacion_concisa": "El artículo parece ser una página de ayuda de YouTube, sin contenido político o social relevante."
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "contenido": "YouTube es una plataforma de video en línea propiedad de Google.",
+            "tipo_hecho": "BIOGRAFIA",
+            "fecha_ocurrencia_inicio": "2005-02-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "US"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "YouTube",
+                "Google",
+                "plataforma de video"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La política de privacidad de YouTube se encuentra en su sitio web.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "dia",
+            "paises": [],
+            "ubicaciones_especificas": [],
+            "importancia": 6,
+            "confiabilidad": 4,
+            "etiquetas": [
+                "privacidad",
+                "política",
+                "YouTube"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La política de seguridad de YouTube se encuentra en su sitio web.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "dia",
+            "paises": [],
+            "ubicaciones_especificas": [],
+            "importancia": 6,
+            "confiabilidad": 4,
+            "etiquetas": [
+                "seguridad",
+                "política",
+                "YouTube"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La política de términos de servicio de YouTube se encuentra en su sitio web.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "dia",
+            "paises": [],
+            "ubicaciones_especificas": [],
+            "importancia": 6,
+            "confiabilidad": 4,
+            "etiquetas": [
+                "términos de servicio",
+                "política",
+                "YouTube"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La política de derechos de autor de YouTube se encuentra en su sitio web.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "dia",
+            "paises": [],
+            "ubicaciones_especificas": [],
+            "importancia": 6,
+            "confiabilidad": 4,
+            "etiquetas": [
+                "derechos de autor",
+                "política",
+                "YouTube"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La política de privacidad de YouTube se actualiza periódicamente.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "dia",
+            "paises": [],
+            "ubicaciones_especificas": [],
+            "importancia": 6,
+            "confiabilidad": 4,
+            "etiquetas": [
+                "privacidad",
+                "política",
+                "YouTube"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La política de seguridad de YouTube se actualiza periódicamente.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "dia",
+            "paises": [],
+            "ubicaciones_especificas": [],
+            "importancia": 6,
+            "confiabilidad": 4,
+            "etiquetas": [
+                "seguridad",
+                "política",
+                "YouTube"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La política de términos de servicio de YouTube se actualiza periódicamente.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "dia",
+            "paises": [],
+            "ubicaciones_especificas": [],
+            "importancia": 6,
+            "confiabilidad": 4,
+            "etiquetas": [
+                "términos de servicio",
+                "política",
+                "YouTube"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La política de derechos de autor de YouTube se actualiza periódicamente.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "dia",
+            "paises": [],
+            "ubicaciones_especificas": [],
+            "importancia": 6,
+            "confiabilidad": 4,
+            "etiquetas": [
+                "derechos de autor",
+                "política",
+                "YouTube"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "YouTube es propiedad de Google LLC.",
+            "tipo_hecho": "BIOGRAFIA",
+            "fecha_ocurrencia_inicio": "2006",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "US"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "YouTube",
+                "Google",
+                "propiedad"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La fecha de fundación de YouTube es el 14 de febrero de 2005.",
+            "tipo_hecho": "BIOGRAFIA",
+            "fecha_ocurrencia_inicio": "2005-02-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "US"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "YouTube",
+                "fundación",
+                "fecha"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La fecha de lanzamiento de YouTube es el 23 de febrero de 2005.",
+            "tipo_hecho": "BIOGRAFIA",
+            "fecha_ocurrencia_inicio": "2005-02-23",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "US"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "YouTube",
+                "lanzamiento",
+                "fecha"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La fecha de adquisición de YouTube por parte de Google es el 11 de octubre de 2006.",
+            "tipo_hecho": "BIOGRAFIA",
+            "fecha_ocurrencia_inicio": "2006-10-11",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "US"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "YouTube",
+                "adquisición",
+                "fecha"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "nombre": "YouTube",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "YouTube"
+            ]
+        },
+        {
+            "nombre": "Google LLC",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "Google"
+            ]
+        },
+        {
+            "nombre": "Política de Privacidad",
+            "tipo": "NORMATIVA",
+            "alias": []
+        },
+        {
+            "nombre": "Política de Seguridad",
+            "tipo": "NORMATIVA",
+            "alias": []
+        },
+        {
+            "nombre": "Términos de uso",
+            "tipo": "NORMATIVA",
+            "alias": []
+        },
+        {
+            "nombre": "Política de Privacidad & Seguridad",
+            "tipo": "NORMATIVA",
+            "alias": []
+        },
+        {
+            "nombre": "Cómo funciona YouTube",
+            "tipo": "CONCEPTO",
+            "alias": []
+        },
+        {
+            "nombre": "Nuevas características de prueba",
+            "tipo": "CONCEPTO",
+            "alias": []
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": []
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": []
+}
 ```
 </details>

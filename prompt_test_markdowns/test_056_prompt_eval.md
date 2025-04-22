@@ -1,5 +1,5 @@
 # Evaluación Artículo: test_056
-**Modelo Probado:** `llama-3.1-8b-128k`
+**Modelo Probado:** `llama-3.1-8b-instant`
 
 ## Metadatos del Artículo Original
 
@@ -41,88 +41,390 @@ La investigación técnica la encabeza la Onesvie, mientras que la penal está a
 
 ---
 
-## Resultados de las Tareas (llama-3.1-8b-128k)
+## Resultados de las Tareas (llama-3.1-8b-instant)
 
 ### Tarea: relevancia
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "puntuacion_relevancia": 8,
+    "justificacion_relevancia": "La respuesta del presidente Abinader a la tragedia en Jet Set tiene impacto político y social",
+    "categorias_asignadas": [
+        "Política Nacional",
+        "Sociedad/Derechos"
+    ],
+    "explicacion_concisa": "El presidente Abinader anuncia que el gobierno dará acompañamiento a las víctimas y sus familiares de la tragedia en la discoteca Jet Set, incluyendo apoyo emocional y económico a los huérfanos en situación de vulnerabilidad."
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "contenido": "El presidente Luis Abinader aseguró que las víctimas de la tragedia en la discoteca Jet Set recibirán acompañamiento del Gobierno en salud mental y otras áreas.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "DO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 9,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "gobierno",
+                "víctimas",
+                "tragedia"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El programa Supérate trabaja en la identificación de todas las víctimas y sus familiares para darles seguimiento en su salud mental y otras ayudas.",
+            "tipo_hecho": "ANUNCIO",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "DO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "gobierno",
+                "programa",
+                "víctimas",
+                "ayuda"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Se desplomó el techo de la discoteca Jet Set sobre centenares de personas en la madrugada del martes 8 de abril.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-08T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "DO"
+            ],
+            "ubicaciones_especificas": [
+                "Santo Domingo"
+            ],
+            "importancia": 10,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "tragedia",
+                "discoteca",
+                "víctimas"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La Oficina Nacional de Evaluación Sísmica y Vulnerabilidad de Infraestructura y Edificaciones (Onesvie) encabeza la investigación técnica de la tragedia en la discoteca Jet Set.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "DO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "gobierno",
+                "investigación",
+                "tragedia"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El Ministerio Público ha abierto una investigación penal para determinar las causas del colapso de la discoteca Jet Set.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "DO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "gobierno",
+                "investigación",
+                "tragedia"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La tragedia en la discoteca Jet Set ha sido considerada la mayor catástrofe civil del siglo XXI en la República Dominicana.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "DO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 9,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "gobierno",
+                "tragedia",
+                "catástrofe"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "nombre": "Luis Abinader",
+            "tipo": "PERSONA",
+            "alias": [
+                "Abinader"
+            ]
+        },
+        {
+            "nombre": "Rubby Pérez",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Maribel Espaillat",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Wilson Camacho",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Supérate",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "Supérate"
+            ]
+        },
+        {
+            "nombre": "Gobierno de la República Dominicana",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "Gobierno de la República Dominicana"
+            ]
+        },
+        {
+            "nombre": "Onesvie",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "Onesvie"
+            ]
+        },
+        {
+            "nombre": "Ministerio Público",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "Ministerio Público"
+            ]
+        },
+        {
+            "nombre": "La Semanal con la Prensa",
+            "tipo": "EVENTO",
+            "alias": [
+                "La Semanal con la Prensa"
+            ]
+        },
+        {
+            "nombre": "Jet Set",
+            "tipo": "LUGAR",
+            "alias": [
+                "Jet Set"
+            ]
+        },
+        {
+            "nombre": "República Dominicana",
+            "tipo": "LUGAR",
+            "alias": [
+                "República Dominicana"
+            ]
+        },
+        {
+            "nombre": "Tragedia en Jet Set",
+            "tipo": "EVENTO",
+            "alias": [
+                "Tragedia en Jet Set"
+            ]
+        },
+        {
+            "nombre": "Colapso de la discoteca Jet Set",
+            "tipo": "EVENTO",
+            "alias": [
+                "Colapso de la discoteca Jet Set"
+            ]
+        },
+        {
+            "nombre": "Investigación independiente",
+            "tipo": "EVENTO",
+            "alias": [
+                "Investigación independiente"
+            ]
+        },
+        {
+            "nombre": "Caso Jet Set",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Caso Jet Set"
+            ]
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "cita": "A nadie vamos a dejar solo",
+            "emisor_nombre": "Abinader",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "A nadie vamos a dejar solo. El Gobierno va a estar con ellos",
+            "emisor_nombre": "Abinader",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "Incluso los rescatistas también, porque su impacto fue muy fuerte",
+            "emisor_nombre": "Abinader",
+            "contexto": null,
+            "fecha_cita": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "indicador": "Número de víctimas fatales en la tragedia de la discoteca Jet Set",
+            "categoria": "demográfico",
+            "valor_numerico": 231,
+            "unidad": "personas",
+            "ambito_geografico": [
+                "República Dominicana"
+            ],
+            "periodo_referencia_inicio": "null",
+            "periodo_referencia_fin": "null",
+            "tipo_periodo": "puntual",
+            "fuente_especifica": "null",
+            "notas_contexto": "null"
+        },
+        {
+            "indicador": "Número de personas que murieron en el lugar de la tragedia",
+            "categoria": "demográfico",
+            "valor_numerico": 221,
+            "unidad": "personas",
+            "ambito_geografico": [
+                "República Dominicana"
+            ],
+            "periodo_referencia_inicio": "null",
+            "periodo_referencia_fin": "null",
+            "tipo_periodo": "puntual",
+            "fuente_especifica": "null",
+            "notas_contexto": "null"
+        },
+        {
+            "indicador": "Número de personas que murieron en centros médicos después de la tragedia",
+            "categoria": "demográfico",
+            "valor_numerico": 10,
+            "unidad": "personas",
+            "ambito_geografico": [
+                "República Dominicana"
+            ],
+            "periodo_referencia_inicio": "null",
+            "periodo_referencia_fin": "null",
+            "tipo_periodo": "puntual",
+            "fuente_especifica": "null",
+            "notas_contexto": "null"
+        },
+        {
+            "indicador": "Número de huérfanos en situación de vulnerabilidad",
+            "categoria": "demográfico",
+            "valor_numerico": "null",
+            "unidad": "personas",
+            "ambito_geografico": [
+                "República Dominicana"
+            ],
+            "periodo_referencia_inicio": "null",
+            "periodo_referencia_fin": "null",
+            "tipo_periodo": "puntual",
+            "fuente_especifica": "null",
+            "notas_contexto": "null"
+        }
+    ]
+}
 ```
 </details>

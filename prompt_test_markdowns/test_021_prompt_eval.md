@@ -1,5 +1,5 @@
 # Evaluación Artículo: test_021
-**Modelo Probado:** `llama-3.1-8b-128k`
+**Modelo Probado:** `llama-3.1-8b-instant`
 
 ## Metadatos del Artículo Original
 
@@ -41,88 +41,383 @@ Lunes Santo: Procesión de Jesús Nazareno de las «Tres Potencias»
 
 ---
 
-## Resultados de las Tareas (llama-3.1-8b-128k)
+## Resultados de las Tareas (llama-3.1-8b-instant)
 
 ### Tarea: relevancia
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "puntuacion_relevancia": 2,
+    "justificacion_relevancia": "No tiene relevancia política o social significativa",
+    "categorias_asignadas": [
+        "Análisis/Contexto"
+    ],
+    "explicacion_concisa": "El artículo describe la historia detrás de la marcha fúnebre 'La Fosa', compuesta por Santiago Coronado Porras en 1888, y su conexión con la Semana Santa en Guatemala."
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "contenido": "Santiago Coronado Porras compuso la marcha fúnebre 'La Fosa' en 1888.",
+            "tipo_hecho": "BIOGRAFIA",
+            "fecha_ocurrencia_inicio": "1888-01-01",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "año",
+            "paises": [
+                "GT"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 6,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "música",
+                "Guatemala",
+                "Santiago Coronado Porras"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La Fosa es una marcha fúnebre emblemática de la Semana Mayor en Guatemala.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "periodo",
+            "paises": [
+                "GT"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "música",
+                "Guatemala",
+                "Semana Mayor"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La inspiración para componer la marcha 'La Fosa' surgió de un sueño que tuvo Santiago Coronado Porras.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "periodo",
+            "paises": [
+                "GT"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 6,
+            "confiabilidad": 4,
+            "etiquetas": [
+                "música",
+                "Guatemala",
+                "Santiago Coronado Porras"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La marcha 'La Fosa' se convirtió en el emblema de la procesión del Jesús de la Merced.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "periodo",
+            "paises": [
+                "GT"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "música",
+                "Guatemala",
+                "Jesús de la Merced"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La marcha 'La Fosa' se compuso con luz de candela a las tres de la mañana.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "1888-01-01",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "GT"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 6,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "música",
+                "Guatemala",
+                "Santiago Coronado Porras"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El nieto de Santiago Coronado Porras confirmó el relato de su sueño y la inspiración para la marcha 'La Fosa'.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "periodo",
+            "paises": [
+                "GT"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 6,
+            "confiabilidad": 4,
+            "etiquetas": [
+                "música",
+                "Guatemala",
+                "Santiago Coronado Porras"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "nombre": "La Fosa",
+            "tipo": "EVENTO",
+            "alias": []
+        },
+        {
+            "nombre": "Santiago Coronado Porras",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Jesús de la Merced",
+            "tipo": "CONCEPTO",
+            "alias": []
+        },
+        {
+            "nombre": "Semana Mayor",
+            "tipo": "EVENTO",
+            "alias": []
+        },
+        {
+            "nombre": "Guatemala",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Santiago Coronado",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Catalina",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Luis Alfonso Alvarado Coronado",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Jesús de la Merced (iglesia)",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Antigua Guatemala",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Quetzaltenango",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "San Juan Sacatepéquez",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Lunes Santo",
+            "tipo": "EVENTO",
+            "alias": []
+        },
+        {
+            "nombre": "Jesús Nazareno de las Tres Potencias",
+            "tipo": "CONCEPTO",
+            "alias": []
+        },
+        {
+            "nombre": "Caso Odebrecht",
+            "tipo": "CONCEPTO",
+            "alias": []
+        },
+        {
+            "nombre": "Casa Odebrecht",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "Odebrecht"
+            ]
+        },
+        {
+            "nombre": "Viernes Santo",
+            "tipo": "EVENTO",
+            "alias": []
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "cita": "vivida como un sueño",
+            "emisor_nombre": "Santiago Coronado",
+            "contexto": "El compositor relataba que la inspiración para componer la marcha surgió de un sueño que tuvo",
+            "fecha_cita": null
+        },
+        {
+            "cita": "Santiago",
+            "emisor_nombre": "Jesús",
+            "contexto": "El compositor cuenta que cuando intentó ir detrás del Jesús, su esposa Catalina lo despertó en la madrugada",
+            "fecha_cita": null
+        },
+        {
+            "cita": "La Fosa",
+            "emisor_nombre": "Santiago Coronado",
+            "contexto": "Entonces se levantó a las tres de la mañana y empezó a escribir la marcha con luz de candela y le puso el título de \"La Fosa\"",
+            "fecha_cita": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "indicador": "Número de votos obtenidos por el partido X",
+            "categoria": "electoral",
+            "valor_numerico": null,
+            "unidad": "votos",
+            "ambito_geografico": [],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Tasa de inflación interanual",
+            "categoria": "económico",
+            "valor_numerico": null,
+            "unidad": "%",
+            "ambito_geografico": [],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de personas que se llevaron las verduras de alfombra en Antigua Guatemala",
+            "categoria": "demográfico",
+            "valor_numerico": null,
+            "unidad": "personas",
+            "ambito_geografico": [
+                "Antigua Guatemala"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de personas que se llevaron las verduras de alfombra en San Juan Sacatepéquez",
+            "categoria": "demográfico",
+            "valor_numerico": null,
+            "unidad": "personas",
+            "ambito_geografico": [
+                "San Juan Sacatepéquez"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de personas que se llevaron las verduras de alfombra en Quetzaltenango",
+            "categoria": "demográfico",
+            "valor_numerico": null,
+            "unidad": "personas",
+            "ambito_geografico": [
+                "Quetzaltenango"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        }
+    ]
+}
 ```
 </details>

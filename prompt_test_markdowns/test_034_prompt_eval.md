@@ -1,5 +1,5 @@
 # Evaluación Artículo: test_034
-**Modelo Probado:** `llama-3.1-8b-128k`
+**Modelo Probado:** `llama-3.1-8b-instant`
 
 ## Metadatos del Artículo Original
 
@@ -61,88 +61,405 @@ CIV reporta daños estructurales en el puente Vado Ancho de la ruta CA-2 occiden
 
 ---
 
-## Resultados de las Tareas (llama-3.1-8b-128k)
+## Resultados de las Tareas (llama-3.1-8b-instant)
 
 ### Tarea: relevancia
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "puntuacion_relevancia": 8,
+    "justificacion_relevancia": "Impugnación de nombramiento de alto funcionario en la SAT",
+    "categorias_asignadas": [
+        "Política Nacional",
+        "Justicia/Legal"
+    ],
+    "explicacion_concisa": "El abogado Mynor Giovanny Caté Chirix interpone una acción en contra de la designación de Werner Ovalle Ramírez como titular de la Superintendencia de Administración Tributaria (SAT). El nombramiento de Ovalle Ramírez fue seleccionado por el directorio de la SAT el 11 de abril, y se realizó su juramentación el mismo día. La impugnación se anuncia a través de la cuenta de Twitter de '¡Yes, Master!', que pertenece a un netcenter conocido por sus intereses en la política guatemalteca."
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "contenido": "El abogado Mynor Giovanny Caté Chirix interpuso una acción en contra de la designación de Werner Florencio Ovalle Ramírez como titular de la Superintendencia de Administración Tributaria (SAT).",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "GT"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "SAT",
+                "Werner Ovalle"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El directorio de la SAT seleccionó a Werner Florencio Ovalle Ramírez como jefe de la SAT, tras realizar una lista de cinco candidatos que superaron los 60 puntos.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-11",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "GT"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "SAT",
+                "Werner Ovalle"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La presidenta de la Corte de Constitucionalidad (CC), Leyla Susana Lemus Arriaga, fue cuestionada por medios de comunicación respecto al amparo interpuesto contra el nombramiento de Ovalle Ramírez.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-20",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "GT"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 6,
+            "confiabilidad": 4,
+            "etiquetas": [
+                "política",
+                "CC",
+                "Leyla Susana Lemus"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El abogado Maynor Caté presentó un amparo ante el Tribunal Constitucional con el que buscaba que los postulantes con mayor calificación ingresaran en la terna de candidatos que sería presentada al entonces presidente Alejandro Giammattei.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-22",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "GT"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "Tribunal Constitucional",
+                "Maynor Caté"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El amparo es un mecanismo de garantía del sistema constitucional.",
+            "tipo_hecho": "CONCEPTO",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "dia",
+            "paises": [],
+            "ubicaciones_especificas": [],
+            "importancia": 5,
+            "confiabilidad": 4,
+            "etiquetas": [
+                "política",
+                "constitución",
+                "amparo"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "nombre": "Mynor Giovanny Caté Chirix",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Consuelo Porras Argueta",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Werner Florencio Ovalle Ramírez",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Jonathan Menkos",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Leyla Susana Lemus Arriaga",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Erick Castillo",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "María Consuelo Porras Argueta",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Jorge Luis Donado Vivar",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Alejandro Giammattei",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Organismo Judicial",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "OJGuatemala"
+            ]
+        },
+        {
+            "nombre": "Ministerio Público (MP)",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "MP"
+            ]
+        },
+        {
+            "nombre": "Superintendencia de Administración Tributaria (SAT)",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "SATGT"
+            ]
+        },
+        {
+            "nombre": "Ministerio de Finanzas Públicas (Minfin)",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "Minfin"
+            ]
+        },
+        {
+            "nombre": "Corte de Constitucionalidad (CC)",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "CC"
+            ]
+        },
+        {
+            "nombre": "Tribunal Constitucional",
+            "tipo": "ORGANIZACION",
+            "alias": []
+        },
+        {
+            "nombre": "Comisión de Postulación para Fiscal General",
+            "tipo": "ORGANIZACION",
+            "alias": []
+        },
+        {
+            "nombre": "Guatemala",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Antigua Guatemala",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Quetzaltenango",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Vado Ancho",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Elecciones Generales España 2023",
+            "tipo": "EVENTO",
+            "alias": []
+        },
+        {
+            "nombre": "Caso Odebrecht",
+            "tipo": "CONCEPTO",
+            "alias": []
+        },
+        {
+            "nombre": "Crisis Migratoria",
+            "tipo": "CONCEPTO",
+            "alias": []
+        },
+        {
+            "nombre": "Caso Gürtel",
+            "tipo": "CONCEPTO",
+            "alias": []
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "cita": "Consumado es --repito, consumado es.",
+            "emisor_nombre": "Mynor Giovanny Caté Chirix",
+            "contexto": "El abogado Mynor Giovanny Caté Chirix interpuso una acción en contra de la designación de Werner Florencio Ovalle Ramírez como titular de la Superintendencia de Administración Tributaria (SAT).",
+            "fecha_cita": null
+        },
+        {
+            "cita": "¡Sueltan a los perros! @OJGuatemala",
+            "emisor_nombre": "Mynor Giovanny Caté Chirix",
+            "contexto": "El abogado Mynor Giovanny Caté Chirix interpuso una acción en contra de la designación de Werner Florencio Ovalle Ramírez como titular de la Superintendencia de Administración Tributaria (SAT).",
+            "fecha_cita": null
+        },
+        {
+            "cita": "ES JURAMENTADO",
+            "emisor_nombre": "Jonathan Menkos",
+            "contexto": "El titular del Ministerio de Finanzas Públicas (Minfin), Jonathan Menkos, manifestó su satisfacción por la elección del nuevo jefe de la SAT.",
+            "fecha_cita": null
+        },
+        {
+            "cita": "Oficial: Werner Ovalle es el nuevo Superintendente de la SAT",
+            "emisor_nombre": "Título de la noticia",
+            "contexto": "La noticia informa sobre la designación de Werner Ovalle Ramírez como titular de la Superintendencia de Administración Tributaria (SAT).",
+            "fecha_cita": null
+        },
+        {
+            "cita": "La Corte tiene conocimiento de un instrumento, y de hecho resuelve con base a un instrumento que se denomina Constitución Política de la República de Guatemala",
+            "emisor_nombre": "Leyla Susana Lemus Arriaga",
+            "contexto": "La presidenta de la Corte de Constitucionalidad (CC), Leyla Susana Lemus Arriaga, fue cuestionada por medios de comunicación respecto al amparo interpuesto contra el nombramiento de Ovalle Ramírez.",
+            "fecha_cita": null
+        },
+        {
+            "cita": "Cómo hacer que la clase política y que las instituciones que tienen entre sus funciones el ejercicio de poder, no lleguen a este tipo de tensiones, que eventualmente tiene que resolver la Corte, yo creo que esa ya es una pregunta que excede a lo que nosotros nos toca",
+            "emisor_nombre": "Leyla Susana Lemus Arriaga",
+            "contexto": "La presidenta de la Corte de Constitucionalidad (CC), Leyla Susana Lemus Arriaga, fue cuestionada por medios de comunicación respecto al amparo interpuesto contra el nombramiento de Ovalle Ramírez.",
+            "fecha_cita": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "indicador": "Número de votos obtenidos por el partido X",
+            "categoria": "electoral",
+            "valor_numerico": 90,
+            "unidad": "votos",
+            "ambito_geografico": [],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Puntaje obtenido por María Consuelo Porras",
+            "categoria": "electoral",
+            "valor_numerico": 90,
+            "unidad": "puntos",
+            "ambito_geografico": [],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de puntos obtenidos por los postulantes",
+            "categoria": "electoral",
+            "valor_numerico": 60,
+            "unidad": "puntos",
+            "ambito_geografico": [],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de años en el periodo 2025-2030",
+            "categoria": "presupuestario",
+            "valor_numerico": 5,
+            "unidad": "años",
+            "ambito_geografico": [],
+            "periodo_referencia_inicio": "2025",
+            "periodo_referencia_fin": "2030",
+            "tipo_periodo": "anual",
+            "fuente_especifica": null,
+            "notas_contexto": null
+        }
+    ]
+}
 ```
 </details>

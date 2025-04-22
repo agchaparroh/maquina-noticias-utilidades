@@ -1,5 +1,5 @@
 # Evaluación Artículo: test_049
-**Modelo Probado:** `llama-3.1-8b-128k`
+**Modelo Probado:** `llama-3.1-8b-instant`
 
 ## Metadatos del Artículo Original
 
@@ -30,88 +30,250 @@ viernes
 
 ---
 
-## Resultados de las Tareas (llama-3.1-8b-128k)
+## Resultados de las Tareas (llama-3.1-8b-instant)
 
 ### Tarea: relevancia
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "puntuacion_relevancia": 7,
+    "justificacion_relevancia": "Relevancia alta debido a la disputa en el uribismo y su impacto en la política colombiana.",
+    "categorias_asignadas": [
+        "Política Nacional",
+        "Política Internacional"
+    ],
+    "explicacion_concisa": "El artículo revela que Miguel Uribe ha gastado $300 millones en eventos y pauta en redes, lo que genera fricciones en el uribismo y tiene implicaciones en la política colombiana. El senador busca consolidar su posición en el Centro Democrático con miras a 2026."
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "contenido": "El senador Miguel Uribe lideró un evento en Medellín el 5 de abril.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-05",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "CO"
+            ],
+            "ubicaciones_especificas": [
+                "Medellín"
+            ],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "elecciones",
+                "uribismo"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La disputa en las huestes del Centro Democrático sigue generando fricciones.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "dia",
+            "paises": [
+                "CO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 6,
+            "confiabilidad": 4,
+            "etiquetas": [
+                "política",
+                "partidos",
+                "fricciones"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El factor dinero marca la diferencia en la disputa del uribismo.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "dia",
+            "paises": [
+                "CO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 6,
+            "confiabilidad": 4,
+            "etiquetas": [
+                "política",
+                "dinero",
+                "elecciones"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Miguel Uribe ha gastado $300 millones en eventos y pauta en redes.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "dia",
+            "paises": [
+                "CO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "gastos",
+                "elecciones"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "nombre": "Miguel Uribe",
+            "tipo": "PERSONA",
+            "alias": [
+                "Uribe"
+            ]
+        },
+        {
+            "nombre": "Centro Democrático",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "CD"
+            ]
+        },
+        {
+            "nombre": "Pico y Placa Medellín",
+            "tipo": "EVENTO",
+            "alias": []
+        },
+        {
+            "nombre": "Medellín",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "2026",
+            "tipo": "EVENTO",
+            "alias": []
+        },
+        {
+            "nombre": "Uríbismo",
+            "tipo": "CONCEPTO",
+            "alias": []
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": []
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "indicador": "Número de votos obtenidos por el senador Miguel Uribe en la carrera por hacerse a la bendición del uribismo con miras a 2026",
+            "categoria": "electoral",
+            "valor_numerico": null,
+            "unidad": null,
+            "ambito_geografico": [
+                "Medellín"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de votos obtenidos por el senador Miguel Uribe en la carrera por hacerse a la bendición del uribismo con miras a 2026",
+            "categoria": "electoral",
+            "valor_numerico": null,
+            "unidad": null,
+            "ambito_geografico": [
+                "Medellín"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de días con restricciones de tráfico en Medellín (Pico y Placa)",
+            "categoria": "otro",
+            "valor_numerico": 2,
+            "unidad": "días",
+            "ambito_geografico": [
+                "Medellín"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": "puntual",
+            "fuente_especifica": null,
+            "notas_contexto": null
+        }
+    ]
+}
 ```
 </details>

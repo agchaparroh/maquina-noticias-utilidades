@@ -1,5 +1,5 @@
 # Evaluación Artículo: test_007
-**Modelo Probado:** `llama-3.1-8b-128k`
+**Modelo Probado:** `llama-3.1-8b-instant`
 
 ## Metadatos del Artículo Original
 
@@ -38,88 +38,352 @@ Apoya a El Nacional
 
 ---
 
-## Resultados de las Tareas (llama-3.1-8b-128k)
+## Resultados de las Tareas (llama-3.1-8b-instant)
 
 ### Tarea: relevancia
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "puntuacion_relevancia": 8,
+    "justificacion_relevancia": "Solicitud a la CPI para evaluar la salud de presos políticos en Venezuela",
+    "categorias_asignadas": [
+        "Política Nacional",
+        "Política Internacional",
+        "Justicia/Legal"
+    ],
+    "explicacion_concisa": "El Partido Centro Democrático solicita a la Corte Penal Internacional que evalúe el estado físico y mental de los presos políticos en Venezuela, denunciando violaciones de derechos humanos por parte del gobierno de Nicolás Maduro."
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "contenido": "El Partido Centro Democrático solicitó a la CPI una evaluación urgente de la salud de los presos políticos.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "VE"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "presos políticos",
+                "CPI",
+                "Venezuela"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El secretario general nacional del Partido Centro Democrático, Yandir Loggiodice, denunció que los presos políticos fueron detenidos por el gobierno de Nicolás Maduro por tener una opinión diferente.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "VE"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "presos políticos",
+                "gobierno",
+                "Venezuela"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El Partido Centro Democrático recordó que solicitó a la CPI hace tres meses la designación de un especialista para evaluar las condiciones de los detenidos.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "VE"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "CPI",
+                "Venezuela",
+                "especialista"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El dirigente destacó que hasta la fecha no se tiene información sobre el paradero ni el estado de salud de figuras como Carlos Azuaje, Freddy Superlano, Luis Camacaro, Juan Fleites, Dignora Hernández, Chancellor, Américo De Grazia, entre otros.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "VE"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "presos políticos",
+                "Venezuela",
+                "personas"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El Partido Centro Democrático reiteró su llamado a la CPI para investigar la situación de presos políticos en Venezuela.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "VE"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "CPI",
+                "Venezuela",
+                "presos políticos"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "nombre": "Yandir Loggiodice",
+            "tipo": "PERSONA",
+            "alias": [
+                "Yandir Loggiodice",
+                "Loggiodice"
+            ]
+        },
+        {
+            "nombre": "Partido Centro Democrático (PCD)",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "PCD"
+            ]
+        },
+        {
+            "nombre": "Corte Penal Internacional (CPI)",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "CPI"
+            ]
+        },
+        {
+            "nombre": "Nicolás Maduro",
+            "tipo": "PERSONA",
+            "alias": [
+                "Maduro"
+            ]
+        },
+        {
+            "nombre": "Carlos Azuaje",
+            "tipo": "PERSONA",
+            "alias": [
+                "Azuaje"
+            ]
+        },
+        {
+            "nombre": "Freddy Superlano",
+            "tipo": "PERSONA",
+            "alias": [
+                "Superlano"
+            ]
+        },
+        {
+            "nombre": "Luis Camacaro",
+            "tipo": "PERSONA",
+            "alias": [
+                "Camacaro"
+            ]
+        },
+        {
+            "nombre": "Juan Fleites",
+            "tipo": "PERSONA",
+            "alias": [
+                "Fleites"
+            ]
+        },
+        {
+            "nombre": "Dignora Hernández",
+            "tipo": "PERSONA",
+            "alias": [
+                "Hernández"
+            ]
+        },
+        {
+            "nombre": "Chancellor",
+            "tipo": "PERSONA",
+            "alias": [
+                "Chancellor"
+            ]
+        },
+        {
+            "nombre": "Américo De Grazia",
+            "tipo": "PERSONA",
+            "alias": [
+                "De Grazia"
+            ]
+        },
+        {
+            "nombre": "El Nacional",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "El Nacional"
+            ]
+        },
+        {
+            "nombre": "Venezuela",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Elecciones",
+            "tipo": "EVENTO",
+            "alias": []
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "cita": "Estas personas fueron detenidas por el usurpador y sus cuerpos de seguridad únicamente por pensar diferente. Ellos son el ejemplo de democracia, libertad y de una manera distinta de ver el país. Su único ‘delito’ fue ser testigos electorales",
+            "emisor_nombre": "Yandir Loggiodice",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "Como partido, recordamos a la comunidad internacional la solicitud que hicimos hace exactamente tres meses a la Corte Penal Internacional. En ella exigimos que, como parte del proceso de investigación que se lleva a cabo sobre Venezuela, se designe un especialista que pueda ingresar a los centros de reclusión para evaluar el estado físico y mental de los detenidos",
+            "emisor_nombre": "Yandir Loggiodice",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "Reiteramos a la Corte Penal Internacional que tienen la potestad de exigir, como parte del proceso de investigación en curso, el ingreso de personal especializado que pueda evaluar a los más de 900 detenidos por el usurpador. ¡Basta de indolencia!",
+            "emisor_nombre": "Yandir Loggiodice",
+            "contexto": null,
+            "fecha_cita": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "indicador": "Número de presos políticos en Venezuela",
+            "categoria": "electoral",
+            "valor_numerico": 900,
+            "unidad": "personas",
+            "ambito_geografico": [
+                "Venezuela"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de meses desde que el partido PCD solicitó a la CPI la designación de un especialista",
+            "categoria": "otro",
+            "valor_numerico": 3,
+            "unidad": "meses",
+            "ambito_geografico": [],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de figuras presas políticas cuyo paradero ni estado de salud se conoce",
+            "categoria": "electoral",
+            "valor_numerico": 9,
+            "unidad": "personas",
+            "ambito_geografico": [
+                "Venezuela"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        }
+    ]
+}
 ```
 </details>

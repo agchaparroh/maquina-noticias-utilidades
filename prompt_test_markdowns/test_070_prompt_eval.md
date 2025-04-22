@@ -1,5 +1,5 @@
 # Evaluación Artículo: test_070
-**Modelo Probado:** `llama-3.1-8b-128k`
+**Modelo Probado:** `llama-3.1-8b-instant`
 
 ## Metadatos del Artículo Original
 
@@ -107,21 +107,27 @@ Apoya a El Nacional
 
 ---
 
-## Resultados de las Tareas (llama-3.1-8b-128k)
+## Resultados de las Tareas (llama-3.1-8b-instant)
 
 ### Tarea: relevancia
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "puntuacion_relevancia": 8,
+    "justificacion_relevancia": "Relevancia alta debido a la participación de figuras políticas clave en Venezuela",
+    "categorias_asignadas": [
+        "Política Nacional",
+        "Elecciones",
+        "Justicia/Legal"
+    ],
+    "explicacion_concisa": "El artículo informa sobre la lista de candidatos postulados por el partido Un Nuevo Tiempo (UNT) para las elecciones parlamentarias y regionales en Venezuela, liderados por Henrique Capriles Radonski y Tomás Guanipa. La lista incluye a figuras políticas clave y se destaca la participación de Capriles, quien ha sido inhabilitado para ejercer cargos de elección popular."
+}
 ```
 </details>
 
@@ -130,7 +136,7 @@ Error: No content received or generated
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+   **Mensaje Error:** `API_Error: BadRequestError: Error code: 400 - {'error': {'message': "Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': '{\n   "resultados": [\n      {\n         "contenido": "Henrique Capriles Radonski y Tomás Guanipa lideran la lista de postulaciones del partido Un Nuevo Tiempo (UNT) para las elecciones parlamentarias y regionales del 25 de mayo en Venezuela.",\n         "tipo_hecho": "SUCESO",\n         "fecha_ocurrencia_inicio": "2025-04-14",\n         "fecha_ocurrencia_fin": null,\n         "precision_temporal": "exacta",\n         "paises": ["VE"],\n         "ubicaciones_especificas": [],\n         "importancia": 8,\n         "confiabilidad": 5,\n         "etiquetas": ["política", "elecciones", "Venezuela"],\n         "es_evento_futuro": false,\n         "estado_programacion": null\n      },\n      {\n         "contenido": "Capriles confirmó que participará en los comicios y adelantó que después de Semana Santa ofrecerá más detalles.",\n         "tipo_hecho": "DECLARACION",\n         "fecha_ocurrencia_inicio": "2025-04-14",\n         "fecha_ocurrencia_fin": null,\n         "precision_temporal": "exacta",\n         "paises": ["VE"],\n         "ubicaciones_especificas": [],\n         "importancia": 7,\n         "confiabilidad": 5,\n         "etiquetas": ["política", "elecciones", "Capriles"],\n         "es_evento_futuro": false,\n         "estado_programacion": null\n      },\n      {\n         "contenido": "La lista de postulaciones del partido Un Nuevo Tiempo (UNT) para las elecciones parlamentarias y regionales del 25 de mayo en Venezuela incluye a Henrique Capriles Radonski, Tomás Guanipa, Luis Emilio Rondón, Stalin González, Henri Falcón, Pablo Pérez, Felipe Mujica, Luis Florido, Hilda Rubí González, Amelia Belisario y Julio César Reyes.",\n         "tipo_hecho": "SUCESO",\n         "fecha_ocurrencia_inicio": "2025-04-14",\n         "fecha_ocurrencia_fin": null,\n         "precision_temporal": "exacta",\n         "paises": ["VE"],\n         "ubicaciones_especificas": [],\n         "importancia": 8,\n         "confiabilidad": 5,\n         "etiquetas": ["política", "elecciones", "Venezuela"],\n         "es_evento_futuro": false,\n         "estado_programacion": null\n      },\n      {\n         "contenido": "La organización política también incluyó en sus candidaturas a figuras como Luis Emilio Rondón, Stalin González, Henri Falcón, Pablo Pérez, Felipe Mujica, Luis Florido, Hilda Rubí González, Amelia Belisario y Julio César Reyes.",\n         "tipo_hecho": "SUCESO",\n         "fecha_ocurrencia_inicio": "2025-04-14",\n         "fecha_ocurrencia_fin": null,\n         "precision_temporal": "exacta",\n         "paises": ["VE"],\n         "ubicaciones_especificas": [],\n         "importancia": 7,\n         "confiabilidad": 5,\n         "etiquetas": ["política", "elecciones", "Venezuela"],\n         "es_evento_futuro": false,\n         "estado_programacion": null\n      },\n      {\n         "contenido": "La lista de postulaciones del partido Un Nuevo Tiempo (UNT) para las elecciones parlamentarias y regionales del 25 de mayo en Venezuela incluye a 40 candidatos.",\n         "tipo_hecho": "SUCESO",\n         "fecha_ocurrencia_inicio": "2025-04-14",\n         "fecha_ocurrencia_fin": null,\n         "precision_temporal": "exacta",\n         "paises": ["VE"],\n         "ubicaciones_especificas": [],\n         "importancia": 8,\n         "confiabilidad": 5,\n         "etiquetas": ["política", "elecciones", "Venezuela"],\n         "es_evento_futuro": false,\n         "estado_programacion": null\n      },\n      {\n         "contenido": "La lista de postulaciones del partido Un Nuevo Tiempo (UNT) para las elecciones parlamentarias y regionales del 25 de mayo en Venezuela incluye a figuras como Luis Emilio Rondón, Stalin González, Henri Falcón, Pablo Pérez, Felipe Mujica, Luis Florido, Hilda Rubí González, Amelia Belisario y Julio César Reyes.",\n         "tipo_hecho": "SUCESO",\n         "fecha_ocurrencia_inicio": "2025-04-14",\n         "fecha_ocurrencia_fin": null,\n         "precision_temporal": "exacta",\n         "paises": ["VE"],\n         "ubicaciones_especificas": [],\n         "importancia": 8,\n         "confiabilidad": 5,\n         "etiquetas": ["política", "elecciones", "Venezuela"],\n         "es_evento_futuro": false,\n         "estado_programacion": null\n      },\n      {\n         "contenido": "La organización política también incluyó en sus candidaturas a figuras como Luis Emilio Rondón, Stalin González, Henri Falcón, Pablo Pérez, Felipe Mujica, Luis Florido, Hilda Rubí González, Amelia Belisario y Julio César Reyes.",\n         "tipo_hecho": "SUCESO",\n         "fecha_ocurrencia_inicio": "2025-04-14",\n         "fecha_ocurrencia_fin": null,\n         "precision_temporal": "exacta",\n         "paises": ["VE"],\n         "ubicaciones_especificas": [],\n         "importancia": 7,\n         "confiabilidad": 5,\n         "etiquetas": ["política", "elecciones", "Venezuela"],\n         "es_evento_futuro": false,\n         "estado_programacion": null\n      },\n      {\n         "contenido": "La lista de postulaciones del partido Un Nuevo Tiempo (UNT) para las elecciones parlamentarias y regionales del 25 de mayo en Venezuela incluye a 40 candidatos.",\n         "tipo_hecho": "SUCESO",\n         "fecha_ocurrencia_inicio": "2025-04-14",\n         "fecha_ocurrencia_fin": null,\n         "precision_temporal": "exacta",\n         "paises": ["VE"],\n         "ubicaciones_especificas": [],\n         "importancia": 8,\n         "confiabilidad": 5,\n         "etiquetas": ["política", "elecciones", "Venezuela"],\n         "es_evento_futuro": false,\n         "estado_programacion": null\n      },\n      {\n         "contenido": "La lista de postulaciones del partido Un Nuevo Tiempo (UNT) para las elecciones parlamentarias y regionales del 25 de mayo en Venezuela incluye a figuras como Luis Emilio Rondón, Stalin González, Henri Falcón, Pablo Pérez, Felipe Mujica, Luis Florido, Hilda Rubí González, Amelia Belisario y Julio César Reyes.",\n         "tipo_hecho": "SUCESO",\n         "fecha_ocurrencia_inicio": "2025-04-14",\n         "fecha_ocurrencia_fin": null,\n         "precision_temporal": "exacta",\n         "paises": ["VE"],\n         "ubicaciones_especificas": [],\n         "importancia": 8,\n         "confiabilidad": 5,\n         "etiquetas": ["política", "elecciones", "Venezuela"],\n         "es_evento_futuro": false,\n         "estado_programacion": null\n      },\n      {\n         "contenido": "La lista de postulaciones del partido Un Nuevo Tiempo (UNT) para las elecciones parlamentarias y regionales del 25 de mayo en Venezuela incluye a 40 candidatos.",\n         "tipo_hecho": "SUCESO",\n         "fecha_ocurrencia_inicio": "2025-04-14",\n         "fecha_ocurrencia_fin": null,\n         "precision_temporal": "exacta",\n         "paises": ["VE"],\n         "ubicaciones_especificas": [],\n         "importancia": 8,\n         "confiabilidad": 5,\n         "etiquetas": ["política", "elecciones", "Venezuela"],\n         "es_evento_futuro": false,\n         "estado_programacion": null\n      },\n      {\n         "contenido": "La lista de postulaciones del partido Un Nuevo Tiempo (UNT) para las elecciones parlamentarias y regionales del 25 de mayo en Venezuela incluye a figuras como Luis Emilio Rondón, Stalin González, Henri Falcón, Pablo Pérez, Felipe Mujica, Luis Florido, Hilda Rubí González, Amelia Belisario y Julio César Reyes.",\n         "tipo_hecho": "SUCESO",\n         "fecha_ocurrencia_inicio": "2025-04-14",\n         "fecha_ocurrencia_fin": null,\n         "precision_temporal": "exacta",\n         "paises": ["VE"],\n         "ubicaciones_especificas": [],\n         "importancia": 8,\n         "confiabilidad": 5,\n         "etiquetas": ["política", "elecciones", "Venezuela"],\n         "es_evento_futuro": false,\n         "estado_programacion": null\n      },\n      {\n         "contenido": "La lista de postulaciones del partido Un Nuevo Tiempo (UNT) para las elecciones parlamentarias y regionales del 25 de mayo en Venezuela incluye a 40 candidatos.",\n         "tipo_hecho": "SUCESO",\n         "fecha_ocurrencia_inicio": "2025-04-14",\n         "fecha_ocurrencia_fin": null,\n         "precision_temporal": "exacta",\n         "paises": ["VE"],\n         "ubicaciones_especificas": [],\n         "importancia": 8,\n         "confiabilidad": 5,\n         "etiquetas": ["política", "elecciones", "Venezuela"],\n         "es_evento_futuro": false,\n         "estado_programacion": null\n      },\n      {\n         "contenido": "La lista de postulaciones del partido Un Nuevo Tiempo (UNT) para las elecciones parlamentarias y regionales del 25 de mayo en Venezuela incluye a figuras como Luis Emilio Rondón, Stalin González, Henri Falcón, Pablo Pérez, Felipe Mujica, Luis Florido, Hilda Rubí González, Amelia Belisario y Julio César Reyes.",\n         "tipo_hecho": "SUCESO",\n         "fecha_ocurrencia_inicio": "2025-04-14",\n         "fecha_ocurrencia_fin": null,\n         "precision_temporal": "exacta",\n         "paises": ["VE"],\n         "ubicaciones_especificas": [],\n         "importancia": 8,\n         "confiabilidad": 5,\n         "etiquetas": ["política", "elecciones", "Venezuela"],\n         "es_evento_futuro": false,\n         "estado_programacion": null\n      },\n      {\n         "contenido": "La lista de postulaciones del partido Un Nuevo Tiempo (UNT) para las elecciones parlamentarias y regionales del 25 de mayo en Venezuela incluye a 40 candidatos.",\n         "tipo_hecho": "SUCESO",\n         "fecha_ocurrencia_inicio": "2025-04-14",\n         "fecha_ocurrencia_fin": null,\n         "precision_temporal": "exacta",\n         "paises": ["VE"],\n         "ubicaciones_especificas": [],\n         "importancia": 8,\n         "confiabilidad": 5,\n         "etiquetas": ["política", "elecciones", "Venezuela"],\n         "es_evento_futuro": false,\n         "estado_programacion": null\n      },\n      {\n         "contenido": "La lista de postulaciones del partido Un Nuevo Tiempo (UNT) para las elecciones parlamentarias y regionales del 25 de mayo en Venezuela incluye a figuras como Luis Emilio Rondón, Stalin González, Henri Falcón, Pablo Pérez, Felipe Mujica, Luis Florido, Hilda Rubí González, Amelia Belisario y Julio César Reyes.",\n         "tipo_hecho": "SUCESO",\n         "fecha_ocurrencia_inicio": "2025-04-14",\n         "fecha_ocurrencia_fin": null,\n         "precision_temporal": "exacta",\n         "paises": ["VE"],\n         "ubicaciones_especificas": [],\n         "importancia": 8,\n         "confiabilidad": 5,\n         "etiquetas": ["política", "elecciones", "Venezuela"],\n         "es_evento_futuro": false,\n         "estado_programacion": null\n      },\n      {\n         "contenido": "La lista de postulaciones del partido Un Nuevo Tiempo (UNT) para las elecciones parlamentarias y regionales del 25 de mayo en Venezuela incluye a 40 candidatos.",\n         "tipo_hecho": "SUCESO",\n         "fecha_ocurrencia_inicio": "2025-04-14",\n         "fecha_ocurrencia_fin": null,\n         "precision_temporal": "exacta",\n         "paises": ["VE"],\n         "ubicaciones_especificas": [],\n         "importancia": 8,\n         "confiabilidad": 5,\n         "etiquetas": ["política", "elecciones", "Venezuela"],\n         "es_evento_futuro": false,\n         "estado_programacion": null\n      },\n      {\n         "contenido": "La lista de postulaciones del partido Un Nuevo Tiempo (UNT) para las elecciones parlamentarias y regionales del 25 de mayo en Venezuela incluye a figuras como Luis Emilio Rondón, Stalin González, Henri Falcón, Pablo Pérez, Felipe Mujica, Luis Florido, Hilda Rubí González, Amelia Belisario y Julio César Reyes.",\n         "tipo_hecho": "SUCESO",\n         "fecha_ocurrencia_inicio": "2025-04-14",\n         "fecha_ocurrencia_fin": null,\n         "precision_temporal": "exacta",\n         "paises": ["VE"],\n         "ubicaciones_especificas": [],\n         "importancia": 8,\n         "confiabilidad": 5,\n         "etiquetas": ["política", "elecciones", "Venezuela"],\n         "es_evento_futuro": false,\n         "estado_programacion": null\n      },\n      {\n         "contenido": "La lista de postulaciones del partido Un Nuevo Tiempo (UNT) para las elecciones parlamentarias y regionales del 25 de mayo en Venezuela incluye a 40 candidatos.",\n         "tipo_hecho": "SUCESO",\n         "fecha_ocurrencia_inicio": "2025-04-14",\n         "fecha_ocurrencia_fin": null,\n         "precision_temporal": "exacta",\n         "paises": ["VE"],\n         "ubicaciones_especificas": [],\n         "importancia": 8,\n         "confiabilidad": 5,\n         "etiquetas": ["política", "elecciones", "Venezuela"],\n         "es_evento_futuro": false,\n         "estado_programacion": null\n      },\n      {\n         "contenido": "La lista de postulaciones del partido Un Nuevo Tiempo (UNT) para las elecciones parlamentarias y regionales del 25 de mayo en Venezuela incluye a figuras como Luis Emilio Rondón, Stalin González, Henri Falcón, Pablo Pérez, Felipe Mujica, Luis Florido, Hilda Rubí González, Amelia Belisario y Julio César Reyes.",\n         "tipo_hecho": "SUCESO",\n         "fecha_ocurrencia_inicio": "2025-04-14",\n         "fecha_ocurrencia_fin": null,\n         "precision_temporal": "exacta",\n         "paises": ["VE"],\n         "ubicaciones_especificas": [],\n         "importancia": 8,\n         "confiabilidad": 5,\n         "etiquetas": ["política", "elecciones", "Venezuela"],\n         "es_evento_futuro": false,\n         "estado_programacion": null\n      },\n      {\n         "contenido": "La lista de postulaciones del partido Un Nuevo Tiempo (UNT) para las elecciones parlamentarias y regionales del 25 de mayo en Venezuela incluye a 40 candidatos.",\n         "tipo_hecho": "SUCESO",\n         "fecha_ocurrencia_inicio": "2025-04-14",\n         "fecha_ocurrencia_fin": null,\n         "precision_temporal": "exacta",\n         "paises": ["VE"],\n         "ubicaciones_especificas": [],\n         "importancia": 8,\n         "confiabilidad": 5,\n         "etiquetas": ["política", "elecciones", "Venezuela"],\n         "es_evento_futuro": false,\n         "estado_programacion": null\n      },\n      {\n         "contenido": "La lista de postulaciones del partido Un Nuevo Tiempo (UNT) para las elecciones parlamentarias y regionales del 25 de mayo en Venezuela incluye a figuras como Luis Emilio Rondón, Stalin González, Henri Falcón, Pablo Pérez, Felipe Mujica, Luis Florido, Hilda Rubí González, Amelia Belisario y Julio César Reyes.",\n         "tipo_hecho": "SUCESO",\n         "fecha_ocurrencia_inicio": "2025-04-14",\n         "fecha_ocurrencia_fin": null,\n         "precision_temporal": "exacta",\n         "paises": ["VE"],\n         "ubicaciones_especificas": [],\n         "importancia": 8,\n         "confiabilidad": 5,\n         "etiquetas": ["política", "elecciones", "Venezuela"],\n         "es_evento_futuro": false,\n         "estado_programacion": null\n      }}'}}`
 
 
 <details open>
@@ -145,50 +151,373 @@ Error: No content received or generated
 
 ### Tarea: extraccion_entidades
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "nombre": "Henrique Capriles Radonski",
+            "tipo": "PERSONA",
+            "alias": [
+                "Henrique Capriles",
+                "Capriles"
+            ]
+        },
+        {
+            "nombre": "Tomás Guanipa Villalobos",
+            "tipo": "PERSONA",
+            "alias": [
+                "Tomás Guanipa",
+                "Guanipa"
+            ]
+        },
+        {
+            "nombre": "Eugenio Martínez",
+            "tipo": "PERSONA",
+            "alias": [
+                "Eugenio G. Martínez",
+                "Martínez"
+            ]
+        },
+        {
+            "nombre": "Un Nuevo Tiempo (UNT)",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "UNT"
+            ]
+        },
+        {
+            "nombre": "Elecciones parlamentarias y regionales de Venezuela del 25 de mayo",
+            "tipo": "EVENTO",
+            "alias": []
+        },
+        {
+            "nombre": "Venezuela",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Juan Requesens",
+            "tipo": "PERSONA",
+            "alias": [
+                "Juan Requesens"
+            ]
+        },
+        {
+            "nombre": "Luis Emilio Rondón Hernández",
+            "tipo": "PERSONA",
+            "alias": [
+                "Luis Emilio Rondón",
+                "Rondón"
+            ]
+        },
+        {
+            "nombre": "Stalin González Montaño",
+            "tipo": "PERSONA",
+            "alias": [
+                "Stalin González",
+                "González"
+            ]
+        },
+        {
+            "nombre": "Henri José Falcón Fuentes",
+            "tipo": "PERSONA",
+            "alias": [
+                "Henri Falcón",
+                "Falcón"
+            ]
+        },
+        {
+            "nombre": "Pablo Martín Pérez Alvárez",
+            "tipo": "PERSONA",
+            "alias": [
+                "Pablo Pérez",
+                "Pérez"
+            ]
+        },
+        {
+            "nombre": "Felipe Elías Mujica Hernández",
+            "tipo": "PERSONA",
+            "alias": [
+                "Felipe Mujica",
+                "Mujica"
+            ]
+        },
+        {
+            "nombre": "Luis Germán Florido Barreto",
+            "tipo": "PERSONA",
+            "alias": [
+                "Luis Florido",
+                "Florido"
+            ]
+        },
+        {
+            "nombre": "Hilda Rubí González Casique",
+            "tipo": "PERSONA",
+            "alias": [
+                "Hilda Rubí González",
+                "Rubí González"
+            ]
+        },
+        {
+            "nombre": "Amelia Geraldine Belisario Socorro",
+            "tipo": "PERSONA",
+            "alias": [
+                "Amelia Belisario",
+                "Belisario"
+            ]
+        },
+        {
+            "nombre": "Julio César Reyes",
+            "tipo": "PERSONA",
+            "alias": [
+                "Julio César Reyes"
+            ]
+        },
+        {
+            "nombre": "Diosdado Cabello",
+            "tipo": "PERSONA",
+            "alias": [
+                "Diosdado Cabello"
+            ]
+        },
+        {
+            "nombre": "Maduro",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "AN de UNT-Unica",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "AN de UNT-Unica"
+            ]
+        },
+        {
+            "nombre": "Elecciones parlamentarias y regionales de Venezuela del 25 de mayo",
+            "tipo": "EVENTO",
+            "alias": []
+        },
+        {
+            "nombre": "Venezuela",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "El Nacional",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "El Nacional"
+            ]
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "cita": "esta forma de elección que se aplica desde 2020 es inconstitucional",
+            "emisor_nombre": "Eugenio Martínez",
+            "contexto": "El experto en temas electorales Eugenio Martínez recordó que esta forma de elección es inconstitucional",
+            "fecha_cita": null
+        },
+        {
+            "cita": "Nosotros debemos seguir buscando que en Venezuela se respete el voto democrático. Yo esto lo veo como un desafío gigantesco contracorriente",
+            "emisor_nombre": "Henrique Capriles Radonski",
+            "contexto": "Capriles opinó a través de un audio difundido en su canal de WhatsApp",
+            "fecha_cita": null
+        },
+        {
+            "cita": "Lo más fácil sería no hacer nada",
+            "emisor_nombre": "Henrique Capriles Radonski",
+            "contexto": "El dirigente afirmó que su decisión no se trata de popularidad sino de compromiso",
+            "fecha_cita": null
+        },
+        {
+            "cita": "Evitar a toda costa que este país entre en la resignación y en la desesperanza, que eso lo que trae es que haya más venezolanos fuera del país, no hay que tirar la toalla",
+            "emisor_nombre": "Henrique Capriles Radonski",
+            "contexto": "Capriles afirmó",
+            "fecha_cita": null
+        },
+        {
+            "cita": "no podría ejercer funciones políticas hasta 2032",
+            "emisor_nombre": "Diosdado Cabello",
+            "contexto": "El ministro de Interior del gobierno de Maduro aseguraba en febrero",
+            "fecha_cita": "febrero"
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "indicador": "Número de postulados a la lista nacional de la AN de UNT-Unica",
+            "categoria": "electoral",
+            "valor_numerico": 50,
+            "unidad": "personas",
+            "ambito_geografico": [
+                "Venezuela"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de postulados a la lista nacional de la AN de UNT-Unica",
+            "categoria": "electoral",
+            "valor_numerico": 2,
+            "unidad": "personas",
+            "ambito_geografico": [
+                "Venezuela"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": "Estos son los dos primeros postulados mencionados en el texto"
+        },
+        {
+            "indicador": "Número de postulados a la lista nacional de la AN de UNT-Unica",
+            "categoria": "electoral",
+            "valor_numerico": 1,
+            "unidad": "persona",
+            "ambito_geografico": [
+                "Venezuela"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": "Esto es el postulado mencionado en el texto como 'HCR'"
+        },
+        {
+            "indicador": "Número de postulados a la lista nacional de la AN de UNT-Unica",
+            "categoria": "electoral",
+            "valor_numerico": 1,
+            "unidad": "persona",
+            "ambito_geografico": [
+                "Venezuela"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": "Esto es el postulado mencionado en el texto como 'Luis Emilio Rondón'"
+        },
+        {
+            "indicador": "Número de postulados a la lista nacional de la AN de UNT-Unica",
+            "categoria": "electoral",
+            "valor_numerico": 1,
+            "unidad": "persona",
+            "ambito_geografico": [
+                "Venezuela"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": "Esto es el postulado mencionado en el texto como 'Stalin González'"
+        },
+        {
+            "indicador": "Número de postulados a la lista nacional de la AN de UNT-Unica",
+            "categoria": "electoral",
+            "valor_numerico": 1,
+            "unidad": "persona",
+            "ambito_geografico": [
+                "Venezuela"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": "Esto es el postulado mencionado en el texto como 'Tomás Guanipa'"
+        },
+        {
+            "indicador": "Número de postulados a la lista nacional de la AN de UNT-Unica",
+            "categoria": "electoral",
+            "valor_numerico": 1,
+            "unidad": "persona",
+            "ambito_geografico": [
+                "Venezuela"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": "Esto es el postulado mencionado en el texto como 'Henri Falcón'"
+        },
+        {
+            "indicador": "Número de postulados a la lista nacional de la AN de UNT-Unica",
+            "categoria": "electoral",
+            "valor_numerico": 1,
+            "unidad": "persona",
+            "ambito_geografico": [
+                "Venezuela"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": "Esto es el postulado mencionado en el texto como 'Pablo Pérez'"
+        },
+        {
+            "indicador": "Número de postulados a la lista nacional de la AN de UNT-Unica",
+            "categoria": "electoral",
+            "valor_numerico": 1,
+            "unidad": "persona",
+            "ambito_geografico": [
+                "Venezuela"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": "Esto es el postulado mencionado en el texto como 'Felipe Mujica'"
+        },
+        {
+            "indicador": "Fecha de inicio del periodo al que se refiere el dato",
+            "categoria": "otro",
+            "valor_numerico": null,
+            "unidad": null,
+            "ambito_geografico": [],
+            "periodo_referencia_inicio": "2020",
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": "Esta es la fecha de inicio del periodo al que se refiere el dato"
+        }
+    ]
+}
 ```
 </details>

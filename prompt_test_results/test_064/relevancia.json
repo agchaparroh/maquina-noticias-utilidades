@@ -1,10 +1,10 @@
 {
     "test_id": "test_064",
     "tarea": "relevancia",
-    "model_id": "llama-3.1-8b-128k",
-    "success": false,
-    "api_success": false,
-    "json_valid": false,
-    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
-    "llm_response_content": "Error: No content received or generated"
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 7,\n   \"justificacion_relevancia\": \"Relevancia alta debido a la información sobre disidencias de las Farc y operaciones militares\",\n   \"categorias_asignadas\": [\"Conflicto/Seguridad\", \"Política Nacional\"],\n   \"explicacion_concisa\": \"El artículo informa sobre la operación militar en Caquetá, donde se hallaron elementos personales de 'Iván Mordisco', jefe del Estado Mayor Central de las disidencias de las Farc. El ministro de Defensa confirmó que no fue abatido en la operación, y se menciona una posible ruptura al interior de las disidencias.\"\n}"
 }

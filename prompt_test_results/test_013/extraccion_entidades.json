@@ -1,10 +1,10 @@
 {
     "test_id": "test_013",
     "tarea": "extraccion_entidades",
-    "model_id": "llama-3.1-8b-128k",
-    "success": false,
-    "api_success": false,
-    "json_valid": false,
-    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
-    "llm_response_content": "Error: No content received or generated"
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Sergio Vela\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Dirección General del Sistema Penitenciario (DGSP)\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"DGSP\"]\n      },\n      {\n         \"nombre\": \"Centro de Rehabilitación de Puerto Barrios\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": [\"Puerto Barrios\"]\n      },\n      {\n         \"nombre\": \"Izabal\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Policía Nacional Civil (PNC)\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"PNC\"]\n      },\n      {\n         \"nombre\": \"Marcos Baudilio Godoy Trujillo\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Los Falsos Pastores\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Granja Penal Canadá\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": [\"Renovación I\"]\n      },\n      {\n         \"nombre\": \"Renovación Penitenciaria\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Netcenters\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"SAT\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Antigua Guatemala\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Caso Odebrecht\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Quetzaltenango\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"CIV\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Vado Ancho\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"ruta CA-2 occidente\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      }\n   ]\n}"
 }

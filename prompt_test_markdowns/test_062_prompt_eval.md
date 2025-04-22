@@ -1,5 +1,5 @@
 # Evaluación Artículo: test_062
-**Modelo Probado:** `llama-3.1-8b-128k`
+**Modelo Probado:** `llama-3.1-8b-instant`
 
 ## Metadatos del Artículo Original
 
@@ -37,88 +37,414 @@ Abinader dijo sentir ese mismo dolor por "estos 231 dominicanos y dominicanas qu
 
 ---
 
-## Resultados de las Tareas (llama-3.1-8b-128k)
+## Resultados de las Tareas (llama-3.1-8b-instant)
 
 ### Tarea: relevancia
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "puntuacion_relevancia": 8,
+    "justificacion_relevancia": "La tragedia del Jet Set tiene un impacto emocional y político significativo en la República Dominicana.",
+    "categorias_asignadas": [
+        "Política Nacional",
+        "Conflicto/Seguridad"
+    ],
+    "explicacion_concisa": "El presidente de la República Dominicana, Luis Abinader, habla sobre la tragedia del Jet Set, que causó 231 muertes, y confiesa que le ha causado un 'dolor muy fuerte' personal y como presidente. Abinader menciona que perdió a 11 personas cercanas, incluyendo a amigos y familiares lejanos."
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "contenido": "El presidente de la República Dominicana, Luis Abinader, habló sobre la tragedia en el Jet Set.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "DO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "tragedia",
+                "Jet Set"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El presidente Abinader confesó que el hecho le provocó un 'fuerte impacto emocional' debido a la cantidad de dominicanos que perdieron la vida.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "DO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "tragedia",
+                "emoción"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El presidente Abinader mencionó que había perdido a 11 personas cercanas, algunas familias lejanas, en la tragedia.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "DO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "tragedia",
+                "perdida"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El presidente Abinader habló del tema durante LA Semanal con la Prensa.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "DO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 6,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "tragedia",
+                "LA Semanal"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El presidente Abinader visitó la zona cero y expresó su dolor y consternación de manera pública.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "DO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 6,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "tragedia",
+                "zona cero"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El presidente Abinader expresó que 'siente el mismo dolor que siente cada uno de ustedes' en referencia a la población dominicana.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "DO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "tragedia",
+                "dolor"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El presidente Abinader mencionó que la tragedia del Jet Set lo ha tocado y causado 'un dolor muy fuerte'.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "DO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "tragedia",
+                "dolor"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El presidente Abinader habló de la tragedia del Jet Set durante un mensaje en sus redes sociales.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "DO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 6,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "tragedia",
+                "redes sociales"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "nombre": "Luis Abinader",
+            "tipo": "PERSONA",
+            "alias": [
+                "Luis Abinader",
+                "Abinader"
+            ]
+        },
+        {
+            "nombre": "Luis Abinader sobre tragedia en el Jet Set",
+            "tipo": "EVENTO",
+            "alias": []
+        },
+        {
+            "nombre": "Jet Set",
+            "tipo": "LUGAR",
+            "alias": [
+                "Jet Set"
+            ]
+        },
+        {
+            "nombre": "República Dominicana",
+            "tipo": "LUGAR",
+            "alias": [
+                "República Dominicana"
+            ]
+        },
+        {
+            "nombre": "LA Semanal con la Prensa",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "LA Semanal con la Prensa"
+            ]
+        },
+        {
+            "nombre": "Eduardo Estrella",
+            "tipo": "PERSONA",
+            "alias": [
+                "Eduardo Estrella"
+            ]
+        },
+        {
+            "nombre": "Guarionex Estrella Cruz",
+            "tipo": "PERSONA",
+            "alias": [
+                "Guarionex Estrella Cruz"
+            ]
+        },
+        {
+            "nombre": "Alexandra Grullón",
+            "tipo": "PERSONA",
+            "alias": [
+                "Alexandra Grullón"
+            ]
+        },
+        {
+            "nombre": "Grupo Popular",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "Grupo Popular"
+            ]
+        },
+        {
+            "nombre": "Ministro de Obras Públicas",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "Ministro de Obras Públicas"
+            ]
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "cita": "Este ha sido un golpe muy duro para mí",
+            "emisor_nombre": "Luis Abinader",
+            "contexto": "Luis Abinader habló de la tragedia del Jet Set en LA Semanal con la Prensa",
+            "fecha_cita": null
+        },
+        {
+            "cita": "siente el mismo dolor que siente cada uno de ustedes",
+            "emisor_nombre": "Luis Abinader",
+            "contexto": "Luis Abinader habló de la tragedia del Jet Set en LA Semanal con la Prensa",
+            "fecha_cita": null
+        },
+        {
+            "cita": "un dolor muy fuerte",
+            "emisor_nombre": "Luis Abinader",
+            "contexto": "Luis Abinader habló de la tragedia del Jet Set en LA Semanal con la Prensa",
+            "fecha_cita": null
+        },
+        {
+            "cita": "Aún no haya conocido a muchos, como obviamente no haya conocido a muchos, pero personalmente y también como presidente, ha sido un golpe muy duro, emocionalmente muy fuerte",
+            "emisor_nombre": "Luis Abinader",
+            "contexto": "Luis Abinader habló de la tragedia del Jet Set en LA Semanal con la Prensa",
+            "fecha_cita": null
+        },
+        {
+            "cita": "Yo tuve muchos amigos, yo fui el padrino de la boda de Eduardo Estrella y somos familias, familia lejana, tercer primo, somos familia. Ahí había siete u ocho personas conocidas, muy cercanas, amigos, que nos habíamos reunidos dos o tres días antes, puedo mencionarte once o doce personas",
+            "emisor_nombre": "Luis Abinader",
+            "contexto": "Luis Abinader habló de la tragedia del Jet Set en LA Semanal con la Prensa",
+            "fecha_cita": null
+        },
+        {
+            "cita": "estos 231 dominicanos y dominicanas que han fallecidos",
+            "emisor_nombre": "Luis Abinader",
+            "contexto": "Luis Abinader habló de la tragedia del Jet Set en LA Semanal con la Prensa",
+            "fecha_cita": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "indicador": "Número de muertos en la tragedia del Jet Set",
+            "categoria": "demográfico",
+            "valor_numerico": 231,
+            "unidad": "personas",
+            "ambito_geografico": [
+                "República Dominicana"
+            ],
+            "periodo_referencia_inicio": "null",
+            "periodo_referencia_fin": "null",
+            "tipo_periodo": "puntual",
+            "fuente_especifica": "null",
+            "notas_contexto": "null"
+        },
+        {
+            "indicador": "Número de personas cercanas al presidente Abinader que perdieron la vida",
+            "categoria": "demográfico",
+            "valor_numerico": 11,
+            "unidad": "personas",
+            "ambito_geografico": [
+                "República Dominicana"
+            ],
+            "periodo_referencia_inicio": "null",
+            "periodo_referencia_fin": "null",
+            "tipo_periodo": "puntual",
+            "fuente_especifica": "null",
+            "notas_contexto": "null"
+        },
+        {
+            "indicador": "Número de personas conocidas por el presidente Abinader que perdieron la vida",
+            "categoria": "demográfico",
+            "valor_numerico": 11,
+            "unidad": "personas",
+            "ambito_geografico": [
+                "República Dominicana"
+            ],
+            "periodo_referencia_inicio": "null",
+            "periodo_referencia_fin": "null",
+            "tipo_periodo": "puntual",
+            "fuente_especifica": "null",
+            "notas_contexto": "null"
+        },
+        {
+            "indicador": "Número de miembros de la familia de Alexandra Grullón que perdieron la vida",
+            "categoria": "demográfico",
+            "valor_numerico": 4,
+            "unidad": "personas",
+            "ambito_geografico": [
+                "República Dominicana"
+            ],
+            "periodo_referencia_inicio": "null",
+            "periodo_referencia_fin": "null",
+            "tipo_periodo": "puntual",
+            "fuente_especifica": "null",
+            "notas_contexto": "null"
+        }
+    ]
+}
 ```
 </details>

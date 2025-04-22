@@ -1,10 +1,10 @@
 {
     "test_id": "test_014",
     "tarea": "extraccion_datos",
-    "model_id": "llama-3.1-8b-128k",
-    "success": false,
-    "api_success": false,
-    "json_valid": false,
-    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
-    "llm_response_content": "Error: No content received or generated"
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Número de arrestos de extranjeros en condición irregular y con antecedentes penales en Costa Rica\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": 1,\n         \"unidad\": \"persona\",\n         \"ambito_geografico\": [\"Costa Rica\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Número de individuos vinculados a organizaciones criminales detenidos en Costa Rica durante la Semana Santa\",\n         \"categoria\": \"conflicto\",\n         \"valor_numerico\": 1,\n         \"unidad\": \"persona\",\n         \"ambito_geografico\": [\"Costa Rica\"],\n         \"periodo_referencia_inicio\": \"2023-04-01\",\n         \"periodo_referencia_fin\": \"2023-04-09\",\n         \"tipo_periodo\": \"puntual\",\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Número de antecedentes penales de un presunto miembro de la Mara Salvatrucha\",\n         \"categoria\": \"conflicto\",\n         \"valor_numerico\": 1,\n         \"unidad\": \"persona\",\n         \"ambito_geografico\": [\"El Salvador\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Número de estructuras criminales transnacionales que operan en Costa Rica\",\n         \"categoria\": \"conflicto\",\n         \"valor_numerico\": 1,\n         \"unidad\": \"estructura\",\n         \"ambito_geografico\": [\"Costa Rica\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      }\n   ]\n}"
 }

@@ -1,5 +1,5 @@
 # Evaluación Artículo: test_026
-**Modelo Probado:** `llama-3.1-8b-128k`
+**Modelo Probado:** `llama-3.1-8b-instant`
 
 ## Metadatos del Artículo Original
 
@@ -56,88 +56,421 @@ Alfombra artística causa admiración entre propios y extraños en San Juan Saca
 
 ---
 
-## Resultados de las Tareas (llama-3.1-8b-128k)
+## Resultados de las Tareas (llama-3.1-8b-instant)
 
 ### Tarea: relevancia
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "puntuacion_relevancia": 6,
+    "justificacion_relevancia": "Relevancia media debido a la preparación de servicios de salud para la Semana Santa.",
+    "categorias_asignadas": [
+        "Sociedad/Derechos",
+        "Análisis/Contexto"
+    ],
+    "explicacion_concisa": "El Ministerio de Salud Pública y Asistencia Social (MSPAS) activa un plan de contingencia y alerta roja institucional para la Semana Santa 2025, con el objetivo de preparar los servicios de salud y prevenir emergencias. El plan incluye la movilización del personal de salud, la disponibilidad permanente para atender emergencias y recomendaciones para la ciudadanía."
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "contenido": "El Ministerio de Salud Pública y Asistencia Social (MSPAS) activó plan de contingencia y alerta roja institucional para la Semana Santa 2025.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-11T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "GT"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 9,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "salud",
+                "semansa",
+                "plan de contingencia"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La red hospitalaria y los servicios de salud permanecerán habilitados a nivel nacional durante la Semana Santa 2025.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-11T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "GT"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "salud",
+                "semansa",
+                "servicios de salud"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El MSPAS forma parte del Sistema Nacional de Prevención en Semana Santa (Sinaprese), que se encuentra activo durante este periodo.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-11T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "GT"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "salud",
+                "semansa",
+                "sinaprese"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El Sinaprese 2025 dio inicio el viernes 11 de abril y estará activado toda la Semana Santa.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-11T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "GT"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "salud",
+                "semansa",
+                "sinaprese"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El plan del MSPAS consiste en la preparación de los servicios de acuerdo al riesgo que se pueda presentar en los diferentes niveles de actuación o de la presencia masiva de personas.",
+            "tipo_hecho": "CONCEPTO",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "dia",
+            "paises": [],
+            "ubicaciones_especificas": [],
+            "importancia": 6,
+            "confiabilidad": 4,
+            "etiquetas": [
+                "salud",
+                "semansa",
+                "plan de contingencia"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El MSPAS ha dispuesto de vehículos para garantizar el traslado oportuno de personal y pacientes, en caso de ser necesario.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-11T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "GT"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "salud",
+                "semansa",
+                "vehiculos"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Santos hizo un llamado a la ciudadanía para que tome en cuenta las siguientes recomendaciones: viajar a velocidades moderadas, evitar el consumo de bebidas alcohólicas, mantenerse hidratado, usar sombrero, gorra o protector solar para evitar quemaduras, prevenir golpes de calor y verificar la adecuada manipulación y conservación de alimentos.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-20T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "GT"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "salud",
+                "semansa",
+                "recomendaciones"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "nombre": "Ministerio de Salud Pública y Asistencia Social (MSPAS)",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "MSPAS",
+                "Ministerio de Salud Pública"
+            ]
+        },
+        {
+            "nombre": "Edgar Santos",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Sistema Nacional de Prevención en Semana Santa (Sinaprese)",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "Sinaprese"
+            ]
+        },
+        {
+            "nombre": "Centro de Atención Materno Infantil",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Conred",
+            "tipo": "INSTITUCION",
+            "alias": []
+        },
+        {
+            "nombre": "Sistema CONRED",
+            "tipo": "CONCEPTO",
+            "alias": []
+        },
+        {
+            "nombre": "Semana Santa",
+            "tipo": "EVENTO",
+            "alias": []
+        },
+        {
+            "nombre": "Plan de Contingencia por Semana Santa 2025",
+            "tipo": "NORMATIVA",
+            "alias": []
+        },
+        {
+            "nombre": "Sipacate",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Antigua Guatemala",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Caso Odebrecht",
+            "tipo": "CONCEPTO",
+            "alias": []
+        },
+        {
+            "nombre": "Quetzaltenango",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "San Juan Sacatepéquez",
+            "tipo": "LUGAR",
+            "alias": []
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "cita": "Viajar a velocidades moderadas",
+            "emisor_nombre": "Edgar Santos",
+            "contexto": "Recomendaciones de la ciudadanía para la Semana Santa",
+            "fecha_cita": null
+        },
+        {
+            "cita": "Evitar el consumo de bebidas alcohólicas",
+            "emisor_nombre": "Edgar Santos",
+            "contexto": "Recomendaciones de la ciudadanía para la Semana Santa",
+            "fecha_cita": null
+        },
+        {
+            "cita": "Mantenerse hidratado",
+            "emisor_nombre": "Edgar Santos",
+            "contexto": "Recomendaciones de la ciudadanía para la Semana Santa",
+            "fecha_cita": null
+        },
+        {
+            "cita": "Usar sombrero, gorra o protector solar para evitar quemaduras",
+            "emisor_nombre": "Edgar Santos",
+            "contexto": "Recomendaciones de la ciudadanía para la Semana Santa",
+            "fecha_cita": null
+        },
+        {
+            "cita": "Prevenir golpes de calor",
+            "emisor_nombre": "Edgar Santos",
+            "contexto": "Recomendaciones de la ciudadanía para la Semana Santa",
+            "fecha_cita": null
+        },
+        {
+            "cita": "Verificar la adecuada manipulación y conservación de alimentos",
+            "emisor_nombre": "Edgar Santos",
+            "contexto": "Recomendaciones de la ciudadanía para la Semana Santa",
+            "fecha_cita": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "indicador": "Número de servicios de salud habilitados a nivel nacional",
+            "categoria": "sanitario",
+            "valor_numerico": 100,
+            "unidad": "",
+            "ambito_geografico": [
+                "Guatemala"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": "Ministerio de Salud Pública y Asistencia Social (MSPAS)",
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de vehículos dispuestos por el MSPAS",
+            "categoria": "sanitario",
+            "valor_numerico": 1,
+            "unidad": "",
+            "ambito_geografico": [
+                "Guatemala"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": "Ministerio de Salud Pública y Asistencia Social (MSPAS)",
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de años de existencia del Sistema Nacional de Prevención en Semana Santa (Sinaprese)",
+            "categoria": "sanitario",
+            "valor_numerico": 25,
+            "unidad": "",
+            "ambito_geografico": [
+                "Guatemala"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": "Ministerio de Salud Pública y Asistencia Social (MSPAS)",
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de puestos de gestión institucional y prevención",
+            "categoria": "sanitario",
+            "valor_numerico": 1,
+            "unidad": "",
+            "ambito_geografico": [
+                "Guatemala"
+            ],
+            "periodo_referencia_inicio": "2025-04-11",
+            "periodo_referencia_fin": "2025-04-19",
+            "tipo_periodo": "puntual",
+            "fuente_especifica": "Conred",
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de bahías de prevención y asistencia turística",
+            "categoria": "sanitario",
+            "valor_numerico": 1,
+            "unidad": "",
+            "ambito_geografico": [
+                "Guatemala"
+            ],
+            "periodo_referencia_inicio": "2025-04-11",
+            "periodo_referencia_fin": "2025-04-19",
+            "tipo_periodo": "puntual",
+            "fuente_especifica": "Conred",
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de monitoreos de recorridos procesionales",
+            "categoria": "sanitario",
+            "valor_numerico": 1,
+            "unidad": "",
+            "ambito_geografico": [
+                "Guatemala"
+            ],
+            "periodo_referencia_inicio": "2025-04-11",
+            "periodo_referencia_fin": "2025-04-19",
+            "tipo_periodo": "puntual",
+            "fuente_especifica": "Conred",
+            "notas_contexto": null
+        }
+    ]
+}
 ```
 </details>

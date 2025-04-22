@@ -1,5 +1,5 @@
 # Evaluación Artículo: test_031
-**Modelo Probado:** `llama-3.1-8b-128k`
+**Modelo Probado:** `llama-3.1-8b-instant`
 
 ## Metadatos del Artículo Original
 
@@ -44,88 +44,512 @@ Según el comunicado oficial, los ministros subrayaron avances recientes como la
 
 ---
 
-## Resultados de las Tareas (llama-3.1-8b-128k)
+## Resultados de las Tareas (llama-3.1-8b-instant)
 
 ### Tarea: relevancia
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "puntuacion_relevancia": 8,
+    "justificacion_relevancia": "Relevancia alta debido a la importancia del Corredor Bioceánico Vial para la integración regional y el comercio",
+    "categorias_asignadas": [
+        "Política Internacional",
+        "Economía",
+        "Conflicto/Seguridad"
+    ],
+    "explicacion_concisa": "El gobierno chileno presentó el plan de obras del Corredor Bioceánico Vial, una carretera que unirá Chile con Argentina, Paraguay y Brasil, con el objetivo de mejorar el comercio y la integración regional. El proyecto es considerado una de las obras de infraestructura más importantes de América Latina y tiene el apoyo del presidente Gabriel Boric."
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "contenido": "Chile presentó el plan de obras del Corredor Bioceánico Vial con Brasil, Argentina y Paraguay.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-15",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "CL",
+                "BR",
+                "AR",
+                "PY"
+            ],
+            "ubicaciones_especificas": [
+                "Chile",
+                "Brasil",
+                "Argentina",
+                "Paraguay"
+            ],
+            "importancia": 9,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "Chile",
+                "Corredor Bioceánico Vial",
+                "Brasil",
+                "Argentina",
+                "Paraguay"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El proyecto del Corredor Bioceánico Vial busca unir el norte de Chile con Argentina, Paraguay y Brasil.",
+            "tipo_hecho": "CONCEPTO",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "n/a",
+            "paises": [
+                "CL",
+                "BR",
+                "AR",
+                "PY"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 6,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "Corredor Bioceánico Vial",
+                "Chile",
+                "Brasil",
+                "Argentina",
+                "Paraguay"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El Corredor Bioceánico Vial tiene una extensión de 2.400 km.",
+            "tipo_hecho": "BIOGRAFIA",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "n/a",
+            "paises": [
+                "CL",
+                "BR",
+                "AR",
+                "PY"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 5,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "Corredor Bioceánico Vial",
+                "longitud"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El presidente Gabriel Boric presentó el 'Plan de acción del corredor bioceánico' en el palacio presidencial de La Moneda.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-15",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "CL"
+            ],
+            "ubicaciones_especificas": [
+                "La Moneda",
+                "Chile"
+            ],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "Gabriel Boric",
+                "Plan de acción del corredor bioceánico",
+                "La Moneda"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El plan considera el desarrollo de 22 proyectos de infraestructura en Chile.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-15",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "CL"
+            ],
+            "ubicaciones_especificas": [
+                "Chile"
+            ],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "Chile",
+                "proyectos de infraestructura"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El Corredor Bioceánico Vial puede reducir hasta 10 días el transporte entre regiones mediterráneas de Brasil y Paraguay y países del Asia-Pacífico.",
+            "tipo_hecho": "CONCEPTO",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "n/a",
+            "paises": [
+                "BR",
+                "PY"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "Corredor Bioceánico Vial",
+                "transporte",
+                "Brasil",
+                "Paraguay"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Los cancilleres del Mercosur se reunieron en Buenos Aires y acordaron ampliar las listas de excepciones al arancel externo común.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-11",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "AR",
+                "BR",
+                "UY",
+                "PY"
+            ],
+            "ubicaciones_especificas": [
+                "Buenos Aires"
+            ],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "Mercosur",
+                "Buenos Aires",
+                "arancel externo común"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El arancel externo común del Mercosur tiene alícuotas que van desde el 0 al 35%.",
+            "tipo_hecho": "NORMATIVA",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "n/a",
+            "paises": [
+                "AR",
+                "BR",
+                "UY",
+                "PY"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 6,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "arancel externo común",
+                "Mercosur"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El Mercosur se rige por un arancel externo común.",
+            "tipo_hecho": "CONCEPTO",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "n/a",
+            "paises": [
+                "AR",
+                "BR",
+                "UY",
+                "PY"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "Mercosur",
+                "arancel externo común"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "nombre": "Corredor Bioceánico Vial",
+            "tipo": "EVENTO",
+            "alias": [
+                "Corredor Bioceánico"
+            ]
+        },
+        {
+            "nombre": "Chile",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Argentina",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Paraguay",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Brasil",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Gabriel Boric",
+            "tipo": "PERSONA",
+            "alias": [
+                "Boric"
+            ]
+        },
+        {
+            "nombre": "La Moneda",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Mercosur",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "Bloque"
+            ]
+        },
+        {
+            "nombre": "Gerardo Werthein",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Mauro Vieira",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Mario Lubetkin",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Rubén Ramírez",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Celinda Sosa Lunda",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Donald Trump",
+            "tipo": "PERSONA",
+            "alias": [
+                "Trump"
+            ]
+        },
+        {
+            "nombre": "Asociación Europea de Libre Comercio (EFTA)",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "EFTA"
+            ]
+        },
+        {
+            "nombre": "Emiratos Árabes Unidos",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Singapur",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Unión Europea",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "UE"
+            ]
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "cita": "Es una buena noticia, porque se trata de una integración real y concreta",
+            "emisor_nombre": "Gabriel Boric",
+            "contexto": "El presidente Gabriel Boric, al presentar el \"Plan de acción del corredor bioceánico\" el lunes en el palacio presidencial de La Moneda.",
+            "fecha_cita": null
+        },
+        {
+            "cita": "El comercio del bloque fundado en 1991 por Argentina, Brasil, Paraguay y Uruguay se rige por un arancel externo común (AEC), con alícuotas que van desde el 0 al 35%, pero cada miembro del Mercosur cuenta con una Lista Nacional de Excepciones (LNE) al AEC en una cantidad limitada de productos que puede cambiar cada seis meses, previa notificación a sus socios.",
+            "emisor_nombre": "cancilleres del Mercosur",
+            "contexto": "El encuentro, celebrado en la sede de la Cancillería argentina, se desarrolló en un contexto de creciente incertidumbre internacional, tras los aranceles anunciados el pasado 2 de abril por el presidente estadounidense, Donald Trump.",
+            "fecha_cita": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "indicador": "Extensión del Corredor Bioceánico Vial",
+            "categoria": "económico",
+            "valor_numerico": 2400,
+            "unidad": "km",
+            "ambito_geografico": [
+                "Chile",
+                "Argentina",
+                "Paraguay",
+                "Brasil"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Reducción esperada en días de transporte",
+            "categoria": "económico",
+            "valor_numerico": 10,
+            "unidad": "días",
+            "ambito_geografico": [
+                "Brasil",
+                "Paraguay",
+                "China",
+                "Corea del Sur",
+                "Japón"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de proyectos de infraestructura en Chile",
+            "categoria": "económico",
+            "valor_numerico": 22,
+            "unidad": "proyectos",
+            "ambito_geografico": [
+                "Chile"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de países que pueden incorporar hasta 100 códigos en sus LNE",
+            "categoria": "económico",
+            "valor_numerico": 2,
+            "unidad": "países",
+            "ambito_geografico": [
+                "Argentina",
+                "Brasil"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de países que pueden tener hasta 225 productos en su LNE",
+            "categoria": "económico",
+            "valor_numerico": 1,
+            "unidad": "país",
+            "ambito_geografico": [
+                "Uruguay"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de países que pueden tener hasta 649 productos en su LNE",
+            "categoria": "económico",
+            "valor_numerico": 1,
+            "unidad": "país",
+            "ambito_geografico": [
+                "Paraguay"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        }
+    ]
+}
 ```
 </details>

@@ -1,10 +1,10 @@
 {
     "test_id": "test_043",
     "tarea": "extraccion_hechos",
-    "model_id": "llama-3.1-8b-128k",
-    "success": false,
-    "api_success": false,
-    "json_valid": false,
-    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
-    "llm_response_content": "Error: No content received or generated"
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"contenido\": \"Autoridades federales detuvieron a siete presuntos integrantes de una célula delictiva del 'Cártel del Pacífico' en la Ciudad de México y Puebla.\",\n         \"tipo_hecho\": \"SUCESO\",\n         \"fecha_ocurrencia_inicio\": \"2025-04-13T00:00:00Z\",\n         \"fecha_ocurrencia_fin\": null,\n         \"precision_temporal\": \"exacta\",\n         \"paises\": [\"MX\"],\n         \"ubicaciones_especificas\": [\"Ciudad de México\", \"Puebla\"],\n         \"importancia\": 9,\n         \"confiabilidad\": 5,\n         \"etiquetas\": [\"crimen\", \"drogas\", \"detención\"],\n         \"es_evento_futuro\": false,\n         \"estado_programacion\": null\n      },\n      {\n         \"contenido\": \"El supuesto líder de la célula delictiva, Joel Alfonso Urrea Yariar, alias 'El Gangoso', ordenó un ataque con drones armados contra soldados en Sinaloa.\",\n         \"tipo_hecho\": \"DECLARACION\",\n         \"fecha_ocurrencia_inicio\": \"2025-03-23T00:00:00Z\",\n         \"fecha_ocurrencia_fin\": null,\n         \"precision_temporal\": \"exacta\",\n         \"paises\": [\"MX\"],\n         \"ubicaciones_especificas\": [\"Sinaloa\"],\n         \"importancia\": 8,\n         \"confiabilidad\": 5,\n         \"etiquetas\": [\"crimen\", \"ataque\", \"drones\"],\n         \"es_evento_futuro\": false,\n         \"estado_programacion\": null\n      },\n      {\n         \"contenido\": \"El 'Cártel del Pacífico' es una organización criminal dedicada a la elaboración y distribución de drogas en México.\",\n         \"tipo_hecho\": \"CONCEPTO\",\n         \"fecha_ocurrencia_inicio\": null,\n         \"fecha_ocurrencia_fin\": null,\n         \"precision_temporal\": \"año\",\n         \"paises\": [\"MX\"],\n         \"ubicaciones_especificas\": [],\n         \"importancia\": 7,\n         \"confiabilidad\": 4,\n         \"etiquetas\": [\"crimen\", \"drogas\", \"cártel\"],\n         \"es_evento_futuro\": false,\n         \"estado_programacion\": null\n      },\n      {\n         \"contenido\": \"La Secretaría de la Defensa Nacional (Defensa), Secretaría de Seguridad y Protección Ciudadana (SSPC) y Guardia Nacional (GN) participaron en los operativos de detención.\",\n         \"tipo_hecho\": \"SUCESO\",\n         \"fecha_ocurrencia_inicio\": \"2025-04-13T00:00:00Z\",\n         \"fecha_ocurrencia_fin\": null,\n         \"precision_temporal\": \"exacta\",\n         \"paises\": [\"MX\"],\n         \"ubicaciones_especificas\": [\"Ciudad de México\", \"Puebla\"],\n         \"importancia\": 8,\n         \"confiabilidad\": 5,\n         \"etiquetas\": [\"seguridad\", \"defensa\", \"operativos\"],\n         \"es_evento_futuro\": false,\n         \"estado_programacion\": null\n      }\n   ]\n}"
 }

@@ -1,10 +1,10 @@
 {
     "test_id": "test_038",
     "tarea": "relevancia",
-    "model_id": "llama-3.1-8b-128k",
-    "success": false,
-    "api_success": false,
-    "json_valid": false,
-    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
-    "llm_response_content": "Error: No content received or generated"
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Propuesta de autonomía total en Bolivia con impacto en salud, educación y seguridad\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Política Internacional\", \"Economía\"],\n   \"explicacion_concisa\": \"El expresidente boliviano Tuto Quiroga propone una alianza política y una reforma para descentralizar la salud, educación y seguridad en Bolivia, con el objetivo de implementar una autonomía total en las regiones y municipios.\"\n}"
 }

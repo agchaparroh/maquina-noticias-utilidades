@@ -1,5 +1,5 @@
 # Evaluación Artículo: test_038
-**Modelo Probado:** `llama-3.1-8b-128k`
+**Modelo Probado:** `llama-3.1-8b-instant`
 
 ## Metadatos del Artículo Original
 
@@ -33,88 +33,301 @@ Quiroga dijo también que solo un debate público de todos los candidatos permit
 
 ---
 
-## Resultados de las Tareas (llama-3.1-8b-128k)
+## Resultados de las Tareas (llama-3.1-8b-instant)
 
 ### Tarea: relevancia
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "puntuacion_relevancia": 8,
+    "justificacion_relevancia": "Propuesta de autonomía total en Bolivia con impacto en salud, educación y seguridad",
+    "categorias_asignadas": [
+        "Política Nacional",
+        "Política Internacional",
+        "Economía"
+    ],
+    "explicacion_concisa": "El expresidente boliviano Tuto Quiroga propone una alianza política y una reforma para descentralizar la salud, educación y seguridad en Bolivia, con el objetivo de implementar una autonomía total en las regiones y municipios."
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "contenido": "Tuto propone autonomía total en Bolivia, pasando salud, educación y seguridad a las regiones.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "BO"
+            ],
+            "ubicaciones_especificas": [
+                "Santa Cruz"
+            ],
+            "importancia": 9,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "autonomía",
+                "Bolivia"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Tuto firma alianza con Demócratas y Frente Revolucionario de Izquierda.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "BO"
+            ],
+            "ubicaciones_especificas": [
+                "Santa Cruz"
+            ],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "alianza",
+                "Bolivia"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Tuto propone que los candidatos presenten declaración jurada de bienes y rentas antes de ser candidatos.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "BO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "candidatos",
+                "declaración jurada"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La ley 2027 Estatuto del Funcionario Público establece la presentación de declaración jurada solo para los funcionarios públicos.",
+            "tipo_hecho": "NORMATIVA",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "BO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 6,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "ley",
+                "funcionario público",
+                "declaración jurada"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Tuto propone que se realicen debates públicos entre los candidatos a la presidencia.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "BO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "candidatos",
+                "debates públicos"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "nombre": "Tuto Quiroga",
+            "tipo": "PERSONA",
+            "alias": [
+                "Tuto",
+                "Quiroga"
+            ]
+        },
+        {
+            "nombre": "Demócratas",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "Demócratas"
+            ]
+        },
+        {
+            "nombre": "Frente Revolucionario de Izquierda (FRI)",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "FRI"
+            ]
+        },
+        {
+            "nombre": "Santa Cruz",
+            "tipo": "LUGAR",
+            "alias": [
+                "Santa Cruz"
+            ]
+        },
+        {
+            "nombre": "Tribunal Supremo Electoral (TSE)",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "TSE"
+            ]
+        },
+        {
+            "nombre": "Ley 2027 Estatuto del Funcionario Público",
+            "tipo": "NORMATIVA",
+            "alias": [
+                "Ley 2027"
+            ]
+        },
+        {
+            "nombre": "Bolivia",
+            "tipo": "LUGAR",
+            "alias": [
+                "Bolivia"
+            ]
+        },
+        {
+            "nombre": "Calendario Electoral",
+            "tipo": "NORMATIVA",
+            "alias": [
+                "Calendario Electoral"
+            ]
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "cita": "Lo dijimos una y otra vez, la autonomía solo va a funcionar si empieza a implementarse de forma total; es con salud, educación y seguridad descentralizadas (y entregadas) a las regiones y a los municipios, para que tún sepas quién le brinda salud, quién educa a tus hijos(...) que no adoctrinen, que eduquen a los niños",
+            "emisor_nombre": "Quiroga",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "yo no soy millonario, pero soy rico, tengo tres títulos universitarios, esa es mi riqueza",
+            "emisor_nombre": "Quiroga",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "solo un debate público de todos los candidatos permitirá a la población ver y escuchar las propuestas que tienen para el caso de que sean gobierno, y por eso insistiré en que se realicen esos encuentros públicos entre postulantes a la presidencia",
+            "emisor_nombre": "Quiroga",
+            "contexto": null,
+            "fecha_cita": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "indicador": "Número de días para presentar alianzas ante el Tribunal Supremo Electoral (TSE)",
+            "categoria": "electoral",
+            "valor_numerico": 5,
+            "unidad": "días",
+            "ambito_geografico": [
+                "Bolivia"
+            ],
+            "periodo_referencia_inicio": "null",
+            "periodo_referencia_fin": "null",
+            "tipo_periodo": "puntual",
+            "fuente_especifica": "null",
+            "notas_contexto": "null"
+        },
+        {
+            "indicador": "Número de títulos universitarios de Quiroga",
+            "categoria": "otro",
+            "valor_numerico": 3,
+            "unidad": "títulos universitarios",
+            "ambito_geografico": [
+                "Bolivia"
+            ],
+            "periodo_referencia_inicio": "null",
+            "periodo_referencia_fin": "null",
+            "tipo_periodo": "puntual",
+            "fuente_especifica": "null",
+            "notas_contexto": "null"
+        }
+    ]
+}
 ```
 </details>

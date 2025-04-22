@@ -1,10 +1,10 @@
 {
     "test_id": "test_008",
     "tarea": "extraccion_citas",
-    "model_id": "llama-3.1-8b-128k",
+    "model_id": "llama-3.1-8b-instant",
     "success": false,
     "api_success": false,
     "json_valid": false,
-    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
+    "error_message": "API_Error: BadRequestError: Error code: 400 - {'error': {'message': \"Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.\", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': '{\\n   \"resultados\": [\\n      {\\n         \"cita\": \"Lament\\\\u00f3 profundamente el fallecimiento de un peruano universal. Mario Vargas Llosa se eterniza a trav\\\\u00e9s de su legado literario. Tuve la suerte de haber coincidido con \\\\u00e9l en algunas oportunidades\",\\n         \"emisor_nombre\": \"Alfredo Ferrero\",\\n         \"contexto\": \"El embajador del Per\\\\u00fa en los Estados Unidos, Alfredo Ferrero, indic\\\\u00f3 que, en coordinaci\\\\u00f3n con la Canciller\\\\u00eda, se dispuso a abrir un libro de condolencias en la sede diplom\\\\u00e1tica, en Washington D.C., y en los 16 consulados en dicho pa\\\\u00eds.\",\\n         \"fecha_cita\": null\\n      },\\n      {\\n         \"cita\": \"Lament\\\\u00f3 profundamente el fallecimiento de un peruano universal. Mario Vargas Llosa se eterniza a trav\\\\u00e9s de su legado literario. Tuve la suerte de haber coincidido con \\\\u00e9l en algunas oportunidades\",\\n         \"emisor_nombre\": \"Alfredo Ferrero\",\\n         \"contexto\": \"Mediante sus redes sociales, el embajador envi\\\\u00f3 sus condolencias a la familia de Vargas Llosa, a quien calific\\\\u00f3 como \\\\u201cun peruano universal\\\\uu201d.\",\\n         \"fecha_cita\": null\\n      },\\n      {\\n         \"cita\": \"Lament\\\\u00f3 profundamente el fallecimiento de un peruano universal. Mario Vargas Llosa se eterniza a trav\\\\u00e9s de su legado literario. Tuve la suerte de haber coincidido con \\\\u00e9l en algunas oportunidades\",\\n         \"emisor_nombre\": \"Alfredo Ferrero\",\\n         \"contexto\": null,\\n         \"fecha_cita\": null\\n      }\\n   ]\\n}'}}",
     "llm_response_content": "Error: No content received or generated"
 }

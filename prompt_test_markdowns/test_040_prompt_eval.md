@@ -1,5 +1,5 @@
 # Evaluación Artículo: test_040
-**Modelo Probado:** `llama-3.1-8b-128k`
+**Modelo Probado:** `llama-3.1-8b-instant`
 
 ## Metadatos del Artículo Original
 
@@ -70,88 +70,757 @@ Deportación Deportados Donald Trump Nayib Bukele Política Ver Comentarios
 
 ---
 
-## Resultados de las Tareas (llama-3.1-8b-128k)
+## Resultados de las Tareas (llama-3.1-8b-instant)
 
 ### Tarea: relevancia
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "puntuacion_relevancia": 8,
+    "justificacion_relevancia": "Relevancia alta debido a la crítica de Human Rights Watch a la política de deportaciones de Trump en El Salvador",
+    "categorias_asignadas": [
+        "Política Internacional",
+        "Justicia/Legal",
+        "Sociedad/Derechos"
+    ],
+    "explicacion_concisa": "Human Rights Watch critica a Trump y Bukele por crear un 'Guantánamo centroamericano' en El Salvador, calificando las deportaciones como desapariciones forzadas. La organización denuncia la falta de información sobre el paradero de las personas deportadas y la violación de sus derechos humanos."
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "contenido": "Juan Pappier, subdirector de la División de las Américas de la organización humanitaria Human Rights Watch, alertó a la comunidad centroamericana sobre la creación de nuevos Guantánamos en la región.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-21",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "ES",
+                "US"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 9,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "derechos humanos",
+                "Guantánamo",
+                "centroamérica"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Human Rights Watch calificó como desapariciones forzosas las deportaciones de Estados Unidos hacia El Salvador.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-21",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "ES",
+                "US"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "desapariciones forzosas",
+                "derechos humanos",
+                "El Salvador"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Una desaparición forzada es un arresto o una privación de libertad cometida por un Estado o por un actor bajo apoyo del Estado, seguida de una privación de información a los familiares sobre el paradero o la suerte de la persona detenida.",
+            "tipo_hecho": "CONCEPTO",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [],
+            "ubicaciones_especificas": [],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "derechos humanos",
+                "desapariciones forzosas",
+                "concepto"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El presidente Trump dijo que el gobierno de El Salvador debería recibir cuantas personas posibles sean deportadas.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-21",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "ES",
+                "US"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "deportaciones",
+                "El Salvador",
+                "presidente Trump"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El presidente Trump puede alegar que el presidente Bukele no quiere enviar a esta persona y que es salvadoreño y que no puede obligarlo.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-21",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "ES",
+                "US"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "derechos humanos",
+                "El Salvador",
+                "presidente Trump"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El régimen de Maduro no ha demostrado ser un defensor de los derechos humanos y ha utilizado a los ciudadanos extranjeros como moneda de cambio con gobiernos extranjeros.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-21",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "VE",
+                "ES",
+                "US"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "derechos humanos",
+                "Venezuela",
+                "regimen de Maduro"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El presidente Trump ha sido criticado por su postura sobre las deportaciones y su posible violación de las sentencias de la Corte Suprema.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-21",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "ES",
+                "US"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 9,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "derechos humanos",
+                "deportaciones",
+                "presidente Trump"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El presidente Bukele ha sido criticado por su postura sobre las deportaciones y su posible complicidad con el presidente Trump.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-21",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "ES",
+                "US"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "derechos humanos",
+                "deportaciones",
+                "presidente Bukele"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El régimen de Maduro ha sido criticado por su postura sobre los derechos humanos y su posible violación de las sentencias de la Corte Suprema.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-21",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "VE",
+                "ES",
+                "US"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 9,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "derechos humanos",
+                "Venezuela",
+                "regimen de Maduro"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El presidente Trump ha sido acusado de violar las sentencias de la Corte Suprema y de crear una crisis constitucional en los Estados Unidos.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-21",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "ES",
+                "US"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 9,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "derechos humanos",
+                "deportaciones",
+                "presidente Trump"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El presidente Bukele ha sido acusado de complicidad con el presidente Trump en la creación de una crisis constitucional en los Estados Unidos.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-21",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "ES",
+                "US"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "derechos humanos",
+                "deportaciones",
+                "presidente Bukele"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El régimen de Maduro ha sido acusado de violar las sentencias de la Corte Suprema y de crear una crisis constitucional en Venezuela.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-21",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "VE",
+                "ES",
+                "US"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 9,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "derechos humanos",
+                "Venezuela",
+                "regimen de Maduro"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "nombre": "Juan Pappier",
+            "tipo": "PERSONA",
+            "alias": [
+                "Juan Pappier"
+            ]
+        },
+        {
+            "nombre": "División de las Américas",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "División de las Américas de Human Rights Watch"
+            ]
+        },
+        {
+            "nombre": "Human Rights Watch",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "HRW"
+            ]
+        },
+        {
+            "nombre": "El Salvador",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Estados Unidos",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Corte Suprema",
+            "tipo": "INSTITUCION",
+            "alias": []
+        },
+        {
+            "nombre": "Corte Penal Internacional",
+            "tipo": "INSTITUCION",
+            "alias": []
+        },
+        {
+            "nombre": "Estatuto de Roma",
+            "tipo": "NORMATIVA",
+            "alias": []
+        },
+        {
+            "nombre": "Guantánamo",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "CECOT",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Venezuela",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Organización Mundial de las Migraciones",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "OIM"
+            ]
+        },
+        {
+            "nombre": "Donald Trump",
+            "tipo": "PERSONA",
+            "alias": [
+                "Trump"
+            ]
+        },
+        {
+            "nombre": "Nayib Bukele",
+            "tipo": "PERSONA",
+            "alias": [
+                "Bukele"
+            ]
+        },
+        {
+            "nombre": "Kilmar Ábrego",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Eric Prince",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Maduro",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "El Diario de Hoy",
+            "tipo": "ORGANIZACION",
+            "alias": []
+        },
+        {
+            "nombre": "Tren de Aragua",
+            "tipo": "CONCEPTO",
+            "alias": []
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "cita": "Creo que necesitamos una respuesta firme de los gobiernos de la región, para oponerse a estas iniciativas de crear espacios por fuera de la protección de la ley",
+            "emisor_nombre": "Juan Pappier",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "Aquí hay una orden que dice que el Gobierno de Estados Unidos sí tiene que tomar medidas decisivas para lograr el retorno de esta persona y esa orden judicial hay que cumplirla",
+            "emisor_nombre": "Juan Pappier",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "Es decir, lo que está intentando Trump con Bukele es crear una especie de Guantánamo en esteroides, un Guantánamo incluso peor que el que existió durante la administración Bush",
+            "emisor_nombre": "Juan Pappier",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "Cuando se crean estos agujeros negros, primero se pueden utilizar contra deportados, contra presupuestos criminales, pero luego eso puede utilizarse y abusarse para personas que no han cometido ningún delito, para personas que simplemente han criticado a su gobierno",
+            "emisor_nombre": "Juan Pappier",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "Bueno, lo primero es que el presidente Trump ha descrito a las personas enviadas a El Salvador como supuestos miembros del Tren de Aragua",
+            "emisor_nombre": "Juan Pappier",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "Sí, pero aquí hay una orden que dice que sí que sí puede, que el Gobierno de Estados Unidos sí tiene que tomar medidas decisivas para lograr el retorno de esta persona y esa orden judicial hay que cumplirla",
+            "emisor_nombre": "Juan Pappier",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "Del régimen de Maduro no hay que esperar",
+            "emisor_nombre": "Juan Pappier",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "Lo que nosotros hemos documentado es que en varios casos estas personas estaban detenidas en centros migratorios de los Estados Unidos en Texas o en California desde la administración Biden",
+            "emisor_nombre": "Juan Pappier",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "Y cuando asume el presidente Trump, las autoridades migratorias les dicen que ya no pueden solicitar asilo para para evitar su deportación y que o bien esperan varios meses en detención o bien deben aceptar ser enviados a Venezuela y ellos informaron a sus familias que iban a ser enviados a Venezuela",
+            "emisor_nombre": "Juan Pappier",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "También hemos documentado un caso de una persona que viajó a los Estados Unidos de forma completamente legal bajo lo que se conoce como mecanismo de movilidad segura, es decir, todo su proceso de reasentamiento a los Estados Unidos había sido verificado, aprobado en Ecuador, en una oficina de la OIM (Organización Mundial de las Migraciones) en Ecuador",
+            "emisor_nombre": "Juan Pappier",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "Había varios, hay varios casos que hemos documentado donde tenían audiencias pendientes de asilo eh programadas incluso para los próximos días de su deportación y las autoridades migratorias hicieron caso omiso a esas audiencias que estaban programadas y deportaron a estas personas",
+            "emisor_nombre": "Juan Pappier",
+            "contexto": null,
+            "fecha_cita": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "indicador": "Número de personas deportadas a El Salvador",
+            "categoria": "demográfico",
+            "valor_numerico": 40,
+            "unidad": "personas",
+            "ambito_geografico": [
+                "El Salvador"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": "Human Rights Watch",
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de personas que han sido enviadas a El Salvador sin información sobre su paradero",
+            "categoria": "demográfico",
+            "valor_numerico": 40,
+            "unidad": "personas",
+            "ambito_geografico": [
+                "El Salvador"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": "Human Rights Watch",
+            "notas_contexto": "Las personas fueron informadas de que iban a ser enviadas a Venezuela, pero en realidad fueron enviadas a El Salvador"
+        },
+        {
+            "indicador": "Número de personas que han sido detenidas en centros migratorios de los Estados Unidos",
+            "categoria": "demográfico",
+            "valor_numerico": "varias decenas",
+            "unidad": "personas",
+            "ambito_geografico": [
+                "Estados Unidos"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": "Human Rights Watch",
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de personas que han sido deportadas a El Salvador a pesar de tener audiencias pendientes de asilo",
+            "categoria": "demográfico",
+            "valor_numerico": "varias decenas",
+            "unidad": "personas",
+            "ambito_geografico": [
+                "El Salvador"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": "Human Rights Watch",
+            "notas_contexto": "Las personas tenían audiencias programadas para los próximos días de su deportación"
+        },
+        {
+            "indicador": "Número de personas que han sido detenidas en El Salvador",
+            "categoria": "demográfico",
+            "valor_numerico": "varias decenas",
+            "unidad": "personas",
+            "ambito_geografico": [
+                "El Salvador"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": "Human Rights Watch",
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de personas que han sido deportadas a El Salvador por tener tatuajes",
+            "categoria": "demográfico",
+            "valor_numerico": 1,
+            "unidad": "persona",
+            "ambito_geografico": [
+                "El Salvador"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": "Human Rights Watch",
+            "notas_contexto": "La persona había llegado a los Estados Unidos de forma legal bajo el mecanismo de movilidad segura"
+        },
+        {
+            "indicador": "Número de personas que han sido detenidas en centros migratorios de los Estados Unidos por tener tatuajes",
+            "categoria": "demográfico",
+            "valor_numerico": 1,
+            "unidad": "persona",
+            "ambito_geografico": [
+                "Estados Unidos"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": "Human Rights Watch",
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de personas que han sido deportadas a El Salvador por ser supuestos miembros del Tren de Aragua",
+            "categoria": "demográfico",
+            "valor_numerico": "varias decenas",
+            "unidad": "personas",
+            "ambito_geografico": [
+                "El Salvador"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": "Human Rights Watch",
+            "notas_contexto": "La mayoría de las personas no han encontrado evidencias de que sean criminales"
+        },
+        {
+            "indicador": "Número de personas que han sido detenidas en centros migratorios de los Estados Unidos por ser supuestos miembros del Tren de Aragua",
+            "categoria": "demográfico",
+            "valor_numerico": "varias decenas",
+            "unidad": "personas",
+            "ambito_geografico": [
+                "Estados Unidos"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": "Human Rights Watch",
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de personas que han sido deportadas a El Salvador por no cumplir con la sentencia de la Corte Suprema",
+            "categoria": "demográfico",
+            "valor_numerico": 1,
+            "unidad": "persona",
+            "ambito_geografico": [
+                "El Salvador"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": "Human Rights Watch",
+            "notas_contexto": "La persona es Kilmar Ábrego"
+        },
+        {
+            "indicador": "Número de personas que han sido detenidas en centros migratorios de los Estados Unidos por no cumplir con la sentencia de la Corte Suprema",
+            "categoria": "demográfico",
+            "valor_numerico": 1,
+            "unidad": "persona",
+            "ambito_geografico": [
+                "Estados Unidos"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": "Human Rights Watch",
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de personas que han sido deportadas a El Salvador por ser ciudadanos venezolanos",
+            "categoria": "demográfico",
+            "valor_numerico": "varias decenas",
+            "unidad": "personas",
+            "ambito_geografico": [
+                "El Salvador"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": "Human Rights Watch",
+            "notas_contexto": "El régimen venezolano ha intentado aprovechar esta coyuntura para abogar por estas personas"
+        },
+        {
+            "indicador": "Número de personas que han sido detenidas en centros migratorios de los Estados Unidos por ser ciudadanos venezolanos",
+            "categoria": "demográfico",
+            "valor_numerico": "varias decenas",
+            "unidad": "personas",
+            "ambito_geografico": [
+                "Estados Unidos"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": "Human Rights Watch",
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de personas que han sido deportadas a El Salvador por tener antecedentes penales",
+            "categoria": "demográfico",
+            "valor_numerico": "varias decenas",
+            "unidad": "personas",
+            "ambito_geografico": [
+                "El Salvador"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": "Human Rights Watch",
+            "notas_contexto": "La mayoría de las personas no han encontrado evidencias de que sean criminales"
+        },
+        {
+            "indicador": "Número de personas que han sido detenidas en centros migratorios de los Estados Unidos por tener antecedentes penales",
+            "categoria": "demográfico",
+            "valor_numerico": "varias decenas",
+            "unidad": "personas",
+            "ambito_geografico": [
+                "Estados Unidos"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": "Human Rights Watch",
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de personas que han sido deportadas a El Salvador por ser supuestos miembros del Tren de Aragua",
+            "categoria": "demográfico",
+            "valor_numerico": "millones",
+            "unidad": "personas",
+            "ambito_geografico": [
+                "El Salvador"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": "Presidente Trump",
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de personas que han sido detenidas en centros migratorios de los Estados Unidos por ser supuestos miembros del Tren de Aragua",
+            "categoria": "demográfico",
+            "valor_numerico": "millones",
+            "unidad": "personas",
+            "ambito_geografico": [
+                "Estados Unidos"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": "Presidente Trump",
+            "notas_contexto": null
+        }
+    ]
+}
 ```
 </details>

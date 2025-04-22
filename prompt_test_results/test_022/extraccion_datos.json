@@ -1,10 +1,10 @@
 {
     "test_id": "test_022",
     "tarea": "extraccion_datos",
-    "model_id": "llama-3.1-8b-128k",
-    "success": false,
-    "api_success": false,
-    "json_valid": false,
-    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
-    "llm_response_content": "Error: No content received or generated"
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Valor de la banda cambiaria fijada por el gobierno de Argentina\",\n         \"categoria\": \"económico\",\n         \"valor_numerico\": 1000,\n         \"unidad\": \"pesos\",\n         \"ambito_geografico\": [\"Argentina\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": \"Ministro de Economía Luis Caputo\",\n         \"notas_contexto\": \"Fijada por insistencia del ministro de Economía\"\n      },\n      {\n         \"indicador\": \"Valor libre del tipo de cambio del dólar norteamericano\",\n         \"categoria\": \"económico\",\n         \"valor_numerico\": null,\n         \"unidad\": \"dólares\",\n         \"ambito_geografico\": [\"Argentina\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": \"Se espera que se vaya al piso de la banda cambiaria\"\n      }\n   ]\n}"
 }

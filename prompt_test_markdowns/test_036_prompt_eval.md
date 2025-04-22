@@ -1,5 +1,5 @@
 # Evaluación Artículo: test_036
-**Modelo Probado:** `llama-3.1-8b-128k`
+**Modelo Probado:** `llama-3.1-8b-instant`
 
 ## Metadatos del Artículo Original
 
@@ -30,88 +30,280 @@ Incluso, su movimiento político presentó supuestas evidencias de fraude. Revol
 
 ---
 
-## Resultados de las Tareas (llama-3.1-8b-128k)
+## Resultados de las Tareas (llama-3.1-8b-instant)
 
 ### Tarea: relevancia
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "puntuacion_relevancia": 8,
+    "justificacion_relevancia": "Relevancia alta debido a la victoria de Daniel Noboa en Ecuador y la reacción de Gustavo Petro",
+    "categorias_asignadas": [
+        "Política Internacional",
+        "Política Nacional",
+        "Elecciones"
+    ],
+    "explicacion_concisa": "El presidente de Colombia, Gustavo Petro, no se ha pronunciado sobre la victoria de Daniel Noboa en los comicios presidenciales de Ecuador, lo que ha generado controversia y denuncias de fraude electoral por parte de la oposición."
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "contenido": "El presidente Gustavo Petro no se ha pronunciado sobre la victoria de Daniel Noboa en Ecuador.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-21",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "EC",
+                "CO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "elecciones",
+                "presidencia"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Daniel Noboa fue reelegido como presidente de Ecuador.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-20",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "EC"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 9,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "elecciones",
+                "presidencia"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La oposición denuncia fraude en las elecciones presidenciales de Ecuador.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-21",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "EC"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 4,
+            "etiquetas": [
+                "política",
+                "elecciones",
+                "fraude"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Daniel Noboa registró incrementos estadísticamente imposibles en numerosos recintos electorales.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-21",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "EC"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 4,
+            "etiquetas": [
+                "política",
+                "elecciones",
+                "fraude"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La victoria de Daniel Noboa en Ecuador ha sido histórica, con una diferencia de más de 10 puntos.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-21",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "EC"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "elecciones",
+                "presidencia"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "nombre": "Daniel Noboa",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Gustavo Petro",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Luisa González",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Rafael Correa",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Revolución Ciudadana (RC5)",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "RC5"
+            ]
+        },
+        {
+            "nombre": "Ecuador",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Colombia",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Olón",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Elecciones en Ecuador",
+            "tipo": "EVENTO",
+            "alias": []
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "cita": "Esta victoria ha sido histórica, una victoria de más de 10 puntos",
+            "emisor_nombre": "Daniel Noboa",
+            "contexto": "Declaró Noboa ante la prensa en su casa en el balneario de Olón tras conocer los resultados en la noche de este domingo.",
+            "fecha_cita": null
+        },
+        {
+            "cita": "Me niego a creer que exista un pueblo que prefiera la mentira antes que la verdad",
+            "emisor_nombre": "Luisa González",
+            "contexto": "Dijo González, recalcando que van a pedir el reconteo y que se abran las urnas.",
+            "fecha_cita": null
+        },
+        {
+            "cita": "Es el más grotesco fraude electoral",
+            "emisor_nombre": "Luisa González",
+            "contexto": "Expresó la candidata de 47 años.",
+            "fecha_cita": null
+        },
+        {
+            "cita": "Daniel Noboa registró incrementos estadísticamente imposibles en numerosos recintos electorales",
+            "emisor_nombre": "Revolución Ciudadana (RC5)",
+            "contexto": null,
+            "fecha_cita": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "indicador": "Diferencia de puntos en la victoria de Daniel Noboa en la elección presidencial en Ecuador",
+            "categoria": "electoral",
+            "valor_numerico": 10,
+            "unidad": "puntos",
+            "ambito_geografico": [
+                "Ecuador"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        }
+    ]
+}
 ```
 </details>

@@ -1,5 +1,5 @@
 # Evaluación Artículo: test_020
-**Modelo Probado:** `llama-3.1-8b-128k`
+**Modelo Probado:** `llama-3.1-8b-instant`
 
 ## Metadatos del Artículo Original
 
@@ -56,55 +56,556 @@ Suscribete
 
 ---
 
-## Resultados de las Tareas (llama-3.1-8b-128k)
+## Resultados de las Tareas (llama-3.1-8b-instant)
 
 ### Tarea: relevancia
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "puntuacion_relevancia": 2,
+    "justificacion_relevancia": "No tiene relevancia política o social significativa",
+    "categorias_asignadas": [
+        "Análisis/Contexto",
+        "Sociedad/Derechos"
+    ],
+    "explicacion_concisa": "El artículo presenta una selección de novelas históricas para la Semana Santa, sin contenido político o social relevante. Se centra en la literatura y la historia, pero no tiene impacto geopolítico o social significativo."
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "contenido": "Se seleccionan seis novelas históricas para las vacaciones de Semana Santa.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-15",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "literatura",
+                "novelas",
+                "historicas"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "María Dueñas narra la historia de los españoles perdidos de Orán en su novela.",
+            "tipo_hecho": "BIOGRAFIA",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "año",
+            "paises": [
+                "ES"
+            ],
+            "ubicaciones_especificas": [
+                "Orán"
+            ],
+            "importancia": 6,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "literatura",
+                "novela",
+                "historica"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Carlos Bassas del Rey reconstruye la existencia histórica de Sun Tzu en su novela.",
+            "tipo_hecho": "BIOGRAFIA",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "año",
+            "paises": [
+                "ES",
+                "CN"
+            ],
+            "ubicaciones_especificas": [
+                "China"
+            ],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "literatura",
+                "novela",
+                "historica"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Arnaldur Indridason plantea un retorcido relato sobre el encuentro entre un relojero islandés y el rey Cristián VII.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "año",
+            "paises": [
+                "IS",
+                "DK"
+            ],
+            "ubicaciones_especificas": [
+                "Islandia",
+                "Dinamarca"
+            ],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "literatura",
+                "novela",
+                "historica"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "George Macdonald Fraser recupera un clásico de la literatura británica histórica y de aventuras.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "año",
+            "paises": [
+                "GB"
+            ],
+            "ubicaciones_especificas": [
+                "Reino Unido"
+            ],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "literatura",
+                "novela",
+                "historica"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "José Calvo Poyato narra la historia de Felipe II y un alguacil madrileño en su novela.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "año",
+            "paises": [
+                "ES"
+            ],
+            "ubicaciones_especificas": [
+                "España"
+            ],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "literatura",
+                "novela",
+                "historica"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Matthew Harffy compone una historia de aventuras sobre la era vikinga en su novela.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": null,
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "año",
+            "paises": [
+                "GB"
+            ],
+            "ubicaciones_especificas": [
+                "Reino Unido"
+            ],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "literatura",
+                "novela",
+                "historica"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "nombre": "Sun Tzu",
+            "tipo": "PERSONA",
+            "alias": [
+                "Sun Tzu"
+            ]
+        },
+        {
+            "nombre": "Felipe II",
+            "tipo": "PERSONA",
+            "alias": [
+                "Felipe II"
+            ]
+        },
+        {
+            "nombre": "Cristián VII de Dinamarca",
+            "tipo": "PERSONA",
+            "alias": [
+                "Cristián VII de Dinamarca"
+            ]
+        },
+        {
+            "nombre": "María Dueñas",
+            "tipo": "PERSONA",
+            "alias": [
+                "María Dueñas"
+            ]
+        },
+        {
+            "nombre": "María Reig",
+            "tipo": "PERSONA",
+            "alias": [
+                "María Reig"
+            ]
+        },
+        {
+            "nombre": "Carlos Bassas del Rey",
+            "tipo": "PERSONA",
+            "alias": [
+                "Carlos Bassas del Rey"
+            ]
+        },
+        {
+            "nombre": "Arnaldur Indridason",
+            "tipo": "PERSONA",
+            "alias": [
+                "Arnaldur Indridason"
+            ]
+        },
+        {
+            "nombre": "George Macdonald Fraser",
+            "tipo": "PERSONA",
+            "alias": [
+                "George Macdonald Fraser"
+            ]
+        },
+        {
+            "nombre": "José Calvo Poyato",
+            "tipo": "PERSONA",
+            "alias": [
+                "José Calvo Poyato"
+            ]
+        },
+        {
+            "nombre": "Matthew Harffy",
+            "tipo": "PERSONA",
+            "alias": [
+                "Matthew Harffy"
+            ]
+        },
+        {
+            "nombre": "Sun Tzu",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "El arte de la guerra"
+            ]
+        },
+        {
+            "nombre": "Semana Santa",
+            "tipo": "EVENTO",
+            "alias": [
+                "Semana Santa"
+            ]
+        },
+        {
+            "nombre": "París",
+            "tipo": "LUGAR",
+            "alias": [
+                "París"
+            ]
+        },
+        {
+            "nombre": "China",
+            "tipo": "LUGAR",
+            "alias": [
+                "China"
+            ]
+        },
+        {
+            "nombre": "España",
+            "tipo": "LUGAR",
+            "alias": [
+                "España"
+            ]
+        },
+        {
+            "nombre": "Orán",
+            "tipo": "LUGAR",
+            "alias": [
+                "Orán"
+            ]
+        },
+        {
+            "nombre": "Islandia",
+            "tipo": "LUGAR",
+            "alias": [
+                "Islandia"
+            ]
+        },
+        {
+            "nombre": "Dinamarca",
+            "tipo": "LUGAR",
+            "alias": [
+                "Dinamarca"
+            ]
+        },
+        {
+            "nombre": "Britania",
+            "tipo": "LUGAR",
+            "alias": [
+                "Britania"
+            ]
+        },
+        {
+            "nombre": "Lindisfarne",
+            "tipo": "LUGAR",
+            "alias": [
+                "Lindisfarne"
+            ]
+        },
+        {
+            "nombre": "Afganistán",
+            "tipo": "LUGAR",
+            "alias": [
+                "Afganistán"
+            ]
+        },
+        {
+            "nombre": "Kabul",
+            "tipo": "LUGAR",
+            "alias": [
+                "Kabul"
+            ]
+        },
+        {
+            "nombre": "EE.UU.",
+            "tipo": "LUGAR",
+            "alias": [
+                "EE.UU."
+            ]
+        },
+        {
+            "nombre": "Reino Unido",
+            "tipo": "LUGAR",
+            "alias": [
+                "Reino Unido"
+            ]
+        },
+        {
+            "nombre": "Austrohúngaro",
+            "tipo": "LUGAR",
+            "alias": [
+                "Austrohúngaro"
+            ]
+        },
+        {
+            "nombre": "Alemania",
+            "tipo": "LUGAR",
+            "alias": [
+                "Alemania"
+            ]
+        },
+        {
+            "nombre": "Italia",
+            "tipo": "LUGAR",
+            "alias": [
+                "Italia"
+            ]
+        },
+        {
+            "nombre": "Grijalbo",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "Grijalbo"
+            ]
+        },
+        {
+            "nombre": "Espasa",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "Espasa"
+            ]
+        },
+        {
+            "nombre": "RBA",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "RBA"
+            ]
+        },
+        {
+            "nombre": "Ático de los Libros",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "Ático de los Libros"
+            ]
+        },
+        {
+            "nombre": "Harper Collins Ibérica",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "Harper Collins Ibérica"
+            ]
+        },
+        {
+            "nombre": "Edhasa",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "Edhasa"
+            ]
+        },
+        {
+            "nombre": "Semana Santa",
+            "tipo": "EVENTO",
+            "alias": [
+                "Semana Santa"
+            ]
+        },
+        {
+            "nombre": "Vacaciones",
+            "tipo": "EVENTO",
+            "alias": [
+                "Vacaciones"
+            ]
+        },
+        {
+            "nombre": "Elecciones Generales España 2023",
+            "tipo": "EVENTO",
+            "alias": [
+                "Elecciones Generales España 2023"
+            ]
+        },
+        {
+            "nombre": "Cumbres",
+            "tipo": "EVENTO",
+            "alias": [
+                "Cumbres"
+            ]
+        },
+        {
+            "nombre": "Protestas",
+            "tipo": "EVENTO",
+            "alias": [
+                "Protestas"
+            ]
+        },
+        {
+            "nombre": "Conflictos",
+            "tipo": "EVENTO",
+            "alias": [
+                "Conflictos"
+            ]
+        },
+        {
+            "nombre": "Desastres naturales",
+            "tipo": "EVENTO",
+            "alias": [
+                "Desastres naturales"
+            ]
+        },
+        {
+            "nombre": "Leyes",
+            "tipo": "NORMATIVA",
+            "alias": [
+                "Leyes"
+            ]
+        },
+        {
+            "nombre": "Decretos",
+            "tipo": "NORMATIVA",
+            "alias": [
+                "Decretos"
+            ]
+        },
+        {
+            "nombre": "Tratados",
+            "tipo": "NORMATIVA",
+            "alias": [
+                "Tratados"
+            ]
+        },
+        {
+            "nombre": "Constituciones",
+            "tipo": "NORMATIVA",
+            "alias": [
+                "Constituciones"
+            ]
+        },
+        {
+            "nombre": "Ideas abstractas",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Ideas abstractas"
+            ]
+        },
+        {
+            "nombre": "Teorías",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Teorías"
+            ]
+        },
+        {
+            "nombre": "Mercados",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Mercados"
+            ]
+        },
+        {
+            "nombre": "Crisis Migratoria",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Crisis Migratoria"
+            ]
+        },
+        {
+            "nombre": "Caso Gürtel",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Caso Gürtel"
+            ]
+        }
+    ]
+}
 ```
 </details>
 
@@ -113,7 +614,7 @@ Error: No content received or generated
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+   **Mensaje Error:** `API_Error: BadRequestError: Error code: 400 - {'error': {'message': "Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': '{\n   "resultados": [\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      },\n      {\n         "cita": null,\n         "emisor_nombre": null,\n         "contexto": null,\n         "fecha_cita": null\n      }}'}}`
 
 
 <details open>
@@ -128,16 +629,88 @@ Error: No content received or generated
 
 ### Tarea: extraccion_datos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "indicador": "Precio de la novela 'Sonó un violín en París'",
+            "categoria": "económico",
+            "valor_numerico": 22.9,
+            "unidad": "euros",
+            "ambito_geografico": [],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Precio de la novela 'Invencible'",
+            "categoria": "económico",
+            "valor_numerico": 23.9,
+            "unidad": "euros",
+            "ambito_geografico": [],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Precio de la novela 'El rey y el relojero'",
+            "categoria": "económico",
+            "valor_numerico": 22.9,
+            "unidad": "euros",
+            "ambito_geografico": [],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Precio de la novela 'Flashman'",
+            "categoria": "económico",
+            "valor_numerico": 22.95,
+            "unidad": "euros",
+            "ambito_geografico": [],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Precio de la novela 'Dueños del Mundo'",
+            "categoria": "económico",
+            "valor_numerico": 24.9,
+            "unidad": "euros",
+            "ambito_geografico": [],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Precio de la novela 'Tiempo de espadas. El nacimiento de un guerrero'",
+            "categoria": "económico",
+            "valor_numerico": 24.5,
+            "unidad": "euros",
+            "ambito_geografico": [],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        }
+    ]
+}
 ```
 </details>

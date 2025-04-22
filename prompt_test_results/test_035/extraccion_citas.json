@@ -1,10 +1,10 @@
 {
     "test_id": "test_035",
     "tarea": "extraccion_citas",
-    "model_id": "llama-3.1-8b-128k",
-    "success": false,
-    "api_success": false,
-    "json_valid": false,
-    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
-    "llm_response_content": "Error: No content received or generated"
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"Me informan Tesorería de la Asamblea, que a los diputados (as), también se les pagará en cheque. Cómo los auditores de Contraloría cargan los cheques no he podido cobrar tampoco. Será que tendré que firmar ante él para recibirlo?\",\n         \"emisor_nombre\": \"Luis Eduardo Camacho\",\n         \"contexto\": \"El diputado oficialista Luis Eduardo Camacho se quejó en su cuenta de X de no poder cobrar su salario debido a la situación creada por la Contraloría General.\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"Los funcionarios legislativos realizaron una protesta en los pasillos de la Asamblea que fue encabezada por la diputada presidenta Dana Castañeda.\",\n         \"emisor_nombre\": \"La Estrella de Panamá\",\n         \"contexto\": \"La Estrella de Panamá informó que los funcionarios legislativos realizaron una protesta en los pasillos de la Asamblea.\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"Un diputado confirmó a La Decana que los diputados deberían ir a buscar sus cheques a la sede de la Contraloría General de la República.\",\n         \"emisor_nombre\": \"La Decana\",\n         \"contexto\": \"Un diputado confirmó a La Decana que los diputados deberían ir a buscar sus cheques a la sede de la Contraloría General de la República.\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
 }

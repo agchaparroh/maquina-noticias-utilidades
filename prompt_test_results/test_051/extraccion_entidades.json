@@ -1,10 +1,10 @@
 {
     "test_id": "test_051",
     "tarea": "extraccion_entidades",
-    "model_id": "llama-3.1-8b-128k",
-    "success": false,
-    "api_success": false,
-    "json_valid": false,
-    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
-    "llm_response_content": "Error: No content received or generated"
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Ciudad Autónoma de Buenos Aires (CABA)\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": [\"CABA\"]\n      },\n      {\n         \"nombre\": \"Instituto de Estadísticas y Censos porteño (IDECBA)\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"IDECBA\"]\n      },\n      {\n         \"nombre\": \"Canasta Básica Alimentaria (CBA)\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": [\"CBA\"]\n      },\n      {\n         \"nombre\": \"Canasta Básica Total (CBT)\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": [\"CBT\"]\n      },\n      {\n         \"nombre\": \"Sistema de Canastas de Consumo\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Línea de indigencia\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Línea de pobreza\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Sector acomodado\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Sector medio frágil\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Sector medio 'clase media'\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"No pobres vulnerables\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"En situación de indigencia\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"En situación de pobreza no indigente\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": []\n      }\n   ]\n}"
 }

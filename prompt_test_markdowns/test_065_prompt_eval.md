@@ -1,5 +1,5 @@
 # Evaluación Artículo: test_065
-**Modelo Probado:** `llama-3.1-8b-128k`
+**Modelo Probado:** `llama-3.1-8b-instant`
 
 ## Metadatos del Artículo Original
 
@@ -45,88 +45,1157 @@ Video: hombre se lanza a una poza en Honduras y muere al impactar contra una pie
 
 ---
 
-## Resultados de las Tareas (llama-3.1-8b-128k)
+## Resultados de las Tareas (llama-3.1-8b-instant)
 
 ### Tarea: relevancia
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "puntuacion_relevancia": 6,
+    "justificacion_relevancia": "Relevancia media debido a la propuesta de bono para trabajadores de salud y análisis presupuestario.",
+    "categorias_asignadas": [
+        "Política Nacional",
+        "Economía"
+    ],
+    "explicacion_concisa": "El Ministerio de Salud Pública analiza propuestas financieras para otorgar un bono a trabajadores de salud, con un monto potencial de Q1 mil 800. El viceministro de Finanzas mencionó que se buscará un punto medio en el rango de Q463 millones adicionales. El bono se prevé para personal de ciertos renglones y subgrupos, con un bono único de Q2 mil para trabajadores del renglón 0029 y subgrupo 018."
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "contenido": "El Ministerio de Salud Pública continúa analizando propuestas financieras para otorgar un bono a los trabajadores de varios renglones de esa dependencia.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-20",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "GT"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "salud",
+                "bono",
+                "ministerio"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El viceministro de Finanzas, Walter Figueroa, indicó que una de las propuestas es que el bono sea de Q1 mil 800, como una cifra promedio.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "GT"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 6,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "finanzas",
+                "bono",
+                "salud"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El bono mensual se prevé que sea para personal de los renglones 011, 021, 022 y 031.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-20",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "GT"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 6,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "salud",
+                "bono",
+                "renglones"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El artículo 140 del Presupuesto General 2025 contempla que el Ministerio de Salud realice readecuaciones para financiar la incorporación de contratistas al renglón 011.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-20",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "GT"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "presupuesto",
+                "salud",
+                "contratistas"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El Ministerio de Salud evaluará informes y trabajará en la construcción de una propuesta que sea viable y sostenible.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-20",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "GT"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 6,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "salud",
+                "ministerio",
+                "propuesta"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "nombre": "Ministerio de Salud Pública",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "Ministerio de Salud"
+            ]
+        },
+        {
+            "nombre": "Juan Carlos Oxom",
+            "tipo": "PERSONA",
+            "alias": [
+                "Juan Carlos Oxom"
+            ]
+        },
+        {
+            "nombre": "Pedro Sánchez Pérez-Castejón",
+            "tipo": "PERSONA",
+            "alias": [
+                "Pedro Sánchez"
+            ]
+        },
+        {
+            "nombre": "José Chic",
+            "tipo": "PERSONA",
+            "alias": [
+                "José Chic"
+            ]
+        },
+        {
+            "nombre": "Walter Figueroa",
+            "tipo": "PERSONA",
+            "alias": [
+                "Walter Figueroa"
+            ]
+        },
+        {
+            "nombre": "Santiago Atitlán",
+            "tipo": "LUGAR",
+            "alias": [
+                "Santiago Atitlán"
+            ]
+        },
+        {
+            "nombre": "Sololá",
+            "tipo": "LUGAR",
+            "alias": [
+                "Sololá"
+            ]
+        },
+        {
+            "nombre": "Caso Odebrecht",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Caso Odebrecht"
+            ]
+        },
+        {
+            "nombre": "Antigua Guatemala",
+            "tipo": "LUGAR",
+            "alias": [
+                "Antigua Guatemala"
+            ]
+        },
+        {
+            "nombre": "Quetzaltenango",
+            "tipo": "LUGAR",
+            "alias": [
+                "Quetzaltenango"
+            ]
+        },
+        {
+            "nombre": "Honduras",
+            "tipo": "LUGAR",
+            "alias": [
+                "Honduras"
+            ]
+        },
+        {
+            "nombre": "ONU",
+            "tipo": "OTRO",
+            "alias": [
+                "ONU"
+            ]
+        },
+        {
+            "nombre": "FMI",
+            "tipo": "OTRO",
+            "alias": [
+                "FMI"
+            ]
+        },
+        {
+            "nombre": "Gobierno",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "Gobierno"
+            ]
+        },
+        {
+            "nombre": "Parlamento",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "Parlamento"
+            ]
+        },
+        {
+            "nombre": "Tribunales",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "Tribunales"
+            ]
+        },
+        {
+            "nombre": "Fuerzas Armadas",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "Fuerzas Armadas"
+            ]
+        },
+        {
+            "nombre": "Policía",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "Policía"
+            ]
+        },
+        {
+            "nombre": "Ley",
+            "tipo": "NORMATIVA",
+            "alias": [
+                "Ley"
+            ]
+        },
+        {
+            "nombre": "Decreto",
+            "tipo": "NORMATIVA",
+            "alias": [
+                "Decreto"
+            ]
+        },
+        {
+            "nombre": "Tratado",
+            "tipo": "NORMATIVA",
+            "alias": [
+                "Tratado"
+            ]
+        },
+        {
+            "nombre": "Constitución",
+            "tipo": "NORMATIVA",
+            "alias": [
+                "Constitución"
+            ]
+        },
+        {
+            "nombre": "Elecciones",
+            "tipo": "EVENTO",
+            "alias": [
+                "Elecciones"
+            ]
+        },
+        {
+            "nombre": "Cumbre",
+            "tipo": "EVENTO",
+            "alias": [
+                "Cumbre"
+            ]
+        },
+        {
+            "nombre": "Protestas",
+            "tipo": "EVENTO",
+            "alias": [
+                "Protestas"
+            ]
+        },
+        {
+            "nombre": "Conflictos",
+            "tipo": "EVENTO",
+            "alias": [
+                "Conflictos"
+            ]
+        },
+        {
+            "nombre": "Desastres Naturales",
+            "tipo": "EVENTO",
+            "alias": [
+                "Desastres Naturales"
+            ]
+        },
+        {
+            "nombre": "Caso Gürtel",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Caso Gürtel"
+            ]
+        },
+        {
+            "nombre": "Crisis Migratoria",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Crisis Migratoria"
+            ]
+        },
+        {
+            "nombre": "Centro de Atención",
+            "tipo": "LUGAR",
+            "alias": [
+                "Centro de Atención"
+            ]
+        },
+        {
+            "nombre": "Salud",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Salud"
+            ]
+        },
+        {
+            "nombre": "Medicina",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Medicina"
+            ]
+        },
+        {
+            "nombre": "Ciencias de la Salud",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Ciencias de la Salud"
+            ]
+        },
+        {
+            "nombre": "Ciencias Médicas",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Ciencias Médicas"
+            ]
+        },
+        {
+            "nombre": "Servicios de Salud",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Servicios de Salud"
+            ]
+        },
+        {
+            "nombre": "Atención en Salud",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Atención en Salud"
+            ]
+        },
+        {
+            "nombre": "Prestación de Servicios",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Prestación de Servicios"
+            ]
+        },
+        {
+            "nombre": "Salario Mínimo",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Salario Mínimo"
+            ]
+        },
+        {
+            "nombre": "Actividades No Agrícolas",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Actividades No Agrícolas"
+            ]
+        },
+        {
+            "nombre": "Bono",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Bono"
+            ]
+        },
+        {
+            "nombre": "Propuesta",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Propuesta"
+            ]
+        },
+        {
+            "nombre": "Análisis",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Análisis"
+            ]
+        },
+        {
+            "nombre": "Fondo",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Fondo"
+            ]
+        },
+        {
+            "nombre": "Monto",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Monto"
+            ]
+        },
+        {
+            "nombre": "Rango",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Rango"
+            ]
+        },
+        {
+            "nombre": "Punto Medio",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Punto Medio"
+            ]
+        },
+        {
+            "nombre": "Cifra Promedio",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Cifra Promedio"
+            ]
+        },
+        {
+            "nombre": "Números Gruesos",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Números Gruesos"
+            ]
+        },
+        {
+            "nombre": "Monto Adicional",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Monto Adicional"
+            ]
+        },
+        {
+            "nombre": "Bono Mensual",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Bono Mensual"
+            ]
+        },
+        {
+            "nombre": "Personal de Salud",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Personal de Salud"
+            ]
+        },
+        {
+            "nombre": "Red Hospitalaria",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Red Hospitalaria"
+            ]
+        },
+        {
+            "nombre": "Prestación de Servicios de Salud",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Prestación de Servicios de Salud"
+            ]
+        },
+        {
+            "nombre": "Población",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Población"
+            ]
+        },
+        {
+            "nombre": "Servicios de Atención en Salud",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Servicios de Atención en Salud"
+            ]
+        },
+        {
+            "nombre": "Servicios de Salud de Calidad",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Servicios de Salud de Calidad"
+            ]
+        },
+        {
+            "nombre": "Servicios de Salud Dignos",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Servicios de Salud Dignos"
+            ]
+        },
+        {
+            "nombre": "Servicios de Salud Humanos",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Servicios de Salud Humanos"
+            ]
+        },
+        {
+            "nombre": "Servicios de Salud con Pertinencia Cultural",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Servicios de Salud con Pertinencia Cultural"
+            ]
+        },
+        {
+            "nombre": "Santiago Atitlán",
+            "tipo": "LUGAR",
+            "alias": [
+                "Santiago Atitlán"
+            ]
+        },
+        {
+            "nombre": "Sololá",
+            "tipo": "LUGAR",
+            "alias": [
+                "Sololá"
+            ]
+        },
+        {
+            "nombre": "Ministerio de Salud Pública",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "Ministerio de Salud"
+            ]
+        },
+        {
+            "nombre": "Juan Carlos Oxom",
+            "tipo": "PERSONA",
+            "alias": [
+                "Juan Carlos Oxom"
+            ]
+        },
+        {
+            "nombre": "Pedro Sánchez Pérez-Castejón",
+            "tipo": "PERSONA",
+            "alias": [
+                "Pedro Sánchez"
+            ]
+        },
+        {
+            "nombre": "José Chic",
+            "tipo": "PERSONA",
+            "alias": [
+                "José Chic"
+            ]
+        },
+        {
+            "nombre": "Walter Figueroa",
+            "tipo": "PERSONA",
+            "alias": [
+                "Walter Figueroa"
+            ]
+        },
+        {
+            "nombre": "Santiago Atitlán",
+            "tipo": "LUGAR",
+            "alias": [
+                "Santiago Atitlán"
+            ]
+        },
+        {
+            "nombre": "Sololá",
+            "tipo": "LUGAR",
+            "alias": [
+                "Sololá"
+            ]
+        },
+        {
+            "nombre": "Caso Odebrecht",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Caso Odebrecht"
+            ]
+        },
+        {
+            "nombre": "Antigua Guatemala",
+            "tipo": "LUGAR",
+            "alias": [
+                "Antigua Guatemala"
+            ]
+        },
+        {
+            "nombre": "Quetzaltenango",
+            "tipo": "LUGAR",
+            "alias": [
+                "Quetzaltenango"
+            ]
+        },
+        {
+            "nombre": "Honduras",
+            "tipo": "LUGAR",
+            "alias": [
+                "Honduras"
+            ]
+        },
+        {
+            "nombre": "ONU",
+            "tipo": "OTRO",
+            "alias": [
+                "ONU"
+            ]
+        },
+        {
+            "nombre": "FMI",
+            "tipo": "OTRO",
+            "alias": [
+                "FMI"
+            ]
+        },
+        {
+            "nombre": "Gobierno",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "Gobierno"
+            ]
+        },
+        {
+            "nombre": "Parlamento",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "Parlamento"
+            ]
+        },
+        {
+            "nombre": "Tribunales",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "Tribunales"
+            ]
+        },
+        {
+            "nombre": "Fuerzas Armadas",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "Fuerzas Armadas"
+            ]
+        },
+        {
+            "nombre": "Policía",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "Policía"
+            ]
+        },
+        {
+            "nombre": "Ley",
+            "tipo": "NORMATIVA",
+            "alias": [
+                "Ley"
+            ]
+        },
+        {
+            "nombre": "Decreto",
+            "tipo": "NORMATIVA",
+            "alias": [
+                "Decreto"
+            ]
+        },
+        {
+            "nombre": "Tratado",
+            "tipo": "NORMATIVA",
+            "alias": [
+                "Tratado"
+            ]
+        },
+        {
+            "nombre": "Constitución",
+            "tipo": "NORMATIVA",
+            "alias": [
+                "Constitución"
+            ]
+        },
+        {
+            "nombre": "Elecciones",
+            "tipo": "EVENTO",
+            "alias": [
+                "Elecciones"
+            ]
+        },
+        {
+            "nombre": "Cumbre",
+            "tipo": "EVENTO",
+            "alias": [
+                "Cumbre"
+            ]
+        },
+        {
+            "nombre": "Protestas",
+            "tipo": "EVENTO",
+            "alias": [
+                "Protestas"
+            ]
+        },
+        {
+            "nombre": "Conflictos",
+            "tipo": "EVENTO",
+            "alias": [
+                "Conflictos"
+            ]
+        },
+        {
+            "nombre": "Desastres Naturales",
+            "tipo": "EVENTO",
+            "alias": [
+                "Desastres Naturales"
+            ]
+        },
+        {
+            "nombre": "Caso Gürtel",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Caso Gürtel"
+            ]
+        },
+        {
+            "nombre": "Crisis Migratoria",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Crisis Migratoria"
+            ]
+        },
+        {
+            "nombre": "Centro de Atención",
+            "tipo": "LUGAR",
+            "alias": [
+                "Centro de Atención"
+            ]
+        },
+        {
+            "nombre": "Salud",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Salud"
+            ]
+        },
+        {
+            "nombre": "Medicina",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Medicina"
+            ]
+        },
+        {
+            "nombre": "Ciencias de la Salud",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Ciencias de la Salud"
+            ]
+        },
+        {
+            "nombre": "Ciencias Médicas",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Ciencias Médicas"
+            ]
+        },
+        {
+            "nombre": "Servicios de Salud",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Servicios de Salud"
+            ]
+        },
+        {
+            "nombre": "Atención en Salud",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Atención en Salud"
+            ]
+        },
+        {
+            "nombre": "Prestación de Servicios",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Prestación de Servicios"
+            ]
+        },
+        {
+            "nombre": "Salario Mínimo",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Salario Mínimo"
+            ]
+        },
+        {
+            "nombre": "Actividades No Agrícolas",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Actividades No Agrícolas"
+            ]
+        },
+        {
+            "nombre": "Bono",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Bono"
+            ]
+        },
+        {
+            "nombre": "Propuesta",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Propuesta"
+            ]
+        },
+        {
+            "nombre": "Análisis",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Análisis"
+            ]
+        },
+        {
+            "nombre": "Fondo",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Fondo"
+            ]
+        },
+        {
+            "nombre": "Monto",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Monto"
+            ]
+        },
+        {
+            "nombre": "Rango",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Rango"
+            ]
+        },
+        {
+            "nombre": "Punto Medio",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Punto Medio"
+            ]
+        },
+        {
+            "nombre": "Cifra Promedio",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Cifra Promedio"
+            ]
+        },
+        {
+            "nombre": "Números Gruesos",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Números Gruesos"
+            ]
+        },
+        {
+            "nombre": "Monto Adicional",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Monto Adicional"
+            ]
+        },
+        {
+            "nombre": "Bono Mensual",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Bono Mensual"
+            ]
+        },
+        {
+            "nombre": "Personal de Salud",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Personal de Salud"
+            ]
+        },
+        {
+            "nombre": "Red Hospitalaria",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Red Hospitalaria"
+            ]
+        },
+        {
+            "nombre": "Prestación de Servicios de Salud",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Prestación de Servicios de Salud"
+            ]
+        },
+        {
+            "nombre": "Población",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Población"
+            ]
+        },
+        {
+            "nombre": "Servicios de Atención en Salud",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Servicios de Atención en Salud"
+            ]
+        },
+        {
+            "nombre": "Servicios de Salud de Calidad",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Servicios de Salud de Calidad"
+            ]
+        },
+        {
+            "nombre": "Servicios de Salud Dignos",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Servicios de Salud Dignos"
+            ]
+        },
+        {
+            "nombre": "Servicios de Salud Humanos",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Servicios de Salud Humanos"
+            ]
+        },
+        {
+            "nombre": "Servicios de Salud con Pertinencia Cultural",
+            "tipo": "CONCEPTO",
+            "alias": [
+                "Servicios de Salud con Pertinencia Cultural"
+            ]
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "cita": "Hablamos de un punto medio, se requeriría de cinco números gruesos, de Q463 millones adicionales. Estamos partiendo de eso, la búsqueda de ese monto, que está más o menos por ese rango de Q1 mil 800 de bono. Hay que hacer avisos, por ahí los tenemos detectados, lo tenemos que soportar",
+            "emisor_nombre": "funcionario de Finanzas",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "Se continúa el análisis técnico de la propuesta de los distintos sindicatos del sector de salud, como parte de este proceso. Se trabajará en la construcción de una propuesta que sea viable y sostenible, con el objetivo de no afectar la prestación de los servicios de salud a la población",
+            "emisor_nombre": "Ministerio de Salud",
+            "contexto": null,
+            "fecha_cita": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "indicador": "Monto promedio del bono para trabajadores de varios renglones del Ministerio de Salud Pública",
+            "categoria": "presupuestario",
+            "valor_numerico": 1800,
+            "unidad": "quetzales",
+            "ambito_geografico": [
+                "Guatemala"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Monto máximo del bono para trabajadores del renglón 0029 y subgrupo 018 del Ministerio de Salud Pública",
+            "categoria": "presupuestario",
+            "valor_numerico": 2000,
+            "unidad": "quetzales",
+            "ambito_geografico": [
+                "Guatemala"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Rango de análisis de costos para el bono de los trabajadores del Ministerio de Salud Pública",
+            "categoria": "presupuestario",
+            "valor_numerico": 150000000,
+            "unidad": "quetzales",
+            "ambito_geografico": [
+                "Guatemala"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Rango de análisis de costos para el bono de los trabajadores del Ministerio de Salud Pública",
+            "categoria": "presupuestario",
+            "valor_numerico": 200000000,
+            "unidad": "quetzales",
+            "ambito_geografico": [
+                "Guatemala"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Monto de fondos disponibles para el Ministerio de Salud Pública",
+            "categoria": "presupuestario",
+            "valor_numerico": 600000000,
+            "unidad": "quetzales",
+            "ambito_geografico": [
+                "Guatemala"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Monto adicional requerido para el bono de los trabajadores del Ministerio de Salud Pública",
+            "categoria": "presupuestario",
+            "valor_numerico": 463000000,
+            "unidad": "quetzales",
+            "ambito_geografico": [
+                "Guatemala"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Monto del bono para personal de los renglones 011, 021, 022 y 031 del Ministerio de Salud Pública",
+            "categoria": "presupuestario",
+            "valor_numerico": 1800,
+            "unidad": "quetzales",
+            "ambito_geografico": [
+                "Guatemala"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Monto del bono para trabajadores del renglón 0029 y subgrupo 018 del Ministerio de Salud Pública",
+            "categoria": "presupuestario",
+            "valor_numerico": 2000,
+            "unidad": "quetzales",
+            "ambito_geografico": [
+                "Guatemala"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        }
+    ]
+}
 ```
 </details>

@@ -1,5 +1,5 @@
 # Evaluación Artículo: test_018
-**Modelo Probado:** `llama-3.1-8b-128k`
+**Modelo Probado:** `llama-3.1-8b-instant`
 
 ## Metadatos del Artículo Original
 
@@ -64,55 +64,304 @@ QUIERO RECIBIRLO
 
 ---
 
-## Resultados de las Tareas (llama-3.1-8b-128k)
+## Resultados de las Tareas (llama-3.1-8b-instant)
 
 ### Tarea: relevancia
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "puntuacion_relevancia": 8,
+    "justificacion_relevancia": "Tiene impacto potencial claro en la política económica de Argentina",
+    "categorias_asignadas": [
+        "Política Nacional",
+        "Economía"
+    ],
+    "explicacion_concisa": "El presidente Javier Milei celebró la liberación del cepo al dólar y explicó su plan económico, comparando la dolarización con una pizza y destacando la diferencia con la experiencia del gobierno de Macri."
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "contenido": "El presidente Javier Milei habló cuatro horas y media en un programa de streaming con casi 100 mil usuarios conectados.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-15T10:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "AR"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "gobierno",
+                "Argentina"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El presidente celebró el fin de las restricciones para la compra de la moneda extranjera y lo denominó 'el día de la liberación'.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-15",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "AR"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "gobierno",
+                "Argentina"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El presidente comparó la dolarización con una pizza y dijo que hay distintas formas de llevar adelante ese proceso.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-15",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "AR"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 6,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "gobierno",
+                "Argentina"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El presidente dijo que el valor del dólar bajará hasta tocar el piso inferior de $1000 y que el Banco Central podría comprar la moneda y acumular alrededor de 4.000 millones de dólares.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-15",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "AR"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "gobierno",
+                "Argentina"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El presidente explicó que el 10% de los aranceles de Trump tiene que ver con el vínculo que construyó su administración con la de Donald Trump.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-15",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "AR",
+                "US"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "gobierno",
+                "Argentina",
+                "Estados Unidos"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El presidente dijo que la economía argentina crece más que la americana y que la demanda de dinero está volando, lo que llevará a la inflación a colapsar a mitad del año que viene.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-15",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "AR"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "gobierno",
+                "Argentina"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "nombre": "Javier Milei",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Alejandro Fantino",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Luis Caputo",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Mauricio Macri",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Donald Trump",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Gerardo Werthein",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Marco Rubio",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Sergio Massa",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "River",
+            "tipo": "LUGAR",
+            "alias": [
+                "Monumental"
+            ]
+        },
+        {
+            "nombre": "Argentina",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Estados Unidos",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Mercosur",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Banco Central",
+            "tipo": "INSTITUCION",
+            "alias": []
+        },
+        {
+            "nombre": "Casa Rosada",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Ministerio de Economía",
+            "tipo": "INSTITUCION",
+            "alias": []
+        },
+        {
+            "nombre": "Neura",
+            "tipo": "ORGANIZACION",
+            "alias": []
+        },
+        {
+            "nombre": "Clarín",
+            "tipo": "ORGANIZACION",
+            "alias": []
+        },
+        {
+            "nombre": "Cepo",
+            "tipo": "CONCEPTO",
+            "alias": []
+        },
+        {
+            "nombre": "Dolarización",
+            "tipo": "CONCEPTO",
+            "alias": []
+        },
+        {
+            "nombre": "Aranceles",
+            "tipo": "CONCEPTO",
+            "alias": []
+        },
+        {
+            "nombre": "Inflación",
+            "tipo": "CONCEPTO",
+            "alias": []
+        },
+        {
+            "nombre": "PBI",
+            "tipo": "CONCEPTO",
+            "alias": []
+        },
+        {
+            "nombre": "BPO",
+            "tipo": "CONCEPTO",
+            "alias": []
+        },
+        {
+            "nombre": "Newsletter Clarín",
+            "tipo": "CONCEPTO",
+            "alias": []
+        }
+    ]
+}
 ```
 </details>
 
@@ -121,7 +370,7 @@ Error: No content received or generated
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+   **Mensaje Error:** `API_Error: RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01jsay2bafeeht06zsq8qv9mct` service tier `on_demand` on tokens per minute (TPM): Limit 250000, Used 250077, Requested 2487. Please try again in 615.4ms. Need more tokens? Visit https://groq.com/self-serve-support/ to request higher limits.', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}`
 
 
 <details open>
@@ -138,7 +387,7 @@ Error: No content received or generated
 
 ❌ **Estado:** Fallo (Error API)
 
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+   **Mensaje Error:** `API_Error: BadRequestError: Error code: 400 - {'error': {'message': "Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': '{\n   "resultados": [\n      {\n         "indicador": "Número de usuarios conectados a la transmisión de streaming",\n         "categoria": "demográfico",\n         "valor_numerico": 100000,\n         "unidad": "usuarios",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor del dólar en pesos argentinos",\n         "categoria": "económico",\n         "valor_numerico": 1400,\n         "unidad": "pesos argentinos/dólar",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor del dólar en pesos argentinos después del levantamiento del cepo",\n         "categoria": "económico",\n         "valor_numerico": 1195,\n         "unidad": "pesos argentinos/dólar",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Porcentaje de aranceles impuestos por el gobierno de Estados Unidos a las importaciones de Argentina",\n         "categoria": "económico",\n         "valor_numerico": 10,\n         "unidad": "%",\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la base monetaria",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": "Debería duplicarse en condiciones normales"\n      },\n      {\n         "indicador": "Tasa de crecimiento de la economía argentina",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": "Más que la de Estados Unidos"\n      },\n      {\n         "indicador": "Valor de la inflación",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": "Va a colapsar a mitad del año que viene"\n      },\n      {\n         "indicador": "Valor de la deuda pública",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión extranjera directa",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la producción industrial",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión en infraestructura",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión en educación",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión en salud",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión en transporte",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión en energía",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión en agricultura",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión en minería",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión en construcción",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión en servicios",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión en comercio",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión en turismo",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión en finanzas",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión en tecnología",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión en salud pública",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión en educación pública",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión en infraestructura pública",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión en transporte público",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión en energía renovable",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión en agricultura sostenible",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión en minería sostenible",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión en construcción sostenible",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión en servicios sostenibles",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión en comercio sostenible",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión en turismo sostenible",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión en finanzas sostenibles",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión en tecnología sostenible",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión en salud pública sostenible",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión en educación pública sostenible",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión en infraestructura pública sostenible",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      },\n      {\n         "indicador": "Valor de la inversión en transporte público sostenible",\n         "categoria": "económico",\n         "valor_numerico": null,\n         "unidad": null,\n         "ambito_geografico": [],\n         "periodo_referencia_inicio": null,\n         "periodo_referencia_fin": null,\n         "tipo_periodo": null,\n         "fuente_especifica": null,\n         "notas_contexto": null\n      }}'}}`
 
 
 <details open>

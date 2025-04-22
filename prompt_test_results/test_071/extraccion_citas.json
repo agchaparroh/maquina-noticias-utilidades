@@ -1,10 +1,10 @@
 {
     "test_id": "test_071",
     "tarea": "extraccion_citas",
-    "model_id": "llama-3.1-8b-128k",
-    "success": false,
-    "api_success": false,
-    "json_valid": false,
-    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
-    "llm_response_content": "Error: No content received or generated"
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"La voz del pueblo es la que manda, por eso quiero decirles que a partir de esta semana van a conocer los dos nombres, del presidente y vicepresidente (con los que participará UCS en las elecciones generales). Mañana firmo los acuerdos, que son los últimos en La Paz. Luego tendremos una asamblea para definir, porque no quiero equivocarme, no podemos hacer locuras, no podemos hacer al primer pitazo de una encuesta; ustedes han visto cómo fracasaron otros\",\n         \"emisor_nombre\": \"Jhonny Fernández\",\n         \"contexto\": \"Fernández concentró a sus seguidores en el Cambódromo, la tarde de este lunes, y de acuerdo con lo previsto, al lugar llegaron vecinos de diferentes distritos. Además estuvieron presentes algunos legisladores locales y nacionales.\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"Nosotros primero escuchamos al pueblo. Nosotros tenemos que ratificar el triunfo en Santa Cruz, porque ello nos llevará al triunfo nacional\",\n         \"emisor_nombre\": \"Jhonny Fernández\",\n         \"contexto\": \"Según aseguró el alcalde:\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
 }

@@ -1,10 +1,10 @@
 {
     "test_id": "test_068",
     "tarea": "extraccion_datos",
-    "model_id": "llama-3.1-8b-128k",
-    "success": false,
-    "api_success": false,
-    "json_valid": false,
-    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
-    "llm_response_content": "Error: No content received or generated"
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Número de veces que se menciona la propuesta de cerrar el Congreso\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": 1,\n         \"unidad\": \"\",\n         \"ambito_geografico\": [\"Colombia\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Número de veces que se menciona la institucionalidad del país\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": 1,\n         \"unidad\": \"\",\n         \"ambito_geografico\": [\"Colombia\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Número de veces que se menciona el Congreso de la República\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": 2,\n         \"unidad\": \"\",\n         \"ambito_geografico\": [\"Colombia\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Número de veces que se menciona la propuesta de convocar a una constituyente\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": 1,\n         \"unidad\": \"\",\n         \"ambito_geografico\": [\"Colombia\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Número de veces que se menciona la generación actual\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": 1,\n         \"unidad\": \"\",\n         \"ambito_geografico\": [\"Colombia\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      }\n   ]\n}"
 }

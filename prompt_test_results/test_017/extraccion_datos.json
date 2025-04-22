@@ -1,10 +1,10 @@
 {
     "test_id": "test_017",
     "tarea": "extraccion_datos",
-    "model_id": "llama-3.1-8b-128k",
-    "success": false,
-    "api_success": false,
-    "json_valid": false,
-    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
-    "llm_response_content": "Error: No content received or generated"
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Número de días para presentar alianzas ante el Tribunal Supremo Electoral (TSE)\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": 5,\n         \"unidad\": \"días\",\n         \"ambito_geografico\": [\"Bolivia\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": \"puntual\",\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Número de títulos universitarios de Quiroga\",\n         \"categoria\": \"otro\",\n         \"valor_numerico\": 3,\n         \"unidad\": \"títulos universitarios\",\n         \"ambito_geografico\": [],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      }\n   ]\n}"
 }

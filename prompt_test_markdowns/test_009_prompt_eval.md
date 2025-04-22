@@ -1,5 +1,5 @@
 # Evaluación Artículo: test_009
-**Modelo Probado:** `llama-3.1-8b-128k`
+**Modelo Probado:** `llama-3.1-8b-instant`
 
 ## Metadatos del Artículo Original
 
@@ -35,88 +35,319 @@ El exmandatario señaló que, más allá del acompañamiento en los sepelios, er
 
 ---
 
-## Resultados de las Tareas (llama-3.1-8b-128k)
+## Resultados de las Tareas (llama-3.1-8b-instant)
 
 ### Tarea: relevancia
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "puntuacion_relevancia": 7,
+    "justificacion_relevancia": "Relevancia alta debido a la magnitud de la tragedia y la respuesta política",
+    "categorias_asignadas": [
+        "Política Nacional",
+        "Conflicto/Seguridad",
+        "Sociedad/Derechos"
+    ],
+    "explicacion_concisa": "El partido Fuerza del Pueblo realiza una misa en memoria de las víctimas del desplome de la discoteca Jet Set en la República Dominicana, donde más de 230 personas fallecieron. El exmandatario Leonel Fernández dirigió palabras de condolencias y solidaridad, destacando la magnitud del dolor colectivo en la sociedad dominicana."
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "contenido": "Fuerza del Pueblo realiza una misa en Gascue por las víctimas del Jet Set",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "DO"
+            ],
+            "ubicaciones_especificas": [
+                "Gascue",
+                "Distrito Nacional"
+            ],
+            "importancia": 9,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "Fuerza del Pueblo",
+                "misa",
+                "víctimas",
+                "Jet Set"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Leonel Fernández afirmó que la tragedia \"en el corazón del pueblo dominicano será un duelo eterno\"",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "DO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "Leonel Fernández",
+                "declaración",
+                "duelo eterno"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El desplome del techo provocó una de las peores catástrofes humanas en la historia reciente del país",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-13T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "DO"
+            ],
+            "ubicaciones_especificas": [
+                "Jet Set"
+            ],
+            "importancia": 9,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "desplome",
+                "techo",
+                "catástrofe"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El Gobierno decretó tres días de duelo y tuvo que extenderlo",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-11T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "DO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "Gobierno",
+                "decreto",
+                "duelo"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El dolor del pueblo dominicano ha sido enorme",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "DO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "dolor",
+                "pueblo dominicano"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El exmandatario señaló que, más allá del acompañamiento en los sepelios, era necesario un momento de recogimiento espiritual",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "DO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "recogimiento espiritual",
+                "sepelios"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "nombre": "Fuerza del Pueblo (FP)",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "FP"
+            ]
+        },
+        {
+            "nombre": "Leonel Fernández",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Jet Set",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Parroquia San Antonio de Padua",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Gascue",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Distrito Nacional",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Dominican Republic",
+            "tipo": "LUGAR",
+            "alias": [
+                "República Dominicana"
+            ]
+        },
+        {
+            "nombre": "Tragedia del Jet Set",
+            "tipo": "EVENTO",
+            "alias": []
+        },
+        {
+            "nombre": "Duelo Nacional",
+            "tipo": "EVENTO",
+            "alias": []
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "cita": "El dolor del pueblo dominicano ha sido enorme. El Gobierno decretó tres días de duelo y tuvo que extenderlo, pero deberá extenderlo más, pues en el corazón del pueblo dominicano será un duelo eterno",
+            "emisor_nombre": "Leonel Fernández",
+            "contexto": "Durante la ceremonia de condolencias y solidaridad en la Parroquia San Antonio de Padua",
+            "fecha_cita": null
+        },
+        {
+            "cita": "Estaba la representación de la sociedad dominicana a todos los niveles",
+            "emisor_nombre": "Leonel Fernández",
+            "contexto": "Durante la ceremonia de condolencias y solidaridad en la Parroquia San Antonio de Padua",
+            "fecha_cita": null
+        },
+        {
+            "cita": "en medio del dolor, esta es una herida que tomará tiempo para cicatrizar, si es que llega a cicatrizar",
+            "emisor_nombre": "Leonel Fernández",
+            "contexto": "Durante la ceremonia de condolencias y solidaridad en la Parroquia San Antonio de Padua",
+            "fecha_cita": null
+        },
+        {
+            "cita": "Estamos seguros de que Dios los acogerá en su santo cielo. Que en paz descansen",
+            "emisor_nombre": "Leonel Fernández",
+            "contexto": "Durante la ceremonia de condolencias y solidaridad en la Parroquia San Antonio de Padua",
+            "fecha_cita": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "indicador": "Número de personas fallecidas en la tragedia del Jet Set",
+            "categoria": "demográfico",
+            "valor_numerico": 230,
+            "unidad": "personas",
+            "ambito_geografico": [
+                "República Dominicana"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de días de duelo decretados por el Gobierno",
+            "categoria": "social",
+            "valor_numerico": 3,
+            "unidad": "días",
+            "ambito_geografico": [
+                "República Dominicana"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": "Fue extendido posteriormente"
+        }
+    ]
+}
 ```
 </details>

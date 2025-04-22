@@ -1,10 +1,10 @@
 {
     "test_id": "test_048",
     "tarea": "extraccion_entidades",
-    "model_id": "llama-3.1-8b-128k",
-    "success": false,
-    "api_success": false,
-    "json_valid": false,
-    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
-    "llm_response_content": "Error: No content received or generated"
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Vargas Llosa, Jorge Mario Pedro\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Vargas Llosa\", \"Jorge Mario Pedro Vargas Llosa\"]\n      },\n      {\n         \"nombre\": \"Boom latinoamericano de literatura\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": [\"Boom latinoamericano\"]\n      },\n      {\n         \"nombre\": \"García Márquez, Gabriel\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"García Márquez\"]\n      },\n      {\n         \"nombre\": \"Cortázar, Julio\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Cortázar\"]\n      },\n      {\n         \"nombre\": \"Fuentes, Carlos\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Fuentes\"]\n      },\n      {\n         \"nombre\": \"Flaubert, Gustave\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Flaubert\"]\n      },\n      {\n         \"nombre\": \"Balzac, Honoré de\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Balzac\"]\n      },\n      {\n         \"nombre\": \"Galdós, Benito Pérez\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Galdós\"]\n      },\n      {\n         \"nombre\": \"Cervantes, Miguel de\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Cervantes\"]\n      },\n      {\n         \"nombre\": \"La ciudad y los perros\",\n         \"tipo\": \"OBRA LITERARIA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Conversación en la Catedral\",\n         \"tipo\": \"OBRA LITERARIA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"La Chingada\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"EL PAÍS\",\n         \"tipo\": \"MEDIO DE COMUNICACIÓN\",\n         \"alias\": [\"El País\"]\n      },\n      {\n         \"nombre\": \"Premio Nobel de Literatura\",\n         \"tipo\": \"PREMIO\",\n         \"alias\": [\"Premio Nobel\"]\n      },\n      {\n         \"nombre\": \"México\",\n         \"tipo\": \"PAÍS\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Latinoamérica\",\n         \"tipo\": \"REGION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"París\",\n         \"tipo\": \"CIUDAD\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Donceles\",\n         \"tipo\": \"CALLE\",\n         \"alias\": []\n      }\n   ]\n}"
 }

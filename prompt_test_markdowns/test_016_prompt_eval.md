@@ -1,5 +1,5 @@
 # Evaluación Artículo: test_016
-**Modelo Probado:** `llama-3.1-8b-128k`
+**Modelo Probado:** `llama-3.1-8b-instant`
 
 ## Metadatos del Artículo Original
 
@@ -35,88 +35,275 @@ En efecto, la señora Yadira Saltos sí asistió a la citada diligencia. Lamenta
 
 ---
 
-## Resultados de las Tareas (llama-3.1-8b-128k)
+## Resultados de las Tareas (llama-3.1-8b-instant)
 
 ### Tarea: relevancia
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "puntuacion_relevancia": 5,
+    "justificacion_relevancia": "La rectificación de una nota periodística sobre un caso judicial es relevante para la justicia y la transparencia.",
+    "categorias_asignadas": [
+        "Justicia/Legal"
+    ],
+    "explicacion_concisa": "La exconsejera de Participación Ciudadana y Control Social Yadira Saltos Rivas solicita la rectificación de una nota periodística que contiene afirmaciones incorrectas sobre su participación en una versión judicial. La rectificación confirma que Saltos sí asistió a la citada diligencia."
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "contenido": "La exconsejera de Participación Ciudadana y Control Social Yadira Saltos Rivas envió una carta a este Diario solicitando la rectificación de una nota periodística.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-21",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "rectificación",
+                "nota periodística"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Yadira Saltos señaló que el artículo mencionado contenía afirmaciones incorrectas que afectaban directamente al honor, reputación y derechos de su persona.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-21",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "afirmaciones incorrectas",
+                "honor",
+                "reputación",
+                "derechos"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La carta de Yadira Saltos indicó que el artículo mencionado confundía a la opinión pública y desinformaba.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-21",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "confusión",
+                "desinformación"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La nota periodística mencionada confundía a la opinión pública y desinformaba.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-21",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "confusión",
+                "desinformación"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La exconsejera de Participación Ciudadana y Control Social Yadira Saltos sí asistió a la citada diligencia.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-03",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "diligencia",
+                "asistencia"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "nombre": "Yadira Saltos Rivas",
+            "tipo": "PERSONA",
+            "alias": [
+                "Yadira Saltos",
+                "Saltos"
+            ]
+        },
+        {
+            "nombre": "Diario",
+            "tipo": "MEDIO DE COMUNICACIÓN",
+            "alias": [
+                "Este Diario"
+            ]
+        },
+        {
+            "nombre": "Ley de Comunicación",
+            "tipo": "NORMATIVA",
+            "alias": []
+        },
+        {
+            "nombre": "Fiscalía General del Estado",
+            "tipo": "INSTITUCIÓN",
+            "alias": []
+        },
+        {
+            "nombre": "Caso Liga2",
+            "tipo": "CONCEPTO",
+            "alias": []
+        },
+        {
+            "nombre": "Daniela Camacho",
+            "tipo": "PERSONA",
+            "alias": [
+                "Daniela"
+            ]
+        },
+        {
+            "nombre": "Nicole Bonifaz",
+            "tipo": "PERSONA",
+            "alias": [
+                "Nicole"
+            ]
+        },
+        {
+            "nombre": "Política",
+            "tipo": "CONCEPTO",
+            "alias": []
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "cita": "En concreto, el artículo menciona que: “Por otra parte, dentro de la convocatoria hecha para rendir versión vía Zoom el pasado jueves, 3 de abril, para las procesadas Yadira Saltos y Nicole Bonifaz, solo esta última se hizo presente en la versión libre y voluntaria. Saltos no se habría conectado”.",
+            "emisor_nombre": "Yadira Saltos Rivas",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "Dicha afirmación es incorrecta por cuanto el día de ayer, 3 de abril de 2025, estuve convocada por la Fiscalía General del Estado a rendir mi versión dentro de la instrucción fiscal que se ventila por una supuesta asociación ilícita, y rendí en forma libre y voluntaria en la hora señalada, esto es, a partir de las 09:00, con la presencia de otras partes procesales como se podrá contrarrestar en el expediente, que es público. Es decir, me encuentro ejerciendo activamente mi defensa.",
+            "emisor_nombre": "Yadira Saltos Rivas",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "La nota periodística mencionada confunde a la opinión pública y desinforma, por lo que, amparados en lo que establece la Ley de Comunicación, solicito se realice la rectificación de la noticia antes mencionada y de esta forma aclarar a la ciudadanía, que se merece información veraz y oportuna”.",
+            "emisor_nombre": "Yadira Saltos Rivas",
+            "contexto": null,
+            "fecha_cita": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "indicador": "Número de personas que asistieron a la versión vía Zoom",
+            "categoria": "electoral",
+            "valor_numerico": 1,
+            "unidad": "persona",
+            "ambito_geografico": [],
+            "periodo_referencia_inicio": "2025-04-03",
+            "periodo_referencia_fin": "2025-04-03",
+            "tipo_periodo": "puntual",
+            "fuente_especifica": "Fiscalía General del Estado",
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de personas que no asistieron a la versión vía Zoom",
+            "categoria": "electoral",
+            "valor_numerico": 1,
+            "unidad": "persona",
+            "ambito_geografico": [],
+            "periodo_referencia_inicio": "2025-04-03",
+            "periodo_referencia_fin": "2025-04-03",
+            "tipo_periodo": "puntual",
+            "fuente_especifica": null,
+            "notas_contexto": null
+        }
+    ]
+}
 ```
 </details>

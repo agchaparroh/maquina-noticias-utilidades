@@ -1,5 +1,5 @@
 # Evaluación Artículo: test_002
-**Modelo Probado:** `llama-3.1-8b-128k`
+**Modelo Probado:** `llama-3.1-8b-instant`
 
 ## Metadatos del Artículo Original
 
@@ -42,88 +42,366 @@ Te puede gustar
 
 ---
 
-## Resultados de las Tareas (llama-3.1-8b-128k)
+## Resultados de las Tareas (llama-3.1-8b-instant)
 
 ### Tarea: relevancia
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "puntuacion_relevancia": 8,
+    "justificacion_relevancia": "Unión del Polo Democrático al Pacto Histórico para las elecciones de 2026",
+    "categorias_asignadas": [
+        "Política Nacional",
+        "Elecciones",
+        "Política Internacional"
+    ],
+    "explicacion_concisa": "El Polo Democrático se une al Pacto Histórico, una coalición de izquierda, para presentarse como una sola fuerza política en las elecciones presidenciales y legislativas de 2026. Esta decisión busca consolidar un frente unificado para representar a las fuerzas de izquierda del país y tener mayor incidencia en la agenda política."
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "contenido": "El Polo Democrático se une al Pacto Histórico.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "CO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 9,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "Pacto Histórico",
+                "Polo Democrático"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El Polo Democrático busca presentarse como una sola fuerza política en las elecciones presidenciales y legislativas.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "CO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "elecciones",
+                "Polo Democrático"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El Polo Democrático se integra al Pacto Histórico, una coalición de izquierda que busca consolidarse como una única fuerza política.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "CO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 9,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "Pacto Histórico",
+                "Polo Democrático"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El objetivo común es consolidar un frente unificado para las elecciones de 2026, con el fin de representar a las fuerzas de izquierda del país y tener mayor incidencia en la agenda política.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "CO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "elecciones",
+                "Pacto Histórico"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El Polo Democrático busca consolidar un bloque político que permita avanzar en las transformaciones necesarias para Colombia.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "CO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "transformación",
+                "Colombia"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El Polo Democrático es un partido que ha tenido una larga historia en las últimas décadas de trabajo por la unidad de todas las corrientes de izquierda.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "CO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "unidad",
+                "izquierda"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El presidente Gustavo Petro ha promovido la creación de un partido único de izquierda que agrupe a todas las fuerzas progresistas.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "CO"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "presidente",
+                "Gustavo Petro"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "nombre": "Polo Democrático Alternativo (PDA)",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "PDA"
+            ]
+        },
+        {
+            "nombre": "Pacto Histórico",
+            "tipo": "ORGANIZACION",
+            "alias": []
+        },
+        {
+            "nombre": "Colombia Humana",
+            "tipo": "ORGANIZACION",
+            "alias": []
+        },
+        {
+            "nombre": "Unión Patriótica (UP)",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "UP"
+            ]
+        },
+        {
+            "nombre": "Partido Comunista",
+            "tipo": "ORGANIZACION",
+            "alias": []
+        },
+        {
+            "nombre": "Movimiento Progresista",
+            "tipo": "ORGANIZACION",
+            "alias": []
+        },
+        {
+            "nombre": "Gustavo Petro",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Iván Cepeda Castro",
+            "tipo": "PERSONA",
+            "alias": [
+                "Iván Cepeda"
+            ]
+        },
+        {
+            "nombre": "Elecciones presidenciales y legislativas de 2026",
+            "tipo": "EVENTO",
+            "alias": []
+        },
+        {
+            "nombre": "Congreso Extraordinario Nacional del Polo",
+            "tipo": "EVENTO",
+            "alias": []
+        },
+        {
+            "nombre": "Polo Democrático",
+            "tipo": "ORGANIZACION",
+            "alias": []
+        },
+        {
+            "nombre": "Alternativa Democrática",
+            "tipo": "ORGANIZACION",
+            "alias": []
+        },
+        {
+            "nombre": "Polo Democrático Independiente",
+            "tipo": "ORGANIZACION",
+            "alias": []
+        },
+        {
+            "nombre": "El País",
+            "tipo": "MEDIO DE COMUNICACIÓN",
+            "alias": []
+        },
+        {
+            "nombre": "Twitter",
+            "tipo": "MEDIO DE COMUNICACIÓN",
+            "alias": []
+        },
+        {
+            "nombre": "X",
+            "tipo": "MEDIO DE COMUNICACIÓN",
+            "alias": []
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "cita": "Desde entonces hemos tenido en el centro de nuestro horizonte estratégico y en el quehacer político cotidiano la búsqueda y la construcción de la unidad y un sentido común para el cambio profundo de nuestro país y las desigualdades que lo atraviesan",
+            "emisor_nombre": "dirección del partido",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "Esta es una decisión trascendental que tiene una implicación para el grupo de las fuerzas que queremos la transformación progresista y social en Colombia, puesto que el Polo Democrático es un partido que ha tenido una larga historia en las últimas décadas de trabajo por la unidad de todas las corrientes de izquierda",
+            "emisor_nombre": "Iván Cepeda",
+            "contexto": null,
+            "fecha_cita": null
+        },
+        {
+            "cita": "Esta es una decisión trascendental que tiene una implicación para el grupo de las fuerzas que queremos la transformación progresista y social en Colombia, puesto que el Polo Democrático es un partido que ha tenido una larga historia en las últimas décadas de trabajo por la unidad de todas las corrientes de izquierda",
+            "emisor_nombre": "Iván Cepeda",
+            "contexto": null,
+            "fecha_cita": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "indicador": "Número de miembros del Polo Democrático que se manifestaron a favor de la fusión con el Pacto Histórico",
+            "categoria": "electoral",
+            "valor_numerico": 315,
+            "unidad": "miembros",
+            "ambito_geografico": [
+                "Colombia"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de miembros del Polo Democrático que se opusieron a la fusión con el Pacto Histórico",
+            "categoria": "electoral",
+            "valor_numerico": 43,
+            "unidad": "miembros",
+            "ambito_geografico": [
+                "Colombia"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        }
+    ]
+}
 ```
 </details>

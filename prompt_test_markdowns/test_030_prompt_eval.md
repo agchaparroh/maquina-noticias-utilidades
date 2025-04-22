@@ -1,5 +1,5 @@
 # Evaluación Artículo: test_030
-**Modelo Probado:** `llama-3.1-8b-128k`
+**Modelo Probado:** `llama-3.1-8b-instant`
 
 ## Metadatos del Artículo Original
 
@@ -41,88 +41,429 @@ Los policías temen que los independentistas no descansen hasta que vean como le
 
 ---
 
-## Resultados de las Tareas (llama-3.1-8b-128k)
+## Resultados de las Tareas (llama-3.1-8b-instant)
 
 ### Tarea: relevancia
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "puntuacion_relevancia": 8,
+    "justificacion_relevancia": "Hostigamiento a policías y sus hijos en Cataluña por la crispación política",
+    "categorias_asignadas": [
+        "Política Nacional",
+        "Conflicto/Seguridad",
+        "Sociedad/Derechos"
+    ],
+    "explicacion_concisa": "El artículo describe el hostigamiento a los hijos de policías en Cataluña, debido a la crispación política y la construcción de una 'leyenda negra' en torno a la Policía Nacional. Los padres y docentes están presionando para que sean expulsados de sus centros educativos, lo que genera un ambiente de miedo y incertidumbre entre los policías y sus familias."
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "contenido": "Se está creciendo el acoso contra los hijos de los policías de la Jefatura Superior de Barcelona.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-15",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "ES"
+            ],
+            "ubicaciones_especificas": [
+                "Barcelona"
+            ],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "policía",
+                "acoso",
+                "Barcelona"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La Ley de Amnistía no ha frenado el hostigamiento contra los hijos de los policías.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-15",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "ES"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "Ley de Amnistía",
+                "hostigamiento",
+                "policía"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Los niños son el objetivo de vejaciones tanto por parte de otros alumnos como, en algunos casos más graves y especialmente preocupantes, por parte del propio personal docente.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-15",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "ES"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 9,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "acoso",
+                "docentes",
+                "niños"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Los profesores en cambio optan por ignorarles o despreciarles.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-15",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "ES"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 6,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "profesores",
+                "ignorancia",
+                "desprecio"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El Sindicato Unificado de Policía (SUP) denuncia que esta circunstancia es 'intolerable'.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-15",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "ES"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "SUP",
+                "intolerancia",
+                "policía"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "Los policías temen que los independentistas no descansen hasta que vean como les expulsan de Cataluña.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-15",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "ES"
+            ],
+            "ubicaciones_especificas": [
+                "Cataluña"
+            ],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "independentistas",
+                "expulsión",
+                "Cataluña"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "La presión que viven estas familias provoca que oculten su profesión por miedo o represalias.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-15",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "ES"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "presión",
+                "miedo",
+                "represalias"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El Sindicato Unificado de Policía (SUP) reclama protección real, respeto y tolerancia en todos los ámbitos, incluido el educativo.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-15",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "ES"
+            ],
+            "ubicaciones_especificas": [],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "SUP",
+                "protección",
+                "respeto"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "nombre": "Via Laietana",
+            "tipo": "LUGAR",
+            "alias": [
+                "Via Laietana"
+            ]
+        },
+        {
+            "nombre": "Jefatura Superior de Barcelona",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "Jefatura Superior de Barcelona"
+            ]
+        },
+        {
+            "nombre": "Policía Nacional",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "Policía Nacional"
+            ]
+        },
+        {
+            "nombre": "Pedro Sánchez",
+            "tipo": "PERSONA",
+            "alias": [
+                "Pedro Sánchez"
+            ]
+        },
+        {
+            "nombre": "ERC",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "ERC"
+            ]
+        },
+        {
+            "nombre": "Sindicato Unificado de Policía (SUP)",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "SUP"
+            ]
+        },
+        {
+            "nombre": "Carlos",
+            "tipo": "PERSONA",
+            "alias": [
+                "Carlos"
+            ]
+        },
+        {
+            "nombre": "Ley de Amnistía",
+            "tipo": "NORMATIVA",
+            "alias": [
+                "Ley de Amnistía"
+            ]
+        },
+        {
+            "nombre": "Cataluña",
+            "tipo": "LUGAR",
+            "alias": [
+                "Cataluña"
+            ]
+        },
+        {
+            "nombre": "Fuerzas y Cuerpos de Seguridad del Estado",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "Fuerzas y Cuerpos de Seguridad del Estado"
+            ]
+        },
+        {
+            "nombre": "La Razón",
+            "tipo": "ORGANIZACION",
+            "alias": [
+                "La Razón"
+            ]
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "cita": "No es consciente de que muchas situaciones que ha vivido es por mi culpa",
+            "emisor_nombre": "funcionario",
+            "contexto": "El padre de Carlos explica que su hijo no es consciente de que muchas situaciones que ha vivido son por su culpa.",
+            "fecha_cita": null
+        },
+        {
+            "cita": "Hijo de madero, facha y opresor",
+            "emisor_nombre": "otros padres o alumnos",
+            "contexto": "Los niños son objeto de vejaciones y insultos por parte de otros alumnos y, en algunos casos, por parte del personal docente.",
+            "fecha_cita": null
+        },
+        {
+            "cita": "No hay nada que reparar",
+            "emisor_nombre": "representantes de los policías",
+            "contexto": "Los representantes de los policías defienden que no hay nada que reparar en relación con las acusaciones de torturas.",
+            "fecha_cita": null
+        },
+        {
+            "cita": "no vamos a permitir que un prófugo de la Justicia y sus colegas más radicales nos arrinconen",
+            "emisor_nombre": "policías",
+            "contexto": "Los policías temen que los independentistas no descansen hasta que vean como les expulsan de Cataluña.",
+            "fecha_cita": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "indicador": "Número de niños que han sido expulsados de centros educativos debido a la presión política",
+            "categoria": "demográfico",
+            "valor_numerico": 0,
+            "unidad": "personas",
+            "ambito_geografico": [
+                "Cataluña"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        },
+        {
+            "indicador": "Número de policías que viven con miedo y ansiedad debido a la presión política",
+            "categoria": "social",
+            "valor_numerico": null,
+            "unidad": null,
+            "ambito_geografico": [
+                "Cataluña"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": "La presión política provoca estrés y ansiedad en los policías y sus familias"
+        },
+        {
+            "indicador": "Número de familias que ocultan la profesión de sus miembros por miedo a represalias",
+            "categoria": "demográfico",
+            "valor_numerico": null,
+            "unidad": null,
+            "ambito_geografico": [
+                "Cataluña"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": "La presión política vulnera los derechos de las familias de los policías"
+        },
+        {
+            "indicador": "Número de centros educativos que han sido afectados por la presión política",
+            "categoria": "educativo",
+            "valor_numerico": null,
+            "unidad": null,
+            "ambito_geografico": [
+                "Cataluña"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": "Los centros educativos han sido afectados por la presión política y la discriminación contra los hijos de los policías"
+        },
+        {
+            "indicador": "Número de insultos y vejaciones que han recibido los hijos de los policías en centros educativos",
+            "categoria": "social",
+            "valor_numerico": null,
+            "unidad": null,
+            "ambito_geografico": [
+                "Cataluña"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": "Los hijos de los policías han sido objeto de insultos y vejaciones en centros educativos"
+        }
+    ]
+}
 ```
 </details>

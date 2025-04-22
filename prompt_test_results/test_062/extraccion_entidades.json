@@ -1,10 +1,10 @@
 {
     "test_id": "test_062",
     "tarea": "extraccion_entidades",
-    "model_id": "llama-3.1-8b-128k",
-    "success": false,
-    "api_success": false,
-    "json_valid": false,
-    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
-    "llm_response_content": "Error: No content received or generated"
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Luis Abinader\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Luis Abinader\", \"Abinader\"]\n      },\n      {\n         \"nombre\": \"Luis Abinader sobre tragedia en el Jet Set\",\n         \"tipo\": \"EVENTO\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Jet Set\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": [\"Jet Set\"]\n      },\n      {\n         \"nombre\": \"República Dominicana\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": [\"República Dominicana\"]\n      },\n      {\n         \"nombre\": \"LA Semanal con la Prensa\",\n         \"tipo\": \"CONCEPTO\",\n         \"alias\": [\"LA Semanal con la Prensa\"]\n      },\n      {\n         \"nombre\": \"Eduardo Estrella\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Eduardo Estrella\"]\n      },\n      {\n         \"nombre\": \"Guarionex Estrella Cruz\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Guarionex Estrella Cruz\"]\n      },\n      {\n         \"nombre\": \"Alexandra Grullón\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Alexandra Grullón\"]\n      },\n      {\n         \"nombre\": \"Grupo Popular\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"Grupo Popular\"]\n      },\n      {\n         \"nombre\": \"Ministro de Obras Públicas\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"Ministro de Obras Públicas\"]\n      }\n   ]\n}"
 }

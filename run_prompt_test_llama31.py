@@ -15,7 +15,7 @@ from typing import Optional, Tuple, Dict, Any # Añadir type hints
 
 # --- Configuración ---
 # Modelo a probar (ÚNICO)
-MODEL_TO_TEST = "llama-3.1-8b-128k"  # Modelo con ventana de contexto de 128K tokens
+MODEL_TO_TEST = "llama-3.1-8b-instant"  # Modelo con ventana de contexto de 128K tokens
 
 # Tareas a realizar (mapeo a nombres internos)
 TASKS = [

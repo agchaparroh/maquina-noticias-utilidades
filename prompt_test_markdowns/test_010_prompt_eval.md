@@ -1,5 +1,5 @@
 # Evaluación Artículo: test_010
-**Modelo Probado:** `llama-3.1-8b-128k`
+**Modelo Probado:** `llama-3.1-8b-instant`
 
 ## Metadatos del Artículo Original
 
@@ -45,88 +45,458 @@ La labor fue encargada a la Oficina Nacional de Evaluación Sísmica y Vulnerabi
 
 ---
 
-## Resultados de las Tareas (llama-3.1-8b-128k)
+## Resultados de las Tareas (llama-3.1-8b-instant)
 
 ### Tarea: relevancia
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "puntuacion_relevancia": 7,
+    "justificacion_relevancia": "El presidente Abinader garantiza que el gobierno no interferirá en el proceso judicial sobre el colapso de la discoteca Jet Set.",
+    "categorias_asignadas": [
+        "Política Nacional",
+        "Justicia/Legal"
+    ],
+    "explicacion_concisa": "El presidente de la República, Luis Abinader, aseguró que el gobierno no interferirá en el proceso judicial sobre el colapso de la discoteca Jet Set, que dejó 231 muertos y más de 180 heridos. Abinader garantizó que se respetará la justicia y no habrá incidencia del gobierno en el proceso."
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_hechos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "contenido": "Abinader aseguró que el Gobierno no interferirá en el proceso judicial sobre el colapso de la discoteca Jet Set.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "DO"
+            ],
+            "ubicaciones_especificas": [
+                "República Dominicana",
+                "Palacio Nacional"
+            ],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "política",
+                "gobierno",
+                "justicia"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El desplome del techo de la discoteca Jet Set ocurrió la madrugada del martes 8 de abril.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-08T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "DO"
+            ],
+            "ubicaciones_especificas": [
+                "República Dominicana",
+                "discoteca Jet Set"
+            ],
+            "importancia": 9,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "accidente",
+                "tragedia",
+                "discoteca Jet Set"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El Ministerio Público investiga la tragedia en la discoteca Jet Set.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "DO"
+            ],
+            "ubicaciones_especificas": [
+                "República Dominicana",
+                "discoteca Jet Set"
+            ],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "investigación",
+                "Ministerio Público",
+                "discoteca Jet Set"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El lugar de la tragedia está resguardado por efectivos de la Policía Nacional.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "DO"
+            ],
+            "ubicaciones_especificas": [
+                "República Dominicana",
+                "discoteca Jet Set"
+            ],
+            "importancia": 6,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "seguridad",
+                "Policía Nacional",
+                "discoteca Jet Set"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El colapso del techo de la discoteca Jet Set dejó 231 muertos y más de 180 heridos.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-08",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "DO"
+            ],
+            "ubicaciones_especificas": [
+                "República Dominicana",
+                "discoteca Jet Set"
+            ],
+            "importancia": 10,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "accidente",
+                "tragedia",
+                "discoteca Jet Set"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El Gobierno nombró una comisión con expertos nacionales e internacionales para investigar el siniestro.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "DO"
+            ],
+            "ubicaciones_especificas": [
+                "República Dominicana"
+            ],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "gobierno",
+                "comisión",
+                "investigación"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El lugar de la tragedia está resguardado por efectivos de la Policía Nacional.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "DO"
+            ],
+            "ubicaciones_especificas": [
+                "República Dominicana",
+                "discoteca Jet Set"
+            ],
+            "importancia": 6,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "seguridad",
+                "Policía Nacional",
+                "discoteca Jet Set"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El colapso del techo de la discoteca Jet Set fue causado por un error en el traslado de escombros.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "DO"
+            ],
+            "ubicaciones_especificas": [
+                "República Dominicana",
+                "discoteca Jet Set"
+            ],
+            "importancia": 8,
+            "confiabilidad": 4,
+            "etiquetas": [
+                "accidente",
+                "tragedia",
+                "discoteca Jet Set"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El ingeniero geólogo Leonardo Reyes Madera encabezará la investigación sobre el colapso del techo de la discoteca Jet Set.",
+            "tipo_hecho": "SUCESO",
+            "fecha_ocurrencia_inicio": "2025-04-14",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "DO"
+            ],
+            "ubicaciones_especificas": [
+                "República Dominicana"
+            ],
+            "importancia": 7,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "investigación",
+                "ingeniero geólogo",
+                "discoteca Jet Set"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_entidades
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "nombre": "Luis Abinader",
+            "tipo": "PERSONA",
+            "alias": [
+                "Abinader"
+            ]
+        },
+        {
+            "nombre": "Jet Set",
+            "tipo": "LUGAR",
+            "alias": [
+                "discoteca Jet Set"
+            ]
+        },
+        {
+            "nombre": "Rubby Pérez",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Ministerio Público",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "Ministerio Público de la República Dominicana"
+            ]
+        },
+        {
+            "nombre": "Wilson Camacho",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Dirección General de Persecución",
+            "tipo": "INSTITUCION",
+            "alias": []
+        },
+        {
+            "nombre": "Fiscalía del Distrito Nacional",
+            "tipo": "INSTITUCION",
+            "alias": []
+        },
+        {
+            "nombre": "Comisión de Investigación",
+            "tipo": "INSTITUCION",
+            "alias": []
+        },
+        {
+            "nombre": "Policía Nacional",
+            "tipo": "INSTITUCION",
+            "alias": []
+        },
+        {
+            "nombre": "Ramón Rodríguez",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Oficina Nacional de Evaluación Sísmica y Vulnerabilidad (Onasvie)",
+            "tipo": "INSTITUCION",
+            "alias": [
+                "Onasvie"
+            ]
+        },
+        {
+            "nombre": "Leonardo Reyes Madera",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "La Semanal con la Prensa",
+            "tipo": "EVENTO",
+            "alias": []
+        },
+        {
+            "nombre": "Palacio Nacional",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Ciudad Ganadera",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Santiago",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Monorriel de Santiago",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Tragedia en la discoteca Jet Set",
+            "tipo": "EVENTO",
+            "alias": [
+                "colapso del techo de la discoteca Jet Set"
+            ]
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_citas
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "cita": "Nosotros vamos a respetar que se haga justicia, como tiene que hacerse justicia, y nosotros eso lo vamos a respetar y no van a encontrar ningún tipo de incidencia del Gobierno en los aspectos de justicia",
+            "emisor_nombre": "Luis Abinader",
+            "contexto": "El mandatario hizo el planteamiento al contestar una pregunta durante LA Semanal con la Prensa en el Palacio Nacional.",
+            "fecha_cita": null
+        },
+        {
+            "cita": "Si hay un gobierno que ha respetado todos los procesos legales es este Gobierno",
+            "emisor_nombre": "Luis Abinader",
+            "contexto": "El jefe de Estado dijo que su Gobierno nunca ha obstaculizado un proceso judicial.",
+            "fecha_cita": null
+        },
+        {
+            "cita": "El equipo que fue desde aquí no sabía andar en la capital ni sabía dónde había un vertedero para botar eso, y nosotros le autorizamos que lo trajera para acá, para Santiago, porque aquí es que botamos los desperdicios del monorriel",
+            "emisor_nombre": "Ramón Rodríguez",
+            "contexto": "Sobre esto, Ramón Rodríguez, encargado de equipos de una empresa contratista que trabaja en el monorriel de Santiago, dijo que el traslado se hizo \"por error\" a esa provincia.",
+            "fecha_cita": null
+        }
+    ]
+}
 ```
 </details>
 
 
 ### Tarea: extraccion_datos
 
-❌ **Estado:** Fallo (Error API)
-
-   **Mensaje Error:** `API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}`
+✅ **Estado:** Éxito
 
 
 <details open>
 <summary>Ver/Ocultar Respuesta LLM</summary>
 
-_(Respuesta no es JSON válido o estructura incorrecta, mostrando raw):_
-```
-Error: No content received or generated
+```json
+{
+    "resultados": [
+        {
+            "indicador": "Número de muertos en el colapso de la discoteca Jet Set",
+            "categoria": "demográfico",
+            "valor_numerico": 231,
+            "unidad": "personas",
+            "ambito_geografico": [
+                "República Dominicana"
+            ],
+            "periodo_referencia_inicio": "null",
+            "periodo_referencia_fin": "null",
+            "tipo_periodo": "puntual",
+            "fuente_especifica": "null",
+            "notas_contexto": "null"
+        },
+        {
+            "indicador": "Número de heridos en el colapso de la discoteca Jet Set",
+            "categoria": "demográfico",
+            "valor_numerico": 180,
+            "unidad": "personas",
+            "ambito_geografico": [
+                "República Dominicana"
+            ],
+            "periodo_referencia_inicio": "null",
+            "periodo_referencia_fin": "null",
+            "tipo_periodo": "puntual",
+            "fuente_especifica": "null",
+            "notas_contexto": "algunos de gravedad"
+        },
+        {
+            "indicador": "Número de años de experiencia del ingeniero geólogo Leonardo Reyes Madera",
+            "categoria": "otro",
+            "valor_numerico": null,
+            "unidad": null,
+            "ambito_geografico": [
+                "República Dominicana"
+            ],
+            "periodo_referencia_inicio": "null",
+            "periodo_referencia_fin": "null",
+            "tipo_periodo": "null",
+            "fuente_especifica": "null",
+            "notas_contexto": "conocido por toda la sociedad"
+        }
+    ]
+}
 ```
 </details>

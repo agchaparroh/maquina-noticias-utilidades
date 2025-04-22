@@ -1,10 +1,10 @@
 {
     "test_id": "test_030",
     "tarea": "extraccion_entidades",
-    "model_id": "llama-3.1-8b-128k",
-    "success": false,
-    "api_success": false,
-    "json_valid": false,
-    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
-    "llm_response_content": "Error: No content received or generated"
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Via Laietana\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": [\"Via Laietana\"]\n      },\n      {\n         \"nombre\": \"Jefatura Superior de Barcelona\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"Jefatura Superior de Barcelona\"]\n      },\n      {\n         \"nombre\": \"Policía Nacional\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"Policía Nacional\"]\n      },\n      {\n         \"nombre\": \"Pedro Sánchez\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Pedro Sánchez\"]\n      },\n      {\n         \"nombre\": \"ERC\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"ERC\"]\n      },\n      {\n         \"nombre\": \"Sindicato Unificado de Policía (SUP)\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"SUP\"]\n      },\n      {\n         \"nombre\": \"Carlos\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Carlos\"]\n      },\n      {\n         \"nombre\": \"Ley de Amnistía\",\n         \"tipo\": \"NORMATIVA\",\n         \"alias\": [\"Ley de Amnistía\"]\n      },\n      {\n         \"nombre\": \"Cataluña\",\n         \"tipo\": \"LUGAR\",\n         \"alias\": [\"Cataluña\"]\n      },\n      {\n         \"nombre\": \"Fuerzas y Cuerpos de Seguridad del Estado\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"Fuerzas y Cuerpos de Seguridad del Estado\"]\n      },\n      {\n         \"nombre\": \"La Razón\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"La Razón\"]\n      }\n   ]\n}"
 }

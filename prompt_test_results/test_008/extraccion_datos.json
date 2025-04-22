@@ -1,10 +1,10 @@
 {
     "test_id": "test_008",
     "tarea": "extraccion_datos",
-    "model_id": "llama-3.1-8b-128k",
-    "success": false,
-    "api_success": false,
-    "json_valid": false,
-    "error_message": "API_Error: AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API Key', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}",
-    "llm_response_content": "Error: No content received or generated"
+    "model_id": "llama-3.1-8b-instant",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Número de consulados en los Estados Unidos\",\n         \"categoria\": \"otro\",\n         \"valor_numerico\": 16,\n         \"unidad\": \"\",\n         \"ambito_geografico\": [\"Estados Unidos\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Número de estudiantes que participaron en la formación especial en el patio de honor del Colegio Militar Leoncio Prado\",\n         \"categoria\": \"otro\",\n         \"valor_numerico\": 120,\n         \"unidad\": \"\",\n         \"ambito_geografico\": [\"Perú\"],\n         \"periodo_referencia_inicio\": \"marzo de este año\",\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": \"Editorial Planeta\",\n         \"notas_contexto\": null\n      }\n   ]\n}"
 }
