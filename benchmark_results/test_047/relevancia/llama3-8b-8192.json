@@ -1,6 +1,0 @@
-{
-    "test_id": "test_047",
-    "tarea": "relevancia",
-    "model_id": "llama3-8b-8192",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Maduro habla sobre la milicia y su capacidad para defender el país\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Conflicto/Seguridad\"],\n   \"resumen_breve\": \"Maduro asegura que la milicia está más armada que nunca para defender Venezuela\"\n}"
-}

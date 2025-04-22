@@ -1,6 +1,0 @@
-{
-    "test_id": "test_047",
-    "tarea": "extraccion_datos",
-    "model_id": "gemma2-9b-it",
-    "llm_response_content": "{\n  \"resultados\": [\n    {\n      \"indicador\": \"Fecha de la marcha del chavismo\",\n      \"categoria\": \"otro\",\n      \"valor_numerico\": 1,\n      \"unidad\": \"mayo\",\n      \"ambito_geografico\": [\n        \"Venezuela\"\n      ],\n      \"periodo_referencia_inicio\": \"2023-05-01\",\n      \"tipo_periodo\": \"puntual\"\n    }\n  ]\n}"
-}

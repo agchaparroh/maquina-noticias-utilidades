@@ -1,6 +1,0 @@
-{
-    "test_id": "test_071",
-    "tarea": "extraccion_citas",
-    "model_id": "llama-3.3-70b-versatile",
-    "llm_response_content": "{\n   \"resultados\": [\n       {\n           \"cita\": \"La voz del pueblo es la que manda, por eso quiero decirles que a partir de esta semana van a conocer los dos nombres, del presidente y vicepresidente (con los que participará UCS en las elecciones generales). Mañana firmo los acuerdos, que son los últimos en La Paz. Luego tendremos una asamblea para definir, porque no quiero equivocarme, no podemos hacer locuras, no podemos hacer al primer pitazo de una encuesta; ustedes han visto cómo fracasaron otros\",\n           \"emisor_nombre\": \"Jhonny Fernández\",\n           \"contexto\": \"Sobre la revelación de candidatos\",\n           \"fecha_cita\": null,\n           \"relevancia_cita\": 5\n       },\n       {\n           \"cita\": \"Nosotros primero escuchamos al pueblo. Nosotros tenemos que ratificar el triunfo en Santa Cruz, porque ello nos llevará al triunfo nacional\",\n           \"emisor_nombre\": \"Jhonny Fernández\",\n           \"contexto\": \"Sobre la estrategia electoral\",\n           \"fecha_cita\": null,\n           \"relevancia_cita\": 4\n       }\n   ]\n}"
-}

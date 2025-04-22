@@ -1,6 +1,0 @@
-{
-    "test_id": "test_061",
-    "tarea": "relevancia",
-    "model_id": "llama-3.3-70b-versatile",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Propuesta política controvertida\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Sociedad/Derechos\"],\n   \"resumen_breve\": \"Quintero propone cerrar el Congreso\"\n}"
-}

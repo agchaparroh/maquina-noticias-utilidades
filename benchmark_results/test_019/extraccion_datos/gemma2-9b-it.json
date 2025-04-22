@@ -1,6 +1,0 @@
-{
-    "test_id": "test_019",
-    "tarea": "extraccion_datos",
-    "model_id": "gemma2-9b-it",
-    "llm_response_content": "{\n  \"resultados\": [\n    {\n      \"indicador\": \"Fecha de firma de la alianza\",\n      \"categoria\": \"electoral\",\n      \"valor_numerico\": 14,\n      \"unidad\": null,\n      \"ambito_geografico\": [\"Santa Cruz\"],\n      \"periodo_referencia_inicio\": \"2023-04-14\",\n      \"periodo_referencia_fin\": null,\n      \"tipo_periodo\": \"puntual\",\n      \"fuente_especifica\": null,\n      \"notas_contexto\": null\n    },\n    {\n      \"indicador\": \"Fecha límite para presentar alianzas al TSE\",\n      \"categoria\": \"electoral\",\n      \"valor_numerico\": 18,\n      \"unidad\": null,\n      \"ambito_geografico\": [\"Bolivia\"],\n      \"periodo_referencia_inicio\": \"2023-04-14\",\n      \"periodo_referencia_fin\": \"2023-04-18\",\n      \"tipo_periodo\": \"mensual\",\n      \"fuente_especifica\": null,\n      \"notas_contexto\": null\n    }\n  ]\n}"
-}

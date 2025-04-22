@@ -1,6 +1,0 @@
-{
-    "test_id": "test_011",
-    "tarea": "extraccion_datos",
-    "model_id": "llama3-8b-8192",
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Número de migrantes fallecidos en un incendio en la estación migratoria de Ciudad Juárez\",\n         \"categoria\": \"demográfico\",\n         \"valor_numerico\": 40,\n         \"unidad\": \"personas\",\n         \"ambito_geografico\": [\"Ciudad Juárez\", \"Chihuahua\"],\n         \"periodo_referencia_inicio\": \"2023-01-01\",\n         \"periodo_referencia_fin\": \"2023-01-01\",\n         \"tipo_periodo\": \"puntual\",\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      }\n   ]\n}"
-}

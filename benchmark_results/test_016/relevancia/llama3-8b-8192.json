@@ -1,6 +1,0 @@
-{
-    "test_id": "test_016",
-    "tarea": "relevancia",
-    "model_id": "llama3-8b-8192",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"La exconsejera solicita rectificación de un artículo que contiene afirmaciones incorrectas sobre su participación en una versión\",\n   \"categorias_asignadas\": [\"Justicia/Legal\", \"Política Nacional\"],\n   \"resumen_breve\": \"La exconsejera de Participación Ciudadana y Control Social Yadira Saltos Rivas solicita rectificación de un artículo que contiene afirmaciones incorrectas sobre su participación en una versión\"\n}"
-}

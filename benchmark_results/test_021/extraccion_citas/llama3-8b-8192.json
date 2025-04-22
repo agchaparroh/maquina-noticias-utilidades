@@ -1,6 +1,0 @@
-{
-    "test_id": "test_021",
-    "tarea": "extraccion_citas",
-    "model_id": "llama3-8b-8192",
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"\\\"Santiago\\\"\",\n         \"emisor_nombre\": \"Jesús\",\n         \"contexto\": \"En el relato del compositor Santiago Coronado sobre la inspiración para componer la marcha fúnebre La Fosa\",\n         \"fecha_cita\": null,\n         \"relevancia_cita\": 4\n      },\n      {\n         \"cita\": \"«vivida como un sueño»\",\n         \"emisor_nombre\": \"Santiago Coronado\",\n         \"contexto\": \"En el relato del compositor sobre la inspiración para componer la marcha fúnebre La Fosa\",\n         \"fecha_cita\": null,\n         \"relevancia_cita\": 4\n      },\n      {\n         \"cita\": \"«Santiago»\",\n         \"emisor_nombre\": \"Jesús\",\n         \"contexto\": \"En el relato del compositor sobre la inspiración para componer la marcha fúnebre La Fosa\",\n         \"fecha_cita\": null,\n         \"relevancia_cita\": 4\n      }\n   ]\n}"
-}

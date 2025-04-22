@@ -1,6 +1,0 @@
-{
-    "test_id": "test_013",
-    "tarea": "relevancia",
-    "model_id": "llama-3.3-70b-versatile",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"Seguridad carcelaria\",\n   \"categorias_asignadas\": [\n       \"Justicia/Legal\",\n       \"Sociedad/Derechos\"\n   ],\n   \"resumen_breve\": \"Hallan túnel subterráneo en cárcel de Puerto Barrios\"\n}"
-}

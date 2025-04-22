@@ -1,6 +1,0 @@
-{
-    "test_id": "test_063",
-    "tarea": "extraccion_citas",
-    "model_id": "llama-3.3-70b-versatile",
-    "llm_response_content": "{\n   \"resultados\": [\n       {\n           \"cita\": \"El 23 por ciento de las afiliaciones de mexicanos en el extranjero es por 12 meses. El 16 por ciento lo hace o decide pagar por 6 meses. En su mayoría, que son 7 mil 361 personas, lo hacen de manera mensual, y esto tiene que ver por los ingresos de una persona trabajadora independiente, que son variables\",\n           \"emisor_nombre\": \"Carolina Griselda Cisneros Prado\",\n           \"contexto\": \"Afiliaciones de mexicanos en el extranjero\",\n           \"fecha_cita\": null,\n           \"relevancia_cita\": 5\n       }\n   ]\n}"
-}

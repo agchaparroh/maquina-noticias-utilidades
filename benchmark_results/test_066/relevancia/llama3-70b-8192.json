@@ -1,6 +1,0 @@
-{
-    "test_id": "test_066",
-    "tarea": "relevancia",
-    "model_id": "llama3-70b-8192",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Investigación sobre supuesto gabinete civil de alto funcionario\",\n   \"categorias_asignadas\": [\"Justicia/Legal\", \"Política Nacional\"],\n   \"resumen_breve\": \"Fiscalía llama a declarar a 'gabinete civil' de Zúñiga en investigación\"\n}"
-}

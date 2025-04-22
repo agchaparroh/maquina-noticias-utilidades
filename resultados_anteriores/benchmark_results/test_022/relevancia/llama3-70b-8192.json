@@ -1,6 +1,0 @@
-{
-    "test_id": "test_022",
-    "tarea": "relevancia",
-    "model_id": "llama3-70b-8192",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Relevancia alta por implicación de EE.UU. y China en política económica argentina\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Política Internacional\", \"Economía\"],\n   \"resumen_breve\": \"Milei niega presión de EE.UU. para salir del swap chino y habla de dolarización\"\n}"
-}

@@ -1,6 +1,0 @@
-{
-    "test_id": "test_035",
-    "tarea": "relevancia",
-    "model_id": "llama-3.1-8b-instant",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 4,\n   \"justificacion_relevancia\": \"Relevancia media debido a la polémica en la Asamblea Nacional de Panamá\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Justicia/Legal\"],\n   \"resumen_breve\": \"Diputados panameños afectados por pagos con cheque debido a auditoría de la Contraloría General\"\n}"
-}

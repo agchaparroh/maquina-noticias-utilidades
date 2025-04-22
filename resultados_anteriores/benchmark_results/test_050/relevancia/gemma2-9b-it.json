@@ -1,6 +1,0 @@
-{
-    "test_id": "test_050",
-    "tarea": "relevancia",
-    "model_id": "gemma2-9b-it",
-    "llm_response_content": "{\n  \"puntuacion_relevancia\": 9,\n  \"justificacion_relevancia\": \"Reunión de alto nivel sobre economía argentina.\",\n  \"categorias_asignadas\": [\n    \"Política Nacional\",\n    \"Economía\",\n    \"Diplomacia\"\n  ],\n  \"resumen_breve\": \"El secretario del Tesoro de EEUU apoya las reformas económicas de Milei y celebra el acuerdo con el FMI.\"\n}"
-}

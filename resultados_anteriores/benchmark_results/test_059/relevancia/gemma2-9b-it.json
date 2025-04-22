@@ -1,6 +1,0 @@
-{
-    "test_id": "test_059",
-    "tarea": "relevancia",
-    "model_id": "gemma2-9b-it",
-    "llm_response_content": "{\n  \"puntuacion_relevancia\": 9,\n  \"justificacion_relevancia\": \"Drastica devaluación del peso argentino tras eliminación del cepo cambiario.\",\n  \"categorias_asignadas\": [\n    \"Economía\",\n    \"Política Nacional\"\n  ],\n  \"resumen_breve\": \"El peso argentino se depreció un 10% tras la eliminación del cepo cambiario, con el dólar escalando a $1.230.\"\n}"
-}

@@ -1,6 +1,0 @@
-{
-    "test_id": "test_015",
-    "tarea": "relevancia",
-    "model_id": "llama-3.1-8b-instant",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Reconocimiento de la victoria de Daniel Noboa por parte de Pachakutik\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Elecciones\"],\n   \"resumen_breve\": \"Pachakutik reconoce la victoria de Daniel Noboa en las elecciones presidenciales ecuatorianas\"\n}"
-}

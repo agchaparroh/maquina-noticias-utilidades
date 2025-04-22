@@ -1,6 +1,0 @@
-{
-    "test_id": "test_065",
-    "tarea": "relevancia",
-    "model_id": "gemma2-9b-it",
-    "llm_response_content": "{\n  \"puntuacion_relevancia\": 7,\n  \"justificacion_relevancia\": \"Aumento de bono a trabajadores de salud, impacto económico y social.\",\n  \"categorias_asignadas\": [\n    \"Política Nacional\",\n    \"Economía\"\n  ],\n  \"resumen_breve\": \"El gobierno analiza aumentar el bono a trabajadores de salud a Q1,800, buscando cumplir con el artículo 140 del presupuesto.\"\n}"
-}

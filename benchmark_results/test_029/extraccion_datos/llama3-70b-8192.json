@@ -1,6 +1,0 @@
-{
-    "test_id": "test_029",
-    "tarea": "extraccion_datos",
-    "model_id": "llama3-70b-8192",
-    "llm_response_content": "{\n   \"resultados\":[\n      {\n         \"indicador\":\"Tasa de votos jóvenes\",\n         \"categoria\":\"electoral\",\n         \"valor_numerico\":18,\n         \"unidad\":\"años\",\n         \"ambito_geografico\":[\"España\"],\n         \"periodo_referencia_inicio\":null,\n         \"periodo_referencia_fin\":null,\n         \"tipo_periodo\":null,\n         \"fuente_especifica\":null,\n         \"notas_contexto\":null\n      },\n      {\n         \"indicador\":\"Tasa de votos jóvenes\",\n         \"categoria\":\"electoral\",\n         \"valor_numerico\":24,\n         \"unidad\":\"años\",\n         \"ambito_geografico\":[\"España\"],\n         \"periodo_referencia_inicio\":null,\n         \"periodo_referencia_fin\":null,\n         \"tipo_periodo\":null,\n         \"fuente_especifica\":null,\n         \"notas_contexto\":null\n      }\n   ]\n}"
-}

@@ -1,6 +1,0 @@
-{
-    "test_id": "test_002",
-    "tarea": "relevancia",
-    "model_id": "llama-3.1-8b-instant",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Unión política entre partidos de izquierda en Colombia\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Política Internacional\", \"Elecciones\"],\n   \"resumen_breve\": \"El Polo Democrático se une al Pacto Histórico para presentarse como una sola fuerza política en las elecciones de 2026\"\n}"
-}

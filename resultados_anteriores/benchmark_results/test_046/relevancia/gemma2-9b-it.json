@@ -1,6 +1,0 @@
-{
-    "test_id": "test_046",
-    "tarea": "relevancia",
-    "model_id": "gemma2-9b-it",
-    "llm_response_content": "{\n  \"puntuacion_relevancia\": 8,\n  \"justificacion_relevancia\": \"Declaraciones del presidente sobre política exterior panameña.\",\n  \"categorias_asignadas\": [\n    \"Política Nacional\",\n    \"Política Internacional\",\n    \"Diplomacia\"\n  ],\n  \"resumen_breve\": \"El presidente de Panamá discute la relación con EEUU y China, destacando transparencia y preocupaciones sobre China.\"\n}"
-}

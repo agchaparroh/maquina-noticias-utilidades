@@ -1,6 +1,0 @@
-{
-    "test_id": "test_028",
-    "tarea": "relevancia",
-    "model_id": "llama3-8b-8192",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Revela corrupción y conflicto de intereses en el gobierno español\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Justicia/Legal\"],\n   \"resumen_breve\": \"El artículo denuncia la corrupción y el conflicto de intereses en el gobierno español\"\n}"
-}

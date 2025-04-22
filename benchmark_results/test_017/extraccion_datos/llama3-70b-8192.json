@@ -1,6 +1,0 @@
-{
-    "test_id": "test_017",
-    "tarea": "extraccion_datos",
-    "model_id": "llama3-70b-8192",
-    "llm_response_content": "{\n   \"resultados\":[\n      {\n         \"indicador\":\"Fecha de presentación de alianza\",\n         \"categoria\":\"electoral\",\n         \"valor_numerico\":14,\n         \"unidad\":\"día del mes\",\n         \"ambito_geografico\":[\"Bolivia\"],\n         \"periodo_referencia_inicio\":null,\n         \"periodo_referencia_fin\":null,\n         \"tipo_periodo\":null,\n         \"fuente_especifica\":null,\n         \"notas_contexto\":null\n      },\n      {\n         \"indicador\":\"Plazo para presentar alianzas\",\n         \"categoria\":\"electoral\",\n         \"valor_numerico\":18,\n         \"unidad\":\"día del mes\",\n         \"ambito_geografico\":[\"Bolivia\"],\n         \"periodo_referencia_inicio\":null,\n         \"periodo_referencia_fin\":null,\n         \"tipo_periodo\":null,\n         \"fuente_especifica\":null,\n         \"notas_contexto\":null\n      }\n   ]\n}"
-}

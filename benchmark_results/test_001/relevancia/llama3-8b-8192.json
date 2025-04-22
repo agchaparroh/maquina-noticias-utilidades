@@ -1,6 +1,0 @@
-{
-    "test_id": "test_001",
-    "tarea": "relevancia",
-    "model_id": "llama3-8b-8192",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"Relevante para la sociedad dominicana y la gestión de obras públicas y privadas\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Economía\"],\n   \"resumen_breve\": \"El senador Pedro Tineo presenta un proyecto de ley para supervisar obras públicas y privadas en la República Dominicana\"\n}"
-}

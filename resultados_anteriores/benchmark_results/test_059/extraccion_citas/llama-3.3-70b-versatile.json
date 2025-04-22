@@ -1,6 +1,0 @@
-{
-    "test_id": "test_059",
-    "tarea": "extraccion_citas",
-    "model_id": "llama-3.3-70b-versatile",
-    "llm_response_content": "{\n   \"resultados\": [\n       {\n           \"cita\": \"nadie se va a librar\",\n           \"emisor_nombre\": \"Donald Trump\",\n           \"contexto\": \"sobre los gravámenes\",\n           \"fecha_cita\": null,\n           \"relevancia_cita\": 4\n       }\n   ]\n}"
-}

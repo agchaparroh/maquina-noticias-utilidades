@@ -1,6 +1,0 @@
-{
-    "test_id": "test_049",
-    "tarea": "relevancia",
-    "model_id": "gemma2-9b-it",
-    "llm_response_content": "{\n  \"puntuacion_relevancia\": 7,\n  \"justificacion_relevancia\": \"Disputa interna en el uribismo con implicaciones políticas.\",\n  \"categorias_asignadas\": [\n    \"Política Nacional\",\n    \"Elecciones\"\n  ],\n  \"resumen_breve\": \"Miguel Uribe busca consolidar su liderazgo en el uribismo para las elecciones de 2026.\"\n}"
-}

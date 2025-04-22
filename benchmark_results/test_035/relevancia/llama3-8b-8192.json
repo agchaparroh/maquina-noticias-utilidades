@@ -1,6 +1,0 @@
-{
-    "test_id": "test_035",
-    "tarea": "relevancia",
-    "model_id": "llama3-8b-8192",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"Polémica en la Asamblea Nacional sobre pagos con cheque a funcionarios\",\n   \"categorias_asignadas\": [\"Política Nacional\"],\n   \"resumen_breve\": \"La Contraloría General de Panamá paga con cheques a funcionarios legislativos, generando polémica en la Asamblea Nacional\"\n}"
-}

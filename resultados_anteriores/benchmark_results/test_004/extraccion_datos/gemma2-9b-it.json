@@ -1,6 +1,0 @@
-{
-    "test_id": "test_004",
-    "tarea": "extraccion_datos",
-    "model_id": "gemma2-9b-it",
-    "llm_response_content": "{\n  \"resultados\": [\n    {\n      \"indicador\": \"Fecha de la segunda vuelta electoral\",\n      \"categoria\": \"electoral\",\n      \"valor_numerico\": 13,\n      \"unidad\": null,\n      \"ambito_geografico\": [\"Ecuador\"],\n      \"periodo_referencia_inicio\": \"2025-04-13\",\n      \"periodo_referencia_fin\": null,\n      \"tipo_periodo\": \"puntual\",\n      \"fuente_especifica\": null,\n      \"notas_contexto\": null\n    },\n    {\n      \"indicador\": \"Número de observadores de la Misión Electoral del Parlasur\",\n      \"categoria\": \"electoral\",\n      \"valor_numerico\": 10,\n      \"unidad\": null,\n      \"ambito_geografico\": null,\n      \"periodo_referencia_inicio\": null,\n      \"periodo_referencia_fin\": null,\n      \"tipo_periodo\": null,\n      \"fuente_especifica\": null,\n      \"notas_contexto\": null\n    }\n  ]\n}"
-}

@@ -1,6 +1,0 @@
-{
-    "test_id": "test_036",
-    "tarea": "relevancia",
-    "model_id": "llama-3.1-8b-instant",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Relevancia alta debido a la victoria de Daniel Noboa en Ecuador y la reacción de Gustavo Petro\",\n   \"categorias_asignadas\": [\"Política Internacional\", \"Política Nacional\", \"Elecciones\"],\n   \"resumen_breve\": \"Gustavo Petro no se pronuncia sobre la victoria de Daniel Noboa en Ecuador, generando controversia\"\n}"
-}

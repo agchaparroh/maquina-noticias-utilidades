@@ -1,6 +1,0 @@
-{
-    "test_id": "test_048",
-    "tarea": "extraccion_datos",
-    "model_id": "gemma2-9b-it",
-    "llm_response_content": "{\n  \"resultados\": [\n    {\n      \"indicador\": \"Fecha de nacimiento de Mario Vargas Llosa\",\n      \"categoria\": \"otro\",\n      \"valor_numerico\": 1936,\n      \"unidad\": null,\n      \"ambito_geografico\": null,\n      \"periodo_referencia_inicio\": \"1936-03-28\",\n      \"periodo_referencia_fin\": null,\n      \"tipo_periodo\": null,\n      \"fuente_especifica\": null,\n      \"notas_contexto\": null\n    },\n    {\n      \"indicador\": \"Fecha de muerte de Mario Vargas Llosa\",\n      \"categoria\": \"otro\",\n      \"valor_numerico\": 13,\n      \"unidad\": null,\n      \"ambito_geografico\": null,\n      \"periodo_referencia_inicio\": \"2023-04-13\",\n      \"periodo_referencia_fin\": null,\n      \"tipo_periodo\": null,\n      \"fuente_especifica\": null,\n      \"notas_contexto\": null\n    }\n  ]\n}"
-}

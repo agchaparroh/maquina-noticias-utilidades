@@ -1,6 +1,0 @@
-{
-    "test_id": "test_003",
-    "tarea": "extraccion_datos",
-    "model_id": "llama-3.1-8b-instant",
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Número de países con los que Colombia comparte frontera\",\n         \"categoria\": \"geográfico\",\n         \"valor_numerico\": 1,\n         \"unidad\": \"\",\n         \"ambito_geografico\": [\"Colombia\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      }\n   ]\n}"
-}

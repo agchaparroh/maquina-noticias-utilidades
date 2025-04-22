@@ -1,6 +1,0 @@
-{
-    "test_id": "test_050",
-    "tarea": "extraccion_datos",
-    "model_id": "llama-3.3-70b-versatile",
-    "llm_response_content": "{\n   \"resultados\": [\n       {\n           \"indicador\": \"Auxilio del FMI a Argentina\",\n           \"categoria\": \"económico\",\n           \"valor_numerico\": 20000,\n           \"unidad\": \"millones de dólares\",\n           \"ambito_geografico\": [\"Argentina\", \"Estados Unidos\"],\n           \"periodo_referencia_inicio\": null,\n           \"periodo_referencia_fin\": null,\n           \"tipo_periodo\": null,\n           \"fuente_especifica\": \"FMI\",\n           \"notas_contexto\": null\n       }\n   ]\n}"
-}

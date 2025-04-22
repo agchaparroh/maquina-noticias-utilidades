@@ -1,6 +1,0 @@
-{
-    "test_id": "test_071",
-    "tarea": "relevancia",
-    "model_id": "llama3-8b-8192",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Revelación de candidatos a la presidencia y vicepresidencia en Bolivia\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Elecciones\"],\n   \"resumen_breve\": \"El líder de UCS, Jhonny Fernández, anuncia que está a horas de revelar los candidatos a la presidencia y vicepresidencia en Bolivia\"\n}"
-}

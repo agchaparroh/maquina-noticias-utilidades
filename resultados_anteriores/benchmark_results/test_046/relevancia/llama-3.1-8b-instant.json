@@ -1,6 +1,0 @@
-{
-    "test_id": "test_046",
-    "tarea": "relevancia",
-    "model_id": "llama-3.1-8b-instant",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Relevante por la postura del presidente de Panamá sobre China y EEUU\",\n   \"categorias_asignadas\": [\"Política Internacional\", \"Política Nacional\", \"Diplomacia\"],\n   \"resumen_breve\": \"El presidente de Panamá, José Raúl Mulino, defiende la transparencia del acuerdo con EEUU y aborda la percepción de amenaza china\"\n}"
-}

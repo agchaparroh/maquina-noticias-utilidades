@@ -1,6 +1,0 @@
-{
-    "test_id": "test_004",
-    "tarea": "extraccion_datos",
-    "model_id": "llama-3.3-70b-versatile",
-    "llm_response_content": "{\n   \"resultados\": [\n       {\n           \"indicador\": \"Número de observadores de la Misión Electoral del Parlamento del Mercosur\",\n           \"categoria\": \"electoral\",\n           \"valor_numerico\": 10,\n           \"unidad\": \"personas\",\n           \"ambito_geografico\": [\"Argentina\", \"Brasil\", \"Paraguay\", \"Uruguay\"],\n           \"periodo_referencia_inicio\": null,\n           \"periodo_referencia_fin\": null,\n           \"tipo_periodo\": null,\n           \"fuente_especifica\": null,\n           \"notas_contexto\": null\n       },\n       {\n           \"indicador\": \"Horas antes del proceso electoral en que se declaró el estado de excepción\",\n           \"categoria\": \"electoral\",\n           \"valor_numerico\": 24,\n           \"unidad\": \"horas\",\n           \"ambito_geografico\": [\"Ecuador\"],\n           \"periodo_referencia_inicio\": null,\n           \"periodo_referencia_fin\": null,\n           \"tipo_periodo\": null,\n           \"fuente_especifica\": null,\n           \"notas_contexto\": null\n       }\n   ]\n}"
-}

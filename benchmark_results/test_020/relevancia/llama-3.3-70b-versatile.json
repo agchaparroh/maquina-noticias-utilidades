@@ -1,6 +1,0 @@
-{
-    "test_id": "test_020",
-    "tarea": "relevancia",
-    "model_id": "llama-3.3-70b-versatile",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 1,\n   \"justificacion_relevancia\": \"Contenido de entretenimiento\",\n   \"categorias_asignadas\": [],\n   \"resumen_breve\": \"Novelas históricas para Semana Santa\"\n}"
-}

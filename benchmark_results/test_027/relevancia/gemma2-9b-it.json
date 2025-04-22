@@ -1,6 +1,0 @@
-{
-    "test_id": "test_027",
-    "tarea": "relevancia",
-    "model_id": "gemma2-9b-it",
-    "llm_response_content": "{\n  \"puntuacion_relevancia\": 7,\n  \"justificacion_relevancia\": \"Elecciones judiciales con participación indígena\",\n  \"categorias_asignadas\": [\n    \"Política Nacional\",\n    \"Justicia/Legal\",\n    \"Sociedad/Derechos\"\n  ],\n  \"resumen_breve\": \"Pueblos indígenas exigen mayor inclusión en las elecciones del Poder Judicial de México.\"\n}"
-}

@@ -1,6 +1,0 @@
-{
-    "test_id": "test_008",
-    "tarea": "extraccion_datos",
-    "model_id": "llama-3.1-8b-instant",
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Número de estudiantes que participaron en la formación especial en el patio de honor\",\n         \"categoria\": \"demográfico\",\n         \"valor_numerico\": \"120\",\n         \"unidad\": \"personas\",\n         \"ambito_geografico\": [\"Colegio Militar Leoncio Prado\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      }\n   ]\n}"
-}

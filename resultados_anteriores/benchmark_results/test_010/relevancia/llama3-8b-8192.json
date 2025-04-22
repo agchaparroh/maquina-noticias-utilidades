@@ -1,6 +1,0 @@
-{
-    "test_id": "test_010",
-    "tarea": "relevancia",
-    "model_id": "llama3-8b-8192",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"El presidente de la República garantiza respeto al proceso judicial sobre el colapso de la discoteca Jet Set\",\n   \"categorias_asignadas\": [\"Conflicto/Seguridad\", \"Justicia/Legal\"],\n   \"resumen_breve\": \"El presidente de la República, Luis Abinader, asegura que el Gobierno no interferirá en el proceso judicial sobre el colapso de la discoteca Jet Set\"\n}"
-}

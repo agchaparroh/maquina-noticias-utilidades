@@ -1,6 +1,0 @@
-{
-    "test_id": "test_063",
-    "tarea": "relevancia",
-    "model_id": "llama-3.1-8b-instant",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"Relevancia media debido a la información sobre afiliación de mexicanos en el extranjero al IMSS\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Economía\"],\n   \"resumen_breve\": \"El IMSS afilió a 13 mil 169 mexicanos en el extranjero y sus familiares a la seguridad social\"\n}"
-}

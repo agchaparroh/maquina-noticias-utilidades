@@ -1,6 +1,0 @@
-{
-    "test_id": "test_009",
-    "tarea": "relevancia",
-    "model_id": "llama3-8b-8192",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"La tragedia en la discoteca Jet Set es un evento importante en la sociedad dominicana\",\n   \"categorias_asignadas\": [\"Conflicto/Seguridad\", \"Sociedad/Derechos\"],\n   \"resumen_breve\": \"El partido Fuerza del Pueblo realiza una misa en memoria de las víctimas de la tragedia en la discoteca Jet Set\"\n}"
-}

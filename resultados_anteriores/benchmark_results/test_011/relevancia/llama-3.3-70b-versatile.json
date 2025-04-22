@@ -1,6 +1,0 @@
-{
-    "test_id": "test_011",
-    "tarea": "relevancia",
-    "model_id": "llama-3.3-70b-versatile",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Caso de alta relevancia política\",\n   \"categorias_asignadas\": [\n       \"Justicia/Legal\",\n       \"Política Nacional\",\n       \"Sociedad/Derechos\"\n   ],\n   \"resumen_breve\": \"Rechazan ONGs suspensión del proceso penal contra Francisco Garduño\"\n}"
-}

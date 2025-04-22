@@ -1,6 +1,0 @@
-{
-    "test_id": "test_058",
-    "tarea": "relevancia",
-    "model_id": "llama-3.3-70b-versatile",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Relevancia en justicia y política\",\n   \"categorias_asignadas\": [\"Justicia/Legal\", \"Política Nacional\"],\n   \"resumen_breve\": \"Leyla Lemus busca modernizar la Corte de Constitucionalidad\"\n}"
-}

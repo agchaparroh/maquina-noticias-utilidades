@@ -1,6 +1,0 @@
-{
-    "test_id": "test_017",
-    "tarea": "relevancia",
-    "model_id": "gemma2-9b-it",
-    "llm_response_content": "{\n  \"puntuacion_relevancia\": 8,\n  \"justificacion_relevancia\": \"Alianza política importante para elecciones en Bolivia\",\n  \"categorias_asignadas\": [\n    \"Política Nacional\",\n    \"Elecciones\"\n  ],\n  \"resumen_breve\": \"Tuto Quiroga firma alianza con FRI y Demócratas para las elecciones en Bolivia.\"\n}"
-}

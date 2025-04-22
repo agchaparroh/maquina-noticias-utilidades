@@ -1,6 +1,0 @@
-{
-    "test_id": "test_040",
-    "tarea": "relevancia",
-    "model_id": "llama-3.3-70b-versatile",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Política y derechos humanos\",\n   \"categorias_asignadas\": [\n       \"Política Internacional\",\n       \"Justicia/Legal\",\n       \"Sociedad/Derechos\"\n   ],\n   \"resumen_breve\": \"Trump y Bukele acusados de crear un Guantánamo en El Salvador\"\n}"
-}

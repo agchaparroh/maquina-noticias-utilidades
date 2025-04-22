@@ -1,6 +1,0 @@
-{
-    "test_id": "test_007",
-    "tarea": "extraccion_datos",
-    "model_id": "llama-3.3-70b-versatile",
-    "llm_response_content": "{\n   \"resultados\": [\n       {\n           \"indicador\": \"Número de presos políticos\",\n           \"categoria\": \"social\",\n           \"valor_numerico\": 900,\n           \"unidad\": \"personas\",\n           \"ambito_geografico\": [\"Venezuela\"],\n           \"periodo_referencia_inicio\": null,\n           \"periodo_referencia_fin\": null,\n           \"tipo_periodo\": null,\n           \"fuente_especifica\": null,\n           \"notas_contexto\": \"detenidos por el gobierno de Nicolás Maduro\"\n       },\n       {\n           \"indicador\": \"Tiempo transcurrido desde la solicitud a la CPI\",\n           \"categoria\": \"otro\",\n           \"valor_numerico\": 3,\n           \"unidad\": \"meses\",\n           \"ambito_geografico\": [\"Venezuela\"],\n           \"periodo_referencia_inicio\": null,\n           \"periodo_referencia_fin\": null,\n           \"tipo_periodo\": null,\n           \"fuente_especifica\": null,\n           \"notas_contexto\": \"desde la solicitud de designación de un especialista para evaluar las condiciones de los detenidos\"\n       }\n   ]\n}"
-}

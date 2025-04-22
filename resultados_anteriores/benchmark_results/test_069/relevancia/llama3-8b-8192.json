@@ -1,6 +1,0 @@
-{
-    "test_id": "test_069",
-    "tarea": "relevancia",
-    "model_id": "llama3-8b-8192",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Críticas a políticos argentinos y referencias a conflictos políticos y económicos\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Economía\", \"Política Internacional\"],\n   \"resumen_breve\": \"Javier Milei acusa a Mauricio Macri y su primo Jorge de traición y obstaculizar un acuerdo en la Ciudad de Buenos Aires\"\n}"
-}

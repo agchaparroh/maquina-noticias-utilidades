@@ -1,6 +1,0 @@
-{
-    "test_id": "test_042",
-    "tarea": "extraccion_entidades",
-    "model_id": "llama-3.3-70b-versatile",
-    "llm_response_content": "{\n   \"resultados\": [\n       {\n           \"nombre\": \"Daniel Noboa\",\n           \"tipo\": \"PERSONA\",\n           \"alias\": [\"Daniel Noboa\"],\n           \"descripcion_contextual\": \"Ganador de la segunda vuelta\",\n           \"relevancia_articulo\": \"10\"\n       },\n       {\n           \"nombre\": \"Luisa González\",\n           \"tipo\": \"PERSONA\",\n           \"alias\": [\"Luisa González\"],\n           \"descripcion_contextual\": \"Candidata del correísmo\",\n           \"relevancia_articulo\": \"8\"\n       },\n       {\n           \"nombre\": \"Consejo Nacional Electoral\",\n           \"tipo\": \"INSTITUCION\",\n           \"alias\": [\"Consejo Nacional Electoral\"],\n           \"descripcion_contextual\": \"Organismo electoral\",\n           \"relevancia_articulo\": \"6\"\n       },\n       {\n           \"nombre\": \"Correísmo\",\n           \"tipo\": \"CONCEPTO\",\n           \"alias\": [\"Correísmo\"],\n           \"descripcion_contextual\": \"Movimiento político\",\n           \"relevancia_articulo\": \"4\"\n       }\n   ]\n}"
-}

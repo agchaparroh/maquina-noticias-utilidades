@@ -1,6 +1,0 @@
-{
-    "test_id": "test_035",
-    "tarea": "extraccion_citas",
-    "model_id": "llama3-70b-8192",
-    "llm_response_content": "{\n   \"resultados\":[\n      {\n         \"cita\":\"Me informan Tesorería de la Asamblea, que a los diputados (as), también se les pagará en cheque. Cómo los auditores de Contraloría cargan los cheques no he podido cobrar tampoco. Será que tendré que firmar ante él para recibirlo?\",\n         \"emisor_nombre\":\"Luis Eduardo Camacho\",\n         \"contexto\":\"Queja sobre pago de salario en cheque\",\n         \"fecha_cita\":null,\n         \"relevancia_cita\":4\n      }\n   ]\n}"
-}

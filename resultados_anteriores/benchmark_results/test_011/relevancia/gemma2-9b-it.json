@@ -1,6 +1,0 @@
-{
-    "test_id": "test_011",
-    "tarea": "relevancia",
-    "model_id": "gemma2-9b-it",
-    "llm_response_content": "{\n  \"puntuacion_relevancia\": 8,\n  \"justificacion_relevancia\": \"Caso de migrantes fallecidos en México, implicaciones políticas y sociales.\",\n  \"categorias_asignadas\": [\n    \"Política Nacional\",\n    \"Sociedad/Derechos\",\n    \"Justicia/Legal\"\n  ],\n  \"resumen_breve\": \"ONGs critican la suspensión del proceso penal contra el director del INM por el incendio en una estación migratoria que causó la muerte de 40 migrantes.\"\n}"
-}

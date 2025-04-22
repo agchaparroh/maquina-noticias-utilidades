@@ -1,6 +1,0 @@
-{
-    "test_id": "test_043",
-    "tarea": "relevancia",
-    "model_id": "gemma2-9b-it",
-    "llm_response_content": "{\n  \"puntuacion_relevancia\": 7,\n  \"justificacion_relevancia\": \"Detención de líder de cartel con impacto en seguridad.\",\n  \"categorias_asignadas\": [\n    \"Conflicto/Seguridad\",\n    \"Justicia/Legal\"\n  ],\n  \"resumen_breve\": \"Autoridades mexicanas detuvieron a un presunto líder del Cártel del Pacífico y a otros miembros de su célula.\"\n}"
-}

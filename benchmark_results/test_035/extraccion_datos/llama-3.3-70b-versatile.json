@@ -1,6 +1,0 @@
-{
-    "test_id": "test_035",
-    "tarea": "extraccion_datos",
-    "model_id": "llama-3.3-70b-versatile",
-    "llm_response_content": "{\n   \"resultados\": [\n       {\n           \"indicador\": \"Diputados afectados por pagos con cheque\",\n           \"categoria\": \"otro\",\n           \"valor_numerico\": 4,\n           \"unidad\": \"diputados\",\n           \"ambito_geografico\": [\"Panamá\"],\n           \"periodo_referencia_inicio\": null,\n           \"periodo_referencia_fin\": null,\n           \"tipo_periodo\": null,\n           \"fuente_especifica\": null,\n           \"notas_contexto\": \"diputados que confirmaron no haber recibido su pago\"\n       },\n       {\n           \"indicador\": \"Duración de la medida de pago con cheques\",\n           \"categoria\": \"otro\",\n           \"valor_numerico\": 4,\n           \"unidad\": \"meses\",\n           \"ambito_geografico\": [\"Panamá\"],\n           \"periodo_referencia_inicio\": null,\n           \"periodo_referencia_fin\": null,\n           \"tipo_periodo\": null,\n           \"fuente_especifica\": null,\n           \"notas_contexto\": \"tiempo mínimo que se mantendrá la medida de pago con cheques\"\n       }\n   ]\n}"
-}

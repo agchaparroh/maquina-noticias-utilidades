@@ -1,6 +1,0 @@
-{
-    "test_id": "test_072",
-    "tarea": "relevancia",
-    "model_id": "llama3-8b-8192",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"Relevancia media debido a la información sobre elecciones y partidos políticos en Perú\",\n   \"categorias_asignadas\": [\"Elecciones\", \"Política Nacional\"],\n   \"resumen_breve\": \"El JNE permite que partidos que no participaron en las elecciones generales puedan competir en las regionales y municipales de 2026\"\n}"
-}

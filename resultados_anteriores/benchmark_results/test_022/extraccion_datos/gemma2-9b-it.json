@@ -1,6 +1,0 @@
-{
-    "test_id": "test_022",
-    "tarea": "extraccion_datos",
-    "model_id": "gemma2-9b-it",
-    "llm_response_content": "{\n  \"resultados\": [\n    {\n      \"indicador\": \"Piso de la banda del tipo de cambio\",\n      \"categoria\": \"económico\",\n      \"valor_numerico\": 1000,\n      \"unidad\": \"pesos\",\n      \"ambito_geografico\": [\n        \"Argentina\"\n      ],\n      \"periodo_referencia_inicio\": null,\n      \"periodo_referencia_fin\": null,\n      \"tipo_periodo\": \"puntual\",\n      \"fuente_especifica\": null,\n      \"notas_contexto\": null\n    }\n  ]\n}"
-}

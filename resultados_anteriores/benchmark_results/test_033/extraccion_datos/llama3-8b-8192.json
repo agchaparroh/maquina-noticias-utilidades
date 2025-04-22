@@ -1,6 +1,0 @@
-{
-    "test_id": "test_033",
-    "tarea": "extraccion_datos",
-    "model_id": "llama3-8b-8192",
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Número de muertos en el colapso de la discoteca Jet Set\",\n         \"categoria\": \"demográfico\",\n         \"valor_numerico\": 231,\n         \"unidad\": \"personas\",\n         \"ambito_geografico\": [\"República Dominicana\"],\n         \"periodo_referencia_inicio\": \"2023-04-08\",\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": \"puntual\",\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      }\n   ]\n}"
-}

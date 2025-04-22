@@ -1,6 +1,0 @@
-{
-    "test_id": "test_003",
-    "tarea": "relevancia",
-    "model_id": "gemma2-9b-it",
-    "llm_response_content": "{\n  \"puntuacion_relevancia\": 7,\n  \"justificacion_relevancia\": \"Elecciones en país fronterizo con pronunciamiento oficial colombiano.\",\n  \"categorias_asignadas\": [\n    \"Política Nacional\",\n    \"Política Internacional\",\n    \"Diplomacia\"\n  ],\n  \"resumen_breve\": \"Colombia felicita a Daniel Noboa tras su victoria en las elecciones ecuatorianas.\"\n}"
-}

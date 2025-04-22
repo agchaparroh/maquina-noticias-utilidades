@@ -1,6 +1,0 @@
-{
-    "test_id": "test_008",
-    "tarea": "relevancia",
-    "model_id": "gemma2-9b-it",
-    "llm_response_content": "{\n  \"puntuacion_relevancia\": 7,\n  \"justificacion_relevancia\": \"Fallecimiento de figura relevante en la cultura peruana.\",\n  \"categorias_asignadas\": [\n    \"Política Nacional\",\n    \"Sociedad/Derechos\",\n    \"Análisis/Contexto\"\n  ],\n  \"resumen_breve\": \"Se rinde homenaje al escritor peruano Mario Vargas Llosa tras su fallecimiento.\"\n}"
-}
