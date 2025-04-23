@@ -1,6 +1,0 @@
-{
-    "test_id": "test_016",
-    "tarea": "relevancia",
-    "model_id": "gemma2-9b-it",
-    "llm_response_content": "{\n  \"puntuacion_relevancia\": 7,\n  \"justificacion_relevancia\": \"Rectificación de un funcionario público en un caso judicial.\",\n  \"categorias_asignadas\": [\n    \"Justicia/Legal\",\n    \"Política Nacional\"\n  ],\n  \"resumen_breve\": \"Exconsejera solicita rectificación de un artículo que la involucra en un caso judicial.\"\n}"
-}

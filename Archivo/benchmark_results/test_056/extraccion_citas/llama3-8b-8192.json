@@ -1,6 +1,0 @@
-{
-    "test_id": "test_056",
-    "tarea": "extraccion_citas",
-    "model_id": "llama3-8b-8192",
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"\\\"A nadie vamos a dejar solo\\\"\",\n         \"emisor_nombre\": \"Abinader\",\n         \"contexto\": null,\n         \"fecha_cita\": null,\n         \"relevancia_cita\": 5\n      },\n      {\n         \"cita\": \"\\\"El Gobierno va a estar con ellos\\\"\",\n         \"emisor_nombre\": \"Abinader\",\n         \"contexto\": null,\n         \"fecha_cita\": null,\n         \"relevancia_cita\": 5\n      },\n      {\n         \"cita\": \"\\\"Incluso los rescatistas también, porque su impacto fue muy fuerte\\\"\",\n         \"emisor_nombre\": \"Abinader\",\n         \"contexto\": null,\n         \"fecha_cita\": null,\n         \"relevancia_cita\": 4\n      },\n      {\n         \"cita\": \"\\\"Me cubrió con su cuerpo y por eso estoy viva\\\"\",\n         \"emisor_nombre\": \"Maribel Espaillat\",\n         \"contexto\": null,\n         \"fecha_cita\": null,\n         \"relevancia_cita\": 5\n      }\n   ]\n}"
-}

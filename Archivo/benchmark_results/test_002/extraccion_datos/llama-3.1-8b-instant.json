@@ -1,6 +1,0 @@
-{
-    "test_id": "test_002",
-    "tarea": "extraccion_datos",
-    "model_id": "llama-3.1-8b-instant",
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Número de miembros del Polo Democrático que se manifestaron a favor de la fusión con el Pacto Histórico\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": 315,\n         \"unidad\": \"miembros\",\n         \"ambito_geografico\": [\"Colombia\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Número de miembros del Polo Democrático que se opusieron a la fusión con el Pacto Histórico\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": 43,\n         \"unidad\": \"miembros\",\n         \"ambito_geografico\": [\"Colombia\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      }\n   ]\n}"
-}

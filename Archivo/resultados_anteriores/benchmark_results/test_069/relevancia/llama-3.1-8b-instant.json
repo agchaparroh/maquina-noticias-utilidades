@@ -1,6 +1,0 @@
-{
-    "test_id": "test_069",
-    "tarea": "relevancia",
-    "model_id": "llama-3.1-8b-instant",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Críticas políticas entre líderes argentinos con impacto en la política nacional\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Política Internacional\"],\n   \"resumen_breve\": \"Javier Milei critica a Mauricio Macri y a su primo Jorge por impedir un acuerdo electoral en la Ciudad de Buenos Aires\"\n}"
-}

@@ -1,6 +1,0 @@
-{
-    "test_id": "test_026",
-    "tarea": "relevancia",
-    "model_id": "llama3-70b-8192",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 4,\n   \"justificacion_relevancia\": \"Plan de contingencia para Semana Santa en Guatemala\",\n   \"categorias_asignadas\": [\"Sociedad/Derechos\", \"Salud\"],\n   \"resumen_breve\": \"MSPAS activa plan de contingencia y alerta roja institucional para Semana Santa 2025 en Guatemala\"\n}"
-}

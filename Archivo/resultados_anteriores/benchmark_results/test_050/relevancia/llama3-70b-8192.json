@@ -1,6 +1,0 @@
-{
-    "test_id": "test_050",
-    "tarea": "relevancia",
-    "model_id": "llama3-70b-8192",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Apoyo de EE.UU. a reformas económicas de Argentina\",\n   \"categorias_asignadas\": [\"Economía\", \"Política Internacional\"],\n   \"resumen_breve\": \"EE.UU. apoya reformas económicas de Argentina y elogia acuerdo con FMI\"\n}"
-}

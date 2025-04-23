@@ -1,6 +1,0 @@
-{
-    "test_id": "test_003",
-    "tarea": "extraccion_citas",
-    "model_id": "llama-3.3-70b-versatile",
-    "llm_response_content": "{\n   \"resultados\": [\n       {\n           \"cita\": \"Felicitamos al nuevo presidente de la República del Ecuador, Daniel Noboa. El hermano pueblo de Ecuador puede siempre contar con Colombia para trabajar juntos por una América Latina libre, soberana y en paz\",\n           \"emisor_nombre\": \"Laura Sarabia\",\n           \"contexto\": \"Elecciones en Ecuador\",\n           \"fecha_cita\": null,\n           \"relevancia_cita\": 5\n       }\n   ]\n}"
-}

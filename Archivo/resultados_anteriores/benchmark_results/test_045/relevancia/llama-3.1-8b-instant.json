@@ -1,6 +1,0 @@
-{
-    "test_id": "test_045",
-    "tarea": "relevancia",
-    "model_id": "llama-3.1-8b-instant",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Decisión judicial contra ministro de Obras Públicas por deuda laboral\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Justicia/Legal\"],\n   \"resumen_breve\": \"Justicia ordena apremio al ministro Edgar Montaño por deuda laboral a ex trabajadores de Sabsa\"\n}"
-}

@@ -1,6 +1,0 @@
-{
-    "test_id": "test_051",
-    "tarea": "relevancia",
-    "model_id": "llama3-8b-8192",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"La información sobre la pobreza y la indigencia en la Ciudad Autónoma de Buenos Aires es relevante para la esfera hispana\",\n   \"categorias_asignadas\": [\"Economía\", \"Sociedad/Derechos\"],\n   \"resumen_breve\": \"La línea de pobreza y indigencia en CABA creció en marzo, requiriendo ingresos de $1.147.000 para no ser pobre\"\n}"
-}

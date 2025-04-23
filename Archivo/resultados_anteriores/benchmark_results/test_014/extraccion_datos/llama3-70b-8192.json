@@ -1,6 +1,0 @@
-{
-    "test_id": "test_014",
-    "tarea": "extraccion_datos",
-    "model_id": "llama3-70b-8192",
-    "llm_response_content": "{\n   \"resultados\":[\n      {\n         \"indicador\":\"Número de detenidos en la Operación Semana Santa Segura\",\n         \"categoria\":\"conflicto\",\n         \"valor_numerico\":1,\n         \"unidad\":\"personas\",\n         \"ambito_geografico\":[\"Costa Rica\"],\n         \"periodo_referencia_inicio\":null,\n         \"periodo_referencia_fin\":null,\n         \"tipo_periodo\":null,\n         \"fuente_especifica\":null,\n         \"notas_contexto\":null\n      }\n   ]\n}"
-}

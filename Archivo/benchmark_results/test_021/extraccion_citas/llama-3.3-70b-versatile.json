@@ -1,6 +1,0 @@
-{
-    "test_id": "test_021",
-    "tarea": "extraccion_citas",
-    "model_id": "llama-3.3-70b-versatile",
-    "llm_response_content": "{\n   \"resultados\": [\n       {\n           \"cita\": \"Santiago\",\n           \"emisor_nombre\": \"Jesús\",\n           \"contexto\": \"En un sueño\",\n           \"fecha_cita\": null,\n           \"relevancia_cita\": 4\n       }\n   ]\n}"
-}

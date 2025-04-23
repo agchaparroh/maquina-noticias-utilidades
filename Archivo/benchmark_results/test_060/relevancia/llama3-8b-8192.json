@@ -1,6 +1,0 @@
-{
-    "test_id": "test_060",
-    "tarea": "relevancia",
-    "model_id": "llama3-8b-8192",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 7,\n   \"justificacion_relevancia\": \"La investigación sobre la fallida compra de la casa de Allende es relevante en el ámbito político y económico\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Justicia/Legal\"],\n   \"resumen_breve\": \"Funcionarios de Bienes Nacionales no se presentan en comisión investigadora por fallida compra de casa de Allende\"\n}"
-}

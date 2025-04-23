@@ -1,6 +1,0 @@
-{
-    "test_id": "test_023",
-    "tarea": "extraccion_datos",
-    "model_id": "llama-3.3-70b-versatile",
-    "llm_response_content": "{\n   \"resultados\": [\n       {\n           \"indicador\": \"Fecha de aprobación de la ley\",\n           \"categoria\": \"otro\",\n           \"valor_numerico\": 12,\n           \"unidad\": \"día del mes\",\n           \"ambito_geografico\": [\"Perú\"],\n           \"periodo_referencia_inicio\": \"2023-03-12\",\n           \"periodo_referencia_fin\": \"2023-03-12\",\n           \"tipo_periodo\": \"puntual\",\n           \"fuente_especifica\": null,\n           \"notas_contexto\": \"aprobación de la ley en el Congreso\"\n       }\n   ]\n}"
-}

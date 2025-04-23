@@ -1,6 +1,0 @@
-{
-    "test_id": "test_034",
-    "tarea": "relevancia",
-    "model_id": "llama3-8b-8192",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"La acción en contra del nombramiento de Werner Ovalle en la SAT tiene implicaciones políticas y legales en Guatemala\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Justicia/Legal\"],\n   \"resumen_breve\": \"El abogado Mynor Giovanny Caté Chirix interpone acción en contra del nombramiento de Werner Ovalle como titular de la SAT en Guatemala\"\n}"
-}

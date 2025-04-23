@@ -1,6 +1,0 @@
-{
-    "test_id": "test_049",
-    "tarea": "extraccion_entidades",
-    "model_id": "gemma2-9b-it",
-    "llm_response_content": "{\n  \"resultados\": [\n    {\n      \"nombre\": \"Miguel Uribe\",\n      \"tipo\": \"PERSONA\",\n      \"alias\": [\n        \"senador Miguel Uribe\"\n      ],\n      \"descripcion_contextual\": \"Senador colombiano que busca la bendición del uribismo.\",\n      \"relevancia_articulo\": 9\n    },\n    {\n      \"nombre\": \"Centro Democrático\",\n      \"tipo\": \"ORGANIZACION\",\n      \"alias\": [\n        \"las huestes del Centro Democrático\"\n      ],\n      \"descripcion_contextual\": \"Partido político colombiano.\",\n      \"relevancia_articulo\": 7\n    },\n    {\n      \"nombre\": \"Medellín\",\n      \"tipo\": \"LUGAR\",\n      \"alias\": [],\n      \"descripcion_contextual\": \"Ciudad donde se llevó a cabo el evento.\",\n      \"relevancia_articulo\": 6\n    },\n    {\n      \"nombre\": \"Elecciones Generales Colombia 2026\",\n      \"tipo\": \"EVENTO\",\n      \"alias\": [],\n      \"descripcion_contextual\": \"Objetivo político de Miguel Uribe.\",\n      \"relevancia_articulo\": 8\n    },\n    {\n      \"nombre\": \"Uribismo\",\n      \"tipo\": \"CONCEPTO\",\n      \"alias\": [],\n      \"descripcion_contextual\": \"Movimiento político colombiano.\",\n      \"relevancia_articulo\": 7\n    }\n  ]\n}"
-}

@@ -1,6 +1,0 @@
-{
-    "test_id": "test_057",
-    "tarea": "relevancia",
-    "model_id": "llama-3.1-8b-instant",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Críticas a la CELAC y el gobierno hondureño por la cumbre de Tegucigalpa\",\n   \"categorias_asignadas\": [\"Política Internacional\", \"Política Nacional\", \"Conflicto/Seguridad\"],\n   \"resumen_breve\": \"El candidato presidencial hondureño Salvador Nasralla critica a la CELAC y el gobierno por la cumbre de Tegucigalpa\"\n}"
-}

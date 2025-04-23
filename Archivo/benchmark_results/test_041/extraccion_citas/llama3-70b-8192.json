@@ -1,6 +1,0 @@
-{
-    "test_id": "test_041",
-    "tarea": "extraccion_citas",
-    "model_id": "llama3-70b-8192",
-    "llm_response_content": "{\n   \"resultados\":[\n      {\n         \"cita\":\"Cuidémonos, cuidémonos de verdad\",\n         \"emisor_nombre\":\"Luis Abinader\",\n         \"contexto\":\"Semana Santa 2025\",\n         \"fecha_cita\":null,\n         \"relevancia_cita\":5\n      },\n      {\n         \"cita\":\"Cuidémonos, cuidémonos de verdad, tomemos decisiones acertadas, decisiones responsables, no pongamos en riesgo lo más importante, nuestra vida y de la vida de los demás\",\n         \"emisor_nombre\":\"Luis Abinader\",\n         \"contexto\":\"Semana Santa 2025\",\n         \"fecha_cita\":null,\n         \"relevancia_cita\":5\n      },\n      {\n         \"cita\":\"Los operativos de seguridad están desplegados en todo el país como cada año, pero la verdadera prevención comienza con cada uno de nosotros, y con cada uno, recuerden, no hay más prueba de amor que cuidarnos, no hay más gesto de amor que cuidar a los nuestros, ese es el mensaje que le queremos dejar para esta Semana Santa\",\n         \"emisor_nombre\":\"Luis Abinader\",\n         \"contexto\":\"Semana Santa 2025\",\n         \"fecha_cita\":null,\n         \"relevancia_cita\":5\n      }\n   ]\n}"
-}

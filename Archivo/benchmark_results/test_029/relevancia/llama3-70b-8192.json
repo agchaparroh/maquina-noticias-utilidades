@@ -1,6 +1,0 @@
-{
-    "test_id": "test_029",
-    "tarea": "relevancia",
-    "model_id": "llama3-70b-8192",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Estrategia electoral del PP para elecciones generales\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Elecciones\"],\n   \"resumen_breve\": \"El PP utiliza Inteligencia Artificial y 'big data' para captar votos en las próximas elecciones generales\"\n}"
-}

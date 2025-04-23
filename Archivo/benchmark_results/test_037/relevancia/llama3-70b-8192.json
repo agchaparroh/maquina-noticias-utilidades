@@ -1,6 +1,0 @@
-{
-    "test_id": "test_037",
-    "tarea": "relevancia",
-    "model_id": "llama3-70b-8192",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Crisis de seguridad y violencia en Haití con implicaciones geopolíticas\",\n   \"categorias_asignadas\": [\"Conflicto/Seguridad\", \"Política Nacional\", \"Sociedad/Derechos\"],\n   \"resumen_breve\": \"Haití aprueba presupuesto de guerra para combatir pandillas y violencia en el país\"\n}"
-}

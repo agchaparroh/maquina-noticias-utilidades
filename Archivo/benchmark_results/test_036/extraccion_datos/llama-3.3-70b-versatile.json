@@ -1,6 +1,0 @@
-{
-    "test_id": "test_036",
-    "tarea": "extraccion_datos",
-    "model_id": "llama-3.3-70b-versatile",
-    "llm_response_content": "{\n   \"resultados\": [\n       {\n           \"indicador\": \"Diferencia de puntos en la victoria\",\n           \"categoria\": \"electoral\",\n           \"valor_numerico\": 10,\n           \"unidad\": \"puntos\",\n           \"ambito_geografico\": [\"Ecuador\"],\n           \"periodo_referencia_inicio\": null,\n           \"periodo_referencia_fin\": null,\n           \"tipo_periodo\": null,\n           \"fuente_especifica\": null,\n           \"notas_contexto\": \"según declaraciones de Daniel Noboa\"\n       },\n       {\n           \"indicador\": \"Edad de la candidata Luisa González\",\n           \"categoria\": \"demográfico\",\n           \"valor_numerico\": 47,\n           \"unidad\": \"años\",\n           \"ambito_geografico\": [\"Ecuador\"],\n           \"periodo_referencia_inicio\": null,\n           \"periodo_referencia_fin\": null,\n           \"tipo_periodo\": null,\n           \"fuente_especifica\": null,\n           \"notas_contexto\": null\n       }\n   ]\n}"
-}

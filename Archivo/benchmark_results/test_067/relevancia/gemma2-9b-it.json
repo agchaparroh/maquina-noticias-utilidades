@@ -1,6 +1,0 @@
-{
-    "test_id": "test_067",
-    "tarea": "relevancia",
-    "model_id": "gemma2-9b-it",
-    "llm_response_content": "{\n  \"puntuacion_relevancia\": 8,\n  \"justificacion_relevancia\": \"Reunión de alto perfil entre líderes de El Salvador y EEUU\",\n  \"categorias_asignadas\": [\n    \"Política Internacional\",\n    \"Política Nacional\",\n    \"Diplomacia\"\n  ],\n  \"resumen_breve\": \"Nayib Bukele y Donald Trump se reunieron en la Casa Blanca para discutir temas de seguridad y cooperación.\"\n}"
-}

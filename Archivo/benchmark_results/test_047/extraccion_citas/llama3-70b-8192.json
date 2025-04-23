@@ -1,6 +1,0 @@
-{
-    "test_id": "test_047",
-    "tarea": "extraccion_citas",
-    "model_id": "llama3-70b-8192",
-    "llm_response_content": "{\n   \"resultados\":[\n      {\n         \"cita\":\"están más armados que nunca\",\n         \"emisor_nombre\":\"Nicolás Maduro\",\n         \"contexto\":\"encuentro con la milicia al servicio del chavismo\",\n         \"fecha_cita\":null,\n         \"relevancia_cita\":4\n      },\n      {\n         \"cita\":\"aquí estamos hoy más dispuestos que nunca, más conscientes que nunca, más armados que nunca para defender el sagrado suelo de nuestra Venezuela heroica\",\n         \"emisor_nombre\":\"Nicolás Maduro\",\n         \"contexto\":\"encuentro con la milicia al servicio del chavismo\",\n         \"fecha_cita\":null,\n         \"relevancia_cita\":5\n      },\n      {\n         \"cita\":\"No volverán. María Corina Machado y la oposición extremista son unos criminales que se dedican a lamerle el trasero a Estados Unidos, un imperialismo que los desprecia y los utiliza\",\n         \"emisor_nombre\":\"Nicolás Maduro\",\n         \"contexto\":\"ataque a María Corina Machado y la oposición venezolana\",\n         \"fecha_cita\":null,\n         \"relevancia_cita\":5\n      }\n   ]\n}"
-}

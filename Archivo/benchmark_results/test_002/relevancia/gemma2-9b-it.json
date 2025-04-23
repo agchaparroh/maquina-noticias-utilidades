@@ -1,6 +1,0 @@
-{
-    "test_id": "test_002",
-    "tarea": "relevancia",
-    "model_id": "gemma2-9b-it",
-    "llm_response_content": "{\n  \"puntuacion_relevancia\": 8,\n  \"justificacion_relevancia\": \"Unión de partidos de izquierda con impacto político en Colombia\",\n  \"categorias_asignadas\": [\n    \"Política Nacional\",\n    \"Elecciones\",\n    \"Sociedad/Derechos\"\n  ],\n  \"resumen_breve\": \"El Polo Democrático se une al Pacto Histórico para las elecciones de 2026 en Colombia.\"\n}"
-}

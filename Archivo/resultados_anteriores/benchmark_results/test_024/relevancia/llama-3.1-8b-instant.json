@@ -1,6 +1,0 @@
-{
-    "test_id": "test_024",
-    "tarea": "relevancia",
-    "model_id": "llama-3.1-8b-instant",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 0,\n   \"justificacion_relevancia\": \"No contiene información periodística relevante\",\n   \"categorias_asignadas\": [],\n   \"resumen_breve\": \"No hay información periodística relevante en el artículo\"\n}"
-}

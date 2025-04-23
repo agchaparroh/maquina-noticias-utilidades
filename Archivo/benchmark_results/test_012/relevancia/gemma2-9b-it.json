@@ -1,6 +1,0 @@
-{
-    "test_id": "test_012",
-    "tarea": "relevancia",
-    "model_id": "gemma2-9b-it",
-    "llm_response_content": "{\n  \"puntuacion_relevancia\": 8,\n  \"justificacion_relevancia\": \"Cambio de gobierno en Ecuador, alta relevancia política\",\n  \"categorias_asignadas\": [\n    \"Política Nacional\",\n    \"Elecciones\"\n  ],\n  \"resumen_breve\": \"Daniel Noboa asume la presidencia de Ecuador tras ganar las elecciones.\"\n}"
-}

@@ -1,6 +1,0 @@
-{
-    "test_id": "test_013",
-    "tarea": "extraccion_citas",
-    "model_id": "llama-3.3-70b-versatile",
-    "llm_response_content": "{\n   \"resultados\": [\n       {\n           \"cita\": \"Informamos a la población que este lunes, con base en análisis de información penitenciaria, se realizó un recorrido minucioso en el Centro de Rehabilitación de Puerto Barrios, en el departamento de Izabal\",\n           \"emisor_nombre\": \"Sergio Vela\",\n           \"contexto\": \"Sobre el descubrimiento de un túnel\",\n           \"fecha_cita\": \"2024-04-14\",\n           \"relevancia_cita\": 4\n       },\n       {\n           \"cita\": \"La visión de Renovación Penitenciaria continúa avanzando en la restauración del control en los centros de detención del país\",\n           \"emisor_nombre\": \"Sergio Vela\",\n           \"contexto\": \"Sobre la política penitenciaria\",\n           \"fecha_cita\": \"2024-04-14\",\n           \"relevancia_cita\": 3\n       },\n       {\n           \"cita\": \"Hoy nuevamente pretendía fugarse usando el mismo método, se presume que es el líder organizador túneles para darse a la fuga\",\n           \"emisor_nombre\": \"PNC\",\n           \"contexto\": \"Sobre el reo Marcos Baudilio Godoy Trujillo\",\n           \"fecha_cita\": null,\n           \"relevancia_cita\": 5\n       }\n   ]\n}"
-}

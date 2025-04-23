@@ -1,6 +1,0 @@
-{
-    "test_id": "test_063",
-    "tarea": "relevancia",
-    "model_id": "llama3-70b-8192",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"Relevancia media por impacto en seguridad social de mexicanos en el extranjero\",\n   \"categorias_asignadas\": [\"Sociedad/Derechos\", \"Política Nacional\"],\n   \"resumen_breve\": \"IMSS afilia a 13,169 mexicanos que trabajan en el extranjero y sus familiares\"\n}"
-}

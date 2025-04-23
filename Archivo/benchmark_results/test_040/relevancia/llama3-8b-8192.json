@@ -1,6 +1,0 @@
-{
-    "test_id": "test_040",
-    "tarea": "relevancia",
-    "model_id": "llama3-8b-8192",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 9,\n   \"justificacion_relevancia\": \"Calificación de desapariciones forzosas y críticas a Trump y Bukele\",\n   \"categorias_asignadas\": [\"Política Internacional\", \"Justicia/Legal\", \"Conflicto/Seguridad\"],\n   \"resumen_breve\": \"Human Rights Watch critica a Trump y Bukele por crear un 'Guantánamo centroamericano' en El Salvador\"\n}"
-}

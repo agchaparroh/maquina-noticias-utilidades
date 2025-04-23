@@ -1,6 +1,0 @@
-{
-    "test_id": "test_004",
-    "tarea": "relevancia",
-    "model_id": "gemma2-9b-it",
-    "llm_response_content": "{\n  \"puntuacion_relevancia\": 8,\n  \"justificacion_relevancia\": \"Informe sobre elecciones en Ecuador con posibles irregularidades\",\n  \"categorias_asignadas\": [\n    \"Política Nacional\",\n    \"Conflicto/Seguridad\",\n    \"Elecciones\"\n  ],\n  \"resumen_breve\": \"El Parlasur denuncia irregularidades en las elecciones ecuatorianas, incluyendo desinformación y uso indebido de recursos.\"\n}"
-}

@@ -1,6 +1,0 @@
-{
-    "test_id": "test_032",
-    "tarea": "relevancia",
-    "model_id": "gemma2-9b-it",
-    "llm_response_content": "{\n  \"puntuacion_relevancia\": 9,\n  \"justificacion_relevancia\": \"Denuncia CIDH sobre régimen autoritario en Nicaragua\",\n  \"categorias_asignadas\": [\n    \"Política Nacional\",\n    \"Derechos Humanos\",\n    \"Conflicto/Seguridad\"\n  ],\n  \"resumen_breve\": \"La CIDH denuncia la consolidación de un régimen autoritario en Nicaragua y pide ayuda internacional.\"\n}"
-}

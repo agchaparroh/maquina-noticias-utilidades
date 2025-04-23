@@ -1,6 +1,0 @@
-{
-    "test_id": "test_047",
-    "tarea": "relevancia",
-    "model_id": "gemma2-9b-it",
-    "llm_response_content": "{\n  \"puntuacion_relevancia\": 8,\n  \"justificacion_relevancia\": \"Maduro habla de la milicia y la oposición venezolana.\",\n  \"categorias_asignadas\": [\n    \"Política Nacional\",\n    \"Conflicto/Seguridad\"\n  ],\n  \"resumen_breve\": \"Maduro afirma que la milicia está 'más armada que nunca' para defender Venezuela y ataca a la oposición.\"\n}"
-}

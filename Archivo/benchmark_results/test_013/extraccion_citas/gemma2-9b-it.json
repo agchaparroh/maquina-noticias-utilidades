@@ -1,6 +1,0 @@
-{
-    "test_id": "test_013",
-    "tarea": "extraccion_citas",
-    "model_id": "gemma2-9b-it",
-    "llm_response_content": "{\n  \"resultados\": [\n    {\n      \"cita\": \"Informamos a la población que este lunes, con base en análisis de información penitenciaria, se realizó un recorrido minucioso en el Centro de Rehabilitación de Puerto Barrios, en el departamento de Izabal\",\n      \"emisor_nombre\": \"Sergio Vela\",\n      \"contexto\": \"Confirmó la localización de un túnel subterráneo en la cárcel.\",\n      \"fecha_cita\": \"2023-04-14\"\n    },\n    {\n      \"cita\": \"La visión de Renovación Penitenciaria continúa avanzando en la restauración del control en los centros de detención del país\",\n      \"emisor_nombre\": \"Sergio Vela\",\n      \"contexto\": \"Sobre el avance de la estrategia de control en las cárceles.\",\n      \"fecha_cita\": \"2023-04-14\"\n    },\n    {\n      \"cita\": \"Hoy nuevamente pretendía fugarse usando el mismo método, se presume que es el líder organizador túneles para darse a la fuga\",\n      \"emisor_nombre\": \"PNC\",\n      \"contexto\": \"Describiendo la fuga del reo Marcos Baudilio Godoy Trujillo.\",\n      \"fecha_cita\": null\n    }\n  ]\n}"
-}

@@ -1,6 +1,0 @@
-{
-    "test_id": "test_012",
-    "tarea": "extraccion_citas",
-    "model_id": "llama3-70b-8192",
-    "llm_response_content": "{\n   \"resultados\":[\n      {\n         \"cita\":\"Noboa, amigo, el pueblo está contigo\",\n         \"emisor_nombre\":\"Simpatizantes del mandatario\",\n         \"contexto\":\"Saludando al presidente electo en la plaza de la Independencia\",\n         \"fecha_cita\":null,\n         \"relevancia_cita\":3\n      }\n   ]\n}"
-}

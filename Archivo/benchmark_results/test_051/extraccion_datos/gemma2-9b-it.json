@@ -1,6 +1,0 @@
-{
-    "test_id": "test_051",
-    "tarea": "extraccion_datos",
-    "model_id": "gemma2-9b-it",
-    "llm_response_content": "Error: No content received"
-}

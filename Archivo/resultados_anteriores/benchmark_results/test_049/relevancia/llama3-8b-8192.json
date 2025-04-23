@@ -1,6 +1,0 @@
-{
-    "test_id": "test_049",
-    "tarea": "relevancia",
-    "model_id": "llama3-8b-8192",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Revelación de gastos de Uribe en eventos y pauta en redes\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Elecciones\"],\n   \"resumen_breve\": \"Miguel Uribe gastó $300 millones en eventos y pauta en redes para consolidar su carrera en el uribismo\"\n}"
-}

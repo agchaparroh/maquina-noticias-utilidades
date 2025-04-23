@@ -1,6 +1,0 @@
-{
-    "test_id": "test_061",
-    "tarea": "relevancia",
-    "model_id": "llama3-70b-8192",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Propuesta de cierre del Congreso por un político influyente\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Justicia/Legal\"],\n   \"resumen_breve\": \"Quintero propone cerrar el Congreso y convocar una constituyente, Bolívar lo critica como dictatorial\"\n}"
-}

@@ -1,6 +1,0 @@
-{
-    "test_id": "test_037",
-    "tarea": "extraccion_citas",
-    "model_id": "llama3-70b-8192",
-    "llm_response_content": "{\n   \"resultados\":[\n      {\n         \"cita\":\"Bandas armadas incendiaron la comisaría y tomaron el control de la prisión, orquestando una fuga masiva de reclusos\",\n         \"emisor_nombre\":\"La Red Nacional de Defensa de los Derechos Humanos\",\n         \"contexto\":\"Ataques en Mirebalais y Saut’d’Eau\",\n         \"fecha_cita\":null,\n         \"relevancia_cita\":4\n      },\n      {\n         \"cita\":\"Algunos dicen que esto fue facilitado por la redistribución de las fuerzas del orden a Mirebalais, dejando a Saut-d’Eau vulnerable\",\n         \"emisor_nombre\":\"Activistas\",\n         \"contexto\":\"Caída de Saut-d’Eau en manos de las pandillas\",\n         \"fecha_cita\":null,\n         \"relevancia_cita\":3\n      },\n      {\n         \"cita\":\"Al ignorar el colapso de la región central, las autoridades de transición demuestran que no tienen un plan real para restaurar los derechos ciudadanos y la seguridad pública\",\n         \"emisor_nombre\":\"La organización de derechos humanos\",\n         \"contexto\":\"Crítica a la respuesta estatal\",\n         \"fecha_cita\":null,\n         \"relevancia_cita\":5\n      }\n   ]\n}"
-}

@@ -1,6 +1,0 @@
-{
-    "test_id": "test_070",
-    "tarea": "relevancia",
-    "model_id": "gemma2-9b-it",
-    "llm_response_content": "{\n  \"puntuacion_relevancia\": 9,\n  \"justificacion_relevancia\": \"Candidaturas claves en elecciones venezolanas.\",\n  \"categorias_asignadas\": [\n    \"Política Nacional\",\n    \"Elecciones\"\n  ],\n  \"resumen_breve\": \"UNT presenta lista de candidatos para elecciones venezolanas, con Capriles y Guanipa a la cabeza.\"\n}"
-}

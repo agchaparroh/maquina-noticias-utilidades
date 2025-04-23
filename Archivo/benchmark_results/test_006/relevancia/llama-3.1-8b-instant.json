@@ -1,6 +1,0 @@
-{
-    "test_id": "test_006",
-    "tarea": "relevancia",
-    "model_id": "llama-3.1-8b-instant",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Relevante por declaraciones de Maduro sobre fraude en Ecuador y críticas a la hegemonía de Estados Unidos\",\n   \"categorias_asignadas\": [\"Política Internacional\", \"Política Nacional\", \"Diplomacia\"],\n   \"resumen_breve\": \"Maduro condena las elecciones en Ecuador como 'fraude horroroso' y critica la hegemonía de Estados Unidos\"\n}"
-}

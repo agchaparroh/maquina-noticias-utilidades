@@ -1,6 +1,0 @@
-{
-    "test_id": "test_051",
-    "tarea": "relevancia",
-    "model_id": "llama-3.1-8b-instant",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 4,\n   \"justificacion_relevancia\": \"Información sobre la pobreza y la indigencia en Argentina\",\n   \"categorias_asignadas\": [\"Sociedad/Derechos\", \"Economía\"],\n   \"resumen_breve\": \"La línea de pobreza en CABA creció un 5,36% en marzo, con ingresos mínimos de $1.147.602\"\n}"
-}

@@ -1,6 +1,0 @@
-{
-    "test_id": "test_019",
-    "tarea": "extraccion_datos",
-    "model_id": "llama3-8b-8192",
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Tasa de autonomía en educación, salud y seguridad\",\n         \"categoria\": \"presupuestario\",\n         \"valor_numerico\": 100,\n         \"unidad\": \"%\",\n         \"ambito_geografico\": [\"Bolivia\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Número de títulos universitarios de Tuto Quiroga\",\n         \"categoria\": \"demográfico\",\n         \"valor_numerico\": 3,\n         \"unidad\": \"títulos\",\n         \"ambito_geografico\": [\"Bolivia\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      }\n   ]\n}"
-}

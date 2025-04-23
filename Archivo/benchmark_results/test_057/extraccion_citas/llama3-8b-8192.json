@@ -1,6 +1,0 @@
-{
-    "test_id": "test_057",
-    "tarea": "extraccion_citas",
-    "model_id": "llama3-8b-8192",
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"\\\"mar de incoherencias lleno de pirañas alcahuetas\\\"\",\n         \"emisor_nombre\": \"Salvador Nasralla\",\n         \"contexto\": null,\n         \"fecha_cita\": null,\n         \"relevancia_cita\": 4\n      },\n      {\n         \"cita\": \"\\\"silencio cómplice\\\"\",\n         \"emisor_nombre\": \"Washington Abdala\",\n         \"contexto\": null,\n         \"fecha_cita\": null,\n         \"relevancia_cita\": 4\n      },\n      {\n         \"cita\": \"\\\"En la CELAC todos fingen que no pasa nada. Así no se construye esa integración de la que hablan\\\"\",\n         \"emisor_nombre\": \"Salvador Nasralla\",\n         \"contexto\": null,\n         \"fecha_cita\": null,\n         \"relevancia_cita\": 4\n      },\n      {\n         \"cita\": \"\\\"Es increíble que todos estos países, ante una tragedia mayúscula como la que vive Venezuela, hagan olímpicamente como que no pasa absolutamente nada\\\"\",\n         \"emisor_nombre\": \"Washington Abdala\",\n         \"contexto\": null,\n         \"fecha_cita\": null,\n         \"relevancia_cita\": 5\n      }\n   ]\n}"
-}

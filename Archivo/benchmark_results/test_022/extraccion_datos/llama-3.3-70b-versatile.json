@@ -1,6 +1,0 @@
-{
-    "test_id": "test_022",
-    "tarea": "extraccion_datos",
-    "model_id": "llama-3.3-70b-versatile",
-    "llm_response_content": "{\n   \"resultados\": [\n       {\n           \"indicador\": \"Piso de la banda del tipo de cambio\",\n           \"categoria\": \"económico\",\n           \"valor_numerico\": 1000,\n           \"unidad\": \"pesos\",\n           \"ambito_geografico\": [\"Argentina\"],\n           \"periodo_referencia_inicio\": null,\n           \"periodo_referencia_fin\": null,\n           \"tipo_periodo\": null,\n           \"fuente_especifica\": null,\n           \"notas_contexto\": \"fijada por insistencia del ministro de Economía, Luis Caputo\"\n       },\n       {\n           \"indicador\": \"Valor de la divisa norteamericana\",\n           \"categoria\": \"económico\",\n           \"valor_numerico\": 911,\n           \"unidad\": \"pesos\",\n           \"ambito_geografico\": [\"Argentina\"],\n           \"periodo_referencia_inicio\": null,\n           \"periodo_referencia_fin\": null,\n           \"tipo_periodo\": null,\n           \"fuente_especifica\": null,\n           \"notas_contexto\": \"valor al que se podría sacar todos los pesos de la economía\"\n       }\n   ]\n}"
-}

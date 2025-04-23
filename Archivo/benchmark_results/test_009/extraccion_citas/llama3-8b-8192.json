@@ -1,6 +1,0 @@
-{
-    "test_id": "test_009",
-    "tarea": "extraccion_citas",
-    "model_id": "llama3-8b-8192",
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"El dolor del pueblo dominicano ha sido enorme. El Gobierno decretó tres días de duelo y tuvo que extenderlo, pero deberá extenderlo más, pues en el corazón del pueblo dominicano será un duelo eterno\",\n         \"emisor_nombre\": \"Leonel Fernández\",\n         \"contexto\": null,\n         \"fecha_cita\": null,\n         \"relevancia_cita\": 5\n      },\n      {\n         \"cita\": \"Estaba la representación de la sociedad dominicana a todos los niveles\",\n         \"emisor_nombre\": \"Leonel Fernández\",\n         \"contexto\": null,\n         \"fecha_cita\": null,\n         \"relevancia_cita\": 3\n      },\n      {\n         \"cita\": \"en medio del dolor, esta es una herida que tomará tiempo para cicatrizar, si es que llega a cicatrizar\",\n         \"emisor_nombre\": \"Leonel Fernández\",\n         \"contexto\": null,\n         \"fecha_cita\": null,\n         \"relevancia_cita\": 4\n      },\n      {\n         \"cita\": \"Estamos seguros de que Dios los acogerá en su santo cielo. Que en paz descansen\",\n         \"emisor_nombre\": \"Leonel Fernández\",\n         \"contexto\": null,\n         \"fecha_cita\": null,\n         \"relevancia_cita\": 5\n      }\n   ]\n}"
-}

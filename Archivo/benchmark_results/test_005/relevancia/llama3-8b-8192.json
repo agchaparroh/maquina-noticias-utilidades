@@ -1,6 +1,0 @@
-{
-    "test_id": "test_005",
-    "tarea": "relevancia",
-    "model_id": "llama3-8b-8192",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Propuesta de cierre del Congreso de la República por un exalcalde y respuesta de un alto funcionario\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Política Internacional\"],\n   \"resumen_breve\": \"Exalcalde colombiano propone cerrar el Congreso de la República y convocar a una constituyente\"\n}"
-}

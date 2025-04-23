@@ -1,6 +1,0 @@
-{
-    "test_id": "test_001",
-    "tarea": "relevancia",
-    "model_id": "llama-3.1-8b-instant",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"Relevante para la política nacional dominicana y la gestión de infraestructuras públicas\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Economía\"],\n   \"resumen_breve\": \"Un senador dominicano propone un proyecto de ley para supervisar obras públicas y privadas\"\n}"
-}

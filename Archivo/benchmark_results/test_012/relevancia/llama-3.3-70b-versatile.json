@@ -1,6 +1,0 @@
-{
-    "test_id": "test_012",
-    "tarea": "relevancia",
-    "model_id": "llama-3.3-70b-versatile",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Elección presidencial\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Elecciones\"],\n   \"resumen_breve\": \"Daniel Noboa regresa al Palacio de Carondelet\"\n}"
-}

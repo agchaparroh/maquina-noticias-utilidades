@@ -1,6 +1,0 @@
-{
-    "test_id": "test_035",
-    "tarea": "relevancia",
-    "model_id": "gemma2-9b-it",
-    "llm_response_content": "{\n  \"puntuacion_relevancia\": 7,\n  \"justificacion_relevancia\": \"Denuncia de irregularidades en la Asamblea Nacional de Panamá.\",\n  \"categorias_asignadas\": [\n    \"Política Nacional\",\n    \"Justicia/Legal\"\n  ],\n  \"resumen_breve\": \"La Contraloría de Panamá paga con cheques a diputados por auditoría, generando protestas.\"\n}"
-}

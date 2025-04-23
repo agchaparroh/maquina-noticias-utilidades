@@ -1,6 +1,0 @@
-{
-    "test_id": "test_023",
-    "tarea": "extraccion_datos",
-    "model_id": "gemma2-9b-it",
-    "llm_response_content": "{\n  \"resultados\": [\n    {\n      \"indicador\": \"Fecha de aprobación de la ley\",\n      \"categoria\": \"Otro\",\n      \"valor_numerico\": 12,\n      \"unidad\": \" \",\n      \"ambito_geografico\": [\n        \"Perú\"\n      ],\n      \"periodo_referencia_inicio\": \"2023-03-12\",\n      \"periodo_referencia_fin\": null,\n      \"tipo_periodo\": \"puntual\",\n      \"fuente_especifica\": null,\n      \"notas_contexto\": null\n    }\n  ]\n}"
-}

@@ -1,6 +1,0 @@
-{
-    "test_id": "test_063",
-    "tarea": "relevancia",
-    "model_id": "gemma2-9b-it",
-    "llm_response_content": "{\n  \"puntuacion_relevancia\": 4,\n  \"justificacion_relevancia\": \"Información sobre seguridad social para mexicanos en el extranjero\",\n  \"categorias_asignadas\": [\n    \"Sociedad/Derechos\",\n    \"Política Nacional\"\n  ],\n  \"resumen_breve\": \"El IMSS afilió a 13 mil mexicanos que trabajan en el extranjero, brindándoles acceso a la seguridad social.\"\n}"
-}

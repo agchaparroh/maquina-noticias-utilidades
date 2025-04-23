@@ -1,6 +1,0 @@
-{
-    "test_id": "test_064",
-    "tarea": "relevancia",
-    "model_id": "llama-3.3-70b-versatile",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Conflicto y seguridad\",\n   \"categorias_asignadas\": [\n       \"Conflicto/Seguridad\",\n       \"Política Nacional\"\n   ],\n   \"resumen_breve\": \"Operativo contra 'Iván Mordisco' en Caquetá\"\n}"
-}

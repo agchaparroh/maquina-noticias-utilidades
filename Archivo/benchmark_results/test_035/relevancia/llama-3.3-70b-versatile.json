@@ -1,6 +1,0 @@
-{
-    "test_id": "test_035",
-    "tarea": "relevancia",
-    "model_id": "llama-3.3-70b-versatile",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"Política Nacional, irregularidades\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Justicia/Legal\"],\n   \"resumen_breve\": \"Diputados afectados por pagos con cheque\"\n}"
-}

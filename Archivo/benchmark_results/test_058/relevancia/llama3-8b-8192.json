@@ -1,6 +1,0 @@
-{
-    "test_id": "test_058",
-    "tarea": "relevancia",
-    "model_id": "llama3-8b-8192",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"Análisis de la estrategia de comunicación de la CC\",\n   \"categorias_asignadas\": [\"Justicia/Legal\", \"Análisis/Contexto\"],\n   \"resumen_breve\": \"La presidenta de la Corte de Constitucionalidad, Leyla Lemus, anuncia medidas para mejorar la comunicación y acceso a la información\"\n}"
-}

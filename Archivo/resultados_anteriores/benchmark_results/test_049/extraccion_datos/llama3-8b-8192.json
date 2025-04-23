@@ -1,6 +1,0 @@
-{
-    "test_id": "test_049",
-    "tarea": "extraccion_datos",
-    "model_id": "llama3-8b-8192",
-    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Número de días con restricciones de tráfico en Medellín\",\n         \"categoria\": \"social\",\n         \"valor_numerico\": 0,\n         \"unidad\": \"días\",\n         \"ambito_geografico\": [\"Medellín\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Número de días con restricciones de tráfico en Medellín\",\n         \"categoria\": \"social\",\n         \"valor_numerico\": 6,\n         \"unidad\": \"días\",\n         \"ambito_geografico\": [\"Medellín\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      }\n   ]\n}"
-}

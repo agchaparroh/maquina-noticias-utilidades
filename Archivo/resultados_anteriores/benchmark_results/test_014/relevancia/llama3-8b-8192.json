@@ -1,6 +1,0 @@
-{
-    "test_id": "test_014",
-    "tarea": "relevancia",
-    "model_id": "llama3-8b-8192",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 7,\n   \"justificacion_relevancia\": \"Detención de un miembro de la Mara Salvatrucha con antecedentes por homicidio en Costa Rica\",\n   \"categorias_asignadas\": [\"Conflicto/Seguridad\", \"Justicia/Legal\"],\n   \"resumen_breve\": \"Costa Rica detiene a un miembro de la Mara Salvatrucha con antecedentes por homicidio en El Salvador\"\n}"
-}

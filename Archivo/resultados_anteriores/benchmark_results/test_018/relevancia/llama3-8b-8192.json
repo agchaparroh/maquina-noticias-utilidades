@@ -1,6 +1,0 @@
-{
-    "test_id": "test_018",
-    "tarea": "relevancia",
-    "model_id": "llama3-8b-8192",
-    "llm_response_content": "{\n   \"puntuacion_relevancia\": 4,\n   \"justificacion_relevancia\": \"Análisis técnico sobre la dolarización y plan económico del presidente Milei\",\n   \"categorias_asignadas\": [\"Economía\", \"Política Nacional\"],\n   \"resumen_breve\": \"El presidente argentino Javier Milei analiza la dolarización y su plan económico en una entrevista de cuatro horas\"\n}"
-}
