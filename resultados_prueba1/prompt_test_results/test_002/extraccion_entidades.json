@@ -1,0 +1,10 @@
+{
+    "test_id": "test_002",
+    "tarea": "extraccion_entidades",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Polo Democrático\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Pacto Histórico\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"Pacto Histórico\"]\n      },\n      {\n         \"nombre\": \"Gustavo Petro\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Gustavo Petro\"]\n      },\n      {\n         \"nombre\": \"Iván Cepeda Castro\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Iván Cepeda\", \"Cepeda\"]\n      },\n      {\n         \"nombre\": \"Colombia Humana\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"Colombia Humana\"]\n      },\n      {\n         \"nombre\": \"Unión Patriótica (UP)\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"Unión Patriótica\", \"UP\"]\n      },\n      {\n         \"nombre\": \"Partido Comunista\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"Partido Comunista\"]\n      },\n      {\n         \"nombre\": \"Movimiento Progresista\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"Movimiento Progresista\"]\n      },\n      {\n         \"nombre\": \"Elecciones presidenciales y legislativas de 2026\",\n         \"tipo\": \"EVENTO\",\n         \"alias\": [\"elecciones presidenciales y legislativas de 2026\"]\n      }\n   ]\n}"
+}

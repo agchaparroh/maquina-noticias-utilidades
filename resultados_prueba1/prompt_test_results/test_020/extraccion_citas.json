@@ -1,0 +1,10 @@
+{
+    "test_id": "test_020",
+    "tarea": "extraccion_citas",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"\\\"Es un capítulo olvidado de nuestro pasado\\\"\",\n         \"emisor_nombre\": \"María Dueñas\",\n         \"contexto\": \"En el artículo sobre novelas históricas\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"El arte de la guerra\\\", de Sun Tzu, el venerable manual estratégico que se leen con fruición directivos, empresarios y profesionales del márquetin y la comunicación\",\n         \"emisor_nombre\": \"Carlos Bassas del Rey\",\n         \"contexto\": \"En la presentación de su novela 'Invencible'\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"Mordaz, irónico y ambiguo, Flashman es un cobarde, un oportunista, un embustero, un racista y un agresor sexual de tomo y lomo\",\n         \"emisor_nombre\": \"George Macdonald Fraser\",\n         \"contexto\": \"En la presentación de su novela 'Flashman'\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"Narrando en paralelo el proceso con el que el monarca hispano logró convertirse también en rey de Portugal -así lo transmitió el propio autor en una entrevista en este diario-\",\n         \"emisor_nombre\": \"José Calvo Poyato\",\n         \"contexto\": \"En la presentación de su novela 'Dueños del Mundo'\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"Novela de aventuras llena de acción, Harffy arranca su historia con el ataque al monasterio de Lindisfarne, el inicio de la era vikinga\",\n         \"emisor_nombre\": \"Matthew Harffy\",\n         \"contexto\": \"En la presentación de su novela 'Tiempo de espadas. El nacimiento de un guerrero'\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+}

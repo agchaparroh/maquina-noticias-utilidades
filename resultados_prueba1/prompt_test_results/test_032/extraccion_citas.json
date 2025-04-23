@@ -1,0 +1,10 @@
+{
+    "test_id": "test_032",
+    "tarea": "extraccion_citas",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"\\\"A siete años del inicio de la crisis de derechos humanos en Nicaragua, la CIDH condena la continua represión estatal y la consolidación de un régimen autoritario\\\"\",\n         \"emisor_nombre\": \"La Comisión Interamericana de Derechos Humanos (CIDH)\",\n         \"contexto\": \"En una declaración pública\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"La situación de derechos humanos en Nicaragua sigue siendo una de las más críticas de la región y continúa deteriorándose\\\"\",\n         \"emisor_nombre\": \"La Comisión Interamericana de Derechos Humanos (CIDH)\",\n         \"contexto\": \"En su mensaje\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"A ello se suman las reformas constitucionales publicadas en febrero de este año entre las cuales destaca la centralización del control absoluto del poder político en la Presidencia, encabezada por un copresidente y una copresidenta\\\"\",\n         \"emisor_nombre\": \"La Comisión Interamericana de Derechos Humanos (CIDH)\",\n         \"contexto\": \"En su mensaje\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"\\\"En este contexto de cierre de espacio cívico, persiste la persecución contra periodistas, personas defensoras, artistas y cualquier persona percibida como opositora\\\"\",\n         \"emisor_nombre\": \"La Comisión Interamericana de Derechos Humanos (CIDH)\",\n         \"contexto\": \"En su mensaje\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+}

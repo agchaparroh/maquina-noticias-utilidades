@@ -1,0 +1,10 @@
+{
+    "test_id": "test_008",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"Honra a Mario Vargas Llosa, escritor y Nobel de Literatura, en la embajada peruana en EE. UU.\",\n   \"categorias_asignadas\": [\"Sociedad/Derechos\", \"Cultura\"],\n   \"explicacion_concisa\": \"La embajada peruana en EE. UU. honra la memoria de Mario Vargas Llosa con un libro de condolencias y la bandera del Perú a media asta, mientras que el Colegio Militar Leoncio Prado rinde un homenaje al escritor fallecido.\"\n}"
+}

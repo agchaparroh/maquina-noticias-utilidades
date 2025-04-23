@@ -1,0 +1,10 @@
+{
+    "test_id": "test_021",
+    "tarea": "extraccion_citas",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"«vivida como un sueño»\",\n         \"emisor_nombre\": \"Santiago Coronado\",\n         \"contexto\": \"En el relato de su sueño\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"«Santiago»\",\n         \"emisor_nombre\": \"Jesús\",\n         \"contexto\": \"Al salir de la fosa\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"«La Fosa»\",\n         \"emisor_nombre\": \"Santiago Coronado\",\n         \"contexto\": \"Título de la marcha\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+}

@@ -1,0 +1,10 @@
+{
+    "test_id": "test_002",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"La unión del Polo Democrático al Pacto Histórico puede tener impacto en la política colombiana y la formación de la oposición\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Elecciones\"],\n   \"explicacion_concisa\": \"El Polo Democrático se une al Pacto Histórico, una coalición de izquierda, para presentarse como una sola fuerza política en las elecciones presidenciales y legislativas de 2026, lo que puede tener implicaciones en la política colombiana\"\n}"
+}

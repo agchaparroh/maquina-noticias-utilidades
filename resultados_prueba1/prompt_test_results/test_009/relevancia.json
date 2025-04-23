@@ -1,0 +1,10 @@
+{
+    "test_id": "test_009",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"La tragedia en la discoteca Jet Set es un evento importante en la sociedad dominicana\",\n   \"categorias_asignadas\": [\"Sociedad/Derechos\"],\n   \"explicacion_concisa\": \"El partido Fuerza del Pueblo realiza una misa en memoria de las víctimas de la tragedia en la discoteca Jet Set, en la que murieron más de 230 personas. El exmandatario Leonel Fernández dirigió palabras de condolencia y solidaridad, destacando el dolor colectivo en la sociedad dominicana.\"\n}"
+}

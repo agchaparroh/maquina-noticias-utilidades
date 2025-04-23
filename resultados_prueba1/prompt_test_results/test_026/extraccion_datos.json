@@ -1,0 +1,10 @@
+{
+    "test_id": "test_026",
+    "tarea": "extraccion_datos",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Personal de salud movilizado\",\n         \"categoria\": \"sanitario\",\n         \"valor_numerico\": null,\n         \"unidad\": null,\n         \"ambito_geografico\": [\"nacional\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": \"Ministerio de Salud Pública y Asistencia Social\",\n         \"notas_contexto\": \"Alerta roja institucional activada\"\n      },\n      {\n         \"indicador\": \"Servicios de 24 horas disponibles\",\n         \"categoria\": \"sanitario\",\n         \"valor_numerico\": null,\n         \"unidad\": null,\n         \"ambito_geografico\": [\"nacional\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": \"Ministerio de Salud Pública y Asistencia Social\",\n         \"notas_contexto\": \"Centro de Atención Materno Infantil, centro de Urgencia y/o Emergencia\"\n      },\n      {\n         \"indicador\": \"Vehículos para traslado de personal y pacientes\",\n         \"categoria\": \"sanitario\",\n         \"valor_numerico\": null,\n         \"unidad\": null,\n         \"ambito_geografico\": [\"nacional\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": \"Ministerio de Salud Pública y Asistencia Social\",\n         \"notas_contexto\": \"Garantizar el traslado oportuno de personal y pacientes\"\n      }\n   ]\n}"
+}

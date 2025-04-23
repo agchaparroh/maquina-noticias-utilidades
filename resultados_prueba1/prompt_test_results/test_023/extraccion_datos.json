@@ -1,0 +1,10 @@
+{
+    "test_id": "test_023",
+    "tarea": "extraccion_datos",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Presupuesto asignado a la Agencia Peruana de Cooperación Internacional (APCI)\",\n         \"categoria\": \"presupuestario\",\n         \"valor_numerico\": null,\n         \"unidad\": null,\n         \"ambito_geografico\": [\"Perú\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Recursos de cooperación internacional no reembolsable\",\n         \"categoria\": \"económico\",\n         \"valor_numerico\": null,\n         \"unidad\": null,\n         \"ambito_geografico\": [\"Perú\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      },\n      {\n         \"indicador\": \"Recursos públicos y privados gestionados por la APCI\",\n         \"categoria\": \"económico\",\n         \"valor_numerico\": null,\n         \"unidad\": null,\n         \"ambito_geografico\": [\"Perú\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      }\n   ]\n}"
+}

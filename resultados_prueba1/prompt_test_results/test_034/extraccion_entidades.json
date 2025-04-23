@@ -1,0 +1,10 @@
+{
+    "test_id": "test_034",
+    "tarea": "extraccion_entidades",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Mynor Giovanny Caté Chirix\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Mynor Giovanny Caté Chirix\", \"Maynor Caté\"]\n      },\n      {\n         \"nombre\": \"Consuelo Porras\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Consuelo Porras Argueta\"]\n      },\n      {\n         \"nombre\": \"Werner Florencio Ovalle Ramírez\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Werner Ovalle\"]\n      },\n      {\n         \"nombre\": \"Superintendencia de Administración Tributaria (SAT)\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"SAT\"]\n      },\n      {\n         \"nombre\": \"Ministerio Público (MP)\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"MP\"]\n      },\n      {\n         \"nombre\": \"Ministerio de Finanzas Públicas (Minfin)\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"Minfin\"]\n      },\n      {\n         \"nombre\": \"Corte de Constitucionalidad (CC)\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"CC\"]\n      },\n      {\n         \"nombre\": \"Leyla Susana Lemus Arriaga\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Leyla Susana Lemus\"]\n      },\n      {\n         \"nombre\": \"Jonathan Menkos\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Jonathan Menkos\"]\n      },\n      {\n         \"nombre\": \"Elecciones\",\n         \"tipo\": \"EVENTO\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Organismo Judicial\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"OJGuatemala\"]\n      }\n   ]\n}"
+}

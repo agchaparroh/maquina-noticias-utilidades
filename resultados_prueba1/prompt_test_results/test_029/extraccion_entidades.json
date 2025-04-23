@@ -1,0 +1,10 @@
+{
+    "test_id": "test_029",
+    "tarea": "extraccion_entidades",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"nombre\": \"Alberto Núñez Feijóo\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Feijóo\"]\n      },\n      {\n         \"nombre\": \"Elías Bendodo\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Aleix Sanmartín\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Gabinete de Inteligencia y Datos Electorales Avanzados (G-IDEA)\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"G-IDEA\"]\n      },\n      {\n         \"nombre\": \"Unidad de Análisis de Datos y Prospectiva\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Partido Popular (PP)\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"PP\"]\n      },\n      {\n         \"nombre\": \"Vox\",\n         \"tipo\": \"ORGANIZACION\",\n         \"alias\": [\"Vox\"]\n      },\n      {\n         \"nombre\": \"Donald Trump\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Trump\"]\n      },\n      {\n         \"nombre\": \"Santiago Abascal\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": [\"Abascal\"]\n      },\n      {\n         \"nombre\": \"Alvise\",\n         \"tipo\": \"PERSONA\",\n         \"alias\": []\n      },\n      {\n         \"nombre\": \"Organización de las Naciones Unidas (ONU)\",\n         \"tipo\": \"INSTITUCION\",\n         \"alias\": [\"ONU\", \"Naciones Unidas\"]\n      },\n      {\n         \"nombre\": \"Elecciones Generales España 2023\",\n         \"tipo\": \"EVENTO\",\n         \"alias\": [\"elecciones generales\", \"comicios\"]\n      }\n   ]\n}"
+}

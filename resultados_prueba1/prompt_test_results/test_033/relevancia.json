@@ -1,0 +1,10 @@
+{
+    "test_id": "test_033",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 7,\n   \"justificacion_relevancia\": \"Abinader reconoce la necesidad de regular obras privadas para evitar tragedias\",\n   \"categorias_asignadas\": [\"Justicia/Legal\", \"Política Nacional\"],\n   \"explicacion_concisa\": \"El presidente Abinader reconoce la falta de regulación para supervisar obras privadas y anuncia un proyecto de ley para llenar ese vacío, en respuesta a la tragedia en la discoteca Jet Set.\"\n}"
+}

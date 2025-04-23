@@ -1,0 +1,10 @@
+{
+    "test_id": "test_003",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"La canciller colombiana felicitó al nuevo presidente ecuatoriano, involucrando a Colombia en la política ecuatoriana\",\n   \"categorias_asignadas\": [\"Política Internacional\", \"Diplomacia\", \"Elecciones\"],\n   \"explicacion_concisa\": \"La canciller colombiana Laura Sarabia felicitó al presidente electo de Ecuador, Daniel Noboa, rompiendo el silencio del gobierno colombiano sobre los resultados de las elecciones en Ecuador\"\n}"
+}

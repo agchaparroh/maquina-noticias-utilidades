@@ -1,0 +1,10 @@
+{
+    "test_id": "test_013",
+    "tarea": "extraccion_citas",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"“Informamos a la población que este lunes, con base en análisis de información penitenciaria, se realizó un recorrido minucioso en el Centro de Rehabilitación de Puerto Barrios, en el departamento de Izabal”\",\n         \"emisor_nombre\": \"Sergio Vela\",\n         \"contexto\": \"Explicó durante la inspección\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"“La visión de Renovación Penitenciaria continúa avanzando en la restauración del control en los centros de detención del país”\",\n         \"emisor_nombre\": \"Sergio Vela\",\n         \"contexto\": \"Agregó\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"“Hoy nuevamente pretendía fugarse usando el mismo método, se presume que es el líder organizador túneles para darse a la fuga”\",\n         \"emisor_nombre\": \"Marcos Baudilio Godoy Trujillo\",\n         \"contexto\": \"Subrayó\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+}

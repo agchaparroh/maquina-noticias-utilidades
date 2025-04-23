@@ -1,0 +1,10 @@
+{
+    "test_id": "test_014",
+    "tarea": "extraccion_hechos",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"contenido\": \"Un presunto miembro de la Mara Salvatrucha, con antecedentes por homicidio en El Salvador y en condición migratoria irregular, fue detenido por la Fuerza Pública costarricense en el centro de la capital.\",\n         \"tipo_hecho\": \"SUCESO\",\n         \"fecha_ocurrencia_inicio\": \"2025-04-15T10:00:00Z\",\n         \"fecha_ocurrencia_fin\": null,\n         \"precision_temporal\": \"exacta\",\n         \"paises\": [\"CR\", \"SV\"],\n         \"ubicaciones_especificas\": [\"San José\"],\n         \"importancia\": 8,\n         \"confiabilidad\": 5,\n         \"etiquetas\": [\"crimen\", \"migración\", \"seguridad\"],\n         \"es_evento_futuro\": false,\n         \"estado_programacion\": null\n      },\n      {\n         \"contenido\": \"La Operación Semana Santa Segura desplegada en el Gran Área Metropolitana busca fortalecer la vigilancia en zonas urbanas y de alta concentración de personas.\",\n         \"tipo_hecho\": \"CONCEPTO\",\n         \"fecha_ocurrencia_inicio\": \"2025-04-15\",\n         \"fecha_ocurrencia_fin\": null,\n         \"precision_temporal\": \"dia\",\n         \"paises\": [\"CR\"],\n         \"ubicaciones_especificas\": [\"Gran Área Metropolitana\"],\n         \"importancia\": 6,\n         \"confiabilidad\": 4,\n         \"etiquetas\": [\"seguridad\", \"operación\", \"Semana Santa\"],\n         \"es_evento_futuro\": false,\n         \"estado_programacion\": null\n      }\n   ]\n}"
+}

@@ -1,0 +1,10 @@
+{
+    "test_id": "test_028",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 2,\n   \"justificacion_relevancia\": \"El artículo critica la política del gobierno y la conducta de políticos, pero no tiene un impacto significativo en la esfera hispana.\",\n   \"categorias_asignadas\": [\"Sociedad/Derechos\"],\n   \"explicacion_concisa\": \"El artículo critica la conducta de políticos y la política del gobierno en relación con la prostitución y el feminismo, pero no tiene un impacto significativo en la esfera hispana.\"\n}"
+}

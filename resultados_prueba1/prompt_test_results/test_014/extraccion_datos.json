@@ -1,0 +1,10 @@
+{
+    "test_id": "test_014",
+    "tarea": "extraccion_datos",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Número de votos obtenidos por el partido X\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": 1,\n         \"unidad\": \"votos\",\n         \"ambito_geografico\": [\"Costa Rica\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": null\n      }\n   ]\n}"
+}

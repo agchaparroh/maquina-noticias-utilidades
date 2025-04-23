@@ -1,0 +1,10 @@
+{
+    "test_id": "test_024",
+    "tarea": "extraccion_hechos",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"contenido\": \"YouTube es un servicio de video en línea propiedad de Google.\",\n         \"tipo_hecho\": \"CONCEPTO\",\n         \"fecha_ocurrencia_inicio\": \"2005-02-14\",\n         \"fecha_ocurrencia_fin\": null,\n         \"precision_temporal\": \"año\",\n         \"paises\": [],\n         \"ubicaciones_especificas\": [],\n         \"importancia\": 9,\n         \"confiabilidad\": 5,\n         \"etiquetas\": [\"YouTube\", \"video\", \"Google\"],\n         \"es_evento_futuro\": false,\n         \"estado_programacion\": null\n      }\n   ]\n}"
+}

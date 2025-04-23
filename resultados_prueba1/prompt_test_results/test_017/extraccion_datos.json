@@ -1,0 +1,10 @@
+{
+    "test_id": "test_017",
+    "tarea": "extraccion_datos",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"indicador\": \"Autonomía total en educación, salud y seguridad\",\n         \"categoria\": \"presupuestario\",\n         \"valor_numerico\": null,\n         \"unidad\": null,\n         \"ambito_geografico\": [\"Bolivia\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": \"Descentralización de responsabilidades a las regiones y municipios\"\n      },\n      {\n         \"indicador\": \"Declaración jurada de bienes y rentas anticipada\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": null,\n         \"unidad\": null,\n         \"ambito_geografico\": [\"Bolivia\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": \"Requisito para los candidatos a la presidencia\"\n      },\n      {\n         \"indicador\": \"Debates públicos entre candidatos\",\n         \"categoria\": \"electoral\",\n         \"valor_numerico\": null,\n         \"unidad\": null,\n         \"ambito_geografico\": [\"Bolivia\"],\n         \"periodo_referencia_inicio\": null,\n         \"periodo_referencia_fin\": null,\n         \"tipo_periodo\": null,\n         \"fuente_especifica\": null,\n         \"notas_contexto\": \"Requisito para la población ver y escuchar las propuestas de los candidatos\"\n      }\n   ]\n}"
+}

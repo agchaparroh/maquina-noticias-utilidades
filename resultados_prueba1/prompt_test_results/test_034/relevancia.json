@@ -1,0 +1,10 @@
+{
+    "test_id": "test_034",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"Relevancia media debido a la implicación de la Superintendencia de Administración Tributaria y el Ministerio Público en Guatemala.\",\n   \"categorias_asignadas\": [\"Justicia/Legal\", \"Política Nacional\"],\n   \"explicacion_concisa\": \"El abogado Mynor Giovanny Caté Chirix interpone un amparo en contra del nombramiento de Werner Ovalle como titular de la Superintendencia de Administración Tributaria (SAT) en Guatemala, lo que genera controversia en el Ministerio Público y la justicia nacional.\"\n}"
+}

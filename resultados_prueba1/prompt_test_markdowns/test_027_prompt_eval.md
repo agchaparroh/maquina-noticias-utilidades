@@ -1,0 +1,353 @@
+# Evaluación Artículo: test_027
+
+## Metadatos del Artículo Original
+
+| Campo          | Valor                                      |
+|----------------|--------------------------------------------|
+| **URL**        | https://www.jornada.com.mx/noticia/2025/04/14/politica/inequitativa-la-eleccion-judicial-consideran-pueblos-indigenas           |
+| **Título**     | Inequitativa, la elección judicial, consideran pueblos indígenas       |
+| **Medio**      | La Jornada         |
+| **País Pub.**  | None |
+| **Fecha Pub.** | 2025-04-14T18:57:00-06:00 |
+| **Recopilado** | 2025-04-21T00:42:54.442427+00:00 |
+
+---
+
+## Contenido del Artículo Analizado
+
+<details>
+<summary>Ver/Ocultar Contenido Completo</summary>
+
+```text
+Ciudad de México. De cara a las elecciones del Poder Judicial de la Federación del 1° de junio, el Consejo Nacional de Pueblos Indígenas exigió este lunes mayor inclusión en el proceso de sus 70 comunidades distribuidas a nivel nacional, que contempla a los pueblos afromexicanos, al asegurar que están en una contienda inequitativa porque representan menos de uno por ciento de todos los candidatos.
+Yaneth del Rosario Cruz Gómez, coordinadora general del consejo, comentó a La Jornada que la agrupación impulsa las campañas de sus siete candidaturas porque “son nuestra única posibilidad de lograr un cambio real” dentro de sus comunidades. De alcanzar algún puesto, destacó que buscarán impulsar y garantizar los derechos de sus comunidades, incluso a nivel internacional.
+En un posicionamiento de seis puntos, leído por Cruz en conferencia de prensa, el consejo reiteró que “a más de 200 años de vida independiente, seguimos excluidos del sistema de justicia de nuestro país, caracterizado por ser formalista, elitista, clasista y racista”. Indicó que su participación en la elección se sustenta con la entrada en vigor de la reforma al artículo segundo de la Constitución, que los reconoce como sujetos de derecho público, con personalidad jurídica y patrimonio propio.
+Subrayó que en su momento este Consejo realizó propuestas de reforma para garantizar la presencia indígena en el Poder Judicial, pero no avanzaron, “por lo que ahora, la participación de nuestros hermanos y hermanas alienta nuestra esperanza de contar con una justicia con pertinencia cultural”.
+Apuntó que el actual sistema de justicia permanece distante a las problemáticas y a la realidad de sus pueblos. Apuntó que seguirán el proceso y vigilarán que se respeten nuestras instituciones, autoridades, formas de organización y sobre todo, lo que mandaten sus asambleas para el ejercicio de estos recursos.
+Acusó que el Instituto Nacional Electoral prácticamente los “condena a ser ciudadanos pasivos que no podemos expresar y hacer sentir nuestra solidaridad con los hermanos y hermanas que participan en la contienda”. Resaltó que es un momento histórico para impulsar una justicia que tome en cuenta los diversos contextos sociales y culturales de México, aspecto que sólo se puede lograr con instituciones que incorporen juzgadores competentes.
+Confirmó que participarán en la elaboración del proyecto de Ley General de Derechos de los Pueblos Indígenas y Afromexicanos, que establecerá las bases para ejercicio de sus derechos constitucionales. Celebró que esta iniciativa sea consultada de manera previa, libre informada y de la forma más amplia posible en todas las comunidades del país.
+```
+</details>
+
+---
+
+## Resumen de Evaluación
+
+| Tarea | Estado | Modelo | Tiempo | Tokens | Ratio |
+|-------|--------|--------|--------|--------|-------|
+| relevancia | ✅ | `llama3-8b-8192` | 0m 0.52s | 1395.0 | 0.12 |
+| extraccion_hechos | ✅ | `llama3-8b-8192` | 0m 1.39s | 3247.0 | 0.42 |
+| extraccion_entidades | ✅ | `llama3-8b-8192` | 0m 0.89s | 1854.0 | 0.16 |
+| extraccion_citas | ✅ | `llama3-8b-8192` | 0m 0.78s | 1823.0 | 0.24 |
+| extraccion_datos | ✅ | `llama3-8b-8192` | 0m 0.63s | 2179.0 | 0.06 |
+
+---
+
+## Resultados Detallados por Tarea
+
+### Tarea: relevancia
+
+✅ **Estado:** Éxito
+
+**Métricas:**
+- **Modelo:** `llama3-8b-8192`
+- **Tiempo:** 0m 0.52s
+- **Tokens prompt:** 1249.0
+- **Tokens respuesta:** 146.0
+- **Total tokens:** 1395.0
+
+
+<details open>
+<summary>Ver/Ocultar Respuesta LLM</summary>
+
+```json
+{
+    "puntuacion_relevancia": 8,
+    "justificacion_relevancia": "La participación de pueblos indígenas en el Poder Judicial de la Federación es un tema de gran trascendencia en la esfera hispana.",
+    "categorias_asignadas": [
+        "Política Nacional",
+        "Justicia/Legal"
+    ],
+    "explicacion_concisa": "El Consejo Nacional de Pueblos Indígenas exige mayor inclusión en el proceso electoral para el Poder Judicial de la Federación, argumentando que la actual situación es inequitativa y que su participación busca garantizar los derechos de sus comunidades."
+}
+```
+</details>
+
+
+### Tarea: extraccion_hechos
+
+✅ **Estado:** Éxito
+
+**Métricas:**
+- **Modelo:** `llama3-8b-8192`
+- **Tiempo:** 0m 1.39s
+- **Tokens prompt:** 2289.0
+- **Tokens respuesta:** 958.0
+- **Total tokens:** 3247.0
+
+
+<details open>
+<summary>Ver/Ocultar Respuesta LLM</summary>
+
+```json
+{
+    "resultados": [
+        {
+            "contenido": "El Consejo Nacional de Pueblos Indígenas exigió mayor inclusión en el proceso electoral del Poder Judicial de la Federación.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "MX"
+            ],
+            "ubicaciones_especificas": [
+                "Ciudad de México"
+            ],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "pueblos indígenas",
+                "elecciones",
+                "inclusión"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El Consejo Nacional de Pueblos Indígenas considera que la elección es inequitativa porque representan menos de uno por ciento de todos los candidatos.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "MX"
+            ],
+            "ubicaciones_especificas": [
+                "Ciudad de México"
+            ],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "pueblos indígenas",
+                "elecciones",
+                "inequidad"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El Consejo Nacional de Pueblos Indígenas impulsa las campañas de sus siete candidaturas porque 'son nuestra única posibilidad de lograr un cambio real' dentro de sus comunidades.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "MX"
+            ],
+            "ubicaciones_especificas": [
+                "Ciudad de México"
+            ],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "pueblos indígenas",
+                "elecciones",
+                "candidaturas"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El Consejo Nacional de Pueblos Indígenas reiteró que 'a más de 200 años de vida independiente, seguimos excluidos del sistema de justicia de nuestro país, caracterizado por ser formalista, elitista, clasista y racista'.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "MX"
+            ],
+            "ubicaciones_especificas": [
+                "Ciudad de México"
+            ],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "pueblos indígenas",
+                "justicia",
+                "exclusión"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        },
+        {
+            "contenido": "El Consejo Nacional de Pueblos Indígenas participará en la elaboración del proyecto de Ley General de Derechos de los Pueblos Indígenas y Afromexicanos.",
+            "tipo_hecho": "DECLARACION",
+            "fecha_ocurrencia_inicio": "2025-04-14T00:00:00Z",
+            "fecha_ocurrencia_fin": null,
+            "precision_temporal": "exacta",
+            "paises": [
+                "MX"
+            ],
+            "ubicaciones_especificas": [
+                "Ciudad de México"
+            ],
+            "importancia": 8,
+            "confiabilidad": 5,
+            "etiquetas": [
+                "pueblos indígenas",
+                "ley",
+                "derechos"
+            ],
+            "es_evento_futuro": false,
+            "estado_programacion": null
+        }
+    ]
+}
+```
+</details>
+
+
+### Tarea: extraccion_entidades
+
+✅ **Estado:** Éxito
+
+**Métricas:**
+- **Modelo:** `llama3-8b-8192`
+- **Tiempo:** 0m 0.89s
+- **Tokens prompt:** 1604.0
+- **Tokens respuesta:** 250.0
+- **Total tokens:** 1854.0
+
+
+<details open>
+<summary>Ver/Ocultar Respuesta LLM</summary>
+
+```json
+{
+    "resultados": [
+        {
+            "nombre": "Consejo Nacional de Pueblos Indígenas",
+            "tipo": "ORGANIZACION",
+            "alias": []
+        },
+        {
+            "nombre": "Yaneth del Rosario Cruz Gómez",
+            "tipo": "PERSONA",
+            "alias": []
+        },
+        {
+            "nombre": "Poder Judicial de la Federación",
+            "tipo": "INSTITUCION",
+            "alias": []
+        },
+        {
+            "nombre": "Instituto Nacional Electoral",
+            "tipo": "ORGANIZACION",
+            "alias": []
+        },
+        {
+            "nombre": "Ley General de Derechos de los Pueblos Indígenas y Afromexicanos",
+            "tipo": "NORMATIVA",
+            "alias": []
+        },
+        {
+            "nombre": "Ciudad de México",
+            "tipo": "LUGAR",
+            "alias": []
+        },
+        {
+            "nombre": "Elecciones del Poder Judicial de la Federación",
+            "tipo": "EVENTO",
+            "alias": []
+        }
+    ]
+}
+```
+</details>
+
+
+### Tarea: extraccion_citas
+
+✅ **Estado:** Éxito
+
+**Métricas:**
+- **Modelo:** `llama3-8b-8192`
+- **Tiempo:** 0m 0.78s
+- **Tokens prompt:** 1472.0
+- **Tokens respuesta:** 351.0
+- **Total tokens:** 1823.0
+
+
+<details open>
+<summary>Ver/Ocultar Respuesta LLM</summary>
+
+```json
+{
+    "resultados": [
+        {
+            "cita": "“son nuestra única posibilidad de lograr un cambio real”",
+            "emisor_nombre": "Yaneth del Rosario Cruz Gómez",
+            "contexto": "Durante una conferencia de prensa",
+            "fecha_cita": null
+        },
+        {
+            "cita": "“a más de 200 años de vida independiente, seguimos excluidos del sistema de justicia de nuestro país, caracterizado por ser formalista, elitista, clasista y racista”",
+            "emisor_nombre": "Consejo Nacional de Pueblos Indígenas",
+            "contexto": "En un posicionamiento de seis puntos",
+            "fecha_cita": null
+        },
+        {
+            "cita": "“por lo que ahora, la participación de nuestros hermanos y hermanas alienta nuestra esperanza de contar con una justicia con pertinencia cultural”",
+            "emisor_nombre": "Yaneth del Rosario Cruz Gómez",
+            "contexto": "Durante una conferencia de prensa",
+            "fecha_cita": null
+        },
+        {
+            "cita": "“condena a ser ciudadanos pasivos que no podemos expresar y hacer sentir nuestra solidaridad con los hermanos y hermanas que participan en la contienda”",
+            "emisor_nombre": "Yaneth del Rosario Cruz Gómez",
+            "contexto": "Durante una conferencia de prensa",
+            "fecha_cita": null
+        }
+    ]
+}
+```
+</details>
+
+
+### Tarea: extraccion_datos
+
+✅ **Estado:** Éxito
+
+**Métricas:**
+- **Modelo:** `llama3-8b-8192`
+- **Tiempo:** 0m 0.63s
+- **Tokens prompt:** 2059.0
+- **Tokens respuesta:** 120.0
+- **Total tokens:** 2179.0
+
+
+<details open>
+<summary>Ver/Ocultar Respuesta LLM</summary>
+
+```json
+{
+    "resultados": [
+        {
+            "indicador": "Porcentaje de candidatos indígenas en la contienda",
+            "categoria": "demográfico",
+            "valor_numerico": 0.01,
+            "unidad": "%",
+            "ambito_geografico": [
+                "México"
+            ],
+            "periodo_referencia_inicio": null,
+            "periodo_referencia_fin": null,
+            "tipo_periodo": null,
+            "fuente_especifica": null,
+            "notas_contexto": null
+        }
+    ]
+}
+```
+</details>

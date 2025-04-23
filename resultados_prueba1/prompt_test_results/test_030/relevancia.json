@@ -1,0 +1,10 @@
+{
+    "test_id": "test_030",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 8,\n   \"justificacion_relevancia\": \"El artículo aborda la situación de acoso y hostigamiento contra los hijos de policías en Cataluña, con implicaciones políticas y sociales importantes.\",\n   \"categorias_asignadas\": [\"Política Nacional\", \"Conflicto/Seguridad\", \"Sociedad/Derechos\"],\n   \"explicacion_concisa\": \"El artículo describe el creciente acoso y hostigamiento contra los hijos de policías en Cataluña, relacionado con la política y la crispación en la región, y su impacto en la vida de las familias involucradas.\"\n}"
+}

@@ -1,0 +1,10 @@
+{
+    "test_id": "test_014",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"La detención de un miembro de la Mara Salvatrucha con antecedentes por homicidio en El Salvador y en condición migratoria irregular en Costa Rica\",\n   \"categorias_asignadas\": [\"Conflicto/Seguridad\", \"Justicia/Legal\"],\n   \"explicacion_concisa\": \"La Fuerza Pública costarricense detuvo a un presunto miembro de la Mara Salvatrucha con antecedentes por homicidio en El Salvador y en condición migratoria irregular en el centro de la capital, como parte de la Operación Semana Santa Segura. La detención forma parte de los esfuerzos para frenar el ingreso y permanencia de individuos vinculados a organizaciones criminales en el país.\"\n}"
+}

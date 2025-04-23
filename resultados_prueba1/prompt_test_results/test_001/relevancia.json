@@ -1,0 +1,10 @@
+{
+    "test_id": "test_001",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 5,\n   \"justificacion_relevancia\": \"El proyecto de ley busca regular obras públicas y privadas, con impacto en la seguridad y transparencia\",\n   \"categorias_asignadas\": [\"Justicia/Legal\", \"Economía\"],\n   \"explicacion_concisa\": \"El senador Pedro Tineo presentó un proyecto de ley para crear un sistema de supervisión y certificación de obras públicas y privadas con más de 10 años de construcción, con el objetivo de garantizar la seguridad estructural y transparencia en la construcción y mantenimiento de edificios y infraestructuras.\"\n}"
+}

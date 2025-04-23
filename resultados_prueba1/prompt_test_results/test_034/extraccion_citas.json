@@ -1,0 +1,10 @@
+{
+    "test_id": "test_034",
+    "tarea": "extraccion_citas",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"resultados\": [\n      {\n         \"cita\": \"Consumado es —repito, consumado es.\",\n         \"emisor_nombre\": \"Abogado MAYNOR GIOVANNY CATÉ CHIRIX\",\n         \"contexto\": \"En un tweet\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"Sueltan a los perros.\",\n         \"emisor_nombre\": \"Abogado MAYNOR GIOVANNY CATÉ CHIRIX\",\n         \"contexto\": \"En un tweet\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"ES JURAMENTADO\",\n         \"emisor_nombre\": \"Jonathan Menkos\",\n         \"contexto\": \"Durante la juramentación del nuevo Superintendente de la SAT\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"La Corte tiene conocimiento de un instrumento, y de hecho resuelve con base a un instrumento que se denomina Constitución Política de la República de Guatemala.\",\n         \"emisor_nombre\": \"Leyla Susana Lemus Arriaga\",\n         \"contexto\": \"En una entrevista\",\n         \"fecha_cita\": null\n      },\n      {\n         \"cita\": \"Cómo hacer que la clase política y que las instituciones que tienen entre sus funciones el ejercicio de poder, no lleguen a este tipo de tensiones, que eventualmente tiene que resolver la Corte, yo creo que esa ya es una pregunta que excede a lo que nosotros nos toca.\",\n         \"emisor_nombre\": \"Leyla Susana Lemus Arriaga\",\n         \"contexto\": \"En una entrevista\",\n         \"fecha_cita\": null\n      }\n   ]\n}"
+}

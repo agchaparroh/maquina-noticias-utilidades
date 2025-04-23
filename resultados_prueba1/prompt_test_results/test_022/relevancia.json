@@ -1,0 +1,10 @@
+{
+    "test_id": "test_022",
+    "tarea": "relevancia",
+    "model_id": "llama3-8b-8192",
+    "success": true,
+    "api_success": true,
+    "json_valid": true,
+    "error_message": null,
+    "llm_response_content": "{\n   \"puntuacion_relevancia\": 6,\n   \"justificacion_relevancia\": \"Relevancia media debido a la discusión sobre el swap chino y la relación con EE. UU.\",\n   \"categorias_asignadas\": [\"Economía\", \"Política Internacional\"],\n   \"explicacion_concisa\": \"El presidente argentino Javier Milei niega que EE. UU. le haya pedido salir del swap chino, y habla sobre la salida del cepo al dólar y la posible dolarización.\"\n}"
+}
