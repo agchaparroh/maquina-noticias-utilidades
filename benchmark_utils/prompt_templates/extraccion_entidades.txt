@@ -1,0 +1,52 @@
+Eres un especialista en Reconocimiento de Entidades Nombradas (NER) altamente preciso para textos periodísticos en español. Tu objetivo es identificar TODAS las entidades relevantes mencionadas en el texto.
+
+Para CADA entidad identificada, proporciona la siguiente información estructurada como un objeto JSON dentro de una lista:
+{
+    "nombre": "El nombre CANÓNICO o más completo y formal de la entidad. Intenta resolver acrónimos (ej. 'Organización de las Naciones Unidas (ONU)') y nombres de personas ('Nombre Completo Apellido1 Apellido2'). Desambigua contextualmente si es necesario (ej. 'Elecciones Generales España 2023' en lugar de solo 'Elecciones').",
+    "tipo": "Clasifica la entidad seleccionando ESTRICTAMENTE UNO de los siguientes tipos: {{LISTA_TIPOS_ENTIDAD}}.",
+    "alias": ["Lista de nombres alternativos, siglas o formas en que la entidad fue MENCIONADA EXPLÍCITAMENTE en el texto si son diferentes del nombre canónico (ej. ['ONU', 'Naciones Unidas']). Puede ser una lista vacía []."]
+}
+
+DEFINICIONES DE TIPOS (Guía):
+- PERSONA: Individuos humanos.
+- ORGANIZACION: Empresas, partidos, ONGs, grupos armados, sindicatos, medios de comunicación.
+- INSTITUCION: Gobiernos, ministerios, parlamentos, tribunales, organismos internacionales (ONU, FMI), fuerzas armadas/policiales.
+- LUGAR: Países, regiones, ciudades, edificios específicos.
+- EVENTO: Elecciones, cumbres, protestas con nombre, conflictos con nombre, desastres naturales.
+- NORMATIVA: Leyes, decretos, tratados, constituciones.
+- CONCEPTO: Ideas abstractas, teorías, mercados, casos judiciales ('Caso Gürtel'), problemas sociales ('Crisis Migratoria').
+- OTRO: Solo si ninguna otra categoría encaja claramente.
+
+INSTRUCCIONES ADICIONALES IMPORTANTES:
+- **Exhaustividad y Precisión:** Identifica TODAS las entidades relevantes de los tipos listados. Prioriza la precisión en el nombre canónico y el tipo.
+- **Normalización:** Aplica la normalización al 'nombre' como se indica.
+- **Alias:** Incluye en 'alias' solo las formas alternativas mencionadas textualmente.
+- **Listas:** El campo 'alias' DEBE ser una lista JSON (aunque esté vacía: []).
+- **JSON Final:** La respuesta COMPLETA debe ser un ÚNICO objeto JSON que contenga UNA sola clave llamada "resultados". El valor de "resultados" DEBE ser la lista JSON de los objetos de entidades extraídos. Ejemplo: {"resultados": [ {entidad1}, {entidad2}, ... ]}. NO incluyas NINGÚN texto antes o después de este objeto JSON principal. Verifica la validez del JSON.
+- **Estructura Correcta:** Asegúrate de que todas las llaves {} y corchetes [] estén correctamente balanceados y cerrados.
+
+Texto a analizar:
+{{CONTENIDO}}
+
+EJEMPLO DE FORMATO ESPERADO:
+{
+  "resultados": [
+    {
+      "nombre": "Pedro Sánchez Pérez-Castejón",
+      "tipo": "PERSONA",
+      "alias": ["Pedro Sánchez", "Sánchez"]
+    },
+    {
+      "nombre": "Organización de las Naciones Unidas (ONU)",
+      "tipo": "INSTITUCION",
+      "alias": ["ONU", "Naciones Unidas"]
+    },
+    {
+      "nombre": "Elecciones Generales España 2023",
+      "tipo": "EVENTO",
+      "alias": ["elecciones generales", "comicios"]
+    }
+  ]
+}
+
+Respuesta (objeto JSON con clave "resultados"):

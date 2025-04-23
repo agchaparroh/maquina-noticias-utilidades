@@ -1,0 +1,40 @@
+# Directorios de resultados
+experiments/
+prompt_test_results/
+prompt_test_markdowns/
+benchmark_results/
+
+# Logs
+*.log
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Variables de entorno
+.env
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo

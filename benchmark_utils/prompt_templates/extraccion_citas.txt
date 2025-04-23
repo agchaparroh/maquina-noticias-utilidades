@@ -1,0 +1,48 @@
+Eres un extractor especializado en identificar y extraer citas textuales DIRECTAS de artículos periodísticos en español.
+
+Tu tarea es encontrar TODAS las frases o fragmentos que sean citas literales (generalmente entre comillas "..." o atribuidas explícitamente con verbos como "dijo", "afirmó", "declaró", "señaló", etc.). NO extraigas paráfrasis ni resúmenes de declaraciones.
+
+Para CADA cita literal encontrada, proporciona la siguiente información estructurada como un objeto JSON dentro de una lista:
+{
+    "cita": "El texto EXACTO de la cita, incluyendo la puntuación original, tal como aparece en el artículo.",
+    "emisor_nombre": "El nombre de la PERSONA u ORGANIZACIÓN que emitió la cita, identificado de la forma más precisa posible según el texto cercano a la cita.",
+    "contexto": "Frase breve (máx. 25 palabras) describiendo el contexto inmediato donde se dijo la cita. Si no hay contexto claro o relevante, usa el valor JSON `null`.",
+    "fecha_cita": "Fecha (YYYY-MM-DD) en que se realizó la declaración, SOLO si se menciona explícitamente en el texto. Si no se menciona, usa el valor JSON `null`."
+}
+
+INSTRUCCIONES ADICIONALES IMPORTANTES:
+- **Literalidad:** Extrae ÚNICAMENTE citas textuales directas.
+- **Atribución:** Identifica claramente al emisor en 'emisor_nombre'.
+- **Valores Nulos:** Usa `null` explícitamente para 'contexto' y 'fecha_cita' cuando no aplique o no se encuentre la información.
+- **Escape de Comillas:** Si el texto de la cita contiene comillas dobles ("), debes escaparlas usando una barra invertida (\") dentro de la cadena JSON del campo "cita". Ejemplo: `"cita": "Él dijo: \\"Hola mundo\\"."`
+- **JSON Final:** La respuesta COMPLETA debe ser un ÚNICO objeto JSON que contenga UNA sola clave llamada "resultados". El valor de "resultados" DEBE ser la lista JSON de los objetos de citas extraídos. Ejemplo: {"resultados": [ {cita1}, {cita2}, ... ]}. NO incluyas NINGÚN texto antes o después de este objeto JSON principal. Verifica la validez del JSON.
+- **Estructura Correcta:** Asegúrate de que todas las llaves {} y corchetes [] estén correctamente balanceados y cerrados.
+
+Texto a analizar:
+{{CONTENIDO}}
+
+EJEMPLO DE FORMATO ESPERADO:
+{
+  "resultados": [
+    {
+      "cita": "El gobierno tomará medidas contundentes.",
+      "emisor_nombre": "Ministro de Economía",
+      "contexto": "Durante la rueda de prensa semanal.",
+      "fecha_cita": "2025-04-14"
+    },
+    {
+      "cita": "Es fundamental mantener la calma.",
+      "emisor_nombre": "Presidente de la República",
+      "contexto": null,
+      "fecha_cita": null
+    },
+    {
+      "cita": "Ella exclamó: \\"¡Increíble!\\"",
+      "emisor_nombre": "Testigo",
+      "contexto": "Al ver el suceso.",
+      "fecha_cita": null
+    }
+  ]
+}
+
+Respuesta (objeto JSON con clave "resultados"):
