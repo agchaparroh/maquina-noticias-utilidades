@@ -1,0 +1,119 @@
+Analiza el siguiente artículo periodístico y extrae sus elementos informativos básicos. Identifica y clasifica con precisión:
+
+1. HECHOS PRINCIPALES:
+   - Contenido principal de cada hecho
+   - Fecha de ocurrencia (lo más precisa posible)
+   - Precisión temporal (exacta, día, semana, mes, trimestre, año, década, periodo)
+   - Tipo de hecho (SUCESO, ANUNCIO, DECLARACION, BIOGRAFIA, CONCEPTO, NORMATIVA, EVENTO)
+   - Ubicación geográfica (país, región, ciudad)
+   - Si es un evento futuro o pasado
+   - Si es futuro, su estado: programado, confirmado, cancelado, modificado
+
+2. ENTIDADES MENCIONADAS:
+   - Nombre completo
+   - Tipo (PERSONA, ORGANIZACION, INSTITUCION, LUGAR, EVENTO, NORMATIVA, CONCEPTO, OTRO)
+   - Descripción breve
+   - Nombres alternativos o alias mencionados
+   - Si es una persona, fechas relevantes (nacimiento, muerte)
+
+DIRECTRICES IMPORTANTES:
+- Si no puedes determinar con certeza un campo, usa null en vez de inventar información
+- Asume que "ahora" es la fecha de publicación del artículo
+- Cuando encuentres referencias temporales como "ayer", "la semana pasada", etc., calcula la fecha basándote en la fecha de publicación
+
+Presenta tu análisis en formato JSON siguiendo exactamente esta estructura:
+
+```json
+{
+  "hechos": [
+    {
+      "id": 1,
+      "contenido": "",
+      "fecha": {
+        "inicio": "",
+        "fin": ""
+      },
+      "precision_temporal": "",
+      "tipo_hecho": "",
+      "pais": [],
+      "region": [],
+      "ciudad": [],
+      "es_futuro": false,
+      "estado_programacion": null
+    }
+  ],
+  "entidades": [
+    {
+      "id": 1,
+      "nombre": "",
+      "tipo": "",
+      "descripcion": "",
+      "alias": [],
+      "fecha_nacimiento": null,
+      "fecha_disolucion": null
+    }
+  ]
+}
+```
+
+IMPORTANTE: Asigna IDs únicos a cada elemento para poder referenciarlos posteriormente. Utiliza solo los valores permitidos para los campos enumerados y sé lo más preciso posible sin inventar información.
+
+EJEMPLO:
+Para un artículo publicado el 15/03/2023 con el texto: "El presidente Pedro Sánchez (PSOE) anunció ayer en Madrid un nuevo paquete de medidas económicas que entrará en vigor el próximo mes."
+
+```json
+{
+  "hechos": [
+    {
+      "id": 1,
+      "contenido": "El presidente Pedro Sánchez anunció un nuevo paquete de medidas económicas",
+      "fecha": {
+        "inicio": "2023-03-14",
+        "fin": "2023-03-14"
+      },
+      "precision_temporal": "dia",
+      "tipo_hecho": "ANUNCIO",
+      "pais": ["España"],
+      "region": [],
+      "ciudad": ["Madrid"],
+      "es_futuro": false,
+      "estado_programacion": null
+    },
+    {
+      "id": 2,
+      "contenido": "Entrada en vigor de nuevo paquete de medidas económicas",
+      "fecha": {
+        "inicio": "2023-04-01",
+        "fin": "2023-04-30"
+      },
+      "precision_temporal": "mes",
+      "tipo_hecho": "EVENTO",
+      "pais": ["España"],
+      "region": [],
+      "ciudad": [],
+      "es_futuro": true,
+      "estado_programacion": "programado"
+    }
+  ],
+  "entidades": [
+    {
+      "id": 1,
+      "nombre": "Pedro Sánchez",
+      "tipo": "PERSONA",
+      "descripcion": "Presidente del Gobierno de España",
+      "alias": [],
+      "fecha_nacimiento": null,
+      "fecha_disolucion": null
+    },
+    {
+      "id": 2,
+      "nombre": "PSOE",
+      "tipo": "ORGANIZACION",
+      "descripcion": "Partido Socialista Obrero Español",
+      "alias": ["Partido Socialista"],
+      "fecha_nacimiento": null,
+      "fecha_disolucion": null
+    }
+  ]
+}
+```

@@ -1,0 +1,166 @@
+Integra todos los análisis previos y genera el JSON final estructurado para este artículo. Añade los metadatos del artículo y completa cualquier campo adicional necesario:
+
+1. METADATOS DEL ARTÍCULO:
+   - URL (si está disponible)
+   - Medio de publicación
+   - País de publicación
+   - Tipo de medio (diario, agencia, televisión, radio, digital, oficial, blog, otro)
+   - Titular completo
+   - Fecha de publicación
+   - Autor(es)
+   - Idioma (código ISO)
+   - Sección
+   - Etiquetas
+   - Si es artículo de opinión
+   - Si es fuente oficial
+
+2. CAMPOS ADICIONALES PARA HECHOS:
+   - Confiabilidad (1-5)
+   - Importancia (1-10)
+   - Etiquetas temáticas
+
+3. CAMPOS ADICIONALES PARA ENTIDADES:
+   - Relevancia (1-10)
+   - Metadatos adicionales según tipo
+
+4. HILOS NARRATIVOS SUGERIDOS:
+   - Título sugerido
+   - Descripción breve
+   - IDs de hechos relacionados
+   - Relevancia editorial (1-10)
+
+DIRECTRICES IMPORTANTES:
+- IMPORTANTE: Utiliza exactamente los mismos IDs de la etapa anterior. No reasignes IDs.
+- Si no puedes determinar con certeza un campo, usa null en vez de inventar información
+- Asegúrate de que todos los IDs referenciados existan y sean consistentes
+- Asume que "ahora" es la fecha de publicación del artículo
+- Verifica que no haya información contradictoria entre diferentes secciones
+
+Al preparar el JSON final, asegúrate de incluir:
+- Todos los hechos con importancia ≥ 3
+- Todas las entidades con relevancia ≥ 2
+- Todas las relaciones con fuerza ≥ 3
+
+Genera un único objeto JSON que integre todos los elementos siguiendo exactamente esta estructura:
+
+```json
+{
+  "articulo_metadata": {
+    "url": "",
+    "medio": "",
+    "pais_publicacion": "",
+    "tipo_medio": "",
+    "titular": "",
+    "fecha_publicacion": "",
+    "autor": "",
+    "idioma": "es",
+    "seccion": "",
+    "etiquetas_fuente": [],
+    "es_opinion": false,
+    "es_oficial": false
+  },
+  "hechos": [
+    {
+      "id": 1,
+      "contenido": "",
+      "fecha_ocurrencia": {
+        "inicio": "",
+        "fin": ""
+      },
+      "precision_temporal": "",
+      "confiabilidad": 3,
+      "importancia": 5,
+      "tipo_hecho": "",
+      "pais": [],
+      "region": [],
+      "ciudad": [],
+      "etiquetas": [],
+      "es_evento_futuro": false,
+      "estado_programacion": null
+    }
+  ],
+  "entidades": [
+    {
+      "id": 1,
+      "nombre": "",
+      "tipo": "",
+      "descripcion": "",
+      "alias": [],
+      "fecha_nacimiento": null,
+      "fecha_disolucion": null,
+      "relevancia": 5,
+      "metadata": {}
+    }
+  ],
+  "citas_textuales": [],
+  "datos_cuantitativos": [],
+  "contradicciones": [],
+  "relaciones": {
+    "hecho_entidad": [],
+    "hecho_relacionado": [],
+    "entidad_relacion": []
+  },
+  "hilos_narrativos_sugeridos": [
+    {
+      "titulo": "",
+      "descripcion": "",
+      "hechos_relacionados": [],
+      "relevancia_editorial": 5
+    }
+  ]
+}
+```
+
+EJEMPLO RESUMIDO:
+Para un artículo de El País sobre una reforma fiscal:
+
+```json
+{
+  "articulo_metadata": {
+    "url": "https://elpais.com/economia/2023-03-15/reforma-fiscal.html",
+    "medio": "El País",
+    "pais_publicacion": "España",
+    "tipo_medio": "diario",
+    "titular": "El Gobierno aprueba una reforma fiscal que gravará más a las grandes fortunas",
+    "fecha_publicacion": "2023-03-15",
+    "autor": "Carmen Rodríguez",
+    "idioma": "es",
+    "seccion": "Economía",
+    "etiquetas_fuente": ["impuestos", "reforma fiscal", "economía"],
+    "es_opinion": false,
+    "es_oficial": false
+  },
+  "hechos": [
+    {
+      "id": 1,
+      "contenido": "El Gobierno aprueba una reforma fiscal que gravará más a las grandes fortunas",
+      "fecha_ocurrencia": {"inicio": "2023-03-14", "fin": "2023-03-14"},
+      "precision_temporal": "dia",
+      "confiabilidad": 4,
+      "importancia": 8,
+      "tipo_hecho": "ANUNCIO",
+      "pais": ["España"],
+      "region": [],
+      "ciudad": ["Madrid"],
+      "etiquetas": ["impuestos", "política fiscal", "grandes fortunas"],
+      "es_evento_futuro": false,
+      "estado_programacion": null
+    }
+  ],
+  "entidades": [
+    {
+      "id": 1,
+      "nombre": "Gobierno de España",
+      "tipo": "INSTITUCION",
+      "descripcion": "Órgano constitucional que ejerce la función ejecutiva y la potestad reglamentaria",
+      "alias": ["Gobierno", "Ejecutivo"],
+      "fecha_nacimiento": null,
+      "fecha_disolucion": null,
+      "relevancia": 9,
+      "metadata": {"partido_gobernante": "PSOE"}
+    }
+  ]
+}
+```
+
+Asegúrate de que el JSON final sea válido y contenga todos los elementos previamente identificados, manteniendo la consistencia de IDs. Utiliza solo los valores permitidos para campos enumerados y respeta los rangos numéricos especificados (1-5, 1-10).

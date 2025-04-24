@@ -1,0 +1,141 @@
+Analiza las relaciones entre los elementos ya identificados en el artículo:
+
+1. RELACIONES HECHO-ENTIDAD:
+   - ID del hecho
+   - ID de la entidad
+   - Tipo de relación (protagonista, mencionado, afectado, declarante, ubicacion, contexto, victima, agresor, organizador, participante, otro)
+   - Relevancia de la entidad en ese hecho (1-10)
+
+2. RELACIONES ENTRE HECHOS:
+   - ID del hecho origen
+   - ID del hecho destino
+   - Tipo de relación (causa, consecuencia, contexto_historico, respuesta_a, aclaracion_de, version_alternativa, seguimiento_de)
+   - Fuerza de la relación (1-10)
+   - Descripción breve de cómo se relacionan
+
+3. RELACIONES ENTRE ENTIDADES:
+   - ID de la entidad origen
+   - ID de la entidad destino
+   - Tipo de relación (miembro_de, subsidiaria_de, aliado_con, opositor_a, sucesor_de, predecesor_de, casado_con, familiar_de, empleado_de)
+   - Descripción breve de la relación
+   - Fechas de inicio y fin de la relación (si se conocen)
+   - Fuerza de la relación (1-10)
+
+4. CONTRADICCIONES:
+   - ID del hecho principal
+   - ID del hecho contradictorio
+   - Tipo de contradicción (fecha, contenido, entidades, ubicacion, valor, completa)
+   - Grado de contradicción (1-5)
+   - Descripción de la contradicción
+
+DIRECTRICES IMPORTANTES:
+- IMPORTANTE: Utiliza exactamente los mismos IDs de la etapa anterior. No reasignes IDs.
+- Si no puedes determinar con certeza un campo, usa null en vez de inventar información
+- Establece solo las relaciones que están claramente respaldadas por el texto
+- Si una relación es incierta pero sugerida por el contexto, establece una fuerza/relevancia baja (1-3)
+- No es necesario completar todas las categorías si no hay información pertinente
+
+CONSEJO: Para identificar relaciones:
+- Busca menciones explícitas que conecten hechos o entidades
+- Para causalidad, busca términos como 'debido a', 'como resultado', 'provocó'
+- Para jerarquías, identifica roles oficiales (presidente-país, ministro-gobierno)
+
+Presenta esta información en formato JSON siguiendo exactamente esta estructura:
+
+```json
+{
+  "hecho_entidad": [
+    {
+      "hecho_id": 0,
+      "entidad_id": 0,
+      "tipo_relacion": "",
+      "relevancia": 5
+    }
+  ],
+  "hecho_relacionado": [
+    {
+      "hecho_origen_id": 0,
+      "hecho_destino_id": 0,
+      "tipo_relacion": "",
+      "fuerza": 5,
+      "descripcion": ""
+    }
+  ],
+  "entidad_relacion": [
+    {
+      "entidad_origen_id": 0,
+      "entidad_destino_id": 0,
+      "tipo_relacion": "",
+      "descripcion": "",
+      "fecha_inicio": null,
+      "fecha_fin": null,
+      "fuerza": 5
+    }
+  ],
+  "contradicciones": [
+    {
+      "hecho_principal_id": 0,
+      "hecho_contradictorio_id": 0,
+      "tipo_contradiccion": "",
+      "grado": 3,
+      "descripcion": ""
+    }
+  ]
+}
+```
+
+EJEMPLO:
+Para un artículo donde previamente se identificaron:
+- Hecho 1: "Aprobación de reforma fiscal"
+- Hecho 2: "Protestas contra la reforma fiscal"
+- Entidad 1: "Gobierno de España"
+- Entidad 2: "Sindicatos"
+- Entidad 3: "María López" (Ministra de Hacienda)
+
+```json
+{
+  "hecho_entidad": [
+    {
+      "hecho_id": 1,
+      "entidad_id": 1,
+      "tipo_relacion": "protagonista",
+      "relevancia": 9
+    },
+    {
+      "hecho_id": 1,
+      "entidad_id": 3,
+      "tipo_relacion": "declarante",
+      "relevancia": 7
+    },
+    {
+      "hecho_id": 2,
+      "entidad_id": 2,
+      "tipo_relacion": "organizador",
+      "relevancia": 8
+    }
+  ],
+  "hecho_relacionado": [
+    {
+      "hecho_origen_id": 1,
+      "hecho_destino_id": 2,
+      "tipo_relacion": "causa",
+      "fuerza": 8,
+      "descripcion": "La aprobación de la reforma fiscal provocó las protestas"
+    }
+  ],
+  "entidad_relacion": [
+    {
+      "entidad_origen_id": 3,
+      "entidad_destino_id": 1,
+      "tipo_relacion": "miembro_de",
+      "descripcion": "María López es ministra del Gobierno",
+      "fecha_inicio": null,
+      "fecha_fin": null,
+      "fuerza": 9
+    }
+  ],
+  "contradicciones": []
+}
+```
+
+Usa solo los valores permitidos para campos enumerados. Referencia correctamente usando los IDs asignados previamente. No inventes relaciones que no estén sustentadas por el texto.

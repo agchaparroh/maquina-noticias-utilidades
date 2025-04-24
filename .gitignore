@@ -1,8 +1,10 @@
 # Directorios de resultados
-experiments/
 prompt_test_results/
 prompt_test_markdowns/
 benchmark_results/
+
+# Permitir experimentos específicos
+!benchmark_utils/experiments/exp_02_pipeline_llama3-8b/
 
 # Logs
 *.log

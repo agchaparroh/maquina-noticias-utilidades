@@ -2,12 +2,18 @@
 
 Hola Claude, este archivo contiene información esencial para ayudarte a trabajar en este proyecto.
 
+**NOTA IMPORTANTE**: En ocasiones puedo referirme a este archivo como "CONTEXT.md", pero siempre estaré hablando de este archivo "CLAUDE.md".
+
 **1. Objetivo Actual:**
 
 *   Estamos realizando **experimentos iterativos** para **optimizar los prompts** de extracción de información (relevancia, hechos, entidades, citas, datos) utilizando la API de Groq.
 *   Trabajamos con una **muestra reducida de artículos** (definida en cada ejecución) para agilizar las pruebas.
-*   El script principal para esto es `benchmark_utils/run_experiment.py`.
-*   Los prompts se almacenan como plantillas en `benchmark_utils/prompt_templates/`.
+*   Tenemos dos tipos de scripts principales:
+    *   `benchmark_utils/run_experiment.py`: Script original para experimentos de un solo prompt.
+    *   `benchmark_utils/run_pipeline_experiment.py`: **NUEVO** script para experimentos con pipeline multi-prompt.
+*   Los prompts se almacenan como plantillas en:
+    *   `benchmark_utils/prompt_templates/`: Para experimentos originales.
+    *   `benchmark_utils/prompt_templates_pipeline/`: **NUEVO** directorio para los prompts del pipeline.
 *   Los resultados de cada experimento se guardan en carpetas separadas dentro de `benchmark_utils/experiments/`.
 
 **2. Acceso a GitHub:**
