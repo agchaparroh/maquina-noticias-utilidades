@@ -1,0 +1,26 @@
+test_id,tarea,model_id,timestamp_utc,latency_seconds,prompt_tokens,completion_tokens,total_tokens,success,api_success,json_valid,error_message
+test_005,prompt_0_filtrado,qwen-qwq-32b,2025-04-24T09:49:09.746781+00:00,10.508,1546,4096,5642,True,True,True,
+test_005,prompt_1_elementos_basicos,qwen-qwq-32b,2025-04-24T09:49:13.201896+00:00,3.151,1027,1093,2120,True,True,True,
+test_005,prompt_2_citas_datos,qwen-qwq-32b,2025-04-24T09:49:19.305590+00:00,5.802,1073,2106,3179,True,True,True,
+test_005,prompt_3_relaciones,qwen-qwq-32b,2025-04-24T09:49:24.830141+00:00,5.223,1268,1724,2992,True,True,True,
+test_005,prompt_4_json_final,qwen-qwq-32b,2025-04-24T09:49:29.718998+00:00,4.587,1431,1710,3141,True,True,True,
+test_069,prompt_0_filtrado,qwen-qwq-32b,2025-04-24T09:49:32.823594+00:00,2.284,1546,611,2157,True,True,True,
+test_069,prompt_1_elementos_basicos,qwen-qwq-32b,,,,,,False,False,False,Pipeline stopped in previous step
+test_069,prompt_2_citas_datos,qwen-qwq-32b,,,,,,False,False,False,Pipeline stopped in previous step
+test_069,prompt_3_relaciones,qwen-qwq-32b,,,,,,False,False,False,Pipeline stopped in previous step
+test_069,prompt_4_json_final,qwen-qwq-32b,,,,,,False,False,False,Pipeline stopped in previous step
+test_040,prompt_0_filtrado,qwen-qwq-32b,2025-04-24T09:49:37.949553+00:00,4.621,1546,1562,3108,True,True,True,
+test_040,prompt_1_elementos_basicos,qwen-qwq-32b,2025-04-24T09:49:43.334547+00:00,5.082,1027,1919,2946,True,True,True,
+test_040,prompt_2_citas_datos,qwen-qwq-32b,2025-04-24T09:49:48.073066+00:00,4.437,1073,1436,2509,True,True,True,
+test_040,prompt_3_relaciones,qwen-qwq-32b,2025-04-24T09:49:52.093016+00:00,3.718,1268,1378,2646,True,True,True,
+test_040,prompt_4_json_final,qwen-qwq-32b,2025-04-24T09:50:01.022471+00:00,8.628,1431,3057,4488,True,True,True,
+test_047,prompt_0_filtrado,qwen-qwq-32b,2025-04-24T09:50:05.380880+00:00,3.551,1546,1253,2799,True,True,True,
+test_047,prompt_1_elementos_basicos,qwen-qwq-32b,2025-04-24T09:50:12.082110+00:00,6.4,1027,2443,3470,True,True,True,
+test_047,prompt_2_citas_datos,qwen-qwq-32b,2025-04-24T09:50:16.920969+00:00,4.536,,,,False,False,False,"API_Error: BadRequestError: Error code: 400 - {'error': {'message': ""Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details."", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': '{\n  ""citas_textuales"": [\n    {\n      ""id"": 1,\n    }\n  ],\n  ""datos_cuantitativos"": [\n    {\n      ""id"": 1\n    }\n  ]\n}'}}"
+test_047,prompt_3_relaciones,qwen-qwq-32b,,,,,,False,False,False,Pipeline stopped in previous step
+test_047,prompt_4_json_final,qwen-qwq-32b,,,,,,False,False,False,Pipeline stopped in previous step
+test_004,prompt_0_filtrado,qwen-qwq-32b,2025-04-24T09:50:21.918314+00:00,4.493,1546,1567,3113,True,True,True,
+test_004,prompt_1_elementos_basicos,qwen-qwq-32b,2025-04-24T09:50:29.669417+00:00,7.431,1027,2329,3356,True,True,True,
+test_004,prompt_2_citas_datos,qwen-qwq-32b,2025-04-24T09:50:40.348705+00:00,10.239,,,,False,False,False,"API_Error: BadRequestError: Error code: 400 - {'error': {'message': ""Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details."", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': '{\n  ""citas_textuales"": [\n    {\n      ""id"": 1,\n    }\n  ],\n  ""datos_cuantitativos"": [\n    {\n      ""id"": 1\n    }\n  ]\n}'}}"
+test_004,prompt_3_relaciones,qwen-qwq-32b,,,,,,False,False,False,Pipeline stopped in previous step
+test_004,prompt_4_json_final,qwen-qwq-32b,,,,,,False,False,False,Pipeline stopped in previous step
