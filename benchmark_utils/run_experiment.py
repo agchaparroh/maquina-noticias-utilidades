@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
-
-# run_experiment.py
-
+# run_experiment.py (Versión con Prompts en Informe)
 import os
 import json
 import time
@@ -17,7 +15,6 @@ from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_excep
 from tqdm import tqdm # Usar tqdm normal para el bucle principal
 from datetime import datetime, timezone
 from typing import Optional, Tuple, Dict, Any, List
-
 
 # --- Configuración y Argumentos ---
 def parse_arguments() -> argparse.Namespace:
@@ -91,7 +88,6 @@ def parse_arguments() -> argparse.Namespace:
     )
     return parser.parse_args()
 
-
 # --- Constantes y Configuración Global ---
 args = parse_arguments()
 
@@ -134,15 +130,13 @@ TAXONOMY = {
     "LISTA_TIPOS_PERIODO": '["anual", "trimestral", "mensual", "semanal", "diario", "puntual", "acumulado"]'
 }
 
-
-# --- Funciones Auxiliares ---
+# --- Funciones Auxiliares (sin cambios respecto a la versión anterior) ---
 def load_api_key() -> str:
     api_key = os.environ.get("GROQ_API_KEY")
     if not api_key:
         logger.error("Error: Variable de entorno GROQ_API_KEY no encontrada.")
         raise ValueError("GROQ_API_KEY no configurada")
     return api_key
-
 
 def load_article(filepath: Path) -> Optional[Dict[str, Any]]:
     if not filepath.is_file():
@@ -154,7 +148,6 @@ def load_article(filepath: Path) -> Optional[Dict[str, Any]]:
     except Exception as e:
         logger.error(f"Error cargando artículo {filepath.name}: {e}")
         return None
-
 
 def load_prompt_template(prompt_dir: Path, tarea: str) -> Optional[str]:
     """Carga la plantilla de prompt para una tarea desde un archivo."""
@@ -169,11 +162,10 @@ def load_prompt_template(prompt_dir: Path, tarea: str) -> Optional[str]:
         logger.error(f"Error cargando plantilla {filepath.name}: {e}")
         return None
 
-
 def _clean_json_string(raw_string: Optional[str]) -> Optional[str]:
     """Intenta extraer y reparar un bloque JSON de una cadena."""
     if not raw_string: return None
-    json_match = re.search(r'^\s*(\{.*\}|\[.*\])\s*', raw_string, re.DOTALL)
+    json_match = re.search(r'^\s*(\{.*\}|\[.*\])\s*$', raw_string, re.DOTALL)
     if json_match:
         potential_json = json_match.group(1)
         try: json.loads(potential_json); return potential_json
@@ -205,29 +197,23 @@ def _clean_json_string(raw_string: Optional[str]) -> Optional[str]:
         error_context = fixed_string[max(0, e.pos-20):min(len(fixed_string), e.pos+20)]
         logger.error(f"Falló la reparación del JSON: {e}. Contexto: ...{error_context}..."); return None
 
-
 def format_json_for_markdown(data: Any) -> str:
     try: return f"```json\n{json.dumps(data, indent=4, ensure_ascii=False)}\n```"
     except Exception: return f"```\n{str(data)}\n```"
-
 
 def format_seconds(seconds: Optional[float]) -> str:
     if seconds is None: return "N/A"
     minutes, secs = divmod(seconds, 60)
     return f"{int(minutes)}m {secs:.2f}s"
 
-
-# --- Llamada a API y Procesamiento ---
+# --- Llamada a API y Procesamiento (Sin cambios respecto a la versión anterior) ---
 RETRYABLE_ERRORS = (APITimeoutError, RateLimitError, GroqError)
-
-# Crear decorador de reintento dinámicamente basado en argumentos
 retry_decorator = retry(
     stop=stop_after_attempt(MAX_RETRIES),
-    wait=wait_exponential(multiplier=2, min=10, max=MAX_WAIT_SECONDS), # Usar max_wait
+    wait=wait_exponential(multiplier=2, min=10, max=MAX_WAIT_SECONDS),
     retry=retry_if_exception_type(RETRYABLE_ERRORS),
     reraise=True
 )
-
 
 @retry_decorator
 async def llamar_groq_con_metricas(
@@ -251,7 +237,6 @@ async def llamar_groq_con_metricas(
             temperature=API_TEMPERATURE,
             max_completion_tokens=API_MAX_TOKENS,
             response_format={"type": "json_object"},
-            # El timeout se pasa al inicializar el cliente AsyncGroq
         )
         latency = time.time() - start_time
         response_content = chat_completion.choices[0].message.content
@@ -273,7 +258,7 @@ async def llamar_groq_con_metricas(
                 except (json.JSONDecodeError, ValueError) as json_err:
                     logger.error(f"[{test_id}][{tarea}][{model_id}] Error validando JSON (limpio): {json_err}")
                     error_message = f"JSONValidationError: {json_err}"
-                    cleaned_content = response_content # Guardar original si falla validación
+                    cleaned_content = response_content
             else:
                 logger.error(f"[{test_id}][{tarea}][{model_id}] Error: No se pudo extraer/reparar bloque JSON.")
                 error_message = "JSONCleanError: No JSON block found or repaired"
@@ -302,22 +287,18 @@ async def llamar_groq_con_metricas(
     content_to_return = cleaned_content if json_valid else response_content
     return content_to_return, metrics
 
-
 def guardar_metricas_csv(metrics_list: List[Dict[str, Any]], csv_filepath: Path):
     """Guarda una lista de métricas en un archivo CSV."""
     if not metrics_list: return
     try:
         csv_filepath.parent.mkdir(parents=True, exist_ok=True)
-        fieldnames = list(metrics_list[0].keys()) # Usar claves del primer registro
-        # Asegurar orden consistente si es posible
+        fieldnames = list(metrics_list[0].keys())
         ordered_fields = [
             "test_id", "tarea", "model_id", "timestamp_utc", "latency_seconds",
             "prompt_tokens", "completion_tokens", "total_tokens", "success",
             "api_success", "json_valid", "error_message"
         ]
-        # Incluir todos los campos, poniendo los ordenados primero
         final_fieldnames = ordered_fields + [f for f in fieldnames if f not in ordered_fields]
-
         with open(csv_filepath, 'w', newline='', encoding='utf-8') as f:
             writer = csv.DictWriter(f, fieldnames=final_fieldnames, extrasaction='ignore')
             writer.writeheader()
@@ -326,13 +307,26 @@ def guardar_metricas_csv(metrics_list: List[Dict[str, Any]], csv_filepath: Path)
     except Exception as e:
         logger.error(f"Error guardando métricas CSV en {csv_filepath}: {e}", exc_info=True)
 
+# --- Generación de Markdown (MODIFICADA para incluir prompts) ---
+def generar_seccion_prompts(prompt_templates: Dict[str, str]) -> List[str]:
+    """Genera la sección Markdown que muestra los prompts utilizados."""
+    md_lines: List[str] = []
+    md_lines.append("## Prompts Utilizados en este Experimento\n")
+    md_lines.append("<details>") # Plegado por defecto
+    md_lines.append("<summary>Ver/Ocultar Prompts</summary>\n")
+    for tarea, template in prompt_templates.items():
+        md_lines.append(f"### Prompt: {tarea}\n")
+        md_lines.append(f"```text\n{template}\n```\n")
+    md_lines.append("</details>\n")
+    md_lines.append("\n---\n")
+    return md_lines
 
 def generar_markdown_articulo(test_id: str, article_data: Dict[str, Any], results_by_task: Dict[str, Tuple[Optional[str], Dict[str, Any]]]) -> List[str]:
     """Genera la sección Markdown para un artículo."""
     md_lines: List[str] = []
     md_lines.append(f"\n## Artículo: {test_id}\n")
 
-    # --- Metadatos ---
+    # Metadatos
     md_lines.append("### Metadatos\n")
     md_lines.append("| Campo          | Valor                                      |")
     md_lines.append("|----------------|--------------------------------------------|")
@@ -343,7 +337,7 @@ def generar_markdown_articulo(test_id: str, article_data: Dict[str, Any], result
     md_lines.append(f"| **Fecha Pub.** | {article_data.get('fecha_publicacion', 'N/A')} |")
     md_lines.append("\n")
 
-    # --- Contenido ---
+    # Contenido
     md_lines.append("### Contenido Analizado\n")
     contenido_texto = article_data.get('contenido_texto', '*Contenido no disponible*')
     md_lines.append("<details>")
@@ -351,7 +345,7 @@ def generar_markdown_articulo(test_id: str, article_data: Dict[str, Any], result
     md_lines.append(f"```text\n{contenido_texto}\n```")
     md_lines.append("</details>\n")
 
-    # --- Tabla Resumen Tareas ---
+    # Tabla Resumen Tareas
     md_lines.append("### Resumen de Tareas\n")
     md_lines.append("| Tarea | Estado | Modelo Utilizado | Tiempo | Tokens (P/C/T) | Error |")
     md_lines.append("|-------|--------|------------------|--------|----------------|-------|")
@@ -365,26 +359,22 @@ def generar_markdown_articulo(test_id: str, article_data: Dict[str, Any], result
         t_tokens = metrics.get('total_tokens', 'N/A')
         tokens_str = f"{p_tokens}/{c_tokens}/{t_tokens}"
         error_msg = metrics.get('error_message', '') or ''
-        # Acortar mensaje de error para tabla
         error_short = (error_msg[:30] + '...') if len(error_msg) > 30 else error_msg
         md_lines.append(f"| {tarea} | {estado} | `{modelo}` | {tiempo} | {tokens_str} | `{error_short}` |")
     md_lines.append("\n")
 
-    # --- Resultados Detallados Tareas ---
+    # Resultados Detallados Tareas
     md_lines.append("### Resultados Detallados por Tarea\n")
     for tarea in TASKS:
         md_lines.append(f"#### Tarea: {tarea}\n")
         content, metrics = results_by_task.get(tarea, (None, {}))
-
         if not metrics: md_lines.append("_(No se procesó esta tarea)_"); continue
-
         estado_str = "Éxito" if metrics.get('success') else ("Fallo (JSON Inválido)" if metrics.get('api_success') else "Fallo (API Error)")
         md_lines.append(f"- **Estado:** {estado_str}")
         if metrics.get('error_message'): md_lines.append(f"- **Error:** `{metrics.get('error_message')}`")
         md_lines.append(f"- **Modelo:** `{metrics.get('model_id', 'N/A')}`")
         md_lines.append(f"- **Tiempo:** {format_seconds(metrics.get('latency_seconds'))}")
         md_lines.append(f"- **Tokens:** P:{metrics.get('prompt_tokens', 'N/A')} / C:{metrics.get('completion_tokens', 'N/A')} / T:{metrics.get('total_tokens', 'N/A')}")
-
         md_lines.append("\n<details open>")
         md_lines.append("<summary>Ver/Ocultar Respuesta LLM</summary>\n")
         if content:
@@ -395,9 +385,8 @@ def generar_markdown_articulo(test_id: str, article_data: Dict[str, Any], result
         else: md_lines.append("_No se recibió contenido del LLM._")
         md_lines.append("</details>\n")
 
-    md_lines.append("\n---\n") # Separador entre artículos
+    md_lines.append("\n---\n")
     return md_lines
-
 
 # --- Lógica Principal Asíncrona ---
 async def procesar_articulo_experimental(
@@ -414,17 +403,14 @@ async def procesar_articulo_experimental(
     articulo = load_article(article_path)
     if not articulo:
         logger.error(f"No se pudo cargar el artículo {test_id}")
-        # Registrar fallo para todas las tareas
         for tarea in TASKS:
              metrics = {"test_id": test_id, "tarea": tarea, "model_id": model_to_use, "success": False, "api_success": False, "json_valid": False, "error_message": "Article load failed"}
              results_by_task[tarea] = (None, metrics)
         return test_id, results_by_task
 
-    # --- Preparar datos para reemplazo en prompts ---
-    titulo = articulo.get("titular", "")
-    contenido = articulo.get("contenido_texto", "")
-    medio = articulo.get("medio", "Desconocido")
-    pais = articulo.get("pais_publicacion", "Desconocido")
+    # Preparar datos para reemplazo en prompts
+    titulo = articulo.get("titular", ""); contenido = articulo.get("contenido_texto", "")
+    medio = articulo.get("medio", "Desconocido"); pais = articulo.get("pais_publicacion", "Desconocido")
     fecha_pub_str = articulo.get("fecha_publicacion", "Fecha desconocida")
     try:
         if fecha_pub_str.endswith('Z'): fecha_pub_dt = datetime.fromisoformat(fecha_pub_str.replace('Z', '+00:00'))
@@ -432,14 +418,13 @@ async def procesar_articulo_experimental(
         fecha_pub = fecha_pub_dt.date().isoformat()
     except: fecha_pub = fecha_pub_str
     contenido_extracto = contenido[:2000]
-
     prompt_data = {
         "TITULO": titulo, "CONTENIDO": contenido, "MEDIO": medio, "PAIS": pais,
         "FECHA_PUB": fecha_pub, "CONTENIDO_EXTRACTO": contenido_extracto,
-        **{k: v for k, v in TAXONOMY.items()} # Añadir listas de taxonomía
+        **{k: v for k, v in TAXONOMY.items()}
     }
-    # --- Fin preparación datos ---
 
+    # Procesar tareas secuencialmente
     for tarea in TASKS:
         template = prompt_templates.get(tarea)
         if not template:
@@ -448,10 +433,9 @@ async def procesar_articulo_experimental(
             results_by_task[tarea] = (None, metrics)
             continue
 
-        # Reemplazar placeholders en la plantilla
         prompt = template
         for key, value in prompt_data.items():
-            placeholder = f"{{{{{key}}}}}" # Formato {{PLACEHOLDER}}
+            placeholder = f"{{{{{key}}}}}"
             prompt = prompt.replace(placeholder, str(value))
 
         try:
@@ -462,11 +446,10 @@ async def procesar_articulo_experimental(
              metrics = {"test_id": test_id, "tarea": tarea, "model_id": model_to_use, "success": False, "api_success": False, "json_valid": False, "error_message": f"Processing Error: {type(e).__name__}: {str(e)}"}
              results_by_task[tarea] = (None, metrics)
 
-        await asyncio.sleep(0.2) # Pequeña pausa entre tareas
+        await asyncio.sleep(0.2)
 
     logger.info(f"--- Artículo {test_id} completado ---")
     return test_id, results_by_task
-
 
 async def main():
     """Función principal del script de experimentos."""
@@ -476,81 +459,66 @@ async def main():
     logger.info(f"Directorio de Prompts: {PROMPT_TEMPLATE_DIR}")
     logger.info(f"Directorio de Salida: {OUTPUT_EXPERIMENT_DIR}")
 
-    # Crear directorio de salida para este experimento
     OUTPUT_EXPERIMENT_DIR.mkdir(parents=True, exist_ok=True)
 
-    # Cargar API Key
     try: api_key = load_api_key()
     except ValueError: return 1
     client = AsyncGroq(api_key=api_key, timeout=API_TIMEOUT)
     logger.info("Cliente AsyncGroq inicializado.")
 
-    # Cargar plantillas de prompt
     prompt_templates: Dict[str, str] = {}
     for tarea in TASKS:
         template = load_prompt_template(PROMPT_TEMPLATE_DIR, tarea)
-        if not template:
-            logger.error(f"No se pudo cargar la plantilla para la tarea '{tarea}'. Abortando.")
-            return 1
+        if not template: return 1
         prompt_templates[tarea] = template
     logger.info(f"Cargadas {len(prompt_templates)} plantillas de prompt.")
 
-    # Obtener rutas de los artículos a procesar
     article_paths: List[Path] = []
-    for test_id in args.articles:
-        # Asegurar formato test_XXX si solo se pasa número
+    for test_id_input in args.articles:
+        test_id = test_id_input
         if test_id.isdigit(): test_id = f"test_{int(test_id):03d}"
         elif not test_id.startswith("test_"): test_id = f"test_{test_id}"
         path = INPUT_ARTICLES_DIR / f"{test_id}.json"
         if path.is_file(): article_paths.append(path)
-        else: logger.warning(f"No se encontró el archivo para el artículo ID: {test_id}")
+        else: logger.warning(f"No se encontró archivo para ID: {test_id_input}")
 
-    if not article_paths:
-        logger.error("No se especificaron artículos válidos para procesar.")
-        return 1
-
+    if not article_paths: logger.error("No se especificaron artículos válidos."); return 1
     logger.info(f"Procesando {len(article_paths)} artículos...")
 
     all_markdown_content: List[str] = []
     all_metrics: List[Dict[str, Any]] = []
 
-    # Añadir cabecera al Markdown del experimento
+    # --- Añadir sección de prompts al inicio del Markdown ---
     all_markdown_content.append(f"# Informe del Experimento: {args.exp_id}")
     all_markdown_content.append(f"**Fecha:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     all_markdown_content.append(f"**Modelo:** `{MODEL_TO_USE}`")
     all_markdown_content.append(f"**Artículos:** {', '.join(args.articles)}")
     all_markdown_content.append(f"**Directorio Prompts:** `{PROMPT_TEMPLATE_DIR}`")
     all_markdown_content.append("\n---\n")
+    # Llamar a la nueva función para generar la sección de prompts
+    all_markdown_content.extend(generar_seccion_prompts(prompt_templates))
+    # --- Fin sección de prompts ---
 
     # Procesar artículos secuencialmente
+    # Usar concurrencia 1 (implícito al no usar asyncio.gather en el bucle principal)
     for article_path in tqdm(article_paths, desc="Procesando Artículos"):
         test_id, results_by_task = await procesar_articulo_experimental(
             client, article_path, prompt_templates, MODEL_TO_USE
         )
-
-        # Cargar datos del artículo para el markdown
         article_data = load_article(article_path) or {}
-
-        # Generar sección Markdown para este artículo
         article_md_section = generar_markdown_articulo(test_id, article_data, results_by_task)
         all_markdown_content.extend(article_md_section)
-
-        # Recopilar métricas
         for _, metrics in results_by_task.values():
-             if metrics: # Asegurarse de que hay métricas
-                 all_metrics.append(metrics)
-
+             if metrics: all_metrics.append(metrics)
         await asyncio.sleep(0.5) # Pausa entre artículos
 
-    # Guardar el informe Markdown completo
+    # Guardar informe Markdown
     try:
-        with open(MARKDOWN_FILE, 'w', encoding='utf-8') as f:
-            f.write("\n".join(all_markdown_content))
+        with open(MARKDOWN_FILE, 'w', encoding='utf-8') as f: f.write("\n".join(all_markdown_content))
         logger.info(f"Informe Markdown guardado en: {MARKDOWN_FILE}")
-    except Exception as e:
-        logger.error(f"Error guardando informe Markdown: {e}")
+    except Exception as e: logger.error(f"Error guardando informe Markdown: {e}")
 
-    # Guardar las métricas CSV
+    # Guardar métricas CSV
     guardar_metricas_csv(all_metrics, METRICS_FILE)
 
     end_time_script = time.time()
@@ -558,7 +526,6 @@ async def main():
     logger.info(f"Resultados guardados en: {OUTPUT_EXPERIMENT_DIR.resolve()}")
     logger.info(f"Tiempo total de ejecución: {time.time() - start_time_script:.2f} segundos")
     return 0
-
 
 # --- Punto de Entrada ---
 if __name__ == "__main__":
