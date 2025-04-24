@@ -2,6 +2,16 @@
 
 Evalúa si este artículo periodístico cumple con los criterios para nuestro sistema de análisis estructurado. Sigue estos pasos en orden para maximizar la eficiencia:
 
+# ARTÍCULO A EVALUAR
+
+Título: {{TITULO}}
+Medio: {{MEDIO}}
+País: {{PAIS}}
+Fecha de publicación: {{FECHA_PUB}}
+
+CONTENIDO:
+{{CONTENIDO}}
+
 ## PASO 1: VERIFICAR CRITERIOS DE EXCLUSIÓN
 
 Evalúa si el artículo se centra PRINCIPALMENTE en alguno de estos temas:

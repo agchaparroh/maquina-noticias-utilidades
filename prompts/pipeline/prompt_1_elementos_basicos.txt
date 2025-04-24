@@ -1,4 +1,15 @@
+# Extracción de Elementos Básicos para Artículo Periodístico
+
 Analiza el siguiente artículo periodístico y extrae sus elementos informativos básicos. Identifica y clasifica con precisión:
+
+# ARTÍCULO
+Título: {{TITULO}}
+Medio: {{MEDIO}}
+País: {{PAIS}}
+Fecha de publicación: {{FECHA_PUB}}
+
+CONTENIDO:
+{{CONTENIDO}}
 
 1. HECHOS PRINCIPALES:
    - Contenido principal de cada hecho

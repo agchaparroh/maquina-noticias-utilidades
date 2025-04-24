@@ -1,5 +1,24 @@
 Integra todos los análisis previos y genera el JSON final estructurado para este artículo. Añade los metadatos del artículo y completa cualquier campo adicional necesario:
 
+# ARTÍCULO 
+Título: {{TITULO}}
+Medio: {{MEDIO}}
+País: {{PAIS}}
+Fecha de publicación: {{FECHA_PUB}}
+
+CONTENIDO:
+{{CONTENIDO}}
+
+# ANÁLISIS ANTERIORES
+## Paso 1 (Elementos básicos)
+{{JSON_PASO_1}}
+
+## Paso 2 (Citas y datos)
+{{JSON_PASO_2}}
+
+## Paso 3 (Relaciones)
+{{JSON_PASO_3}}
+
 1. METADATOS DEL ARTÍCULO:
    - URL (si está disponible)
    - Medio de publicación

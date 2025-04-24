@@ -1,5 +1,16 @@
 Basándote en el artículo y en los elementos ya identificados, extrae y clasifica:
 
+# ARTÍCULO
+Título: {{TITULO}}
+Medio: {{MEDIO}}
+Fecha de publicación: {{FECHA_PUB}}
+
+CONTENIDO:
+{{CONTENIDO}}
+
+# ELEMENTOS IDENTIFICADOS PREVIAMENTE
+{{JSON_PASO_1}}
+
 1. CITAS TEXTUALES:
    - Texto exacto de la cita
    - ID de la entidad emisora
