@@ -1,0 +1,26 @@
+test_id,tarea,model_id,timestamp_utc,latency_seconds,prompt_tokens,completion_tokens,total_tokens,success,api_success,json_valid,error_message
+test_005,prompt_0_filtrado,qwen-qwq-32b,2025-04-24T10:53:37.246050+00:00,3.482,2476,1091,3567,True,True,True,
+test_005,prompt_1_elementos_basicos,qwen-qwq-32b,2025-04-24T10:53:49.905034+00:00,12.341,,,,False,False,False,"API_Error: BadRequestError: Error code: 400 - {'error': {'message': ""Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details."", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': 'max completion tokens reached before generating a valid document'}}"
+test_005,prompt_2_citas_datos,qwen-qwq-32b,,,,,,False,False,False,Pipeline stopped in previous step
+test_005,prompt_3_relaciones,qwen-qwq-32b,,,,,,False,False,False,Pipeline stopped in previous step
+test_005,prompt_4_json_final,qwen-qwq-32b,,,,,,False,False,False,Pipeline stopped in previous step
+test_069,prompt_0_filtrado,qwen-qwq-32b,2025-04-24T10:53:54.982495+00:00,4.384,3283,1275,4558,True,True,True,
+test_069,prompt_1_elementos_basicos,qwen-qwq-32b,2025-04-24T10:54:05.835757+00:00,10.548,,,,False,False,False,"API_Error: BadRequestError: Error code: 400 - {'error': {'message': ""Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details."", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': 'max completion tokens reached before generating a valid document'}}"
+test_069,prompt_2_citas_datos,qwen-qwq-32b,,,,,,False,False,False,Pipeline stopped in previous step
+test_069,prompt_3_relaciones,qwen-qwq-32b,,,,,,False,False,False,Pipeline stopped in previous step
+test_069,prompt_4_json_final,qwen-qwq-32b,,,,,,False,False,False,Pipeline stopped in previous step
+test_040,prompt_0_filtrado,qwen-qwq-32b,2025-04-24T10:54:10.178108+00:00,3.835,5553,1144,6697,True,True,True,
+test_040,prompt_1_elementos_basicos,qwen-qwq-32b,2025-04-24T10:54:16.850686+00:00,6.37,,,,False,False,False,"API_Error: BadRequestError: Error code: 400 - {'error': {'message': ""Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details."", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': ''}}"
+test_040,prompt_2_citas_datos,qwen-qwq-32b,,,,,,False,False,False,Pipeline stopped in previous step
+test_040,prompt_3_relaciones,qwen-qwq-32b,,,,,,False,False,False,Pipeline stopped in previous step
+test_040,prompt_4_json_final,qwen-qwq-32b,,,,,,False,False,False,Pipeline stopped in previous step
+test_047,prompt_0_filtrado,qwen-qwq-32b,2025-04-24T10:54:21.531814+00:00,4.177,1844,1316,3160,True,True,True,
+test_047,prompt_1_elementos_basicos,qwen-qwq-32b,2025-04-24T10:54:32.523490+00:00,10.689,,,,False,False,False,"API_Error: BadRequestError: Error code: 400 - {'error': {'message': ""Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details."", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': 'max completion tokens reached before generating a valid document'}}"
+test_047,prompt_2_citas_datos,qwen-qwq-32b,,,,,,False,False,False,Pipeline stopped in previous step
+test_047,prompt_3_relaciones,qwen-qwq-32b,,,,,,False,False,False,Pipeline stopped in previous step
+test_047,prompt_4_json_final,qwen-qwq-32b,,,,,,False,False,False,Pipeline stopped in previous step
+test_004,prompt_0_filtrado,qwen-qwq-32b,2025-04-24T10:54:36.046366+00:00,3.019,2542,930,3472,True,True,True,
+test_004,prompt_1_elementos_basicos,qwen-qwq-32b,2025-04-24T10:54:46.882565+00:00,10.531,,,,False,False,False,"API_Error: BadRequestError: Error code: 400 - {'error': {'message': ""Failed to generate JSON. Please adjust your prompt. See 'failed_generation' for more details."", 'type': 'invalid_request_error', 'code': 'json_validate_failed', 'failed_generation': 'max completion tokens reached before generating a valid document'}}"
+test_004,prompt_2_citas_datos,qwen-qwq-32b,,,,,,False,False,False,Pipeline stopped in previous step
+test_004,prompt_3_relaciones,qwen-qwq-32b,,,,,,False,False,False,Pipeline stopped in previous step
+test_004,prompt_4_json_final,qwen-qwq-32b,,,,,,False,False,False,Pipeline stopped in previous step
