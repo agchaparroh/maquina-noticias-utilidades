@@ -43,7 +43,7 @@ El proyecto está organizado de la siguiente manera:
 
 ```
 /home/ubuntu/maquina-noticias-utilidades/  # Repositorio principal del proyecto
-├── CLAUDE.md                     # Instrucciones para Claude Code (este archivo)
+├── README.md                     # Instrucciones para Claude Code (este archivo)
 ├── .gitignore                    # Archivo que indica a Git qué archivos ignorar
 ├── data/                         # Datos de artículos
 │   ├── benchmark_test_set/       # 72 artículos de prueba en formato JSON (¡NO ELIMINAR!)
