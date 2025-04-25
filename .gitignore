@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+
+# Editor/IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Outputs y archivos temporales
+experiments/**/raw_outputs/
+temp/
+*.tmp
+
+# Archivos sensibles
+.env
+secrets.json
+*.key
+
+# IMPORTANTE: NO ignorar los artículos de prueba - estos deben permanecer en el repositorio
+# !data/benchmark_test_set/*.json

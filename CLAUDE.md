@@ -42,23 +42,21 @@ Actualmente, estamos enfocados en **evaluar y optimizar** el enfoque pipeline co
 El proyecto está organizado de la siguiente manera:
 
 ```
-/home/ubuntu/
+/home/ubuntu/maquina-noticias-utilidades/  # Repositorio principal del proyecto
 ├── CLAUDE.md                     # Instrucciones para Claude Code (este archivo)
-├── GUIA_SISTEMA.md               # Guía del sistema
-├── maquina-noticias-utilidades/  # Repositorio principal del proyecto
-│   ├── data/                     # Datos de artículos
-│   │   └── Originales/           # 72 artículos de prueba en formato JSON
-│   ├── experiments/              # Resultados de experimentos 
-│   │   └── [carpetas de experimentos con informes y resultados]
-│   ├── prompts/                  # Plantillas para modelos de IA
-│   │   ├── pipeline/             # Prompts para el enfoque secuencial
-│   │   └── single_prompt/        # Prompts para tareas independientes
-│   └── scripts/                  # Scripts para ejecutar experimentos
-└── data/                         # Datos originales
-    ├── benchmark_test_set/       # 72 artículos de prueba (originales)
-    ├── noticias_procesadas/
-    └── noticias_raw/
+├── .gitignore                    # Archivo que indica a Git qué archivos ignorar
+├── data/                         # Datos de artículos
+│   ├── benchmark_test_set/       # 72 artículos de prueba en formato JSON (¡NO ELIMINAR!)
+│   ├── noticias_procesadas/      # Artículos procesados
+│   └── noticias_raw/             # Artículos sin procesar
+├── experiments/                  # Resultados de experimentos 
+├── prompts/                      # Plantillas para modelos de IA
+│   └── pipeline/                 # Prompts para el enfoque secuencial (5 prompts)
+└── scripts/                      # Scripts para ejecutar experimentos
+    └── run_pipeline_experiment.py # Script principal
 ```
+
+**IMPORTANTE**: Los 72 artículos de prueba en `data/benchmark_test_set/` son muy valiosos y difíciles de conseguir. Están protegidos por el sistema de control de versiones Git y no deben ser eliminados.
 
 ## 4. Herramientas y Tecnologías: Explicación para Principiantes
 
@@ -270,6 +268,17 @@ Para que Claude Code te ayude con archivos y directorios, puedes pedirle:
 ### 9.3 Problemas de Git
 - **Conflictos**: "Claude, muéstrame los conflictos en el repositorio y ayúdame a resolverlos"
 - **Push rechazado**: "Claude, actualiza el repositorio antes de intentar subir cambios"
+- **Archivos ignorados**: "Claude, el archivo X no aparece en Git". Verifica si está en .gitignore
+
+### 9.4 Sobre el Archivo .gitignore
+
+El archivo `.gitignore` en la raíz del repositorio define qué archivos serán ignorados por Git:
+
+- **Archivos de Python**: `__pycache__/`, `*.pyc`, etc.
+- **Archivos temporales**: `*.tmp`, `*.log`, etc.
+- **Resultados de experimentos**: Si contienen mucho volumen de datos
+
+Los 72 artículos de prueba NO están ignorados en Git, lo que garantiza su preservación en el repositorio.
 
 ## 10. Próximos Pasos del Proyecto
 
